@@ -7,11 +7,10 @@ import { RouterLink, RouterView } from 'vue-router'
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink :to="{name: 'line', params: {id: 'jr-keihintouhoku'}}" >京浜東北</RouterLink>
-        <RouterLink :to="{name: 'line', params: {id: 'jr-yamanote'}}" >山手山手</RouterLink>
+        <RouterLink :to="{name: 'line', params: {id: 'jr-keihintouhoku'}}" >京浜東北線</RouterLink>
+        <RouterLink :to="{name: 'line', params: {id: 'jr-yamanote'}}" >山手線</RouterLink>
+        <RouterLink :to="{name: 'line', params: {id: 'jr-yokohama'}}" >横浜線</RouterLink>
       </nav>
     </div>
   </header>
