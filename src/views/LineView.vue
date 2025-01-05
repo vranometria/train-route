@@ -1,9 +1,10 @@
 <script setup lang="ts">
+import Exchange from '@/components/Exchange.vue';
 import { LineViewModel } from '@/types/line-view-model';
   import { watch, ref } from 'vue';
   import { useRoute } from 'vue-router';
   const route = useRoute();
-  const lineId = ref(route.params.id);
+  const lineId = ref(route.params.id as string);
   let model:LineViewModel = new LineViewModel(lineId.value as string);
 
   watch( ()=>route.params.id as string, (newId:string) => {
@@ -26,7 +27,7 @@ import { LineViewModel } from '@/types/line-view-model';
       <tr v-for="sta in model.stations" :key="sta.name" :id="sta.id">
         <td>{{ sta.name }}</td>
         <td>
-          <RouterLink v-for="e in sta.lines" :to="{name: 'line', params: {id: e.id}}" :key="e.id" class="exchange-line">{{ e.name }}</RouterLink>
+          <Exchange :station-id="sta.id" :source-line-id="lineId" :line-ids="sta.getLineIds()" ></Exchange>
         </td>
         <td v-for="kind in model.kinds" :key="kind.prop" :class="sta.kinds[kind.prop]">
         </td>

@@ -20,4 +20,6 @@ export class StationModel {
       this.lines = [];
     }
   }
+
+  getLineIds = ():string[] => this.lines.map(n => n.id);
 }
