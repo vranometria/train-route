@@ -1,5 +1,7 @@
 import { Line } from '@/types/line'
 import { LINE_IDS, STATION_IDS } from './ids'
+import { KindDef } from '@/types/kind-def'
+import { StopStationDef } from '@/types/stop-station-def'
 
 /** 路線 */
 export const LINES = {
@@ -13,140 +15,42 @@ export const LINES = {
     [LINE_IDS.jr_east.keihin_touhoku]: new Line(
       '京浜東北線',
       'JR東日本',
-      [{
-        name: '快速',
-        prop: 'rapid',
-      }],
+      [new KindDef('快速', 'rapid')],
       [
-        {
-          id: STATION_IDS.jr_east.omiya,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.saitama_shintoshin,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.yono,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.urawa,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.minami_urawa,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.warabi,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.nishikawaguchi,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.kawaguti,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.akahane,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.higashijujo,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.ouji,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.kaminakazato,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.tabata,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.nishinippori,
-        },
-        {
-          id: STATION_IDS.jr_east.nippori,
-        },
-        {
-          id: STATION_IDS.jr_east.uguisudani,
-        },
-        {
-          id: STATION_IDS.jr_east.ueno,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.okachimachi,
-        },
-        {
-          id: STATION_IDS.jr_east.akihabara,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.kanda,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.tokyo,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.hamamatsucho,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.tamachi,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.takanawa_gateway,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.shinagawa,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.oimachi,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.omori,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.kamata,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.kawasaki,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.tsurumi,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.shinkoyasu,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.higashikanagawa,
-          rapid: true,
-        },
-        {
-          id: STATION_IDS.jr_east.yokohama,
-          rapid: true,
-        },
-      ],
+        new StopStationDef(STATION_IDS.jr_east.omiya, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.saitama_shintoshin, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.yono, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.urawa, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.minami_urawa, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.warabi, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.nishikawaguchi, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.kawaguti, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.akahane, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.higashijujo, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.ouji, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.kaminakazato, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.tabata, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.nishinippori, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.nippori, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.uguisudani, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.ueno, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.okachimachi, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.akihabara, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.kanda, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.tokyo, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.hamamatsucho, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.tamachi, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.takanawa_gateway, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.shinagawa, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.oimachi, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.omori, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.kamata, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.kawasaki, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.tsurumi, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.shinkoyasu, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.higashikanagawa, ["rapid"]),
+        new StopStationDef(STATION_IDS.jr_east.yokohama, ["rapid"]),
+      ]
     ),
     [LINE_IDS.jr_east.yamanote]: {
       name: '山手線',

@@ -1,8 +1,8 @@
 export class StopStationDef {
   id: string;
-  rapid: boolean;
-  constructor(id:string, rapid: boolean){
+  kinds: string[];
+  constructor(id:string, kinds: string[]){
     this.id = id;
-    this.rapid = rapid;
+    this.kinds = kinds;
   }
 }

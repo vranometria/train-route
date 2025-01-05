@@ -4,5 +4,6 @@ export class StationInfo {
   constructor(name: string, lineIds: string[]){
     this.name = name;
     this.lineIds = lineIds;
+    if(!lineIds){ this.lineIds = [] }
   }
 }
