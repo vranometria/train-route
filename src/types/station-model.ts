@@ -10,16 +10,16 @@ export class StationModel {
 
   constructor(stopStationDef: StopStationDef){
     this.id = stopStationDef.id;
-    this.kinds["rapid"] = stopStationDef.rapid ? "rapid" : "";
+    stopStationDef.kinds.forEach(kind => this.kinds[kind] = kind);
     const sta = STATIONS[this.id];
     if(sta){
       this.name = sta.name;
       this.lines = sta.lineIds.map((lineId:string) => new ExchangeLineModel(lineId));
     }else {
-      this.name = "ID未定義の駅";
+      this.name = "ID未定義の駅-" + this.id;
       this.lines = [];
     }
   }
 
-  getLineIds = ():string[] => this.lines.map(n => n.id);
+  getExchangeLineIds = (sourceLineId:string):string[] => this.lines.map(n => n.id).filter(n => n!==sourceLineId);
 }

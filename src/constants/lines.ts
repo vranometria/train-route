@@ -52,103 +52,43 @@ export const LINES = {
         new StopStationDef(STATION_IDS.jr_east.yokohama, ["rapid"]),
       ]
     ),
-    [LINE_IDS.jr_east.yamanote]: {
-      name: '山手線',
-      company: 'JR東日本',
-      kinds: [],
-      stations: [
-        {
-          id: STATION_IDS.jr_east.shinagawa,
-        },
-        {
-          id: STATION_IDS.jr_east.takanawa_gateway,
-        },
-        {
-          id: STATION_IDS.jr_east.tamachi,
-        },
-        {
-          id: STATION_IDS.jr_east.hamamatsucho,
-        },
-        {
-          id: STATION_IDS.jr_east.shinbashi,
-        },
-        {
-          id: STATION_IDS.jr_east.yurakucho,
-        },
-        {
-          id: STATION_IDS.jr_east.tokyo,
-        },
-        {
-          id: STATION_IDS.jr_east.kanda,
-        },
-        {
-          id: STATION_IDS.jr_east.akihabara,
-        },
-        {
-          id: STATION_IDS.jr_east.okachimachi,
-        },
-        {
-          id: STATION_IDS.jr_east.ueno,
-        },
-        {
-          id: STATION_IDS.jr_east.uguisudani,
-        },
-        {
-          id: STATION_IDS.jr_east.nippori,
-        },
-        {
-          id: STATION_IDS.jr_east.nishinippori,
-        },
-        {
-          id: STATION_IDS.jr_east.tabata,
-        },
-        {
-          id: STATION_IDS.jr_east.komagome,
-        },
-        {
-          id: STATION_IDS.jr_east.sugamo,
-        },
-        {
-          id: STATION_IDS.jr_east.otsuka,
-        },
-        {
-          id: STATION_IDS.jr_east.ikebukuro,
-        },
-        {
-          id: STATION_IDS.jr_east.mejiro,
-        },
-        {
-          id: STATION_IDS.jr_east.takadanobaba,
-        },
-        {
-          id: STATION_IDS.jr_east.shinokubo,
-        },
-        {
-          id: STATION_IDS.jr_east.shinjuku,
-        },
-        {
-          id: STATION_IDS.jr_east.yoyogi,
-        },
-        {
-          id: STATION_IDS.jr_east.harajuku,
-        },
-        {
-          id: STATION_IDS.jr_east.shibuya,
-        },
-        {
-          id: STATION_IDS.jr_east.ebisu,
-        },
-        {
-          id: STATION_IDS.jr_east.meguro,
-        },
-        {
-          id: STATION_IDS.jr_east.gotanda,
-        },
-        {
-          id: STATION_IDS.jr_east.osaki,
-        },
-      ],
-    },
+    [LINE_IDS.jr_east.yamanote]: new Line(
+      '山手線',
+      'JR東日本',
+      [],
+      [
+        new StopStationDef(STATION_IDS.jr_east.shinagawa, []),
+        new StopStationDef(STATION_IDS.jr_east.takanawa_gateway, []),
+        new StopStationDef(STATION_IDS.jr_east.tamachi, []),
+        new StopStationDef(STATION_IDS.jr_east.hamamatsucho, []),
+        new StopStationDef(STATION_IDS.jr_east.shinbashi, []),
+        new StopStationDef(STATION_IDS.jr_east.yurakucho, []),
+        new StopStationDef(STATION_IDS.jr_east.tokyo, []),
+        new StopStationDef(STATION_IDS.jr_east.kanda, []),
+        new StopStationDef(STATION_IDS.jr_east.akihabara, []),
+        new StopStationDef(STATION_IDS.jr_east.okachimachi, []),
+        new StopStationDef(STATION_IDS.jr_east.ueno, []),
+        new StopStationDef(STATION_IDS.jr_east.uguisudani, []),
+        new StopStationDef(STATION_IDS.jr_east.nippori, []),
+        new StopStationDef(STATION_IDS.jr_east.nishinippori, []),
+        new StopStationDef(STATION_IDS.jr_east.tabata, []),
+        new StopStationDef(STATION_IDS.jr_east.komagome, []),
+        new StopStationDef(STATION_IDS.jr_east.sugamo, []),
+        new StopStationDef(STATION_IDS.jr_east.otsuka, []),
+        new StopStationDef(STATION_IDS.jr_east.ikebukuro, []),
+        new StopStationDef(STATION_IDS.jr_east.mejiro, []),
+        new StopStationDef(STATION_IDS.jr_east.takadanobaba, []),
+        new StopStationDef(STATION_IDS.jr_east.shinokubo, []),
+        new StopStationDef(STATION_IDS.jr_east.shinjuku, []),
+        new StopStationDef(STATION_IDS.jr_east.yoyogi, []),
+        new StopStationDef(STATION_IDS.jr_east.harajuku, []),
+        new StopStationDef(STATION_IDS.jr_east.shibuya, []),
+        new StopStationDef(STATION_IDS.jr_east.ebisu, []),
+        new StopStationDef(STATION_IDS.jr_east.meguro, []),
+        new StopStationDef(STATION_IDS.jr_east.gotanda, []),
+        new StopStationDef(STATION_IDS.jr_east.osaki, []),
+      ]
+    ),
   // [LINE_IDS.jr_east.yokohama]: {
   //   name: '横浜線',
   //   company: 'JR東日本',

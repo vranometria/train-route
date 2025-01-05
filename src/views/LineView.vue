@@ -5,10 +5,11 @@ import { LineViewModel } from '@/types/line-view-model';
   import { useRoute } from 'vue-router';
   const route = useRoute();
   const lineId = ref(route.params.id as string);
-  let model:LineViewModel = new LineViewModel(lineId.value as string);
+  const model = ref(new LineViewModel(lineId.value as string));
 
   watch( ()=>route.params.id as string, (newId:string) => {
-    model = new LineViewModel(newId);
+    lineId.value = newId;
+    model.value = new LineViewModel(newId);
   });
 </script>
 
@@ -24,10 +25,10 @@ import { LineViewModel } from '@/types/line-view-model';
       </tr>
     </thead>
     <tbody>
-      <tr v-for="sta in model.stations" :key="sta.name" :id="sta.id">
+      <tr v-for="sta in model.stations" :key="lineId + sta.name" :id="sta.id">
         <td>{{ sta.name }}</td>
         <td>
-          <Exchange :station-id="sta.id" :source-line-id="lineId" :line-ids="sta.getLineIds()" ></Exchange>
+          <Exchange :station-id="sta.id" :exchange-line-ids="sta.getExchangeLineIds(lineId)" ></Exchange>
         </td>
         <td v-for="kind in model.kinds" :key="kind.prop" :class="sta.kinds[kind.prop]">
         </td>
