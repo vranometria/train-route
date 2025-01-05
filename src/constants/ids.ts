@@ -1,3 +1,4 @@
+
 /** 路線ID */
 export const LINE_IDS = {
   /** JR東日本 */
@@ -26,8 +27,14 @@ export const LINE_IDS = {
     yokohama: 'jr-yokohama',
     /** 根岸線 */
     negishi: 'jr-negishi',
+    /**横須賀線 */
+    yokosuka: 'jr-yokosuka',
+    /** 南武線 */
+    nanbu: 'jr-nanbu',
 
     shinkansen: {
+      // 東海道新幹線
+      tokaido: 'jr-tokaido-shinkansen',
       // 東北新幹線
       tohoku: 'jr-tohoku-shinkansen',
       // 新幹線はやぶさ
@@ -41,6 +48,11 @@ export const LINE_IDS = {
       // 北陸新幹線
       hokuriku: 'jr-hokuriku-shinkansen',
     },
+  },
+  // 京急
+  keikyu: {
+    honsen: "keikyu-honsen",
+    haneda_kuko: "keikyu-haneda-kuko",
   },
   toubu: {
     // "東武アーバンパークライン",
@@ -176,5 +188,20 @@ export const STATION_IDS = {
     kounandai: 'kounandai',
     hongoudai: 'hongoudai',
     ofuna: 'ofuna',
+    totsuka: 'totsuka',
+    hujisawa: 'hujisawa',
+    tsujido: 'tsujido',
+    chigasaki: 'chigasaki',
+    hiratsuka: 'hiratsuka',
+    oiso: 'oiso',
+    ninomiya: 'ninomiya',
+    kozu: 'kozu',
+    kamonomiya: 'kamonomiya',
+    odawara: 'odawara',
+    hayakawa: "hayakawa",
+    nebukawa: "nebukawa",
+    manazuru: "manazuru",
+    yugawara: 'yugawara',
+    atami: 'atami',
   },
 };

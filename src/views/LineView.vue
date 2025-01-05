@@ -52,7 +52,7 @@ import { LineViewModel } from '@/types/line-view-model';
   display: block;
 }
 
-.rapid {
+.rapid, .acty {
   background-color: aquamarine;
 }
 </style>
