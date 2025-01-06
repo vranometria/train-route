@@ -3,6 +3,8 @@ import { LINE_IDS, STATION_IDS } from './ids'
 import { KindDef } from '@/types/kind-def'
 import { StopStationDef } from '@/types/stop-station-def'
 
+const LOCAL_ONLY:KindDef[] = [];
+
 /** 路線定義 */
 export const LINES = {
   // 東海道本線
@@ -166,12 +168,7 @@ export const LINES = {
   //   kinds: [],
   //   stations: [],
   // },
-  // [LINE_IDS.jr_east.shonan_shinjuku]: {
-  //   name: '湘南新宿ライン',
-  //   company: 'JR東日本',
-  //   kinds: [],
-  //   stations: [],
-  // },
+  [LINE_IDS.jr_east.shonan_shinjuku]: new Line('湘南新宿ライン', 'JR東日本', [], []),
   // [LINE_IDS.jr_east.takasaki]: {
   //   name: '高崎線',
   //   company: 'JR東日本',
@@ -231,11 +228,29 @@ export const LINES = {
   //   kinds: [],
   //   stations: [],
   // },
-  // [LINE_IDS.sagami.honsen]: {
-  //   name: '相鉄線',
-  //   kinds: [],
-  //   stations: [],
-  // },
+  [LINE_IDS.sagami.honsen]: new Line('相鉄本線', '相模鉄道',
+    [new KindDef("快速", "rapid"), new KindDef("特急", "express"), new KindDef("通勤急行", "commuter")],
+    [
+      new StopStationDef(STATION_IDS.sagami.ebina, ["rapid", "express", "commuter"]),
+      new StopStationDef(STATION_IDS.sagami.kashiwadai, ["rapid", "commuter"]),
+      new StopStationDef(STATION_IDS.sagami.sagamino, ["rapid", "commuter"]),
+      new StopStationDef(STATION_IDS.sagami.yamato, ["rapid", "express", "commuter"]),
+      new StopStationDef(STATION_IDS.sagami.seya, ["rapid", "commuter"]),
+      new StopStationDef(STATION_IDS.sagami.mitsukyo, ["rapid", "commuter"]),
+      new StopStationDef(STATION_IDS.sagami.kibougaoka, ["rapid", "commuter"]),
+      new StopStationDef(STATION_IDS.sagami.futamatagawa, ["rapid", "express", "commuter"]),
+      new StopStationDef(STATION_IDS.sagami.tsurugamine, ["rapid", "express", "commuter"]),
+      new StopStationDef(STATION_IDS.sagami.nishiya, ["rapid", "express", "commuter"]),
+      new StopStationDef(STATION_IDS.sagami.kamihoshikawa, []),
+      new StopStationDef(STATION_IDS.sagami.wadacho, []),
+      new StopStationDef(STATION_IDS.sagami.hoshikawa, ["rapid"]),
+      new StopStationDef(STATION_IDS.sagami.tennocho, []),
+      new StopStationDef(STATION_IDS.sagami.nishiyokohama, []),
+      new StopStationDef(STATION_IDS.sagami.hiranumabashi, []),
+      new StopStationDef(STATION_IDS.jr_east.yokohama, ["rapid", "express", "commuter"]),
+    ]
+  ),
+  [LINE_IDS.sagami.izumino]: new Line('いずみ野線', '相模鉄道', [], []),
   // // 東京メトロ
   // [LINE_IDS.tokyo_metro.marunouchi]: {
   //   name: '丸の内線',
@@ -248,16 +263,30 @@ export const LINES = {
   //   stations: [],
   // },
   // //小田急
-  // [LINE_IDS.odakyu.odawara]: {
-  //   name: '小田原線',
-  //   kinds: [],
-  //   stations: [],
-  // },
-  // [LINE_IDS.odakyu.enoshima]: {
-  //   name: '江ノ島線',
-  //   kinds: [],
-  //   stations: [],
-  // },
+  [LINE_IDS.odakyu.odawara]: new Line('小田原線', '小田急電鉄', [], []),
+  [LINE_IDS.odakyu.enoshima]: new Line('江ノ島線', '小田急電鉄', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.odakyu.sagamiono, [
+      LINE_IDS.odakyu.odawara,
+      LINE_IDS.odakyu.enoshima,
+    ]),
+    new StopStationDef(STATION_IDS.odakyu.higashirinkan),
+    new StopStationDef(STATION_IDS.odakyu.chuorinkan),
+    new StopStationDef(STATION_IDS.odakyu.minamirinkan),
+    new StopStationDef(STATION_IDS.odakyu.tsuruma),
+    new StopStationDef(STATION_IDS.odakyu.yamato),
+    new StopStationDef(STATION_IDS.odakyu.sakuragaoka),
+    new StopStationDef(STATION_IDS.odakyu.kouzashibuya),
+    new StopStationDef(STATION_IDS.odakyu.chogo),
+    new StopStationDef(STATION_IDS.odakyu.shonandai),
+    new StopStationDef(STATION_IDS.odakyu.mutsuainichidaimae),
+    new StopStationDef(STATION_IDS.odakyu.zengyo),
+    new StopStationDef(STATION_IDS.odakyu.fujisawahonmachi),
+    new StopStationDef(STATION_IDS.jr_east.hujisawa),
+    new StopStationDef(STATION_IDS.odakyu.kugenuma),
+    new StopStationDef(STATION_IDS.odakyu.honkugenuma),
+    new StopStationDef(STATION_IDS.odakyu.kugenumakaigan),
+    new StopStationDef(STATION_IDS.odakyu.kataseenoshima),
+  ]),
   // // 東京都交通局
   // [LINE_IDS.tokyo_koutsu_kyoku.oedo]: {
   //   name: '大江戸線',
@@ -280,4 +309,6 @@ export const LINES = {
   //   kinds: [],
   //   stations: [],
   // },
+  [LINE_IDS.enoshima.enoshima]: new Line('江ノ島電鉄線', '江ノ島電鉄', [], []),
+  [LINE_IDS.shonam_monorail.shonan_monorail]: new Line('湘南モノレール', '湘南モノレール', [], []),
 }

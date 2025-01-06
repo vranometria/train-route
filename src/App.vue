@@ -4,14 +4,15 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
       <nav>
         <RouterLink :to="{name: 'line', params: {id: 'jr-keihintouhoku'}}" >京浜東北線</RouterLink>
         <RouterLink :to="{name: 'line', params: {id: 'jr-yamanote'}}" >山手線</RouterLink>
         <RouterLink :to="{name: 'line', params: {id: 'jr-yokohama'}}" >横浜線</RouterLink>
         <RouterLink :to="{name: 'line', params: {id: 'jr-negishi'}}" >根岸線</RouterLink>
+
+        <RouterLink :to="{name: 'line', params: {id: 'sagami-honsen'}}">相鉄本線</RouterLink>
+        <RouterLink :to="{name: 'line', params: {id: 'odakyu-enoshima'}}">江ノ島線</RouterLink>
       </nav>
     </div>
   </header>
@@ -23,11 +24,6 @@ import { RouterLink, RouterView } from 'vue-router'
 header {
   line-height: 1.5;
   max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
 }
 
 nav {

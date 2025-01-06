@@ -82,12 +82,22 @@ export const LINE_IDS = {
     /** 新宿線 */
     shinjuku: 'toeishinjuku',
   },
+  /** 相模鉄道 */
   sagami: {
     honsen: 'sagami-honsen',
+    izumino: 'sagami-izumino',
   },
   odakyu: {
     odawara: 'odakyu-odawara',
     enoshima: 'odakyu-enoshima',
+  },
+  // 江ノ島電鉄
+  enoshima: {
+    enoshima: 'enoshima-enoshimadentetsu',
+  },
+  // 湘南モノレール
+  shonam_monorail: {
+    shonan_monorail: 'shonan-monorail',
   },
   /** 京王電鉄 */
   keiou: {
@@ -204,4 +214,43 @@ export const STATION_IDS = {
     yugawara: 'yugawara',
     atami: 'atami',
   },
+  /** 相模鉄道 */
+  sagami: {
+    ebina: "ebina",
+    kashiwadai: "kashiwadai",
+    sagamino: "sagamino",
+    sagamiotsuka: "sagamiotsuka",
+    futamatagawa: "futamatagawa",
+    tsuruma: "tsuruma",
+    seya: "seya",
+    mitsukyo: "mitsukyo",
+    kibougaoka: "kibougaoka",
+    tsurugamine: "tsurugamine",
+    nishiya: "nishiya",
+    kamihoshikawa: "kamihoshikawa",
+    wadacho: "wadacho",
+    hoshikawa: "hoshikawa",
+    tennocho: "tennocho",
+    nishiyokohama: "nishiyokohama",
+    hiranumabashi: "hiranumabashi",
+  },
+  odakyu: {
+    sagamiono: "sagamiono",
+    higashirinkan: "higashirinkan",
+    chuorinkan: "chuorinkan",
+    minamirinkan: "minamirinkan",
+    tsuruma: "tsuruma",
+    yamato: "yamato",
+    sakuragaoka: "sakuragaoka",
+    kouzashibuya: "kouzashibuya",
+    chogo: "chogo",
+    shonandai: "shonandai",
+    mutsuainichidaimae: "mutsuainichidaimae",
+    zengyo: "zengyo",
+    fujisawahonmachi: "fujisawahonmachi",
+    kugenuma: "kugenuma",
+    honkugenuma: "honkugenuma",
+    kugenumakaigan: "kugenumakaigan",
+    kataseenoshima: "kataseenoshima",
+  }
 };

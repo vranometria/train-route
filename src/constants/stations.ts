@@ -206,7 +206,11 @@ export const STATIONS = {
   ]),
 
   [STATION_IDS.jr_east.totsuka]: new StationInfo('戸塚', []),
-  [STATION_IDS.jr_east.hujisawa]: new StationInfo('藤沢', []),
+  [STATION_IDS.jr_east.hujisawa]: new StationInfo('藤沢', [
+    LINE_IDS.jr_east.tokaido,
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.odakyu.enoshima,
+  ]),
   [STATION_IDS.jr_east.tsujido]: new StationInfo('辻堂', []),
   [STATION_IDS.jr_east.chigasaki]: new StationInfo('茅ヶ崎', []),
   [STATION_IDS.jr_east.hiratsuka]: new StationInfo('平塚', []),
@@ -220,4 +224,54 @@ export const STATIONS = {
   [STATION_IDS.jr_east.manazuru]: new StationInfo('真鶴', []),
   [STATION_IDS.jr_east.yugawara ]: new StationInfo('湯河原', []),
   [STATION_IDS.jr_east.atami]: new StationInfo('熱海', []),
+
+
+  [STATION_IDS.sagami.ebina]: new StationInfo('海老名', [
+    LINE_IDS.odakyu.odawara,
+  ]),
+  [STATION_IDS.sagami.kashiwadai]: new StationInfo('柏木台', []),
+  [STATION_IDS.sagami.sagamiotsuka]: new StationInfo('相模大塚', []),
+
+  [STATION_IDS.sagami.seya]: new StationInfo('瀬谷', []),
+  [STATION_IDS.sagami.mitsukyo]: new StationInfo('三ツ境', []),
+  [STATION_IDS.sagami.kibougaoka]: new StationInfo('希望ヶ丘', []),
+  [STATION_IDS.sagami.futamatagawa]: new StationInfo('二俣川', [
+    LINE_IDS.sagami.izumino,
+  ]),
+  [STATION_IDS.sagami.tsurugamine]: new StationInfo('鶴ヶ峰', []),
+  [STATION_IDS.sagami.nishiya]: new StationInfo('西谷', [
+    LINE_IDS.sagami.izumino,
+  ]),
+  [STATION_IDS.sagami.kamihoshikawa]: new StationInfo('上星川', []),
+  [STATION_IDS.sagami.wadacho]: new StationInfo('和田町', []),
+  [STATION_IDS.sagami.hoshikawa]: new StationInfo('星川', []),
+  [STATION_IDS.sagami.tennocho]: new StationInfo('天王町', []),
+  [STATION_IDS.sagami.nishiyokohama]: new StationInfo('西横浜', []),
+  [STATION_IDS.sagami.hiranumabashi]: new StationInfo('平沼橋', []),
+
+  [STATION_IDS.sagami.sagamino]: new StationInfo('さがみ野', []),
+
+  [STATION_IDS.odakyu.sagamiono]: new StationInfo('相模大野', [
+    LINE_IDS.odakyu.odawara,
+    LINE_IDS.odakyu.enoshima,
+  ]),
+  [STATION_IDS.odakyu.higashirinkan]: new StationInfo('東林間', []),
+  [STATION_IDS.odakyu.chuorinkan]: new StationInfo('中央林間', []),
+  [STATION_IDS.odakyu.minamirinkan]: new StationInfo('南林間', []),
+  [STATION_IDS.sagami.tsuruma]: new StationInfo('鶴間', []),
+  [STATION_IDS.odakyu.yamato]: new StationInfo('大和', [
+    LINE_IDS.odakyu.enoshima,
+    LINE_IDS.sagami.honsen,
+  ]),
+  [STATION_IDS.odakyu.sakuragaoka]: new StationInfo('桜ヶ丘', []),
+  [STATION_IDS.odakyu.kouzashibuya]: new StationInfo('高座渋谷', []),
+  [STATION_IDS.odakyu.chogo]: new StationInfo('長後', []),
+  [STATION_IDS.odakyu.shonandai]: new StationInfo('湘南台', []),
+  [STATION_IDS.odakyu.mutsuainichidaimae]: new StationInfo('六会日大前', []),
+  [STATION_IDS.odakyu.zengyo]: new StationInfo('善行', []),
+  [STATION_IDS.odakyu.fujisawahonmachi]: new StationInfo('藤沢本町', []),
+  [STATION_IDS.odakyu.kugenuma]: new StationInfo('鵠沼', []),
+  [STATION_IDS.odakyu.honkugenuma]: new StationInfo('本鵠沼', []),
+  [STATION_IDS.odakyu.kugenumakaigan]: new StationInfo('鵠沼海岸', []),
+  [STATION_IDS.odakyu.kataseenoshima]: new StationInfo('片瀬江ノ島', []),
 }

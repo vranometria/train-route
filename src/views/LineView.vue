@@ -14,14 +14,14 @@ import { LineViewModel } from '@/types/line-view-model';
 </script>
 
 <template>
-  <h1>{{ model.lineName }}</h1>
+  <h1>{{model.companyName}}・{{ model.lineName }}</h1>
 
   <table>
     <thead>
       <tr>
         <th>駅</th>
         <th>乗り換え</th>
-        <th v-for="kind in model.kinds" :key="kind.prop">{{ kind.name }}</th>
+        <th v-for="kind in model.kinds" :key="kind.prop" class="kind" :class="kind.prop">{{ kind.name }}</th>
       </tr>
     </thead>
     <tbody>
@@ -30,7 +30,7 @@ import { LineViewModel } from '@/types/line-view-model';
         <td>
           <Exchange :station-id="sta.id" :exchange-line-ids="sta.getExchangeLineIds(lineId)" ></Exchange>
         </td>
-        <td v-for="kind in model.kinds" :key="kind.prop" :class="sta.kinds[kind.prop]">
+        <td v-for="kind in model.kinds" :key="kind.prop" :class="sta.kinds[kind.prop]" class="kind">
         </td>
       </tr>
     </tbody>
@@ -39,13 +39,19 @@ import { LineViewModel } from '@/types/line-view-model';
   <RouterLink :to="{name: 'line', params: {id:'yamanote'}}">山の手</RouterLink>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+<style scoped>
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border-bottom: 1px solid white;
+  padding-top: 15px;
+}
+
+.kind{
+  border: none;
 }
 
 .exchange-line {
@@ -54,5 +60,19 @@ import { LineViewModel } from '@/types/line-view-model';
 
 .rapid, .acty {
   background-color: aquamarine;
+}
+
+.express {
+  background-color: red;
+}
+
+.commuter {
+  background-color: yellow;
+}
+
+th.kind {
+  writing-mode: vertical-rl;
+  font-weight: bold;
+  color: black;
 }
 </style>
