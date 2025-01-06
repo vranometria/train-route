@@ -5,6 +5,7 @@ import { StopStationDef } from '@/types/stop-station-def'
 
 /** 路線定義 */
 export const LINES = {
+  // 東海道本線
   [LINE_IDS.jr_east.tokaido]: {
     name: '東海道本線',
     company: 'JR東日本',
@@ -33,12 +34,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.atami, ["acty"]),
     ],
   },
-  // 京浜東北
-  [LINE_IDS.jr_east.keihin_touhoku]: new Line(
-    '京浜東北線',
-    'JR東日本',
-    [new KindDef('快速', 'rapid')],
-    [
+  [LINE_IDS.jr_east.keihin_touhoku]: new Line('京浜東北線', 'JR東日本', [new KindDef('快速', 'rapid')],[
       new StopStationDef(STATION_IDS.jr_east.omiya, ["rapid"]),
       new StopStationDef(STATION_IDS.jr_east.saitama_shintoshin, ["rapid"]),
       new StopStationDef(STATION_IDS.jr_east.yono, ["rapid"]),
@@ -72,13 +68,8 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.shinkoyasu, ["rapid"]),
       new StopStationDef(STATION_IDS.jr_east.higashikanagawa, ["rapid"]),
       new StopStationDef(STATION_IDS.jr_east.yokohama, ["rapid"]),
-    ]
-  ),
-  [LINE_IDS.jr_east.yamanote]: new Line(
-    '山手線',
-    'JR東日本',
-    [],
-    [
+  ]),
+  [LINE_IDS.jr_east.yamanote]: new Line('山手線', 'JR東日本', [], [
       new StopStationDef(STATION_IDS.jr_east.shinagawa, []),
       new StopStationDef(STATION_IDS.jr_east.takanawa_gateway, []),
       new StopStationDef(STATION_IDS.jr_east.tamachi, []),
@@ -109,8 +100,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.meguro, []),
       new StopStationDef(STATION_IDS.jr_east.gotanda, []),
       new StopStationDef(STATION_IDS.jr_east.osaki, []),
-    ]
-  ),
+  ]),
   [LINE_IDS.jr_east.yokohama]: new Line('横浜線', 'JR東日本', [], [
     new StopStationDef(STATION_IDS.jr_east.hachiouji, []),
     new StopStationDef(STATION_IDS.jr_east.katakura, []),
@@ -144,12 +134,20 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.hongoudai, []),
     new StopStationDef(STATION_IDS.jr_east.ofuna, []),
   ]),
-  // [LINE_IDS.jr_east.negishi]: {
-  //   name: '根岸線',
-  //   company: 'JR東日本',
-  //   kinds: [],
-  //   stations: [],
-  // },
+  [LINE_IDS.jr_east.negishi]: new Line('根岸線', 'JR東日本', [], [
+    new StopStationDef(STATION_IDS.jr_east.yokohama, []),
+    new StopStationDef(STATION_IDS.jr_east.sakuragicho, []),
+    new StopStationDef(STATION_IDS.jr_east.kannai, []),
+    new StopStationDef(STATION_IDS.jr_east.ishikawacho, []),
+    new StopStationDef(STATION_IDS.jr_east.yamate, []),
+    new StopStationDef(STATION_IDS.jr_east.negishi, []),
+    new StopStationDef(STATION_IDS.jr_east.isogo, []),
+    new StopStationDef(STATION_IDS.jr_east.shin_sugita, []),
+    new StopStationDef(STATION_IDS.jr_east.youkoudai, []),
+    new StopStationDef(STATION_IDS.jr_east.kounandai, []),
+    new StopStationDef(STATION_IDS.jr_east.hongoudai, []),
+    new StopStationDef(STATION_IDS.jr_east.ofuna, []),
+  ]),
   // [LINE_IDS.jr_east.kawagoe]: {
   //   name: '川越線',
   //   company: 'JR東日本',

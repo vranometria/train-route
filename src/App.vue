@@ -11,6 +11,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink :to="{name: 'line', params: {id: 'jr-keihintouhoku'}}" >京浜東北線</RouterLink>
         <RouterLink :to="{name: 'line', params: {id: 'jr-yamanote'}}" >山手線</RouterLink>
         <RouterLink :to="{name: 'line', params: {id: 'jr-yokohama'}}" >横浜線</RouterLink>
+        <RouterLink :to="{name: 'line', params: {id: 'jr-negishi'}}" >根岸線</RouterLink>
       </nav>
     </div>
   </header>

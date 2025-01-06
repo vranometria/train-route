@@ -159,17 +159,48 @@ export const STATIONS = {
   [STATION_IDS.jr_east.kikuna]: new StationInfo('菊名', []),
   [STATION_IDS.jr_east.oguchi]: new StationInfo('大口', []),
   [STATION_IDS.jr_east.higashi_kanagawa]: new StationInfo('東神奈川', []),
-  [STATION_IDS.jr_east.sakuragicho]: new StationInfo('桜木町', []),
-  [STATION_IDS.jr_east.kannai]: new StationInfo('関内', []),
-  [STATION_IDS.jr_east.ishikawacho]: new StationInfo('石川町', []),
-  [STATION_IDS.jr_east.yamate]: new StationInfo('山手', []),
-  [STATION_IDS.jr_east.negishi]: new StationInfo('根岸', []),
-  [STATION_IDS.jr_east.isogo]: new StationInfo('磯子', []),
-  [STATION_IDS.jr_east.shin_sugita]: new StationInfo('新杉田', []),
-  [STATION_IDS.jr_east.youkoudai]: new StationInfo('洋光台', []),
-  [STATION_IDS.jr_east.kounandai]: new StationInfo('港南台', []),
-  [STATION_IDS.jr_east.hongoudai]: new StationInfo('本郷台', []),
+  [STATION_IDS.jr_east.sakuragicho]: new StationInfo('桜木町', [
+    LINE_IDS.jr_east.negishi,
+    LINE_IDS.jr_east.yokohama,
+  ]),
+  [STATION_IDS.jr_east.kannai]: new StationInfo('関内', [
+    LINE_IDS.jr_east.negishi,
+    LINE_IDS.jr_east.yokohama,
+  ]),
+  [STATION_IDS.jr_east.ishikawacho]: new StationInfo('石川町', [
+    LINE_IDS.jr_east.negishi,
+    LINE_IDS.jr_east.yokohama,
+  ]),
+  [STATION_IDS.jr_east.yamate]: new StationInfo('山手', [
+    LINE_IDS.jr_east.negishi,
+    LINE_IDS.jr_east.yokohama,
+  ]),
+  [STATION_IDS.jr_east.negishi]: new StationInfo('根岸', [
+    LINE_IDS.jr_east.negishi,
+    LINE_IDS.jr_east.yokohama,
+  ]),
+  [STATION_IDS.jr_east.isogo]: new StationInfo('磯子', [
+    LINE_IDS.jr_east.negishi,
+    LINE_IDS.jr_east.yokohama,
+  ]),
+  [STATION_IDS.jr_east.shin_sugita]: new StationInfo('新杉田', [
+    LINE_IDS.jr_east.negishi,
+    LINE_IDS.jr_east.yokohama,
+  ]),
+  [STATION_IDS.jr_east.youkoudai]: new StationInfo('洋光台', [
+    LINE_IDS.jr_east.negishi,
+    LINE_IDS.jr_east.yokohama,
+  ]),
+  [STATION_IDS.jr_east.kounandai]: new StationInfo('港南台', [
+    LINE_IDS.jr_east.negishi,
+    LINE_IDS.jr_east.yokohama,
+  ]),
+  [STATION_IDS.jr_east.hongoudai]: new StationInfo('本郷台', [
+    LINE_IDS.jr_east.negishi,
+    LINE_IDS.jr_east.yokohama,
+  ]),
   [STATION_IDS.jr_east.ofuna]: new StationInfo('大船', [
+    LINE_IDS.jr_east.tokaido,
     LINE_IDS.jr_east.negishi,
     LINE_IDS.jr_east.yokohama,
   ]),
