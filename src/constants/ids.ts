@@ -115,7 +115,15 @@ export const LINE_IDS = {
     tamagawa: 'tokyu-tamagawa',
     meguro: 'tokyu-meguro',
     ikegami: "tokyu-ikegami",
+    kodomonokuni: "keikyu-kodomonokuni",
+    oimachi: "tokyu-oimachi",
+    setagaya: "tokyu-setagaya",
   },
+  /** 横浜市営地下鉄 */
+  yokohama_shieichikatetsu: {
+    blue_line: 'yokohama-shieichikatetsu-blue-line',
+    green_line: 'yokohama-shieichikatetsu-green-line',
+  }
 }
 
 /** 駅ID */
@@ -354,6 +362,7 @@ export const STATION_IDS = {
     kashimada: "kashimada",
     hirama: "hirama",
     mukougawara: "mukougawara",
+    mizonokuchi: "mizonokuchi",
     musashinakahara: "musashinakahara",
     musashishinjou: "musashishinjou",
     musashimizonokuchi: "musashimizonokuchi",
@@ -415,6 +424,31 @@ export const STATION_IDS = {
   },
   /** 東急電鉄 */
   tokyu: {
+    // 田園都市線
+    ikejiriohashi: "ikejiriohashi",
+    sangenjaya: "sangenjaya",
+    komazawadaigaku: "komazawadaigaku",
+    sakurashinmachi: "sakurashinmachi",
+    yoga: "yoga",
+    futakotamagawa: "futakotamagawa",
+    futako_shinchi: "futako-shinchi",
+    takatsu: "takatsu",
+    mizonokuchi: "mizonokuchi",
+    kajigaya: "kajigaya",
+    miyazakidai: "miyazakidai",
+    miyamaedaira: "miyamaedaira",
+    washinuma: "washinuma",
+    tama_plaza: "tama-plaza",
+    azamino: "azamino",
+    eda: "eda",
+    ichigao: "ichigao",
+    fujigaoka: "fujigaoka",
+    aobadai: "aobadai",
+    tana: "tana",
+    tsukushino: "tsukushino",
+    suzukakedai: "suzukakedai",
+    minamimachida_grandberry_park: "minamimachida-grandberry-park",
+    tsukimino: "tsukimino",
     // 多摩川線
     tamagawa: "tamagawa",
     numabe: "numabe",

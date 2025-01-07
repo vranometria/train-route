@@ -154,7 +154,11 @@ export const STATIONS = {
   [STATION_IDS.jr_east.kobuchi]: new StationInfo('古渕', []),
   [STATION_IDS.jr_east.machida]: new StationInfo('町田', []),
   [STATION_IDS.jr_east.naruse]: new StationInfo('成瀬', []),
-  [STATION_IDS.jr_east.nagatsuta]: new StationInfo('長津田', []),
+  [STATION_IDS.jr_east.nagatsuta]: new StationInfo('長津田', [
+    LINE_IDS.jr_east.yokohama,
+    LINE_IDS.tokyu.denentoshi,
+    LINE_IDS.tokyu.kodomonokuni,
+  ]),
   [STATION_IDS.jr_east.tokaichiba]: new StationInfo('十日市場', []),
   [STATION_IDS.jr_east.nakayama]: new StationInfo('中山', []),
   [STATION_IDS.jr_east.kamoi]: new StationInfo('鴨居', []),
@@ -208,7 +212,6 @@ export const STATIONS = {
     LINE_IDS.jr_east.negishi,
     LINE_IDS.jr_east.yokohama,
   ]),
-
   [STATION_IDS.jr_east.totsuka]: new StationInfo('戸塚', []),
   [STATION_IDS.jr_east.hujisawa]: new StationInfo('藤沢', [
     LINE_IDS.jr_east.tokaido,
@@ -228,8 +231,14 @@ export const STATIONS = {
   [STATION_IDS.jr_east.manazuru]: new StationInfo('真鶴', []),
   [STATION_IDS.jr_east.yugawara ]: new StationInfo('湯河原', []),
   [STATION_IDS.jr_east.atami]: new StationInfo('熱海', []),
+  // 南武線
+  [STATION_IDS.jr_east.mizonokuchi]: new StationInfo('溝の口', [
+    LINE_IDS.jr_east.nanbu,
+    LINE_IDS.tokyu.oimachi,
+  ]),
 
-
+  // 相模鉄道
+  // ＞本線
   [STATION_IDS.sagami.ebina]: new StationInfo('海老名', [
     LINE_IDS.odakyu.odawara,
   ]),
@@ -254,13 +263,17 @@ export const STATIONS = {
   [STATION_IDS.sagami.hiranumabashi]: new StationInfo('平沼橋', []),
 
   [STATION_IDS.sagami.sagamino]: new StationInfo('さがみ野', []),
-
+  // 小田急
+  // ＞江ノ島線
   [STATION_IDS.odakyu.sagamiono]: new StationInfo('相模大野', [
     LINE_IDS.odakyu.odawara,
     LINE_IDS.odakyu.enoshima,
   ]),
   [STATION_IDS.odakyu.higashirinkan]: new StationInfo('東林間', []),
-  [STATION_IDS.odakyu.chuorinkan]: new StationInfo('中央林間', []),
+  [STATION_IDS.odakyu.chuorinkan]: new StationInfo('中央林間', [
+    LINE_IDS.odakyu.enoshima,
+    LINE_IDS.tokyu.denentoshi,
+  ]),
   [STATION_IDS.odakyu.minamirinkan]: new StationInfo('南林間', []),
   [STATION_IDS.sagami.tsuruma]: new StationInfo('鶴間', []),
   [STATION_IDS.odakyu.yamato]: new StationInfo('大和', [
@@ -279,15 +292,49 @@ export const STATIONS = {
   [STATION_IDS.odakyu.kugenumakaigan]: new StationInfo('鵠沼海岸', []),
   [STATION_IDS.odakyu.kataseenoshima]: new StationInfo('片瀬江ノ島', []),
   // 東急
+  // ＞田園都市線
+  [STATION_IDS.tokyu.ikejiriohashi]: new StationInfo('池尻大橋'),
+  [STATION_IDS.tokyu.sangenjaya]: new StationInfo('三軒茶屋', [
+    LINE_IDS.tokyu.denentoshi,
+    LINE_IDS.tokyu.setagaya,
+  ]),
+  [STATION_IDS.tokyu.komazawadaigaku]: new StationInfo('駒沢大学'),
+  [STATION_IDS.tokyu.sakurashinmachi]: new StationInfo('桜新町'),
+  [STATION_IDS.tokyu.yoga]: new StationInfo('用賀'),
+  [STATION_IDS.tokyu.futakotamagawa]: new StationInfo('二子玉川', [
+    LINE_IDS.tokyu.denentoshi,
+    LINE_IDS.tokyu.oimachi,
+  ]),
+  [STATION_IDS.tokyu.futako_shinchi]: new StationInfo('二子新地'),
+  [STATION_IDS.tokyu.takatsu]: new StationInfo('高津'),
+  [STATION_IDS.tokyu.kajigaya]: new StationInfo('梶が谷'),
+  [STATION_IDS.tokyu.miyazakidai]: new StationInfo('宮崎台'),
+  [STATION_IDS.tokyu.miyamaedaira]: new StationInfo('宮前平'),
+  [STATION_IDS.tokyu.washinuma]: new StationInfo('鷲沼'),
+  [STATION_IDS.tokyu.tama_plaza]: new StationInfo('たまプラーザ'),
+  [STATION_IDS.tokyu.azamino]: new StationInfo('あざみ野', [
+    LINE_IDS.tokyu.denentoshi,
+    LINE_IDS.yokohama_shieichikatetsu.blue_line,
+  ]),
+  [STATION_IDS.tokyu.eda]: new StationInfo('江田'),
+  [STATION_IDS.tokyu.ichigao]: new StationInfo('市が尾'),
+  [STATION_IDS.tokyu.fujigaoka]: new StationInfo('藤が丘'),
+  [STATION_IDS.tokyu.aobadai]: new StationInfo('青葉台'),
+  [STATION_IDS.tokyu.tana]: new StationInfo('田奈'),
+  [STATION_IDS.tokyu.tsukushino]: new StationInfo('つくし野'),
+  [STATION_IDS.tokyu.suzukakedai]: new StationInfo('すずかけ台'),
+  [STATION_IDS.tokyu.minamimachida_grandberry_park]: new StationInfo('南町田グランベリーパーク'),
+  [STATION_IDS.tokyu.tsukimino]: new StationInfo('つきみ野'),
+
   // ＞多摩川線
   [STATION_IDS.tokyu.tamagawa]: new StationInfo('多摩川', [
     LINE_IDS.tokyu.tamagawa,
     LINE_IDS.tokyu.toyoko,
     LINE_IDS.tokyu.meguro,
   ]),
-  [STATION_IDS.tokyu.numabe]: new StationInfo('沼部', []),
-  [STATION_IDS.tokyu.unoki]: new StationInfo('鵜の木', []),
-  [STATION_IDS.tokyu.simomaruko]: new StationInfo('下丸子', []),
-  [STATION_IDS.tokyu.musashishinden]: new StationInfo('武蔵新田', []),
-  [STATION_IDS.tokyu.yagutiwatashi]: new StationInfo('矢口渡', []),
+  [STATION_IDS.tokyu.numabe]: new StationInfo('沼部'),
+  [STATION_IDS.tokyu.unoki]: new StationInfo('鵜の木'),
+  [STATION_IDS.tokyu.simomaruko]: new StationInfo('下丸子'),
+  [STATION_IDS.tokyu.musashishinden]: new StationInfo('武蔵新田'),
+  [STATION_IDS.tokyu.yagutiwatashi]: new StationInfo('矢口渡'),
 }

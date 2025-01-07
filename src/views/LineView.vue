@@ -66,6 +66,10 @@ td, th {
   background-color: red;
 }
 
+.semi-express {
+  background-color: orange;
+}
+
 .commuter {
   background-color: yellow;
 }
