@@ -84,6 +84,10 @@ export const LINE_IDS = {
     /** 新宿線 */
     shinjuku: 'toeishinjuku',
   },
+  /** 東京都営地下鉄 */
+  tokyo_subway: {
+    asakusa: 'toei-asakusa',
+  },
   /** 相模鉄道 */
   sagami: {
     honsen: 'sagami-honsen',
@@ -123,6 +127,11 @@ export const LINE_IDS = {
   yokohama_shieichikatetsu: {
     blue_line: 'yokohama-shieichikatetsu-blue-line',
     green_line: 'yokohama-shieichikatetsu-green-line',
+  },
+  /** 東京臨海高速鉄道*/
+  toukyo_rinkai_kousoku: {
+    /** りんかい線 */
+    rinkai: 'toukyo-rinkai-kousoku-rinkai',
   }
 }
 
@@ -456,5 +465,19 @@ export const STATION_IDS = {
     simomaruko: "simomaruko",
     musashishinden: "musashishinden",
     yagutiwatashi: "yagutiwatashi",
+    // 大井町線
+    shimoshinmei: "shimoshinmei",
+    togoshikouen: "togoshikouen",
+    nakanobe: "nakanobe",
+    ebaracho: "ebaracho",
+    hatanodai: "hatanodai",
+    kitasenzoku: "kitasenzoku",
+    ookayama: "ookayama",
+    midorigaoka: "midorigaoka",
+    jiyugaoka: "jiyugaoka",
+    kuhonbutsu: "kuhonbutsu",
+    oyamadai: "oyamadai",
+    todoroki: "todoroki",
+    kaminoge: "kaminoge",
   }
 };

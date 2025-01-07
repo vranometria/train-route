@@ -54,6 +54,12 @@ td, th {
   border: none;
 }
 
+th.kind {
+  writing-mode: vertical-rl;
+  font-weight: bold;
+  color: black;
+}
+
 .exchange-line {
   display: block;
 }
@@ -66,6 +72,10 @@ td, th {
   background-color: red;
 }
 
+th.express {
+  color: white;
+}
+
 .semi-express {
   background-color: orange;
 }
@@ -74,9 +84,5 @@ td, th {
   background-color: yellow;
 }
 
-th.kind {
-  writing-mode: vertical-rl;
-  font-weight: bold;
-  color: black;
-}
+
 </style>

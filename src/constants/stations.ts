@@ -82,7 +82,11 @@ export const STATIONS = {
     LINE_IDS.jr_east.shinkansen.tokaido,
     LINE_IDS.keikyu.honsen,
   ]),
-  [STATION_IDS.jr_east.oimachi]: new StationInfo('大井町', []),
+  [STATION_IDS.jr_east.oimachi]: new StationInfo('大井町', [
+    LINE_IDS.jr_east.keihin_touhoku,
+    LINE_IDS.toukyo_rinkai_kousoku.rinkai,
+    LINE_IDS.tokyu.oimachi,
+  ]),
   [STATION_IDS.jr_east.omori]: new StationInfo('大森', []),
   [STATION_IDS.jr_east.kamata]: new StationInfo('蒲田', [
     LINE_IDS.jr_east.keihin_touhoku,
@@ -235,6 +239,7 @@ export const STATIONS = {
   [STATION_IDS.jr_east.mizonokuchi]: new StationInfo('溝の口', [
     LINE_IDS.jr_east.nanbu,
     LINE_IDS.tokyu.oimachi,
+    LINE_IDS.tokyu.denentoshi,
   ]),
 
   // 相模鉄道
@@ -337,4 +342,30 @@ export const STATIONS = {
   [STATION_IDS.tokyu.simomaruko]: new StationInfo('下丸子'),
   [STATION_IDS.tokyu.musashishinden]: new StationInfo('武蔵新田'),
   [STATION_IDS.tokyu.yagutiwatashi]: new StationInfo('矢口渡'),
+  // 大井町線
+  [STATION_IDS.tokyu.shimoshinmei]: new StationInfo('下神明'),
+  [STATION_IDS.tokyu.togoshikouen]: new StationInfo('戸越公園'),
+  [STATION_IDS.tokyu.nakanobe]: new StationInfo('中延', [
+    LINE_IDS.tokyu.oimachi,
+    LINE_IDS.tokyo_subway.asakusa,
+  ]),
+  [STATION_IDS.tokyu.ebaracho]: new StationInfo('荏原町'),
+  [STATION_IDS.tokyu.hatanodai]: new StationInfo('旗の台',[
+    LINE_IDS.tokyu.oimachi,
+    LINE_IDS.tokyu.ikegami,
+  ]),
+  [STATION_IDS.tokyu.kitasenzoku]: new StationInfo('北千束'),
+  [STATION_IDS.tokyu.ookayama]: new StationInfo('大岡山',[
+    LINE_IDS.tokyu.oimachi,
+    LINE_IDS.tokyu.meguro,
+  ]),
+  [STATION_IDS.tokyu.midorigaoka]: new StationInfo('緑が丘'),
+  [STATION_IDS.tokyu.jiyugaoka]: new StationInfo('自由が丘',[
+    LINE_IDS.tokyu.oimachi,
+    LINE_IDS.tokyu.toyoko,
+  ]),
+  [STATION_IDS.tokyu.kuhonbutsu]: new StationInfo('九品仏'),
+  [STATION_IDS.tokyu.oyamadai]: new StationInfo('尾山台'),
+  [STATION_IDS.tokyu.todoroki]: new StationInfo('等々力'),
+  [STATION_IDS.tokyu.kaminoge]: new StationInfo('上野毛'),
 }

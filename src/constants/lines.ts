@@ -286,6 +286,8 @@ export const LINES = {
   //   kinds: [],
   //   stations: [],
   // },
+  // 都営地下鉄
+  [LINE_IDS.tokyo_subway.asakusa]: new Line('浅草線', '東京都営地下鉄', [], []),
   // // 京王電鉄
   // [LINE_IDS.keiou.keiou]: {
   //   name: '京王線',
@@ -302,6 +304,7 @@ export const LINES = {
   // 東急
   [LINE_IDS.tokyu.toyoko]: new Line('東横線', '東急電鉄', [], []),
   [LINE_IDS.tokyu.meguro]: new Line('目黒線', '東急電鉄', [], []),
+  [LINE_IDS.tokyu.ikegami]: new Line('池上線', '東急電鉄', [], []),
   [LINE_IDS.tokyu.tamagawa]: new Line('多摩川線', '東急電鉄', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.tokyu.tamagawa),
     new StopStationDef(STATION_IDS.tokyu.numabe),
@@ -345,4 +348,24 @@ export const LINES = {
       new StopStationDef(STATION_IDS.tokyu.tsukimino, ["semi-express"]),
       new StopStationDef(STATION_IDS.odakyu.chuorinkan, ["express","semi-express"]),
   ]),
+  [LINE_IDS.tokyu.oimachi]: new Line('大井町線', '東急電鉄', [new KindDef("急行・準急", "express")], [
+    new StopStationDef(STATION_IDS.jr_east.oimachi, ["express"]),
+    new StopStationDef(STATION_IDS.tokyu.shimoshinmei),
+    new StopStationDef(STATION_IDS.tokyu.togoshikouen),
+    new StopStationDef(STATION_IDS.tokyu.nakanobe),
+    new StopStationDef(STATION_IDS.tokyu.ebaracho),
+    new StopStationDef(STATION_IDS.tokyu.hatanodai, ["express"]),
+    new StopStationDef(STATION_IDS.tokyu.kitasenzoku),
+    new StopStationDef(STATION_IDS.tokyu.ookayama, ["express"]),
+    new StopStationDef(STATION_IDS.tokyu.midorigaoka),
+    new StopStationDef(STATION_IDS.tokyu.jiyugaoka, ["express"]),
+    new StopStationDef(STATION_IDS.tokyu.kuhonbutsu),
+    new StopStationDef(STATION_IDS.tokyu.oyamadai),
+    new StopStationDef(STATION_IDS.tokyu.todoroki),
+    new StopStationDef(STATION_IDS.tokyu.kaminoge),
+    new StopStationDef(STATION_IDS.tokyu.futakotamagawa, ["express"]),
+    new StopStationDef(STATION_IDS.jr_east.mizonokuchi),
+  ]),
+  /** 臨海線 */
+  [LINE_IDS.toukyo_rinkai_kousoku.rinkai]: new Line('りんかい線', '東京臨海高速鉄道', [], []),
 }
