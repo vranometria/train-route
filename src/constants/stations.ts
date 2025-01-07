@@ -131,7 +131,12 @@ export const STATIONS = {
     ],
   ),
   [STATION_IDS.jr_east.ebisu]: new StationInfo('恵比寿', [LINE_IDS.jr_east.saikyou]),
-  [STATION_IDS.jr_east.meguro]: new StationInfo('目黒', []),
+  [STATION_IDS.jr_east.meguro]: new StationInfo('目黒', [
+    LINE_IDS.tokyu.meguro,
+    LINE_IDS.jr_east.yamanote,
+    LINE_IDS.tokyo_metro.nanboku,
+    LINE_IDS.tokyo_subway.mita,
+  ]),
   [STATION_IDS.jr_east.gotanda]: new StationInfo('五反田', []),
   [STATION_IDS.jr_east.osaki]: new StationInfo('大崎', [LINE_IDS.jr_east.saikyou, LINE_IDS.jr_east.yamanote]),
   [STATION_IDS.jr_east.uguisudani] : new StationInfo('鶯谷', [LINE_IDS.jr_east.yamanote]),
@@ -240,6 +245,13 @@ export const STATIONS = {
     LINE_IDS.jr_east.nanbu,
     LINE_IDS.tokyu.oimachi,
     LINE_IDS.tokyu.denentoshi,
+  ]),
+  [STATION_IDS.jr_east.musashikosugi]: new StationInfo('武蔵小杉', [
+    LINE_IDS.tokyu.toyoko,
+    LINE_IDS.tokyu.meguro,
+    LINE_IDS.jr_east.nanbu,
+    LINE_IDS.jr_east.yokosuka,
+    LINE_IDS.jr_east.shonan_shinjuku,
   ]),
 
   // 相模鉄道
@@ -368,4 +380,21 @@ export const STATIONS = {
   [STATION_IDS.tokyu.oyamadai]: new StationInfo('尾山台'),
   [STATION_IDS.tokyu.todoroki]: new StationInfo('等々力'),
   [STATION_IDS.tokyu.kaminoge]: new StationInfo('上野毛'),
+  // 目黒線
+  [STATION_IDS.tokyu.fudomae]: new StationInfo('不動前'),
+  [STATION_IDS.tokyu.musashikoyama]: new StationInfo('武蔵小山'),
+  [STATION_IDS.tokyu.nishikoyama]: new StationInfo('西小山'),
+  [STATION_IDS.tokyu.senzoku]: new StationInfo('洗足'),
+  [STATION_IDS.tokyu.okuzawa]: new StationInfo('奥沢'),
+  [STATION_IDS.tokyu.denenchohu]: new StationInfo('田園調布', [
+    LINE_IDS.tokyu.denentoshi,
+    LINE_IDS.tokyu.toyoko,
+  ]),
+  [STATION_IDS.tokyu.shinmaruko]: new StationInfo('新丸子'),
+  [STATION_IDS.tokyu.motosumiyoshi]: new StationInfo('元住吉'),
+  [STATION_IDS.tokyu.hiyoshi]: new StationInfo('日吉', [
+    LINE_IDS.tokyu.toyoko,
+    LINE_IDS.tokyu.shinyokohama,
+    LINE_IDS.yokohama_shieichikatetsu.green_line,
+  ]),
 }

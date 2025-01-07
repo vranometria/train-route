@@ -11,6 +11,8 @@ export const LINE_IDS = {
     takasaki: 'jr-takasaki',
     /** 湘南新宿ライン */
     shonan_shinjuku: 'jr-sho-nan_shinjuku',
+    /** 横須賀線 */
+    yokosuka: 'jr-yokosuka',
     // "埼京線",
     saikyou: 'jr-saikyou',
     // "川越線",
@@ -76,6 +78,8 @@ export const LINE_IDS = {
     hanzoumon: 'tokyo-metro-hanzoumon',
     /** 副都心線 */
     hukutoshin: 'tokyo-metro-hukutoshin',
+    /** 南北線 */
+    nanboku: 'tokyo-metro-nanboku',
   },
   /** 東京都交通局 */
   tokyo_koutsu_kyoku: {
@@ -86,7 +90,10 @@ export const LINE_IDS = {
   },
   /** 東京都営地下鉄 */
   tokyo_subway: {
+    /** 浅草線 */
     asakusa: 'toei-asakusa',
+    /** 三田線 */
+    mita: 'toei-mita',
   },
   /** 相模鉄道 */
   sagami: {
@@ -122,6 +129,7 @@ export const LINE_IDS = {
     kodomonokuni: "keikyu-kodomonokuni",
     oimachi: "tokyu-oimachi",
     setagaya: "tokyu-setagaya",
+    shinyokohama: "tokyu-shinyokohama",
   },
   /** 横浜市営地下鉄 */
   yokohama_shieichikatetsu: {
@@ -479,5 +487,15 @@ export const STATION_IDS = {
     oyamadai: "oyamadai",
     todoroki: "todoroki",
     kaminoge: "kaminoge",
+    // 目黒線
+    fudomae: "fudomae",
+    musashikoyama: "musashikoyama",
+    nishikoyama: "nishikoyama",
+    senzoku: "senzoku",
+    okuzawa: "okuzawa",
+    denenchohu: "denenchohu",
+    shinmaruko: "shinmaruko",
+    motosumiyoshi: "motosumiyoshi",
+    hiyoshi: "hiyoshi",
   }
 };

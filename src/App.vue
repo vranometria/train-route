@@ -9,7 +9,7 @@ import { LINE_IDS } from '@/constants/ids'
       <nav>
         JR東日本
         <div>
-          <RouterLink :to="{name: 'line', params: {id: 'jr-keihintouhoku'}}" >京浜東北線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.tokaido}}" >京浜東北線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: 'jr-yamanote'}}" >山手線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: 'jr-yokohama'}}" >横浜線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: 'jr-negishi'}}" >根岸線</RouterLink>
@@ -26,6 +26,7 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyu.denentoshi}}">田園都市線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyu.tamagawa}}">多摩川線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyu.oimachi}}">大井町線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyu.meguro}}">目黒線</RouterLink>
         </div>
       </nav>
     </div>
