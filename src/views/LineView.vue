@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Exchange from '@/components/Exchange.vue';
 import { LineViewModel } from '@/types/line-view-model';
+import { getUnderlay } from '@/util';
   import { watch, ref } from 'vue';
   import { useRoute } from 'vue-router';
   const route = useRoute();
@@ -11,11 +12,14 @@ import { LineViewModel } from '@/types/line-view-model';
     lineId.value = newId;
     model.value = new LineViewModel(newId);
   });
+
 </script>
 
 <template>
   <div>
     <h1>{{model.companyName}}・{{ model.lineName }}</h1>
+
+    <component :is="model.overlay" />
 
     <table>
       <thead>
@@ -36,6 +40,7 @@ import { LineViewModel } from '@/types/line-view-model';
         </tr>
       </tbody>
     </table>
+    <component :is="model.underlay" />
   </div>
 </template>
 

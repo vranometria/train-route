@@ -105,6 +105,7 @@ export const STATIONS = {
   [STATION_IDS.jr_east.yokohama]: new StationInfo('横浜', [
     LINE_IDS.jr_east.tokaido,
     LINE_IDS.jr_east.yokohama,
+    LINE_IDS.jr_east.keihin_touhoku,
     LINE_IDS.jr_east.negishi,
     LINE_IDS.sagami.honsen,
   ]),

@@ -9,7 +9,7 @@ import { LINE_IDS } from '@/constants/ids'
       <nav>
         JR東日本
         <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.tokaido}}" >京浜東北線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.keihin_touhoku}}" >京浜東北線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: 'jr-yamanote'}}" >山手線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: 'jr-yokohama'}}" >横浜線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: 'jr-negishi'}}" >根岸線</RouterLink>
