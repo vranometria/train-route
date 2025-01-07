@@ -1,18 +1,30 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import { LINE_IDS } from '@/constants/ids'
 </script>
 
 <template>
   <header>
     <div class="wrapper">
       <nav>
-        <RouterLink :to="{name: 'line', params: {id: 'jr-keihintouhoku'}}" >京浜東北線</RouterLink>
-        <RouterLink :to="{name: 'line', params: {id: 'jr-yamanote'}}" >山手線</RouterLink>
-        <RouterLink :to="{name: 'line', params: {id: 'jr-yokohama'}}" >横浜線</RouterLink>
-        <RouterLink :to="{name: 'line', params: {id: 'jr-negishi'}}" >根岸線</RouterLink>
+        JR東日本
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: 'jr-keihintouhoku'}}" >京浜東北線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: 'jr-yamanote'}}" >山手線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: 'jr-yokohama'}}" >横浜線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: 'jr-negishi'}}" >根岸線</RouterLink>
+        </div>
 
-        <RouterLink :to="{name: 'line', params: {id: 'sagami-honsen'}}">相鉄本線</RouterLink>
-        <RouterLink :to="{name: 'line', params: {id: 'odakyu-enoshima'}}">江ノ島線</RouterLink>
+        相模鉄道
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: 'sagami-honsen'}}">相鉄本線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: 'odakyu-enoshima'}}">江ノ島線</RouterLink>
+        </div>
+
+        東急電鉄
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyu.tamagawa}}">多摩川線</RouterLink>
+        </div>
       </nav>
     </div>
   </header>
@@ -75,6 +87,10 @@ nav a:first-of-type {
 
     padding: 1rem 0;
     margin-top: 1rem;
+  }
+
+  nav.div a {
+    display: block;
   }
 }
 </style>

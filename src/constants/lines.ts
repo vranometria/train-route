@@ -162,25 +162,13 @@ export const LINES = {
   //   kinds: [],
   //   stations: [],
   // },
-  // [LINE_IDS.jr_east.chuo]: {
-  //   name: '中央線',
-  //   company: 'JR東日本',
-  //   kinds: [],
-  //   stations: [],
-  // },
+  [LINE_IDS.jr_east.chuo]: new Line('中央線', 'JR東日本', [], []),
   [LINE_IDS.jr_east.shonan_shinjuku]: new Line('湘南新宿ライン', 'JR東日本', [], []),
-  // [LINE_IDS.jr_east.takasaki]: {
-  //   name: '高崎線',
-  //   company: 'JR東日本',
-  //   kinds: [],
-  //   stations: [],
-  // },
-  // [LINE_IDS.jr_east.utunomiya]: {
-  //   name: '宇都宮線',
-  //   company: 'JR東日本',
-  //   kinds: [],
-  //   stations: [],
-  // },
+  [LINE_IDS.jr_east.takasaki]: new Line('高崎線', 'JR東日本', [], []),
+  [LINE_IDS.jr_east.utunomiya]: new Line('宇都宮線', 'JR東日本', [], []),
+  [LINE_IDS.jr_east.musashino]: new Line('武蔵野線', 'JR東日本', [], []),
+  // [LINE_IDS.jr_east.keiyou]: new Line('京葉線', 'JR東日本', [], []),
+  [LINE_IDS.jr_east.nanbu]: new Line('南武線', 'JR東日本', [], []),
   // [LINE_IDS.jr_east.tokiwa]: {
   //   name: '常盤線',
   //   company: 'JR東日本',
@@ -311,4 +299,16 @@ export const LINES = {
   // },
   [LINE_IDS.enoshima.enoshima]: new Line('江ノ島電鉄線', '江ノ島電鉄', [], []),
   [LINE_IDS.shonam_monorail.shonan_monorail]: new Line('湘南モノレール', '湘南モノレール', [], []),
+  // 東急
+  [LINE_IDS.tokyu.toyoko]: new Line('東横線', '東急電鉄', [], []),
+  [LINE_IDS.tokyu.meguro]: new Line('目黒線', '東急電鉄', [], []),
+  [LINE_IDS.tokyu.tamagawa]: new Line('多摩川線', '東急電鉄', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.tokyu.tamagawa),
+    new StopStationDef(STATION_IDS.tokyu.numabe),
+    new StopStationDef(STATION_IDS.tokyu.unoki),
+    new StopStationDef(STATION_IDS.tokyu.simomaruko),
+    new StopStationDef(STATION_IDS.tokyu.musashishinden),
+    new StopStationDef(STATION_IDS.tokyu.yagutiwatashi),
+    new StopStationDef(STATION_IDS.jr_east.kamata),
+  ]),
 }

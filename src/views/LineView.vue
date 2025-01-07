@@ -14,29 +14,29 @@ import { LineViewModel } from '@/types/line-view-model';
 </script>
 
 <template>
-  <h1>{{model.companyName}}・{{ model.lineName }}</h1>
+  <div>
+    <h1>{{model.companyName}}・{{ model.lineName }}</h1>
 
-  <table>
-    <thead>
-      <tr>
-        <th>駅</th>
-        <th>乗り換え</th>
-        <th v-for="kind in model.kinds" :key="kind.prop" class="kind" :class="kind.prop">{{ kind.name }}</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="sta in model.stations" :key="lineId + sta.name" :id="sta.id">
-        <td>{{ sta.name }}</td>
-        <td>
-          <Exchange :station-id="sta.id" :exchange-line-ids="sta.getExchangeLineIds(lineId)" ></Exchange>
-        </td>
-        <td v-for="kind in model.kinds" :key="kind.prop" :class="sta.kinds[kind.prop]" class="kind">
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <RouterLink :to="{name: 'line', params: {id:'yamanote'}}">山の手</RouterLink>
+    <table>
+      <thead>
+        <tr>
+          <th>駅</th>
+          <th>乗り換え</th>
+          <th v-for="kind in model.kinds" :key="kind.prop" class="kind" :class="kind.prop">{{ kind.name }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="sta in model.stations" :key="lineId + sta.name" :id="sta.id">
+          <td>{{ sta.name }}</td>
+          <td>
+            <Exchange :station-id="sta.id" :exchange-line-ids="sta.getExchangeLineIds(lineId)" ></Exchange>
+          </td>
+          <td v-for="kind in model.kinds" :key="kind.prop" :class="sta.kinds[kind.prop]" class="kind">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </template>
 
 <style scoped>

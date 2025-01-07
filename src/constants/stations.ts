@@ -84,7 +84,11 @@ export const STATIONS = {
   ]),
   [STATION_IDS.jr_east.oimachi]: new StationInfo('大井町', []),
   [STATION_IDS.jr_east.omori]: new StationInfo('大森', []),
-  [STATION_IDS.jr_east.kamata]: new StationInfo('蒲田', []),
+  [STATION_IDS.jr_east.kamata]: new StationInfo('蒲田', [
+    LINE_IDS.jr_east.keihin_touhoku,
+    LINE_IDS.tokyu.tamagawa,
+    LINE_IDS.tokyu.ikegami,
+  ]),
   [STATION_IDS.jr_east.kawasaki]: new StationInfo('川崎', [
     LINE_IDS.jr_east.tokaido,
     LINE_IDS.jr_east.keihin_touhoku,
@@ -274,4 +278,16 @@ export const STATIONS = {
   [STATION_IDS.odakyu.honkugenuma]: new StationInfo('本鵠沼', []),
   [STATION_IDS.odakyu.kugenumakaigan]: new StationInfo('鵠沼海岸', []),
   [STATION_IDS.odakyu.kataseenoshima]: new StationInfo('片瀬江ノ島', []),
+  // 東急
+  // ＞多摩川線
+  [STATION_IDS.tokyu.tamagawa]: new StationInfo('多摩川', [
+    LINE_IDS.tokyu.tamagawa,
+    LINE_IDS.tokyu.toyoko,
+    LINE_IDS.tokyu.meguro,
+  ]),
+  [STATION_IDS.tokyu.numabe]: new StationInfo('沼部', []),
+  [STATION_IDS.tokyu.unoki]: new StationInfo('鵜の木', []),
+  [STATION_IDS.tokyu.simomaruko]: new StationInfo('下丸子', []),
+  [STATION_IDS.tokyu.musashishinden]: new StationInfo('武蔵新田', []),
+  [STATION_IDS.tokyu.yagutiwatashi]: new StationInfo('矢口渡', []),
 }
