@@ -53,6 +53,22 @@ export const LINE_IDS = {
     uchibou: 'jr-uchibou',
     /** 外房線 */
     sotobou: 'jr-sotobou',
+    /** 上越線 */
+    jouetsu: 'jr-jouetsu',
+    /** 両毛線 */
+    ryomo: 'jr-ryomo',
+    /** 吾妻線 */
+    agatsuma: 'jr-agatsuma',
+    /** 信越本線 */
+    shinetsu_honsen: 'jr-shinetsu-honsen',
+    /** 弥彦線 */
+    yahiko: 'jr-yahiko',
+    /** 磐越西線 */
+    banetsusai: 'jr-banetsusai',
+    /** 白新線 */
+    hakushin: 'jr-hakushin',
+    /** 越後線 */
+    echigo: 'jr-echigo',
 
     shinkansen: {
       // 東海道新幹線
@@ -196,7 +212,19 @@ export const LINE_IDS = {
   /** 東葉高速鉄道 */
   toyo_kousoku: {
     toyo_kousoku: 'toyo-kousoku-toyo-kousoku',
-  }
+  },
+  /** 北越急行 */
+  hokuetsu_kyuko: {
+    hokuhoku: "hokuhoku",
+  },
+  /** 秩父鉄道 */
+  chichibu: {
+    chichibu: 'chichibu-chichibu',
+  },
+  /** 上信電鉄 */
+  joushin: {
+    joushin: 'joushin-joushin',
+  },
 };
 
 /** 駅ID */
@@ -443,7 +471,6 @@ export const STATION_IDS = {
     higashimatsudo: "higashimatsudo",
     ichikawaono: "ichikawaono",
     hunabashihouten: "hunabashihouten",
-    nishihunabashi: "nishihunabashi",
     minamihunabashi: "minamihunabashi",
     shinnarashino: "shinnarashino",
     makuharitoyosuna: "makuharitoyosuna",
@@ -485,6 +512,15 @@ export const STATION_IDS = {
     yaho: "yaho",
     yakawa: "yakawa",
     nishikunitachi: "nishikunitachi",
+    //上越新幹線
+    honjo_waseda: "honjo_waseda",
+    joumoukougen: "joumoukougen",
+    echigo_yuzawa: "echigo_yuzawa",
+    gala_yuzawa: "gala-yuzawa",
+    urasa: "urasa",
+    nagaoka: "nagaoka",
+    tsubame_sanjo: "tsubame-sanjo",
+    niigata: "niigata",
   },
   /** 相模鉄道 */
   sagami: {

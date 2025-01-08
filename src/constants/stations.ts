@@ -17,11 +17,18 @@ export const STATIONS = {
     LINE_IDS.jr_east.shinkansen.hokuriku,// 北陸新幹線
     LINE_IDS.toubu.urban_park_line,// "東武アーバンパークライン",
     LINE_IDS.saitama_shintoshi.new_shuttle,// ニューシャトル
-  ]),
+  ], "おおみや"),
   [STATION_IDS.jr_east.saitama_shintoshin]: new StationInfo('さいたま新都心',[]),
   [STATION_IDS.jr_east.yono]: new StationInfo('与野', []),
   [STATION_IDS.jr_east.kitaurawa]: new StationInfo('北浦和', []),
-  [STATION_IDS.jr_east.ueno]: new StationInfo('上野', []),
+  [STATION_IDS.jr_east.ueno]: new StationInfo('上野', [
+    LINE_IDS.jr_east.yamanote,
+    LINE_IDS.jr_east.tokiwa,
+    LINE_IDS.jr_east.takasaki,
+    LINE_IDS.jr_east.utunomiya,
+    LINE_IDS.jr_east.keihin_touhoku,
+    LINE_IDS.tokyo_metro.hibiya,
+  ], "うえの"),
   [STATION_IDS.jr_east.tabata]: new StationInfo('田端', []),
   [STATION_IDS.jr_east.urawa]: new StationInfo('浦和', []),
   [STATION_IDS.jr_east.minami_urawa]: new StationInfo('南浦和', []),
@@ -477,19 +484,37 @@ export const STATIONS = {
   [STATION_IDS.jr_east.manazuru]: new StationInfo('真鶴', []),
   [STATION_IDS.jr_east.yugawara ]: new StationInfo('湯河原', []),
   [STATION_IDS.jr_east.atami]: new StationInfo('熱海', []),
+  // 湘南新宿ライン
+  /** 熊谷 */
+  [STATION_IDS.jr_east.kumagaya]: new StationInfo('熊谷', [
+    LINE_IDS.jr_east.takasaki,
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.shinkansen.hokuriku,
+    LINE_IDS.chichibu.chichibu
+  ], "くまがや"),
+  /** 高崎 */
+  [STATION_IDS.jr_east.takasaki]: new StationInfo('高崎', [
+    LINE_IDS.jr_east.takasaki,
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.shinkansen.jouetsu,
+    LINE_IDS.jr_east.jouetsu,
+    LINE_IDS.jr_east.ryomo,
+    LINE_IDS.jr_east.agatsuma,
+    LINE_IDS.joushin.joushin,
+  ], "たかさき"),
   // 南武線
   [STATION_IDS.jr_east.mizonokuchi]: new StationInfo('溝の口', [
     LINE_IDS.jr_east.nanbu,
     LINE_IDS.tokyu.oimachi,
     LINE_IDS.tokyu.denentoshi,
-  ]),
+  ], "みぞのくち"),
   [STATION_IDS.jr_east.musashikosugi]: new StationInfo('武蔵小杉', [
     LINE_IDS.tokyu.toyoko,
     LINE_IDS.tokyu.meguro,
     LINE_IDS.jr_east.nanbu,
     LINE_IDS.jr_east.yokosuka,
     LINE_IDS.jr_east.shonan_shinjuku,
-  ]),
+  ], "むさしこすぎ"),
 
   // 相模鉄道
   // ＞本線
@@ -634,4 +659,47 @@ export const STATIONS = {
     LINE_IDS.tokyu.shinyokohama,
     LINE_IDS.yokohama_shieichikatetsu.green_line,
   ]),
+  // 上越新幹線
+  /** 本庄早稲田 */
+  [STATION_IDS.jr_east.honjo_waseda]: new StationInfo('本庄早稲田', [
+    LINE_IDS.jr_east.shinkansen.jouetsu,
+    LINE_IDS.jr_east.shinkansen.hokuriku,
+  ], "ほんじょうわせだ"),
+  /** 上毛高原 */
+  [STATION_IDS.jr_east.joumoukougen]: new StationInfo('上毛高原', [
+    LINE_IDS.jr_east.shinkansen.jouetsu,
+    LINE_IDS.jr_east.shinkansen.hokuriku,
+  ], "じょうもうこうげん"),
+  /** 越後湯沢 */
+  [STATION_IDS.jr_east.echigo_yuzawa]: new StationInfo('越後湯沢', [
+    LINE_IDS.jr_east.shinkansen.jouetsu,
+    LINE_IDS.jr_east.jouetsu,
+    LINE_IDS.hokuetsu_kyuko.hokuhoku,
+  ], "えちごゆざわ"),
+  /** ガーラ湯沢 */
+  [STATION_IDS.jr_east.gala_yuzawa]: new StationInfo('ガーラ湯沢', [], "がーらゆざわ"),
+  /** 浦佐 */
+  [STATION_IDS.jr_east.urasa]: new StationInfo('浦佐', [
+    LINE_IDS.jr_east.jouetsu,
+    LINE_IDS.jr_east.shinkansen.jouetsu,
+  ], "うらさ"),
+  /** 長岡 */
+  [STATION_IDS.jr_east.nagaoka]: new StationInfo('長岡', [
+    LINE_IDS.jr_east.jouetsu,
+    LINE_IDS.jr_east.shinetsu_honsen,
+    LINE_IDS.jr_east.shinkansen.jouetsu,
+  ], "ながおか"),
+  /** 燕三条 */
+  [STATION_IDS.jr_east.tsubame_sanjo]: new StationInfo('燕三条', [
+    LINE_IDS.jr_east.yahiko,
+    LINE_IDS.jr_east.shinkansen.jouetsu,
+  ], "つばめさんじょう"),
+  /** 新潟 */
+  [STATION_IDS.jr_east.niigata]: new StationInfo('新潟', [
+    LINE_IDS.jr_east.shinkansen.jouetsu,
+    LINE_IDS.jr_east.banetsusai,
+    LINE_IDS.jr_east.hakushin,
+    LINE_IDS.jr_east.shinetsu_honsen,
+    LINE_IDS.jr_east.echigo,
+  ], "にいがた"),
 }
