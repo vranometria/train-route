@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import Exchange from '@/components/Exchange.vue';
-import { LineViewModel } from '@/types/line-view-model';
-import { getUnderlay } from '@/util';
+  import Exchange from '@/components/Exchange.vue';
+  import { LineViewModel } from '@/types/line-view-model';
   import { watch, ref } from 'vue';
   import { useRoute } from 'vue-router';
   const route = useRoute();

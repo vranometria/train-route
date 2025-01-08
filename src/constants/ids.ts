@@ -23,18 +23,28 @@ export const LINE_IDS = {
     tokiwa: 'jr-tokiwa',
     /** 中央線 */
     chuo: 'jr-chuo',
+    /** 中央本線 */
+    chuo_honsen: 'jr-chuo-honsen',
+    /** 総武線 */
+    sobu: 'jr-sobu',
     /** 東海道本線 */
     tokaido: 'jr-tokaido',
     /** 横浜線 */
     yokohama: 'jr-yokohama',
     /** 根岸線 */
     negishi: 'jr-negishi',
-    /**横須賀線 */
-    yokosuka: 'jr-yokosuka',
     /** 南武線 */
     nanbu: 'jr-nanbu',
     /** 武蔵野線 */
     musashino: 'jr-musashino',
+    /** 青梅線 */
+    oume: 'jr-oume',
+    /** 八高線 */
+    hachiko: 'jr-hachiko',
+    /** 鹿島線 */
+    kashima: 'jr-kashima',
+    /** 成田線 */
+    narita: 'jr-narita',
 
     shinkansen: {
       // 東海道新幹線
@@ -80,6 +90,10 @@ export const LINE_IDS = {
     hukutoshin: 'tokyo-metro-hukutoshin',
     /** 南北線 */
     nanboku: 'tokyo-metro-nanboku',
+    /** 東西線 */
+    touzai: 'tokyo-metro-touzai',
+    /** 有楽町線 */
+    yurakucho: 'tokyo-metro-yurakucho',
   },
   /** 東京都交通局 */
   tokyo_koutsu_kyoku: {
@@ -118,6 +132,8 @@ export const LINE_IDS = {
     keioushinsen: 'keiou-keioushinsen',
     /** 井の頭線 */
     inogashira: 'keiou-inogashira',
+    /** 高尾線 */
+    takao: 'keiou-takao',
   },
   /** 東急電鉄 */
   tokyu: {
@@ -140,7 +156,17 @@ export const LINE_IDS = {
   toukyo_rinkai_kousoku: {
     /** りんかい線 */
     rinkai: 'toukyo-rinkai-kousoku-rinkai',
-  }
+  },
+  /** 西武鉄道 */
+  seibu: {
+    tamagawa: "seibu-tamagawa",
+    tamako: "seibu-tamako",
+    kokubunji: "seibu-kokubunji",
+  },
+  /** 多摩モノレール */
+  tama_monorail: {
+    tama_monorail: 'tama-monorail',
+  },
 }
 
 /** 駅ID */
@@ -250,8 +276,8 @@ export const STATION_IDS = {
     kouenji: 'kouenji',
     asagaya: 'asagaya',
     ogikubo: 'ogikubo',
-    nisiogikubo: 'nishiogikubo',
-    kisshouji: 'kisshouji',
+    nishiogikubo: 'nishiogikubo',
+    kichijoji: 'kichijoji',
     mitaka: 'mitaka',
     musashisakai: 'musashisakai',
     higashikoganei: 'higashikoganei',
@@ -497,5 +523,5 @@ export const STATION_IDS = {
     shinmaruko: "shinmaruko",
     motosumiyoshi: "motosumiyoshi",
     hiyoshi: "hiyoshi",
-  }
+  },
 };
