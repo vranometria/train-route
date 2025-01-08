@@ -98,6 +98,8 @@ export const LINE_IDS = {
     urban_park_line: 'toubu-urban-park-line',
     /** 亀戸線 */
     kameido: 'toubu-kameido',
+    /** 東上線 */
+    toujou: 'toubu-toujou',
   },
   saitama_shintoshi: {
     // ニューシャトル
@@ -121,6 +123,8 @@ export const LINE_IDS = {
     touzai: 'tokyo-metro-touzai',
     /** 有楽町線 */
     yurakucho: 'tokyo-metro-yurakucho',
+    /** 副都心線 */
+    fukutoshin: 'tokyo-metro-fukutoshin',
   },
   /** 東京都交通局 */
   tokyo_koutsu_kyoku: {
@@ -198,6 +202,7 @@ export const LINE_IDS = {
     tamagawa: "seibu-tamagawa",
     tamako: "seibu-tamako",
     kokubunji: "seibu-kokubunji",
+    ikebukuro: "seibu-ikebukuro",
   },
   /** 多摩モノレール */
   tama_monorail: {
@@ -272,6 +277,18 @@ export const STATION_IDS = {
     sugamo: 'sugamo',
     otsuka: 'otsuka',
     ikebukuro: 'ikebukuro',
+    itabashi: 'itabashi',
+    jujo: 'jujo',
+    kitaakahane: 'kita-akahane',
+    ukimafunado: 'ukima-funado',
+    todakouen: 'todakouen',
+    toda: 'toda',
+    kitatoda: 'kitatoda',
+    musashiurawa: 'musashiurawa',
+    nakaurawa: 'nakaurawa',
+    minamiyono: "minamiyono",
+    yonohonmachi: "yonohonmachi",
+    kitayono: "kitayono",
     mejiro: 'mejiro',
     takadanobaba: 'takadanobaba',
     shinokubo: 'shinokubo',

@@ -7,7 +7,7 @@ export class StationModel {
   name: string
   kinds: { [key: string]: string } = {};
   lines: ExchangeLineModel[]
-  pronunciation: string;
+  pronunciation: string = "";
 
   constructor(stopStationDef: StopStationDef){
     this.id = stopStationDef.id;
@@ -16,11 +16,11 @@ export class StationModel {
     if(sta){
       this.name = sta.name;
       this.lines = sta.lineIds.map((lineId:string) => new ExchangeLineModel(lineId));
+      this.pronunciation = sta.pronunciation;
     }else {
       this.name = "ID未定義の駅-" + this.id;
       this.lines = [];
     }
-    this.pronunciation = sta.pronunciation;
   }
 
   getExchangeLineIds = (sourceLineId:string):string[] => this.lines.map(n => n.id).filter(n => n!==sourceLineId);
