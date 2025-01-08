@@ -27,6 +27,10 @@ export const LINE_IDS = {
     chuo_honsen: 'jr-chuo-honsen',
     /** 総武線 */
     sobu: 'jr-sobu',
+    /** 総武線快速 */
+    sobu_kaisoku: 'jr-sobu-kaisoku',
+    /** 総武本線 */
+    sobu_honsen: 'jr-sobu-honsen',
     /** 東海道本線 */
     tokaido: 'jr-tokaido',
     /** 横浜線 */
@@ -45,6 +49,10 @@ export const LINE_IDS = {
     kashima: 'jr-kashima',
     /** 成田線 */
     narita: 'jr-narita',
+    /** 内房線 */
+    uchibou: 'jr-uchibou',
+    /** 外房線 */
+    sotobou: 'jr-sotobou',
 
     shinkansen: {
       // 東海道新幹線
@@ -68,9 +76,12 @@ export const LINE_IDS = {
     honsen: "keikyu-honsen",
     haneda_kuko: "keikyu-haneda-kuko",
   },
+  /** 東武鉄道 */
   toubu: {
     // "東武アーバンパークライン",
     urban_park_line: 'toubu-urban-park-line',
+    /** 亀戸線 */
+    kameido: 'toubu-kameido',
   },
   saitama_shintoshi: {
     // ニューシャトル
@@ -98,9 +109,13 @@ export const LINE_IDS = {
   /** 東京都交通局 */
   tokyo_koutsu_kyoku: {
     /** 大江戸線 */
-    oedo: 'toeiooedo',
+    oedo: 'toei-ooedo',
     /** 新宿線 */
-    shinjuku: 'toeishinjuku',
+    shinjuku: 'toei-shinjuku',
+    /** 三田線 */
+    mita: 'toei-mita',
+    /** 浅草線 */
+    asakusa: 'toei-asakusa',
   },
   /** 東京都営地下鉄 */
   tokyo_subway: {
@@ -108,6 +123,11 @@ export const LINE_IDS = {
     asakusa: 'toei-asakusa',
     /** 三田線 */
     mita: 'toei-mita',
+  },
+  /** 首都圏新都市鉄道 */
+  shutoken_shintoshi: {
+    /** つくばエクスプレス */
+    tsukuba_express: 'shutoken-shintoshi-tsukuba-express',
   },
   /** 相模鉄道 */
   sagami: {
@@ -167,7 +187,17 @@ export const LINE_IDS = {
   tama_monorail: {
     tama_monorail: 'tama-monorail',
   },
-}
+  /** 京成電鉄 */
+  keisei: {
+    honsen: 'keisei-honsen',
+    hokusou: 'keisei-hokusou',
+    chiba: 'keisei-chiba',
+  },
+  /** 東葉高速鉄道 */
+  toyo_kousoku: {
+    toyo_kousoku: 'toyo-kousoku-toyo-kousoku',
+  }
+};
 
 /** 駅ID */
 export const STATION_IDS = {
@@ -290,6 +320,35 @@ export const STATION_IDS = {
     toyoda: 'toyoda',
     nishihachiouji: "nishihachiouji",
     takao: 'takao',
+    // 総武線
+    higashinakano: 'higashinakano',
+    okubo: 'okubo',
+    sendagaya: 'sendagaya',
+    shinanomachi: 'shinanomachi',
+    ichigaya: 'ichigaya',
+    iidabashi: 'iidabashi',
+    suidoubashi: 'suidobashi',
+    asakusabashi: 'asakusabashi',
+    ryogoku: 'ryogoku',
+    kinshicho: 'kinshicho',
+    kameido: 'kameido',
+    hirai: 'hirai',
+    shinkoiwa: 'shinkoiwa',
+    koiwa: 'koiwa',
+    ichikawa: 'ichikawa',
+    motoyawata: 'motoyawata',
+    shimousa_nakayama: 'shimousa-nakayama',
+    nishifunabashi: 'nishifunabashi',
+    funabashi: 'funabashi',
+    nishihunabashi: 'nishihunabashi',
+    higashi_funabashi: 'higashi-funabashi',
+    tsudanuma: 'tsudanuma',
+    makuharihongou: 'makuharihongou',
+    makuhari: 'makuhari',
+    shinkemigawa: 'shinkemigawa',
+    inage: 'inage',
+    nishichiba: 'nishichiba',
+    chiba: 'chiba',
     // 高崎線
     oku: 'oku',
     miyahara: 'miyahara',
