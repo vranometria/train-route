@@ -1,9 +1,11 @@
 export class StationInfo {
   name: string
   lineIds: string[]
-  constructor(name: string, lineIds?: string[]){
+  pronunciation: string
+
+  constructor(name: string, lineIds?: string[], pronunciation?: string){
     this.name = name;
     this.lineIds = lineIds ? lineIds : [];
-    if(!lineIds){ this.lineIds = [] }
+    this.pronunciation = pronunciation ? pronunciation : name;
   }
 }

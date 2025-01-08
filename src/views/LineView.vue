@@ -12,38 +12,58 @@
     model.value = new LineViewModel(newId);
   });
 
+  const changeDistination = (event: Event) => {
+    const target = event.target as HTMLSelectElement;
+    const distStationId = target.value;
+    const elements = Array.from(document.getElementsByClassName("distination"));
+    elements.forEach(e => e.classList.remove("distination"));
+    const td = document.querySelector(`#${distStationId} .station-name`) as HTMLElement;
+    td.classList.add("distination");
+  }
+
 </script>
 
 <template>
-  <div>
-    <h1>{{model.companyName}}・{{ model.lineName }}</h1>
-
-    <component :is="model.overlay" />
-
-    <table>
-      <thead>
-        <tr>
-          <th>駅</th>
-          <th>乗り換え</th>
-          <th v-for="kind in model.kinds" :key="kind.prop" class="kind" :class="kind.prop">{{ kind.name }}</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="sta in model.stations" :key="lineId + sta.name" :id="sta.id">
-          <td>{{ sta.name }}</td>
-          <td>
-            <Exchange :station-id="sta.id" :exchange-line-ids="sta.getExchangeLineIds(lineId)" ></Exchange>
-          </td>
-          <td v-for="kind in model.kinds" :key="kind.prop" :class="sta.kinds[kind.prop]" class="kind">
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <component :is="model.underlay" />
+  <div class="container">
+    <div class="pane">
+      <h1>{{model.companyName}}・{{ model.lineName }}</h1>
+      <component :is="model.overlay" />
+      <table>
+        <thead>
+          <tr>
+            <th>駅</th>
+            <th>乗り換え</th>
+            <th v-for="kind in model.kinds" :key="kind.prop" class="kind" :class="kind.prop">{{ kind.name }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="sta in model.stations" :key="lineId + sta.name" :id="sta.id">
+            <td class="station-name">{{ sta.name }}</td>
+            <td>
+              <Exchange :station-id="sta.id" :exchange-line-ids="sta.getExchangeLineIds(lineId)" ></Exchange>
+            </td>
+            <td v-for="kind in model.kinds" :key="kind.prop" :class="sta.kinds[kind.prop]" class="kind">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <component :is="model.underlay" />
+    </div>
+    <div class="right-pane">
+      <h2>行き先</h2>
+      <select v-on:change="changeDistination($event)">
+        <option value=""> - </option>
+        <option v-for="dist in model.distinationList" :key="dist.id" :value="dist.id">{{ dist.name }}</option>
+      </select>
+    </div>
   </div>
 </template>
 
 <style scoped>
+.container {
+  display: flex;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -88,5 +108,8 @@ th.express {
   background-color: yellow;
 }
 
+.distination {
+  color: red;
+}
 
 </style>
