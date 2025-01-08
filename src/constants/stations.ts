@@ -136,6 +136,12 @@ export const STATIONS = {
     LINE_IDS.jr_east.sobu,
     LINE_IDS.jr_east.sobu_kaisoku,
   ], "しんこいわ"),
+  /** 馬喰町 */
+  [STATION_IDS.jr_east.bakurocho]: new StationInfo('馬喰町', [
+    LINE_IDS.jr_east.sobu_kaisoku,
+    LINE_IDS.tokyo_koutsu_kyoku.asakusa,
+    LINE_IDS.tokyo_koutsu_kyoku.shinjuku,
+  ], "ばくろちょう"),
   /** 平井(東京) */
   [STATION_IDS.jr_east.hirai]: new StationInfo('平井', [], "ひらい"),
   /** 亀戸 */
@@ -149,6 +155,8 @@ export const STATIONS = {
     LINE_IDS.jr_east.sobu_kaisoku,
     LINE_IDS.tokyo_metro.hanzoumon,
   ], "きんしちょう"),
+  /** 新日本橋 */
+  [STATION_IDS.jr_east.shinnihonbashi]: new StationInfo('新日本橋', [], "しんにほんばし"),
   /** 両国 */
   [STATION_IDS.jr_east.ryogoku]: new StationInfo('両国', [
     LINE_IDS.jr_east.sobu,

@@ -172,7 +172,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.nishihachiouji, ["rapid"]),
     new StopStationDef(STATION_IDS.jr_east.takao, ["rapid"]),
   ]),
-  [LINE_IDS.jr_east.sobu]: new Line('総武線', 'JR東日本', [], [
+  [LINE_IDS.jr_east.sobu]: new Line('総武線', 'JR東日本', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_east.mitaka, []),
     new StopStationDef(STATION_IDS.jr_east.kichijoji),
     new StopStationDef(STATION_IDS.jr_east.nishiogikubo),
@@ -212,6 +212,18 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.inage),
     new StopStationDef(STATION_IDS.jr_east.nishichiba),
     new StopStationDef(STATION_IDS.jr_east.chiba),
+  ]),
+  [LINE_IDS.jr_east.sobu_kaisoku]: new Line('総武快速線', 'JR東日本', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_east.chiba),
+    new StopStationDef(STATION_IDS.jr_east.inage),
+    new StopStationDef(STATION_IDS.jr_east.tsudanuma),
+    new StopStationDef(STATION_IDS.jr_east.funabashi),
+    new StopStationDef(STATION_IDS.jr_east.ichikawa),
+    new StopStationDef(STATION_IDS.jr_east.shinkoiwa),
+    new StopStationDef(STATION_IDS.jr_east.kinshicho),
+    new StopStationDef(STATION_IDS.jr_east.bakurocho),
+    new StopStationDef(STATION_IDS.jr_east.shinnihonbashi),
+    new StopStationDef(STATION_IDS.jr_east.tokyo),
   ]),
   [LINE_IDS.jr_east.yokosuka]: new Line('横須賀線', 'JR東日本', [], []),
   // [LINE_IDS.jr_east.kawagoe]: {

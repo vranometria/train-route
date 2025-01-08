@@ -349,6 +349,8 @@ export const STATION_IDS = {
     inage: 'inage',
     nishichiba: 'nishichiba',
     chiba: 'chiba',
+    bakurocho: 'bakurocho',
+    shinnihonbashi: 'shinnihonbashi',
     // 高崎線
     oku: 'oku',
     miyahara: 'miyahara',
