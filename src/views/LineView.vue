@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import Exchange from '@/components/Exchange.vue';
   import { LineViewModel } from '@/types/line-view-model';
-  import { watch, ref } from 'vue';
+  import { watch, ref, onUpdated } from 'vue';
   import { useRoute } from 'vue-router';
   const route = useRoute();
   const lineId = ref(route.params.id as string);
@@ -10,6 +10,16 @@
   watch( ()=>route.params.id as string, (newId:string) => {
     lineId.value = newId;
     model.value = new LineViewModel(newId);
+  });
+
+  onUpdated(() => {
+    if(route.hash){
+      const element = document.querySelector(route.hash) as HTMLElement;
+      if(element){
+        element.scrollIntoView({behavior: "smooth"});
+        element.getElementsByClassName("station-name")[0].classList.add("from");
+      }
+    }
   });
 
   const changeDistination = (event: Event) => {
@@ -112,4 +122,7 @@ th.express {
   color: red;
 }
 
+.from {
+  color: yellow;
+}
 </style>
