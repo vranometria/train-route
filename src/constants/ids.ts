@@ -466,6 +466,13 @@ export const STATION_IDS = {
     kamakura: "kamakura",
     zushi: "zushi",
 
+    // 横須賀線
+    higashizushi: 'higashizushi',
+    taura: 'taura',
+    yokosuka: 'yokosuka',
+    kinugasa: 'kinugasa',
+    kurihama: 'kurihama',
+
     // 南武線
     noborito: "noborito",
 
