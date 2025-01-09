@@ -41,6 +41,9 @@ export const LINE_IDS = {
     nanbu: 'jr-nanbu',
     /** 武蔵野線 */
     musashino: 'jr-musashino',
+    /** 相模線 */
+    sagami: 'jr-sagami',
+
     /** 青梅線 */
     oume: 'jr-oume',
     /** 八高線 */
@@ -125,6 +128,8 @@ export const LINE_IDS = {
     yurakucho: 'tokyo-metro-yurakucho',
     /** 副都心線 */
     fukutoshin: 'tokyo-metro-fukutoshin',
+    /** 千代田線 */
+    chiyoda: 'tokyo-metro-chiyoda',
   },
   /** 東京都交通局 */
   tokyo_koutsu_kyoku: {
@@ -154,9 +159,14 @@ export const LINE_IDS = {
     honsen: 'sagami-honsen',
     izumino: 'sagami-izumino',
   },
+  /** 小田急 */
   odakyu: {
+    /** 小田原線 */
     odawara: 'odakyu-odawara',
     enoshima: 'odakyu-enoshima',
+    tama: 'odakyu-tama',
+    /** 箱根登山線 */
+    hakonetozan: 'odakyu-hakonetozan',
   },
   // 江ノ島電鉄
   enoshima: {
@@ -171,7 +181,7 @@ export const LINE_IDS = {
     keiou: 'keiou-keiou',
     keioushinsen: 'keiou-keioushinsen',
     /** 井の頭線 */
-    inogashira: 'keiou-inogashira',
+    inokashira: 'keiou-inokashira',
     /** 高尾線 */
     takao: 'keiou-takao',
   },
@@ -229,6 +239,10 @@ export const LINE_IDS = {
   /** 上信電鉄 */
   joushin: {
     joushin: 'joushin-joushin',
+  },
+  /** 伊豆箱根鉄道 */
+  izuhakone: {
+    daiyuzan: 'izuhakone-daiyuzan',
   },
 };
 
@@ -448,6 +462,13 @@ export const STATION_IDS = {
     kitakamakura: "kitakamakura",
     kamakura: "kamakura",
     zushi: "zushi",
+
+    // 南武線
+    noborito: "noborito",
+
+    // 相模線
+    atsugi: "atsugi",
+
     // 宇都宮線
     doro: 'doro',
     /** 岡本(栃木) */
@@ -470,7 +491,6 @@ export const STATION_IDS = {
     higashitokorozawa: "higashitokorozawa",
     shinza: "shinza",
     kitaasaka: "kitaasaka",
-    musashiurawa: "musashiurawa",
     minamiurawa: "minamiurawa",
     higashiurawa: "higashiurawa",
     higashikawaguchi: "higashikawaguchi",
@@ -578,6 +598,50 @@ export const STATION_IDS = {
     honkugenuma: "honkugenuma",
     kugenumakaigan: "kugenumakaigan",
     kataseenoshima: "kataseenoshima",
+    // 小田原線
+    minamishinjuku: "minamishinjuku",
+    sangubashi: "sangubashi",
+    yoyogihachiman: "yoyogihachiman",
+    yoyogiuehara: "yoyogiuehara",
+    higashikitazawa: "higashikitazawa",
+    shimokitazawa: "shimokitazawa",
+    setagayadaita: "setagayadaita",
+    umegaoka: "umegaoka",
+    gotokuji: "gotokuji",
+    kyodo: "kyodo",
+    chitosefunabashi: "chitosefunabashi",
+    soshigayaokura: "soshigayaokura",
+    seijogakuenmae: "seijogakuenmae",
+    kitami: "kitami",
+    komae: "komae",
+    izumitamagawa: "izumitamagawa",
+    mukougaokayuen: "mukougaokayuen",
+    ikuta: "ikuta",
+    yomiuri_land_mae: "yomiuri-land-mae",
+    yurigaoka: "yurigaoka",
+    shinyurigaoka: "shinyurigaoka",
+    soubudaimae: "soubudaimae",
+    kakio: "kakio",
+    tsurukawa: "tsurukawa",
+    tamagawagakuenmae: "tamagawagakuenmae",
+    odakyusagamihara: "odakyusagamihara",
+    musashidaimae: "musashidaimae",
+    zama: "zama",
+    ebina: "ebina",
+    honatsugi: "honatsugi",
+    aikouishida: "aikouishida",
+    isehara: "isehara",
+    tsurumakionsen: "tsurumakionsen",
+    toukaidaigakumae: "toukaidaigakumae",
+    hadano: "hadano",
+    shibusawa: "shibusawa",
+    shinmatsuda: "shinmatsuda",
+    kaisei: "kaisei",
+    kayama: "kayama",
+    tomizu: "tomizu",
+    hotaruda: "hotaruda",
+    /** 足柄(神奈川) */
+    ashigara: "ashigara",
   },
   /** 東急電鉄 */
   tokyu: {

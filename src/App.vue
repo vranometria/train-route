@@ -33,6 +33,12 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyu.oimachi}}">大井町線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyu.meguro}}">目黒線</RouterLink>
         </div>
+
+        小田急電鉄
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: 'odakyu-odawara'}}">小田原線</RouterLink>
+          <!-- <RouterLink :to="{name: 'line', params: {id: 'odakyu-tama'}}">多摩線</RouterLink> -->
+        </div>
       </nav>
     </div>
   </header>
