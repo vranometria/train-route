@@ -327,10 +327,14 @@ export const STATIONS = {
     LINE_IDS.keikyu.honsen,
   ]),
   [STATION_IDS.jr_east.oimachi]: new StationInfo('大井町', [
+    LINE_IDS.jr_sotetsu_chokutsu,
+    LINE_IDS.jr_east.yokosuka,
+    LINE_IDS.jr_east.shonan_shinjuku,
+  ], "おおいまち"),
+  [STATION_IDS.jr_east.nishioi]: new StationInfo('西大井', [
     LINE_IDS.jr_east.keihin_touhoku,
     LINE_IDS.toukyo_rinkai_kousoku.rinkai,
-    LINE_IDS.tokyu.oimachi,
-  ]),
+  ], "にしおおい"),
   [STATION_IDS.jr_east.omori]: new StationInfo('大森', []),
   [STATION_IDS.jr_east.kamata]: new StationInfo('蒲田', [
     LINE_IDS.jr_east.keihin_touhoku,

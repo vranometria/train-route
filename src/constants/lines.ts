@@ -7,6 +7,26 @@ const LOCAL_ONLY:KindDef[] = [];
 
 /** 路線定義 */
 export const LINES = {
+  [LINE_IDS.jr_sotetsu_chokutsu]: new Line('相鉄直通線', 'JR東日本・相模鉄道', [], [
+    new StopStationDef(STATION_IDS.jr_east.shinjuku),
+    new StopStationDef(STATION_IDS.jr_east.shibuya),
+    new StopStationDef(STATION_IDS.jr_east.ebisu),
+    new StopStationDef(STATION_IDS.jr_east.osaki),
+    new StopStationDef(STATION_IDS.jr_east.nishioi),
+    new StopStationDef(STATION_IDS.jr_east.musashikosugi),
+    new StopStationDef(STATION_IDS.sagami.hazawayokohamakokudai),
+    new StopStationDef(STATION_IDS.sagami.nishiya),
+    new StopStationDef(STATION_IDS.sagami.tsurugamine),
+    new StopStationDef(STATION_IDS.sagami.futamatagawa),
+    new StopStationDef(STATION_IDS.sagami.kibougaoka),
+    new StopStationDef(STATION_IDS.sagami.mitsukyo),
+    new StopStationDef(STATION_IDS.sagami.seya),
+    new StopStationDef(STATION_IDS.odakyu.yamato),
+    new StopStationDef(STATION_IDS.odakyu.sagamiono),
+    new StopStationDef(STATION_IDS.sagami.sagamiotsuka),
+    new StopStationDef(STATION_IDS.sagami.kashiwadai),
+    new StopStationDef(STATION_IDS.sagami.ebina),
+  ]),
   [LINE_IDS.jr_east.tokaido]: new Line('東海道本線', 'JR東日本', [], [
     new StopStationDef(STATION_IDS.jr_east.tokyo, ["acty"]),
     new StopStationDef(STATION_IDS.jr_east.shinbashi, ["acty"]),
