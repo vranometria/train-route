@@ -246,6 +246,51 @@ export const LINE_IDS = {
   /** 伊豆箱根鉄道 */
   izuhakone: {
     daiyuzan: 'izuhakone-daiyuzan',
+    sunzu: "izuhakone-sunzu",
+  },
+  /** JR東海 */
+  jr_tokai: {
+    tenryuhamanako: 'jr-tokai-tenryuhamanako',
+    ida: 'jr-tokai-ida',
+    chuohonsen: 'jr-tokai-chuohonsen',
+    aonami: 'jr-tokai-aonami',
+    hokurikuhonsen: 'jr-tokai-hokurikuhonsen',
+  },
+  /** JR西日本 */
+  jr_west: {
+    kansai_honsen: 'jr-west-kansai-honsen',
+    saninhonsen: 'jr-west-saninhonsen',
+    nara: 'jr-west-nara',
+    osaka_higashi: 'jr-west-osaka-higashi',
+    shinkansen: {
+      sanyo: 'jr-west-sanyo-shinkansen',
+    }
+  },
+
+  /** 名古屋鉄道 */
+  nagoya: {
+    nagoyahonsen: 'nahoya-nagoyahonsen',
+  },
+  /** 名古屋市営交通 */
+  nagoya_shiei_subway: {
+    sakuradori: 'nagoya-shiei-subway-sakuradori',
+    higashiyama: 'nagoya-shiei-subway-higashiyama',
+  },
+  /** 近江鉄道 */
+  oumi: {
+    honsen: 'omi-honsen',
+  },
+  /** 京都市営地下鉄 */
+  kyoto_shiei_subway: {
+    karasuma: 'kyoto-shiei-subway-karasuma',
+  },
+  /** 近畿日本鉄道 */
+  kinki_nihon: {
+    kyoto: 'kinki-nihon-kyoto',
+  },
+  /** OsakaMetro */
+  osaka_metro: {
+    midosuji: 'osaka-metro-midosuji',
   },
 };
 
@@ -713,4 +758,18 @@ export const STATION_IDS = {
     motosumiyoshi: "motosumiyoshi",
     hiyoshi: "hiyoshi",
   },
+  jr_tokai: {
+    mishima: "mishima",
+    shinfuji: "jr-tokai-shinfuji",
+    shizuoka: "shizuoka",
+    kakegawa: "kakegawa",
+    hamamatsu: "hamamatsu",
+    toyohashi: "toyohashi",
+    mikawaanjo: "mikawaanjo",
+    nagoya: "nagoya",
+    gifuhashima: "gifuhashima",
+    maibara: "maibara",
+    kyoto: "kyoto",
+    shinosaka: "shin-osaka",
+  }
 };
