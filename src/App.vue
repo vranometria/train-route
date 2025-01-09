@@ -23,8 +23,8 @@ import { LINE_IDS } from '@/constants/ids'
 
         相模鉄道
         <div>
-          <RouterLink :to="{name: 'line', params: {id: 'sagami-honsen'}}">相鉄本線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: 'odakyu-enoshima'}}">江ノ島線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.sagami.honsen}}">相鉄本線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.sagami.sotetsushinyokohama}}">相鉄新横浜線</RouterLink>
         </div>
 
         東急電鉄
@@ -38,6 +38,7 @@ import { LINE_IDS } from '@/constants/ids'
         小田急電鉄
         <div>
           <RouterLink :to="{name: 'line', params: {id: 'odakyu-odawara'}}">小田原線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: 'odakyu-enoshima'}}">江ノ島線</RouterLink>
           <!-- <RouterLink :to="{name: 'line', params: {id: 'odakyu-tama'}}">多摩線</RouterLink> -->
         </div>
       </nav>

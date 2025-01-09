@@ -600,6 +600,10 @@ export const STATIONS = {
   [STATION_IDS.sagami.tennocho]: new StationInfo('天王町', []),
   [STATION_IDS.sagami.nishiyokohama]: new StationInfo('西横浜', []),
   [STATION_IDS.sagami.hiranumabashi]: new StationInfo('平沼橋', []),
+  [STATION_IDS.sagami.hazawayokohamakokudai]: new StationInfo('羽沢横浜国大', [
+    LINE_IDS.jr_sotetsu_chokutsu,
+    LINE_IDS.sagami.sotetsushinyokohama,
+  ], "はざわよこはまこくだい"),
 
   [STATION_IDS.sagami.sagamino]: new StationInfo('さがみ野', [], "さがみの"),
   // 小田急
@@ -807,14 +811,15 @@ export const STATIONS = {
   [STATION_IDS.tokyu.denenchohu]: new StationInfo('田園調布', [
     LINE_IDS.tokyu.denentoshi,
     LINE_IDS.tokyu.toyoko,
-  ]),
-  [STATION_IDS.tokyu.shinmaruko]: new StationInfo('新丸子'),
-  [STATION_IDS.tokyu.motosumiyoshi]: new StationInfo('元住吉'),
+  ], "でんえんちょうふ"),
+  [STATION_IDS.tokyu.shinmaruko]: new StationInfo('新丸子', [], "しんまるこ"),
+  [STATION_IDS.tokyu.motosumiyoshi]: new StationInfo('元住吉', [], "もとすみよし"),
   [STATION_IDS.tokyu.hiyoshi]: new StationInfo('日吉', [
     LINE_IDS.tokyu.toyoko,
     LINE_IDS.tokyu.shinyokohama,
     LINE_IDS.yokohama_shieichikatetsu.green_line,
-  ]),
+    LINE_IDS.jr_sotetsu_chokutsu,
+  ], "ひよし"),
   // 上越新幹線
   /** 本庄早稲田 */
   [STATION_IDS.jr_east.honjo_waseda]: new StationInfo('本庄早稲田', [

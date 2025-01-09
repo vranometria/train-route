@@ -1,6 +1,8 @@
 
 /** 路線ID */
 export const LINE_IDS = {
+  /** JR・相鉄直通線*/
+  jr_sotetsu_chokutsu: "jr-sotetsu-chokutsu",
   /** JR東日本 */
   jr_east: {
     /** 京浜東北線 */
@@ -158,6 +160,7 @@ export const LINE_IDS = {
   sagami: {
     honsen: 'sagami-honsen',
     izumino: 'sagami-izumino',
+    sotetsushinyokohama: 'sagami-sotetsushinyokohama',
   },
   /** 小田急 */
   odakyu: {
@@ -578,6 +581,7 @@ export const STATION_IDS = {
     tennocho: "tennocho",
     nishiyokohama: "nishiyokohama",
     hiranumabashi: "hiranumabashi",
+    hazawayokohamakokudai: "hazawayokohamakokudai",
   },
   /** 小田急電鉄 */
   odakyu: {

@@ -339,6 +339,11 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.yokohama, ["rapid", "express", "commuter"]),
     ]
   ),
+  [LINE_IDS.sagami.sotetsushinyokohama]: new Line('相鉄新横浜線', '相模鉄道', [], [
+    new StopStationDef(STATION_IDS.jr_east.shinyokohama),
+    new StopStationDef(STATION_IDS.sagami.hazawayokohamakokudai),
+    new StopStationDef(STATION_IDS.tokyu.hiyoshi),
+  ]),
   [LINE_IDS.sagami.izumino]: new Line('いずみ野線', '相模鉄道', [], []),
   // // 東京メトロ
   // [LINE_IDS.tokyo_metro.marunouchi]: {
