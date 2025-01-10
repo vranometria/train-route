@@ -54,6 +54,8 @@ export const LINE_IDS = {
     kashima: 'jr-kashima',
     /** 成田線 */
     narita: 'jr-narita',
+    /** 京葉線 */
+    keiyou: 'jr-keiyou',
     /** 内房線 */
     uchibou: 'jr-uchibou',
     /** 外房線 */
@@ -105,6 +107,8 @@ export const LINE_IDS = {
     kameido: 'toubu-kameido',
     /** 東上線 */
     toujou: 'toubu-toujou',
+    /** 伊勢崎線 */
+    isesaki: 'toubu-isesaki',
   },
   saitama_shintoshi: {
     // ニューシャトル
@@ -132,9 +136,11 @@ export const LINE_IDS = {
     fukutoshin: 'tokyo-metro-fukutoshin',
     /** 千代田線 */
     chiyoda: 'tokyo-metro-chiyoda',
+    /** 浅草線 */
+    asakusa: 'tokyo-metro-asakusa',
   },
-  /** 東京都交通局 */
-  tokyo_koutsu_kyoku: {
+  /** 東京都営地下鉄 */
+  tokyo_subway: {
     /** 大江戸線 */
     oedo: 'toei-ooedo',
     /** 新宿線 */
@@ -143,13 +149,6 @@ export const LINE_IDS = {
     mita: 'toei-mita',
     /** 浅草線 */
     asakusa: 'toei-asakusa',
-  },
-  /** 東京都営地下鉄 */
-  tokyo_subway: {
-    /** 浅草線 */
-    asakusa: 'toei-asakusa',
-    /** 三田線 */
-    mita: 'toei-mita',
   },
   /** 首都圏新都市鉄道 */
   shutoken_shintoshi: {
@@ -524,6 +523,9 @@ export const STATION_IDS = {
     // 相模線
     atsugi: "atsugi",
 
+    // 京葉線
+    hacchobori: "hacchobori",
+
     // 宇都宮線
     doro: 'doro',
     /** 岡本(栃木) */
@@ -613,6 +615,45 @@ export const STATION_IDS = {
     nagaoka: "nagaoka",
     tsubame_sanjo: "tsubame-sanjo",
     niigata: "niigata",
+  },
+  /** 東京メトロ */
+  tokyo_metro: {
+    /** 中目黒 */
+    nakameguro: 'nakameguro',
+    hiroo: 'hiroo',
+    roppongi: 'roppongi',
+    kamiyacho: 'kamiyacho',
+    toranomon_hills: 'toranomon-hills',
+    kasumigaseki: 'kasumigaseki',
+    hibiya: 'hibiya',
+    ginza: 'ginza',
+    higashiginza: 'higashi-ginza',
+    tsukiji: 'tsukiji',
+    kayabacho: 'kayabacho',
+    ningyocho: 'ningyocho',
+    kodenmacho: 'kodenmacho',
+    nakaokachimachi: 'naka-okachimachi',
+    iriya: 'iriya',
+    minowa: 'minowa',
+    minamisenju: 'minamisenju',
+    kitasenju: 'kitasenju',
+    shinotuka: 'shinotuka',
+    myogadani: 'myogadani',
+    kourakuen: 'kourakuen',
+    hongosanchome: 'hongosanchome',
+    awajicho: 'awajicho',
+    otemachi: 'otemachi',
+    kokkaigijidomae: 'kokkaigijidome',
+    akasakamitsuke: 'akasaka-mitsuke',
+    yotsuya_sanchome: 'yotsuya-sanchome',
+    shinjuku_gyoenmae: 'shinjuku-gyoenmae',
+    shinjuku_sanchome: 'shinjuku-sanchome',
+    nishishinjuku: 'nishishinjuku',
+    nakano_sakaue: 'nakano-sakaue',
+    shinnakano: 'shinnakano',
+    higashi_koenji: 'higashi-koenji',
+    shinkoenji: 'shinkoenji',
+    minamiasagaya: 'minamiasagaya',
   },
   /** 相模鉄道 */
   sagami: {

@@ -63,7 +63,7 @@ export const STATIONS = {
     LINE_IDS.jr_east.keihin_touhoku,
     LINE_IDS.tokyo_metro.hibiya,
     LINE_IDS.shutoken_shintoshi.tsukuba_express,
-    LINE_IDS.tokyo_koutsu_kyoku.shinjuku,
+    LINE_IDS.tokyo_subway.shinjuku,
   ],"あきはばら"),
   [STATION_IDS.jr_east.kanda]: new StationInfo('神田', [
     LINE_IDS.jr_east.yamanote, LINE_IDS.jr_east.chuo,
@@ -133,7 +133,7 @@ export const STATIONS = {
   /** 本八幡 */
   [STATION_IDS.jr_east.motoyawata]: new StationInfo('本八幡', [
     LINE_IDS.jr_east.sobu,
-    LINE_IDS.tokyo_koutsu_kyoku.shinjuku,
+    LINE_IDS.tokyo_subway.shinjuku,
     LINE_IDS.keisei.honsen,
   ], "もとやわた"),
   /** 市川 */
@@ -151,8 +151,8 @@ export const STATIONS = {
   /** 馬喰町 */
   [STATION_IDS.jr_east.bakurocho]: new StationInfo('馬喰町', [
     LINE_IDS.jr_east.sobu_kaisoku,
-    LINE_IDS.tokyo_koutsu_kyoku.asakusa,
-    LINE_IDS.tokyo_koutsu_kyoku.shinjuku,
+    LINE_IDS.tokyo_subway.asakusa,
+    LINE_IDS.tokyo_subway.shinjuku,
   ], "ばくろちょう"),
   /** 平井(東京) */
   [STATION_IDS.jr_east.hirai]: new StationInfo('平井', [], "ひらい"),
@@ -172,12 +172,12 @@ export const STATIONS = {
   /** 両国 */
   [STATION_IDS.jr_east.ryogoku]: new StationInfo('両国', [
     LINE_IDS.jr_east.sobu,
-    LINE_IDS.tokyo_koutsu_kyoku.oedo,
+    LINE_IDS.tokyo_subway.oedo,
   ], "りょうごく"),
   /** 浅草橋 */
   [STATION_IDS.jr_east.asakusabashi]: new StationInfo('浅草橋', [
     LINE_IDS.jr_east.sobu,
-    LINE_IDS.tokyo_koutsu_kyoku.asakusa,
+    LINE_IDS.tokyo_subway.asakusa,
   ], "あさくさばし"),
   [STATION_IDS.jr_east.ochanomizu]: new StationInfo('御茶ノ水', [
     LINE_IDS.jr_east.sobu,
@@ -185,14 +185,14 @@ export const STATIONS = {
   ], "おちゃのみず"),
   [STATION_IDS.jr_east.suidoubashi]: new StationInfo('水道橋', [
     LINE_IDS.jr_east.sobu,
-    LINE_IDS.tokyo_koutsu_kyoku.mita,
+    LINE_IDS.tokyo_subway.mita,
   ], "すいどうばし"),
   /** 市ヶ谷 */
   [STATION_IDS.jr_east.ichigaya]: new StationInfo('市ヶ谷', [
     LINE_IDS.jr_east.sobu,
     LINE_IDS.tokyo_metro.yurakucho,
     LINE_IDS.tokyo_metro.nanboku,
-    LINE_IDS.tokyo_koutsu_kyoku.shinjuku,
+    LINE_IDS.tokyo_subway.shinjuku,
   ], "いちがや"),
   [STATION_IDS.jr_east.yotsuya]: new StationInfo('四ッ谷', [
     LINE_IDS.jr_east.chuo,
@@ -212,7 +212,7 @@ export const STATIONS = {
     LINE_IDS.tokyo_metro.nanboku,
     LINE_IDS.tokyo_metro.touzai,
     LINE_IDS.tokyo_metro.yurakucho,
-    LINE_IDS.tokyo_koutsu_kyoku.oedo,
+    LINE_IDS.tokyo_subway.oedo,
   ], "いいだばし"),
   /** 信濃町 */
   [STATION_IDS.jr_east.shinanomachi]: new StationInfo('信濃町', [], "しなのまち"),
@@ -220,7 +220,7 @@ export const STATIONS = {
   [STATION_IDS.jr_east.sendagaya]: new StationInfo('千駄ヶ谷', [
     LINE_IDS.jr_east.chuo,
     LINE_IDS.jr_east.sobu,
-    LINE_IDS.tokyo_koutsu_kyoku.oedo,
+    LINE_IDS.tokyo_subway.oedo,
   ], "せんだがや"),
   /** 大久保 */
   [STATION_IDS.jr_east.okubo]: new StationInfo('大久保', [
@@ -229,7 +229,7 @@ export const STATIONS = {
   ], "おおくぼ"),
   [STATION_IDS.jr_east.higashinakano]: new StationInfo('東中野', [
     LINE_IDS.jr_east.sobu,
-    LINE_IDS.tokyo_koutsu_kyoku.oedo,
+    LINE_IDS.tokyo_subway.oedo,
   ], "ひがしなかの"),
   [STATION_IDS.jr_east.kouenji]: new StationInfo('高円寺', [
     LINE_IDS.jr_east.chuo,
@@ -365,7 +365,7 @@ export const STATIONS = {
       LINE_IDS.keiou.keiou,
       LINE_IDS.keiou.keioushinsen,
       LINE_IDS.tokyo_metro.marunouchi,
-      LINE_IDS.tokyo_koutsu_kyoku.oedo,
+      LINE_IDS.tokyo_subway.oedo,
       LINE_IDS.jr_east.shonan_shinjuku,
     ],"しんじゅく"),
   [STATION_IDS.jr_east.shibuya]: new StationInfo('渋谷', [
@@ -442,7 +442,7 @@ export const STATIONS = {
   [STATION_IDS.jr_east.yoyogi]: new StationInfo('代々木', [
     LINE_IDS.jr_east.yamanote,
     LINE_IDS.jr_east.chuo,
-    LINE_IDS.tokyo_koutsu_kyoku.oedo
+    LINE_IDS.tokyo_subway.oedo
   ], "よよぎ"),
   [STATION_IDS.jr_east.harajuku]: new StationInfo('原宿', []),
   // 横須賀線
@@ -584,6 +584,7 @@ export const STATIONS = {
     LINE_IDS.jr_east.agatsuma,
     LINE_IDS.joushin.joushin,
   ], "たかさき"),
+
   // 南武線
   [STATION_IDS.jr_east.mizonokuchi]: new StationInfo('溝の口', [
     LINE_IDS.jr_east.nanbu,
@@ -602,6 +603,115 @@ export const STATIONS = {
     LINE_IDS.jr_east.nanbu,
     LINE_IDS.odakyu.odawara,
   ], "のぼりと"),
+
+  // 京葉線
+  /** 八丁堀 */
+  [STATION_IDS.jr_east.hacchobori]: new StationInfo('八丁堀', [
+    LINE_IDS.jr_east.keiyou,
+    LINE_IDS.tokyo_metro.hibiya,
+  ], "はっちょうぼり"),
+
+  // 東京メトロ
+  // >日比谷線
+  [STATION_IDS.tokyo_metro.kitasenju]: new StationInfo('北千住', [
+    LINE_IDS.tokyo_metro.hibiya,
+    LINE_IDS.jr_east.tokiwa,
+    LINE_IDS.toubu.isesaki,
+    LINE_IDS.tokyo_metro.chiyoda,
+  ], "きたせんじゅ"),
+    /** 南千住 */
+  [STATION_IDS.tokyo_metro.minamisenju]: new StationInfo('南千住', [], "みなみせんじゅ"),
+  /** 三ノ輪 */
+  [STATION_IDS.tokyo_metro.minowa]: new StationInfo('三ノ輪', [], "みのわ"),
+  /** 入谷 */
+  [STATION_IDS.tokyo_metro.iriya]: new StationInfo('入谷', [], "いりや"),
+  /** 仲御徒町 */
+  [STATION_IDS.tokyo_metro.nakaokachimachi]: new StationInfo('仲御徒町', [], "なかおかちまち"),
+  /** 小伝馬町 */
+  [STATION_IDS.tokyo_metro.kodenmacho]: new StationInfo('小伝馬町', [], "こでんまちょう"),
+  /** 人形町 */
+  [STATION_IDS.tokyo_metro.ningyocho]: new StationInfo('人形町', [], "にんぎょうちょう"),
+  /** 茅場町 */
+  [STATION_IDS.tokyo_metro.kayabacho]: new StationInfo('茅場町', [], "かやばちょう"),
+  /** 築地 */
+  [STATION_IDS.tokyo_metro.tsukiji]: new StationInfo('築地', [], "つきじ"),
+  /** 東銀座 */
+  [STATION_IDS.tokyo_metro.higashiginza]: new StationInfo('東銀座', [
+    LINE_IDS.tokyo_metro.hibiya,
+    LINE_IDS.tokyo_metro.asakusa,
+  ], "ひがしぎんざ"),
+  /** 銀座 */
+  [STATION_IDS.tokyo_metro.ginza]: new StationInfo('銀座', [
+    LINE_IDS.tokyo_metro.hibiya,
+    LINE_IDS.tokyo_metro.marunouchi,
+    LINE_IDS.tokyo_metro.ginza,
+  ], "ぎんざ"),
+  /** 日比谷 */
+  [STATION_IDS.tokyo_metro.hibiya]: new StationInfo('日比谷', [
+    LINE_IDS.tokyo_metro.hibiya,
+    LINE_IDS.tokyo_metro.chiyoda,
+    LINE_IDS.tokyo_subway.mita,
+  ], "ひびや"),
+  /** 霞ヶ関 */
+  [STATION_IDS.tokyo_metro.kasumigaseki]: new StationInfo('霞ヶ関', [
+    LINE_IDS.tokyo_metro.hibiya,
+    LINE_IDS.tokyo_metro.marunouchi,
+    LINE_IDS.tokyo_metro.chiyoda,
+  ], "かすみがせき"),
+  /** 虎ノ門ヒルズ */
+  [STATION_IDS.tokyo_metro.toranomon_hills]: new StationInfo('虎ノ門ヒルズ', [], "とらのもんひるず"),
+  /** 神谷町 */
+  [STATION_IDS.tokyo_metro.kamiyacho]: new StationInfo('神谷町', [], "かみやちょう"),
+  /** 六本木 */
+  [STATION_IDS.tokyo_metro.roppongi]: new StationInfo('六本木', [
+    LINE_IDS.tokyo_metro.hibiya,
+    LINE_IDS.tokyo_subway.oedo,
+  ], "ろっぽんぎ"),
+  /** 広尾 */
+  [STATION_IDS.tokyo_metro.hiroo]: new StationInfo('広尾', [], "ひろお"),
+  /** 中目黒 */
+  [STATION_IDS.tokyo_metro.nakameguro]: new StationInfo('中目黒', [
+    LINE_IDS.tokyo_metro.hibiya,
+    LINE_IDS.tokyu.toyoko,
+  ], "なかめぐろ"),
+  // >丸の内線
+  /** 新大塚 */
+  [STATION_IDS.tokyo_metro.shinotuka]: new StationInfo('新大塚', [], "しんおおつか"),
+  /** 茗荷谷 */
+  [STATION_IDS.tokyo_metro.myogadani]: new StationInfo('茗荷谷', [], "みょうがだに"),
+  /** 後楽園 */
+  [STATION_IDS.tokyo_metro.kourakuen]: new StationInfo('後楽園', [], "こうらくえん"),
+  /** 本郷三丁目 */
+  [STATION_IDS.tokyo_metro.hongosanchome]: new StationInfo('本郷三丁目', [], "ほんごうさんちょうめ"),
+  /** 淡路町 */
+  [STATION_IDS.tokyo_metro.awajicho]: new StationInfo('淡路町', [], "あわじちょう"),
+  /** 大手町 */
+  [STATION_IDS.tokyo_metro.otemachi]: new StationInfo('大手町', [], "おおてまち"),
+  /** 国会議事堂前 */
+  [STATION_IDS.tokyo_metro.kokkaigijidomae]: new StationInfo('国会議事堂前', [], "こっかいぎじどうまえ"),
+  /** 赤坂見附 */
+  [STATION_IDS.tokyo_metro.akasakamitsuke]: new StationInfo('赤坂見附', [], "あかさかみつけ"),
+  /** 四谷三丁目 */
+  [STATION_IDS.tokyo_metro.yotsuya_sanchome]: new StationInfo('四谷三丁目', [], "よつやさんちょうめ"),
+  /** 新宿御苑前 */
+  [STATION_IDS.tokyo_metro.shinjuku_gyoenmae]: new StationInfo('新宿御苑前', [], "しんじゅくぎょえんまえ"),
+  /** 新宿三丁目 */
+  [STATION_IDS.tokyo_metro.shinjuku_sanchome]: new StationInfo('新宿三丁目', [], "しんじゅくさんちょうめ"),
+  /** 西新宿 */
+  [STATION_IDS.tokyo_metro.nishishinjuku]: new StationInfo('西新宿', [], "にししんじゅく"),
+  /** 中野坂上 */
+  [STATION_IDS.tokyo_metro.nakano_sakaue]: new StationInfo('中野坂上', [
+    LINE_IDS.tokyo_metro.marunouchi,
+    LINE_IDS.tokyo_subway.oedo,
+  ], "なかのさかうえ"),
+  /** 新中野 */
+  [STATION_IDS.tokyo_metro.shinnakano]: new StationInfo('新中野', [], "しんなかの"),
+  /** 東高円寺 */
+  [STATION_IDS.tokyo_metro.higashi_koenji]: new StationInfo('東高円寺', [], "ひがしこうえんじ"),
+  /** 新高円寺 */
+  [STATION_IDS.tokyo_metro.shinkoenji]: new StationInfo('新高円寺', [], "しんこうえんじ"),
+  /** 南阿佐ヶ谷 */
+  [STATION_IDS.tokyo_metro.minamiasagaya]: new StationInfo('南阿佐ヶ谷', [], "みなみあさがや"),
 
   // 相模鉄道
   // ＞本線

@@ -380,6 +380,61 @@ export const LINES = {
   //   kinds: [],
   //   stations: [],
   // },
+
+  // 東京メトロ
+  [LINE_IDS.tokyo_metro.hibiya]: new Line('日比谷線', '東京メトロ', [], [
+    new StopStationDef(STATION_IDS.tokyo_metro.nakameguro),
+    new StopStationDef(STATION_IDS.jr_east.ebisu),
+    new StopStationDef(STATION_IDS.tokyo_metro.hiroo),
+    new StopStationDef(STATION_IDS.tokyo_metro.roppongi),
+    new StopStationDef(STATION_IDS.tokyo_metro.kamiyacho),
+    new StopStationDef(STATION_IDS.tokyo_metro.toranomon_hills),
+    new StopStationDef(STATION_IDS.tokyo_metro.kasumigaseki),
+    new StopStationDef(STATION_IDS.tokyo_metro.hibiya),
+    new StopStationDef(STATION_IDS.tokyo_metro.ginza),
+    new StopStationDef(STATION_IDS.tokyo_metro.higashiginza),
+    new StopStationDef(STATION_IDS.tokyo_metro.tsukiji),
+    new StopStationDef(STATION_IDS.jr_east.hacchobori),
+    new StopStationDef(STATION_IDS.tokyo_metro.kayabacho),
+    new StopStationDef(STATION_IDS.tokyo_metro.ningyocho),
+    new StopStationDef(STATION_IDS.tokyo_metro.kodenmacho),
+    new StopStationDef(STATION_IDS.jr_east.akihabara),
+    new StopStationDef(STATION_IDS.tokyo_metro.nakaokachimachi),
+    new StopStationDef(STATION_IDS.jr_east.ueno),
+    new StopStationDef(STATION_IDS.tokyo_metro.iriya),
+    new StopStationDef(STATION_IDS.tokyo_metro.minowa),
+    new StopStationDef(STATION_IDS.tokyo_metro.minamisenju),
+    new StopStationDef(STATION_IDS.tokyo_metro.kitasenju),
+  ]),
+  [LINE_IDS.tokyo_metro.marunouchi]: new Line('丸ノ内線', '東京メトロ', [], [
+    new StopStationDef(STATION_IDS.jr_east.ikebukuro),
+    new StopStationDef(STATION_IDS.tokyo_metro.shinotuka),
+    new StopStationDef(STATION_IDS.tokyo_metro.myogadani),
+    new StopStationDef(STATION_IDS.tokyo_metro.kourakuen),
+    new StopStationDef(STATION_IDS.tokyo_metro.hongosanchome),
+    new StopStationDef(STATION_IDS.jr_east.ochanomizu),
+    new StopStationDef(STATION_IDS.tokyo_metro.awajicho),
+    new StopStationDef(STATION_IDS.tokyo_metro.otemachi),
+    new StopStationDef(STATION_IDS.jr_east.tokyo),
+    new StopStationDef(STATION_IDS.tokyo_metro.ginza),
+    new StopStationDef(STATION_IDS.tokyo_metro.kasumigaseki),
+    new StopStationDef(STATION_IDS.tokyo_metro.kokkaigijidomae),
+    new StopStationDef(STATION_IDS.tokyo_metro.akasakamitsuke),
+    new StopStationDef(STATION_IDS.jr_east.yotsuya),
+    new StopStationDef(STATION_IDS.tokyo_metro.yotsuya_sanchome),
+    new StopStationDef(STATION_IDS.tokyo_metro.shinjuku_gyoenmae),
+    new StopStationDef(STATION_IDS.tokyo_metro.shinjuku_sanchome),
+    new StopStationDef(STATION_IDS.jr_east.shinjuku),
+    new StopStationDef(STATION_IDS.tokyo_metro.nishishinjuku),
+    new StopStationDef(STATION_IDS.tokyo_metro.nakano_sakaue),
+    new StopStationDef(STATION_IDS.tokyo_metro.shinnakano),
+    new StopStationDef(STATION_IDS.jr_east.kouenji),
+    new StopStationDef(STATION_IDS.tokyo_metro.shinkoenji),
+    new StopStationDef(STATION_IDS.tokyo_metro.minamiasagaya),
+    new StopStationDef(STATION_IDS.jr_east.ogikubo),
+  ]),
+
+  // 相模鉄道
   [LINE_IDS.sagami.honsen]: new Line('相鉄本線', '相模鉄道',
     [new KindDef("快速", "rapid"), new KindDef("特急", "express"), new KindDef("通勤急行", "commuter")],
     [
@@ -408,17 +463,8 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyu.hiyoshi),
   ]),
   [LINE_IDS.sagami.izumino]: new Line('いずみ野線', '相模鉄道', [], []),
-  // // 東京メトロ
-  // [LINE_IDS.tokyo_metro.marunouchi]: {
-  //   name: '丸の内線',
-  //   kinds: [],
-  //   stations: [],
-  // },
-  // [LINE_IDS.tokyo_metro.hibiya]: {
-  //   name: '日比谷線',
-  //   kinds: [],
-  //   stations: [],
-  // },
+
+
   // 小田急
   [LINE_IDS.odakyu.odawara]: new Line('小田原線', '小田急電鉄', [], []),
   [LINE_IDS.odakyu.enoshima]: new Line('江ノ島線', '小田急電鉄', LOCAL_ONLY, [
