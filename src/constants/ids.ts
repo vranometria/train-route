@@ -52,6 +52,8 @@ export const LINE_IDS = {
     karasuyama: 'jr-karasuyama',
     /** 水戸線 */
     mito: 'jr-mito',
+    /** 東北本線 */
+    tohokuhonsen: 'jr-tohoku-honsen',
 
     /** 青梅線 */
     oume: 'jr-oume',
@@ -521,6 +523,7 @@ export const STATION_IDS = {
     kitakamakura: "kitakamakura",
     kamakura: "kamakura",
     zushi: "zushi",
+    nishinasuno: "nishinasuno",
 
     // 横須賀線
     higashizushi: 'higashizushi',
@@ -542,7 +545,7 @@ export const STATION_IDS = {
     doro: 'doro',
     /** 岡本(栃木) */
     okamoto: 'okamoto',
-    housekiji: 'housekiji',
+    housyakuji: 'housyakuji',
     ujiie: 'ujiie',
     kamasusaka: 'kamasusaka',
     kataoka: 'kataoka',
@@ -550,7 +553,7 @@ export const STATION_IDS = {
     /**野崎(栃木) */
     nozaki: 'nozaki',
     nishisunano: 'nishisunano',
-    nasusiohara: 'nasusiohara',
+    nasushiobara: 'nasushiobara',
     kuroiso: 'kuroiso',
     //武蔵野線
     huchuhonmachi: 'huchuhonmachi',
