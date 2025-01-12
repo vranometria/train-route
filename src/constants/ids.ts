@@ -46,6 +46,13 @@ export const LINE_IDS = {
     /** 相模線 */
     sagami: 'jr-sagami',
 
+    /** 日光線 */
+    nikko: 'jr-nikko',
+    /** 烏山線 */
+    karasuyama: 'jr-karasuyama',
+    /** 水戸線 */
+    mito: 'jr-mito',
+
     /** 青梅線 */
     oume: 'jr-oume',
     /** 八高線 */
@@ -92,6 +99,8 @@ export const LINE_IDS = {
       jouetsu: 'jr-shouetsu-shinkansen',
       // 北陸新幹線
       hokuriku: 'jr-hokuriku-shinkansen',
+      // 東北・北海道新幹線
+      tohoku_hokkaido: 'jr-tohoku-hokkaido-shinkansen',
     },
   },
   // 京急
@@ -109,6 +118,8 @@ export const LINE_IDS = {
     toujou: 'toubu-toujou',
     /** 伊勢崎線 */
     isesaki: 'toubu-isesaki',
+    /** 日光線 */
+    nikko: 'toubu-nikko',
   },
   saitama_shintoshi: {
     // ニューシャトル
@@ -464,8 +475,8 @@ export const STATION_IDS = {
     kitaageo: 'kitaageo',
     okegawa: 'okegawa',
     kitamoto: 'kitamoto',
-    kousu: 'kousu',
-    kitakousu: 'kitakousu',
+    kounosu: 'kounosu',
+    kitakounosu: 'kitakounosu',
     hukiage: 'hukiage',
     gyouda: 'gyouda',
     kumagaya : 'kumagaya',
@@ -474,21 +485,22 @@ export const STATION_IDS = {
     okabe : 'okabe',
     honnjou: 'honnjou',
     jinbohara: 'jinbohara',
+    maebashi: 'maebashi',
     /** 新町(群馬) */
     shinmachi: 'sinmachi',
     kuragano: 'kuragano',
     takasaki: 'takasaki',
     // 湘南新宿ライン
     utsunomiya: 'utsunomiya',
-    suzunomiya: 'suzunomiya',
-    isibashi: 'isibashi',
+    suzumenomiya: 'suzumenomiya',
+    ishibashi: 'ishibashi',
     jichiidai: 'jichiidai',
     koganei: 'koganei',
-    koyama: 'koyama',
+    oyama: 'oyama',
     mamada: 'mamada',
     nogi: 'nogi',
-    hurukawa: 'hurukawa',
-    kurihshi: 'kurihshi',
+    koga: 'koga',
+    kurihashi: 'kurihashi',
     higashiwashinomiya: 'higashiwashinomiya',
     kuki: 'kuki',
     shinshiraoka: 'shinshiraoka',

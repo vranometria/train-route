@@ -2,6 +2,213 @@ import { StationInfo } from '@/types/station-info'
 import { LINE_IDS, STATION_IDS } from './ids'
 
 export const STATIONS = {
+  [STATION_IDS.jr_east.utsunomiya]: new StationInfo('宇都宮', [
+    LINE_IDS.jr_east.nikko,
+    LINE_IDS.jr_east.karasuyama,
+    LINE_IDS.jr_east.utunomiya,
+    LINE_IDS.jr_east.shonan_shinjuku,
+  ], "うつのみや"),
+  [STATION_IDS.jr_east.suzumenomiya]: new StationInfo('雀宮', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.utunomiya,
+  ], "すずめのみや"),
+  /** 石橋 */
+  [STATION_IDS.jr_east.ishibashi]: new StationInfo('石橋', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.utunomiya,
+  ], "いしばし"),
+  /** 自治医大 */
+  [STATION_IDS.jr_east.jichiidai]: new StationInfo('自治医大', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.utunomiya,
+  ], "じちいだい"),
+  /** 小金井 */
+  [STATION_IDS.jr_east.koganei]: new StationInfo('小金井', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.utunomiya,
+  ], "こがねい"),
+  /** 小山 */
+  [STATION_IDS.jr_east.oyama]: new StationInfo('小山', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.utunomiya,
+    LINE_IDS.jr_east.ryomo,
+    LINE_IDS.jr_east.mito,
+    LINE_IDS.jr_east.shinkansen.tohoku_hokkaido,
+  ], "おやま"),
+  /** 間々田 */
+  [STATION_IDS.jr_east.mamada]: new StationInfo('間々田', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.utunomiya,
+  ], "ままだ"),
+  /** 野木 */
+  [STATION_IDS.jr_east.nogi]: new StationInfo('野木', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.utunomiya,
+  ], "のぎ"),
+  /** 古河 */
+  [STATION_IDS.jr_east.koga]: new StationInfo('古河', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.utunomiya,
+  ], "こが"),
+  /** 栗橋 */
+  [STATION_IDS.jr_east.kurihashi]: new StationInfo('栗橋', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.utunomiya,
+    LINE_IDS.toubu.nikko,
+  ], "くりはし"),
+  /** 東鷲宮 */
+  [STATION_IDS.jr_east.higashiwashinomiya]: new StationInfo('東鷲宮', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.utunomiya,
+  ], "ひがしわしのみや"),
+  /** 久喜 */
+  [STATION_IDS.jr_east.kuki]: new StationInfo('久喜', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.utunomiya,
+    LINE_IDS.toubu.isesaki,
+  ], "くき"),
+  /** 新白岡 */
+  [STATION_IDS.jr_east.shinshiraoka]: new StationInfo('新白岡', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.utunomiya,
+  ], "しんしらおか"),
+  /** 白岡 */
+  [STATION_IDS.jr_east.shiraoka]: new StationInfo('白岡', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.utunomiya,
+  ], "しらおか"),
+  /** 蓮田 */
+  [STATION_IDS.jr_east.hasuda]: new StationInfo('蓮田', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.utunomiya,
+  ], "はすだ"),
+  /** 東大宮 */
+  [STATION_IDS.jr_east.higashiomiya]: new StationInfo('東大宮', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.utunomiya,
+  ], "ひがしおおみや"),
+  /** 土呂 */
+  [STATION_IDS.jr_east.toro]: new StationInfo('土呂', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.utunomiya,
+  ], "とろ"),
+  /** 前橋 */
+  [STATION_IDS.jr_east.maebashi]: new StationInfo('前橋', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.ryomo,
+  ], "まえばし"),
+  /** 新前橋 */
+  [STATION_IDS.jr_east.shinmaebashi]: new StationInfo('新前橋', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.ryomo,
+    LINE_IDS.jr_east.jouetsu,
+    LINE_IDS.jr_east.agatsuma,
+  ], "しんまえばし"),
+  /** 井野 */
+  [STATION_IDS.jr_east.ino]: new StationInfo('井野', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.jouetsu,
+    LINE_IDS.jr_east.agatsuma,
+    LINE_IDS.jr_east.ryomo,
+  ], "いの"),
+  /** 高崎問屋町 */
+  [STATION_IDS.jr_east.takasakitonyamachi]: new StationInfo('高崎問屋町', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.jouetsu,
+    LINE_IDS.jr_east.agatsuma,
+    LINE_IDS.jr_east.ryomo,
+  ], "たかさきとにやまち"),
+  /** 高崎 */
+  [STATION_IDS.jr_east.takasaki]: new StationInfo('高崎', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.ryomo,
+    LINE_IDS.jr_east.agatsuma,
+    LINE_IDS.jr_east.jouetsu,
+    LINE_IDS.jr_east.shinetsu_honsen,
+    LINE_IDS.joushin.joushin,
+  ], "たかさき"),
+  /** 倉賀野 */
+  [STATION_IDS.jr_east.kuragano]: new StationInfo('倉賀野', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.takasaki,
+    LINE_IDS.jr_east.hachiko,
+  ], "くらがの"),
+  /** 新町 */
+  [STATION_IDS.jr_east.shinmachi]: new StationInfo('新町', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.takasaki,
+  ], "しんまち"),
+  /** 神保原 */
+  [STATION_IDS.jr_east.jinbohara]: new StationInfo('神保原', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.takasaki,
+  ], "じんぼはら"),
+  /** 本庄 */
+  [STATION_IDS.jr_east.honnjou]: new StationInfo('本庄', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.takasaki,
+  ], "ほんじょう"),
+  /** 岡部 */
+  [STATION_IDS.jr_east.okabe]: new StationInfo('岡部', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.takasaki,
+  ], "おかべ"),
+  /** 深谷 */
+  [STATION_IDS.jr_east.hukaya]: new StationInfo('深谷', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.takasaki,
+  ], "ふかや"),
+  /** 籠原 */
+  [STATION_IDS.jr_east.kagohara]: new StationInfo('籠原', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.takasaki,
+  ], "かごはら"),
+  /** 行田 */
+  [STATION_IDS.jr_east.gyouda]: new StationInfo('行田', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.takasaki,
+  ], "ぎょうだ"),
+  /** 吹上 */
+  [STATION_IDS.jr_east.hukiage]: new StationInfo('吹上', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.takasaki,
+  ], "ふきあげ"),
+  /** 北鴻巣 */
+  [STATION_IDS.jr_east.kitakounosu]: new StationInfo('北鴻巣', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.takasaki,
+  ], "きたこうのす"),
+  /** 鴻巣 */
+  [STATION_IDS.jr_east.kounosu]: new StationInfo('鴻巣', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.takasaki,
+  ], "こうのす"),
+  /** 北本 */
+  [STATION_IDS.jr_east.kitamoto]: new StationInfo('北本', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.takasaki,
+  ], "きたもと"),
+  /** 桶川 */
+  [STATION_IDS.jr_east.okegawa]: new StationInfo('桶川', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.takasaki,
+  ], "おけがわ"),
+  /** 北上尾 */
+  [STATION_IDS.jr_east.kitaageo]: new StationInfo('北上尾', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.takasaki,
+  ], "きたあげお"),
+  /** 上尾 */
+  [STATION_IDS.jr_east.ageo]: new StationInfo('上尾', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.takasaki,
+  ], "あげお"),
+  /** 宮原 */
+  [STATION_IDS.jr_east.miyahara]: new StationInfo('宮原', [
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_east.takasaki,
+  ], "みやはら"),
+  /** 大宮 */
   [STATION_IDS.jr_east.omiya]: new StationInfo('大宮',[
     LINE_IDS.jr_east.utunomiya,//宇都宮線,
     LINE_IDS.jr_east.takasaki,//高崎線
