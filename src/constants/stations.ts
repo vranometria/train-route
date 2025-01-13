@@ -1182,6 +1182,96 @@ export const STATIONS = {
   [STATION_IDS.tokyo_metro.higashi_koenji]: new StationInfo('東高円寺', [], "ひがしこうえんじ"),
   [STATION_IDS.tokyo_metro.shinkoenji]: new StationInfo('新高円寺', [], "しんこうえんじ"),
   [STATION_IDS.tokyo_metro.minamiasagaya]: new StationInfo('南阿佐ヶ谷', [], "みなみあさがや"),
+  // >有楽町線
+  [STATION_IDS.tokyo_metro.wakoshi]: new StationInfo('和光市', [
+    LINE_IDS.tokyo_metro.yurakucho,
+    LINE_IDS.tokyo_metro.fukutoshin,
+    LINE_IDS.toubu.toujou,
+  ], "わこうし"),
+  [STATION_IDS.tokyo_metro.chikatetsu_narimasu]: new StationInfo('地下鉄成増', [
+    LINE_IDS.tokyo_metro.yurakucho,
+    LINE_IDS.tokyo_metro.fukutoshin,
+    new ExchangeInfo(LINE_IDS.toubu.toujou, STATION_IDS.tobu.narimasu),
+  ], "ちかてつなります"),
+  [STATION_IDS.tokyo_metro.chikatetsu_akatsuka]: new StationInfo('地下鉄赤塚', [
+    LINE_IDS.tokyo_metro.yurakucho,
+    LINE_IDS.tokyo_metro.fukutoshin,
+    new ExchangeInfo(LINE_IDS.toubu.toujou, STATION_IDS.tobu.shimoakatsuka),
+  ], "ちかてつあかつか"),
+  [STATION_IDS.tokyo_metro.heiwadai]: new StationInfo('平和台', [
+    LINE_IDS.tokyo_metro.yurakucho,
+    LINE_IDS.tokyo_metro.fukutoshin,
+  ], "へいわだい"),
+  [STATION_IDS.tokyo_metro.hikawadai]: new StationInfo('氷川台', [
+    LINE_IDS.tokyo_metro.yurakucho,
+    LINE_IDS.tokyo_metro.fukutoshin,
+  ], "ひかわだい"),
+  [STATION_IDS.tokyo_metro.kotake_mukaihara]: new StationInfo('小竹向原', [
+    LINE_IDS.tokyo_metro.yurakucho,
+    LINE_IDS.tokyo_metro.fukutoshin,
+    LINE_IDS.seibu.seibu_yurakucho,
+  ], "こたけむかいはら"),
+  [STATION_IDS.tokyo_metro.senkawa]: new StationInfo('千川', [
+    LINE_IDS.tokyo_metro.yurakucho,
+    LINE_IDS.tokyo_metro.fukutoshin,
+  ], "せんかわ"),
+  [STATION_IDS.tokyo_metro.kanamecho]: new StationInfo('要町', [
+    LINE_IDS.tokyo_metro.yurakucho,
+    LINE_IDS.tokyo_metro.fukutoshin,
+  ], "かなめちょう"),
+  [STATION_IDS.jr_east.iidabashi]: new StationInfo('飯田橋', [
+    LINE_IDS.jr_east.chuo,
+    LINE_IDS.tokyo_metro.yurakucho,
+    LINE_IDS.tokyo_metro.nanboku,
+    LINE_IDS.tokyo_metro.touzai,
+    LINE_IDS.tokyo_subway.oedo,
+  ], "いいだばし"),
+  [STATION_IDS.tokyo_metro.higashi_ikebukuro]: new StationInfo('東池袋', [
+    LINE_IDS.tokyo_metro.yurakucho,
+    LINE_IDS.tokyo_subway.sakura_tram,
+  ], "ひがしいけぶくろ"),
+  [STATION_IDS.tokyo_metro.gokokuji]: new StationInfo('護国寺', [], "ごこくじ"),
+  [STATION_IDS.tokyo_metro.edogawabashi]: new StationInfo('江戸川橋', [], "えどがわばし"),
+  [STATION_IDS.tokyo_metro.idabashi]: new StationInfo('飯田橋', [
+    LINE_IDS.jr_east.chuo,
+    LINE_IDS.tokyo_metro.yurakucho,
+    LINE_IDS.tokyo_metro.touzai,
+    LINE_IDS.tokyo_metro.nanboku,
+    LINE_IDS.tokyo_subway.oedo
+  ], "いいだばし"),
+  [STATION_IDS.tokyo_metro.koujimachi]: new StationInfo('麹町', [], "こうじまち"),
+  [STATION_IDS.tokyo_metro.nagatacho]: new StationInfo('永田町', [
+    LINE_IDS.tokyo_metro.yurakucho,
+    LINE_IDS.tokyo_metro.hanzoumon,
+    LINE_IDS.tokyo_metro.nanboku,
+    new ExchangeInfo(LINE_IDS.tokyo_metro.ginza, STATION_IDS.tokyo_metro.akasakamitsuke),
+    new ExchangeInfo(LINE_IDS.tokyo_metro.chiyoda, STATION_IDS.tokyo_metro.akasakamitsuke),
+  ], "ながたちょう"),
+  [STATION_IDS.tokyo_metro.sakuradamon]: new StationInfo('桜田門', [], "さくらだもん"),
+  [STATION_IDS.tokyo_metro.ginza_icchome]: new StationInfo('銀座一丁目', [
+    LINE_IDS.tokyo_metro.yurakucho,
+    new ExchangeInfo(LINE_IDS.tokyo_metro.marunouchi, STATION_IDS.tokyo_metro.ginza),
+    new ExchangeInfo(LINE_IDS.tokyo_metro.hibiya, STATION_IDS.tokyo_metro.ginza),
+    new ExchangeInfo(LINE_IDS.tokyo_metro.marunouchi, STATION_IDS.tokyo_metro.ginza),
+  ], "ぎんざいっちょうめ"),
+  [STATION_IDS.tokyo_metro.shintomicho]: new StationInfo('新富町', [
+    LINE_IDS.tokyo_metro.yurakucho,
+    new ExchangeInfo(LINE_IDS.tokyo_metro.hibiya, STATION_IDS.tokyo_metro.tsukiji),
+  ], "しんとみちょう"),
+  [STATION_IDS.tokyo_metro.tsukishima]: new StationInfo('月島', [
+    LINE_IDS.tokyo_metro.yurakucho,
+    LINE_IDS.tokyo_subway.oedo,
+  ], "つきしま"),
+  [STATION_IDS.tokyo_metro.toyosu]: new StationInfo('豊洲', [
+    LINE_IDS.tokyo_metro.yurakucho,
+    LINE_IDS.yurikamome.yurikamome,
+  ], "とよす"),
+  [STATION_IDS.tokyo_metro.tatsumi]: new StationInfo('辰巳', [], "たつみ"),
+  [STATION_IDS.tokyo_metro.shinkiba]: new StationInfo('新木場', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.tokyo_metro.yurakucho,
+    LINE_IDS.toukyo_rinkai_kousoku.rinkai,
+  ], "しんきば"),
 
   // 相模鉄道
   // ＞本線

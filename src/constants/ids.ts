@@ -174,6 +174,7 @@ export const LINE_IDS = {
     mita: 'toei-mita',
     /** 浅草線 */
     asakusa: 'toei-asakusa',
+    sakura_tram: 'toei-sakura-tram',
   },
   /** 首都圏新都市鉄道 */
   shutoken_shintoshi: {
@@ -256,7 +257,7 @@ export const LINE_IDS = {
     tamako: "seibu-tamako",
     kokubunji: "seibu-kokubunji",
     ikebukuro: "seibu-ikebukuro",
-    yurakucho: "seibu-yurakucho",
+    seibu_yurakucho: "seibu-seibu-yurakucho",
     toyoshima: "seibu-toyoshima",
     seibu_sayama: "seibu-seibu-sayama",
     seibu_shinjuku: "seibu-seibu-shinjuku",
@@ -271,6 +272,10 @@ export const LINE_IDS = {
     honsen: 'keisei-honsen',
     hokusou: 'keisei-hokusou',
     chiba: 'keisei-chiba',
+  },
+  // ゆりかもめ
+  yurikamome: {
+    yurikamome: 'yurikamome',
   },
   /** 東葉高速鉄道 */
   toyo_kousoku: {
@@ -862,6 +867,28 @@ export const STATION_IDS = {
     higashi_koenji: 'higashi-koenji',
     shinkoenji: 'shinkoenji',
     minamiasagaya: 'minamiasagaya',
+    // 有楽町線
+    wakoshi: 'wakoshi',
+    chikatetsu_narimasu: 'chikatetsu-narimasu',
+    chikatetsu_akatsuka: 'chikatetsu-akatsuka',
+    heiwadai: 'heiwadai',
+    hikawadai: 'hikawadai',
+    kotake_mukaihara: 'kotake-mukaihara',
+    senkawa: 'senkawa',
+    kanamecho: 'kanamecho',
+    higashi_ikebukuro: 'higashi-ikebukuro',
+    gokokuji: 'gokokuji',
+    edogawabashi: 'edogawabashi',
+    idabashi: 'idabashi',
+    koujimachi: 'koujimachi',
+    nagatacho: 'nagatacho',
+    sakuradamon: 'sakuradamon',
+    ginza_icchome: 'ginza-icchome',
+    shintomicho: 'shintomicho',
+    tsukishima: 'tsukishima',
+    toyosu: 'toyosu',
+    tatsumi: 'tatsumi',
+    shinkiba: 'shinkiba',
   },
   /** 東京都交通局 */
   tokyo_subway: {
@@ -1064,6 +1091,10 @@ export const STATION_IDS = {
     shinmaruko: "shinmaruko",
     motosumiyoshi: "motosumiyoshi",
     hiyoshi: "hiyoshi",
+  },
+  tobu: {
+    narimasu: "narimasu",
+    shimoakatsuka: "shimoakatsuka",
   },
   /** 西部電鉄 */
   seibu: {
