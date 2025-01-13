@@ -539,7 +539,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.ogikubo),
   ]),
   // 京浜急行電鉄
-  [LINE_IDS.keikyu.honsen]: new Line('本線', '京浜急行電鉄', [
+  [LINE_IDS.keikyu.honsen]: new Line('京急本線', '京浜急行電鉄', [
     new KindDef("急行", "express"),
     new KindDef("特急", "special-express"),
     new KindDef("快特", "rapid"),
@@ -796,6 +796,34 @@ export const LINES = {
   //   kinds: [],
   //   stations: [],
   // },
+  // 首都圏新都市
+  [LINE_IDS.shutoken_shintoshi.tsukuba_express]: new Line('つくばエクスプレス', '首都圏新都市', [
+    new KindDef("快速", "rapid"),
+    new KindDef("区間快速", "express"),
+    new KindDef("通勤快速", "commuter"),
+  ], [
+    new StopStationDef(STATION_IDS.shutoken_shintoshi.tsukuba, ["rapid", "express", "commuter"]),
+    new StopStationDef(STATION_IDS.shutoken_shintoshi.kenkyugakuen, ["", "express", "commuter"]),
+    new StopStationDef(STATION_IDS.shutoken_shintoshi.banpakukinenkouen, ["", "express", ""]),
+    new StopStationDef(STATION_IDS.shutoken_shintoshi.midorino, ["", "express", ""]),
+    new StopStationDef(STATION_IDS.shutoken_shintoshi.miraidaira, ["", "express", ""]),
+    new StopStationDef(STATION_IDS.shutoken_shintoshi.moriya, ["rapid", "express", "commuter"]),
+    new StopStationDef(STATION_IDS.shutoken_shintoshi.kashiwa_tanaka, ["", "", ""]),
+    new StopStationDef(STATION_IDS.shutoken_shintoshi.kashiwanoha_campus, ["", "express", "commuter"]),
+    new StopStationDef(STATION_IDS.shutoken_shintoshi.nagareyama_otakanomori, ["rapid", "express", "commuter"]),
+    new StopStationDef(STATION_IDS.shutoken_shintoshi.nagareyama_centralpark, ["", "", ""]),
+    new StopStationDef(STATION_IDS.jr_east.minami_nagareyama, ["rapid", "express", "commuter"]),
+    new StopStationDef(STATION_IDS.shutoken_shintoshi.sango_chuo, ["express"]),
+    new StopStationDef(STATION_IDS.shutoken_shintoshi.yashio, ["rapid", "express", "commuter"]),
+    new StopStationDef(STATION_IDS.shutoken_shintoshi.rokucho, ["commuter"]),
+    new StopStationDef(STATION_IDS.shutoken_shintoshi.aoi),
+    new StopStationDef(STATION_IDS.jr_east.kita_senju, ["rapid", "express", "commuter"]),
+    new StopStationDef(STATION_IDS.jr_east.minami_senju, ["rapid", "express", "commuter"]),
+    new StopStationDef(STATION_IDS.tokyo_subway.asakusa, ["rapid", "express", "commuter"]),
+    new StopStationDef(STATION_IDS.shutoken_shintoshi.shin_okachimachi, ["rapid", "express", "commuter"]),
+    new StopStationDef(STATION_IDS.jr_east.akihabara, ["rapid", "express", "commuter"]),
+  ]),
+
   [LINE_IDS.enoshima.enoshima]: new Line('江ノ島電鉄線', '江ノ島電鉄', [], []),
   [LINE_IDS.shonam_monorail.shonan_monorail]: new Line('湘南モノレール', '湘南モノレール', [], []),
   // 東急

@@ -563,11 +563,10 @@ export const STATIONS = {
     LINE_IDS.jr_east.keihin_touhoku],
   ),
   [STATION_IDS.jr_east.shinbashi]: new StationInfo('新橋', [
-      LINE_IDS.jr_east.tokaido,
-      LINE_IDS.jr_east.yamanote,
-      LINE_IDS.jr_east.keihin_touhoku,
-    ]
-  ),
+    LINE_IDS.jr_east.tokaido,
+    LINE_IDS.jr_east.yamanote,
+    LINE_IDS.jr_east.keihin_touhoku,
+  ]),
   [STATION_IDS.jr_east.hamamatsucho]: new StationInfo('浜松町', [LINE_IDS.jr_east.yamanote]),
   [STATION_IDS.jr_east.tamachi]: new StationInfo('田町', [LINE_IDS.jr_east.yamanote]),
   [STATION_IDS.jr_east.takanawa_gateway]: new StationInfo('高輪ゲートウェイ', [LINE_IDS.jr_east.yamanote]),
@@ -812,6 +811,11 @@ export const STATIONS = {
   [STATION_IDS.jr_east.manazuru]: new StationInfo('真鶴', [], "まなづる"),
   [STATION_IDS.jr_east.yugawara ]: new StationInfo('湯河原', [], "ゆがわら"),
   [STATION_IDS.jr_east.atami]: new StationInfo('熱海', [], "あたみ"),
+  // 武蔵野線
+  [STATION_IDS.jr_east.minami_nagareyama]: new StationInfo('南流山', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.shutoken_shintoshi.tsukuba_express,
+  ], "みなみながれやま"),
 
     /** 厚木 */
     [STATION_IDS.jr_east.atsugi]: new StationInfo('厚木', [
@@ -1071,8 +1075,8 @@ export const STATIONS = {
     LINE_IDS.sagami.sotetsushinyokohama,
   ], "はざわよこはまこくだい"),
 
-  [STATION_IDS.sagami.sagamino]: new StationInfo('さがみ野', [], "さがみの"),
   // 小田急
+  [STATION_IDS.sagami.sagamino]: new StationInfo('さがみ野', [], "さがみの"),
   [STATION_IDS.odakyu.minamishinjuku]: new StationInfo('南新宿', [], "みなみしんじゅく"),
   /** 参宮橋 */
   [STATION_IDS.odakyu.sangubashi]: new StationInfo('参宮橋', [], "さんぐうばし"),
@@ -1196,6 +1200,34 @@ export const STATIONS = {
   [STATION_IDS.odakyu.honkugenuma]: new StationInfo('本鵠沼', []),
   [STATION_IDS.odakyu.kugenumakaigan]: new StationInfo('鵠沼海岸', []),
   [STATION_IDS.odakyu.kataseenoshima]: new StationInfo('片瀬江ノ島', []),
+
+  // 首都圏新都市
+  // ＞つくばエクスプレス
+  [STATION_IDS.shutoken_shintoshi.tsukuba]: new StationInfo('つくば', [], "つくば"),
+  [STATION_IDS.shutoken_shintoshi.kenkyugakuen]: new StationInfo('研究学園', [], "けんきゅうがくえん"),
+  [STATION_IDS.shutoken_shintoshi.banpakukinenkouen]: new StationInfo('万博記念公園', [], "ばんぱくきねんこうえん"),
+  [STATION_IDS.shutoken_shintoshi.midorino]: new StationInfo('みどりの', [], "みどりの"),
+  [STATION_IDS.shutoken_shintoshi.miraidaira]: new StationInfo('みらい平', [], "みらいだいら"),
+  [STATION_IDS.shutoken_shintoshi.moriya]: new StationInfo('守谷', [
+    LINE_IDS.shutoken_shintoshi.tsukuba_express,
+    LINE_IDS.kanto.joso,
+  ], "もりや"),
+  [STATION_IDS.shutoken_shintoshi.kashiwa_tanaka]: new StationInfo('柏たなか', [], "かしわたなか"),
+  [STATION_IDS.shutoken_shintoshi.kashiwanoha_campus]: new StationInfo('柏の葉キャンパス', [], "かしわのはきゃんぱす"),
+  [STATION_IDS.shutoken_shintoshi.nagareyama_otakanomori]: new StationInfo('流山おおたかの森', [
+    LINE_IDS.shutoken_shintoshi.tsukuba_express,
+    LINE_IDS.toubu.urban_park_line,
+  ], "ながれやまおおたかのもり"),
+  [STATION_IDS.shutoken_shintoshi.nagareyama_centralpark]: new StationInfo('流山セントラルパーク', [], "ながれやませんとらるぱーく"),
+  [STATION_IDS.shutoken_shintoshi.sango_chuo]: new StationInfo('三郷中央', [], "さんごうちゅうおう"),
+  [STATION_IDS.shutoken_shintoshi.yashio]: new StationInfo('八潮', [], "やしお"),
+  [STATION_IDS.shutoken_shintoshi.rokucho]: new StationInfo('六町', [], "ろくちょう"),
+  [STATION_IDS.shutoken_shintoshi.aoi]: new StationInfo('青井', [], "あおい"),
+  [STATION_IDS.shutoken_shintoshi.shin_okachimachi]: new StationInfo('新御徒町', [
+    LINE_IDS.shutoken_shintoshi.tsukuba_express,
+    LINE_IDS.tokyo_subway.oedo,
+  ], "しんおかちまち"),
+
 
   // 京急
   // >本線
