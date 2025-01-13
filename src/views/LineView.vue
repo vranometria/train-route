@@ -1,13 +1,13 @@
 <script setup lang="ts">
-  import Exchange from '@/components/Exchange.vue';
+import Exchange from '@/components/Exchange.vue';
+import RightPane from '@/components/RightPane.vue';
   import { LineViewModel } from '@/types/line-view-model';
   import { watch, ref, onUpdated } from 'vue';
   import { useRoute } from 'vue-router';
   const route = useRoute();
   const lineId = ref(route.params.id as string);
   const model = ref(new LineViewModel(lineId.value as string));
-  const distination = ref(null as HTMLElement|null);
-  const from = ref(null as HTMLElement|null);
+  const from = ref(null as string|null);
 
   watch( ()=>route.params.id as string, (newId:string) => {
     lineId.value = newId;
@@ -16,45 +16,15 @@
 
   onUpdated(() => {
     if(route.hash){
+      const id = route.hash.replace("#", "");
       const element = document.querySelector(route.hash) as HTMLElement;
       if(element){
         element.scrollIntoView({behavior: "smooth"});
         element.getElementsByClassName("station-name")[0].classList.add("from");
-        from.value = element;
+        from.value = id;
       }
     }
   });
-
-  const changeDistination = (event: Event) => {
-    const target = event.target as HTMLSelectElement;
-    const distStationId = target.value;
-    const elements = Array.from(document.getElementsByClassName("distination"));
-    elements.forEach(e => e.classList.remove("distination"));
-    const tr = document.querySelector(`#${distStationId}`) as HTMLElement;
-    const td = tr.getElementsByClassName("station-name")[0] as HTMLElement;
-    td.classList.add("distination");
-    distination.value = tr;
-  }
-
-
-  //スクロールイベント
-  window.addEventListener('scroll', () => {
-    const up = document.getElementById("up");
-    const down = document.getElementById("down");
-    if(!distination.value){return;}
-
-    const dist = distination.value;
-    if(dist.getBoundingClientRect().top < 0){
-      up?.classList.remove("hide");
-      down?.classList.add("hide");
-    }
-    // distinationが画面の下にある場合は.downから.hideを削除
-    else if(dist.getBoundingClientRect().bottom > window.innerHeight){
-      up?.classList.add("hide");
-      down?.classList.remove("hide");
-    }
-  });
-
 </script>
 
 <template>
@@ -74,7 +44,7 @@
           <tr v-for="staModel in model.stations" :key="lineId + staModel.name" :id="staModel.id">
             <td class="station-name">{{ staModel.name }}</td>
             <td>
-              <Exchange :station-id="staModel.id" :exchange-lines="staModel.getExchangeLines(lineId)" ></Exchange>
+              <Exchange :source-station-id="staModel.id" :exchange-lines="staModel.getExchangeLines(lineId)" ></Exchange>
             </td>
             <td v-for="kind in model.kinds" :key="kind.prop" :class="staModel.kinds[kind.prop]" class="kind">
             </td>
@@ -84,13 +54,7 @@
       <component :is="model.underlay" />
     </div>
     <div class="right-pane">
-      <h2>行き先</h2>
-      <select v-on:change="changeDistination($event)">
-        <option value=""> - </option>
-        <option v-for="dist in model.distinationList" :key="dist.id" :value="dist.id">{{ dist.name }}</option>
-      </select>
-      <label class="up hide" id="up">↑</label>
-      <label class="down hide" id="down">↓</label>
+      <RightPane :model="model" :from="from"/>
     </div>
   </div>
 </template>
@@ -108,10 +72,6 @@ table {
 td, th {
   border-bottom: 1px solid white;
   padding-top: 15px;
-}
-
-.hide {
-  display: none;
 }
 
 .kind{
@@ -161,8 +121,6 @@ th.express {
 }
 
 .right-pane {
-  position: sticky;
-  top: 0;
   margin-left: 1rem;
   padding: 1rem;
 }
