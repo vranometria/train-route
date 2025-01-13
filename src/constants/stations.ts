@@ -934,22 +934,6 @@ export const STATIONS = {
     LINE_IDS.jr_east.tokiwa,
     LINE_IDS.jr_east.touhokuhonsen,
   ], "いわぬま"),
-
-  //     new StopStationDef(STATION_IDS.jr_east.momouchi),
-  //     new StopStationDef(STATION_IDS.jr_east.odaka),
-  //     new StopStationDef(STATION_IDS.jr_east.iwaki_ota),
-  //     new StopStationDef(STATION_IDS.jr_east.haranocho),
-  //     new StopStationDef(STATION_IDS.jr_east.kashima),
-  //     new StopStationDef(STATION_IDS.jr_east.nittaki),
-  //     new StopStationDef(STATION_IDS.jr_east.soma),
-  //     new StopStationDef(STATION_IDS.jr_east.komagamine),
-  //     new StopStationDef(STATION_IDS.jr_east.shinchi),
-  //     new StopStationDef(STATION_IDS.jr_east.sakamoto),
-  //     new StopStationDef(STATION_IDS.jr_east.yamashita),
-  //     new StopStationDef(STATION_IDS.jr_east.hamayoshida),
-  //     new StopStationDef(STATION_IDS.jr_east.watari),
-  //     new StopStationDef(STATION_IDS.jr_east.okuma),
-  //     new StopStationDef(STATION_IDS.jr_east.iwanuma),
   // 武蔵野線
   [STATION_IDS.jr_east.minami_nagareyama]: new StationInfo('南流山', [
     LINE_IDS.jr_east.musashino,
@@ -1353,6 +1337,51 @@ export const STATIONS = {
   [STATION_IDS.odakyu.honkugenuma]: new StationInfo('本鵠沼', []),
   [STATION_IDS.odakyu.kugenumakaigan]: new StationInfo('鵠沼海岸', []),
   [STATION_IDS.odakyu.kataseenoshima]: new StationInfo('片瀬江ノ島', []),
+
+  // 西武鉄道
+  // ＞池袋線
+  [STATION_IDS.seibu.shiinamachi]: new StationInfo('椎名町', [], "しいなまち"),
+  [STATION_IDS.seibu.higashi_nagasaki]: new StationInfo('東長崎', [], "ひがしながさき"),
+  [STATION_IDS.seibu.ekoda]: new StationInfo('江古田', [], "えこだ"),
+  [STATION_IDS.seibu.nerima]: new StationInfo('練馬', [
+    LINE_IDS.seibu.ikebukuro,
+    LINE_IDS.tokyo_subway.oedo,
+    LINE_IDS.seibu.yurakucho,
+    LINE_IDS.seibu.toyoshima,
+  ], "ねりま"),
+  [STATION_IDS.seibu.syakujiikoen]: new StationInfo('石神井公園', [], "しゃくじいこうえん"),
+  [STATION_IDS.seibu.sakuradai]: new StationInfo('桜台', [], "さくらだい"),
+  [STATION_IDS.seibu.nakamurabashi]: new StationInfo('中村橋', [], "なかむらばし"),
+  [STATION_IDS.seibu.fujimidai]: new StationInfo('富士見台', [], "ふじみだい"),
+  [STATION_IDS.seibu.nerima_takanodai]: new StationInfo('練馬高野台', [], "ねりまたかのだい"),
+  [STATION_IDS.seibu.oizumi_gakuen]: new StationInfo('大泉学園', [], "おおいずみがくえん"),
+  [STATION_IDS.seibu.hoya]: new StationInfo('保谷', [], "ほうや"),
+  [STATION_IDS.seibu.hibarigaoka]: new StationInfo('ひばりヶ丘', [], "ひばりがおか"),
+  [STATION_IDS.seibu.higashi_kurume]: new StationInfo('東久留米', [], "ひがしくるめ"),
+  [STATION_IDS.seibu.kiyose]: new StationInfo('清瀬', [], "きよせ"),
+  [STATION_IDS.seibu.akitsu]: new StationInfo('秋津', [
+    LINE_IDS.seibu.ikebukuro,
+    new ExchangeInfo(LINE_IDS.jr_east.musashino, STATION_IDS.jr_east.shinakitsu),
+  ], "あきつ"),
+  [STATION_IDS.seibu.tokorozawa]: new StationInfo('所沢', [
+    LINE_IDS.seibu.ikebukuro,
+    LINE_IDS.seibu.seibu_shinjuku,
+  ], "ところざわ"),
+  [STATION_IDS.seibu.nishi_tokorozawa]: new StationInfo('西所沢', [
+    LINE_IDS.seibu.ikebukuro,
+    LINE_IDS.seibu.seibu_sayama,
+  ], "にしところざわ"),
+  [STATION_IDS.seibu.kotesashi]: new StationInfo('小手指', [], "こてさし"),
+  [STATION_IDS.seibu.sayamagaoka]: new StationInfo('狭山ヶ丘', [], "さやまがおか"),
+  [STATION_IDS.seibu.musashi_fujisawa]: new StationInfo('武蔵藤沢', [], "むさしふじさわ"),
+  [STATION_IDS.seibu.inariyamakoen]: new StationInfo('稲荷山公園', [], "いなりやまこうえん"),
+  [STATION_IDS.seibu.irumashi]: new StationInfo('入間市', [], "いるまし"),
+  [STATION_IDS.seibu.bushi]: new StationInfo('仏子', [], "ぶし"),
+  [STATION_IDS.seibu.motokaji]: new StationInfo('元加治', [], "もとかじ"),
+  [STATION_IDS.seibu.hanno]: new StationInfo('飯能', [
+    LINE_IDS.seibu.ikebukuro,
+    LINE_IDS.seibu.seibu_chichibu,
+  ], "はんのう"),
 
   // 首都圏新都市
   // ＞つくばエクスプレス
