@@ -30,6 +30,13 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_metro.marunouchi}}" >丸の内線</RouterLink>
         </div>
 
+        都営地下鉄
+        <div>
+          <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toei.mita}}" >三田線</RouterLink> -->
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.asakusa}}" >浅草線</RouterLink>
+          <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toei.ootsuka}}" >大江戸線</RouterLink> -->
+        </div>
+
         相模鉄道
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.sagami.honsen}}">相鉄本線</RouterLink>

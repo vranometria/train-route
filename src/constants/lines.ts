@@ -485,6 +485,7 @@ export const LINES = {
   //   stations: [],
   // },
 
+
   // 東京メトロ
   [LINE_IDS.tokyo_metro.hibiya]: new Line('日比谷線', '東京メトロ', [], [
     new StopStationDef(STATION_IDS.tokyo_metro.nakameguro),
@@ -543,7 +544,7 @@ export const LINES = {
     new KindDef("特急", "special-express"),
     new KindDef("快特", "rapid"),
   ], [
-    new StopStationDef(STATION_IDS.tokyo_metro.sengakuji, ["rapid", "express", "special-express"]),
+    new StopStationDef(STATION_IDS.tokyo_subway.sengakuji, ["rapid", "express", "special-express"]),
     new StopStationDef(STATION_IDS.jr_east.shinagawa, ["express", "special-express", "rapid"]),
     new StopStationDef(STATION_IDS.keikyu.kitashinagawa, []),
     new StopStationDef(STATION_IDS.keikyu.shinbanba, []),
@@ -751,7 +752,29 @@ export const LINES = {
     new StopStationDef(STATION_IDS.odakyu.ashigara),
     new StopStationDef(STATION_IDS.jr_east.odawara, ["rapid", "express"]),
   ]),
-  // // 東京都交通局
+  // 都営地下鉄(東京都交通局)
+  [LINE_IDS.tokyo_subway.asakusa]: new Line('浅草線', '都営地下鉄', [], [
+    new StopStationDef(STATION_IDS.tokyo_metro.oshiage),
+    new StopStationDef(STATION_IDS.tokyo_subway.honjo_azumabashi),
+    new StopStationDef(STATION_IDS.tokyo_subway.asakusa),
+    new StopStationDef(STATION_IDS.tokyo_subway.kuramae),
+    new StopStationDef(STATION_IDS.tokyo_subway.asakusabashi),
+    new StopStationDef(STATION_IDS.tokyo_subway.higashi_nihonbashi),
+    new StopStationDef(STATION_IDS.tokyo_subway.ningyocho),
+    new StopStationDef(STATION_IDS.tokyo_subway.nihonbashi),
+    new StopStationDef(STATION_IDS.tokyo_subway.takaracho),
+    new StopStationDef(STATION_IDS.tokyo_subway.higashi_ginza),
+    new StopStationDef(STATION_IDS.jr_east.shinbashi),
+    new StopStationDef(STATION_IDS.tokyo_subway.daimon),
+    new StopStationDef(STATION_IDS.tokyo_subway.mita),
+    new StopStationDef(STATION_IDS.tokyo_subway.sengakuji),
+    new StopStationDef(STATION_IDS.tokyo_subway.takanawadai),
+    new StopStationDef(STATION_IDS.jr_east.gotanda),
+    new StopStationDef(STATION_IDS.tokyo_subway.togoshi),
+    new StopStationDef(STATION_IDS.tokyu.nakanobe),
+    new StopStationDef(STATION_IDS.tokyo_subway.magome),
+    new StopStationDef(STATION_IDS.tokyo_subway.nishimagome),
+  ]),
   // [LINE_IDS.tokyo_koutsu_kyoku.oedo]: {
   //   name: '大江戸線',
   //   kinds: [],
@@ -762,8 +785,6 @@ export const LINES = {
   //   kinds: [],
   //   stations: [],
   // },
-  // 都営地下鉄
-  [LINE_IDS.tokyo_subway.asakusa]: new Line('浅草線', '東京都営地下鉄', [], []),
   // // 京王電鉄
   // [LINE_IDS.keiou.keiou]: {
   //   name: '京王線',

@@ -1,6 +1,5 @@
 import { StationInfo } from '@/types/station-info'
 import { LINE_IDS, STATION_IDS } from './ids'
-import Exchange from '@/components/Exchange.vue'
 import { ExchangeInfo } from '@/types/exchange-info'
 
 export const STATIONS = {
@@ -864,13 +863,84 @@ export const STATIONS = {
     LINE_IDS.tokyo_metro.hibiya,
   ], "はっちょうぼり"),
 
-  // 東京メトロ
+  // 都営地下鉄
   // >浅草線
+  /** 本所吾妻橋 */
+  [STATION_IDS.tokyo_subway.honjo_azumabashi]: new StationInfo('本所吾妻橋', [], "ほんじょあずまばし"),
+  /** 浅草 */
+  [STATION_IDS.tokyo_subway.asakusa]: new StationInfo('浅草', [
+    LINE_IDS.tokyo_subway.asakusa,
+    LINE_IDS.tokyo_metro.ginza,
+    LINE_IDS.toubu.toubu,
+  ], "あさくさ"),
+  /** 蔵前 */
+  [STATION_IDS.tokyo_subway.kuramae]: new StationInfo('蔵前', [
+    LINE_IDS.tokyo_subway.asakusa,
+    LINE_IDS.tokyo_subway.oedo,
+  ], "くらまえ"),
+  /** 浅草橋 */
+  [STATION_IDS.tokyo_subway.asakusabashi]: new StationInfo('浅草橋', [
+    LINE_IDS.tokyo_subway.asakusa,
+    LINE_IDS.jr_east.sobu,
+  ], "あさくさばし"),
+  /** 東日本橋 */
+  [STATION_IDS.tokyo_subway.higashi_nihonbashi]: new StationInfo('東日本橋', [
+    LINE_IDS.tokyo_subway.asakusa,
+    LINE_IDS.tokyo_subway.shinjuku,
+    LINE_IDS.jr_east.sobu_kaisoku,
+  ], "ひがしにほんばし"),
+  /** 人形町 */
+  [STATION_IDS.tokyo_subway.ningyocho]: new StationInfo('人形町', [
+    LINE_IDS.tokyo_subway.asakusa,
+    LINE_IDS.tokyo_metro.hibiya,
+    LINE_IDS.tokyo_metro.hanzoumon,
+  ], "にんぎょうちょう"),
+  /** 日本橋 */
+  [STATION_IDS.tokyo_subway.nihonbashi]: new StationInfo('日本橋', [
+    LINE_IDS.tokyo_subway.asakusa,
+    LINE_IDS.tokyo_metro.ginza,
+    LINE_IDS.tokyo_metro.touzai,
+  ], "にほんばし"),
+  /** 宝町 */
+  [STATION_IDS.tokyo_subway.takaracho]: new StationInfo('宝町', [], "たからちょう"),
+  /** 東銀座 */
+  [STATION_IDS.tokyo_subway.higashi_ginza]: new StationInfo('東銀座', [
+    LINE_IDS.tokyo_subway.asakusa,
+    LINE_IDS.tokyo_metro.hibiya,
+  ], "ひがしぎんざ"),
+  /** 大門 */
+  [STATION_IDS.tokyo_subway.daimon]: new StationInfo('大門', [
+    new ExchangeInfo(LINE_IDS.jr_east.yamanote, STATION_IDS.jr_east.hamamatsucho),
+    new ExchangeInfo(LINE_IDS.jr_east.keihin_touhoku, STATION_IDS.jr_east.hamamatsucho),
+    new ExchangeInfo(LINE_IDS.tokyo_monorail, STATION_IDS.jr_east.hamamatsucho),
+  ], "だいもん"),
+  /** 三田 */
+  [STATION_IDS.tokyo_subway.mita]: new StationInfo('三田', [
+    new ExchangeInfo(LINE_IDS.jr_east.yamanote, STATION_IDS.jr_east.tamachi),
+    new ExchangeInfo(LINE_IDS.jr_east.keihin_touhoku, STATION_IDS.jr_east.tamachi),
+    LINE_IDS.tokyo_subway.mita,
+  ], "みた"),
   /** 泉岳寺 */
-  [STATION_IDS.tokyo_metro.sengakuji]: new StationInfo('泉岳寺', [
-    LINE_IDS.tokyo_metro.asakusa,
+  [STATION_IDS.tokyo_subway.sengakuji]: new StationInfo('泉岳寺', [
+    LINE_IDS.tokyo_subway.asakusa,
     LINE_IDS.keikyu.honsen,
   ], "せんがくじ"),
+  /** 高輪台 */
+  [STATION_IDS.tokyo_subway.takanawadai]: new StationInfo('高輪台', [], "たかなわだい"),
+  /** 戸越 */
+  [STATION_IDS.tokyo_subway.togoshi]: new StationInfo('戸越', [], "とごし"),
+  /** 馬籠 */
+  [STATION_IDS.tokyo_subway.magome]: new StationInfo('馬籠', [], "まごめ"),
+  /** 西馬込 */
+  [STATION_IDS.tokyo_subway.nishimagome]: new StationInfo('西馬込', [], "にしまごめ"),
+
+  // 東京メトロ
+  [STATION_IDS.tokyo_metro.oshiage]: new StationInfo('押上', [
+    LINE_IDS.tokyo_metro.hanzoumon,
+    LINE_IDS.tokyo_subway.asakusa,
+    LINE_IDS.toubu.toubu,
+    LINE_IDS.toubu.skytree,
+  ], "おしあげ"),
   // >日比谷線
   [STATION_IDS.tokyo_metro.kitasenju]: new StationInfo('北千住', [
     LINE_IDS.tokyo_metro.hibiya,
@@ -897,7 +967,7 @@ export const STATIONS = {
   /** 東銀座 */
   [STATION_IDS.tokyo_metro.higashiginza]: new StationInfo('東銀座', [
     LINE_IDS.tokyo_metro.hibiya,
-    LINE_IDS.tokyo_metro.asakusa,
+    LINE_IDS.tokyo_subway.asakusa,
   ], "ひがしぎんざ"),
   /** 銀座 */
   [STATION_IDS.tokyo_metro.ginza]: new StationInfo('銀座', [
@@ -1104,11 +1174,11 @@ export const STATIONS = {
     LINE_IDS.odakyu.odawara,
     LINE_IDS.odakyu.enoshima,
   ], "さがみおおの"),
-  [STATION_IDS.odakyu.higashirinkan]: new StationInfo('東林間', []),
+  [STATION_IDS.odakyu.higashirinkan]: new StationInfo('東林間', [], "ひがしりんかん"),
   [STATION_IDS.odakyu.chuorinkan]: new StationInfo('中央林間', [
     LINE_IDS.odakyu.enoshima,
     LINE_IDS.tokyu.denentoshi,
-  ]),
+  ], "ちゅうおうりんかん"),
   [STATION_IDS.odakyu.minamirinkan]: new StationInfo('南林間', []),
   [STATION_IDS.sagami.tsuruma]: new StationInfo('鶴間', []),
   [STATION_IDS.odakyu.yamato]: new StationInfo('大和', [

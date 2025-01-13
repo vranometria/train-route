@@ -3,6 +3,7 @@
 export const LINE_IDS = {
   /** JR・相鉄直通線*/
   jr_sotetsu_chokutsu: "jr-sotetsu-chokutsu",
+  tokyo_monorail: "tokyo-monorail",
   /** JR東日本 */
   jr_east: {
     /** 京浜東北線 */
@@ -127,6 +128,10 @@ export const LINE_IDS = {
     isesaki: 'toubu-isesaki',
     /** 日光線 */
     nikko: 'toubu-nikko',
+    /** 東武線 */
+    toubu: 'toubu-toubu',
+    /** スカイツリーライン */
+    skytree: 'toubu-skytree',
   },
   saitama_shintoshi: {
     // ニューシャトル
@@ -154,8 +159,6 @@ export const LINE_IDS = {
     fukutoshin: 'tokyo-metro-fukutoshin',
     /** 千代田線 */
     chiyoda: 'tokyo-metro-chiyoda',
-    /** 浅草線 */
-    asakusa: 'tokyo-metro-asakusa',
   },
   /** 東京都営地下鉄 */
   tokyo_subway: {
@@ -711,6 +714,7 @@ export const STATION_IDS = {
   },
   /** 東京メトロ */
   tokyo_metro: {
+    oshiage: 'oshiage',
     /** 中目黒 */
     nakameguro: 'nakameguro',
     hiroo: 'hiroo',
@@ -747,8 +751,28 @@ export const STATION_IDS = {
     higashi_koenji: 'higashi-koenji',
     shinkoenji: 'shinkoenji',
     minamiasagaya: 'minamiasagaya',
+  },
+  /** 東京都交通局 */
+  tokyo_subway: {
     //浅草線
+    honjo_azumabashi: 'honjo-azumaba-shi',
+    asakusa: 'asakusa',
+    kuramae: 'kuramae',
+    asakusabashi: 'asakusabashi',
+    higashi_nihonbashi: 'higashi-nihonbashi',
+    ningyocho: 'ningyocho',
+    nihonbashi: 'nihonbashi',
+    takaracho: 'takaracho',
+    higashi_ginza: 'higashi-ginza',
+    daimon: 'daimon',
+    mita: 'mita',
     sengakuji: 'sengakuji',
+    takanawadai: 'takanawa-dai',
+    gotanda: 'gotanda',
+    togoshi: 'togoshi',
+    nakanobe: 'nakanobe',
+    magome: 'magome',
+    nishimagome: 'nishimagome',
   },
   /** 相模鉄道 */
   sagami: {
