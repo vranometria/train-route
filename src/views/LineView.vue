@@ -71,12 +71,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="sta in model.stations" :key="lineId + sta.name" :id="sta.id">
-            <td class="station-name">{{ sta.name }}</td>
+          <tr v-for="staModel in model.stations" :key="lineId + staModel.name" :id="staModel.id">
+            <td class="station-name">{{ staModel.name }}</td>
             <td>
-              <Exchange :station-id="sta.id" :exchange-line-ids="sta.getExchangeLineIds(lineId)" ></Exchange>
+              <Exchange :station-id="staModel.id" :exchange-lines="staModel.getExchangeLines(lineId)" ></Exchange>
             </td>
-            <td v-for="kind in model.kinds" :key="kind.prop" :class="sta.kinds[kind.prop]" class="kind">
+            <td v-for="kind in model.kinds" :key="kind.prop" :class="staModel.kinds[kind.prop]" class="kind">
             </td>
           </tr>
         </tbody>

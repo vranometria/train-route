@@ -1,5 +1,7 @@
 import { StationInfo } from '@/types/station-info'
 import { LINE_IDS, STATION_IDS } from './ids'
+import Exchange from '@/components/Exchange.vue'
+import { ExchangeInfo } from '@/types/exchange-info'
 
 export const STATIONS = {
   [STATION_IDS.jr_east.utsunomiya]: new StationInfo('宇都宮', [
@@ -1156,14 +1158,21 @@ export const STATIONS = {
   /** 京急川崎 */
   [STATION_IDS.keikyu.keikyukawasaki]: new StationInfo('京急川崎', [
     LINE_IDS.keikyu.honsen,
+    new ExchangeInfo(LINE_IDS.jr_east.tokaido, STATION_IDS.jr_east.kawasaki),
+    new ExchangeInfo(LINE_IDS.jr_east.keihin_touhoku, STATION_IDS.jr_east.kawasaki),
+    new ExchangeInfo(LINE_IDS.jr_east.nanbu, STATION_IDS.jr_east.kawasaki),
   ], "けいきゅうかわさき"),
   /** 八丁畷 */
-  [STATION_IDS.keikyu.hacchonawate]: new StationInfo('八丁畷', [], "はっちょうなわて"),
+  [STATION_IDS.keikyu.hacchonawate]: new StationInfo('八丁畷', [
+    LINE_IDS.keikyu.honsen,
+    LINE_IDS.jr_east.nanbu,
+  ], "はっちょうなわて"),
   /** 鶴見市場 */
   [STATION_IDS.keikyu.tsurumiichiba]: new StationInfo('鶴見市場', [], "つるみいちば"),
   /** 京急鶴見 */
   [STATION_IDS.keikyu.keikyutsurumi]: new StationInfo('京急鶴見', [
     LINE_IDS.keikyu.honsen,
+    new ExchangeInfo(LINE_IDS.jr_east.keihin_touhoku, STATION_IDS.jr_east.tsurumi),
   ], "けいきゅうつるみ"),
   /** 花月総持寺 */
   [STATION_IDS.keikyu.kagetusoujiji]: new StationInfo('花月総持寺', [], "かげつそうじじ"),
@@ -1172,6 +1181,7 @@ export const STATIONS = {
   /** 京急新子安 */
   [STATION_IDS.keikyu.keikyushinkoyasu]: new StationInfo('京急新子安', [
     LINE_IDS.keikyu.honsen,
+    new ExchangeInfo(LINE_IDS.jr_east.keihin_touhoku, STATION_IDS.jr_east.shinkoyasu),
   ], "けいきゅうしんこやす"),
   /** 子安 */
   [STATION_IDS.keikyu.koyasu]: new StationInfo('子安', [], "こやす"),
@@ -1180,6 +1190,8 @@ export const STATIONS = {
   /** 京急東神奈川 */
   [STATION_IDS.keikyu.keikyuhigashikanagawa]: new StationInfo('京急東神奈川', [
     LINE_IDS.keikyu.honsen,
+    new ExchangeInfo(LINE_IDS.jr_east.keihin_touhoku, STATION_IDS.jr_east.higashikanagawa),
+    new ExchangeInfo(LINE_IDS.jr_east.yokohama, STATION_IDS.jr_east.higashikanagawa),
   ], "けいきゅうひがしかながわ"),
   /** 神奈川駅 */
   [STATION_IDS.keikyu.kanagawa]: new StationInfo('神奈川駅', [], "かながわえき"),
@@ -1196,11 +1208,18 @@ export const STATIONS = {
   /** 弘明寺*/
   [STATION_IDS.keikyu.gumyouji]: new StationInfo('弘明寺', [], "ぐみょうじ"),
   /** 上大岡 */
-  [STATION_IDS.keikyu.kamiooka]: new StationInfo('上大岡', [], "かみおおおか"),
+  [STATION_IDS.keikyu.kamiooka]: new StationInfo('上大岡', [
+    LINE_IDS.keikyu.honsen,
+    LINE_IDS.yokohama_shieichikatetsu.blue_line,
+  ], "かみおおおか"),
   /** 屛風ヶ浦 */
   [STATION_IDS.keikyu.byobugaura]: new StationInfo('屛風ヶ浦', [], "びょうぶがうら"),
   /** 杉田 */
-  [STATION_IDS.keikyu.sugita]: new StationInfo('杉田', [], "すぎた"),
+  [STATION_IDS.keikyu.sugita]: new StationInfo('杉田', [
+    LINE_IDS.keikyu.honsen,
+    LINE_IDS.jr_east.negishi,
+    LINE_IDS.keikyu.sea_side,
+  ], "すぎた"),
   /** 京急富岡 */
   [STATION_IDS.keikyu.keikyutomioka]: new StationInfo('京急富岡', [], "けいきゅうとみおか"),
   /** 能見台 */
@@ -1208,7 +1227,10 @@ export const STATIONS = {
   /** 金沢文庫 */
   [STATION_IDS.keikyu.kanazawabunko]: new StationInfo('金沢文庫', [], "かなざわぶんこ"),
   /** 金沢八景 */
-  [STATION_IDS.keikyu.kanazawahakkei]: new StationInfo('金沢八景', [], "かなざわはっけい"),
+  [STATION_IDS.keikyu.kanazawahakkei]: new StationInfo('金沢八景', [
+    LINE_IDS.keikyu.honsen,
+    LINE_IDS.keikyu.sea_side,
+  ], "かなざわはっけい"),
   /** 追浜 */
   [STATION_IDS.keikyu.oppama]: new StationInfo('追浜', [], "おっぱま"),
   /** 京急田浦 */
@@ -1224,7 +1246,10 @@ export const STATIONS = {
   /** 県立大学 */
   [STATION_IDS.keikyu.kenritsudaigaku]: new StationInfo('県立大学', [], "けんりつだいがく"),
   /** 堀之内 */
-  [STATION_IDS.keikyu.horinouchi]: new StationInfo('堀之内', [], "ほりのうち"),
+  [STATION_IDS.keikyu.horinouchi]: new StationInfo('堀之内', [
+    LINE_IDS.keikyu.honsen,
+    LINE_IDS.keikyu.kurihama,
+  ], "ほりのうち"),
   /** 京急大津 */
   [STATION_IDS.keikyu.keikyuotsu]: new StationInfo('京急大津', [], "けいきゅうおおつ"),
   /** 真堀海岸 */

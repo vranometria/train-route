@@ -113,6 +113,7 @@ export const LINE_IDS = {
     zushi: "keikyu-zushi",
     kurihama: "keikyu-kurihama",
     daishi: "keikyu-daishi",
+    sea_side: "keikyu-sea-side",
   },
   /** 東武鉄道 */
   toubu: {
