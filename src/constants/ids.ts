@@ -46,6 +46,10 @@ export const LINE_IDS = {
     musashino: 'jr-musashino',
     /** 相模線 */
     sagami: 'jr-sagami',
+    /** 磐越東線 */
+    banetsutou: 'jr-banetsutou',
+    /** 東北本線 */
+    touhokuhonsen: 'jr-touhoku-honsen',
 
     /** 日光線 */
     nikko: 'jr-nikko',
@@ -207,6 +211,22 @@ export const LINE_IDS = {
     inokashira: 'keiou-inokashira',
     /** 高尾線 */
     takao: 'keiou-takao',
+  },
+  /** 京成電鉄 */
+  shin_keisei: {
+    shin_keisei: "shin-keisei",
+  },
+  /**流鉄 */
+  ryutetsu: {
+    ryutetsu_ryuzan: "ryutetsu-ryutetsu",
+  },
+  /** 鹿島臨海鉄道 */
+  kashiwa_rinkai: {
+    daikashima: "kashiwa-rinkai-daikashima",
+  },
+  /** ひたちなか海浜鉄道 */
+  hitachinaka_kaihin: {
+    minato: "hitachinaka-kaihin-minato",
   },
   /** 東急電鉄 */
   tokyu: {
@@ -536,6 +556,7 @@ export const STATION_IDS = {
     kamakura: "kamakura",
     zushi: "zushi",
     nishinasuno: "nishinasuno",
+
     //常盤線
     mikawashima: "mikawashima",
     minami_senju: "minami_senju",
@@ -568,13 +589,14 @@ export const STATION_IDS = {
     tomobe: "tomobe",
     uchihara: "uchihara",
     akatsuka: "akatsuka",
-    airakuen: "airakuen",
+    kairakuen: "kairakuen",
     mito: "mito",
+    katsuta: "katsuta",
     sawa: "sawa",
     toukai: "toukai",
     omika: "omika",
     hitachi_taga: "hitachi_taga",
-    hitashi: "hitashi",
+    hitachi: "hitachi",
     ogitsu: "ogitsu",
     juo: "juo",
     takahagi: "takahagi",
@@ -838,7 +860,6 @@ export const STATION_IDS = {
   },
   /** 東京都交通局 */
   tokyo_subway: {
-    //浅草線
     honjo_azumabashi: 'honjo-azumaba-shi',
     asakusa: 'asakusa',
     kuramae: 'kuramae',
@@ -857,6 +878,25 @@ export const STATION_IDS = {
     nakanobe: 'nakanobe',
     magome: 'magome',
     nishimagome: 'nishimagome',
+
+    shinohara: 'shinohara',
+    mizue: 'mizue',
+    ichinoe: 'ichinoe',
+    funabori: 'funabori',
+    higashi_oshima: 'higashi-oshima',
+    oshima: 'oshima',
+    nishi_oshima: 'nishi-oshima',
+    sumiyoshi: 'sumiyoshi',
+    kikukawa: 'kikukawa',
+    morishita: 'morishita',
+    hamacho: 'hamacho',
+    bakuro_yokoyama: 'bakuro-yokoyama',
+    iwamotocho: 'iwamotocho',
+    ogawacho: 'ogawacho',
+    jinbocho: 'jinbocho',
+    kudanshita: 'kudanshita',
+    akebonobashi: 'akebonobashi',
+    shinsen_shinjuku: 'shinsen-shinjuku',
   },
   /** 首都圏新都市 */
   shutoken_shintoshi: {
