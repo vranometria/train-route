@@ -136,6 +136,10 @@ th.kind {
   background-color: red;
 }
 
+.special-express {
+  background-color: orange;
+}
+
 th.express {
   color: white;
 }

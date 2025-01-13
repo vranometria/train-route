@@ -863,6 +863,12 @@ export const STATIONS = {
   ], "はっちょうぼり"),
 
   // 東京メトロ
+  // >浅草線
+  /** 泉岳寺 */
+  [STATION_IDS.tokyo_metro.sengakuji]: new StationInfo('泉岳寺', [
+    LINE_IDS.tokyo_metro.asakusa,
+    LINE_IDS.keikyu.honsen,
+  ], "せんがくじ"),
   // >日比谷線
   [STATION_IDS.tokyo_metro.kitasenju]: new StationInfo('北千住', [
     LINE_IDS.tokyo_metro.hibiya,
@@ -1118,6 +1124,115 @@ export const STATIONS = {
   [STATION_IDS.odakyu.honkugenuma]: new StationInfo('本鵠沼', []),
   [STATION_IDS.odakyu.kugenumakaigan]: new StationInfo('鵠沼海岸', []),
   [STATION_IDS.odakyu.kataseenoshima]: new StationInfo('片瀬江ノ島', []),
+
+  // 京急
+  // >本線
+  [STATION_IDS.keikyu.kitashinagawa]: new StationInfo('北品川', [], "きたしながわ"),
+  /** 新馬場 */
+  [STATION_IDS.keikyu.shinbanba]: new StationInfo('新馬場', [], "しんばんば"),
+  /** 青物横丁 */
+  [STATION_IDS.keikyu.aomonoyokocho]: new StationInfo('青物横丁', [], "あおものよこちょう"),
+  /** 鮫洲 */
+  [STATION_IDS.keikyu.samezu]: new StationInfo('鮫洲', [], "さめず"),
+  /** 立会川 */
+  [STATION_IDS.keikyu.tachiaigawa]: new StationInfo('立会川', [], "たちあいがわ"),
+  /** 大森海岸 */
+  [STATION_IDS.keikyu.omorikaigan]: new StationInfo('大森海岸', [], "おおもりかいがん"),
+  /** 平和島 */
+  [STATION_IDS.keikyu.heiwajima]: new StationInfo('平和島', [], "へいわじま"),
+  /** 大森町 */
+  [STATION_IDS.keikyu.omorimachi]: new StationInfo('大森町', [], "おおもりまち"),
+  /** 梅屋敷 */
+  [STATION_IDS.keikyu.umeyashiki]: new StationInfo('梅屋敷', [], "うめやしき"),
+  /** 京急蒲田 */
+  [STATION_IDS.keikyu.keikyukamata]: new StationInfo('京急蒲田', [
+    LINE_IDS.keikyu.honsen,
+    LINE_IDS.keikyu.kuko,
+  ], "けいきゅうかまた"),
+  /** 雑色 */
+  [STATION_IDS.keikyu.zoushiki]: new StationInfo('雑色', [], "ぞうしき"),
+  /** 六郷土手 */
+  [STATION_IDS.keikyu.rokugodote]: new StationInfo('六郷土手', [], "ろくごうどて"),
+  /** 京急川崎 */
+  [STATION_IDS.keikyu.keikyukawasaki]: new StationInfo('京急川崎', [
+    LINE_IDS.keikyu.honsen,
+  ], "けいきゅうかわさき"),
+  /** 八丁畷 */
+  [STATION_IDS.keikyu.hacchonawate]: new StationInfo('八丁畷', [], "はっちょうなわて"),
+  /** 鶴見市場 */
+  [STATION_IDS.keikyu.tsurumiichiba]: new StationInfo('鶴見市場', [], "つるみいちば"),
+  /** 京急鶴見 */
+  [STATION_IDS.keikyu.keikyutsurumi]: new StationInfo('京急鶴見', [
+    LINE_IDS.keikyu.honsen,
+  ], "けいきゅうつるみ"),
+  /** 花月総持寺 */
+  [STATION_IDS.keikyu.kagetusoujiji]: new StationInfo('花月総持寺', [], "かげつそうじじ"),
+  /** 生麦  */
+  [STATION_IDS.keikyu.namamugi]: new StationInfo('生麦', [], "なまむぎ"),
+  /** 京急新子安 */
+  [STATION_IDS.keikyu.keikyushinkoyasu]: new StationInfo('京急新子安', [
+    LINE_IDS.keikyu.honsen,
+  ], "けいきゅうしんこやす"),
+  /** 子安 */
+  [STATION_IDS.keikyu.koyasu]: new StationInfo('子安', [], "こやす"),
+  /** 神奈川新町 */
+  [STATION_IDS.keikyu.kanagawashinmachi]: new StationInfo('神奈川新町', [], "かながわしんまち"),
+  /** 京急東神奈川 */
+  [STATION_IDS.keikyu.keikyuhigashikanagawa]: new StationInfo('京急東神奈川', [
+    LINE_IDS.keikyu.honsen,
+  ], "けいきゅうひがしかながわ"),
+  /** 神奈川駅 */
+  [STATION_IDS.keikyu.kanagawa]: new StationInfo('神奈川駅', [], "かながわえき"),
+  /** 戸部 */
+  [STATION_IDS.keikyu.tobe]: new StationInfo('戸部', [], "とべ"),
+  /** 日ノ出町 */
+  [STATION_IDS.keikyu.hinodecho]: new StationInfo('日ノ出町', [], "ひのでちょう"),
+  /** 黄金町 */
+  [STATION_IDS.keikyu.koganecho]: new StationInfo('黄金町', [], "こがねちょう"),
+  /** 南太田 */
+  [STATION_IDS.keikyu.minamiota]: new StationInfo('南太田', [], "みなみおおた"),
+  /** 井土ヶ谷 */
+  [STATION_IDS.keikyu.idogaya]: new StationInfo('井土ヶ谷', [], "いどがや"),
+  /** 弘明寺*/
+  [STATION_IDS.keikyu.gumyouji]: new StationInfo('弘明寺', [], "ぐみょうじ"),
+  /** 上大岡 */
+  [STATION_IDS.keikyu.kamiooka]: new StationInfo('上大岡', [], "かみおおおか"),
+  /** 屛風ヶ浦 */
+  [STATION_IDS.keikyu.byobugaura]: new StationInfo('屛風ヶ浦', [], "びょうぶがうら"),
+  /** 杉田 */
+  [STATION_IDS.keikyu.sugita]: new StationInfo('杉田', [], "すぎた"),
+  /** 京急富岡 */
+  [STATION_IDS.keikyu.keikyutomioka]: new StationInfo('京急富岡', [], "けいきゅうとみおか"),
+  /** 能見台 */
+  [STATION_IDS.keikyu.noukendai]: new StationInfo('能見台', [], "のうけんだい"),
+  /** 金沢文庫 */
+  [STATION_IDS.keikyu.kanazawabunko]: new StationInfo('金沢文庫', [], "かなざわぶんこ"),
+  /** 金沢八景 */
+  [STATION_IDS.keikyu.kanazawahakkei]: new StationInfo('金沢八景', [], "かなざわはっけい"),
+  /** 追浜 */
+  [STATION_IDS.keikyu.oppama]: new StationInfo('追浜', [], "おっぱま"),
+  /** 京急田浦 */
+  [STATION_IDS.keikyu.keikyutaura]: new StationInfo('京急田浦', [], "けいきゅうたうら"),
+  /** 安針塚*/
+  [STATION_IDS.keikyu.anjinduka]: new StationInfo('安針塚', [], "あんじんづか"),
+  /** 逸見 */
+  [STATION_IDS.keikyu.hemi]: new StationInfo('逸見', [], "へみ"),
+  /** 汐入 */
+  [STATION_IDS.keikyu.shioiri]: new StationInfo('汐入', [], "しおいり"),
+  /** 横須賀中央 */
+  [STATION_IDS.keikyu.yokosukachuo]: new StationInfo('横須賀中央', [], "よこすかちゅうおう"),
+  /** 県立大学 */
+  [STATION_IDS.keikyu.kenritsudaigaku]: new StationInfo('県立大学', [], "けんりつだいがく"),
+  /** 堀之内 */
+  [STATION_IDS.keikyu.horinouchi]: new StationInfo('堀之内', [], "ほりのうち"),
+  /** 京急大津 */
+  [STATION_IDS.keikyu.keikyuotsu]: new StationInfo('京急大津', [], "けいきゅうおおつ"),
+  /** 真堀海岸 */
+  [STATION_IDS.keikyu.maborikaigan]: new StationInfo('真堀海岸', [], "まぼりかいがん"),
+  /** 浦賀 */
+  [STATION_IDS.keikyu.uraga]: new StationInfo('浦賀', [], "うらが"),
+
+
   // 東急
   // ＞田園都市線
   [STATION_IDS.tokyu.ikejiriohashi]: new StationInfo('池尻大橋'),
