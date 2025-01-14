@@ -627,7 +627,7 @@ export const STATIONS = {
       LINE_IDS.keiou.inokashira,
       LINE_IDS.tokyo_metro.ginza,
       LINE_IDS.tokyo_metro.hanzoumon,
-      LINE_IDS.tokyo_metro.hukutoshin,
+      LINE_IDS.tokyo_metro.fukutoshin,
       LINE_IDS.tokyu.toyoko,
       LINE_IDS.tokyu.denentoshi,
     ],
@@ -662,32 +662,20 @@ export const STATIONS = {
     LINE_IDS.tokyo_metro.fukutoshin,
     LINE_IDS.toubu.toujou,
   ], "いけぶくろ"),
-  /** 板橋 */
   [STATION_IDS.jr_east.itabashi]: new StationInfo('板橋', [], "いたばし"),
-  /** 十条 */
   [STATION_IDS.jr_east.jujo]: new StationInfo('十条', [], "じゅうじょう"),
-  /** 北赤羽 */
   [STATION_IDS.jr_east.kitaakahane]: new StationInfo('北赤羽', [], "きたあかばね"),
-  /** 浮間舟渡 */
   [STATION_IDS.jr_east.ukimafunado]: new StationInfo('浮間舟渡', [], "うきまふなと"),
-  /** 戸田公園 */
   [STATION_IDS.jr_east.todakouen]: new StationInfo('戸田公園', [], "とだこうえん"),
-  /** 戸田 */
   [STATION_IDS.jr_east.toda]: new StationInfo('戸田', [], "とだ"),
-  /** 北戸田 */
   [STATION_IDS.jr_east.kitatoda]: new StationInfo('北戸田', [], "きたとだ"),
-  /** 武蔵浦和 */
   [STATION_IDS.jr_east.musashiurawa]: new StationInfo('武蔵浦和', [
     LINE_IDS.jr_east.musashino,
     LINE_IDS.jr_east.saikyou,
   ], "むさしうらわ"),
-  /** 中浦和 */
   [STATION_IDS.jr_east.nakaurawa]: new StationInfo('中浦和', [], "なかうらわ"),
-  /** 南与野 */
   [STATION_IDS.jr_east.minamiyono]: new StationInfo('南与野', [], "みなみよの"),
-  /** 与野本町 */
   [STATION_IDS.jr_east.yonohonmachi]: new StationInfo('与野本町', [], "よのほんまち"),
-  /** 北与野 */
   [STATION_IDS.jr_east.kitayono]: new StationInfo('北与野', [], "きたよの"),
   [STATION_IDS.jr_east.mejiro]: new StationInfo('目白', [], "めじろ"),
   [STATION_IDS.jr_east.takadanobaba]: new StationInfo('高田馬場', []),
@@ -1505,6 +1493,23 @@ export const STATIONS = {
   [STATION_IDS.tokyo_metro.hanzomon]: new StationInfo('半蔵門', [], "はんぞうもん"),
   [STATION_IDS.tokyo_metro.suitengumae]: new StationInfo('水天宮前', [], "すいてんぐうまえ"),
   [STATION_IDS.tokyo_metro.kiyosumi_shirakawa]: new StationInfo('清澄白河', [], "きよすみしらかわ"),
+  // ＞南北線
+  [STATION_IDS.tokyo_metro.shirokanedai]: new StationInfo('白金台', [], "しろかねだい"),
+  [STATION_IDS.tokyo_metro.shirokane_takanawa]: new StationInfo('白金高輪', [
+    LINE_IDS.tokyo_metro.nanboku,
+    LINE_IDS.tokyo_subway.mita,
+  ], "しろかねたかなわ"),
+  [STATION_IDS.tokyo_metro.roppongi_iccho_me]: new StationInfo('六本木一丁目', [], "ろっぽんぎいっちょうめ"),
+  [STATION_IDS.tokyo_metro.todaimae]: new StationInfo('東大前', [], "とうだいまえ"),
+  [STATION_IDS.tokyo_metro.honkomagome]: new StationInfo('本駒込', [], "ほんこまごめ"),
+  [STATION_IDS.tokyo_metro.nishigahara]: new StationInfo('西ヶ原', [], "にしがはら"),
+  [STATION_IDS.tokyo_metro.oji]: new StationInfo('王子', [
+    LINE_IDS.tokyo_metro.nanboku,
+    LINE_IDS.tokyo_subway.sakura_tram,
+  ], "おうじ"),
+  [STATION_IDS.tokyo_metro.oji_kamiya]: new StationInfo('王子神谷', [], "おうじかみや"),
+  [STATION_IDS.tokyo_metro.shimo]: new StationInfo('志茂', [], "しも"),
+  [STATION_IDS.tokyo_metro.akabane_iwabuchi]: new StationInfo('赤羽岩淵', [], "あかばねいわぶち"),
 
   // 相模鉄道
   // ＞本線

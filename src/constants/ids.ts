@@ -152,8 +152,6 @@ export const LINE_IDS = {
     ginza: 'tokyo-metro-ginza',
     /** 半蔵門線 */
     hanzoumon: 'tokyo-metro-hanzoumon',
-    /** 副都心線 */
-    hukutoshin: 'tokyo-metro-hukutoshin',
     /** 南北線 */
     nanboku: 'tokyo-metro-nanboku',
     /** 東西線 */
@@ -962,6 +960,7 @@ export const STATION_IDS = {
     oji_kamiya: 'oji-kamiya',
     shimo: 'shimo',
     akabane_iwabuchi: 'akabane-iwabuchi',
+    oji: 'oji',
   },
   /** 都営駅 */
   tokyo_subway: {
