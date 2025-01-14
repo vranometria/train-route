@@ -59,7 +59,6 @@ export const LINE_IDS = {
     mito: 'jr-mito',
     /** 東北本線 */
     tohokuhonsen: 'jr-tohoku-honsen',
-
     /** 青梅線 */
     oume: 'jr-oume',
     /** 八高線 */
@@ -215,10 +214,6 @@ export const LINE_IDS = {
     /** 高尾線 */
     takao: 'keiou-takao',
   },
-  /** 京成電鉄 */
-  shin_keisei: {
-    shin_keisei: "shin-keisei",
-  },
   /**流鉄 */
   ryutetsu: {
     ryutetsu_ryuzan: "ryutetsu-ryutetsu",
@@ -265,6 +260,14 @@ export const LINE_IDS = {
     seibu_shinjuku: "seibu-seibu-shinjuku",
     seibu_chichibu: "seibu-seibu-chichibu",
   },
+  /** 東葉高速鉄道 */
+  toyo_kousoku: {
+    toyo_kousoku: 'toyo-kousoku-toyo-kousoku',
+  },
+  /** 舞浜リゾート */
+  maihama_resort: {
+    disney_resort: 'maihama-resort-disney-resort',
+  },
   /** 多摩モノレール */
   tama_monorail: {
     tama_monorail: 'tama-monorail',
@@ -272,16 +275,16 @@ export const LINE_IDS = {
   /** 京成電鉄 */
   keisei: {
     honsen: 'keisei-honsen',
-    hokusou: 'keisei-hokusou',
     chiba: 'keisei-chiba',
+    shin_keisei: "shin-keisei",
+    keisei_narita_sky_access: "keisei-narita-sky-access",
+  },
+  hokusou: {
+    hokusou: 'keisei-hokusou',
   },
   // ゆりかもめ
   yurikamome: {
     yurikamome: 'yurikamome',
-  },
-  /** 東葉高速鉄道 */
-  toyo_kousoku: {
-    toyo_kousoku: 'toyo-kousoku-toyo-kousoku',
   },
   /** 北越急行 */
   hokuetsu_kyuko: {
@@ -303,6 +306,10 @@ export const LINE_IDS = {
    /** 関東鉄道 */
    kanto: {
     joso: "kanto-joso"
+  },
+  /** 埼玉高速鉄道 */
+  saitama_kosoku: {
+    saitama_stadium: "saitama-stadium",
   },
   /** JR東海 */
   jr_tokai: {
@@ -352,7 +359,7 @@ export const LINE_IDS = {
 
 /** 駅ID */
 export const STATION_IDS = {
-  /** JR東日本 */
+  /** JR東日本駅 */
   jr_east: {
     omiya: 'o-miya',
     saitama_shintoshin: 'saitama-shintoshin',
@@ -708,9 +715,6 @@ export const STATION_IDS = {
     // 相模線
     atsugi: "atsugi",
 
-    // 京葉線
-    hacchobori: "hacchobori",
-
     // 宇都宮線
     doro: 'doro',
     /** 岡本(栃木) */
@@ -725,30 +729,20 @@ export const STATION_IDS = {
     nishisunano: 'nishisunano',
     nasushiobara: 'nasushiobara',
     kuroiso: 'kuroiso',
-    //武蔵野線
+    //武蔵野線(JM)
     huchuhonmachi: 'huchuhonmachi',
     kitahuchu: 'kitahuchu',
-    shinkohira: 'shinkohira',
-    shinakitsu: 'shinakitsu',
-    higashitokorozawa: "higashitokorozawa",
-    shinza: "shinza",
-    kitaasaka: "kitaasaka",
     minamiurawa: "minamiurawa",
     higashiurawa: "higashiurawa",
     higashikawaguchi: "higashikawaguchi",
     minamikoshigaya: "minamikoshigaya",
-    koshigaya_laketown: "koshigaya-laketown",
     minami_nagareyama: "minami_nagareyama",
     /** 吉川(埼玉) */
-    yoshikawa: "yoshikawa",
     yoshikawaminami: "yoshikawaminami",
-    shinsangou: "shinsangou",
-    /** 三郷(埼玉) */
-    sangou: "sangou",
     minaminagareyama: "minaminagareyama",
     shinmatsudo: "shinmatsudo",
     shinyahashira: "shinyahashira",
-    higashimatsudo: "higashimatsudo",
+    higashi_matsudo: "higash_imatsudo",
     ichikawaono: "ichikawaono",
     hunabashihouten: "hunabashihouten",
     minamihunabashi: "minamihunabashi",
@@ -757,11 +751,8 @@ export const STATION_IDS = {
     kaihinmakuhari: "kaihinmakuhari",
     ichikawashiohama: "ichikawashiohama",
     shinurayasu: "shinurayasu",
-    maihama: "maihama",
     kasairinkaikouen: "kasairinkaikouen",
     shinkiba: "shinkiba",
-    shiomi: "shiomi",
-    ecchujima: "ecchujima",
     hacchoubori: "hacchoubori",
     //南武線
     hamakawasaki: "hamakawasaki",
@@ -802,7 +793,7 @@ export const STATION_IDS = {
     tsubame_sanjo: "tsubame-sanjo",
     niigata: "niigata",
   },
-  /** 京急 */
+  /** 京急駅 */
   keikyu: {
     kitashinagawa: 'kitashinagawa',
     shinbanba: 'shinbanba',
@@ -875,7 +866,7 @@ export const STATION_IDS = {
     hanedakuko_daisan_terminal: 'hanedakuko-daisan-terminal',
     hanedakuko_dai1_dai2_terminal: 'hanedakuko-dai1-dai2-terminal',
   },
-  /** 東京メトロ */
+  /** 東京メトロ駅 */
   tokyo_metro: {
     oshiage: 'oshiage',
     /** 中目黒 */
@@ -943,7 +934,7 @@ export const STATION_IDS = {
     meiji_jingumae: 'meiji-jingumae',
     higashi_shinjuku: 'higashi-shinjuku',
   },
-  /** 東京都交通局 */
+  /** 都営駅 */
   tokyo_subway: {
     honjo_azumabashi: 'honjo-azumaba-shi',
     asakusa: 'asakusa',
@@ -1001,7 +992,7 @@ export const STATION_IDS = {
     aoi: 'aoi',
     shin_okachimachi: 'shin-okachimachi',
   },
-  /** 相模鉄道 */
+  /** 相鉄駅 */
   sagami: {
     ebina: "ebina",
     kashiwadai: "kashiwadai",
@@ -1022,7 +1013,7 @@ export const STATION_IDS = {
     hiranumabashi: "hiranumabashi",
     hazawayokohamakokudai: "hazawayokohamakokudai",
   },
-  /** 小田急電鉄 */
+  /** 小田急駅 */
   odakyu: {
     sagamiono: "sagamiono",
     higashirinkan: "higashirinkan",
@@ -1086,7 +1077,7 @@ export const STATION_IDS = {
     /** 足柄(神奈川) */
     ashigara: "ashigara",
   },
-  /** 東急電鉄 */
+  /** 東急駅 */
   tokyu: {
     // 田園都市線
     ikejiriohashi: "ikejiriohashi",
@@ -1145,7 +1136,7 @@ export const STATION_IDS = {
     motosumiyoshi: "motosumiyoshi",
     hiyoshi: "hiyoshi",
   },
-  /** 東武鉄道 */
+  /** 東武駅 */
   tobu: {
     // 東武東上線
     kita_ikebukuro: "tobu-kita-ikebukuro",
@@ -1185,7 +1176,7 @@ export const STATION_IDS = {
     tamayodo: "tobu-tamayodo",
     yorii: "tobu-yorii",
   },
-  /** 西部電鉄 */
+  /** 西部駅 */
   seibu: {
     // 西武池袋線
     shiinamachi: "shiinamachi",
@@ -1213,6 +1204,42 @@ export const STATION_IDS = {
     bushi: "bushi",
     motokaji: "motokaji",
     hanno: "hanno",
+  },
+  /** 流鉄 */
+  ryutetsu: {
+    nagareyama: "ryutetsu-nagareyama",
+    heiwadai: "ryutetsu-heiwadai",
+    hiregasaki: "ryutetsu-hiregasaki",
+    koganejoato: "ryutetsu-koganejoato",
+    koya: "ryutetsu-koya",
+    mahashi: "ryutetsu-mahashi",
+  },
+  /** 京成駅 */
+  keisei: {
+    keisei_tsudanuma: "keisei-keisei-tsudanuma",
+    shin_tsudanuma: "keisei-shin-tsudanuma",
+    maehara: "keisei-maehara",
+    yakuendai: "keisei-yakuendai",
+    narashino: "keisei-narashino",
+    kita_narashino: "keisei-kita-narashino",
+    takanekido: "keisei-takanekido",
+    takanekodan: "keisei-takanekodan",
+    takifudo: "keisei-takifudo",
+    misaki: "keisei-misaki",
+    futawakodai: "keisei-futawa-kodai",
+    kamagaya_daibutsu: "keisei-kamagaya-daibutsu",
+    hatsutomi: "keisei-hatsutomi",
+    shin_kamagaya: "keisei-shin-kamagaya",
+    kita_hatsutomi: "keisei-kita-hatsutomi",
+    kunugiyama: "keisei-kunugiyama",
+    motoyama: "keisei-motoyama",
+    goko: "keisei-goko",
+    tokiwadaira: "keisei-tokiwadaira",
+    yahashira: "keisei-yahashira",
+    minoridai: "keisei-minoridai",
+    matsuto_shinden: "keisei-matsuto-shinden",
+    kami_hongo: "keisei-kami-hongo",
+    matsuto: "keisei-matsuto",
   },
   jr_tokai: {
     mishima: "mishima",

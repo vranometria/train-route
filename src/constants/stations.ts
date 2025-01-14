@@ -813,7 +813,7 @@ export const STATIONS = {
   [STATION_IDS.jr_east.manazuru]: new StationInfo('真鶴', [], "まなづる"),
   [STATION_IDS.jr_east.yugawara ]: new StationInfo('湯河原', [], "ゆがわら"),
   [STATION_IDS.jr_east.atami]: new StationInfo('熱海', [], "あたみ"),
-  // 常盤線
+  // 常磐線(JL)
   [STATION_IDS.jr_east.mikawashima]: new StationInfo('三河島', [], "みかわしま"),
   [STATION_IDS.jr_east.minami_senju]: new StationInfo('南千住', [], "みなみせんじゅ"),
   [STATION_IDS.jr_east.kita_senju]: new StationInfo('北千住', [
@@ -831,7 +831,7 @@ export const STATIONS = {
   [STATION_IDS.jr_east.kanamachi]: new StationInfo('金町', [], "かなまち"),
   [STATION_IDS.jr_east.matsudo]: new StationInfo('松戸', [
     LINE_IDS.jr_east.tokiwa,
-    LINE_IDS.shin_keisei.shin_keisei,
+    LINE_IDS.keisei.shin_keisei,
   ], "まつど"),
   [STATION_IDS.jr_east.kita_matsudo]: new StationInfo('北松戸', [], "きたまつど"),
   [STATION_IDS.jr_east.mahashi]: new StationInfo('馬橋', [
@@ -936,17 +936,126 @@ export const STATIONS = {
     LINE_IDS.jr_east.tokiwa,
     LINE_IDS.jr_east.touhokuhonsen,
   ], "いわぬま"),
-  // 武蔵野線
+  // 武蔵野線(JM)
   [STATION_IDS.jr_east.minami_nagareyama]: new StationInfo('南流山', [
     LINE_IDS.jr_east.musashino,
     LINE_IDS.shutoken_shintoshi.tsukuba_express,
   ], "みなみながれやま"),
+  [STATION_IDS.jr_east.fuchuhonmachi]: new StationInfo('府中本町', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.jr_east.nanbu,
+  ], "ふちゅうほんまち"),
+  [STATION_IDS.jr_east.kitafuchu]: new StationInfo('北府中', [], "きたふちゅう"),
+  [STATION_IDS.jr_east.nishikokubunji]: new StationInfo('西国分寺', [], "西国分寺"),
+  [STATION_IDS.jr_east.higashi_tokorozawa]: new StationInfo('東所沢', [], "ひがしところざわ"),
+  [STATION_IDS.jr_east.shinkohira]: new StationInfo('新小平', [], "しんこひら"),
+  [STATION_IDS.jr_east.shinakitsu]: new StationInfo('新秋津', [
+    LINE_IDS.jr_east.musashino,
+    new ExchangeInfo(LINE_IDS.seibu.ikebukuro, STATION_IDS.seibu.akitsu),
+  ], "しんあきつ"),
+  [STATION_IDS.jr_east.shinza]: new StationInfo('新座', [], "しんざ"),
+  [STATION_IDS.jr_east.higashi_tokorozawa]: new StationInfo('東所沢', [], "東所沢"),
+  [STATION_IDS.jr_east.kita_asaka]: new StationInfo('北朝霞', [
+    LINE_IDS.jr_east.musashino,
+    new ExchangeInfo(LINE_IDS.toubu.toujou, STATION_IDS.tobu.asakadai),
+  ], "きたあさか"),
+  [STATION_IDS.jr_east.nishi_urawa]: new StationInfo('西浦和', [], "にしうらわ"),
+  [STATION_IDS.jr_east.musashi_urawa]: new StationInfo('武蔵浦和', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.jr_east.saikyou,
+  ], "むさしうらわ"),
+  [STATION_IDS.jr_east.minami_urawa]: new StationInfo('南浦和', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.jr_east.keihin_touhoku,
+  ], "みなみうらわ"),
+  [STATION_IDS.jr_east.higashi_urawa]: new StationInfo('東浦和', [], "ひがしうらわ"),
+  [STATION_IDS.jr_east.higashi_kawaguchi]: new StationInfo('東川口', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.saitama_kosoku.saitama_stadium
+  ], "ひがしかわぐち"),
+  [STATION_IDS.jr_east.minami_koshigaya]: new StationInfo('南越谷', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.toubu.skytree
+  ], "みなみこしがや"),
+  [STATION_IDS.jr_east.koshigaya_laketown]: new StationInfo('越谷レイクタウン', []),
+  [STATION_IDS.jr_east.yoshikawa]: new StationInfo('吉川', [], "よしかわ"),
+  [STATION_IDS.jr_east.yoshikawa_minami]: new StationInfo('吉川美南', [], "よしかわみなみ"),
+  [STATION_IDS.jr_east.shin_sango]: new StationInfo('新三郷', [], "しんさんごう"),
+  [STATION_IDS.jr_east.sango]: new StationInfo('三郷', [], "さんごう"),
+  [STATION_IDS.jr_east.minami_nagareyama]: new StationInfo('南流山', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.shutoken_shintoshi.tsukuba_express,
+  ], "みなみながれやま"),
+  [STATION_IDS.jr_east.shin_matsudo]: new StationInfo('新松戸', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.jr_east.tokiwa,
+    new ExchangeInfo(LINE_IDS.ryutetsu.ryutetsu_ryuzan, STATION_IDS.ryutetsu.koya),
+    LINE_IDS.ryutetsu.ryutetsu_ryuzan,
+  ], "しんまつど"),
+  [STATION_IDS.jr_east.shin_yahashira]: new StationInfo('新八柱', [
+    LINE_IDS.jr_east.musashino,
+    new ExchangeInfo(LINE_IDS.keisei.shin_keisei, STATION_IDS.keisei.yahashira),
+  ], "しんやはしら"),
+  [STATION_IDS.jr_east.higashi_matsudo]: new StationInfo('東松戸', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.hokusou.hokusou,
+    LINE_IDS.keisei.keisei_narita_sky_access,
+  ], "ひがしまつど"),
+  [STATION_IDS.jr_east.ichikawa_ono]: new StationInfo('市川大野', [], "いちかわおおの"),
+  [STATION_IDS.jr_east.funabashi_houden]: new StationInfo('船橋法典', [], "ふなばしほうでん"),
+  [STATION_IDS.jr_east.nishi_funabashi]: new StationInfo('西船橋', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.jr_east.chuo,
+    LINE_IDS.tokyo_metro.touzai,
+    LINE_IDS.toyo_kousoku.toyo_kousoku
+  ], "にしふなばし"),
+  [STATION_IDS.jr_east.minami_funabashi]: new StationInfo('南船橋', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.jr_east.keiyou,
+  ], "みなみふなばし"),
+  [STATION_IDS.jr_east.shin_narashino]: new StationInfo('新習志野', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.jr_east.keiyou,
+  ], "しんならしの"),
+  [STATION_IDS.jr_east.makuhari_toyosuna]: new StationInfo('幕張豊砂', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.jr_east.keiyou,
+  ], "まくはりとよすな"),
+  [STATION_IDS.jr_east.kaihin_makuhari]: new StationInfo('海浜幕張', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.jr_east.keiyou,
+  ], "かいひんまくはり"),
+  [STATION_IDS.jr_east.ichikawa_shiohama]: new StationInfo('市川塩浜', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.jr_east.keiyou,
+  ], "いちかわしおはま"),
+  [STATION_IDS.jr_east.shin_urayasu]: new StationInfo('新浦安', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.jr_east.keiyou,
+  ], "しんうらやす"),
+  [STATION_IDS.jr_east.maihama]: new StationInfo('舞浜', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.jr_east.keiyou,
+    LINE_IDS.maihama_resort.disney_resort,
+  ], "まいはま"),
+  [STATION_IDS.jr_east.kasai_rinkai_koen]: new StationInfo('葛西臨海公園', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.jr_east.keiyou,
+  ], "かさいりんかいこうえん"),
+  [STATION_IDS.jr_east.shiomi]: new StationInfo('潮見', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.jr_east.keiyou,
+  ], "しおみ"),
+  [STATION_IDS.jr_east.ecchujima]: new StationInfo('越中島', [
+    LINE_IDS.jr_east.musashino,
+    LINE_IDS.jr_east.keiyou,
+  ], "えっちゅうじま"),
 
-    /** 厚木 */
-    [STATION_IDS.jr_east.atsugi]: new StationInfo('厚木', [
-      LINE_IDS.odakyu.odawara,
-      LINE_IDS.jr_east.sagami,
-    ], "あつぎ"),
+  /** 厚木 */
+  [STATION_IDS.jr_east.atsugi]: new StationInfo('厚木', [
+    LINE_IDS.odakyu.odawara,
+    LINE_IDS.jr_east.sagami,
+  ], "あつぎ"),
   // 湘南新宿ライン
   /** 熊谷 */
   [STATION_IDS.jr_east.kumagaya]: new StationInfo('熊谷', [
