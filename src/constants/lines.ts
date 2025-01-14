@@ -1003,6 +1003,28 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_metro.meiji_jingumae, ["commuter", "express"]),
     new StopStationDef(STATION_IDS.jr_east.shibuya, ["commuter", "express"]),
   ]),
+  // > 銀座線
+  [LINE_IDS.tokyo_metro.ginza]: new Line('銀座線', '東京メトロ', [], [
+    new StopStationDef(STATION_IDS.jr_east.shibuya),
+    new StopStationDef(STATION_IDS.tokyo_metro.omotesando),
+    new StopStationDef(STATION_IDS.tokyo_metro.gaienmae),
+    new StopStationDef(STATION_IDS.tokyo_subway.aoyama_itchome),
+    new StopStationDef(STATION_IDS.tokyo_metro.akasakamitsuke),
+    new StopStationDef(STATION_IDS.tokyo_metro.tameikesanno),
+    new StopStationDef(STATION_IDS.tokyo_metro.toranomon),
+    new StopStationDef(STATION_IDS.jr_east.shinbashi),
+    new StopStationDef(STATION_IDS.tokyo_metro.ginza),
+    new StopStationDef(STATION_IDS.tokyo_metro.kyobashi),
+    new StopStationDef(STATION_IDS.tokyo_metro.nihonbashi),
+    new StopStationDef(STATION_IDS.tokyo_metro.mitsukoshimae),
+    new StopStationDef(STATION_IDS.jr_east.kanda),
+    new StopStationDef(STATION_IDS.tokyo_metro.tsukiji),
+    new StopStationDef(STATION_IDS.tokyo_metro.ueno_hirokoji),
+    new StopStationDef(STATION_IDS.jr_east.ueno),
+    new StopStationDef(STATION_IDS.tokyo_metro.inaricho),
+    new StopStationDef(STATION_IDS.tokyo_metro.tawaramachi),
+    new StopStationDef(STATION_IDS.tokyo_subway.asakusa),
+  ]),
 
   // 首都圏新都市
   [LINE_IDS.shutoken_shintoshi.tsukuba_express]: new Line('つくばエクスプレス', '首都圏新都市', [

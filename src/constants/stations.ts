@@ -1461,6 +1461,46 @@ export const STATIONS = {
     LINE_IDS.tokyo_metro.fukutoshin,
     LINE_IDS.tokyo_subway.oedo,
   ], "ひがししんじゅく"),
+  // ＞銀座線
+  [STATION_IDS.tokyo_metro.omotesando]: new StationInfo('表参道', [
+    LINE_IDS.tokyo_metro.ginza,
+    LINE_IDS.tokyo_metro.chiyoda,
+    LINE_IDS.tokyo_metro.hanzoumon,
+  ], "あかさか"),
+  [STATION_IDS.tokyo_metro.gaienmae]: new StationInfo('外苑前', [], "がいえんまえ"),
+  [STATION_IDS.tokyo_metro.akasakamitsuke]: new StationInfo('赤坂見附', [
+    LINE_IDS.tokyo_metro.ginza,
+    LINE_IDS.tokyo_metro.marunouchi,
+  ], "あかさかみつけ"),
+  [STATION_IDS.tokyo_metro.tameikesanno]: new StationInfo('溜池山王', [
+    LINE_IDS.tokyo_metro.ginza,
+    LINE_IDS.tokyo_metro.marunouchi,
+    LINE_IDS.tokyo_metro.nanboku,
+    LINE_IDS.tokyo_metro.chiyoda,
+  ], "ためいけさんのう"),
+  [STATION_IDS.tokyo_metro.toranomon]: new StationInfo('虎ノ門', [
+    LINE_IDS.tokyo_metro.ginza,
+    LINE_IDS.tokyo_metro.hibiya,
+  ], "とらのもん"),
+  [STATION_IDS.tokyo_metro.kyobashi]: new StationInfo('京橋', [], "きょうばし"),
+  [STATION_IDS.tokyo_metro.nihonbashi]: new StationInfo('日本橋', [
+    LINE_IDS.tokyo_metro.ginza,
+    LINE_IDS.tokyo_metro.touzai,
+    LINE_IDS.tokyo_subway.asakusa,
+  ], "にほんばし"),
+  [STATION_IDS.tokyo_metro.mitsukoshimae]: new StationInfo('三越前', [
+    LINE_IDS.tokyo_metro.ginza,
+    LINE_IDS.tokyo_metro.hanzoumon,
+  ], "みつこしまえ"),
+  [STATION_IDS.tokyo_metro.suehirocho]: new StationInfo('末広町', [], "すえひろちょう"),
+  [STATION_IDS.tokyo_metro.ueno_hirokoji]: new StationInfo('上野広小路', [
+    LINE_IDS.tokyo_metro.ginza,
+    new ExchangeInfo(LINE_IDS.jr_east.yamanote, STATION_IDS.jr_east.okachimachi),
+    new ExchangeInfo(LINE_IDS.jr_east.keihin_touhoku, STATION_IDS.jr_east.okachimachi),
+    new ExchangeInfo(LINE_IDS.tokyo_subway.oedo, STATION_IDS.tokyo_subway.ueno_okachimachi),
+  ], "うえのひろこうじ"),
+  [STATION_IDS.tokyo_metro.inaricho]: new StationInfo('稲荷町', [], "いなりちょう"),
+  [STATION_IDS.tokyo_metro.tawaramachi]: new StationInfo('田原町', [], "たわらまち"),
 
   // 相模鉄道
   // ＞本線

@@ -32,6 +32,7 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_metro.marunouchi}}" >丸の内線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_metro.yurakucho}}" >有楽町線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_metro.fukutoshin}}" >副都心線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_metro.ginza}}" >銀座線</RouterLink>
         </div>
 
         首都圏新都市

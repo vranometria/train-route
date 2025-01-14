@@ -936,6 +936,18 @@ export const STATION_IDS = {
     kitasandou: 'kitasandou',
     meiji_jingumae: 'meiji-jingumae',
     higashi_shinjuku: 'higashi-shinjuku',
+    // 銀座線
+    gaienmae: 'tokyo-metro-gaienmae',
+    tameikesanno: 'tokyo-metro-tameikesanno',
+    kyobashi: 'tokyo-metro-kyobashi',
+    toranomon: 'tokyo-metro-toranomon',
+    mitsukoshimae: 'tokyo-metro-mitsukoshimae',
+    suehirocho: 'tokyo-metro-suehirocho',
+    ueno_hirokoji: 'tokyo-metro-ueno-hirokoji',
+    inaricho: 'tokyo-metro-inaricho',
+    taharamachi: 'tokyo-metro-taharamachi',
+    omotesando: 'tokyo-metro-omotesando',
+    nihonbashi: 'tokyo-metro-nihonbashi',
   },
   /** 都営駅 */
   tokyo_subway: {
