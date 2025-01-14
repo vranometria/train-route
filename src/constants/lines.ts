@@ -957,7 +957,6 @@ export const LINES = {
   ]),
 
   // 東京メトロ
-  // > 有楽町線
   [LINE_IDS.tokyo_metro.yurakucho]: new Line('有楽町線', '東京メトロ', [], [
     new StopStationDef(STATION_IDS.tokyo_metro.wakoshi),
     new StopStationDef(STATION_IDS.tokyo_metro.chikatetsu_narimasu),
@@ -984,7 +983,6 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_metro.tatsumi),
     new StopStationDef(STATION_IDS.tokyo_metro.shinkiba),
   ]),
-  // > 副都心線
   [LINE_IDS.tokyo_metro.fukutoshin]: new Line('副都心線', '東京メトロ', [new KindDef("通勤急行", "commuter"), new KindDef("急行", "express")], [
     new StopStationDef(STATION_IDS.tokyo_metro.wakoshi, ["commuter", "express"]),
     new StopStationDef(STATION_IDS.tokyo_metro.chikatetsu_narimasu, ["commuter"]),
@@ -1003,7 +1001,6 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_metro.meiji_jingumae, ["commuter", "express"]),
     new StopStationDef(STATION_IDS.jr_east.shibuya, ["commuter", "express"]),
   ]),
-  // > 銀座線
   [LINE_IDS.tokyo_metro.ginza]: new Line('銀座線', '東京メトロ', [], [
     new StopStationDef(STATION_IDS.jr_east.shibuya),
     new StopStationDef(STATION_IDS.tokyo_metro.omotesando),
@@ -1025,6 +1022,23 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_metro.tawaramachi),
     new StopStationDef(STATION_IDS.tokyo_subway.asakusa),
   ]),
+  [LINE_IDS.tokyo_metro.hanzoumon]: new Line('半蔵門線', '東京メトロ', [], [
+    new StopStationDef(STATION_IDS.jr_east.shibuya),
+    new StopStationDef(STATION_IDS.tokyo_metro.omotesando),
+    new StopStationDef(STATION_IDS.tokyo_subway.aoyama_itchome),
+    new StopStationDef(STATION_IDS.tokyo_metro.nagatacho),
+    new StopStationDef(STATION_IDS.tokyo_metro.hanzomon),
+    new StopStationDef(STATION_IDS.tokyo_subway.kudanshita),
+    new StopStationDef(STATION_IDS.tokyo_subway.jinbocho),
+    new StopStationDef(STATION_IDS.tokyo_metro.otemachi),
+    new StopStationDef(STATION_IDS.tokyo_metro.mitsukoshimae),
+    new StopStationDef(STATION_IDS.tokyo_metro.suitengumae),
+    new StopStationDef(STATION_IDS.tokyo_metro.kiyosumi_shirakawa),
+    new StopStationDef(STATION_IDS.tokyo_subway.sumiyoshi),
+    new StopStationDef(STATION_IDS.jr_east.kinshicho),
+    new StopStationDef(STATION_IDS.tokyo_metro.oshiage),
+  ]),
+
 
   // 首都圏新都市
   [LINE_IDS.shutoken_shintoshi.tsukuba_express]: new Line('つくばエクスプレス', '首都圏新都市', [

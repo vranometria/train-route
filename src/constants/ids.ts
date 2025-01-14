@@ -871,7 +871,6 @@ export const STATION_IDS = {
   },
   /** 東京メトロ駅 */
   tokyo_metro: {
-    oshiage: 'oshiage',
     /** 中目黒 */
     nakameguro: 'nakameguro',
     hiroo: 'hiroo',
@@ -945,9 +944,24 @@ export const STATION_IDS = {
     suehirocho: 'tokyo-metro-suehirocho',
     ueno_hirokoji: 'tokyo-metro-ueno-hirokoji',
     inaricho: 'tokyo-metro-inaricho',
-    taharamachi: 'tokyo-metro-taharamachi',
+    tawaramachi: 'tokyo-metro-tawaramachi',
     omotesando: 'tokyo-metro-omotesando',
     nihonbashi: 'tokyo-metro-nihonbashi',
+    // 半蔵門線
+    hanzomon: 'tokyo-metro-hanzomon',
+    suitengumae: 'tokyo-metro-suitengumae',
+    oshiage: 'oshiage',
+    kiyosumi_shirakawa: 'kiyosumi_shirakawa',
+    // 南北線
+    shirokanedai: 'shirokanedai',
+    shirokane_takanawa: 'shirokane-takanawa',
+    roppongi_iccho_me: 'roppongi-iccho-me',
+    todaimae: 'todaimae',
+    honkomagome: 'honkomagome',
+    nishigahara: 'nishigahara',
+    oji_kamiya: 'oji-kamiya',
+    shimo: 'shimo',
+    akabane_iwabuchi: 'akabane-iwabuchi',
   },
   /** 都営駅 */
   tokyo_subway: {
@@ -1017,6 +1031,8 @@ export const STATION_IDS = {
     toshimaen: 'toshimaen',
     nerima_kasugacho: 'nerima-kasugacho',
     hikarigaoka: 'hikarigaoka',
+    // 三田線
+    takawadai: 'takawadai',
   },
   /** 首都圏新都市 */
   shutoken_shintoshi: {

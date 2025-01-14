@@ -1501,6 +1501,10 @@ export const STATIONS = {
   ], "うえのひろこうじ"),
   [STATION_IDS.tokyo_metro.inaricho]: new StationInfo('稲荷町', [], "いなりちょう"),
   [STATION_IDS.tokyo_metro.tawaramachi]: new StationInfo('田原町', [], "たわらまち"),
+  // ＞半蔵門線
+  [STATION_IDS.tokyo_metro.hanzomon]: new StationInfo('半蔵門', [], "はんぞうもん"),
+  [STATION_IDS.tokyo_metro.suitengumae]: new StationInfo('水天宮前', [], "すいてんぐうまえ"),
+  [STATION_IDS.tokyo_metro.kiyosumi_shirakawa]: new StationInfo('清澄白河', [], "きよすみしらかわ"),
 
   // 相模鉄道
   // ＞本線
