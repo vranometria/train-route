@@ -1736,35 +1736,6 @@ export const STATIONS = {
 
   // 京王
   // ＞京王線
-  sasatsuka: "keio-sasatsuka",
-  daitabashi: "keio-daitabashi",
-  meidaimae: "keio-meidaimae",
-  shimotakaido: "keio-shimotakaido",
-  sakurajosui: "keio-sakurajosui",
-  kami_kitazawa: "keio-kami-kitazawa",
-  yawatayama: "keio-yawatayama",
-  roka_koen: "keio-roka-koen",
-  chitose_karasuyama: "keio-chitose-karasuyama",
-  senkawa: "keio-senkawa",
-  tsutsujigaoka: "keio-tsutsujigaoka",
-  sibasaki: "keio-sibasaki",
-  kokuryo: "keio-kokuryo",
-  fuda: "keio-fuda",
-  chofu: "keio-chofu",
-  nishi_chofu: "keio-nishi-chofu",
-  musashinodai: "keio-musashinodai",
-  tamareien: "keio-tamareien",
-  higashi_fuchu: "keio-higashi-fuchu",
-  fuchu: "keio-fuchu",
-  nakakawahara: "keio-nakakawahara",
-  seiseki_sakuragaoka: "keio-seiseki-sakuragaoka",
-  mogusaen: "keio-mogusaen",
-  takahatafudo: "keio-takahatafudo",
-  minamidaira: "keio-minamidaira",
-  hirayamajoshikoen: "keio-hira-yamajoshikoen",
-  naganuma: "keio-naganuma",
-  kitano: "keio-kitano",
-  keio_hachioji: "keio-keio-hachioji",
   [STATION_IDS.keio.sasatsuka]: new StationInfo('笹塚', [
     LINE_IDS.keiou.keiou,
     LINE_IDS.keiou.keioushinsen,
@@ -1817,6 +1788,9 @@ export const STATIONS = {
     LINE_IDS.keiou.takao,
   ], "きたの"),
   [STATION_IDS.keio.keio_hachioji]: new StationInfo('京王八王子', [], "けいおうはちおうじ"),
+  // > 京王新線
+  [STATION_IDS.keio.hatsudai]: new StationInfo('初台', [], "はつだい"),
+  [STATION_IDS.keio.hatagaya]: new StationInfo('幡ヶ谷', [], "はたがや"),
 
   // 東急
   // ＞田園都市線

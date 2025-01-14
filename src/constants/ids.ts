@@ -1245,6 +1245,7 @@ export const STATION_IDS = {
   },
   /** 京王駅 */
   keio: {
+    // 京王線
     sasatsuka: "keio-sasatsuka",
     daitabashi: "keio-daitabashi",
     meidaimae: "keio-meidaimae",
@@ -1275,6 +1276,9 @@ export const STATION_IDS = {
     naganuma: "keio-naganuma",
     kitano: "keio-kitano",
     keio_hachioji: "keio-keio-hachioji",
+    // 京王新線
+    hatsudai: "keio-hatsudai",
+    hatagaya: "keio-hata-gaya",
   },
   jr_tokai: {
     mishima: "mishima",

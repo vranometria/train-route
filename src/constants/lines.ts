@@ -1213,5 +1213,11 @@ export const LINES = {
     new StopStationDef(STATION_IDS.keio.keio_hachioji),
   ]),
   // ＞京王新線
+  [LINE_IDS.keiou.keioushinsen]: new Line('京王新線', '京王電鉄', [], [
+    new StopStationDef(STATION_IDS.tokyo_subway.shinsen_shinjuku),
+    new StopStationDef(STATION_IDS.keio.hatsudai),
+    new StopStationDef(STATION_IDS.keio.hatagaya),
+    new StopStationDef(STATION_IDS.keio.sasatsuka),
+  ]),
 
 }
