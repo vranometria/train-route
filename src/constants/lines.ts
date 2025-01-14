@@ -787,7 +787,6 @@ export const LINES = {
 
 
   // 小田急
-  [LINE_IDS.odakyu.odawara]: new Line('小田原線', '小田急電鉄', [], []),
   [LINE_IDS.odakyu.enoshima]: new Line('江ノ島線', '小田急電鉄', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.odakyu.sagamiono, [
       LINE_IDS.odakyu.odawara,
@@ -1035,6 +1034,7 @@ export const LINES = {
 
   [LINE_IDS.enoshima.enoshima]: new Line('江ノ島電鉄線', '江ノ島電鉄', [], []),
   [LINE_IDS.shonam_monorail.shonan_monorail]: new Line('湘南モノレール', '湘南モノレール', [], []),
+
   // 東急
   [LINE_IDS.tokyu.toyoko]: new Line('東横線', '東急電鉄', [], []),
   [LINE_IDS.tokyu.meguro]: new Line('目黒線', '東急電鉄', [], []),
@@ -1243,6 +1243,26 @@ export const LINES = {
     new StopStationDef(STATION_IDS.keio.hatsudai),
     new StopStationDef(STATION_IDS.keio.hatagaya),
     new StopStationDef(STATION_IDS.keio.sasatsuka),
+  ]),
+  // > 京王井の頭線
+  [LINE_IDS.keiou.inokashira]: new Line('京王井の頭線', '京王電鉄', [], [
+    new StopStationDef(STATION_IDS.jr_east.shibuya),
+    new StopStationDef(STATION_IDS.keio.shinsen),
+    new StopStationDef(STATION_IDS.keio.komaba_todaimae),
+    new StopStationDef(STATION_IDS.keio.ikenoue),
+    new StopStationDef(STATION_IDS.odakyu.shimokitazawa),
+    new StopStationDef(STATION_IDS.keio.shindaita),
+    new StopStationDef(STATION_IDS.keio.higashi_matsubara),
+    new StopStationDef(STATION_IDS.keio.meidaimae),
+    new StopStationDef(STATION_IDS.keio.eifukucho),
+    new StopStationDef(STATION_IDS.keio.nishi_eifuku),
+    new StopStationDef(STATION_IDS.keio.hamadayama),
+    new StopStationDef(STATION_IDS.keio.takaido),
+    new StopStationDef(STATION_IDS.keio.fujimigaoka),
+    new StopStationDef(STATION_IDS.keio.kugayama),
+    new StopStationDef(STATION_IDS.keio.mitakadai),
+    new StopStationDef(STATION_IDS.keio.inokashirakoen),
+    new StopStationDef(STATION_IDS.jr_east.kichijoji),
   ]),
 
 }

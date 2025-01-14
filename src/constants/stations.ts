@@ -1849,6 +1849,21 @@ export const STATIONS = {
   // > 京王新線
   [STATION_IDS.keio.hatsudai]: new StationInfo('初台', [], "はつだい"),
   [STATION_IDS.keio.hatagaya]: new StationInfo('幡ヶ谷', [], "はたがや"),
+  // > 京王井の頭線
+  [STATION_IDS.keio.shinsen]: new StationInfo('神泉', [], "しんせん"),
+  [STATION_IDS.keio.komaba_todaimae]: new StationInfo('駒場東大前', [], "こまばとうだいまえ"),
+  [STATION_IDS.keio.ikenoue]: new StationInfo('池ノ上', [], "いけのうえ"),
+  [STATION_IDS.keio.shindaita]: new StationInfo('新代田', [], "しんだいた"),
+  [STATION_IDS.keio.higashi_matsubara]: new StationInfo('東松原', [], "ひがしまつばら"),
+  [STATION_IDS.keio.eifukucho]: new StationInfo('永福町', [], "えいふくちょう"),
+  [STATION_IDS.keio.nishi_eifuku]: new StationInfo('西永福', [], "にしえいふく"),
+  [STATION_IDS.keio.hamadayama]: new StationInfo('浜田山', [], "はまだやま"),
+  [STATION_IDS.keio.takaido]: new StationInfo('高井戸', [], "たかいど"),
+  [STATION_IDS.keio.fujimigaoka]: new StationInfo('富士見ヶ丘', [], "ふじみがおか"),
+  [STATION_IDS.keio.kugayama]: new StationInfo('久我山', [], "くがやま"),
+  [STATION_IDS.keio.mitakadai]: new StationInfo('三鷹台', [], "みたかだい"),
+  [STATION_IDS.keio.inokashirakoen]: new StationInfo('井の頭公園', [], "いのかしどうこうえん"),
+
 
   // 東急
   // ＞田園都市線

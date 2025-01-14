@@ -1309,6 +1309,20 @@ export const STATION_IDS = {
     // 京王新線
     hatsudai: "keio-hatsudai",
     hatagaya: "keio-hata-gaya",
+    // 井の頭線
+    shinsen: "keio-shinsen",
+    komaba_todaimae: "keio-komaba-todaimae",
+    ikenoue: "keio-ikenoue",
+    shindaita: "keio-shindaita",
+    higashi_matsubara: "keio-higashi-matsubara",
+    eifukucho: "keio-eifukucho",
+    nishi_eifuku: "keio-nishi-eifuku",
+    hamadayama: "keio-hamadayama",
+    takaido: "keio-takaido",
+    fujimigaoka: "keio-fujimigaoka",
+    kugayama: "keio-kugayama",
+    mitakadai: "keio-mitakadai",
+    inokashirakoen: "keio-inokashirakoen",
   },
   jr_tokai: {
     mishima: "mishima",
