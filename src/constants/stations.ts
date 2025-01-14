@@ -1160,57 +1160,40 @@ export const STATIONS = {
   [STATION_IDS.tokyo_subway.magome]: new StationInfo('馬籠', [], "まごめ"),
   [STATION_IDS.tokyo_subway.nishimagome]: new StationInfo('西馬込', [], "にしまごめ"),
   // >新宿線
-  /** 篠原 */
   [STATION_IDS.tokyo_subway.shinohara]: new StationInfo('篠原', [], "篠原"),
-  /** 瑞江 */
   [STATION_IDS.tokyo_subway.mizue]: new StationInfo('瑞江', [], "みずえ"),
-  /** 一之江 */
   [STATION_IDS.tokyo_subway.ichinoe]: new StationInfo('一之江', [], "いちのえ"),
-  /** 船掘 */
   [STATION_IDS.tokyo_subway.funabori]: new StationInfo('船堀', [], "ふなぼり"),
-  /** 東大島 */
   [STATION_IDS.tokyo_subway.higashi_oshima]: new StationInfo('東大島', [], "ひがしおおしま"),
-  /** 大島 */
   [STATION_IDS.tokyo_subway.oshima]: new StationInfo('大島', [], "おおしま"),
-  /** 西大島 */
   [STATION_IDS.tokyo_subway.nishi_oshima]: new StationInfo('西大島', [], "にしおおしま"),
-  /** 住吉 */
   [STATION_IDS.tokyo_subway.sumiyoshi]: new StationInfo('住吉', [
     LINE_IDS.tokyo_subway.shinjuku,
     LINE_IDS.tokyo_metro.hanzoumon,
   ], "すみよし"),
-  /** 菊川 */
   [STATION_IDS.tokyo_subway.kikukawa]: new StationInfo('菊川', [], "きくかわ"),
-  /** 森下 */
   [STATION_IDS.tokyo_subway.morishita]: new StationInfo('森下', [
     LINE_IDS.tokyo_subway.shinjuku,
     LINE_IDS.tokyo_subway.oedo,
   ], "もりした"),
-  /** 浜町 */
   [STATION_IDS.tokyo_subway.hamacho]: new StationInfo('浜町', [], "はまちょう"),
-  /** 馬喰横山 */
   [STATION_IDS.tokyo_subway.bakuro_yokoyama]: new StationInfo('馬喰横山', [
     LINE_IDS.tokyo_subway.shinjuku,
     new ExchangeInfo(LINE_IDS.tokyo_subway.asakusa, STATION_IDS.tokyo_subway.higashi_nihonbashi),
     LINE_IDS.jr_east.sobu_kaisoku,
   ], "ばくろよこやま"),
-  /** 岩本町 */
   [STATION_IDS.tokyo_subway.iwamotocho]: new StationInfo('岩本町', [], "いわもとちょう"),
-  /** 小川町 */
   [STATION_IDS.tokyo_subway.ogawacho]: new StationInfo('小川町', [], "おがわちょう"),
-  /** 神保町 */
   [STATION_IDS.tokyo_subway.jinbocho]: new StationInfo('神保町', [
     LINE_IDS.tokyo_subway.shinjuku,
     LINE_IDS.tokyo_subway.mita,
     LINE_IDS.tokyo_metro.hanzoumon,
   ], "じんぼうちょう"),
-  /** 九段下 */
   [STATION_IDS.tokyo_subway.kudanshita]: new StationInfo('九段下', [
     LINE_IDS.tokyo_subway.shinjuku,
     LINE_IDS.tokyo_metro.hanzoumon,
     LINE_IDS.tokyo_metro.touzai,
   ], "くだんした"),
-  /** 曙橋 */
   [STATION_IDS.tokyo_subway.akebonobashi]: new StationInfo('曙橋', [], "あけぼのばし"),
   /** 新線新宿 */
   [STATION_IDS.tokyo_subway.shinsen_shinjuku]: new StationInfo('新線新宿', [
@@ -1223,7 +1206,82 @@ export const STATIONS = {
     new ExchangeInfo(LINE_IDS.keiou.keioushinsen, STATION_IDS.jr_east.shinjuku),
     new ExchangeInfo(LINE_IDS.tokyo_metro.marunouchi, STATION_IDS.jr_east.shinjuku),
     new ExchangeInfo(LINE_IDS.tokyo_subway.oedo, STATION_IDS.jr_east.shinjuku),
-  ], "しんじゅく"),
+  ], "しんせんしんじゅく"),
+  // >大江戸線
+  [STATION_IDS.tokyo_subway.tochomae]: new StationInfo('都庁前', [], "とちょうまえ"),
+  [STATION_IDS.tokyo_subway.shinjuku_nishiguchi]: new StationInfo('新宿西口', [
+    LINE_IDS.tokyo_subway.oedo,
+    new ExchangeInfo(LINE_IDS.tokyo_metro.marunouchi, STATION_IDS.jr_east.shinjuku),
+    new ExchangeInfo(LINE_IDS.seibu.seibu_shinjuku, STATION_IDS.jr_east.shinjuku),
+  ], "しんじゅくにしぐち"),
+  [STATION_IDS.tokyo_subway.wakamatsukawada]: new StationInfo('若松河田', [], "わかまつかわだ"),
+  [STATION_IDS.tokyo_subway.ushigomeyanagicho]: new StationInfo('牛込柳町', [], "うしごめやなぎちょう"),
+  [STATION_IDS.tokyo_subway.ushigomekagurazaka]: new StationInfo('牛込神楽坂', [], "うしごめかぐらざか"),
+  [STATION_IDS.tokyo_subway.kasuga]: new StationInfo('春日', [
+    LINE_IDS.tokyo_subway.oedo,
+    new ExchangeInfo(LINE_IDS.tokyo_metro.marunouchi, STATION_IDS.tokyo_metro.kourakuen),
+    new ExchangeInfo(LINE_IDS.tokyo_metro.nanboku, STATION_IDS.tokyo_metro.kourakuen),
+    LINE_IDS.tokyo_subway.mita,
+  ], "かすが"),
+  [STATION_IDS.tokyo_subway.hongo_sancho_me]: new StationInfo('本郷三丁目', [
+    LINE_IDS.tokyo_subway.oedo,
+    LINE_IDS.tokyo_metro.marunouchi,
+  ], "ほんごうさんちょうめ"),
+  [STATION_IDS.tokyo_subway.ueno_okachimachi]: new StationInfo('上野御徒町', [
+    LINE_IDS.tokyo_subway.oedo,
+    new ExchangeInfo(LINE_IDS.jr_east.yamanote, STATION_IDS.jr_east.okachimachi),
+    new ExchangeInfo(LINE_IDS.jr_east.keihin_touhoku, STATION_IDS.jr_east.okachimachi),
+    new ExchangeInfo(LINE_IDS.tokyo_metro.hibiya, STATION_IDS.tokyo_metro.nakaokachimachi),
+  ], "うえのおかちまち"),
+  [STATION_IDS.tokyo_subway.kiyosumishirakawa]: new StationInfo('清澄白河', [
+    LINE_IDS.tokyo_subway.oedo,
+    LINE_IDS.tokyo_metro.hanzoumon,
+  ], "きよすみしらかわ"),
+  [STATION_IDS.tokyo_subway.monzennakacho]: new StationInfo('門前仲町', [
+    LINE_IDS.tokyo_subway.oedo,
+    LINE_IDS.tokyo_metro.touzai,
+  ], "もんぜんなかちょう"),
+  [STATION_IDS.tokyo_subway.kachidoki]: new StationInfo('勝どき', [], "かちどき"),
+  [STATION_IDS.tokyo_subway.tsukijishijo]: new StationInfo('築地市場', [], "つきじしじょう"),
+  [STATION_IDS.tokyo_subway.shiodome]: new StationInfo('汐留', [
+    LINE_IDS.tokyo_subway.oedo,
+    LINE_IDS.yurikamome.yurikamome,
+  ], "しおどめ"),
+  [STATION_IDS.tokyo_subway.akabanebashi]: new StationInfo('赤羽橋', [], "あかばねばし"),
+  [STATION_IDS.tokyo_subway.azabujuban]: new StationInfo('麻布十番', [
+    LINE_IDS.tokyo_subway.oedo,
+    LINE_IDS.tokyo_metro.nanboku,
+  ], "あざぶじゅうばん"),
+  [STATION_IDS.tokyo_subway.roppongi]: new StationInfo('六本木', [
+    LINE_IDS.tokyo_subway.oedo,
+    LINE_IDS.tokyo_metro.hibiya,
+  ], "ろっぽんぎ"),
+  [STATION_IDS.tokyo_subway.aoyama_itchome]: new StationInfo('青山一丁目', [
+    LINE_IDS.tokyo_subway.oedo,
+    LINE_IDS.tokyo_metro.hanzoumon,
+    LINE_IDS.tokyo_metro.ginza,
+  ], "あおやまいっちょうめ"),
+  [STATION_IDS.tokyo_subway.kokuritsu_kyogijo]: new StationInfo('国立競技場', [
+    LINE_IDS.tokyo_subway.oedo,
+    new ExchangeInfo(LINE_IDS.jr_east.chuo, STATION_IDS.jr_east.sendagaya),
+  ], "こくりつきょうぎじょう"),
+  [STATION_IDS.tokyo_subway.nishi_shinjuku_gochome]: new StationInfo('西新宿五丁目', [], "にししんじゅくごちょうめ"),
+  [STATION_IDS.tokyo_subway.nakano_sakaue]: new StationInfo('中野坂上', [
+    LINE_IDS.tokyo_subway.oedo,
+    LINE_IDS.tokyo_metro.marunouchi,
+  ], "なかのさかうえ"),
+  [STATION_IDS.tokyo_subway.nakai]: new StationInfo('中井', [
+    LINE_IDS.tokyo_subway.oedo,
+    LINE_IDS.seibu.seibu_shinjuku,
+  ], "なかい"),
+  [STATION_IDS.tokyo_subway.ochiaiminaminagasaki]: new StationInfo('落合南長崎', [], "おちあいみなみながさき"),
+  [STATION_IDS.tokyo_subway.shin_egota]: new StationInfo('新江古田', [], "しんえごた"),
+  [STATION_IDS.tokyo_subway.toshimaen]: new StationInfo('豊島園', [
+    LINE_IDS.tokyo_subway.oedo,
+    LINE_IDS.seibu.seibu_toshimaen,
+  ], "としまえん"),
+  [STATION_IDS.tokyo_subway.nerima_kasugacho]: new StationInfo('練馬春日町', [], "ねりまかすがちょう"),
+  [STATION_IDS.tokyo_subway.hikarigaoka]: new StationInfo('光が丘', [], "ひかりがおか"),
 
   // 東京メトロ
   [STATION_IDS.tokyo_metro.oshiage]: new StationInfo('押上', [
