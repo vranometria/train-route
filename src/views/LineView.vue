@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Exchange from '@/components/Exchange.vue';
 import RightPane from '@/components/RightPane.vue';
+import { useLangStore } from '@/stores/lang';
   import { LineViewModel } from '@/types/line-view-model';
   import { watch, ref, onUpdated } from 'vue';
   import { useRoute } from 'vue-router';
@@ -25,6 +26,12 @@ import RightPane from '@/components/RightPane.vue';
       }
     }
   });
+  const pronunce = (yomi: string) => {
+    const lang = useLangStore().lang;
+    const uttr = new SpeechSynthesisUtterance(yomi);
+    uttr.lang = lang;
+    window.speechSynthesis.speak(uttr);
+  };
 </script>
 
 <template>
@@ -36,6 +43,7 @@ import RightPane from '@/components/RightPane.vue';
         <thead>
           <tr>
             <th>駅</th>
+            <th></th>
             <th>乗り換え</th>
             <th v-for="kind in model.kinds" :key="kind.prop" class="kind" :class="kind.prop">{{ kind.name }}</th>
           </tr>
@@ -43,6 +51,11 @@ import RightPane from '@/components/RightPane.vue';
         <tbody>
           <tr v-for="staModel in model.stations" :key="lineId + staModel.name" :id="staModel.id">
             <td class="station-name">{{ staModel.name }}</td>
+            <td class="pronunciation">
+              <button :onclick="() => {pronunce(staModel.pronunciation);}">
+                <img src="@/assets/speaker.png" />
+              </button>
+            </td>
             <td>
               <Exchange :source-station-id="staModel.id" :exchange-lines="staModel.getExchangeLines(lineId)" ></Exchange>
             </td>
@@ -135,5 +148,15 @@ th.express {
 
 .tjd {
   background-color: lightcoral;
+}
+
+.pronunciation button {
+  background-color: transparent;
+  border: none;
+}
+
+.pronunciation img {
+  width: 8px;
+  height: 10px;
 }
 </style>

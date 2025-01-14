@@ -1,6 +1,7 @@
 <script setup lang="ts">
+import { useLangStore } from '@/stores/lang';
 import type { LineViewModel } from '@/types/line-view-model';
-import { ref } from 'vue';
+import { onUpdated, ref } from 'vue';
 
 const props = defineProps<{
   model: LineViewModel,
@@ -25,6 +26,12 @@ const changeDistination = (event: Event) => {
   distination.value = tr;
 };
 
+const changeLanguage = (event: Event) => {
+  const target = event.target as HTMLSelectElement;
+  const lang = target.value;
+  useLangStore().setLang(lang);
+};
+
 //スクロールイベント
 window.addEventListener('scroll', () => {
   const up = document.getElementById("up");
@@ -42,6 +49,12 @@ window.addEventListener('scroll', () => {
     down?.classList.remove("hide");
   }
 });
+
+onUpdated(() => {
+  const lang = useLangStore().lang;
+  const option = document.querySelectorAll(`.language option[value='${lang}']`)[0] as HTMLOptionElement;
+  if(option){ option.selected = true; }
+});
 </script>
 
 <template>
@@ -55,6 +68,12 @@ window.addEventListener('scroll', () => {
   <select v-on:change="changeDistination($event)">
     <option value=""> - </option>
     <option v-for="dist in model.distinationList" :key="dist.id" :value="dist.id">{{ dist.name }}</option>
+  </select>
+
+  <h2>言語</h2>
+  <select v-on:change="changeLanguage($event)" class="language">
+    <option value="ja-JP">日本語</option>
+    <option value="en-US">English</option>
   </select>
 </div>
 
