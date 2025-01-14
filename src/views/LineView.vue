@@ -97,7 +97,7 @@ th.kind {
 }
 
 .special-express {
-  background-color: orange;
+  background-color: pink;
 }
 
 th.express {
@@ -123,5 +123,17 @@ th.express {
 .right-pane {
   margin-left: 1rem;
   padding: 1rem;
+}
+
+.f {
+  background-color: lightgreen;
+}
+
+.tj {
+  background-color: lightblue;
+}
+
+.tjd {
+  background-color: lightcoral;
 }
 </style>
