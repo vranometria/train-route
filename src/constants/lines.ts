@@ -922,6 +922,25 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_metro.tatsumi),
     new StopStationDef(STATION_IDS.tokyo_metro.shinkiba),
   ]),
+  // > 副都心線
+  [LINE_IDS.tokyo_metro.fukutoshin]: new Line('副都心線', '東京メトロ', [new KindDef("通勤急行", "commuter"), new KindDef("急行", "express")], [
+    new StopStationDef(STATION_IDS.tokyo_metro.wakoshi, ["commuter", "express"]),
+    new StopStationDef(STATION_IDS.tokyo_metro.chikatetsu_narimasu, ["commuter"]),
+    new StopStationDef(STATION_IDS.tokyo_metro.chikatetsu_akatsuka, ["commuter"]),
+    new StopStationDef(STATION_IDS.tokyo_metro.heiwadai, ["commuter"]),
+    new StopStationDef(STATION_IDS.tokyo_metro.hikawadai, ["commuter"]),
+    new StopStationDef(STATION_IDS.tokyo_metro.kotake_mukaihara, ["commuter", "express"]),
+    new StopStationDef(STATION_IDS.tokyo_metro.senkawa),
+    new StopStationDef(STATION_IDS.tokyo_metro.kanamecho, ["commuter", "express"]),
+    new StopStationDef(STATION_IDS.jr_east.ikebukuro, ["commuter", "express"]),
+    new StopStationDef(STATION_IDS.tokyo_metro.zoshigaya),
+    new StopStationDef(STATION_IDS.tokyo_metro.nishi_waseda),
+    new StopStationDef(STATION_IDS.tokyo_metro.higashi_shinjuku),
+    new StopStationDef(STATION_IDS.tokyo_metro.shinjuku_sanchome, ["commuter", "express"]),
+    new StopStationDef(STATION_IDS.tokyo_metro.kitasandou),
+    new StopStationDef(STATION_IDS.tokyo_metro.meiji_jingumae, ["commuter", "express"]),
+    new StopStationDef(STATION_IDS.jr_east.shibuya, ["commuter", "express"]),
+  ]),
 
   // 首都圏新都市
   [LINE_IDS.shutoken_shintoshi.tsukuba_express]: new Line('つくばエクスプレス', '首都圏新都市', [

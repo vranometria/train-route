@@ -889,6 +889,12 @@ export const STATION_IDS = {
     toyosu: 'toyosu',
     tatsumi: 'tatsumi',
     shinkiba: 'shinkiba',
+    // 副都心線
+    zoshigaya: 'zoshi-gaya',
+    nishi_waseda: 'nishi-waseda',
+    kitasandou: 'kitasandou',
+    meiji_jingumae: 'meiji-jingumae',
+    higashi_shinjuku: 'higashi-shinjuku',
   },
   /** 東京都交通局 */
   tokyo_subway: {

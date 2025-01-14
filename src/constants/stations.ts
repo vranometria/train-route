@@ -560,16 +560,17 @@ export const STATIONS = {
   ], "たかお"),
   [STATION_IDS.jr_east.yurakucho]: new StationInfo('有楽町', [
     LINE_IDS.jr_east.yamanote,
-    LINE_IDS.jr_east.keihin_touhoku],
-  ),
+    LINE_IDS.jr_east.keihin_touhoku,
+    LINE_IDS.tokyo_metro.yurakucho,
+  ], "ゆうらくちょう"),
   [STATION_IDS.jr_east.shinbashi]: new StationInfo('新橋', [
     LINE_IDS.jr_east.tokaido,
     LINE_IDS.jr_east.yamanote,
     LINE_IDS.jr_east.keihin_touhoku,
   ]),
-  [STATION_IDS.jr_east.hamamatsucho]: new StationInfo('浜松町', [LINE_IDS.jr_east.yamanote]),
-  [STATION_IDS.jr_east.tamachi]: new StationInfo('田町', [LINE_IDS.jr_east.yamanote]),
-  [STATION_IDS.jr_east.takanawa_gateway]: new StationInfo('高輪ゲートウェイ', [LINE_IDS.jr_east.yamanote]),
+  [STATION_IDS.jr_east.hamamatsucho]: new StationInfo('浜松町', [LINE_IDS.jr_east.yamanote], "はままつちょう"),
+  [STATION_IDS.jr_east.tamachi]: new StationInfo('田町', [LINE_IDS.jr_east.yamanote], "たまち"),
+  [STATION_IDS.jr_east.takanawa_gateway]: new StationInfo('高輪ゲートウェイ', [LINE_IDS.jr_east.yamanote], "たかなわげーとうぇい"),
   [STATION_IDS.jr_east.shinagawa]: new StationInfo('品川', [
     LINE_IDS.jr_east.tokaido,
     LINE_IDS.jr_east.yamanote,
@@ -577,7 +578,7 @@ export const STATIONS = {
     LINE_IDS.jr_east.keihin_touhoku,
     LINE_IDS.jr_east.shinkansen.tokaido,
     LINE_IDS.keikyu.honsen,
-  ]),
+  ], "しながわ"),
   [STATION_IDS.jr_east.oimachi]: new StationInfo('大井町', [
     LINE_IDS.jr_sotetsu_chokutsu,
     LINE_IDS.jr_east.yokosuka,
@@ -1272,6 +1273,22 @@ export const STATIONS = {
     LINE_IDS.tokyo_metro.yurakucho,
     LINE_IDS.toukyo_rinkai_kousoku.rinkai,
   ], "しんきば"),
+  // > 副都心線
+  [STATION_IDS.tokyo_metro.zoshigaya]: new StationInfo('雑司ヶ谷', [
+    LINE_IDS.tokyo_metro.fukutoshin,
+    LINE_IDS.tokyo_subway.sakura_tram,
+  ], "ぞうしがや"),
+  [STATION_IDS.tokyo_metro.nishi_waseda]: new StationInfo('西早稲田', [], "にしわせだ"),
+  [STATION_IDS.tokyo_metro.kitasandou]: new StationInfo('北参道', [], "きたさんどう"),
+  [STATION_IDS.tokyo_metro.meiji_jingumae]: new StationInfo('明治神宮前', [
+    new ExchangeInfo(LINE_IDS.jr_east.yamanote, STATION_IDS.jr_east.harajuku),
+    LINE_IDS.tokyo_metro.chiyoda,
+    LINE_IDS.tokyo_metro.fukutoshin,
+  ], "めいじじんぐうまえ"),
+  [STATION_IDS.tokyo_metro.higashi_shinjuku]: new StationInfo('東新宿', [
+    LINE_IDS.tokyo_metro.fukutoshin,
+    LINE_IDS.tokyo_subway.oedo,
+  ], "ひがししんじゅく"),
 
   // 相模鉄道
   // ＞本線
