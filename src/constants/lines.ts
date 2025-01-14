@@ -1175,4 +1175,43 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tobu.tamayodo),
     new StopStationDef(STATION_IDS.tobu.yorii),
   ]),
+
+  // 京王電鉄
+  // ＞京王線
+  [LINE_IDS.keiou.keiou]: new Line('京王線', '京王電鉄', [], [
+    new StopStationDef(STATION_IDS.jr_east.shinjuku),
+    new StopStationDef(STATION_IDS.keio.sasatsuka),
+    new StopStationDef(STATION_IDS.keio.daitabashi),
+    new StopStationDef(STATION_IDS.keio.meidaimae),
+    new StopStationDef(STATION_IDS.keio.shimotakaido),
+    new StopStationDef(STATION_IDS.keio.sakurajosui),
+    new StopStationDef(STATION_IDS.keio.kami_kitazawa),
+    new StopStationDef(STATION_IDS.keio.yawatayama),
+    new StopStationDef(STATION_IDS.keio.roka_koen),
+    new StopStationDef(STATION_IDS.keio.chitose_karasuyama),
+    new StopStationDef(STATION_IDS.keio.senkawa),
+    new StopStationDef(STATION_IDS.keio.tsutsujigaoka),
+    new StopStationDef(STATION_IDS.keio.sibasaki),
+    new StopStationDef(STATION_IDS.keio.kokuryo),
+    new StopStationDef(STATION_IDS.keio.fuda),
+    new StopStationDef(STATION_IDS.keio.chofu),
+    new StopStationDef(STATION_IDS.keio.nishi_chofu),
+    new StopStationDef(STATION_IDS.keio.tobitakyu),
+    new StopStationDef(STATION_IDS.keio.musashinodai),
+    new StopStationDef(STATION_IDS.keio.tamareien),
+    new StopStationDef(STATION_IDS.keio.higashi_fuchu),
+    new StopStationDef(STATION_IDS.keio.fuchu),
+    new StopStationDef(STATION_IDS.jr_east.bubaigawara),
+    new StopStationDef(STATION_IDS.keio.nakakawahara),
+    new StopStationDef(STATION_IDS.keio.seiseki_sakuragaoka),
+    new StopStationDef(STATION_IDS.keio.mogusaen),
+    new StopStationDef(STATION_IDS.keio.takahatafudo),
+    new StopStationDef(STATION_IDS.keio.minamidaira),
+    new StopStationDef(STATION_IDS.keio.hirayamajoshikoen),
+    new StopStationDef(STATION_IDS.keio.naganuma),
+    new StopStationDef(STATION_IDS.keio.kitano),
+    new StopStationDef(STATION_IDS.keio.keio_hachioji),
+  ]),
+  // ＞京王新線
+
 }

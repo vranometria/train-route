@@ -70,6 +70,12 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.kurihama}}">久里浜線</RouterLink> -->
         </div>
 
+        京王電鉄
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keiou.keiou}}">京王線</RouterLink>
+          <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keio.inokashira}}">井の頭線</RouterLink> -->
+        </div>
+
         小田急電鉄
         <div>
           <RouterLink :to="{name: 'line', params: {id: 'odakyu-odawara'}}">小田原線</RouterLink>
