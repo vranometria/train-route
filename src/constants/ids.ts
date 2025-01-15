@@ -100,6 +100,10 @@ export const LINE_IDS = {
     sengoku: 'jr-sengoku',
     /** 陸羽東線 */
     rikuutou: 'jr-rikuutou',
+    /** 陸羽西線 */
+    rikuusei: 'jr-rikuusei',
+    /** 左沢線 */
+    aterazawa: 'jr-aterazawa',
     /** 大船渡線 */
     ofunato: 'jr-ofunato',
     /** 北上線 */
@@ -112,14 +116,16 @@ export const LINE_IDS = {
     tazawako: 'jr-tazawako',
     /** 八戸線 */
     hachinohe: 'jr-hachinohe',
+    /** 山形線 */
+    yamagata: 'jr-yamagata',
+    /** 米坂線 */
+    yonesaka: 'jr-yonesaka',
 
     shinkansen: {
       // 東海道新幹線
       tokaido: 'jr-tokaido-shinkansen',
       // 東北新幹線
       tohoku: 'jr-tohoku-shinkansen',
-      // 新幹線はやぶさ
-      hayabusa: 'jr-hayabusa',
       // 山形新幹線
       yamagata: 'jr-yamagata-shinkansen',
       // 秋田新幹線
@@ -396,6 +402,10 @@ export const LINE_IDS = {
   aoimori: {
     aoimori_tetudo: 'aoimori-aoimori_tetudo',
   },
+  /** 山形鉄道 */
+  yamagata: {
+    flower_nagai: 'yamagata-flower-nagai',
+  }
 };
 
 /** 駅ID */
@@ -851,6 +861,17 @@ export const STATION_IDS = {
     hachinohe: "jr-hachinohe",
     shichinohe_towada: "jr-shichinohe_towada",
     shin_aomori: "jr-shin_aomori",
+    // 山形新幹線
+    shinjo: "jr-shinjo",
+    oishida: "jr-oishida",
+    murayama: "jr-murayama",
+    sakuranbo_higashine: "jr-sakuranbo_higashine",
+    tendo: "jr-tendo",
+    yamagata : "jr-yamagata",
+    kaminoyama_onsen: "jr-kaminoyama_onsen",
+    akayu: "jr-akayu",
+    takahata: "jr-takahata",
+    yonezawa: "jr-yonezawa",
   },
   /** 京急駅 */
   keikyu: {
