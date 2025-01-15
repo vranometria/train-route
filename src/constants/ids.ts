@@ -120,6 +120,10 @@ export const LINE_IDS = {
     yamagata: 'jr-yamagata',
     /** 米坂線 */
     yonesaka: 'jr-yonesaka',
+    /** 羽越本線 */
+    uetsu_honsen: 'jr-uetsu-honsen',
+    /** 男鹿線 */
+    oga: 'jr-oga',
 
     shinkansen: {
       // 東海道新幹線
@@ -405,7 +409,11 @@ export const LINE_IDS = {
   /** 山形鉄道 */
   yamagata: {
     flower_nagai: 'yamagata-flower-nagai',
-  }
+  },
+  /** 秋田内陸縦貫鉄道 */
+  akita_nairiku_jukan: {
+    akita_nairiku: 'akita-nairiku-jukan-akita-nairiku',
+  },
 };
 
 /** 駅ID */
@@ -872,6 +880,12 @@ export const STATION_IDS = {
     akayu: "jr-akayu",
     takahata: "jr-takahata",
     yonezawa: "jr-yonezawa",
+    // 秋田新幹線
+    shizukuishi: "jr-shizukuishi",
+    tazawako: "jr-tazawako",
+    kakunodate: "jr-kakunodate",
+    omagari: "jr-omagari",
+    akita: "jr-akita",
   },
   /** 京急駅 */
   keikyu: {

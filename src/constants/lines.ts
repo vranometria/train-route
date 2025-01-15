@@ -634,6 +634,24 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.oishida),
     new StopStationDef(STATION_IDS.jr_east.shinjo),
   ]),
+  [LINE_IDS.jr_east.shinkansen.akita]: new Line('秋田新幹線', 'JR東日本', [new KindDef("はやぶさ", "raipd")], [
+    new StopStationDef(STATION_IDS.jr_east.tokyo, ["rapid"]),
+    new StopStationDef(STATION_IDS.jr_east.ueno, ["rapid"]),
+    new StopStationDef(STATION_IDS.jr_east.omiya, ["rapid"]),
+    new StopStationDef(STATION_IDS.jr_east.sendai, ["rapid"]),
+    new StopStationDef(STATION_IDS.jr_east.furukawa, ["rapid"]),
+    new StopStationDef(STATION_IDS.jr_east.kurikoma_kogen, ["rapid"]),
+    new StopStationDef(STATION_IDS.jr_east.ichinoseki, ["rapid"]),
+    new StopStationDef(STATION_IDS.jr_east.mizusawaesashi, ["rapid"]),
+    new StopStationDef(STATION_IDS.jr_east.kitakami, ["rapid"]),
+    new StopStationDef(STATION_IDS.jr_east.shin_hanamaki, ["rapid"]),
+    new StopStationDef(STATION_IDS.jr_east.morioka, ["rapid"]),
+    new StopStationDef(STATION_IDS.jr_east.shizukuishi),
+    new StopStationDef(STATION_IDS.jr_east.tazawako),
+    new StopStationDef(STATION_IDS.jr_east.kakunodate),
+    new StopStationDef(STATION_IDS.jr_east.omagari),
+    new StopStationDef(STATION_IDS.jr_east.akita),
+  ]),
 
   // 東京メトロ
   [LINE_IDS.tokyo_metro.hibiya]: new Line('日比谷線', '東京メトロ', [], [

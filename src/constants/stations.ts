@@ -259,6 +259,8 @@ export const STATIONS = {
     LINE_IDS.tokyo_metro.marunouchi,
     LINE_IDS.tokyo_metro.hibiya,
     LINE_IDS.jr_east.shinkansen.jouetsu,
+    LINE_IDS.jr_east.shinkansen.yamagata,
+    LINE_IDS.jr_east.shinkansen.akita,
   ], "うえの"),
   [STATION_IDS.jr_east.okachimachi]: new StationInfo('御徒町', [], "おかちまち"),
   [STATION_IDS.jr_east.akihabara]: new StationInfo('秋葉原', [
@@ -284,6 +286,8 @@ export const STATIONS = {
     LINE_IDS.jr_east.shinkansen.jouetsu,
     LINE_IDS.jr_east.shinkansen.tokaido,
     LINE_IDS.jr_east.shinkansen.tohoku,
+    LINE_IDS.jr_east.shinkansen.yamagata,
+    LINE_IDS.jr_east.shinkansen.akita,
   ],"とうきょう",),
   [STATION_IDS.jr_east.chiba]: new StationInfo('千葉', [
     LINE_IDS.jr_east.sobu,
@@ -1084,6 +1088,31 @@ export const STATIONS = {
     LINE_IDS.jr_east.rikuusei,
     LINE_IDS.jr_east.ouu_honsen,
   ], "しんじょう"),
+  // 秋田新幹線
+  [STATION_IDS.jr_east.shizukuishi]: new StationInfo('雫石', [
+    LINE_IDS.jr_east.shinkansen.akita,
+    LINE_IDS.jr_east.tazawako,
+  ], "しずくいし"),
+  [STATION_IDS.jr_east.tazawako]: new StationInfo('田沢湖', [
+    LINE_IDS.jr_east.shinkansen.akita,
+    LINE_IDS.jr_east.tazawako,
+  ], "たざわこ"),
+  [STATION_IDS.jr_east.kakunodate]: new StationInfo('角館', [
+    LINE_IDS.jr_east.shinkansen.akita,
+    LINE_IDS.jr_east.tazawako,
+    LINE_IDS.akita_nairiku_jukan.akita_nairiku,
+  ], "角館"),
+  [STATION_IDS.jr_east.omagari]: new StationInfo('大曲', [
+    LINE_IDS.jr_east.shinkansen.akita,
+    LINE_IDS.jr_east.ouu_honsen,
+    LINE_IDS.jr_east.tazawako,
+  ], "おおまがり"),
+  [STATION_IDS.jr_east.akita]: new StationInfo('秋田', [
+    LINE_IDS.jr_east.shinkansen.akita,
+    LINE_IDS.jr_east.ouu_honsen,
+    LINE_IDS.jr_east.uetsu_honsen,
+    LINE_IDS.jr_east.oga,
+  ], "秋田"),
 
   // 都営地下鉄
   // >浅草線
