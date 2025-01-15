@@ -77,6 +77,22 @@ import { useLangStore } from '@/stores/lang';
   display: flex;
 }
 
+h1, thead {
+  position: sticky;
+}
+
+h1 {
+  top: 0;
+  background-color:#181818;
+  z-index: 1;
+}
+
+thead {
+  top: 40px;
+  background-color: #181818;
+  z-index: 1;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
