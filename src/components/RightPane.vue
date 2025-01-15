@@ -10,11 +10,9 @@ const props = defineProps<{
 
 const distination = ref(null as HTMLElement|null);
 
-const top = props.model.stations[0];
-const last = props.model.stations[props.model.stations.length-1];
-const topName = top ? top.name : "未定義";
-const lastName = last ? last.name : "未定義";
-
+// 行先選択イベント
+// ・行先駅名を赤くする
+// ・出発元がある場合は出発元から行先までの駅名を青くする
 const changeDistination = (event: Event) => {
   const target = event.target as HTMLSelectElement;
   const distStationId = target.value;
@@ -24,6 +22,31 @@ const changeDistination = (event: Event) => {
   const td = tr.getElementsByClassName("station-name")[0] as HTMLElement;
   td.classList.add("distination");
   distination.value = tr;
+
+  if(props.from){ //出発元がある場合
+    Array.from(document.getElementsByClassName("on-the-way")).forEach(e => e.classList.remove("on-the-way"));
+
+    const fromStationId = props.from;
+    const fromTr = document.getElementById(fromStationId) as HTMLElement;
+    const fromNo = fromTr.getAttribute("no");
+    const distNo = tr.getAttribute("no");
+    if(!fromNo || !distNo){return;}
+
+    let fromIndex = Number(fromNo);
+    let distIndex = Number(distNo);
+
+    if(distIndex < fromIndex){ //行き先が出発元より手前の場合はfromとdistを入れ替え
+      const tmp = fromIndex;
+      fromIndex = distIndex;
+      distIndex = tmp;
+    }
+    console.log([fromIndex, distIndex]);
+
+    const stations = document.getElementsByClassName("station-name");
+    for(let i = fromIndex + 1; i < distIndex; i++){
+      (stations[i] as HTMLElement).classList.add("on-the-way");
+    }
+  }
 };
 
 const changeLanguage = (event: Event) => {
@@ -60,7 +83,7 @@ onUpdated(() => {
 <template>
 
 <div class="top">
-  {{ topName }} 方面
+  {{ model.getFirstStation().name }} 方面
 </div>
 
 <div class="dist">
@@ -81,14 +104,14 @@ onUpdated(() => {
 <label class="down hide" id="down">↓</label>
 
 <div class="last">
-  {{ lastName }} 方面
+  {{ model.getLastStation().name }} 方面
 </div>
 
 </template>
 
 <style scoped>
 .top {
-  position: sticky;
+  position: fixed;
   top: 0px;
 }
 .dist {

@@ -49,7 +49,7 @@ import { useLangStore } from '@/stores/lang';
           </tr>
         </thead>
         <tbody>
-          <tr v-for="staModel in model.stations" :key="lineId + staModel.name" :id="staModel.id">
+          <tr v-for="(staModel, index) in model.stations" :key="lineId + staModel.name" :id="staModel.id" :no="index">
             <td class="station-name">{{ staModel.name }}</td>
             <td class="pronunciation">
               <button :onclick="() => {pronunce(staModel.pronunciation);}">
@@ -158,5 +158,9 @@ th.express {
 .pronunciation img {
   width: 8px;
   height: 10px;
+}
+
+.on-the-way {
+  color: lightblue;
 }
 </style>

@@ -17,7 +17,7 @@ export class LineViewModel {
   lineName: string;
   companyName: string;
   kinds: KindDef[];
-  stations: StationModel[];
+  stations: StationModel[] = [];
   overlay: Component|null = null;
   underlay: Component|null = null;
   distinationList: Distination[] = [];
@@ -36,4 +36,8 @@ export class LineViewModel {
   sortAlphabetically(array: StationModel[]){
     return array.slice().sort((a, b) => a.pronunciation.localeCompare(b.pronunciation, "ja"));
   }
+
+  getFirstStation(){ return this.stations[0]; }
+
+  getLastStation(){ return this.stations[this.stations.length-1]; }
 }
