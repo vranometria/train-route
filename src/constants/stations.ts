@@ -70,7 +70,7 @@ export const STATIONS = {
     LINE_IDS.jr_east.utunomiya,
     LINE_IDS.jr_east.ryomo,
     LINE_IDS.jr_east.mito,
-    LINE_IDS.jr_east.shinkansen.tohoku_hokkaido,
+    LINE_IDS.jr_east.shinkansen.tohoku,
   ], "おやま"),
   /** 間々田 */
   [STATION_IDS.jr_east.mamada]: new StationInfo('間々田', [
@@ -2165,4 +2165,79 @@ export const STATIONS = {
     LINE_IDS.jr_east.shinetsu_honsen,
     LINE_IDS.jr_east.echigo,
   ], "にいがた"),
+  // 東北新幹線
+  [STATION_IDS.jr_east.nasu_shiobara]: new StationInfo('那須塩原', [
+    LINE_IDS.jr_east.utunomiya,
+    LINE_IDS.jr_east.shinkansen.tohoku,
+  ], "なすしおばら"),
+  [STATION_IDS.jr_east.shin_shirakawa]: new StationInfo('新白河', [
+    LINE_IDS.jr_east.shinkansen.tohoku,
+    LINE_IDS.jr_east.tohoku_honsen,
+  ], "しらかわ"),
+  [STATION_IDS.jr_east.kooriyama]: new StationInfo('郡山', [
+    LINE_IDS.jr_east.shinkansen.tohoku,
+    LINE_IDS.jr_east.banetsusai,
+    LINE_IDS.jr_east.banetsutou,
+    LINE_IDS.jr_east.tohoku_honsen,
+  ], "こおりやま"),
+  [STATION_IDS.jr_east.fukushima]: new StationInfo('福島', [
+    LINE_IDS.jr_east.shinkansen.tohoku,
+    LINE_IDS.jr_east.ouu_honsen,
+    LINE_IDS.jr_east.tohoku_honsen,
+    LINE_IDS.abukuma_kyuko.abukuma_kyuko,
+    LINE_IDS.fukushima_koutsu.iizaka,
+  ], "ふくしま"),
+  [STATION_IDS.jr_east.shiroishi_zao]: new StationInfo('白石蔵王', [], "しろいしざおう"),
+  [STATION_IDS.jr_east.sendai]: new StationInfo('仙台', [
+    LINE_IDS.jr_east.shinkansen.tohoku,
+    LINE_IDS.jr_east.tohoku_honsen,
+    LINE_IDS.jr_east.sengoku,
+    LINE_IDS.jr_east.senzan,
+  ], "せんだい"),
+  [STATION_IDS.jr_east.furukawa]: new StationInfo('古川', [
+    LINE_IDS.jr_east.shinkansen.tohoku,
+    LINE_IDS.jr_east.rikuutou,
+  ], "ふるかわ"),
+  [STATION_IDS.jr_east.kurikoma_kogen]: new StationInfo('くりこま高原', [], "くりこまこうげん"),
+  [STATION_IDS.jr_east.ichinoseki]: new StationInfo('一ノ関', [
+    LINE_IDS.jr_east.shinkansen.tohoku,
+    LINE_IDS.jr_east.tohoku_honsen,
+    LINE_IDS.jr_east.ofunato,
+  ], "いちのせき"),
+  [STATION_IDS.jr_east.mizusawaesashi]: new StationInfo('水沢江刺', [], "みずさわえさし"),
+  [STATION_IDS.jr_east.kitakami]: new StationInfo('北上', [
+    LINE_IDS.jr_east.shinkansen.tohoku,
+    LINE_IDS.jr_east.tohoku_honsen,
+    LINE_IDS.jr_east.kitakami,
+  ], "きたかみ"),
+  [STATION_IDS.jr_east.shin_hanamaki]: new StationInfo('新花巻', [
+    LINE_IDS.jr_east.shinkansen.tohoku,
+    LINE_IDS.jr_east.kamaishi,
+  ], "しんはなまき"),
+  [STATION_IDS.jr_east.morioka]: new StationInfo('盛岡', [
+    LINE_IDS.jr_east.shinkansen.tohoku,
+    LINE_IDS.jr_east.tohoku_honsen,
+    LINE_IDS.jr_east.yamada,
+    LINE_IDS.jr_east.tazawako,
+    LINE_IDS.igr_iwate_ginga.igr_iwate_ginga_tetudo,
+  ], "もりおか"),
+  [STATION_IDS.jr_east.iwate_numakunai]: new StationInfo('いわて沼宮内', [
+    LINE_IDS.jr_east.shinkansen.tohoku,
+    LINE_IDS.igr_iwate_ginga.igr_iwate_ginga_tetudo,
+  ], "いわてぬまくない"),
+  [STATION_IDS.jr_east.ninohe]: new StationInfo('二戸', [
+    LINE_IDS.jr_east.shinkansen.tohoku,
+    LINE_IDS.igr_iwate_ginga.igr_iwate_ginga_tetudo,
+  ], "にのへ"),
+  [STATION_IDS.jr_east.hachinohe]: new StationInfo('八戸', [
+    LINE_IDS.jr_east.shinkansen.tohoku,
+    LINE_IDS.jr_east.hachinohe,
+    LINE_IDS.aoimori.aoimori_tetudo,
+  ], "はちのへ"),
+  [STATION_IDS.jr_east.shichinohe_towada]: new StationInfo('七戸十和田', [], "しちのへとわだ"),
+  [STATION_IDS.jr_east.shin_aomori]: new StationInfo('新青森', [
+    LINE_IDS.jr_east.shinkansen.tohoku,
+    LINE_IDS.jr_east.ouu_honsen,
+    LINE_IDS.jr_east.shinkansen.hokkaido,
+  ], "しんあおもり"),
 }

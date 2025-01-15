@@ -90,6 +90,29 @@ export const LINE_IDS = {
     /** 越後線 */
     echigo: 'jr-echigo',
 
+    /** 東北本線 */
+    tohoku_honsen: 'jr-tohoku-honsen',
+    /** 奥羽本線 */
+    ouu_honsen: 'jr-ouu-honsen',
+    /** 仙山線 */
+    senzan: 'jr-senzan',
+    /** 仙石線 */
+    sengoku: 'jr-sengoku',
+    /** 陸羽東線 */
+    rikuutou: 'jr-rikuutou',
+    /** 大船渡線 */
+    ofunato: 'jr-ofunato',
+    /** 北上線 */
+    kitakami: 'jr-kitakami',
+    /** 釜石線 */
+    kamaishi: 'jr-kamaishi',
+    /** 山田線 */
+    yamada: 'jr-yamada',
+    /** 田沢湖線 */
+    tazawako: 'jr-tazawako',
+    /** 八戸線 */
+    hachinohe: 'jr-hachinohe',
+
     shinkansen: {
       // 東海道新幹線
       tokaido: 'jr-tokaido-shinkansen',
@@ -105,8 +128,8 @@ export const LINE_IDS = {
       jouetsu: 'jr-shouetsu-shinkansen',
       // 北陸新幹線
       hokuriku: 'jr-hokuriku-shinkansen',
-      // 東北・北海道新幹線
-      tohoku_hokkaido: 'jr-tohoku-hokkaido-shinkansen',
+      // 北海道新幹線
+      hokkaido: 'jr-hokkaido-shinkansen',
     },
   },
   // 京急
@@ -355,6 +378,23 @@ export const LINE_IDS = {
   /** OsakaMetro */
   osaka_metro: {
     midosuji: 'osaka-metro-midosuji',
+  },
+
+  /** 阿武隈急行 */
+  abukuma_kyuko: {
+    abukuma_kyuko: 'abukuma-kyuko',
+  },
+  /** 福島交通 */
+  fukushima_koutsu: {
+    iizaka: 'fukushima-koutsu-iizaka',
+  },
+  /** IGRいわて銀河鉄道 */
+  igr_iwate_ginga: {
+    igr_iwate_ginga_tetudo: 'igr-iwate-ginga_tetudo',
+  },
+  /** 青い森鉄道 */
+  aoimori: {
+    aoimori_tetudo: 'aoimori-aoimori_tetudo',
   },
 };
 
@@ -728,7 +768,6 @@ export const STATION_IDS = {
     /**野崎(栃木) */
     nozaki: 'nozaki',
     nishisunano: 'nishisunano',
-    nasushiobara: 'nasushiobara',
     kuroiso: 'kuroiso',
     //武蔵野線(JM)
     huchuhonmachi: 'huchuhonmachi',
@@ -793,6 +832,25 @@ export const STATION_IDS = {
     nagaoka: "nagaoka",
     tsubame_sanjo: "tsubame-sanjo",
     niigata: "niigata",
+    // 東北新幹線
+    nasu_shiobara: "jr-nasu_shiobara",
+    shin_shirakawa: "jr-shin_shirakawa",
+    kooriyama: "jr-kooriyama",
+    fukushima: "jr-fukushima",
+    shiroishi_zao: "jr-shiroishi_zao",
+    sendai: "jr-sendai",
+    furukawa: "jr-furukawa",
+    kurikoma_kogen: "jr-kurikoma_kogen",
+    ichinoseki: "jr-ichinoseki",
+    mizusawaesashi: "jr-mizusawaesashi",
+    kitakami: "jr-kitakami",
+    shin_hanamaki: "jr-shin_hanamaki",
+    morioka: "jr-morioka",
+    iwate_numakunai: "jr-iwate_numakunai",
+    ninohe: "jr-ninohe",
+    hachinohe: "jr-hachinohe",
+    shichinohe_towada: "jr-shichinohe_towada",
+    shin_aomori: "jr-shin_aomori",
   },
   /** 京急駅 */
   keikyu: {
