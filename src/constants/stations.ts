@@ -1041,6 +1041,23 @@ export const STATIONS = {
     LINE_IDS.jr_east.musashino,
     LINE_IDS.jr_east.keiyou,
   ], "えっちゅうじま"),
+  // 川越線(JK)
+  [STATION_IDS.jr_east.nisshin]: new StationInfo('日進', [], "にっしん"),
+  [STATION_IDS.jr_east.nishi_omiya]: new StationInfo('西大宮', [], "にしおおみや"),
+  [STATION_IDS.jr_east.sashiougi]: new StationInfo('指扇', [], "さしおうぎ"),
+  [STATION_IDS.jr_east.minami_furuya]: new StationInfo('南古谷', [], "みなみふるや"),
+  [STATION_IDS.jr_east.kawagoe]: new StationInfo('川越', [
+    LINE_IDS.jr_east.kawagoe,
+    LINE_IDS.toubu.toujou,
+  ], "かわごえ"),
+  [STATION_IDS.jr_east.nishi_kawagoe]: new StationInfo('西川越', [], "にしかわごえ"),
+  [STATION_IDS.jr_east.matoba]: new StationInfo('的場', [], "まとば"),
+  [STATION_IDS.jr_east.kasahata]: new StationInfo('笠幡', [], "かさはた"),
+  [STATION_IDS.jr_east.musashi_takahagi]: new StationInfo('武蔵高萩', [], "むさしたかはぎ"),
+  [STATION_IDS.jr_east.komagawa]: new StationInfo('高麗川', [
+    LINE_IDS.jr_east.kawagoe,
+    LINE_IDS.jr_east.hachiko,
+  ], "こまがわ"),
 
   /** 厚木 */
   [STATION_IDS.jr_east.atsugi]: new StationInfo('厚木', [

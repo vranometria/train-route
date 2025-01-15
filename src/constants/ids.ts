@@ -614,7 +614,7 @@ export const STATION_IDS = {
     nisshin: 'nisshin',
     nishi_omiya: 'nishi-omiya',
     sashiougi: 'sashiougi',
-    minami_koya: 'minami-koya',
+    minami_furuya: 'minami-furuya',
     kawagoe: 'kawagoe',
     nishi_kawagoe: 'nishi-kawagoe',
     matoba: 'matoba',
