@@ -1030,8 +1030,25 @@ export const STATION_IDS = {
     toshimaen: 'toshimaen',
     nerima_kasugacho: 'nerima-kasugacho',
     hikarigaoka: 'hikarigaoka',
-    // 三田線
     takawadai: 'takawadai',
+    // 三田線
+    nishi_takashimadaira: 'nishi-takashimadaira',
+    shin_takashimadaira: 'shin-takashimadaira',
+    takashimadaira: 'takashimadaira',
+    renkon: 'renkon',
+    shimura_sanchome: 'shimura-sanchome',
+    shimura_sakaue: 'shimura-sakaue',
+    honhasunuma: 'honhasunuma',
+    itabashihoncho: 'itabashihoncho',
+    itabashi_kuyakushomae: 'itabashi-kuyakushomae',
+    shin_itabashi: 'shin-itabashi',
+    nishi_sugamo: 'nishi-sugamo',
+    nishidai: 'nishidai',
+    sengoku: 'sengoku',
+    hakusan: 'hakusan',
+    uchisaiwaicho: 'uchisaiwaicho',
+    onarimon: 'onarimon',
+    shiba_koen: 'shiba-koen',
   },
   /** 首都圏新都市 */
   shutoken_shintoshi: {

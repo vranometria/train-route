@@ -45,7 +45,7 @@ import { LINE_IDS } from '@/constants/ids'
         都営地下鉄
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.shinjuku}}" >新宿線</RouterLink>
-          <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toei.mita}}" >三田線</RouterLink> -->
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.mita}}" >三田線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.asakusa}}" >浅草線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.oedo}}" >大江戸線</RouterLink>
         </div>

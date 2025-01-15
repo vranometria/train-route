@@ -55,24 +55,6 @@ const changeLanguage = (event: Event) => {
   useLangStore().setLang(lang);
 };
 
-//スクロールイベント
-window.addEventListener('scroll', () => {
-  const up = document.getElementById("up");
-  const down = document.getElementById("down");
-  if(!distination.value){return;}
-
-  const dist = distination.value;
-  if(dist.getBoundingClientRect().top < 0){
-    up?.classList.remove("hide");
-    down?.classList.add("hide");
-  }
-  // distinationが画面の下にある場合は.downから.hideを削除
-  else if(dist.getBoundingClientRect().bottom > window.innerHeight){
-    up?.classList.add("hide");
-    down?.classList.remove("hide");
-  }
-});
-
 onUpdated(() => {
   const lang = useLangStore().lang;
   const option = document.querySelectorAll(`.language option[value='${lang}']`)[0] as HTMLOptionElement;
@@ -93,15 +75,12 @@ onUpdated(() => {
     <option v-for="dist in model.distinationList" :key="dist.id" :value="dist.id">{{ dist.name }}</option>
   </select>
 
-  <h2>言語</h2>
+  <h2>音声言語</h2>
   <select v-on:change="changeLanguage($event)" class="language">
     <option value="ja-JP">日本語</option>
     <option value="en-US">English</option>
   </select>
 </div>
-
-<label class="up hide" id="up">↑</label>
-<label class="down hide" id="down">↓</label>
 
 <div class="last">
   {{ model.getLastStation().name }} 方面
@@ -118,10 +97,12 @@ onUpdated(() => {
   position: sticky;
   top: 100px;
 }
-
 .last {
   position: fixed;
   bottom: 0;
+}
+h2 {
+  margin-top: 30px;
 }
 
 </style>
