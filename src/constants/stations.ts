@@ -1659,6 +1659,17 @@ export const STATIONS = {
     new ExchangeInfo(LINE_IDS.jr_east.sobu, STATION_IDS.jr_east.ochanomizu),
   ], "しんおちゃのみず"),
 
+  // 東京モノレール
+  [STATION_IDS.tokyo_monorail.tennozu_isle]: new StationInfo('天王州アイル', [], "てんのうずあいる"),
+  [STATION_IDS.tokyo_monorail.oi_keibajo_mae]: new StationInfo('大井競馬場前', [], "おおいけいばじょうまえ"),
+  [STATION_IDS.tokyo_monorail.ryutsu_center]: new StationInfo('流通センター', [], "りゅうつうせんたー"),
+  [STATION_IDS.tokyo_monorail.syouwajima]: new StationInfo('昭和島', [], "しょうわじま"),
+  [STATION_IDS.tokyo_monorail.seibijo]: new StationInfo('整備場', [], "せいびじょう"),
+  [STATION_IDS.tokyo_monorail.haneda_kuko_daisan_terminal]: new StationInfo('羽田空港第三ターミナル', [], "はねだくうこうだいさんたーみなる"),
+  [STATION_IDS.tokyo_monorail.shin_seibijo]: new StationInfo('新整備場', [], "しんせいびじょう"),
+  [STATION_IDS.tokyo_monorail.haneda_kuko_dai1_terminal]: new StationInfo('羽田空港第一ターミナル', [], "はねだくうこうだいいちたーみなる"),
+  [STATION_IDS.tokyo_monorail.haneda_kuko_dai2_terminal]: new StationInfo('羽田空港第二ターミナル', [], "はねだくうこうだいにたーみなる"),
+
   // 相模鉄道
   // ＞本線
   [STATION_IDS.sagami.ebina]: new StationInfo('海老名', [
@@ -1918,7 +1929,7 @@ export const STATIONS = {
   [STATION_IDS.keikyu.umeyashiki]: new StationInfo('梅屋敷', [], "うめやしき"),
   [STATION_IDS.keikyu.keikyukamata]: new StationInfo('京急蒲田', [
     LINE_IDS.keikyu.honsen,
-    LINE_IDS.keikyu.kuko,
+    LINE_IDS.keikyu.haneda_kuko,
   ], "けいきゅうかまた"),
   [STATION_IDS.keikyu.zoushiki]: new StationInfo('雑色', [], "ぞうしき"),
   [STATION_IDS.keikyu.rokugodote]: new StationInfo('六郷土手', [], "ろくごうどて"),
@@ -1988,6 +1999,16 @@ export const STATIONS = {
   [STATION_IDS.keikyu.keikyuotsu]: new StationInfo('京急大津', [], "けいきゅうおおつ"),
   [STATION_IDS.keikyu.maborikaigan]: new StationInfo('真堀海岸', [], "まぼりかいがん"),
   [STATION_IDS.keikyu.uraga]: new StationInfo('浦賀', [], "うらが"),
+  // 羽田空港線
+  [STATION_IDS.keikyu.koujiya]: new StationInfo('糀谷', [], "こうじや"),
+  [STATION_IDS.keikyu.otorii]: new StationInfo('大鳥居', [], "おおとりい"),
+  [STATION_IDS.keikyu.anamoriinari]: new StationInfo('穴守稲荷', [], "あなもりいなり"),
+  [STATION_IDS.keikyu.tenkubashi]: new StationInfo('天空橋', [
+    LINE_IDS.keikyu.haneda_kuko,
+    LINE_IDS.tokyo_monorail,
+  ], "てんくうばし"),
+  [STATION_IDS.keikyu.hanedakuko_daisan_terminal]: new StationInfo('羽田空港第三ターミナル', [], "はねだくうこうだいさんターミナル"),
+  [STATION_IDS.keikyu.hanedakuko_dai1_dai2_terminal]: new StationInfo('羽田空港第1・第2ターミナル', [], "はねだくうこうだいいちだいにたーみなる"),
 
   // 京王
   // ＞京王線

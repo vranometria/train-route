@@ -758,6 +758,21 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_metro.kita_ayase),
   ]),
 
+  // 東京モノレール
+  [LINE_IDS.tokyo_monorail]: new Line('東京モノレール', '東京モノレール', [], [
+    new StopStationDef(STATION_IDS.jr_east.hamamatsucho),
+    new StopStationDef(STATION_IDS.tokyo_monorail.tennozu_isle),
+    new StopStationDef(STATION_IDS.tokyo_monorail.oi_keibajo_mae),
+    new StopStationDef(STATION_IDS.tokyo_monorail.ryutsu_center),
+    new StopStationDef(STATION_IDS.tokyo_monorail.syouwajima),
+    new StopStationDef(STATION_IDS.tokyo_monorail.seibijo),
+    new StopStationDef(STATION_IDS.keikyu.tenkubashi),
+    new StopStationDef(STATION_IDS.tokyo_monorail.haneda_kuko_daisan_terminal),
+    new StopStationDef(STATION_IDS.tokyo_monorail.shin_seibijo),
+    new StopStationDef(STATION_IDS.tokyo_monorail.haneda_kuko_dai1_terminal),
+    new StopStationDef(STATION_IDS.tokyo_monorail.haneda_kuko_dai2_terminal),
+  ]),
+
   // 京浜急行電鉄
   [LINE_IDS.keikyu.honsen]: new Line('京急本線', '京浜急行電鉄', [
     new KindDef("急行", "express"),
@@ -844,19 +859,19 @@ export const LINES = {
     new StopStationDef(STATION_IDS.keikyu.daishibashi),
     new StopStationDef(STATION_IDS.keikyu.kojimashinden),
   ]),
-  [LINE_IDS.keikyu.kuko]: new Line('空港線', '京浜急行電鉄', [
+  [LINE_IDS.keikyu.haneda_kuko]: new Line('羽田空港線', '京浜急行電鉄', [
     new KindDef("快特", "rapid"),
     new KindDef("急行", "express"),
     new KindDef("特急", "special-express"),
-    new KindDef("エアポート急行", "airport-express"),
+    new KindDef("エアポート急行", "semi-express"),
   ], [
-    new StopStationDef(STATION_IDS.keikyu.keikyukamata, ["rapid", "express", "special-express", "airport-express"]),
+    new StopStationDef(STATION_IDS.keikyu.keikyukamata, ["rapid", "express", "special-express", "semi-express"]),
     new StopStationDef(STATION_IDS.keikyu.koujiya, ["express", "special-express"]),
     new StopStationDef(STATION_IDS.keikyu.otorii, ["express", "special-express"]),
     new StopStationDef(STATION_IDS.keikyu.anamoriinari, ["express", "special-express"]),
     new StopStationDef(STATION_IDS.keikyu.tenkubashi, ["express", "special-express"]),
-    new StopStationDef(STATION_IDS.keikyu.hanedakuko_daisan_terminal, ["rapid", "express", "special-express", "airport-express"]),
-    new StopStationDef(STATION_IDS.keikyu.hanedakuko_dai1_dai2_terminal, ["rapid", "express", "special-express", "airport-express"]),
+    new StopStationDef(STATION_IDS.keikyu.hanedakuko_daisan_terminal, ["rapid", "express", "special-express", "semi-express"]),
+    new StopStationDef(STATION_IDS.keikyu.hanedakuko_dai1_dai2_terminal, ["rapid", "express", "special-express", "semi-express"]),
   ]),
 
   // 相模鉄道

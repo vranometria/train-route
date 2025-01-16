@@ -151,11 +151,10 @@ export const LINE_IDS = {
       hokkaido: 'jr-hokkaido-shinkansen',
     },
   },
-  // 京急
+  // 京急 路線
   keikyu: {
     honsen: "keikyu-honsen",
     haneda_kuko: "keikyu-haneda-kuko",
-    kuko: "keikyu-kuko",
     zushi: "keikyu-zushi",
     kurihama: "keikyu-kurihama",
     daishi: "keikyu-daishi",
@@ -1278,6 +1277,19 @@ export const STATION_IDS = {
     rokucho: 'rokucho',
     aoi: 'aoi',
     shin_okachimachi: 'shin-okachimachi',
+  },
+  /** 東京モノレール 駅 */
+  tokyo_monorail: {
+    tennozu_isle: 'tennozu-isle',
+    oi_keibajo_mae: 'oi-keibajo-mae',
+    ryutsu_center: 'ryutsu-center',
+    syouwajima: 'syouwajima',
+    seibijo: 'seibijo',
+    tenkubashi: 'tenkubashi',
+    haneda_kuko_daisan_terminal: 'haneda-kuko-daisan-terminal',
+    shin_seibijo: 'shin-seibijo',
+    haneda_kuko_dai1_terminal: 'haneda-kuko-dai1-terminal',
+    haneda_kuko_dai2_terminal: 'haneda-kuko-dai2-terminal',
   },
   /** 相鉄駅 */
   sagami: {

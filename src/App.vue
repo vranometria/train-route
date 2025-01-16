@@ -44,6 +44,11 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_metro.nanboku}}" >南北線</RouterLink>
         </div>
 
+        東京モノレール
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_monorail}}" >東京モノレール</RouterLink>
+        </div>
+
         首都圏新都市
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.shutoken_shintoshi.tsukuba_express}}" >つくばエクスプレス</RouterLink>
@@ -76,6 +81,7 @@ import { LINE_IDS } from '@/constants/ids'
         京急電鉄
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.honsen}}">本線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.haneda_kuko}}">羽田空港線</RouterLink>
           <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.zushi}}">逗子線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.kurihama}}">久里浜線</RouterLink> -->
         </div>
