@@ -44,6 +44,9 @@ export const LINE_IDS = {
     nanbu: 'jr-nanbu',
     /** 武蔵野線 */
     musashino: 'jr-musashino',
+    /** 京葉線 */
+    keiyou: 'jr-keiyou',
+
     /** 相模線 */
     sagami: 'jr-sagami',
     /** 磐越東線 */
@@ -79,8 +82,11 @@ export const LINE_IDS = {
     ryomo: 'jr-ryomo',
     /** 吾妻線 */
     agatsuma: 'jr-agatsuma',
+
     /** 信越本線 */
     shinetsu_honsen: 'jr-shinetsu-honsen',
+    /** 小海線 */
+    koumi: 'jr-koumi',
     /** 弥彦線 */
     yahiko: 'jr-yahiko',
     /** 磐越西線 */
@@ -89,6 +95,10 @@ export const LINE_IDS = {
     hakushin: 'jr-hakushin',
     /** 越後線 */
     echigo: 'jr-echigo',
+    /** 篠ノ井線 */
+    shinonoi: 'jr-shinonoi',
+    /** 飯山線 */
+    iiyama: 'jr-iiyama',
 
     /** 東北本線 */
     tohoku_honsen: 'jr-tohoku-honsen',
@@ -124,6 +134,7 @@ export const LINE_IDS = {
     uetsu_honsen: 'jr-uetsu-honsen',
     /** 男鹿線 */
     oga: 'jr-oga',
+
 
     shinkansen: {
       // 東海道新幹線
@@ -353,12 +364,21 @@ export const LINE_IDS = {
     aonami: 'jr-tokai-aonami',
     hokurikuhonsen: 'jr-tokai-hokurikuhonsen',
   },
-  /** JR西日本 */
+  /** JR西日本線 */
   jr_west: {
     kansai_honsen: 'jr-west-kansai-honsen',
     saninhonsen: 'jr-west-saninhonsen',
     nara: 'jr-west-nara',
     osaka_higashi: 'jr-west-osaka-higashi',
+    oito: 'jr-west-oito',
+    takayama_honsen: 'jr-west-takayama-honsen',
+    johana: 'jr-west-johana',
+    nanao: 'jr-west-nanao',
+    kuzuryu: 'jr-west-kuzuryu',
+    kosei: 'jr-west-kosei',
+    kohama: 'jr-west-kohama',
+    hokuriku_honsen: 'jr-west-hokuriku-honsen',
+
     shinkansen: {
       sanyo: 'jr-west-sanyo-shinkansen',
     }
@@ -388,6 +408,60 @@ export const LINE_IDS = {
   /** OsakaMetro */
   osaka_metro: {
     midosuji: 'osaka-metro-midosuji',
+  },
+
+  /** しなの鉄道 */
+  shinano: {
+    shinano: 'shinano-shinano',
+    kita_shinano: 'shinano-kita-shinano',
+  },
+  /** 上田電鉄 */
+  ueda: {
+    bessho: 'ueda-bessho',
+  },
+  /** 長野電鉄 */
+  nagano: {
+    nagano: 'nagano-nagano',
+  },
+  /** えちごトキめき鉄道 */
+  echigo_tokimeki: {
+    myoko_haneuma: 'echigo-tokimeki-myoko-haneuma',
+    nihonkai_hisui: 'echigo-tokimeki-nihonkai-hisui',
+  },
+  /** あいの風とやま鉄道 */
+  ainokaze_toyama: {
+    ainokaze_toyama_tetsudo: 'ainokaze-toyama-ainokaze-toyama_tetsudo',
+  },
+  /** 富山地方鉄道(富山地鉄) */
+  toyama_chiho: {
+    /** 本線 */
+    honsen: 'toyama-chitetsu-honsen',
+    fujikoshi_takigami: 'toyama-chiho-fujikoshi-takigami',
+    toyama_kido: 'toyama-chiho-toyama-kido',
+    shinai_kanjo: 'toyama-chiho-shinai-kanjo',
+    toyamako: 'toyama-chiho-toyamako',
+  },
+  /** 北陸鉄道 */
+  hokuriku: {
+    asanogawa: 'hokuriku-asanogawa',
+  },
+  /** IRいしかわ鉄道 */
+  ir_ishikawa: {
+    ir_ishikawa: 'ir-ishikawa-ir_ishikawa',
+  },
+  /** はぴラインふくい */
+  hapi_line_fukui: {
+    hapi_line_fukui: 'hapi-line-fukui-hapi_line_fukui',
+  },
+  /** えちぜん鉄道 */
+  echizen: {
+    katsuyama_eiheiji: 'echizen-katsuyama-eiheiji',
+    mikuni_awara: 'echizen-mikuni-awara',
+  },
+  /** 福井鉄道 */
+  fukui: {
+    fukui_tetsudo: 'fukui-fukui_tetsudo',
+    fukubu: 'fukui-fukubu',
   },
 
   /** 阿武隈急行 */
@@ -727,7 +801,6 @@ export const STATION_IDS = {
     isohara: "isohara",
     otsuko: "otsuko",
     nakoso: "nakoso",
-    ueda: "ueda",
     izumi: "izumi",
     yumoto: "yumoto",
     uchisato: "uchisato",
@@ -886,6 +959,25 @@ export const STATION_IDS = {
     kakunodate: "jr-kakunodate",
     omagari: "jr-omagari",
     akita: "jr-akita",
+    // 北陸新幹線
+    annaka_haruna: "jr-annaka_haruna",
+    karuizawa: "jr-karuizawa",
+    sakudaira: "jr-sakudaira",
+    nagano: "jr-nagano",
+    iiyama: "jr-iiyama",
+    joetsu_myoko: "jr-joetsu_myoko",
+
+
+    duplicate: {
+      fukushima: {
+        /** 植田 */
+        ueda: "ueda",
+      },
+      nagano: {
+        /** 上田 */
+        ueda: "ueda",
+      }
+    }
   },
   /** 京急駅 */
   keikyu: {
@@ -1461,6 +1553,7 @@ export const STATION_IDS = {
     mitakadai: "keio-mitakadai",
     inokashirakoen: "keio-inokashirakoen",
   },
+  // JR東日本駅
   jr_tokai: {
     mishima: "mishima",
     shinfuji: "jr-tokai-shinfuji",
@@ -1474,5 +1567,73 @@ export const STATION_IDS = {
     maibara: "maibara",
     kyoto: "kyoto",
     shinosaka: "shin-osaka",
-  }
+  },
+  // JR西駅
+  jr_west: {
+    // 北陸新幹線
+    itoigawa: "jr-itoigawa",
+    kurobe_unaduki_onsen: "jr-kurobe_unaduki_onsen",
+    toyama: "jr-toyama",
+    shin_takaoka: "jr-shin_takaoka",
+    kanazawa: "jr-kanazawa",
+    komatsu: "jr-komatsu",
+    kaga_onsen: "jr-kaga_onsen",
+    awara_onsen: "jr-awara_onsen",
+    fukui: "jr-fukui",
+    echizen_takefu: "jr-echizen_takefu",
+    tsuruga: "jr-tsuruga",
+  },
+  // 富山地鉄駅
+  toyama_chiho: {
+    unaduki_onsen: "toyama-chitetsu-unaduki_onsen",
+    otozawa: "toyama-chitetsu-otozawa",
+    uchiyama: "toyama-chitetsu-uchiyama",
+    manamoto: "toyama-chitetsu-manamoto",
+    shimotachi: "toyama-chitetsu-shimotachi",
+    shimotachiguchi: "toyama-chitetsu-shimotachiguchi",
+    urayama: "toyama-chitetsu-urayama",
+    tochiya: "toyama-chitetsu-tochiya",
+    wakaba: "toyama-chitetsu-wakaba",
+    shitayama: "toyama-chitetsu-shitayama",
+    shin_kurobe: "toyama-chitetsu-shin_kurobe",
+    nagaya: "toyama-chitetsu-nagaya",
+    ogyu: "toyama-chitetsu-ogyu",
+    higashi_mikkaichi: "toyama-chitetsu-higashi_mikkaichi",
+    dentetsu_kurobe: "toyama-chitetsu-dentetsu_kurobe",
+    dentetsu_ishida: "toyama-chitetsu-dentetsu_ishida",
+    kyoden: "toyama-chitetsu-kyoden",
+    shin_uotsu: "toyama-chitetsu-shin_uotsu",
+    dentetsu_uotsu: "toyama-chitetsu-dentetsu_uotsu",
+    nishi_uotsu: "toyama-chitetsu-nishi_uotsu",
+    ecchu_nakamura: "toyama-chitetsu-ecchu_nakamura",
+    hayatsuki_kazumi: "toyama-chitetsu-hayatsukikazumi",
+    hama_kazumi: "toyama-chitetsu-hama_kazumi",
+    namekawa: "toyama-chitetsu-namekawa",
+    naka_namerikawa: "toyama-chitetsu-naka_namerikawa",
+    nishi_namerikawa: "toyama-chitetsu-nishi_namerikawa",
+    nishi_kazumi: "toyama-chitetsu-nishi_kazumi",
+    naka_kazumi: "toyama-chitetsu-naka_kazumi",
+    shin_miyakawa: "toyama-chitetsu-shin_miyakawa",
+    kamiichi: "toyama-chitetsu-kamiichi",
+    shin_ainogi: "toyama-chitetsu-shin_ainogi",
+    ainogi: "toyama-chitetsu-ainogi",
+    ecchuizumi: "toyama-chitetsu-ecchuizumi",
+    terada: "toyama-chitetsu-terada",
+    ecchu_funabashi: "toyama-chitetsu-ecchu_funabashi",
+    ecchu_sango: "toyama-chitetsu-ecchu_sango",
+    ecchu_ebara: "toyama-chitetsu-ecchu_ebara",
+    higashi_shinjo: "toyama-chitetsu-higashi_shinjo",
+    shinjo_tanaka: "toyama-chitetsu-shinjo_tanaka",
+    inarimachi: "toyama-chitetsu-inarima-chi",
+    dentetsu_toyama: "toyama-chitetsu-dentetsu_toyama",
+  },
+  // 福井鉄道駅
+  fukui: {
+    // 福井鉄道線
+    jinai_joshi_koko: "fukui-jinai-joshi-koko",
+    fukuieki: "fukui-fukuieki",
+    fukui_joushi_daimyomachi: "fukui-fukui-joushi-daimyomachi",
+    asuwayama_koenguchi: "fukui-aswayama-koenguchi",
+    shokokaigijo_mae: "fukui-shokokaigijo-mae",
+  },
 };
