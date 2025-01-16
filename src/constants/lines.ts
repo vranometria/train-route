@@ -7,7 +7,7 @@ const LOCAL_ONLY:KindDef[] = [];
 
 /** 路線定義 */
 export const LINES = {
-  [LINE_IDS.jr_sotetsu_chokutsu]: new Line('相鉄直通線', 'JR東日本・相模鉄道', [], [
+  [LINE_IDS.jr_sotetsu_chokutsu]: new Line('相鉄・JR直通線', 'JR東日本・相模鉄道', [], [
     new StopStationDef(STATION_IDS.jr_east.shinjuku),
     new StopStationDef(STATION_IDS.jr_east.shibuya),
     new StopStationDef(STATION_IDS.jr_east.ebisu),
@@ -898,28 +898,27 @@ export const LINES = {
   ]),
 
   // 相模鉄道
-  [LINE_IDS.sagami.honsen]: new Line('相鉄本線', '相模鉄道',
-    [new KindDef("快速", "rapid"), new KindDef("特急", "express"), new KindDef("通勤急行", "commuter")],
-    [
-      new StopStationDef(STATION_IDS.sagami.ebina, ["rapid", "express", "commuter"]),
-      new StopStationDef(STATION_IDS.sagami.kashiwadai, ["rapid", "commuter"]),
-      new StopStationDef(STATION_IDS.sagami.sagamino, ["rapid", "commuter"]),
-      new StopStationDef(STATION_IDS.odakyu.yamato, ["rapid", "express", "commuter"]),
-      new StopStationDef(STATION_IDS.sagami.seya, ["rapid", "commuter"]),
-      new StopStationDef(STATION_IDS.sagami.mitsukyo, ["rapid", "commuter"]),
-      new StopStationDef(STATION_IDS.sagami.kibougaoka, ["rapid", "commuter"]),
-      new StopStationDef(STATION_IDS.sagami.futamatagawa, ["rapid", "express", "commuter"]),
-      new StopStationDef(STATION_IDS.sagami.tsurugamine, ["rapid", "express", "commuter"]),
-      new StopStationDef(STATION_IDS.sagami.nishiya, ["rapid", "express", "commuter"]),
-      new StopStationDef(STATION_IDS.sagami.kamihoshikawa, []),
-      new StopStationDef(STATION_IDS.sagami.wadacho, []),
-      new StopStationDef(STATION_IDS.sagami.hoshikawa, ["rapid"]),
-      new StopStationDef(STATION_IDS.sagami.tennocho, []),
-      new StopStationDef(STATION_IDS.sagami.nishiyokohama, []),
-      new StopStationDef(STATION_IDS.sagami.hiranumabashi, []),
-      new StopStationDef(STATION_IDS.jr_east.yokohama, ["rapid", "express", "commuter"]),
-    ]
-  ),
+  [LINE_IDS.sagami.honsen]: new Line('相鉄本線', '相模鉄道',[
+    new KindDef("快速", "rapid"), new KindDef("特急", "express"), new KindDef("通勤急行", "commuter")
+  ],[
+    new StopStationDef(STATION_IDS.sagami.ebina, ["rapid", "express", "commuter"]),
+    new StopStationDef(STATION_IDS.sagami.kashiwadai, ["rapid", "commuter"]),
+    new StopStationDef(STATION_IDS.sagami.sagamino, ["rapid", "commuter"]),
+    new StopStationDef(STATION_IDS.odakyu.yamato, ["rapid", "express", "commuter"]),
+    new StopStationDef(STATION_IDS.sagami.seya, ["rapid", "commuter"]),
+    new StopStationDef(STATION_IDS.sagami.mitsukyo, ["rapid", "commuter"]),
+    new StopStationDef(STATION_IDS.sagami.kibougaoka, ["rapid", "commuter"]),
+    new StopStationDef(STATION_IDS.sagami.futamatagawa, ["rapid", "express", "commuter"]),
+    new StopStationDef(STATION_IDS.sagami.tsurugamine, ["rapid", "express", "commuter"]),
+    new StopStationDef(STATION_IDS.sagami.nishiya, ["rapid", "express", "commuter"]),
+    new StopStationDef(STATION_IDS.sagami.kamihoshikawa, []),
+    new StopStationDef(STATION_IDS.sagami.wadacho, []),
+    new StopStationDef(STATION_IDS.sagami.hoshikawa, ["rapid"]),
+    new StopStationDef(STATION_IDS.sagami.tennocho, []),
+    new StopStationDef(STATION_IDS.sagami.nishiyokohama, []),
+    new StopStationDef(STATION_IDS.sagami.hiranumabashi, []),
+    new StopStationDef(STATION_IDS.jr_east.yokohama, ["rapid", "express", "commuter"]),
+  ]),
   [LINE_IDS.sagami.sotetsushinyokohama]: new Line('相鉄新横浜線', '相模鉄道', [], [
     new StopStationDef(STATION_IDS.jr_east.shinyokohama),
     new StopStationDef(STATION_IDS.sagami.hazawayokohamakokudai),
@@ -1357,8 +1356,19 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyu.motosumiyoshi),
     new StopStationDef(STATION_IDS.tokyu.hiyoshi, ["express"]),
   ]),
+
   // 東京高速鉄道
-  [LINE_IDS.toukyo_rinkai_kousoku.rinkai]: new Line('りんかい線', '東京臨海高速鉄道', [], []),
+  [LINE_IDS.toukyo_rinkai_kousoku.rinkai]: new Line('りんかい線', '東京臨海高速鉄道', [], [
+    new StopStationDef(STATION_IDS.tokyo_metro.shinkiba),
+    new StopStationDef(STATION_IDS.toukyo_rinkai_kousoku.shinonome),
+    new StopStationDef(STATION_IDS.toukyo_rinkai_kousoku.kokusaitenjijyo),
+    new StopStationDef(STATION_IDS.toukyo_rinkai_kousoku.tokyo_teleport),
+    new StopStationDef(STATION_IDS.tokyo_monorail.tennozu_isle),
+    new StopStationDef(STATION_IDS.toukyo_rinkai_kousoku.shinagawa_seaside),
+    new StopStationDef(STATION_IDS.jr_east.oimachi),
+    new StopStationDef(STATION_IDS.jr_east.osaki),
+  ]),
+
   // 京成電鉄
   [LINE_IDS.keisei.honsen]: new Line('京成本線', '京成電鉄', [], [
     new StopStationDef(STATION_IDS.keisei.keisei_ueno),

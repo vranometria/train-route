@@ -540,7 +540,7 @@ export const STATIONS = {
     LINE_IDS.keikyu.honsen,
   ], "しながわ"),
   [STATION_IDS.jr_east.oimachi]: new StationInfo('大井町', [
-    LINE_IDS.jr_sotetsu_chokutsu,
+    LINE_IDS.tokyu.oimachi,
     LINE_IDS.jr_east.yokosuka,
     LINE_IDS.jr_east.shonan_shinjuku,
   ], "おおいまち"),
@@ -571,16 +571,16 @@ export const STATIONS = {
     LINE_IDS.sagami.honsen,
   ], "よこはま"),
   [STATION_IDS.jr_east.shinjuku]: new StationInfo('新宿', [
-      LINE_IDS.odakyu.odawara,
-      LINE_IDS.jr_east.saikyou,
-      LINE_IDS.jr_east.chuo,
-      LINE_IDS.keiou.keiou,
-      LINE_IDS.keiou.keioushinsen,
-      LINE_IDS.tokyo_metro.marunouchi,
-      LINE_IDS.tokyo_subway.oedo,
-      LINE_IDS.jr_east.shonan_shinjuku,
-      LINE_IDS.tokyo_subway.shinjuku,
-    ],"しんじゅく"),
+    LINE_IDS.odakyu.odawara,
+    LINE_IDS.jr_east.saikyou,
+    LINE_IDS.jr_east.chuo,
+    LINE_IDS.keiou.keiou,
+    LINE_IDS.keiou.keioushinsen,
+    LINE_IDS.tokyo_metro.marunouchi,
+    LINE_IDS.tokyo_subway.oedo,
+    LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.tokyo_subway.shinjuku,
+  ],"しんじゅく"),
   [STATION_IDS.jr_east.shibuya]: new StationInfo('渋谷', [
     LINE_IDS.jr_east.saikyou,
     LINE_IDS.jr_east.shonan_shinjuku,
@@ -612,6 +612,7 @@ export const STATIONS = {
     LINE_IDS.jr_east.saikyou,
     LINE_IDS.jr_east.yamanote,
     LINE_IDS.jr_east.shonan_shinjuku,
+    LINE_IDS.jr_sotetsu_chokutsu,
     LINE_IDS.toukyo_rinkai_kousoku.rinkai,
   ], "おおさき"),
   [STATION_IDS.jr_east.nishinippori]: new StationInfo('西日暮里', [
@@ -1555,6 +1556,7 @@ export const STATIONS = {
   [STATION_IDS.tokyo_metro.tatsumi]: new StationInfo('辰巳', [], "たつみ"),
   [STATION_IDS.tokyo_metro.shinkiba]: new StationInfo('新木場', [
     LINE_IDS.jr_east.musashino,
+    LINE_IDS.jr_east.keiyou,
     LINE_IDS.tokyo_metro.yurakucho,
     LINE_IDS.toukyo_rinkai_kousoku.rinkai,
   ], "しんきば"),
@@ -1661,7 +1663,10 @@ export const STATIONS = {
   ], "しんおちゃのみず"),
 
   // 東京モノレール
-  [STATION_IDS.tokyo_monorail.tennozu_isle]: new StationInfo('天王州アイル', [], "てんのうずあいる"),
+  [STATION_IDS.tokyo_monorail.tennozu_isle]: new StationInfo('天王州アイル', [
+    LINE_IDS.tokyo_monorail,
+    LINE_IDS.toukyo_rinkai_kousoku.rinkai,
+  ], "てんのうずあいる"),
   [STATION_IDS.tokyo_monorail.oi_keibajo_mae]: new StationInfo('大井競馬場前', [], "おおいけいばじょうまえ"),
   [STATION_IDS.tokyo_monorail.ryutsu_center]: new StationInfo('流通センター', [], "りゅうつうせんたー"),
   [STATION_IDS.tokyo_monorail.syouwajima]: new StationInfo('昭和島', [], "しょうわじま"),
@@ -1691,6 +1696,18 @@ export const STATIONS = {
   [STATION_IDS.yurikamome.ariake_tennis_no_mori]: new StationInfo('有明テニスの森', [], "ありあけてにすのもり"),
   [STATION_IDS.yurikamome.shijomae]: new StationInfo('市場前', [], "しじょうまえ"),
   [STATION_IDS.yurikamome.shin_toyosu]: new StationInfo('新豊洲', [], "しんとよす"),
+
+  // りんかい
+  [STATION_IDS.toukyo_rinkai_kousoku.shinonome]: new StationInfo('東雲', [], "しののめ"),
+  [STATION_IDS.toukyo_rinkai_kousoku.kokusaitenjijyo]: new StationInfo('国際展示場', [
+    LINE_IDS.toukyo_rinkai_kousoku.rinkai,
+    new ExchangeInfo(LINE_IDS.yurikamome.yurikamome, STATION_IDS.yurikamome.ariake),
+  ], "こくさいてんじじょう"),
+  [STATION_IDS.toukyo_rinkai_kousoku.tokyo_teleport]: new StationInfo('東京テレポート', [
+    LINE_IDS.toukyo_rinkai_kousoku.rinkai,
+    new ExchangeInfo(LINE_IDS.yurikamome.yurikamome, STATION_IDS.yurikamome.odaiba_kaihinkoen),
+  ], "とうきょうてれぽーと"),
+  [STATION_IDS.toukyo_rinkai_kousoku.shinagawa_seaside]: new StationInfo('品川シーサイド', [], "しながわしーさいど"),
 
   // 相模鉄道
   // ＞本線
