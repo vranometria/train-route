@@ -184,7 +184,7 @@ export const LINE_IDS = {
     // ニューシャトル
     new_shuttle: 'saitama_shintoshi_new_shuttle',
   },
-  /** 東京メトロ */
+  /** 東京メトロ 路線 */
   tokyo_metro: {
     /** 丸の内線 */
     marunouchi: 'tokyo-metro-marunouchi',
@@ -1054,9 +1054,8 @@ export const STATION_IDS = {
     hanedakuko_daisan_terminal: 'hanedakuko-daisan-terminal',
     hanedakuko_dai1_dai2_terminal: 'hanedakuko-dai1-dai2-terminal',
   },
-  /** 東京メトロ駅 */
+  /** 東京メトロ 駅 */
   tokyo_metro: {
-    /** 中目黒 */
     nakameguro: 'nakameguro',
     hiroo: 'hiroo',
     roppongi: 'roppongi',
@@ -1148,6 +1147,18 @@ export const STATION_IDS = {
     shimo: 'shimo',
     akabane_iwabuchi: 'akabane-iwabuchi',
     oji: 'oji',
+    // 千代田線
+    yoyogi_koen: 'tokyo-metro-yoyogi-koen',
+    nogisaka: 'tokyo-metro-nogisaka',
+    akasaka: 'tokyo-metro-akasaka',
+    nijubashimae: 'tokyo-metro-nijubashimae',
+    yushima: 'tokyo-metro-yushima',
+    nedu: 'tokyo-metro-nedu',
+    sendagi: 'tokyo-metro-sendagi',
+    shin_ochanomizu: 'tokyo-metro-shin-ochanomizu',
+    machiya: 'tokyo-metro-machiya',
+    ayase: 'tokyo-metro-ayase',
+    kita_ayase: 'tokyo-metro-kita-ayase',
   },
   /** 都営駅 */
   tokyo_subway: {

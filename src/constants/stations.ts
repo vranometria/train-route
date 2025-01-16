@@ -374,7 +374,10 @@ export const STATIONS = {
   ], "あさくさばし"),
   [STATION_IDS.jr_east.ochanomizu]: new StationInfo('御茶ノ水', [
     LINE_IDS.jr_east.sobu,
-    LINE_IDS.tokyo_metro.marunouchi,
+    LINE_IDS.jr_east.chuo,
+    new ExchangeInfo(LINE_IDS.tokyo_metro.marunouchi, STATION_IDS.tokyo_metro.awajicho),
+    new ExchangeInfo(LINE_IDS.tokyo_metro.chiyoda, STATION_IDS.tokyo_metro.shin_ochanomizu),
+    new ExchangeInfo(LINE_IDS.tokyo_subway.shinjuku, STATION_IDS.tokyo_subway.ogawacho),
   ], "おちゃのみず"),
   [STATION_IDS.jr_east.suidoubashi]: new StationInfo('水道橋', [
     LINE_IDS.jr_east.sobu,
@@ -1573,6 +1576,27 @@ export const STATIONS = {
   [STATION_IDS.tokyo_metro.oji_kamiya]: new StationInfo('王子神谷', [], "おうじかみや"),
   [STATION_IDS.tokyo_metro.shimo]: new StationInfo('志茂', [], "しも"),
   [STATION_IDS.tokyo_metro.akabane_iwabuchi]: new StationInfo('赤羽岩淵', [], "あかばねいわぶち"),
+  // 千代田線
+  [STATION_IDS.tokyo_metro.kita_ayase]: new StationInfo('北綾瀬', [], "きたあやせ"),
+  [STATION_IDS.tokyo_metro.ayase]: new StationInfo('綾瀬', [], "あやせ"),
+  [STATION_IDS.tokyo_metro.sendagi]: new StationInfo('千駄木', [], "せんだぎ"),
+  [STATION_IDS.tokyo_metro.nedu]: new StationInfo('根津', [], "ねづ"),
+  [STATION_IDS.tokyo_metro.yushima]: new StationInfo('湯島', [], "ゆしま"),
+  [STATION_IDS.tokyo_metro.nijubashimae]: new StationInfo('二重橋前', [], "にじゅうばしまえ"),
+  [i.STATION_IDS.tokyo_metro.akasaka]: new StationInfo('赤坂', [], "あかさか"),
+  [i.STATION_IDS.tokyo_metro.nogizaka]: new StationInfo('乃木坂', [], "のぎざか"),
+  [i.STATION_IDS.tokyo_metro.yoyogi_koen]: new StationInfo('代々木公園', [], "よよぎこうえん"),
+  [i.STATION_IDS.tokyo_metro.machiya]: new StationInfo('町屋', [
+    LINE_IDS.tokyo_metro.chiyoda,
+    LINE_IDS.keisei.honsen,
+    LINE_IDS.tokyo_subway.sakura_tram,
+  ], "まちや"),
+  [i.STATION_IDS.tokyo_metro.shin_ochanomizu]: new StationInfo('新御茶ノ水', [
+    new ExchangeInfo(LINE_IDS.tokyo_metro.marunouchi, STATION_IDS.tokyo_metro.awajicho),
+    new ExchangeInfo(LINE_IDS.tokyo_subway.shinjuku, STATION_IDS.tokyo_subway.ogawacho),
+    new ExchangeInfo(LINE_IDS.jr_east.chuo, STATION_IDS.jr_east.ochanomizu),
+    new ExchangeInfo(LINE_IDS.jr_east.sobu, STATION_IDS.jr_east.ochanomizu),
+  ], "しんおちゃのみず"),
 
   // 相模鉄道
   // ＞本線
