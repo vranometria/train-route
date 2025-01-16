@@ -239,8 +239,14 @@ export const STATIONS = {
   [STATION_IDS.jr_east.ouji]:  new StationInfo('王子', [], "おうじ"),
   [STATION_IDS.jr_east.kaminakazato]: new StationInfo('上中里', [], "かみなかざと"),
   [STATION_IDS.jr_east.tabata]: new StationInfo('田端', [], "たばた"),
-  [STATION_IDS.jr_east.nishinippori]: new StationInfo('西日暮里', [], "にしにっぽり"),
-  [STATION_IDS.jr_east.nippori]: new StationInfo('日暮里', [], "にっぽり"),
+  [STATION_IDS.jr_east.nippori]: new StationInfo('日暮里', [
+    LINE_IDS.jr_east.yamanote,
+    LINE_IDS.jr_east.tokiwa,
+    LINE_IDS.jr_east.keihin_touhoku,
+    LINE_IDS.keisei.honsen,
+    LINE_IDS.keisei.keisei_narita_sky_access,
+    LINE_IDS.tokyo_subway.nippori_toneri_liner,
+  ], "にっぽり"),
   [STATION_IDS.jr_east.uguisudani]:  new StationInfo('鶯谷', [LINE_IDS.jr_east.yamanote], "うぐいすだに"),
   [STATION_IDS.jr_east.ueno]: new StationInfo('上野', [
     LINE_IDS.jr_east.keihin_touhoku,
@@ -252,7 +258,7 @@ export const STATIONS = {
     LINE_IDS.tokyo_metro.hibiya,
     LINE_IDS.tokyo_metro.ginza,
     new ExchangeInfo(LINE_IDS.keisei.honsen, STATION_IDS.keisei.keisei_ueno),
-    new ExchangeInfo(LINE_IDS.keisei.sky_access, STATION_IDS.keisei.keisei_ueno),
+    new ExchangeInfo(LINE_IDS.keisei.keisei_narita_sky_access, STATION_IDS.keisei.keisei_ueno),
     LINE_IDS.jr_east.shinkansen.jouetsu,
     LINE_IDS.jr_east.shinkansen.yamagata,
     LINE_IDS.jr_east.shinkansen.akita,
@@ -573,7 +579,6 @@ export const STATIONS = {
   [STATION_IDS.jr_east.gotanda]: new StationInfo('五反田', [], "ごたんだ"),
   [STATION_IDS.jr_east.osaki]: new StationInfo('大崎', [LINE_IDS.jr_east.saikyou, LINE_IDS.jr_east.yamanote], "おおさき"),
   [STATION_IDS.jr_east.uguisudani] : new StationInfo('鶯谷', [LINE_IDS.jr_east.yamanote], "うぐいすだに"),
-  [STATION_IDS.jr_east.nippori]: new StationInfo('日暮里', [LINE_IDS.jr_east.yamanote], "にっぽり"),
   [STATION_IDS.jr_east.nishinippori]: new StationInfo('西日暮里', [], "にしにっぽり"),
   [STATION_IDS.jr_east.tabata]: new StationInfo('田端', [], "たばた"),
   [STATION_IDS.jr_east.komagome]: new StationInfo('駒込', [], "こまごめ"),
@@ -1992,6 +1997,29 @@ export const STATIONS = {
   [i.STATION_IDS.hokusou.shin_shibamata]: new StationInfo('新柴又', [], "しんしばまた"),
 
   // 京成電鉄
+  // ＞京成成田スカイアクセス
+  [i.STATION_IDS.keisei.keisei_ueno]: new StationInfo('京成上野', [
+    LINE_IDS.keisei.honsen,
+    LINE_IDS.keisei.keisei_narita_sky_access,
+    new ExchangeInfo(LINE_IDS.jr_east.yamanote, STATION_IDS.jr_east.ueno),
+    new ExchangeInfo(LINE_IDS.jr_east.tokiwa, STATION_IDS.jr_east.ueno),
+    new ExchangeInfo(LINE_IDS.jr_east.takasaki, STATION_IDS.jr_east.ueno),
+    new ExchangeInfo(LINE_IDS.jr_east.utunomiya, STATION_IDS.jr_east.ueno),
+    new ExchangeInfo(LINE_IDS.jr_east.keihin_touhoku, STATION_IDS.jr_east.ueno),
+    new ExchangeInfo(LINE_IDS.tokyo_metro.hibiya, STATION_IDS.jr_east.ueno),
+    new ExchangeInfo(LINE_IDS.tokyo_metro.ginza, STATION_IDS.jr_east.ueno),
+    new ExchangeInfo(LINE_IDS.tokyo_metro.ginza, STATION_IDS.jr_east.ueno),
+    new ExchangeInfo(LINE_IDS.jr_east.shinkansen.tohoku, STATION_IDS.jr_east.ueno),
+    new ExchangeInfo(LINE_IDS.jr_east.shinkansen.yamagata, STATION_IDS.jr_east.ueno),
+    new ExchangeInfo(LINE_IDS.jr_east.shinkansen.akita, STATION_IDS.jr_east.ueno),
+    new ExchangeInfo(LINE_IDS.jr_east.shinkansen.jouetsu, STATION_IDS.jr_east.ueno),
+    new ExchangeInfo(LINE_IDS.jr_east.shinkansen.hokuriku, STATION_IDS.jr_east.ueno),
+  ], "けいせいうえの"),
+  [i.STATION_IDS.keisei.aoto]: new StationInfo('青砥', [
+    LINE_IDS.keisei.honsen,
+    LINE_IDS.keisei.keisei_narita_sky_access,
+    LINE_IDS.keisei.oshiage,
+  ], "あおと"),
   [STATION_IDS.keisei.shin_kamagaya]: new StationInfo('新鎌ヶ谷', [
     LINE_IDS.hokusou.hokusou,
     LINE_IDS.keisei.keisei_narita_sky_access,
@@ -2004,6 +2032,19 @@ export const STATIONS = {
     LINE_IDS.keisei.honsen,
     LINE_IDS.keisei.kanamachi,
   ], "けいせいたかさご"),
+  [i.STATION_IDS.keisei.narita_yukawa]: new StationInfo('成田湯川', [], "なりたゆかわ"),
+  [i.STATION_IDS.keisei.kuko_daini_bill]: new StationInfo('空港第二ビル', [
+    LINE_IDS.keisei.honsen,
+    LINE_IDS.keisei.keisei_narita_sky_access,
+    LINE_IDS.keisei.narita,
+  ], "くうこうだいにびる"),
+  [i.STATION_IDS.keisei.narita_kuko]: new StationInfo('成田空港', [
+    LINE_IDS.keisei.honsen,
+    LINE_IDS.keisei.keisei_narita_sky_access,
+    LINE_IDS.keisei.narita,
+  ], "なりたくうこう"),
+
+
 
 
   // 東急

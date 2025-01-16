@@ -205,7 +205,7 @@ export const LINE_IDS = {
     /** 千代田線 */
     chiyoda: 'tokyo-metro-chiyoda',
   },
-  /** 東京都営地下鉄 */
+  /** 東京都営地下鉄 路線 */
   tokyo_subway: {
     /** 大江戸線 */
     oedo: 'toei-ooedo',
@@ -216,6 +216,7 @@ export const LINE_IDS = {
     /** 浅草線 */
     asakusa: 'toei-asakusa',
     sakura_tram: 'toei-sakura-tram',
+    nippori_toneri_liner: 'toei-nippori-toneri-liner',
   },
   /** 首都圏新都市鉄道 */
   shutoken_shintoshi: {
@@ -322,6 +323,8 @@ export const LINE_IDS = {
     shin_keisei: "shin-keisei",
     keisei_narita_sky_access: "keisei-narita-sky-access",
     kanamachi: "keisei-kanamachi",
+    oshiage: "keisei-oshiage",
+    narita: "keisei-narita",
   },
   hokusou: {
     hokusou: 'hokusou-hokusou',
