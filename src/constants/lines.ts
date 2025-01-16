@@ -1267,7 +1267,6 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyu.futakotamagawa, ["express"]),
     new StopStationDef(STATION_IDS.jr_east.mizonokuchi),
   ]),
-  /**目黒 */
   [LINE_IDS.tokyu.meguro]: new Line('目黒線', '東急電鉄', [new KindDef("急行・準急", "express")], [
     new StopStationDef(STATION_IDS.jr_east.meguro, ["express"]),
     new StopStationDef(STATION_IDS.tokyu.fudomae),
@@ -1283,8 +1282,41 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyu.motosumiyoshi),
     new StopStationDef(STATION_IDS.tokyu.hiyoshi, ["express"]),
   ]),
-  /** りんかい線 */
+  // 東京高速鉄道
   [LINE_IDS.toukyo_rinkai_kousoku.rinkai]: new Line('りんかい線', '東京臨海高速鉄道', [], []),
+  // 京成電鉄
+  [LINE_IDS.keisei.keisei_narita_sky_access]: new Line('京成成田スカイアクセス', '京成電鉄', [], [
+    new StopStationDef(STATION_IDS.keisei.keisei_ueno),
+    new StopStationDef(STATION_IDS.jr_east.nippori),
+    new StopStationDef(STATION_IDS.tokyo_metro.oshiage),
+    new StopStationDef(STATION_IDS.keisei.aoto),
+    new StopStationDef(STATION_IDS.keisei.keisei_takasago),
+    new StopStationDef(STATION_IDS.jr_east.higashi_matsudo),
+    new StopStationDef(STATION_IDS.keisei.shin_kamagaya),
+    new StopStationDef(STATION_IDS.hokusou.chiba_newtown_chuo),
+    new StopStationDef(STATION_IDS.hokusou.inaba_nihon_idai),
+    new StopStationDef(STATION_IDS.keisei.narita_yukawa),
+    new StopStationDef(STATION_IDS.keisei.kuko_daini_bill),
+    new StopStationDef(STATION_IDS.keisei.narita_kuko),
+  ]),
+  // 北総電鉄
+  [LINE_IDS.hokusou.hokusou]: new Line('北総線', '北総電鉄', [], [
+    new StopStationDef(STATION_IDS.hokusou.inaba_nihon_idai),
+    new StopStationDef(STATION_IDS.hokusou.inzai_makinohara),
+    new StopStationDef(STATION_IDS.hokusou.chiba_newtown_chuo),
+    new StopStationDef(STATION_IDS.hokusou.komuro),
+    new StopStationDef(STATION_IDS.hokusou.shirai),
+    new StopStationDef(STATION_IDS.hokusou.nishi_shirai),
+    new StopStationDef(STATION_IDS.keisei.shin_kamagaya),
+    new StopStationDef(STATION_IDS.hokusou.omachi),
+    new StopStationDef(STATION_IDS.hokusou.matsuhidai),
+    new StopStationDef(STATION_IDS.jr_east.higashi_matsudo),
+    new StopStationDef(STATION_IDS.hokusou.akiyama),
+    new StopStationDef(STATION_IDS.hokusou.kitakokubun),
+    new StopStationDef(STATION_IDS.hokusou.yagiri),
+    new StopStationDef(STATION_IDS.hokusou.shin_shibamata),
+    new StopStationDef(STATION_IDS.keisei.keisei_takasago),
+  ]),
   // 西部電鉄
   // ＞西武池袋線
   [LINE_IDS.seibu.ikebukuro]: new Line('西武池袋線', '西武鉄道', [], [

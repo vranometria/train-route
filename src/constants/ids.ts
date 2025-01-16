@@ -70,8 +70,6 @@ export const LINE_IDS = {
     kashima: 'jr-kashima',
     /** 成田線 */
     narita: 'jr-narita',
-    /** 京葉線 */
-    keiyou: 'jr-keiyou',
     /** 内房線 */
     uchibou: 'jr-uchibou',
     /** 外房線 */
@@ -317,15 +315,16 @@ export const LINE_IDS = {
   tama_monorail: {
     tama_monorail: 'tama-monorail',
   },
-  /** 京成電鉄 */
+  /** 京成電鉄　路線 */
   keisei: {
     honsen: 'keisei-honsen',
     chiba: 'keisei-chiba',
     shin_keisei: "shin-keisei",
     keisei_narita_sky_access: "keisei-narita-sky-access",
+    kanamachi: "keisei-kanamachi",
   },
   hokusou: {
-    hokusou: 'keisei-hokusou',
+    hokusou: 'hokusou-hokusou',
   },
   // ゆりかもめ
   yurikamome: {
@@ -1501,6 +1500,65 @@ export const STATION_IDS = {
     matsuto_shinden: "keisei-matsuto-shinden",
     kami_hongo: "keisei-kami-hongo",
     matsuto: "keisei-matsuto",
+    // 本線
+    keisei_ueno: "keisei-keisei-ueno",
+    shin_mikawashima: "keisei-shin-mikawashima",
+    senju_ohashi: "keisei-senju-ohashi",
+    keisei_sekiya: "keisei-sekiya",
+    horikirisyobuen: "keise-horikirisyobuen",
+    ohanadyaya: "keisei-ohanadyaya",
+    aoto: "keisei-aoto",
+    keisei_takasago: "keisei-keisei-takasago",
+    keisei_koiwa: "keisei-keisei-koiwa",
+    edogawa: "keisei-edogawa",
+    kounodai: "keisei-kounodai",
+    ichikawa_mama: "keisei-ichikawa-mama",
+    sugano: "keisei-sugano",
+    keisei_hachiman: "keisei-hachiman",
+    onigoe: "keisei-onigoe",
+    keisei_nakayama: "keisei-keisei-nakayama",
+    higashi_nakayama: "keisei-higashi-nakayama",
+    keisei_nishifuna: "keisei-keisei-nishifuna",
+    kaijin: "keisei-kaijin",
+    keisei_funabashi: "keisei-keisei-funabashi",
+    daijingushita: "keisei-daijingushita",
+    funabashi_keibajo: "keisei-funabashi-keibajo",
+    yatsu: "keisei-yatsu",
+    keisei_okubo: "keisei-keisei-okubo",
+    mimomi: "keisei-mimomi",
+    yachiyodai: "keisei-yachiyodai",
+    keisei_towada: "keisei-keisei-towada",
+    katsutadai: "keisei-ka-tsutadai",
+    shidu: "keisei-shidu",
+    yukarigaoka: "keisei-yukarigaoka",
+    keisei_shirai: "keisei-keisei-shirai",
+    keisei_sakura: "keisei-keisei-sakura",
+    osakura: "keisei-osakura",
+    keisei_shisui: "keisei-keisei-shisui",
+    sougosandou: "keisei-sougosandou",
+    koudunomori: "keisei-koudunomori",
+    keisei_narita: "keisei-keisei-narita",
+    kuko_daini_bill: "keisei-kuko-daini-bill",
+    narita_kuko: "keisei-narita-kuko",
+    // スカイアクセス
+    higashi_matsudo: "keisei-higashi-matsudo",
+    narita_yukawa: "keisei-narita-yukawa",
+  },
+  /** 北総鉄道 駅 */
+  hokusou: {
+    // 北総線
+    inaba_nihon_idai: "hokusou-inaba-nihon-idai",
+    inzai_makinohara: "hokusou-inzai-makinohara",
+    chiba_newtown_chuo: "hokusou-chiba-newtown-chuo",
+    komuro: "hokusou-komuro",
+    shirai: "hokusou-shirai",
+    nishi_shirai: "hokusou-nishi-shirai",
+    omachi: "hokusou-omachi",
+    matsuhidai: "hokusou-matsuhidai",
+    akiyama: "hokusou-akiyama",
+    kitakokubun: "hokusou-kitakokubun",
+    yagiri: "hokusou-yagiri",
+    shin_shibamata: "hokusou-shin-shibamata",
   },
   /** 京王駅 */
   keio: {

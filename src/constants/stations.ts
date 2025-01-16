@@ -219,14 +219,6 @@ export const STATIONS = {
   ], "さいたましんとしん"),
   [STATION_IDS.jr_east.yono]: new StationInfo('与野', [], "よの"),
   [STATION_IDS.jr_east.kitaurawa]: new StationInfo('北浦和', [], "きたうらわ"),
-  [STATION_IDS.jr_east.ueno]: new StationInfo('上野', [
-    LINE_IDS.jr_east.yamanote,
-    LINE_IDS.jr_east.tokiwa,
-    LINE_IDS.jr_east.takasaki,
-    LINE_IDS.jr_east.utunomiya,
-    LINE_IDS.jr_east.keihin_touhoku,
-    LINE_IDS.tokyo_metro.hibiya,
-  ], "うえの"),
   [STATION_IDS.jr_east.tabata]: new StationInfo('田端', [], "たばた"),
   [STATION_IDS.jr_east.urawa]: new StationInfo('浦和', [
     LINE_IDS.jr_east.keihin_touhoku,
@@ -258,6 +250,9 @@ export const STATIONS = {
     LINE_IDS.jr_east.utunomiya,
     LINE_IDS.tokyo_metro.marunouchi,
     LINE_IDS.tokyo_metro.hibiya,
+    LINE_IDS.tokyo_metro.ginza,
+    new ExchangeInfo(LINE_IDS.keisei.honsen, STATION_IDS.keisei.keisei_ueno),
+    new ExchangeInfo(LINE_IDS.keisei.sky_access, STATION_IDS.keisei.keisei_ueno),
     LINE_IDS.jr_east.shinkansen.jouetsu,
     LINE_IDS.jr_east.shinkansen.yamagata,
     LINE_IDS.jr_east.shinkansen.akita,
@@ -1975,6 +1970,40 @@ export const STATIONS = {
   [STATION_IDS.keio.kugayama]: new StationInfo('久我山', [], "くがやま"),
   [STATION_IDS.keio.mitakadai]: new StationInfo('三鷹台', [], "みたかだい"),
   [STATION_IDS.keio.inokashirakoen]: new StationInfo('井の頭公園', [], "いのかしどうこうえん"),
+
+  // 北総電鉄
+  [i.STATION_IDS.hokusou.inaba_nihon_idai]: new StationInfo('印旛日本医大', [
+    LINE_IDS.hokusou.hokusou,
+    LINE_IDS.keisei.keisei_narita_sky_access,
+  ], "いんばにほんいだい"),
+  [i.STATION_IDS.hokusou.inzai_makinohara]: new StationInfo('印西牧の原', [], "いんざいまきのはら"),
+  [i.STATION_IDS.hokusou.chiba_newtown_chuo]: new StationInfo('千葉ニュータウン中央', [
+    LINE_IDS.hokusou.hokusou,
+    LINE_IDS.keisei.keisei_narita_sky_access,
+  ], "ちばにゅーたうんちゅうおう"),
+  [i.STATION_IDS.hokusou.komuro]: new StationInfo('小室', [], "こむろ"),
+  [i.STATION_IDS.hokusou.shirai]: new StationInfo('白井', [], "しらい"),
+  [i.STATION_IDS.hokusou.nishi_shirai]: new StationInfo('西白井', [], "にししらい"),
+  [i.STATION_IDS.hokusou.omachi]: new StationInfo('大町', [], "おおまち"),
+  [i.STATION_IDS.hokusou.matsuhidai]: new StationInfo('松飛台', [], "まつひだい"),
+  [i.STATION_IDS.hokusou.akiyama]: new StationInfo('秋山', [], "あきやま"),
+  [i.STATION_IDS.hokusou.kitakokubun]: new StationInfo('北国分', [], "きたこくぶん"),
+  [i.STATION_IDS.hokusou.yagiri]: new StationInfo('矢切', [], "やぎり"),
+  [i.STATION_IDS.hokusou.shin_shibamata]: new StationInfo('新柴又', [], "しんしばまた"),
+
+  // 京成電鉄
+  [STATION_IDS.keisei.shin_kamagaya]: new StationInfo('新鎌ヶ谷', [
+    LINE_IDS.hokusou.hokusou,
+    LINE_IDS.keisei.keisei_narita_sky_access,
+    LINE_IDS.keisei.shin_keisei,
+    LINE_IDS.toubu.urban_park_line,
+  ], "しんかまがや"),
+  [STATION_IDS.keisei.keisei_takasago]: new StationInfo('京成高砂', [
+    LINE_IDS.hokusou.hokusou,
+    LINE_IDS.keisei.keisei_narita_sky_access,
+    LINE_IDS.keisei.honsen,
+    LINE_IDS.keisei.kanamachi,
+  ], "けいせいたかさご"),
 
 
   // 東急

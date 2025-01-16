@@ -85,6 +85,19 @@ import { LINE_IDS } from '@/constants/ids'
           <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keio.inokashira}}">井の頭線</RouterLink> -->
         </div>
 
+        京成電鉄
+        <div>
+          <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keisei.main}}">本線</RouterLink> -->
+          <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keisei.hokuso}}">北総線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keisei.ksk}}">京成金町線</RouterLink> -->
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keisei.keisei_narita_sky_access}}">京成成田スカイアクセス</RouterLink>
+        </div>
+
+        北総電鉄
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.hokusou.hokusou}}">北総線</RouterLink>
+        </div>
+
         小田急電鉄
         <div>
           <RouterLink :to="{name: 'line', params: {id: 'odakyu-odawara'}}">小田原線</RouterLink>
