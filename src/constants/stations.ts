@@ -511,6 +511,7 @@ export const STATIONS = {
   [STATION_IDS.jr_east.shinbashi]: new StationInfo('新橋', [
     LINE_IDS.jr_east.yamanote,
     LINE_IDS.jr_east.yokosuka,
+    LINE_IDS.jr_east.tokiwa,
     LINE_IDS.jr_east.keihin_touhoku,
     LINE_IDS.jr_east.tokaido,
     LINE_IDS.yurikamome.yurikamome,
@@ -1669,6 +1670,27 @@ export const STATIONS = {
   [STATION_IDS.tokyo_monorail.shin_seibijo]: new StationInfo('新整備場', [], "しんせいびじょう"),
   [STATION_IDS.tokyo_monorail.haneda_kuko_dai1_terminal]: new StationInfo('羽田空港第一ターミナル', [], "はねだくうこうだいいちたーみなる"),
   [STATION_IDS.tokyo_monorail.haneda_kuko_dai2_terminal]: new StationInfo('羽田空港第二ターミナル', [], "はねだくうこうだいにたーみなる"),
+
+  // ゆりかもめ
+  [STATION_IDS.yurikamome.takeshiba]: new StationInfo('竹芝', [], "たけしば"),
+  [STATION_IDS.yurikamome.hinode]: new StationInfo('日の出', [], "ひので"),
+  [STATION_IDS.yurikamome.shibaurafuto]: new StationInfo('芝浦ふ頭', [], "しばうらふとう"),
+  [STATION_IDS.yurikamome.odaiba_kaihinkoen]: new StationInfo('お台場海浜公園', [
+    LINE_IDS.yurikamome.yurikamome,
+    new ExchangeInfo(LINE_IDS.toukyo_rinkai_kousoku.rinkai, STATION_IDS.toukyo_rinkai_kousoku.tokyo_teleport),
+  ], "おだいばかいひんこうえん"),
+  [STATION_IDS.yurikamome.daiba]: new StationInfo('台場', [], "だいば"),
+  [STATION_IDS.yurikamome.tokyo_kokusai_cruise_terminal]: new StationInfo('東京国際クルーズターミナル', [], "とうきょうこくさいくるーずたーみなる"),
+  [STATION_IDS.yurikamome.aomi]: new StationInfo('青海', [], "あおみ"),
+  [STATION_IDS.yurikamome.telecom_center]: new StationInfo('テレコムセンター', [], "てれこむせんたー"),
+  [STATION_IDS.yurikamome.tokyo_big_sight]: new StationInfo('東京ビッグサイト', [], "とうきょうびっぐさいと"),
+  [STATION_IDS.yurikamome.ariake]: new StationInfo('有明', [
+    LINE_IDS.yurikamome.yurikamome,
+    new ExchangeInfo(LINE_IDS.toukyo_rinkai_kousoku.rinkai, STATION_IDS.toukyo_rinkai_kousoku.kokusaitenjijyo),
+  ], "ありあけ"),
+  [STATION_IDS.yurikamome.ariake_tennis_no_mori]: new StationInfo('有明テニスの森', [], "ありあけてにすのもり"),
+  [STATION_IDS.yurikamome.shijomae]: new StationInfo('市場前', [], "しじょうまえ"),
+  [STATION_IDS.yurikamome.shin_toyosu]: new StationInfo('新豊洲', [], "しんとよす"),
 
   // 相模鉄道
   // ＞本線

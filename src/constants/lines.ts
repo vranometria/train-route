@@ -449,6 +449,9 @@ export const LINES = {
   [LINE_IDS.jr_east.keiyou]: new Line('京葉線', 'JR東日本', [], []),
   [LINE_IDS.jr_east.nanbu]: new Line('南武線', 'JR東日本', [], []),
   [LINE_IDS.jr_east.tokiwa]: new Line('常磐線', 'JR東日本', [new KindDef("快速", "rapid")], [
+    new StopStationDef(STATION_IDS.jr_east.shinagawa, ["rapid"]),
+    new StopStationDef(STATION_IDS.jr_east.shinbashi, ["rapid"]),
+    new StopStationDef(STATION_IDS.jr_east.tokyo, ["rapid"]),
     new StopStationDef(STATION_IDS.jr_east.ueno, ["rapid"]),
     new StopStationDef(STATION_IDS.jr_east.nippori, ["rapid"]),
     new StopStationDef(STATION_IDS.jr_east.mikawashima, ["rapid"]),
@@ -497,7 +500,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.isohara),
     new StopStationDef(STATION_IDS.jr_east.otsuko),
     new StopStationDef(STATION_IDS.jr_east.nakoso),
-    new StopStationDef(STATION_IDS.jr_east.ueda),
+    new StopStationDef(STATION_IDS.jr_east.duplicate.fukushima.ueda),
     new StopStationDef(STATION_IDS.jr_east.izumi),
     new StopStationDef(STATION_IDS.jr_east.yumoto),
     new StopStationDef(STATION_IDS.jr_east.uchisato),
@@ -771,6 +774,26 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_monorail.shin_seibijo),
     new StopStationDef(STATION_IDS.tokyo_monorail.haneda_kuko_dai1_terminal),
     new StopStationDef(STATION_IDS.tokyo_monorail.haneda_kuko_dai2_terminal),
+  ]),
+
+  // ゆりかもめ
+  [LINE_IDS.yurikamome.yurikamome]: new Line('ゆりかもめ', '新交通ゆりかもめ', [], [
+    new StopStationDef(STATION_IDS.jr_east.shinbashi),
+    new StopStationDef(STATION_IDS.tokyo_subway.shiodome),
+    new StopStationDef(STATION_IDS.yurikamome.takeshiba),
+    new StopStationDef(STATION_IDS.yurikamome.hinode),
+    new StopStationDef(STATION_IDS.yurikamome.shibaurafuto),
+    new StopStationDef(STATION_IDS.yurikamome.odaiba_kaihinkoen),
+    new StopStationDef(STATION_IDS.yurikamome.daiba),
+    new StopStationDef(STATION_IDS.yurikamome.tokyo_kokusai_cruise_terminal),
+    new StopStationDef(STATION_IDS.yurikamome.telecom_center),
+    new StopStationDef(STATION_IDS.yurikamome.aomi),
+    new StopStationDef(STATION_IDS.yurikamome.tokyo_big_sight),
+    new StopStationDef(STATION_IDS.yurikamome.ariake),
+    new StopStationDef(STATION_IDS.yurikamome.ariake_tennis_no_mori),
+    new StopStationDef(STATION_IDS.yurikamome.shijomae),
+    new StopStationDef(STATION_IDS.yurikamome.shin_toyosu),
+    new StopStationDef(STATION_IDS.tokyo_metro.toyosu),
   ]),
 
   // 京浜急行電鉄

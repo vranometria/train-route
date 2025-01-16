@@ -1291,6 +1291,29 @@ export const STATION_IDS = {
     haneda_kuko_dai1_terminal: 'haneda-kuko-dai1-terminal',
     haneda_kuko_dai2_terminal: 'haneda-kuko-dai2-terminal',
   },
+  /** ゆりかもめ 駅 */
+  yurikamome: {
+    takeshiba: 'yurikamome-takeshiba',
+    hinode: 'yurikamome-hino-de',
+    shibaurafuto: 'yurikamome-shibaurafuto',
+    odaiba_kaihinkoen: 'yurikamome-odaiba-kaihinkoen',
+    daiba: 'yurikamome-daiba',
+    tokyo_kokusai_cruise_terminal: 'yurikamome-tokyo-kokusai-cruise-terminal',
+    aomi: 'yurikamome-aomi',
+    telecom_center: 'yurikamome-telecom-center',
+    tokyo_big_sight: 'yurikamome-tokyo-big-sight',
+    ariake: 'yurikamome-ariake',
+    ariake_tennis_no_mori: 'yurikamome-ariake-tennis-no-mori',
+    shijomae: 'yurikamome-shijo-mae',
+    shin_toyosu: 'yurikamome-shin-toyosu',
+  },
+  /** 臨海高速鉄道 */
+  toukyo_rinkai_kousoku: {
+    shinonome: 'rinkai-shinonome',
+    kokusaitenjijyo: 'rinkai-kokusaitenjijyo',
+    tokyo_teleport: 'rinkai-tokyo-teleport',
+    shinagawa_seaside: 'rinkai-shinagawa-seaside',
+  },
   /** 相鉄駅 */
   sagami: {
     ebina: "ebina",
