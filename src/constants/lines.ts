@@ -1088,6 +1088,21 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_metro.shirokanedai),
     new StopStationDef(STATION_IDS.jr_east.meguro),
   ]),
+  [LINE_IDS.tokyo_subway.nippori_toneri_liner]: new Line('日暮里・舎人ライナー', '都営地下鉄', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_east.nippori),
+    new StopStationDef(STATION_IDS.jr_east.nishinippori),
+    new StopStationDef(STATION_IDS.tokyo_subway.akado_shogakko_mae),
+    new StopStationDef(STATION_IDS.tokyo_subway.kumanomae),
+    new StopStationDef(STATION_IDS.tokyo_subway.adachi_odai),
+    new StopStationDef(STATION_IDS.tokyo_subway.ougiohashi),
+    new StopStationDef(STATION_IDS.tokyo_subway.takano),
+    new StopStationDef(STATION_IDS.tokyo_subway.kouhoku),
+    new StopStationDef(STATION_IDS.tokyo_subway.nishiaraidaishi_nishi),
+    new StopStationDef(STATION_IDS.tokyo_subway.yazaike),
+    new StopStationDef(STATION_IDS.tokyo_subway.toneri_koen),
+    new StopStationDef(STATION_IDS.tokyo_subway.toneri),
+    new StopStationDef(STATION_IDS.tokyo_subway.minumadaishinsui_koen),
+  ]),
 
   // 東京メトロ
   [LINE_IDS.tokyo_metro.yurakucho]: new Line('有楽町線', '東京メトロ', [], [

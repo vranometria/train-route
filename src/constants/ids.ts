@@ -291,7 +291,7 @@ export const LINE_IDS = {
     /** りんかい線 */
     rinkai: 'toukyo-rinkai-kousoku-rinkai',
   },
-  /** 西武鉄道 */
+  /** 西武鉄道 路線 */
   seibu: {
     tamagawa: "seibu-tamagawa",
     tamako: "seibu-tamako",
@@ -303,6 +303,7 @@ export const LINE_IDS = {
     seibu_shinjuku: "seibu-seibu-shinjuku",
     seibu_chichibu: "seibu-seibu-chichibu",
     seibu_toshimaen: "seibu-seibu-toshimaen",
+    shinjuku: "seibu-shinjuku",
   },
   /** 東葉高速鉄道 */
   toyo_kousoku: {
@@ -1149,7 +1150,7 @@ export const STATION_IDS = {
     oji: 'oji',
     // 千代田線
     yoyogi_koen: 'tokyo-metro-yoyogi-koen',
-    nogisaka: 'tokyo-metro-nogisaka',
+    nogizaka: 'tokyo-metro-nogisaka',
     akasaka: 'tokyo-metro-akasaka',
     nijubashimae: 'tokyo-metro-nijubashimae',
     yushima: 'tokyo-metro-yushima',
@@ -1247,6 +1248,18 @@ export const STATION_IDS = {
     uchisaiwaicho: 'uchisaiwaicho',
     onarimon: 'onarimon',
     shiba_koen: 'shiba-koen',
+    // 日暮里舎人ライナー
+    akado_shogakko_mae: 'akado-shogakko-mae',
+    kumanomae: 'kumanomae',
+    adachi_odai: 'adachi_odai',
+    ougiohashi: 'ougiohashi',
+    takano: 'takano',
+    kouhoku: 'kouhoku',
+    nishiaraidaishi_nishi: 'nishiaraidaishi-nishi',
+    yazaike: 'yazaike',
+    toneri_koen: 'toneri-koen',
+    toneri: 'toneri',
+    minumadaishinsui_koen: 'minumadai-shinsui-koen',
   },
   /** 首都圏新都市 */
   shutoken_shintoshi: {
