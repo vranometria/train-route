@@ -1159,6 +1159,21 @@ export const STATION_IDS = {
     machiya: 'tokyo-metro-machiya',
     ayase: 'tokyo-metro-ayase',
     kita_ayase: 'tokyo-metro-kita-ayase',
+    // 東西線
+    ochiai: 'tokyo-metoro-ochiai',
+    waseda: 'tokyo-metro-waseda',
+    kagurazaka: 'tokyo-metro-kagurazaka',
+    takehashi: 'tokyo-metro-takehashi',
+    kiba: 'tokyo-metro-kiba',
+    touyocho: 'tokyo-metro-touyocho',
+    minami_sunamachi: 'tokyo-metro-minami-sunamachi',
+    nishi_kasai: 'tokyo-metro-nishi-kasai',
+    kasai: 'tokyo-metro-kasai',
+    urayasu: 'tokyo-metro-urayasu',
+    minami_gyotoku: 'tokyo-metro-minami-gyotoku',
+    gyotoku: 'tokyo-metro-gyotoku',
+    myouden: 'tokyo-metro-myouden',
+    baraki_nakayama: 'tokyo-metro-baraki-nakayama',
   },
   /** 都営駅 */
   tokyo_subway: {

@@ -3,6 +3,8 @@ import { LINE_IDS, STATION_IDS } from './ids'
 import { ExchangeInfo } from '@/types/exchange-info'
 import * as i from './ids';
 
+const NO_TRANSFER:string|ExchangeInfo[] = [];
+
 export const STATIONS = {
   // 宇都宮線
   [STATION_IDS.jr_east.utsunomiya]: new StationInfo('宇都宮', [
@@ -1620,6 +1622,21 @@ export const STATIONS = {
   [STATION_IDS.tokyo_metro.hanzomon]: new StationInfo('半蔵門', [], "はんぞうもん"),
   [STATION_IDS.tokyo_metro.suitengumae]: new StationInfo('水天宮前', [], "すいてんぐうまえ"),
   [STATION_IDS.tokyo_metro.kiyosumi_shirakawa]: new StationInfo('清澄白河', [], "きよすみしらかわ"),
+  // ＞東西線
+  [STATION_IDS.tokyo_metro.ochiai]: new StationInfo('落合', NO_TRANSFER, "おちあい"),
+  [STATION_IDS.tokyo_metro.waseda]: new StationInfo('早稲田', NO_TRANSFER, "わせだ"),
+  [STATION_IDS.tokyo_metro.kagurazaka]: new StationInfo('神楽坂', NO_TRANSFER, "かぐらざか"),
+  [STATION_IDS.tokyo_metro.takehashi]: new StationInfo('竹橋', NO_TRANSFER, "たけばし"),
+  [STATION_IDS.tokyo_metro.kiba]: new StationInfo('木場', NO_TRANSFER, "きば"),
+  [STATION_IDS.tokyo_metro.touyocho]: new StationInfo('東陽町', NO_TRANSFER, "とうようちょう"),
+  [STATION_IDS.tokyo_metro.minami_sunamachi]: new StationInfo('南砂町', NO_TRANSFER, "みなみすなまち"),
+  [STATION_IDS.tokyo_metro.nishi_kasai]: new StationInfo('西葛西', NO_TRANSFER, "にしかさい"),
+  [STATION_IDS.tokyo_metro.kasai]: new StationInfo('葛西', NO_TRANSFER, "かさい"),
+  [STATION_IDS.tokyo_metro.urayasu]: new StationInfo('浦安', NO_TRANSFER, "うらやす"),
+  [STATION_IDS.tokyo_metro.minami_gyotoku]: new StationInfo('南行徳', NO_TRANSFER, "みなみぎょうとく"),
+  [STATION_IDS.tokyo_metro.gyotoku]: new StationInfo('行徳', NO_TRANSFER, "ぎょうとく"),
+  [STATION_IDS.tokyo_metro.myouden]: new StationInfo('妙典', NO_TRANSFER, "みょうでん"),
+  [STATION_IDS.tokyo_metro.baraki_nakayama]: new StationInfo('原木中山', NO_TRANSFER, "ばらきなかやま"),
   // ＞南北線
   [STATION_IDS.tokyo_metro.shirokanedai]: new StationInfo('白金台', [
     LINE_IDS.tokyo_metro.nanboku,

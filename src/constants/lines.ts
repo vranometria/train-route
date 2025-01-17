@@ -2,6 +2,7 @@ import { Line } from '@/types/line'
 import { LINE_IDS, STATION_IDS } from './ids'
 import { KindDef } from '@/types/kind-def'
 import { StopStationDef } from '@/types/stop-station-def'
+import { Rapid } from '@/types/rapid';
 
 const LOCAL_ONLY:KindDef[] = [];
 
@@ -759,6 +760,31 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_metro.kitasenju),
     new StopStationDef(STATION_IDS.tokyo_metro.ayase),
     new StopStationDef(STATION_IDS.tokyo_metro.kita_ayase),
+  ]),
+  [LINE_IDS.tokyo_metro.touzai]: new Line('東西線', '東京メトロ', [new KindDef("通勤快速", "commuter"), new Rapid], [
+    new StopStationDef(STATION_IDS.jr_east.nakano, ["commuter", Rapid.KEY]),
+    new StopStationDef(STATION_IDS.tokyo_metro.ochiai, ["commuter", Rapid.KEY]),
+    new StopStationDef(STATION_IDS.jr_east.takadanobaba, ["commuter", Rapid.KEY]),
+    new StopStationDef(STATION_IDS.tokyo_metro.waseda, ["commuter", Rapid.KEY]),
+    new StopStationDef(STATION_IDS.tokyo_metro.kagurazaka, ["commuter", Rapid.KEY]),
+    new StopStationDef(STATION_IDS.jr_east.iidabashi, ["commuter", Rapid.KEY]),
+    new StopStationDef(STATION_IDS.tokyo_subway.kudanshita, ["commuter", Rapid.KEY]),
+    new StopStationDef(STATION_IDS.tokyo_metro.takehashi, ["commuter", Rapid.KEY]),
+    new StopStationDef(STATION_IDS.tokyo_metro.otemachi, ["commuter", Rapid.KEY]),
+    new StopStationDef(STATION_IDS.tokyo_metro.nihonbashi, ["commuter", Rapid.KEY]),
+    new StopStationDef(STATION_IDS.tokyo_metro.kayabacho, ["commuter", Rapid.KEY]),
+    new StopStationDef(STATION_IDS.tokyo_subway.monzennakacho, ["commuter", Rapid.KEY]),
+    new StopStationDef(STATION_IDS.tokyo_metro.kiba, ["commuter", Rapid.KEY]),
+    new StopStationDef(STATION_IDS.tokyo_metro.touyocho, ["commuter",]),
+    new StopStationDef(STATION_IDS.tokyo_metro.minami_sunamachi, ["commuter",]),
+    new StopStationDef(STATION_IDS.tokyo_metro.nishi_kasai, ["commuter",]),
+    new StopStationDef(STATION_IDS.tokyo_metro.kasai, ["commuter",]),
+    new StopStationDef(STATION_IDS.tokyo_metro.urayasu, ["commuter", Rapid.KEY]),
+    new StopStationDef(STATION_IDS.tokyo_metro.minami_gyotoku),
+    new StopStationDef(STATION_IDS.tokyo_metro.gyotoku),
+    new StopStationDef(STATION_IDS.tokyo_metro.myouden),
+    new StopStationDef(STATION_IDS.tokyo_metro.baraki_nakayama),
+    new StopStationDef(STATION_IDS.jr_east.nishi_funabashi, ["commuter", Rapid.KEY]),
   ]),
 
   // 東京モノレール
