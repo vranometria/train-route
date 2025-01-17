@@ -178,6 +178,8 @@ export const LINE_IDS = {
     skytree: 'toubu-skytree',
     /** 東武生越線 */
     tobu_ogose: 'toubu-tobu-ogose',
+    /** 東葉高速線 */
+    touyou_kousoku: 'toubu-touyou-kousoku',
   },
   saitama_shintoshi: {
     // ニューシャトル
@@ -327,6 +329,7 @@ export const LINE_IDS = {
     oshiage: "keisei-oshiage",
     narita: "keisei-narita",
   },
+  /** 北総電鉄　路線 */
   hokusou: {
     hokusou: 'hokusou-hokusou',
   },
@@ -1474,7 +1477,7 @@ export const STATION_IDS = {
     motosumiyoshi: "motosumiyoshi",
     hiyoshi: "hiyoshi",
   },
-  /** 東武駅 */
+  /** 東武 駅 */
   tobu: {
     // 東武東上線
     kita_ikebukuro: "tobu-kita-ikebukuro",
@@ -1513,6 +1516,46 @@ export const STATION_IDS = {
     hachigata: "tobu-hachigata",
     tamayodo: "tobu-tamayodo",
     yorii: "tobu-yorii",
+    // アーバンパークライン
+    kita_omiya: "tobu-kita-omiya",
+    omiya_koen: "tobu-omiya-koen",
+    owada: "tobu-owada",
+    nanasato: "tobu-nanasato",
+    iwatsuki: "tobu-iwatsuki",
+    higashi_iwatsuki: "tobu-higashi-iwatsuki",
+    toyoharu: "tobu-toyoharu",
+    yagisaki: "tobu-yagisaki",
+    kasukabe: "tobu-kasukabe",
+    fujinoushijima: "tobu-fujinoushijima",
+    minami_sakurai: "tobu-minami-sakurai",
+    kawama: "tobu-kawama",
+    nanakoudai: "tobu-nanakoudai",
+    shimizu_koen: "tobu-shimizu-koen",
+    atago: "tobu-atago",
+    nodashi: "tobu-nodashi",
+    umesato: "tobu-umesato",
+    unga: "tobu-unga",
+    edogawadai: "tobu-edogawadai",
+    hatsuishi: "tobu-hatsuishi",
+    toyoshiki: "tobu-toyoshiki",
+    shin_kashiwa: "tobu-shin-kashiwa",
+    masuo: "tobu-masuo",
+    sakasai: "tobu-sakasai",
+    takayanagi: "tobu-takayanagi",
+    mutsumi: "tobu-mutsumi",
+    kamagaya: "tobu-kamagaya",
+    magomesawa: "tobu-magomesawa",
+    tsukada: "tobu-tsukada",
+    shin_funabashi: "tobu-shin-funabashi",
+    // 東葉高速線
+    higashi_kaijin: "tobu-higashi-kaijin",
+    hasama: "tobu-hasama",
+    kita_narashino: "tobu-kita-narashino",
+    funabashi_nichidaimae: "tobu-funabashi-nichidaimae",
+    yachiyo_midorigaoka: "tobu-yachiyo-midorigaoka",
+    yachiyo_chuou: "tobu-yachiyo-chuou",
+    murakami: "tobu-murakami",
+    touyou_katsutadai: "tobu-touyou-katsutadai",
   },
   /** 西部駅 */
   seibu: {
