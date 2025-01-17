@@ -116,9 +116,9 @@ import { LINE_IDS } from '@/constants/ids'
 
         西武鉄道
         <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.ikebukuro}}">西武池袋線</RouterLink>
-          <!-- <RouterLink :to="{name: 'line', params: {id: 'seibu-shinjuku'}}">新宿線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: 'seibu-toshima'}}">豊島線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.ikebukuro}}">池袋線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.shinjuku}}">新宿線</RouterLink>
+          <!-- <RouterLink :to="{name: 'line', params: {id: 'seibu-toshima'}}">豊島線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: 'seibu-yurakucho'}}">有楽町線</RouterLink> -->
         </div>
 

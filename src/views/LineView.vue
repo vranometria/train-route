@@ -45,7 +45,10 @@ import { useLangStore } from '@/stores/lang';
             <th>駅</th>
             <th></th>
             <th>乗り換え</th>
-            <th v-for="kind in model.kinds" :key="kind.prop" class="kind" :class="kind.prop">{{ kind.name }}</th>
+            <th v-for="kind in model.kinds" :key="kind.prop" class="kind" :class="kind.prop">
+              <span class="text" :class="kind.extraCharge">{{ kind.name }}</span>
+              <p class="fukidashi">特急料が別途必須</p>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -107,7 +110,7 @@ td, th {
   border: none;
 }
 
-th.kind {
+th.kind .text {
   writing-mode: vertical-rl;
   font-weight: bold;
   color: black;
@@ -129,12 +132,20 @@ th.kind {
   background-color: pink;
 }
 
-th.express {
+th.express .text {
   color: white;
 }
 
 .semi-express {
   background-color: orange;
+}
+
+.extra1 {
+  background-color: #E95295;
+}
+
+.extra2 {
+  background-color: #A22041;
 }
 
 .commuter {
@@ -179,4 +190,33 @@ th.express {
 .on-the-way {
   color: lightblue;
 }
+
+.fukidashi {
+  display: none;
+  width: 200px;
+  position: absolute;
+  top: -55px;
+  padding: 16px;
+  border-radius: 5px;
+  background: #33cc99;
+  color: black;
+  font-weight: bold;
+}
+.fukidashi:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  bottom: -19px;
+  margin-left: 10px;
+  border: solid transparent;
+  border-color: rgba(51, 204, 153, 0);
+  border-top-color: #33cc99;
+  border-width: 10px;
+  pointer-events: none;
+  content: " ";
+}
+  .extra-charge:hover + .fukidashi {
+    display: block;
+  }
 </style>

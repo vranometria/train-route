@@ -3,6 +3,9 @@ import { LINE_IDS, STATION_IDS } from './ids'
 import { KindDef } from '@/types/kind-def'
 import { StopStationDef } from '@/types/stop-station-def'
 import { Rapid } from '@/types/rapid';
+import { SemiExpress } from '@/types/semi-express';
+import { Express } from '@/types/express';
+import { ExtraExpress } from '@/types/extra-express';
 
 const LOCAL_ONLY:KindDef[] = [];
 
@@ -786,7 +789,6 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_metro.baraki_nakayama),
     new StopStationDef(STATION_IDS.jr_east.nishi_funabashi, ["commuter", Rapid.KEY]),
   ]),
-
   // 東京モノレール
   [LINE_IDS.tokyo_monorail]: new Line('東京モノレール', '東京モノレール', [], [
     new StopStationDef(STATION_IDS.jr_east.hamamatsucho),
@@ -801,7 +803,6 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_monorail.haneda_kuko_dai1_terminal),
     new StopStationDef(STATION_IDS.tokyo_monorail.haneda_kuko_dai2_terminal),
   ]),
-
   // ゆりかもめ
   [LINE_IDS.yurikamome.yurikamome]: new Line('ゆりかもめ', '新交通ゆりかもめ', [], [
     new StopStationDef(STATION_IDS.jr_east.shinbashi),
@@ -1503,6 +1504,44 @@ export const LINES = {
     new StopStationDef(STATION_IDS.seibu.motokaji),
     new StopStationDef(STATION_IDS.seibu.hanno),
   ]),
+  // ＞西武新宿線
+  [LINE_IDS.seibu.shinjuku]: new Line('西武新宿線', '西武鉄道', [
+    new SemiExpress,
+    new Express,
+    new KindDef("通勤急行", "commuter"),
+    new Rapid,
+    new ExtraExpress("拝島ライナー", "extra1"),
+    new ExtraExpress("小江戸号", "extra2"),
+  ], [
+    new StopStationDef(STATION_IDS.seibu.seibu_shinjuku, [SemiExpress.KEY, Express.KEY,"commuter",Rapid.KEY, "extra1", "extra2",]),
+    new StopStationDef(STATION_IDS.jr_east.takadanobaba, [SemiExpress.KEY, Express.KEY,"commuter",Rapid.KEY, "extra1", "extra2", ]),
+    new StopStationDef(STATION_IDS.seibu.shimo_ochiai),
+    new StopStationDef(STATION_IDS.tokyo_subway.nakai),
+    new StopStationDef(STATION_IDS.seibu.arai_yakushimae),
+    new StopStationDef(STATION_IDS.seibu.numabashi),
+    new StopStationDef(STATION_IDS.seibu.nogata),
+    new StopStationDef(STATION_IDS.seibu.toritsu_kasei),
+    new StopStationDef(STATION_IDS.seibu.washinomiya, [SemiExpress.KEY, Express.KEY,"commuter",]),
+    new StopStationDef(STATION_IDS.seibu.shimo_igusa),
+    new StopStationDef(STATION_IDS.seibu.kami_syakujii, [SemiExpress.KEY, Express.KEY,"commuter",]),
+    new StopStationDef(STATION_IDS.seibu.musashiseki, [SemiExpress.KEY,]),
+    new StopStationDef(STATION_IDS.seibu.higashi_fushimi, [SemiExpress.KEY,]),
+    new StopStationDef(STATION_IDS.seibu.seibu_yazawa, [SemiExpress.KEY,]),
+    new StopStationDef(STATION_IDS.seibu.tanashi, [SemiExpress.KEY, Express.KEY,"commuter",Rapid.KEY, ]),
+    new StopStationDef(STATION_IDS.seibu.hana_koganei, [SemiExpress.KEY, Express.KEY,]),
+    new StopStationDef(STATION_IDS.seibu.kodaira, [SemiExpress.KEY, Express.KEY, "extra1",]),
+    new StopStationDef(STATION_IDS.seibu.kumegawa, [SemiExpress.KEY, Express.KEY,]),
+    new StopStationDef(STATION_IDS.seibu.higashi_murayama, [SemiExpress.KEY, Express.KEY,"commuter",Rapid.KEY,  "extra2",]),
+    new StopStationDef(STATION_IDS.seibu.tokorozawa, [SemiExpress.KEY, Express.KEY,"commuter",Rapid.KEY,  "extra2",]),
+    new StopStationDef(STATION_IDS.seibu.kuko_koen, [SemiExpress.KEY, Express.KEY,]),
+    new StopStationDef(STATION_IDS.seibu.shin_tokorozawa, [SemiExpress.KEY, Express.KEY,"commuter",Rapid.KEY, ]),
+    new StopStationDef(STATION_IDS.seibu.iriso, [SemiExpress.KEY, Express.KEY,Rapid.KEY, ]),
+    new StopStationDef(STATION_IDS.seibu.sayamashi, [SemiExpress.KEY, Express.KEY,"commuter",Rapid.KEY, "extra2",]),
+    new StopStationDef(STATION_IDS.seibu.shin_sayama, [SemiExpress.KEY, Express.KEY,Rapid.KEY, ]),
+    new StopStationDef(STATION_IDS.seibu.minami_otsuka, [SemiExpress.KEY, Express.KEY,Rapid.KEY, ]),
+    new StopStationDef(STATION_IDS.seibu.hon_kawagoe, [SemiExpress.KEY, Express.KEY,"commuter",Rapid.KEY, "extra2",]),
+  ]),
+
   // 東武鉄道
   // ＞東武東上線
   [LINE_IDS.toubu.toujou]: new Line('東上線', '東武鉄道', [
