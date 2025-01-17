@@ -1683,4 +1683,21 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.kichijoji),
   ]),
 
+  // 埼玉新都市交通
+  [LINE_IDS.saitama_shintoshi_koutsu.new_shuttle]: new Line('ニューシャトル', '埼玉新都市交通', [], [
+    new StopStationDef(STATION_IDS.jr_east.omiya),
+    new StopStationDef(STATION_IDS.saitama_shintoshi_koutsu.tetsudou_hakubutsukan),
+    new StopStationDef(STATION_IDS.saitama_shintoshi_koutsu.kamonomiya),
+    new StopStationDef(STATION_IDS.saitama_shintoshi_koutsu.higashi_miyahara),
+    new StopStationDef(STATION_IDS.saitama_shintoshi_koutsu.konba),
+    new StopStationDef(STATION_IDS.saitama_shintoshi_koutsu.yosinohara),
+    new StopStationDef(STATION_IDS.saitama_shintoshi_koutsu.haraichi),
+    new StopStationDef(STATION_IDS.saitama_shintoshi_koutsu.syounan),
+    new StopStationDef(STATION_IDS.saitama_shintoshi_koutsu.maruyama),
+    new StopStationDef(STATION_IDS.saitama_shintoshi_koutsu.shiku),
+    new StopStationDef(STATION_IDS.saitama_shintoshi_koutsu.ina_chuou),
+    new StopStationDef(STATION_IDS.saitama_shintoshi_koutsu.hanuki),
+    new StopStationDef(STATION_IDS.saitama_shintoshi_koutsu.uchijuku),
+  ]),
+
 }

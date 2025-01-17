@@ -181,7 +181,7 @@ export const LINE_IDS = {
     /** 東葉高速線 */
     touyou_kousoku: 'toubu-touyou-kousoku',
   },
-  saitama_shintoshi: {
+  saitama_shintoshi_koutsu: {
     // ニューシャトル
     new_shuttle: 'saitama_shintoshi_new_shuttle',
   },
@@ -1613,15 +1613,6 @@ export const STATION_IDS = {
     minami_otsuka: "seibu-minami-otsuka",
     hon_kawagoe: "seibu-hon-kawagoe",
   },
-  /** 流鉄 */
-  ryutetsu: {
-    nagareyama: "ryutetsu-nagareyama",
-    heiwadai: "ryutetsu-heiwadai",
-    hiregasaki: "ryutetsu-hiregasaki",
-    koganejoato: "ryutetsu-koganejoato",
-    koya: "ryutetsu-koya",
-    mahashi: "ryutetsu-mahashi",
-  },
   /** 京成駅 */
   keisei: {
     keisei_tsudanuma: "keisei-keisei-tsudanuma",
@@ -1708,7 +1699,7 @@ export const STATION_IDS = {
     yagiri: "hokusou-yagiri",
     shin_shibamata: "hokusou-shin-shibamata",
   },
-  /** 京王駅 */
+  /** 京王 駅 */
   keio: {
     // 京王線
     sasatsuka: "keio-sasatsuka",
@@ -1759,7 +1750,22 @@ export const STATION_IDS = {
     mitakadai: "keio-mitakadai",
     inokashirakoen: "keio-inokashirakoen",
   },
-  // JR東日本駅
+  /** 埼玉新都市交通 駅 */
+  saitama_shintoshi_koutsu: {
+    tetsudou_hakubutsukan: "saitama-shintoshi-koutsu-tetsudou-hakubutsukan",
+    kamonomiya: "saitama-shintoshi-koutsu-kamonomiya",
+    higashi_miyahara: "saitama-shintoshi-koutsu-higashi-miyahara",
+    konba: "saitama-shintoshi-koutsu-konba",
+    yosinohara: "saitama-shintoshi-koutsu-yosinohara",
+    haraichi: "saitama-shintoshi-koutsu-haraichi",
+    syounan: "saitama-shintoshi-koutsu-syounan",
+    maruyama: "saitama-shintoshi-koutsu-maruyama",
+    shiku: "saitama-shintoshi-koutsu-shiku",
+    ina_chuou: "saitama-shintoshi-koutsu-ina-chuou",
+    hanuki: "saitama-shintoshi-koutsu-hanuki",
+    uchijuku: "saitama-shintoshi-koutsu-uchijuku",
+  },
+  // JR東海 駅
   jr_tokai: {
     mishima: "mishima",
     shinfuji: "jr-tokai-shinfuji",
@@ -1841,5 +1847,14 @@ export const STATION_IDS = {
     fukui_joushi_daimyomachi: "fukui-fukui-joushi-daimyomachi",
     asuwayama_koenguchi: "fukui-aswayama-koenguchi",
     shokokaigijo_mae: "fukui-shokokaigijo-mae",
+  },
+  /** 流鉄 */
+  ryutetsu: {
+    nagareyama: "ryutetsu-nagareyama",
+    heiwadai: "ryutetsu-heiwadai",
+    hiregasaki: "ryutetsu-hiregasaki",
+    koganejoato: "ryutetsu-koganejoato",
+    koya: "ryutetsu-koya",
+    mahashi: "ryutetsu-mahashi",
   },
 };

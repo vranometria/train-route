@@ -212,7 +212,7 @@ export const STATIONS = {
     LINE_IDS.jr_east.shinkansen.jouetsu,// 上越新幹線
     LINE_IDS.jr_east.shinkansen.hokuriku,// 北陸新幹線
     LINE_IDS.toubu.urban_park_line,// "東武アーバンパークライン",
-    LINE_IDS.saitama_shintoshi.new_shuttle,// ニューシャトル
+    LINE_IDS.saitama_shintoshi_koutsu.new_shuttle,// ニューシャトル
   ], "おおみや"),
   [STATION_IDS.jr_east.saitama_shintoshin]: new StationInfo('さいたま新都心',[
     LINE_IDS.jr_east.keihin_touhoku,
@@ -2028,6 +2028,21 @@ export const STATIONS = {
     LINE_IDS.toubu.urban_park_line,
     new ExchangeInfo(LINE_IDS.toubu.touyou_kousoku, STATION_IDS.tobu.higashi_kaijin),
   ], "しんふなばし"),
+
+  // 埼玉新都市交通
+  // ＞ニューシャトル
+  [STATION_IDS.saitama_shintoshi_koutsu.tetsudou_hakubutsukan]: new StationInfo('鉄道博物館', [], "てつどうはくぶつかん"),
+  [STATION_IDS.saitama_shintoshi_koutsu.kamonomiya]: new StationInfo('加茂宮', [], "かものみや"),
+  [STATION_IDS.saitama_shintoshi_koutsu.higashi_miyahara]: new StationInfo('東宮原', [], "ひがしみやはら"),
+  [STATION_IDS.saitama_shintoshi_koutsu.konba]: new StationInfo('今羽', [], "こんば"),
+  [STATION_IDS.saitama_shintoshi_koutsu.yosinohara]: new StationInfo('吉野原', [], "よしのはら"),
+  [STATION_IDS.saitama_shintoshi_koutsu.haraichi]: new StationInfo('原市', [], "はらいち"),
+  [STATION_IDS.saitama_shintoshi_koutsu.syounan]: new StationInfo('沼南', [], "しょうなん"),
+  [STATION_IDS.saitama_shintoshi_koutsu.maruyama]: new StationInfo('丸山', [], "まるやま"),
+  [STATION_IDS.saitama_shintoshi_koutsu.shiku]: new StationInfo('志久', [], "しく"),
+  [STATION_IDS.saitama_shintoshi_koutsu.ina_chuou]: new StationInfo('伊奈中央', [], "いなちゅうおう"),
+  [STATION_IDS.saitama_shintoshi_koutsu.hanuki]: new StationInfo('羽貫', [], "はぬき"),
+  [STATION_IDS.saitama_shintoshi_koutsu.uchijuku]: new StationInfo('内宿', [], "うちじゅく"),
 
   // 首都圏新都市
   // ＞つくばエクスプレス
