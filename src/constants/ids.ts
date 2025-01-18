@@ -51,8 +51,7 @@ export const LINE_IDS = {
     sagami: 'jr-sagami',
     /** 磐越東線 */
     banetsutou: 'jr-banetsutou',
-    /** 東北本線 */
-    touhokuhonsen: 'jr-touhoku-honsen',
+
 
     /** 日光線 */
     nikko: 'jr-nikko',
@@ -60,8 +59,6 @@ export const LINE_IDS = {
     karasuyama: 'jr-karasuyama',
     /** 水戸線 */
     mito: 'jr-mito',
-    /** 東北本線 */
-    tohokuhonsen: 'jr-tohoku-honsen',
     /** 青梅線 */
     oume: 'jr-oume',
     /** 八高線 */
@@ -99,7 +96,19 @@ export const LINE_IDS = {
     iiyama: 'jr-iiyama',
 
     /** 東北本線 */
-    tohoku_honsen: 'jr-tohoku-honsen',
+    touhoku_honsen: 'jr-touhoku-honsen',
+    /** 利府線 */
+    rifu: 'jr-rifu',
+    /** 気仙沼線 */
+    kesennuma: 'jr-kesennuma',
+    /** 石巻線 */
+    ishimaki: 'jr-ishimaki',
+    /**  水郡線 */
+    suigun: 'jr-suigun',
+    /** 山形線 */
+    yamagata: 'jr-yamagata',
+    /** 千石東北ライン */
+    sengoku_touhoku_line: 'jr-sengoku-touhoku-line',
     /** 奥羽本線 */
     ouu_honsen: 'jr-ouu-honsen',
     /** 仙山線 */
@@ -124,8 +133,6 @@ export const LINE_IDS = {
     tazawako: 'jr-tazawako',
     /** 八戸線 */
     hachinohe: 'jr-hachinohe',
-    /** 山形線 */
-    yamagata: 'jr-yamagata',
     /** 米坂線 */
     yonesaka: 'jr-yonesaka',
     /** 羽越本線 */
@@ -477,6 +484,15 @@ export const LINE_IDS = {
   /** 福島交通 */
   fukushima_koutsu: {
     iizaka: 'fukushima-koutsu-iizaka',
+  },
+  /** 仙台空港鉄道 */
+  sendai_kuko: {
+    access: 'sendai-kuko-access',
+  },
+  /** 仙台市地下鉄 */
+  sendai_subway: {
+    nanboku: 'sendai-shiei-subway-nanboku',
+    touzai: 'sendai-shiei-subway-touzai',
   },
   /** IGRいわて銀河鉄道 */
   igr_iwate_ginga: {
@@ -909,7 +925,6 @@ export const STATION_IDS = {
     kuji: "kuji",
     syukugawara: "syukugawara",
     noto: "noto",
-    /** 中野島(神奈川) */
     nakanojima: "nakanojima",
     inadatsutsumi: "inadatsutsumi",
     yanoguchi: "yanoguchi",
@@ -920,6 +935,82 @@ export const STATION_IDS = {
     yaho: "yaho",
     yakawa: "yakawa",
     nishikunitachi: "nishikunitachi",
+    // 東北本線
+    takaku: 'jr-east-takaku',
+    kurotawara: 'jr-east-kurotawara',
+    toyohara: 'jr-east-toyohara',
+    shirasaka: 'jr-east-shirasaka',
+    shirakawa: 'jr-east-shirakawa',
+    kudano: 'jr-east-kudano',
+    izumizaki: 'jr-east-izumizaki',
+    yabuki: 'jr-east-yabuki',
+    kagamiishi: 'jr-east-kagamiishi',
+    sukagawa: 'jr-east-sukagawa',
+    asakanagamori: 'jr-east-asakanagamori',
+    hiwada: 'jr-east-hiwada',
+    gohyakugawa: 'jr-east-gohyakugawa',
+    motomiya: 'jr-east-motomiya',
+    sugita: 'jr-east-sugita',
+    nihonmatsu: 'jr-east-nihonmatsu',
+    adachi: 'jr-east-adachi',
+    matsukawa: 'jr-east-matsukawa',
+    kanayagawa: 'jr-east-kanayagawa',
+    minami_fukushima: 'jr-east-minami-fukushima',
+    higashi_fukushima: 'jr-east-higashi-fukushima',
+    date: 'jr-east-date',
+    kori: 'jr-east-kori',
+    fujita: 'jr-east-fujita',
+    kaida: 'jr-east-kaida',
+    kosugou: 'jr-east-kosugou',
+    shiraishi: 'jr-east-shiraishi',
+    higashi_shiraishi: 'jr-east-higashi-shiraishi',
+    kita_shirakawa: 'jr-east-kita-shirakawa',
+    ogawara: 'jr-east-ogawara',
+    funaoka: 'jr-east-funaoka',
+    tsukinoki: 'jr-east-tsukinoki',
+    tatekoshi: 'jr-east-tatekoshi',
+    natori: 'jr-east-natori',
+    minami_sendai: 'jr-east-minami-sendai',
+    taishidou: 'jr-east-taishidou',
+    nagamachi: 'jr-east-nagamachi',
+    higashi_sendai: 'jr-east-higashi-sendai',
+    iwakiri: 'jr-east-iwakiri',
+    rikuzensannou: 'jr-east-rikuzensannou',
+    kokufutagajou: 'jr-east-kokufutagajou',
+    shiogama: 'jr-east-shiogama',
+    matsushima: 'jr-east-matsushima',
+    atago: 'jr-east-atago',
+    shinainuma: 'jr-east-shinainuma',
+    kashimadai: 'jr-east-kashimadai',
+    matsuyamamachi: 'jr-east-matsuyamamachi',
+    kogota: 'jr-east-kogota',
+    tajiri: 'jr-east-tajiri',
+    semine: 'jr-east-semine',
+    umegasawa: 'jr-east-umegasawa',
+    nitta: 'jr-east-nitta',
+    ishikoshi: 'jr-east-ishikoshi',
+    aburajima: 'jr-east-aburajima',
+    hanaizumi: 'jr-east-hanaizumi',
+    shimizuhara: 'jr-east-shimizuhara',
+    arikabe: 'jr-east-arikabe',
+    yamanome: 'jr-east-yamanome',
+    hiraizumi: 'jr-east-hiraizumi',
+    maezawa: 'jr-east-maezawa',
+    rikuchuorii: 'jr-east-rikuchuorii',
+    mizusawa: 'jr-east-mizusawa',
+    kanegasaki: 'jr-east-kanegasaki',
+    rokuhara: 'jr-east-rokuhara',
+    murasakino: 'jr-east-murasakino',
+    hanamaki: 'jr-east-hanamaki',
+    hanamaki_kuko: 'jr-east-hanamaki-kuko',
+    ishidoriya: 'jr-east-ishidoriya',
+    hidume: 'jr-east-hidume',
+    shiwa_chuo: 'jr-east-shiwa-chuo',
+    furudate: 'jr-east-furudate',
+    yahaba: 'jr-east-yahaba',
+    iwate_iioka: 'jr-east-iwate-iioka',
+    senbokumachi: 'jr-east-senbokumachi',
+
     //上越新幹線
     honjo_waseda: "honjo_waseda",
     joumoukougen: "joumoukougen",
@@ -972,7 +1063,6 @@ export const STATION_IDS = {
     nagano: "jr-nagano",
     iiyama: "jr-iiyama",
     joetsu_myoko: "jr-joetsu_myoko",
-
 
     duplicate: {
       fukushima: {

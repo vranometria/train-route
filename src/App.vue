@@ -24,6 +24,7 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.tokiwa}}" >常盤線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.musashino}}" >武蔵野線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.kawagoe}}" >川越線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.touhoku_honsen}}" >東北本線</RouterLink>
 
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.shinkansen.jouetsu}}" >上越新幹線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.shinkansen.tohoku}}" >東北新幹線</RouterLink>
