@@ -1637,6 +1637,53 @@ export const STATIONS = {
   [i.STATION_IDS.tokyo_subway.toneri_koen]: new StationInfo('舎人公園', [], 'とねりこうえん'),
   [i.STATION_IDS.tokyo_subway.toneri]: new StationInfo('舎人', [], 'とねり'),
   [i.STATION_IDS.tokyo_subway.minumadaishinsui_koen]: new StationInfo('南千住大橋水辺公園', [], 'みなみすみだいおおはしみずべこうえん'),
+  // 東京さくらトラム
+  [STATION_IDS.tokyo_subway.minowabashi]: new StationInfo('三ノ輪橋', [
+    LINE_IDS.tokyo_subway.sakura_tram,
+    new ExchangeInfo(LINE_IDS.tokyo_metro.hibiya, STATION_IDS.tokyo_metro.minowa),
+  ], "みのわばし"),
+  [STATION_IDS.tokyo_subway.arakawa_icchumae]: new StationInfo('荒川一中前', NO_TRANSFER, "あらかわいっちゅうまえ"),
+  [STATION_IDS.tokyo_subway.arakawa_kuyakushomae]: new StationInfo('荒川区役所前', NO_TRANSFER, "あらかわくやくしょまえ"),
+  [STATION_IDS.tokyo_subway.arakawa_nichoume]: new StationInfo('荒川二丁目', NO_TRANSFER, "あらかわにちょうめ"),
+  [STATION_IDS.tokyo_subway.arakawa_nanachoume]: new StationInfo('荒川七丁目', NO_TRANSFER, "あらかわななちょうめ"),
+  [STATION_IDS.tokyo_subway.machiyaekimae]: new StationInfo('町屋駅前', [
+    LINE_IDS.tokyo_subway.sakura_tram,
+    new ExchangeInfo(LINE_IDS.tokyo_metro.chiyoda, STATION_IDS.tokyo_metro.machiya),
+    new ExchangeInfo(LINE_IDS.keisei.honsen, STATION_IDS.tokyo_metro.machiya),
+  ], "まちやえきまえ"),
+  [STATION_IDS.tokyo_subway.machiya_nichoume]: new StationInfo('町屋二丁目', NO_TRANSFER, "まちやにちょうめ"),
+  [STATION_IDS.tokyo_subway.higashi_oku_sanchoume]: new StationInfo('東尾久三丁目', NO_TRANSFER, "ひがしおくさんちょうめ"),
+  [STATION_IDS.tokyo_subway.miyanomae]: new StationInfo('宮ノ前', NO_TRANSFER, "みやのまえ"),
+  [STATION_IDS.tokyo_subway.kodai]: new StationInfo('小台', NO_TRANSFER, "こだい"),
+  [STATION_IDS.tokyo_subway.arakawa_yuenchimae]: new StationInfo('荒川遊園地前', NO_TRANSFER, "あらかわゆうえんちまえ"),
+  [STATION_IDS.tokyo_subway.arakawa_shakomae]: new StationInfo('荒川車庫前', NO_TRANSFER, "あらかわしゃこまえ"),
+  [STATION_IDS.tokyo_subway.kajiwara]: new StationInfo('梶原', NO_TRANSFER, "かじわら"),
+  [STATION_IDS.tokyo_subway.sakaechou]: new StationInfo('栄町', NO_TRANSFER, "さかえちょう"),
+  [STATION_IDS.tokyo_subway.oujiekimae]: new StationInfo('王子駅前', [
+    LINE_IDS.tokyo_subway.sakura_tram,
+    new ExchangeInfo(LINE_IDS.jr_east.keihin_touhoku, STATION_IDS.jr_east.ouji),
+    new ExchangeInfo(LINE_IDS.tokyo_metro.nanboku, STATION_IDS.jr_east.ouji),
+  ], "おうじえきまえ"),
+  [STATION_IDS.tokyo_subway.asukayama]: new StationInfo('飛鳥山', NO_TRANSFER, "あすかやま"),
+  [STATION_IDS.tokyo_subway.takinogawa_icchome]: new StationInfo('滝野川一丁目', NO_TRANSFER, "たきのがわいっちょうめ"),
+  [STATION_IDS.tokyo_subway.nishigawara_yonchoume]: new StationInfo('西ヶ原四丁目', NO_TRANSFER, "にしがはらよんちょうめ"),
+  [STATION_IDS.tokyo_subway.shin_koushinduka]: new StationInfo('新庚申塚', NO_TRANSFER, "しんこうしんづか"),
+  [STATION_IDS.tokyo_subway.koushinduka]: new StationInfo('庚申塚', NO_TRANSFER, "こうしんづか"),
+  [STATION_IDS.tokyo_subway.sugamo_shinden]: new StationInfo('巣鴨新田', NO_TRANSFER, "すがもしんでん"),
+  [STATION_IDS.tokyo_subway.otsukaekimae]: new StationInfo('大塚駅前', NO_TRANSFER, "おおつかえきまえ"),
+  [STATION_IDS.tokyo_subway.mukouhara]: new StationInfo('向原', NO_TRANSFER, "むこうはら"),
+  [STATION_IDS.tokyo_subway.higashi_ikebukuro_yonchoume]: new StationInfo('東池袋四丁目', [
+    LINE_IDS.tokyo_subway.sakura_tram,
+    new ExchangeInfo(LINE_IDS.tokyo_metro.yurakucho, STATION_IDS.tokyo_metro.higashi_ikebukuro),
+  ], "ひがしいけぶくろよんちょうめ"),
+  [STATION_IDS.tokyo_subway.toden_zoushigaya]: new StationInfo('都電雑司ヶ谷', NO_TRANSFER, "とでんぞうしがや"),
+  [STATION_IDS.tokyo_subway.kishiboshinmae]: new StationInfo('鬼子母神前', [
+    LINE_IDS.tokyo_subway.sakura_tram,
+    new ExchangeInfo(LINE_IDS.tokyo_metro.fukutoshin, STATION_IDS.tokyo_metro.zoshigaya),
+  ], "きしぼしんまえ"),
+  [STATION_IDS.tokyo_subway.gakusyuinshita]: new StationInfo('学習院下', NO_TRANSFER, "がくしゅういんした"),
+  [STATION_IDS.tokyo_subway.omokagebashi]: new StationInfo('面影橋', NO_TRANSFER, "おもかげばし"),
+  [STATION_IDS.tokyo_subway.waseda]: new StationInfo('早稲田', NO_TRANSFER, "わせだ"),
 
   // 東京メトロ
   [STATION_IDS.tokyo_metro.oshiage]: new StationInfo('押上', [

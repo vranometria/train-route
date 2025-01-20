@@ -17,6 +17,16 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.sea_side}}">シーサイドライン</RouterLink>
         </div>
 
+        東京都交通局
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.asakusa}}" >浅草線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.mita}}" >三田線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.shinjuku}}" >新宿線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.oedo}}" >大江戸線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.nippori_toneri_liner}}" >日暮里・舎人ライナー</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.sakura_tram}}" >東京さくらトラム</RouterLink>
+        </div>
+
         JR東日本
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.tokaido}}" >東海道本線</RouterLink>
@@ -66,14 +76,7 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.shutoken_shintoshi.tsukuba_express}}" >つくばエクスプレス</RouterLink>
         </div>
 
-        都営地下鉄
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.shinjuku}}" >新宿線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.mita}}" >三田線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.asakusa}}" >浅草線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.oedo}}" >大江戸線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.nippori_toneri_liner}}" >日暮里・舎人ライナー</RouterLink>
-        </div>
+
 
         相模鉄道
         <div>
