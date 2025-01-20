@@ -962,6 +962,7 @@ export const LINES = {
     new KindDef("急行", "express"),
     new KindDef("特急", "special-express"),
   ], [
+    new StopStationDef(STATION_IDS.keikyu.kanazawahakkei, ["express", "special-express"]),
     new StopStationDef(STATION_IDS.keikyu.mutsuura, ["express", "special-express"]),
     new StopStationDef(STATION_IDS.keikyu.jinmuji, ["express", "special-express"]),
     new StopStationDef(STATION_IDS.keikyu.zushihayama, ["express", "special-express"]),

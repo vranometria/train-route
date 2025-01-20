@@ -2254,6 +2254,7 @@ export const STATIONS = {
   [STATION_IDS.keikyu.kanazawabunko]: new StationInfo('金沢文庫', [], "かなざわぶんこ"),
   [STATION_IDS.keikyu.kanazawahakkei]: new StationInfo('金沢八景', [
     LINE_IDS.keikyu.honsen,
+    LINE_IDS.keikyu.zushi,
     LINE_IDS.keikyu.sea_side,
   ], "かなざわはっけい"),
   [STATION_IDS.keikyu.oppama]: new StationInfo('追浜', [], "おっぱま"),
@@ -2296,6 +2297,10 @@ export const STATIONS = {
   [STATION_IDS.keikyu.tsukuihama]: new StationInfo('津久井浜', NO_TRANSFER, "つくいはま"),
   [STATION_IDS.keikyu.miurakaigan]: new StationInfo('三浦海岸', NO_TRANSFER, "みうらかいがん"),
   [STATION_IDS.keikyu.misakiguchi]: new StationInfo('三崎口', NO_TRANSFER, "みさきぐち"),
+  // 逗子線
+  [STATION_IDS.keikyu.mutsuura]: new StationInfo('睦沢', NO_TRANSFER, "むつうら"),
+  [STATION_IDS.keikyu.jinmuji]: new StationInfo('神武寺', NO_TRANSFER, "じんむじ"),
+  [STATION_IDS.keikyu.zushihayama]: new StationInfo('逗子・葉山', NO_TRANSFER, "ずし・はやま"),
 
   // 大師線
   [STATION_IDS.keikyu.minatocho]: new StationInfo('港町', NO_TRANSFER, "みなとちょう"),
