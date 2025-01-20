@@ -977,13 +977,29 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.nishikunitachi),
     new StopStationDef(STATION_IDS.jr_east.tachikawa),
   ]),
-  [LINE_IDS.jr_east.nanbu_shisen]: new Line('南武線支線', 'JR東日本', LOCAL_ONLY, [
+  [LINE_IDS.jr_east.nanbu_shisen]: new Line('南武線(支線)', 'JR東日本', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_east.hamakawasaki),
     new StopStationDef(STATION_IDS.jr_east.odasakae),
     new StopStationDef(STATION_IDS.jr_east.kawasaki_shinmachi),
     new StopStationDef(STATION_IDS.keikyu.hacchonawate),
     new StopStationDef(STATION_IDS.jr_east.shitte),
   ]),
+  [LINE_IDS.jr_east.tsurumi]: new Line('鶴見線', 'JR東日本', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_east.tsurumi),
+    new StopStationDef(STATION_IDS.jr_east.kokudou),
+    new StopStationDef(STATION_IDS.jr_east.tsurumi_ono),
+    new StopStationDef(STATION_IDS.jr_east.bentenbashi),
+    new StopStationDef(STATION_IDS.jr_east.asano),
+    new StopStationDef(STATION_IDS.jr_east.anzen),
+    new StopStationDef(STATION_IDS.jr_east.musashi_shiraishi),
+    new StopStationDef(STATION_IDS.jr_east.shouwa),
+    new StopStationDef(STATION_IDS.jr_east.hamakawasaki),
+    new StopStationDef(STATION_IDS.jr_east.ougimachi),
+    new StopStationDef(STATION_IDS.jr_east.shin_shibaura),
+    new StopStationDef(STATION_IDS.jr_east.umi_shibaura),
+    new StopStationDef(STATION_IDS.jr_east.okawa),
+  ]),
+
   [LINE_IDS.jr_east.kashima]: new Line('鹿島線', 'JR東日本', [], []),
 
   [LINE_IDS.jr_east.tokiwa]: new Line('常磐線', 'JR東日本', [new KindDef("快速", "rapid")], [
