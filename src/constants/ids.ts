@@ -59,6 +59,11 @@ export const LINE_IDS = {
   tokyo_monorail: {
     haneda_kuko: "tokyo-monorail",
   },
+  /** 千葉都市モノレール */
+  chiba_toshi_monorail: {
+    ichigou: "chiba-toshi-monorail-ichigou",
+    nigou: "chiba-toshi-monorail-nigou",
+  },
 
 
   /** JR東日本 */
@@ -1026,6 +1031,21 @@ export const STATION_IDS = {
     shin_shibaura: 'jr-east-shin-shibaura',
     umi_shibaura: 'jr-east-umi-shibaura',
     okawa: 'jr-east-okawa',
+    // 京葉線(JK)
+    futamata_shinmachi: 'jr-east-futamata-shinmachi',
+    shin_urayasu: "shin_urayasu",
+    maihama: "maihama",
+    kasai_rinkai_koen: "kasai_rinkai_koen",
+    shiomi: "shiomi",
+    ecchujima: "ecchujima",
+    hacchobori: "hacchobori",
+    shin_narashino: "shin_narashino",
+    makuhari_toyosuna: "makuhari_toyosuna",
+    kaihin_makuhari: "kaihin_makuhari",
+    kemigawahama: "jr-east-kemigawahama",
+    inage_kaigan: "inage_kaigan",
+    chiba_minato: "chiba_minato",
+    soga: "soga",
 
     omiya: 'o-miya',
     saitama_shintoshin: 'saitama-shintoshin',
@@ -1210,18 +1230,7 @@ export const STATION_IDS = {
     funabashi_houden: "funabashi_hoden",
     nishi_funabashi: "nishi_funabashi",
     minami_funabashi: "minami_funabashi",
-    shin_narashino: "shin_narashino",
-    makuhari_toyosuna: "makuhari_toyosuna",
-    kaihin_makuhari: "kaihin_makuhari",
     ichikawa_shiohama: "ichikawa_shiohama",
-    shin_urayasu: "shin_urayasu",
-    maihama: "maihama",
-    kasai_rinkai_koen: "kasai_rinkai_koen",
-    shiomi: "shiomi",
-    ecchujima: "ecchujima",
-    hacchobori: "hacchobori",
-
-
 
     // 横須賀線
     higashizushi: 'higashizushi',
@@ -1252,7 +1261,6 @@ export const STATION_IDS = {
     higashikawaguchi: "higashikawaguchi",
     minamikoshigaya: "minamikoshigaya",
     minami_nagareyama: "minami_nagareyama",
-    /** 吉川(埼玉) */
     yoshikawaminami: "yoshikawaminami",
     minaminagareyama: "minaminagareyama",
     shinmatsudo: "shinmatsudo",
@@ -1261,15 +1269,12 @@ export const STATION_IDS = {
     ichikawaono: "ichikawaono",
     hunabashihouten: "hunabashihouten",
     minamihunabashi: "minamihunabashi",
-    shinnarashino: "shinnarashino",
-    makuharitoyosuna: "makuharitoyosuna",
-    kaihinmakuhari: "kaihinmakuhari",
     ichikawashiohama: "ichikawashiohama",
     shinurayasu: "shinurayasu",
     kasairinkaikouen: "kasairinkaikouen",
     shinkiba: "shinkiba",
     hacchoubori: "hacchoubori",
-    //南武線
+    //南武線(JN)
     hamakawasaki: "hamakawasaki",
     odasakae: "odasakae",
     kawasakichinmachi: "kawasakichinmachi",
