@@ -3,7 +3,6 @@
 export const LINE_IDS = {
   /** JR・相鉄直通線*/
   jr_sotetsu_chokutsu: "jr-sotetsu-chokutsu",
-  tokyo_monorail: "tokyo-monorail",
 
   /** 京急 路線 */
   keikyu: {
@@ -35,51 +34,82 @@ export const LINE_IDS = {
     /** さくらトラム */
     sakura_tram: 'toei-sakura-tram',
   },
+   /** 東京メトロ 路線 */
+   tokyo_metro: {
+    /** 銀座線 */
+    ginza: 'tokyo-metro-ginza',
+    /** 丸の内線 */
+    marunouchi: 'tokyo-metro-marunouchi',
+    /** 日比谷線 */
+    hibiya: 'tokyo-metro-hibiya',
+    /** 東西線 */
+    touzai: 'tokyo-metro-touzai',
+    /** 千代田線 */
+    chiyoda: 'tokyo-metro-chiyoda',
+    /** 有楽町線 */
+    yurakucho: 'tokyo-metro-yurakucho',
+    /** 半蔵門線 */
+    hanzoumon: 'tokyo-metro-hanzoumon',
+    /** 南北線 */
+    nanboku: 'tokyo-metro-nanboku',
+    /** 副都心線 */
+    fukutoshin: 'tokyo-metro-fukutoshin',
+  },
+  /** 東京モノレール */
+  tokyo_monorail: {
+    haneda_kuko: "tokyo-monorail",
+  },
+
+
   /** JR東日本 */
   jr_east: {
-    /** 京浜東北線 */
-    keihin_touhoku: 'jr-keihintouhoku',
-    /** 宇都宮線 */
-    utunomiya: 'jr-utunomiya',
-    /** 高崎線 */
-    takasaki: 'jr-takasaki',
-    /** 湘南新宿ライン */
-    shonan_shinjuku: 'jr-sho-nan_shinjuku',
-    /** 横須賀線 */
-    yokosuka: 'jr-yokosuka',
-    // "埼京線",
+    // "埼京線(JA)",
     saikyou: 'jr-saikyou',
-    // "川越線",
+    /** 川越線(JA) */
     kawagoe: 'jr-kawagoe',
-    /** 山手線 */
-    yamanote: 'jr-yamanote',
-    /** 常盤線 */
-    tokiwa: 'jr-tokiwa',
-    /** 中央線 */
+    /** 総武線(JB) */
+    sobu: 'jr-sobu',
+    /** 中央線(JC) */
     chuo: 'jr-chuo',
+    /** 京葉線(JE) */
+    keiyou: 'jr-keiyou',
+    /** 相模線(JG) */
+    sagami: 'jr-sagami',
+    /** 横浜線(JH) */
+    yokohama: 'jr-yokohama',
+    /** 鶴見線(JI) */
+    tsurumi: 'jr-tsurumi',
+    /** 常盤線(JJ) */
+    tokiwa: 'jr-tokiwa',
+    /** 京浜東北線(JK) */
+    keihin_touhoku: 'jr-keihintouhoku',
+    /** 根岸線(JK) */
+    negishi: 'jr-negishi',
+    /** 南武線(JN) */
+    nanbu: 'jr-nanbu',
+    /** 武蔵野線(JM) */
+    musashino: 'jr-musashino',
+    /** 南武支線(JN) */
+    nanbu_shisen: 'jr-nanbu-shisen',
+    /** 横須賀線(JO) */
+    yokosuka: 'jr-yokosuka',
+    /** 湘南新宿ライン(JS) */
+    shonan_shinjuku: 'jr-sho-nan_shinjuku',
+    /** 東海道本線(JT) */
+    tokaido: 'jr-tokaido',
+    /** 宇都宮線(JU) */
+    utunomiya: 'jr-utunomiya',
+    /** 高崎線(JU) */
+    takasaki: 'jr-takasaki',
+    /** 山手線(JY) */
+    yamanote: 'jr-yamanote',
     /** 中央本線 */
     chuo_honsen: 'jr-chuo-honsen',
-    /** 総武線 */
-    sobu: 'jr-sobu',
-    /** 総武線快速 */
+    /** 総武線快速(JO) */
     sobu_kaisoku: 'jr-sobu-kaisoku',
     /** 総武本線 */
     sobu_honsen: 'jr-sobu-honsen',
-    /** 東海道本線 */
-    tokaido: 'jr-tokaido',
-    /** 横浜線 */
-    yokohama: 'jr-yokohama',
-    /** 根岸線 */
-    negishi: 'jr-negishi',
-    /** 南武線 */
-    nanbu: 'jr-nanbu',
-    /** 武蔵野線 */
-    musashino: 'jr-musashino',
-    /** 京葉線 */
-    keiyou: 'jr-keiyou',
 
-    /** 相模線 */
-    sagami: 'jr-sagami',
     /** 磐越東線 */
     banetsutou: 'jr-banetsutou',
 
@@ -189,7 +219,6 @@ export const LINE_IDS = {
       hokkaido: 'jr-hokkaido-shinkansen',
     },
   },
-
   /** 東武鉄道 */
   toubu: {
     // "東武アーバンパークライン",
@@ -214,27 +243,6 @@ export const LINE_IDS = {
   saitama_shintoshi_koutsu: {
     // ニューシャトル
     new_shuttle: 'saitama_shintoshi_new_shuttle',
-  },
-  /** 東京メトロ 路線 */
-  tokyo_metro: {
-    /** 丸の内線 */
-    marunouchi: 'tokyo-metro-marunouchi',
-    /** 日比谷線 */
-    hibiya: 'tokyo-metro-hibiya',
-    /** 銀座線 */
-    ginza: 'tokyo-metro-ginza',
-    /** 半蔵門線 */
-    hanzoumon: 'tokyo-metro-hanzoumon',
-    /** 南北線 */
-    nanboku: 'tokyo-metro-nanboku',
-    /** 東西線 */
-    touzai: 'tokyo-metro-touzai',
-    /** 有楽町線 */
-    yurakucho: 'tokyo-metro-yurakucho',
-    /** 副都心線 */
-    fukutoshin: 'tokyo-metro-fukutoshin',
-    /** 千代田線 */
-    chiyoda: 'tokyo-metro-chiyoda',
   },
   /** 首都圏新都市鉄道 */
   shutoken_shintoshi: {
@@ -739,6 +747,128 @@ export const STATION_IDS = {
     omokagebashi: 'toei-omokagebashi',
     waseda: 'toei-waseda',
   },
+  /** 東京メトロ 駅 */
+  tokyo_metro: {
+    nakameguro: 'nakameguro',
+    hiroo: 'hiroo',
+    roppongi: 'roppongi',
+    kamiyacho: 'kamiyacho',
+    toranomon_hills: 'toranomon-hills',
+    kasumigaseki: 'kasumigaseki',
+    hibiya: 'hibiya',
+    ginza: 'ginza',
+    higashiginza: 'higashi-ginza',
+    tsukiji: 'tsukiji',
+    kayabacho: 'kayabacho',
+    ningyocho: 'ningyocho',
+    kodenmacho: 'kodenmacho',
+    nakaokachimachi: 'naka-okachimachi',
+    iriya: 'iriya',
+    minowa: 'minowa',
+    minamisenju: 'minamisenju',
+    kitasenju: 'kitasenju',
+    shinotuka: 'shinotuka',
+    myogadani: 'myogadani',
+    kourakuen: 'kourakuen',
+    hongosanchome: 'hongosanchome',
+    awajicho: 'awajicho',
+    otemachi: 'otemachi',
+    kokkaigijidomae: 'kokkaigijidome',
+    akasakamitsuke: 'akasaka-mitsuke',
+    yotsuya_sanchome: 'yotsuya-sanchome',
+    shinjuku_gyoenmae: 'shinjuku-gyoenmae',
+    shinjuku_sanchome: 'shinjuku-sanchome',
+    nishishinjuku: 'nishishinjuku',
+    nakano_sakaue: 'nakano-sakaue',
+    shinnakano: 'shinnakano',
+    higashi_koenji: 'higashi-koenji',
+    shinkoenji: 'shinkoenji',
+    minamiasagaya: 'minamiasagaya',
+    // 有楽町線
+    wakoshi: 'wakoshi',
+    chikatetsu_narimasu: 'chikatetsu-narimasu',
+    chikatetsu_akatsuka: 'chikatetsu-akatsuka',
+    heiwadai: 'heiwadai',
+    hikawadai: 'hikawadai',
+    kotake_mukaihara: 'kotake-mukaihara',
+    senkawa: 'senkawa',
+    kanamecho: 'kanamecho',
+    higashi_ikebukuro: 'higashi-ikebukuro',
+    gokokuji: 'gokokuji',
+    edogawabashi: 'edogawabashi',
+    idabashi: 'idabashi',
+    koujimachi: 'koujimachi',
+    nagatacho: 'nagatacho',
+    sakuradamon: 'sakuradamon',
+    ginza_icchome: 'ginza-icchome',
+    shintomicho: 'shintomicho',
+    tsukishima: 'tsukishima',
+    toyosu: 'toyosu',
+    tatsumi: 'tatsumi',
+    shinkiba: 'shinkiba',
+    // 副都心線
+    zoshigaya: 'zoshi-gaya',
+    nishi_waseda: 'nishi-waseda',
+    kitasandou: 'kitasandou',
+    meiji_jingumae: 'meiji-jingumae',
+    higashi_shinjuku: 'higashi-shinjuku',
+    // 銀座線
+    gaienmae: 'tokyo-metro-gaienmae',
+    tameikesanno: 'tokyo-metro-tameikesanno',
+    kyobashi: 'tokyo-metro-kyobashi',
+    toranomon: 'tokyo-metro-toranomon',
+    mitsukoshimae: 'tokyo-metro-mitsukoshimae',
+    suehirocho: 'tokyo-metro-suehirocho',
+    ueno_hirokoji: 'tokyo-metro-ueno-hirokoji',
+    inaricho: 'tokyo-metro-inaricho',
+    tawaramachi: 'tokyo-metro-tawaramachi',
+    omotesando: 'tokyo-metro-omotesando',
+    nihonbashi: 'tokyo-metro-nihonbashi',
+    // 半蔵門線
+    hanzomon: 'tokyo-metro-hanzomon',
+    suitengumae: 'tokyo-metro-suitengumae',
+    oshiage: 'oshiage',
+    kiyosumi_shirakawa: 'kiyosumi_shirakawa',
+    // 南北線
+    shirokanedai: 'shirokanedai',
+    shirokane_takanawa: 'shirokane-takanawa',
+    roppongi_iccho_me: 'roppongi-iccho-me',
+    todaimae: 'todaimae',
+    honkomagome: 'honkomagome',
+    nishigahara: 'nishigahara',
+    oji_kamiya: 'oji-kamiya',
+    shimo: 'shimo',
+    akabane_iwabuchi: 'akabane-iwabuchi',
+    oji: 'oji',
+    // 千代田線
+    yoyogi_koen: 'tokyo-metro-yoyogi-koen',
+    nogizaka: 'tokyo-metro-nogisaka',
+    akasaka: 'tokyo-metro-akasaka',
+    nijubashimae: 'tokyo-metro-nijubashimae',
+    yushima: 'tokyo-metro-yushima',
+    nedu: 'tokyo-metro-nedu',
+    sendagi: 'tokyo-metro-sendagi',
+    shin_ochanomizu: 'tokyo-metro-shin-ochanomizu',
+    machiya: 'tokyo-metro-machiya',
+    ayase: 'tokyo-metro-ayase',
+    kita_ayase: 'tokyo-metro-kita-ayase',
+    // 東西線
+    ochiai: 'tokyo-metoro-ochiai',
+    waseda: 'tokyo-metro-waseda',
+    kagurazaka: 'tokyo-metro-kagurazaka',
+    takehashi: 'tokyo-metro-takehashi',
+    kiba: 'tokyo-metro-kiba',
+    touyocho: 'tokyo-metro-touyocho',
+    minami_sunamachi: 'tokyo-metro-minami-sunamachi',
+    nishi_kasai: 'tokyo-metro-nishi-kasai',
+    kasai: 'tokyo-metro-kasai',
+    urayasu: 'tokyo-metro-urayasu',
+    minami_gyotoku: 'tokyo-metro-minami-gyotoku',
+    gyotoku: 'tokyo-metro-gyotoku',
+    myouden: 'tokyo-metro-myouden',
+    baraki_nakayama: 'tokyo-metro-baraki-nakayama',
+  },
+
   /** JR東日本駅 */
   jr_east: {
     omiya: 'o-miya',
@@ -1088,9 +1218,6 @@ export const STATION_IDS = {
     kinugasa: 'kinugasa',
     kurihama: 'kurihama',
 
-    // 南武線
-    noborito: "noborito",
-
     // 相模線
     atsugi: "atsugi",
 
@@ -1136,7 +1263,6 @@ export const STATION_IDS = {
     hamakawasaki: "hamakawasaki",
     odasakae: "odasakae",
     kawasakichinmachi: "kawasakichinmachi",
-    hacchounawate: "hacchounawate",
     shitte: "shitte",
     yakou: "yakou",
     kashimada: "kashimada",
@@ -1160,6 +1286,10 @@ export const STATION_IDS = {
     yaho: "yaho",
     yakawa: "yakawa",
     nishikunitachi: "nishikunitachi",
+    noborito: "noborito",
+    // 南武支線
+    kawasaki_shinmachi: "kawasaki_shinmachi",
+
     // 東北本線
     takaku: 'jr-east-takaku',
     kurotawara: 'jr-east-kurotawara',
@@ -1299,127 +1429,6 @@ export const STATION_IDS = {
         ueda: "ueda",
       }
     }
-  },
-  /** 東京メトロ 駅 */
-  tokyo_metro: {
-    nakameguro: 'nakameguro',
-    hiroo: 'hiroo',
-    roppongi: 'roppongi',
-    kamiyacho: 'kamiyacho',
-    toranomon_hills: 'toranomon-hills',
-    kasumigaseki: 'kasumigaseki',
-    hibiya: 'hibiya',
-    ginza: 'ginza',
-    higashiginza: 'higashi-ginza',
-    tsukiji: 'tsukiji',
-    kayabacho: 'kayabacho',
-    ningyocho: 'ningyocho',
-    kodenmacho: 'kodenmacho',
-    nakaokachimachi: 'naka-okachimachi',
-    iriya: 'iriya',
-    minowa: 'minowa',
-    minamisenju: 'minamisenju',
-    kitasenju: 'kitasenju',
-    shinotuka: 'shinotuka',
-    myogadani: 'myogadani',
-    kourakuen: 'kourakuen',
-    hongosanchome: 'hongosanchome',
-    awajicho: 'awajicho',
-    otemachi: 'otemachi',
-    kokkaigijidomae: 'kokkaigijidome',
-    akasakamitsuke: 'akasaka-mitsuke',
-    yotsuya_sanchome: 'yotsuya-sanchome',
-    shinjuku_gyoenmae: 'shinjuku-gyoenmae',
-    shinjuku_sanchome: 'shinjuku-sanchome',
-    nishishinjuku: 'nishishinjuku',
-    nakano_sakaue: 'nakano-sakaue',
-    shinnakano: 'shinnakano',
-    higashi_koenji: 'higashi-koenji',
-    shinkoenji: 'shinkoenji',
-    minamiasagaya: 'minamiasagaya',
-    // 有楽町線
-    wakoshi: 'wakoshi',
-    chikatetsu_narimasu: 'chikatetsu-narimasu',
-    chikatetsu_akatsuka: 'chikatetsu-akatsuka',
-    heiwadai: 'heiwadai',
-    hikawadai: 'hikawadai',
-    kotake_mukaihara: 'kotake-mukaihara',
-    senkawa: 'senkawa',
-    kanamecho: 'kanamecho',
-    higashi_ikebukuro: 'higashi-ikebukuro',
-    gokokuji: 'gokokuji',
-    edogawabashi: 'edogawabashi',
-    idabashi: 'idabashi',
-    koujimachi: 'koujimachi',
-    nagatacho: 'nagatacho',
-    sakuradamon: 'sakuradamon',
-    ginza_icchome: 'ginza-icchome',
-    shintomicho: 'shintomicho',
-    tsukishima: 'tsukishima',
-    toyosu: 'toyosu',
-    tatsumi: 'tatsumi',
-    shinkiba: 'shinkiba',
-    // 副都心線
-    zoshigaya: 'zoshi-gaya',
-    nishi_waseda: 'nishi-waseda',
-    kitasandou: 'kitasandou',
-    meiji_jingumae: 'meiji-jingumae',
-    higashi_shinjuku: 'higashi-shinjuku',
-    // 銀座線
-    gaienmae: 'tokyo-metro-gaienmae',
-    tameikesanno: 'tokyo-metro-tameikesanno',
-    kyobashi: 'tokyo-metro-kyobashi',
-    toranomon: 'tokyo-metro-toranomon',
-    mitsukoshimae: 'tokyo-metro-mitsukoshimae',
-    suehirocho: 'tokyo-metro-suehirocho',
-    ueno_hirokoji: 'tokyo-metro-ueno-hirokoji',
-    inaricho: 'tokyo-metro-inaricho',
-    tawaramachi: 'tokyo-metro-tawaramachi',
-    omotesando: 'tokyo-metro-omotesando',
-    nihonbashi: 'tokyo-metro-nihonbashi',
-    // 半蔵門線
-    hanzomon: 'tokyo-metro-hanzomon',
-    suitengumae: 'tokyo-metro-suitengumae',
-    oshiage: 'oshiage',
-    kiyosumi_shirakawa: 'kiyosumi_shirakawa',
-    // 南北線
-    shirokanedai: 'shirokanedai',
-    shirokane_takanawa: 'shirokane-takanawa',
-    roppongi_iccho_me: 'roppongi-iccho-me',
-    todaimae: 'todaimae',
-    honkomagome: 'honkomagome',
-    nishigahara: 'nishigahara',
-    oji_kamiya: 'oji-kamiya',
-    shimo: 'shimo',
-    akabane_iwabuchi: 'akabane-iwabuchi',
-    oji: 'oji',
-    // 千代田線
-    yoyogi_koen: 'tokyo-metro-yoyogi-koen',
-    nogizaka: 'tokyo-metro-nogisaka',
-    akasaka: 'tokyo-metro-akasaka',
-    nijubashimae: 'tokyo-metro-nijubashimae',
-    yushima: 'tokyo-metro-yushima',
-    nedu: 'tokyo-metro-nedu',
-    sendagi: 'tokyo-metro-sendagi',
-    shin_ochanomizu: 'tokyo-metro-shin-ochanomizu',
-    machiya: 'tokyo-metro-machiya',
-    ayase: 'tokyo-metro-ayase',
-    kita_ayase: 'tokyo-metro-kita-ayase',
-    // 東西線
-    ochiai: 'tokyo-metoro-ochiai',
-    waseda: 'tokyo-metro-waseda',
-    kagurazaka: 'tokyo-metro-kagurazaka',
-    takehashi: 'tokyo-metro-takehashi',
-    kiba: 'tokyo-metro-kiba',
-    touyocho: 'tokyo-metro-touyocho',
-    minami_sunamachi: 'tokyo-metro-minami-sunamachi',
-    nishi_kasai: 'tokyo-metro-nishi-kasai',
-    kasai: 'tokyo-metro-kasai',
-    urayasu: 'tokyo-metro-urayasu',
-    minami_gyotoku: 'tokyo-metro-minami-gyotoku',
-    gyotoku: 'tokyo-metro-gyotoku',
-    myouden: 'tokyo-metro-myouden',
-    baraki_nakayama: 'tokyo-metro-baraki-nakayama',
   },
   /** 首都圏新都市 */
   shutoken_shintoshi: {
