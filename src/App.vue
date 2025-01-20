@@ -7,6 +7,16 @@ import { LINE_IDS } from '@/constants/ids'
   <header>
     <div class="wrapper">
       <nav>
+        京急電鉄
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.honsen}}">本線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.haneda_kuko}}">羽田空港線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.zushi}}">逗子線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.kurihama}}">久里浜線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.daishi}}">大師線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.sea_side}}">シーサイドライン</RouterLink>
+        </div>
+
         JR東日本
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.tokaido}}" >東海道本線</RouterLink>
@@ -80,14 +90,7 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyu.meguro}}">目黒線</RouterLink>
         </div>
 
-        京急電鉄
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.honsen}}">本線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.haneda_kuko}}">羽田空港線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.zushi}}">逗子線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.kurihama}}">久里浜線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.daishi}}">大師線</RouterLink>
-        </div>
+
 
         京王電鉄
         <div>
