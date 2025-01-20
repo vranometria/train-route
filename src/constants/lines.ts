@@ -966,6 +966,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.keikyu.zushihayama, ["express", "special-express"]),
   ]),
   [LINE_IDS.keikyu.daishi]: new Line('大師線', '京浜急行電鉄', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.keikyu.keikyukawasaki),
     new StopStationDef(STATION_IDS.keikyu.minatocho),
     new StopStationDef(STATION_IDS.keikyu.suzukicho),
     new StopStationDef(STATION_IDS.keikyu.kawasakidaishi),
