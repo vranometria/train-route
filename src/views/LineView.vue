@@ -37,7 +37,10 @@ import { useLangStore } from '@/stores/lang';
 <template>
   <div class="container">
     <div class="pane">
-      <h1>{{model.companyName}}・{{ model.lineName }}</h1>
+      <h1>
+        <div>{{model.companyName}}</div>
+        <div>{{ model.lineName }}</div>
+      </h1>
       <component :is="model.overlay" />
       <table>
         <thead>
@@ -91,7 +94,7 @@ h1 {
 }
 
 thead {
-  top: 40px;
+  top: 96px;
   background-color: #181818;
   z-index: 1;
 }
