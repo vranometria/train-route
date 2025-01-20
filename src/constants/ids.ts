@@ -64,6 +64,15 @@ export const LINE_IDS = {
     ichigou: "chiba-toshi-monorail-ichigou",
     nigou: "chiba-toshi-monorail-nigou",
   },
+  /** 相模鉄道 */
+  sagami: {
+    /** 本線 */
+    honsen: 'sagami-honsen',
+    /** 相鉄いずみ野線 */
+    izumino: 'sagami-izumino',
+    /** 相鉄新横浜線 */
+    sotetsushinyokohama: 'sagami-sotetsushinyokohama',
+  },
 
   /** JR東日本 */
   jr_east: {
@@ -255,12 +264,6 @@ export const LINE_IDS = {
     /** つくばエクスプレス */
     tsukuba_express: 'shutoken-shintoshi-tsukuba-express',
   },
-  /** 相模鉄道 */
-  sagami: {
-    honsen: 'sagami-honsen',
-    izumino: 'sagami-izumino',
-    sotetsushinyokohama: 'sagami-sotetsushinyokohama',
-  },
   /** 小田急 */
   odakyu: {
     /** 小田原線 */
@@ -320,9 +323,9 @@ export const LINE_IDS = {
     shinyokohama: "tokyu-shinyokohama",
   },
   /** 横浜市営地下鉄 */
-  yokohama_shieichikatetsu: {
-    blue_line: 'yokohama-shieichikatetsu-blue-line',
-    green_line: 'yokohama-shieichikatetsu-green-line',
+  yokohama_subway: {
+    blue_line: 'yokohama-subway-blue-line',
+    green_line: 'yokohama-subway-green-line',
   },
   /** 東京臨海高速鉄道*/
   toukyo_rinkai_kousoku: {
@@ -1604,6 +1607,13 @@ export const STATION_IDS = {
     nishiyokohama: "nishiyokohama",
     hiranumabashi: "hiranumabashi",
     hazawayokohamakokudai: "hazawayokohamakokudai",
+    // いずみ野線
+    minami_makigahara: "sagami-minami-makigahara",
+    ryokuentoshi: "sagami-ryokuentoshi",
+    yayoidai: "sagami-yayoidai",
+    izumino: "sagami-izumino",
+    yumegaoka: "sagami-yumegaoka",
+    izumichuo: "sagami-izumichuo",
   },
   /** 小田急駅 */
   odakyu: {

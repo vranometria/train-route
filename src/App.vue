@@ -51,6 +51,11 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.chiba_toshi_monorail.nigou}}">2号線</RouterLink>
         </div>
 
+        首都圏新都市
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.shutoken_shintoshi.tsukuba_express}}" >つくばエクスプレス</RouterLink>
+        </div>
+
         JR東日本
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.saikyou}}" >埼京線</RouterLink>
@@ -85,19 +90,12 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.shinkansen.hokuriku}}" >北陸新幹線</RouterLink>
         </div>
 
-
-        首都圏新都市
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.shutoken_shintoshi.tsukuba_express}}" >つくばエクスプレス</RouterLink>
-        </div>
-
-
-
         相模鉄道
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.sagami.honsen}}">相鉄本線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.sagami.sotetsushinyokohama}}">相鉄新横浜線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_sotetsu_chokutsu}}">相鉄・JR直通線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.sagami.izumino}}">いずみ野線</RouterLink>
         </div>
 
         東急電鉄

@@ -1510,7 +1510,16 @@ export const LINES = {
     new StopStationDef(STATION_IDS.sagami.hazawayokohamakokudai),
     new StopStationDef(STATION_IDS.tokyu.hiyoshi),
   ]),
-  [LINE_IDS.sagami.izumino]: new Line('いずみ野線', '相模鉄道', [], []),
+  [LINE_IDS.sagami.izumino]: new Line('いずみ野線', '相模鉄道', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.sagami.futamatagawa),
+    new StopStationDef(STATION_IDS.sagami.minami_makigahara),
+    new StopStationDef(STATION_IDS.sagami.ryokuentoshi),
+    new StopStationDef(STATION_IDS.sagami.yayoidai),
+    new StopStationDef(STATION_IDS.sagami.izumino),
+    new StopStationDef(STATION_IDS.sagami.izumichuo),
+    new StopStationDef(STATION_IDS.sagami.yumegaoka),
+    new StopStationDef(STATION_IDS.odakyu.shonandai),
+  ]),
 
 
   // 小田急
