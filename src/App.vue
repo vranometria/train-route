@@ -65,7 +65,6 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.tokiwa}}" >常盤線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.keihin_touhoku}}" >京浜東北線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.negishi}}" >根岸線</RouterLink>
-          <!-- 千代田線 -->
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.musashino}}" >武蔵野線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.nanbu}}" >南武線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.nanbu_shisen}}" >南武線(支線)</RouterLink>
@@ -73,7 +72,7 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.shonan_shinjuku}}" >湘南新宿ライン</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.tokaido}}" >東海道本線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.utunomiya}}" >宇都宮線</RouterLink>
-          <!-- 八高線 -->
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.hachiko}}" >八高線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.yamanote}}" >山手線</RouterLink>
 
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.touhoku_honsen}}" >東北本線</RouterLink>
