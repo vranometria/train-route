@@ -72,6 +72,7 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.shonan_shinjuku}}" >湘南新宿ライン</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.tokaido}}" >東海道本線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.utunomiya}}" >宇都宮線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.takasaki}}" >高崎線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.hachiko}}" >八高線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.yamanote}}" >山手線</RouterLink>
 
