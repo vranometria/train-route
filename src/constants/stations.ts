@@ -1423,7 +1423,11 @@ export const STATIONS = {
   [STATION_IDS.jr_east.katakura]: new StationInfo('片倉', [], "かたくら"),
   [STATION_IDS.jr_east.hachiouji_minamino]: new StationInfo('八王子みなみ野', [], "はちおうじみなみの"),
   [STATION_IDS.jr_east.aihara]: new StationInfo('相原', [], "あいはら"),
-  [STATION_IDS.jr_east.hashimoto]: new StationInfo('橋本', [], "はしもと"),
+  [STATION_IDS.jr_east.hashimoto]: new StationInfo('橋本', [
+    LINE_IDS.jr_east.yokohama,
+    LINE_IDS.jr_east.sagami,
+    LINE_IDS.keiou.sagami,
+  ], "はしもと"),
   [STATION_IDS.jr_east.sagamihara]: new StationInfo('相模原', [], "さがみはら"),
   [STATION_IDS.jr_east.huchinobe]: new StationInfo('淵野辺', [], "ふちのべ"),
   [STATION_IDS.jr_east.kobuchi]: new StationInfo('古渕', [], "こぶち"),
@@ -1500,7 +1504,10 @@ export const STATIONS = {
     LINE_IDS.odakyu.enoshima,
   ], "ふじさわ"),
   [STATION_IDS.jr_east.tsujido]: new StationInfo('辻堂', [], "つじどう"),
-  [STATION_IDS.jr_east.chigasaki]: new StationInfo('茅ヶ崎', [], "ちがさき"),
+  [STATION_IDS.jr_east.chigasaki]: new StationInfo('茅ヶ崎', [
+    LINE_IDS.jr_east.tokaido,
+    LINE_IDS.jr_east.sagami,
+  ], "ちがさき"),
   [STATION_IDS.jr_east.hiratsuka]: new StationInfo('平塚', [], "ひらつか"),
   [STATION_IDS.jr_east.oiso]: new StationInfo('大磯', [], "おおいそ"),
   [STATION_IDS.jr_east.ninomiya]: new StationInfo('二宮', [], "にのみや"),
@@ -1518,6 +1525,22 @@ export const STATIONS = {
   [STATION_IDS.jr_east.manazuru]: new StationInfo('真鶴', [], "まなづる"),
   [STATION_IDS.jr_east.yugawara ]: new StationInfo('湯河原', [], "ゆがわら"),
   [STATION_IDS.jr_east.atami]: new StationInfo('熱海', [], "あたみ"),
+  // 相模線(JG)
+  [STATION_IDS.jr_east.kita_chigasaki]: new StationInfo('北茅ヶ崎', NO_TRANSFER, "きたちがさき"),
+  [STATION_IDS.jr_east.kagawa]: new StationInfo('香川', NO_TRANSFER, "かがわ"),
+  [STATION_IDS.jr_east.samukawa]: new StationInfo('寒川', NO_TRANSFER, "さむかわ"),
+  [STATION_IDS.jr_east.miyayama]: new StationInfo('宮山', NO_TRANSFER, "みややま"),
+  [STATION_IDS.jr_east.kurami]: new StationInfo('倉見', NO_TRANSFER, "くらみ"),
+  [STATION_IDS.jr_east.kadosawabashi]: new StationInfo('門沢橋', NO_TRANSFER, "かどさわばし"),
+  [STATION_IDS.jr_east.syake]: new StationInfo('社家', NO_TRANSFER, "しゃけ"),
+  [STATION_IDS.jr_east.ebina]: new StationInfo('海老名', NO_TRANSFER, "えびな"),
+  [STATION_IDS.jr_east.iriya]: new StationInfo('入谷', NO_TRANSFER, "いりや"),
+  [STATION_IDS.jr_east.soubudai_shita]: new StationInfo('相武台下', NO_TRANSFER, "そうぶだいした"),
+  [STATION_IDS.jr_east.shimomizo]: new StationInfo('下溝', NO_TRANSFER, "しもみぞ"),
+  [STATION_IDS.jr_east.harataima]: new StationInfo('原当麻', NO_TRANSFER, "はらたいま"),
+  [STATION_IDS.jr_east.banda]: new StationInfo('番田', NO_TRANSFER, "ばんだ"),
+  [STATION_IDS.jr_east.kamimizo]: new StationInfo('上溝', NO_TRANSFER, "かみみぞ"),
+  [STATION_IDS.jr_east.minami_hashimoto]: new StationInfo('南橋本', NO_TRANSFER, "みなみはしもと"),
   // 鶴見線(JI)
   [STATION_IDS.jr_east.kokudou]: new StationInfo('国道', NO_TRANSFER, "こくどう"),
   [STATION_IDS.jr_east.tsurumi_ono]: new StationInfo('鶴見大野', NO_TRANSFER, "つるみおおの"),
@@ -1531,7 +1554,6 @@ export const STATIONS = {
   [STATION_IDS.jr_east.shin_shibaura]: new StationInfo('新芝浦', NO_TRANSFER, "しんしばうら"),
   [STATION_IDS.jr_east.umi_shibaura]: new StationInfo('海芝浦', NO_TRANSFER, "うみしばうら"),
   [STATION_IDS.jr_east.okawa]: new StationInfo('大川', NO_TRANSFER, "おおかわ"),
-
   // 京葉線(JK)
   [STATION_IDS.jr_east.hacchobori]: new StationInfo('八丁堀', [
     LINE_IDS.jr_east.keiyou,

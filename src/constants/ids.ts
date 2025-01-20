@@ -279,13 +279,19 @@ export const LINE_IDS = {
   },
   /** 京王電鉄 */
   keiou: {
+    /** 京王線 */
     keiou: 'keiou-keiou',
+    /** 京王新線 */
     keioushinsen: 'keiou-keioushinsen',
     /** 井の頭線 */
     inokashira: 'keiou-inokashira',
     /** 高尾線 */
     takao: 'keiou-takao',
+    /** 相模線 */
+    sagami: 'keiou-sagami',
+    /** 京王競馬場 */
     keibajo: 'keiou-keibajo',
+    /** 京王動物園 */
     dobutsuen: 'keiou-dobutsuen',
   },
   /**流鉄 */
@@ -1036,6 +1042,23 @@ export const STATION_IDS = {
     toyoda: 'toyoda',
     nishihachiouji: "nishihachiouji",
     takao: 'takao',
+    // 相模線(JG)
+    kita_chigasaki: 'jr-east-kita-chigasaki',
+    kagawa: 'jr-east-kagawa',
+    samukawa: 'jr-east-samukawa',
+    miyayama: 'jr-east-miyayama',
+    kurami: 'jr-east-kurami',
+    kadosawabashi: 'jr-east-kadosawabashi',
+    syake: 'jr-east-syake',
+    ebina: 'jr-east-ebina',
+    iriya: 'jr-east-iriya',
+    soubudai_shita: 'jr-east-soubudai-shita',
+    shimomizo: 'jr-east-shimomizo',
+    harataima: 'jr-east-harataima',
+    banda: 'jr-east-banda',
+    kamimizo: 'jr-east-kamimizo',
+    minami_hashimoto: 'jr-east-minami-hashimoto',
+
     // 鶴見線(JI)
     tsurumi: 'jr-east-tsurumi',
     kokudou: 'jr-east-kokudou',
