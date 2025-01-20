@@ -2280,6 +2280,23 @@ export const STATIONS = {
   ], "てんくうばし"),
   [STATION_IDS.keikyu.hanedakuko_daisan_terminal]: new StationInfo('羽田空港第三ターミナル', [], "はねだくうこうだいさんターミナル"),
   [STATION_IDS.keikyu.hanedakuko_dai1_dai2_terminal]: new StationInfo('羽田空港第1・第2ターミナル', [], "はねだくうこうだいいちだいにたーみなる"),
+  // 久里浜線
+  [STATION_IDS.keikyu.horinouchi]: new StationInfo('堀之内', [
+    LINE_IDS.keikyu.honsen,
+    LINE_IDS.keikyu.kurihama,
+  ], "ほりのうち"),
+  [STATION_IDS.keikyu.shinotsu]: new StationInfo('新大津', NO_TRANSFER, "しんおおつ"),
+  [STATION_IDS.keikyu.kitakurihama]: new StationInfo('北久里浜', NO_TRANSFER, "きたくりはま"),
+  [STATION_IDS.keikyu.keikyukurihama]: new StationInfo('京急久里浜', [
+    LINE_IDS.keikyu.kurihama,
+    new ExchangeInfo(LINE_IDS.jr_east.yokosuka, STATION_IDS.jr_east.kurihama),
+  ], "けいきゅうくりはま"),
+  [STATION_IDS.keikyu.yrp_nobi]: new StationInfo('YRP野比', NO_TRANSFER, "わいあーるぴーのび"),
+  [STATION_IDS.keikyu.keikyunagsawa]: new StationInfo('京急長沢', NO_TRANSFER, "けいきゅうながさわ"),
+  [STATION_IDS.keikyu.tsukuihama]: new StationInfo('津久井浜', NO_TRANSFER, "つくいはま"),
+  [STATION_IDS.keikyu.miurakaigan]: new StationInfo('三浦海岸', NO_TRANSFER, "みうらかいがん"),
+  [STATION_IDS.keikyu.misakiguchi]: new StationInfo('三崎口', NO_TRANSFER, "みさきぐち"),
+
   // 大師線
   [STATION_IDS.keikyu.minatocho]: new StationInfo('港町', NO_TRANSFER, "みなとちょう"),
   [STATION_IDS.keikyu.suzukicho]: new StationInfo('鈴木町', NO_TRANSFER, "すずきちょう"),
