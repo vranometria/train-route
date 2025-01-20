@@ -45,6 +45,12 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_monorail.haneda_kuko}}" >羽田空港線</RouterLink>
         </div>
 
+        千葉都市モノレール
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.chiba_toshi_monorail.ichigou}}">1号線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.chiba_toshi_monorail.nigou}}">2号線</RouterLink>
+        </div>
+
         JR東日本
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.saikyou}}" >埼京線</RouterLink>

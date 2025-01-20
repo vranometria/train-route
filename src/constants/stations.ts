@@ -689,6 +689,11 @@ export const STATIONS = {
     new ExchangeInfo(LINE_IDS.jr_east.chuo, STATION_IDS.jr_east.ochanomizu),
     new ExchangeInfo(LINE_IDS.jr_east.sobu, STATION_IDS.jr_east.ochanomizu),
   ], "しんおちゃのみず"),
+  // 千葉都市モノレール
+  [STATION_IDS.chiba_toshi_monorail.shiyakusyomae]: new StationInfo('市役所前', [], "しやくしょまえ"),
+  [STATION_IDS.chiba_toshi_monorail.sakaemachi]: new StationInfo('栄町', [], "さかえまち"),
+  [STATION_IDS.chiba_toshi_monorail.yoshikawa_kouen]: new StationInfo('葭川公園', [], "よしかわこうえん"),
+  [STATION_IDS.chiba_toshi_monorail.kenchoumae]: new StationInfo('県庁前', [], "けんちょうまえ"),
 
 
   // 川越線(JA)
@@ -1017,6 +1022,8 @@ export const STATIONS = {
     LINE_IDS.jr_east.uchibou,
     LINE_IDS.jr_east.sotobou,
     LINE_IDS.jr_east.narita,
+    LINE_IDS.chiba_toshi_monorail.ichigou,
+    LINE_IDS.chiba_toshi_monorail.nigou,
   ], "ちば"),
   [STATION_IDS.jr_east.nishichiba]: new StationInfo('西千葉', [], "にしちば"),
   [STATION_IDS.jr_east.inage]: new StationInfo('稲毛', [

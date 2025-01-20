@@ -112,7 +112,7 @@ export const LINE_IDS = {
     chuo_honsen: 'jr-chuo-honsen',
     /** 総武線快速(JO) */
     sobu_kaisoku: 'jr-sobu-kaisoku',
-    /** 総武本線 */
+    /** 総武本線(JO) */
     sobu_honsen: 'jr-sobu-honsen',
 
     /** 磐越東線 */
@@ -873,6 +873,24 @@ export const STATION_IDS = {
     myouden: 'tokyo-metro-myouden',
     baraki_nakayama: 'tokyo-metro-baraki-nakayama',
   },
+  /** 千葉都市モノレール */
+  chiba_toshi_monorail: {
+    shiyakusyomae: 'chiba-toshi-monorail-shiyakusyomae',
+    sakaemachi: 'chiba-toshi-monorail-sakaemachi',
+    yoshikawa_kouen: 'chiba-toshi-monorail-yoshikawa-kouen',
+    kenchoumae: 'chiba-toshi-monorail-kenchoumae',
+    chiba_kouen: 'chiba-toshi-monorail-chiba-kouen',
+    sakusabe: 'chiba-toshi-monorail-sakusabe',
+    tendai: 'chiba-toshi-monorail-tendai',
+    anagawa: 'chiba-toshi-monorail-anagawa',
+    sports_center: 'chiba-toshi-monorail-sports-center',
+    doubutsu_kouen: 'chiba-toshi-monorail-doubutsu-kouen',
+    mitsuwadai: 'chiba-toshi-monorail-mitsuwadai',
+    sakuragi: 'chiba-toshi-monorail-sakuragi',
+    oguradai: 'chiba-toshi-monorail-oguradai',
+    chishirodai_kita: 'chiba-toshi-monorail-chishirodai-kita',
+    chishirodai: 'chiba-toshi-monorail-chishirodai',
+  },
 
   /** JR東日本駅 */
   jr_east: {
@@ -1304,6 +1322,29 @@ export const STATION_IDS = {
     noborito: "noborito",
     // 南武支線
     kawasaki_shinmachi: "kawasaki_shinmachi",
+    // 総武本線(JO)
+    nishi_chiba: 'jr-east-nishi_chiba',
+    higashi_chiba: 'jr-east-higashi_chiba',
+    tsuga: 'jr-east-tsuga',
+    yotsukaidou: 'jr-east-yotsukaidou',
+    monoi: 'jr-east-monoi',
+    sakura: 'jr-east-sakura',
+    minami_shisui: 'jr-east-minami_shisui',
+    enokido: 'jr-east-enokido',
+    yachimata: 'jr-east-yachimata',
+    hyuga: 'jr-east-hyuga',
+    narutou: 'jr-east-narutou',
+    matsuo: 'jr-east-matsuo',
+    yokoshiba: 'jr-east-yokoshiba',
+    iigura: 'jr-east-iigura',
+    youkaichiba: 'jr-east-youkaichiba',
+    higata: 'jr-east-higata',
+    asahi: 'jr-east-asahi',
+    iioka: 'jr-east-iioka',
+    kurahashi: 'jr-east-kurahashi',
+    saruda: 'jr-east-saruda',
+    matsugishi: 'jr-east-matsugishi',
+    choshi: 'jr-east-choshi',
 
     // 東北本線
     takaku: 'jr-east-takaku',
