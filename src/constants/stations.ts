@@ -690,10 +690,21 @@ export const STATIONS = {
     new ExchangeInfo(LINE_IDS.jr_east.sobu, STATION_IDS.jr_east.ochanomizu),
   ], "しんおちゃのみず"),
   // 千葉都市モノレール
-  [STATION_IDS.chiba_toshi_monorail.shiyakusyomae]: new StationInfo('市役所前', [], "しやくしょまえ"),
-  [STATION_IDS.chiba_toshi_monorail.sakaemachi]: new StationInfo('栄町', [], "さかえまち"),
-  [STATION_IDS.chiba_toshi_monorail.yoshikawa_kouen]: new StationInfo('葭川公園', [], "よしかわこうえん"),
-  [STATION_IDS.chiba_toshi_monorail.kenchoumae]: new StationInfo('県庁前', [], "けんちょうまえ"),
+  [STATION_IDS.chiba_toshi_monorail.shiyakusyomae]: new StationInfo('市役所前', NO_TRANSFER, "しやくしょまえ"),
+  [STATION_IDS.chiba_toshi_monorail.sakaemachi]: new StationInfo('栄町', NO_TRANSFER, "さかえまち"),
+  [STATION_IDS.chiba_toshi_monorail.yoshikawa_kouen]: new StationInfo('葭川公園', NO_TRANSFER, "よしかわこうえん"),
+  [STATION_IDS.chiba_toshi_monorail.kenchoumae]: new StationInfo('県庁前', NO_TRANSFER, "けんちょうまえ"),
+  [STATION_IDS.chiba_toshi_monorail.chiba_kouen]: new StationInfo('千葉公園', NO_TRANSFER, "ちばこうえん"),
+  [STATION_IDS.chiba_toshi_monorail.sakusabe]: new StationInfo('作草部', NO_TRANSFER, "さくさべ"),
+  [STATION_IDS.chiba_toshi_monorail.tendai]: new StationInfo('天台', NO_TRANSFER, "てんだい"),
+  [STATION_IDS.chiba_toshi_monorail.anagawa]: new StationInfo('穴川', NO_TRANSFER, "あながわ"),
+  [STATION_IDS.chiba_toshi_monorail.sports_center]: new StationInfo('スポーツセンター', NO_TRANSFER, "すぽーつせんたー"),
+  [STATION_IDS.chiba_toshi_monorail.doubutsu_kouen]: new StationInfo('動物公園', NO_TRANSFER, "どうぶつこうえん"),
+  [STATION_IDS.chiba_toshi_monorail.mitsuwadai]: new StationInfo('三和台', NO_TRANSFER, "みつわだい"),
+  [STATION_IDS.chiba_toshi_monorail.sakuragi]: new StationInfo('桜木', NO_TRANSFER, "さくらぎ"),
+  [STATION_IDS.chiba_toshi_monorail.oguradai]: new StationInfo('小倉台', NO_TRANSFER, "おぐらだい"),
+  [STATION_IDS.chiba_toshi_monorail.chishirodai_kita]: new StationInfo('千代台北', NO_TRANSFER, "ちしろだいきた"),
+  [STATION_IDS.chiba_toshi_monorail.chishirodai]: new StationInfo('千代台', NO_TRANSFER, "ちしろだい"),
 
 
   // 川越線(JA)

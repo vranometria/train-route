@@ -528,13 +528,28 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_metro.toyosu),
   ]),
   // 千葉都市モノレール
-  [LINE_IDS.chiba_toshi_monorail.ichigou]: new Line('千葉都市モノレール1号線', '千葉都市モノレール', LOCAL_ONLY, [
+  [LINE_IDS.chiba_toshi_monorail.ichigou]: new Line('1号線', '千葉都市モノレール', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_east.chiba_minato),
     new StopStationDef(STATION_IDS.chiba_toshi_monorail.shiyakusyomae),
     new StopStationDef(STATION_IDS.jr_east.chiba),
     new StopStationDef(STATION_IDS.chiba_toshi_monorail.sakaemachi),
     new StopStationDef(STATION_IDS.chiba_toshi_monorail.yoshikawa_kouen),
     new StopStationDef(STATION_IDS.chiba_toshi_monorail.kenchoumae),
+  ]),
+  [LINE_IDS.chiba_toshi_monorail.nigou]: new Line('2号線', '千葉都市モノレール', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_east.chiba),
+    new StopStationDef(STATION_IDS.chiba_toshi_monorail.chiba_kouen),
+    new StopStationDef(STATION_IDS.chiba_toshi_monorail.sakusabe),
+    new StopStationDef(STATION_IDS.chiba_toshi_monorail.tendai),
+    new StopStationDef(STATION_IDS.chiba_toshi_monorail.anagawa),
+    new StopStationDef(STATION_IDS.chiba_toshi_monorail.sports_center),
+    new StopStationDef(STATION_IDS.chiba_toshi_monorail.doubutsu_kouen),
+    new StopStationDef(STATION_IDS.chiba_toshi_monorail.mitsuwadai),
+    new StopStationDef(STATION_IDS.jr_east.tsuga),
+    new StopStationDef(STATION_IDS.chiba_toshi_monorail.sakuragi),
+    new StopStationDef(STATION_IDS.chiba_toshi_monorail.oguradai),
+    new StopStationDef(STATION_IDS.chiba_toshi_monorail.chishirodai_kita),
+    new StopStationDef(STATION_IDS.chiba_toshi_monorail.chishirodai),
   ]),
   [LINE_IDS.jr_sotetsu_chokutsu]: new Line('相鉄・JR直通線', 'JR東日本・相模鉄道', [], [
     new StopStationDef(STATION_IDS.jr_east.shinjuku),
