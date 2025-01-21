@@ -69,6 +69,19 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.yokohama_kousoku.minato_mirai}}">みなとみらい線</RouterLink>
         </div>
 
+        東急電鉄
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.touyoko}}">東横線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.denentoshi}}">田園都市線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.tamagawa}}">多摩川線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.oimachi}}">大井町線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.meguro}}">目黒線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.shin_yokohama}}">新横浜線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.ikegami}}">池上線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.setagaya}}">世田谷線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.kodomonokuni}}">こどもの国線</RouterLink>
+        </div>
+
         JR東日本
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.saikyou}}" >埼京線</RouterLink>
@@ -104,17 +117,7 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.shinkansen.hokkaido}}" >北海道新幹線</RouterLink>
         </div>
 
-        東急電鉄
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.touyoko}}">東横線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.denentoshi}}">田園都市線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.tamagawa}}">多摩川線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.oimachi}}">大井町線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.meguro}}">目黒線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.shin_yokohama}}">新横浜線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.ikegami}}">池上線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.setagaya}}">世田谷線</RouterLink>
-        </div>
+
 
 
 
