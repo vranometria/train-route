@@ -96,6 +96,7 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.shinkansen.yamagata}}" >山形新幹線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.shinkansen.akita}}" >秋田新幹線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.shinkansen.hokuriku}}" >北陸新幹線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.shinkansen.hokkaido}}" >北海道新幹線</RouterLink>
         </div>
 
         東急電鉄

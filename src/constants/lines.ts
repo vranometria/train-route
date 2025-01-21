@@ -1529,6 +1529,12 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_west.echizen_takefu, ["rapid","express",]),
     new StopStationDef(STATION_IDS.jr_west.tsuruga, ["rapid","express",]),
   ]),
+  [LINE_IDS.jr_east.shinkansen.hokkaido]: new Line('北海道新幹線', 'JR東日本', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_east.shin_aomori),
+    new StopStationDef(STATION_IDS.jr_east.oku_tsugaru_imabetsu),
+    new StopStationDef(STATION_IDS.jr_east.kikonai),
+    new StopStationDef(STATION_IDS.jr_east.shin_hakodate_hokuto),
+  ]),
 
   // 相模鉄道
   [LINE_IDS.sagami.honsen]: new Line('相鉄本線', '相模鉄道',[

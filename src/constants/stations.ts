@@ -3111,4 +3111,14 @@ export const STATIONS = {
     i.LINE_IDS.jr_west.kohama,
     i.LINE_IDS.hapi_line_fukui.hapi_line_fukui,
   ], "つるが"),
+  // 北海道新幹線
+  [STATION_IDS.jr_east.oku_tsugaru_imabetsu]: new StationInfo("奥津軽いまべつ", NO_TRANSFER, "おくつがるいまべつ"),
+  [STATION_IDS.jr_east.kikonai]: new StationInfo("木古内", [
+    LINE_IDS.jr_east.shinkansen.hokkaido,
+    LINE_IDS.donan_isaribi.donan_isaribi,
+  ], "きこない"),
+  [STATION_IDS.jr_east.shin_hakodate_hokuto]: new StationInfo("新函館北斗", [
+    LINE_IDS.jr_east.shinkansen.hokkaido,
+    LINE_IDS.jr_hokkaidou.hakodate_hosnen,
+  ], "しんはこだてほくと"),
 }

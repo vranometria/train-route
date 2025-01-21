@@ -543,6 +543,14 @@ export const LINE_IDS = {
   akita_nairiku_jukan: {
     akita_nairiku: 'akita-nairiku-jukan-akita-nairiku',
   },
+  /** 道南いさりび鉄道 */
+  donan_isaribi: {
+    donan_isaribi: 'donan-isaribi-donan-isaribi',
+  },
+  /** JR北海道 */
+  jr_hokkaidou: {
+    hakodate_hosnen: 'jr-hakodate-honsen',
+  },
 };
 
 /** 駅ID */
@@ -1596,6 +1604,10 @@ export const STATION_IDS = {
     nagano: "jr-nagano",
     iiyama: "jr-iiyama",
     joetsu_myoko: "jr-joetsu_myoko",
+    // 北海道新幹線
+    oku_tsugaru_imabetsu: "jr-okutsugaru_imabetsu",
+    kikonai: "jr-kikonai",
+    shin_hakodate_hokuto: "jr-shin_hakodate_hokuto",
 
     duplicate: {
       fukushima: {
