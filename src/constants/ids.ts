@@ -71,7 +71,7 @@ export const LINE_IDS = {
     /** 相鉄いずみ野線 */
     izumino: 'sagami-izumino',
     /** 相鉄新横浜線 */
-    sotetsushinyokohama: 'sagami-sotetsushinyokohama',
+    sotetsushin_yokohama: 'sagami-sotetsushin_yokohama',
   },
 
   /** JR東日本 */
@@ -311,7 +311,7 @@ export const LINE_IDS = {
     minato: "hitachinaka-kaihin-minato",
   },
   /** 東急電鉄 */
-  tokyu: {
+  toukyu: {
     denentoshi: 'tokyu-denentoshi',
     toyoko: 'tokyu-toyoko',
     tamagawa: 'tokyu-tamagawa',
@@ -320,7 +320,7 @@ export const LINE_IDS = {
     kodomonokuni: "keikyu-kodomonokuni",
     oimachi: "tokyu-oimachi",
     setagaya: "tokyu-setagaya",
-    shinyokohama: "tokyu-shinyokohama",
+    shin_yokohama: "tokyu-shin_yokohama",
   },
   /** 横浜市営地下鉄 */
   yokohama_subway: {
@@ -1289,7 +1289,7 @@ export const STATION_IDS = {
     nakayama: 'nakayama',
     kamoi: 'kamoi',
     kodukue: 'kodukue',
-    shinyokohama: 'shinyokohama',
+    shin_yokohama: 'shin_yokohama',
     kikuna: 'kikuna',
     oguchi: 'oguchi',
     higashi_kanagawa: 'higashi-kanagawa',

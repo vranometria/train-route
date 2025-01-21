@@ -453,7 +453,7 @@ export const STATIONS = {
   [STATION_IDS.tokyo_metro.hiroo]: new StationInfo('広尾', [], "ひろお"),
   [STATION_IDS.tokyo_metro.nakameguro]: new StationInfo('中目黒', [
     LINE_IDS.tokyo_metro.hibiya,
-    LINE_IDS.tokyu.toyoko,
+    LINE_IDS.toukyu.toyoko,
   ], "なかめぐろ"),
   // >丸の内線
   [STATION_IDS.tokyo_metro.shinotuka]: new StationInfo('新大塚', [], "しんおおつか"),
@@ -1266,7 +1266,7 @@ export const STATIONS = {
     LINE_IDS.keikyu.honsen,
   ], "しながわ"),
   [STATION_IDS.jr_east.oimachi]: new StationInfo('大井町', [
-    LINE_IDS.tokyu.oimachi,
+    LINE_IDS.toukyu.oimachi,
     LINE_IDS.jr_east.yokosuka,
     LINE_IDS.jr_east.shonan_shinjuku,
   ], "おおいまち"),
@@ -1277,8 +1277,8 @@ export const STATIONS = {
   [STATION_IDS.jr_east.omori]: new StationInfo('大森', [], "おおもり"),
   [STATION_IDS.jr_east.kamata]: new StationInfo('蒲田', [
     LINE_IDS.jr_east.keihin_touhoku,
-    LINE_IDS.tokyu.tamagawa,
-    LINE_IDS.tokyu.ikegami,
+    LINE_IDS.toukyu.tamagawa,
+    LINE_IDS.toukyu.ikegami,
   ], "かまた"),
   [STATION_IDS.jr_east.kawasaki]: new StationInfo('川崎', [
     LINE_IDS.jr_east.tokaido,
@@ -1318,8 +1318,8 @@ export const STATIONS = {
     LINE_IDS.tokyo_metro.ginza,
     LINE_IDS.tokyo_metro.hanzoumon,
     LINE_IDS.tokyo_metro.fukutoshin,
-    LINE_IDS.tokyu.toyoko,
-    LINE_IDS.tokyu.denentoshi,
+    LINE_IDS.toukyu.toyoko,
+    LINE_IDS.toukyu.denentoshi,
   ], "しぶや"),
   [STATION_IDS.jr_east.ebisu]: new StationInfo('恵比寿', [
     LINE_IDS.jr_east.saikyou,
@@ -1328,14 +1328,14 @@ export const STATIONS = {
     LINE_IDS.tokyo_metro.hibiya,
   ], "えびす"),
   [STATION_IDS.jr_east.meguro]: new StationInfo('目黒', [
-    LINE_IDS.tokyu.meguro,
+    LINE_IDS.toukyu.meguro,
     LINE_IDS.jr_east.yamanote,
     LINE_IDS.tokyo_metro.nanboku,
     LINE_IDS.tokyo_subway.mita,
   ], "めぐろ"),
   [STATION_IDS.jr_east.gotanda]: new StationInfo('五反田', [
     LINE_IDS.jr_east.yamanote,
-    LINE_IDS.tokyu.ikegami,
+    LINE_IDS.toukyu.ikegami,
     LINE_IDS.tokyo_subway.asakusa,
   ], "ごたんだ"),
   [STATION_IDS.jr_east.osaki]: new StationInfo('大崎', [
@@ -1440,19 +1440,22 @@ export const STATIONS = {
   [STATION_IDS.jr_east.naruse]: new StationInfo('成瀬', [], "なるせ"),
   [STATION_IDS.jr_east.nagatsuta]: new StationInfo('長津田', [
     LINE_IDS.jr_east.yokohama,
-    LINE_IDS.tokyu.denentoshi,
-    LINE_IDS.tokyu.kodomonokuni,
+    LINE_IDS.toukyu.denentoshi,
+    LINE_IDS.toukyu.kodomonokuni,
   ], "ながつた"),
   [STATION_IDS.jr_east.tokaichiba]: new StationInfo('十日市場', [], "とおかいちば"),
-  [STATION_IDS.jr_east.nakayama]: new StationInfo('中山', [], "なかやま"),
+  [STATION_IDS.jr_east.nakayama]: new StationInfo('中山', [
+    LINE_IDS.jr_east.yokohama,
+    LINE_IDS.yokohama_subway.green_line,
+  ], "なかやま"),
   [STATION_IDS.jr_east.kamoi]: new StationInfo('鴨居', [], "かもい"),
   [STATION_IDS.jr_east.kodukue]: new StationInfo('小机', [], "こづくえ"),
-  [STATION_IDS.jr_east.shinyokohama]: new StationInfo('新横浜', [
+  [STATION_IDS.jr_east.shin_yokohama]: new StationInfo('新横浜', [
     LINE_IDS.jr_east.yokohama,
     LINE_IDS.jr_east.shinkansen.tokaido,
     LINE_IDS.yokohama_subway.blue_line,
-    LINE_IDS.sagami.sotetsushinyokohama,
-    LINE_IDS.tokyu.shinyokohama,
+    LINE_IDS.sagami.sotetsushin_yokohama,
+    LINE_IDS.toukyu.shin_yokohama,
   ], "しんよこはま"),
   [STATION_IDS.jr_east.kikuna]: new StationInfo('菊名', [], "きくな"),
   [STATION_IDS.jr_east.oguchi]: new StationInfo('大口', [], "おおぐち"),
@@ -1861,8 +1864,8 @@ export const STATIONS = {
   [STATION_IDS.jr_east.hirama]: new StationInfo('平間', NO_TRANSFER, "ひらま"),
   [STATION_IDS.jr_east.mukougawara]: new StationInfo('向河原', NO_TRANSFER, "むこうがわら"),
   [STATION_IDS.jr_east.musashikosugi]: new StationInfo('武蔵小杉', [
-    LINE_IDS.tokyu.toyoko,
-    LINE_IDS.tokyu.meguro,
+    LINE_IDS.toukyu.toyoko,
+    LINE_IDS.toukyu.meguro,
     LINE_IDS.jr_east.nanbu,
     LINE_IDS.jr_east.yokosuka,
     LINE_IDS.jr_east.shonan_shinjuku,
@@ -1871,8 +1874,8 @@ export const STATIONS = {
   [STATION_IDS.jr_east.musashishinjou]: new StationInfo('武蔵新城', NO_TRANSFER, "むさししんじょう"),
   [STATION_IDS.jr_east.musashimizonokuchi]: new StationInfo('武蔵溝ノ口', [
     LINE_IDS.jr_east.nanbu,
-    new ExchangeInfo(LINE_IDS.tokyu.oimachi, STATION_IDS.tokyu.mizonokuchi),
-    new ExchangeInfo(LINE_IDS.tokyu.denentoshi, STATION_IDS.jr_east.mizonokuchi),
+    new ExchangeInfo(LINE_IDS.toukyu.oimachi, STATION_IDS.tokyu.mizonokuchi),
+    new ExchangeInfo(LINE_IDS.toukyu.denentoshi, STATION_IDS.jr_east.mizonokuchi),
   ], "むさしみぞのくち"),
   [STATION_IDS.jr_east.tsudayama]: new StationInfo('津田山', NO_TRANSFER, "つだやま"),
   [STATION_IDS.jr_east.kuji]: new StationInfo('久地', NO_TRANSFER, "くじ"),
@@ -2246,7 +2249,7 @@ export const STATIONS = {
   [STATION_IDS.sagami.hiranumabashi]: new StationInfo('平沼橋', []),
   [STATION_IDS.sagami.hazawayokohamakokudai]: new StationInfo('羽沢横浜国大', [
     LINE_IDS.jr_sotetsu_chokutsu,
-    LINE_IDS.sagami.sotetsushinyokohama,
+    LINE_IDS.sagami.sotetsushin_yokohama,
   ], "はざわよこはまこくだい"),
   // ＞いずみ野線
   [STATION_IDS.sagami.minami_makigahara]: new StationInfo('南万騎が原', NO_TRANSFER, "みなみまきがはら"),
@@ -2256,6 +2259,8 @@ export const STATIONS = {
   [STATION_IDS.sagami.izumichuo]: new StationInfo('いずみ中央', NO_TRANSFER, "いずみちゅうおう"),
   [STATION_IDS.sagami.yumegaoka]: new StationInfo('ゆめが丘', NO_TRANSFER, "ゆめがおか"),
 
+  // 横浜市営地下鉄
+  // ＞ブルーライン
   [STATION_IDS.yokohama_subway.nakagawa]: new StationInfo('中川', NO_TRANSFER, "なかがわ"),
   [STATION_IDS.yokohama_subway.center_kita]: new StationInfo('センター北', [
     LINE_IDS.yokohama_subway.blue_line,
@@ -2286,6 +2291,20 @@ export const STATIONS = {
   [STATION_IDS.yokohama_subway.tateba]: new StationInfo('立場', NO_TRANSFER, "たてば"),
   [STATION_IDS.yokohama_subway.shimo_iida]: new StationInfo('下飯田', NO_TRANSFER, "しもいいだ"),
   [STATION_IDS.yokohama_subway.kounan_chuou]: new StationInfo('港南中央', NO_TRANSFER, "こうなんちゅうおう"),
+  // ＞グリーンライン
+  [STATION_IDS.yokohama_subway.hiyoshi]: new StationInfo('日吉', [
+    LINE_IDS.yokohama_subway.green_line,
+    LINE_IDS.toukyu.toyoko,
+    LINE_IDS.toukyu.meguro,
+    LINE_IDS.toukyu.shin_yokohama,
+  ], "ひよし"),
+  [STATION_IDS.yokohama_subway.hiyoshi_honchou]: new StationInfo('日吉本町', NO_TRANSFER, "ひよしほんちょう"),
+  [STATION_IDS.yokohama_subway.takada]: new StationInfo('高田', NO_TRANSFER, "たかだ"),
+  [STATION_IDS.yokohama_subway.higashi_yamada]: new StationInfo('東山田', NO_TRANSFER, "ひがしやまだ"),
+  [STATION_IDS.yokohama_subway.kita_yamada]: new StationInfo('北山田', NO_TRANSFER, "きたやまだ"),
+  [STATION_IDS.yokohama_subway.tuduki_fureainooka]: new StationInfo('都筑ふれあいの丘', NO_TRANSFER, "つつきふれあいのおか"),
+  [STATION_IDS.yokohama_subway.kawawacho]: new StationInfo('川和町', NO_TRANSFER, "かわわちょう"),
+
 
   // 小田急
   [STATION_IDS.sagami.sagamino]: new StationInfo('さがみ野', [], "さがみの"),
@@ -2351,7 +2370,7 @@ export const STATIONS = {
   [STATION_IDS.odakyu.higashirinkan]: new StationInfo('東林間', [], "ひがしりんかん"),
   [STATION_IDS.odakyu.chuorinkan]: new StationInfo('中央林間', [
     LINE_IDS.odakyu.enoshima,
-    LINE_IDS.tokyu.denentoshi,
+    LINE_IDS.toukyu.denentoshi,
   ], "ちゅうおうりんかん"),
   [STATION_IDS.odakyu.minamirinkan]: new StationInfo('南林間', []),
   [STATION_IDS.sagami.tsuruma]: new StationInfo('鶴間', []),
@@ -2622,7 +2641,7 @@ export const STATIONS = {
   ], "めいだいまえ"),
   [STATION_IDS.keio.shimotakaido]: new StationInfo('下高井戸', [
     LINE_IDS.keiou.keiou,
-    LINE_IDS.tokyu.setagaya,
+    LINE_IDS.toukyu.setagaya,
   ], "しもたかいど"),
   [STATION_IDS.keio.sakurajosui]: new StationInfo('桜上水', [], "さくらじょうすい"),
   [STATION_IDS.keio.kami_kitazawa]: new StationInfo('上北沢', [], "かみきたざわ"),
@@ -2753,15 +2772,15 @@ export const STATIONS = {
   // ＞田園都市線
   [STATION_IDS.tokyu.ikejiriohashi]: new StationInfo('池尻大橋', NO_TRANSFER, "いけじりおおはし"),
   [STATION_IDS.tokyu.sangenjaya]: new StationInfo('三軒茶屋', [
-    LINE_IDS.tokyu.denentoshi,
-    LINE_IDS.tokyu.setagaya,
+    LINE_IDS.toukyu.denentoshi,
+    LINE_IDS.toukyu.setagaya,
   ], "さんげんじゃや"),
   [STATION_IDS.tokyu.komazawadaigaku]: new StationInfo('駒沢大学', NO_TRANSFER, "こまざわだいがく"),
   [STATION_IDS.tokyu.sakurashinmachi]: new StationInfo('桜新町', NO_TRANSFER, "さくらしんまち"),
   [STATION_IDS.tokyu.yoga]: new StationInfo('用賀', NO_TRANSFER, "ようが"),
   [STATION_IDS.tokyu.futakotamagawa]: new StationInfo('二子玉川', [
-    LINE_IDS.tokyu.denentoshi,
-    LINE_IDS.tokyu.oimachi,
+    LINE_IDS.toukyu.denentoshi,
+    LINE_IDS.toukyu.oimachi,
   ], "ふたこたまがわ"),
   [STATION_IDS.tokyu.futako_shinchi]: new StationInfo('二子新地', NO_TRANSFER, "ふたこしんち"),
   [STATION_IDS.tokyu.takatsu]: new StationInfo('高津', NO_TRANSFER, "たかつ"),
@@ -2771,7 +2790,7 @@ export const STATIONS = {
   [STATION_IDS.tokyu.washinuma]: new StationInfo('鷲沼', NO_TRANSFER, "わしぬま"),
   [STATION_IDS.tokyu.tama_plaza]: new StationInfo('たまプラーザ', NO_TRANSFER, "たまぷらーざ"),
   [STATION_IDS.tokyu.azamino]: new StationInfo('あざみ野', [
-    LINE_IDS.tokyu.denentoshi,
+    LINE_IDS.toukyu.denentoshi,
     LINE_IDS.yokohama_subway.blue_line,
   ], "あざみの"),
   [STATION_IDS.tokyu.eda]: new StationInfo('江田', NO_TRANSFER, "えだ"),
@@ -2785,14 +2804,14 @@ export const STATIONS = {
   [STATION_IDS.tokyu.tsukimino]: new StationInfo('つきみ野', NO_TRANSFER, "つきみの"),
   [STATION_IDS.tokyu.mizonokuchi]: new StationInfo('溝の口', [
     new ExchangeInfo(LINE_IDS.jr_east.nanbu, STATION_IDS.jr_east.musashimizonokuchi),
-    LINE_IDS.tokyu.oimachi,
-    LINE_IDS.tokyu.denentoshi,
+    LINE_IDS.toukyu.oimachi,
+    LINE_IDS.toukyu.denentoshi,
   ], "みぞのくち"),
   // ＞多摩川線
   [STATION_IDS.tokyu.tamagawa]: new StationInfo('多摩川', [
-    LINE_IDS.tokyu.tamagawa,
-    LINE_IDS.tokyu.toyoko,
-    LINE_IDS.tokyu.meguro,
+    LINE_IDS.toukyu.tamagawa,
+    LINE_IDS.toukyu.toyoko,
+    LINE_IDS.toukyu.meguro,
   ], "たまがわ"),
   [STATION_IDS.tokyu.numabe]: new StationInfo('沼部', NO_TRANSFER, "ぬまべ"),
   [STATION_IDS.tokyu.unoki]: new StationInfo('鵜の木', NO_TRANSFER, "うのき"),
@@ -2803,23 +2822,23 @@ export const STATIONS = {
   [STATION_IDS.tokyu.shimoshinmei]: new StationInfo('下神明', NO_TRANSFER, "しもしんめい"),
   [STATION_IDS.tokyu.togoshikouen]: new StationInfo('戸越公園', NO_TRANSFER, "とごしこうえん"),
   [STATION_IDS.tokyu.nakanobe]: new StationInfo('中延', [
-    LINE_IDS.tokyu.oimachi,
+    LINE_IDS.toukyu.oimachi,
     LINE_IDS.tokyo_subway.asakusa,
   ], "なかのべ"),
   [STATION_IDS.tokyu.ebaracho]: new StationInfo('荏原町', NO_TRANSFER, "えばらちょう"),
   [STATION_IDS.tokyu.hatanodai]: new StationInfo('旗の台',[
-    LINE_IDS.tokyu.oimachi,
-    LINE_IDS.tokyu.ikegami,
+    LINE_IDS.toukyu.oimachi,
+    LINE_IDS.toukyu.ikegami,
   ], "はたのだい"),
   [STATION_IDS.tokyu.kitasenzoku]: new StationInfo('北千束', [], "きたせんぞく"),
   [STATION_IDS.tokyu.ookayama]: new StationInfo('大岡山',[
-    LINE_IDS.tokyu.oimachi,
-    LINE_IDS.tokyu.meguro,
+    LINE_IDS.toukyu.oimachi,
+    LINE_IDS.toukyu.meguro,
   ], "おおかやま"),
   [STATION_IDS.tokyu.midorigaoka]: new StationInfo('緑が丘', NO_TRANSFER, "みどりがおか"),
   [STATION_IDS.tokyu.jiyugaoka]: new StationInfo('自由が丘',[
-    LINE_IDS.tokyu.oimachi,
-    LINE_IDS.tokyu.toyoko,
+    LINE_IDS.toukyu.oimachi,
+    LINE_IDS.toukyu.toyoko,
   ], "じゆうがおか"),
   [STATION_IDS.tokyu.kuhonbutsu]: new StationInfo('九品仏', NO_TRANSFER, "くほんぶつ"),
   [STATION_IDS.tokyu.oyamadai]: new StationInfo('尾山台', NO_TRANSFER, "おやまだい"),
@@ -2832,14 +2851,14 @@ export const STATIONS = {
   [STATION_IDS.tokyu.senzoku]: new StationInfo('洗足', NO_TRANSFER, "せんぞく"),
   [STATION_IDS.tokyu.okuzawa]: new StationInfo('奥沢', NO_TRANSFER, "おくざわ"),
   [STATION_IDS.tokyu.denenchohu]: new StationInfo('田園調布', [
-    LINE_IDS.tokyu.denentoshi,
-    LINE_IDS.tokyu.toyoko,
+    LINE_IDS.toukyu.denentoshi,
+    LINE_IDS.toukyu.toyoko,
   ], "でんえんちょうふ"),
   [STATION_IDS.tokyu.shinmaruko]: new StationInfo('新丸子', [], "しんまるこ"),
   [STATION_IDS.tokyu.motosumiyoshi]: new StationInfo('元住吉', [], "もとすみよし"),
   [STATION_IDS.tokyu.hiyoshi]: new StationInfo('日吉', [
-    LINE_IDS.tokyu.toyoko,
-    LINE_IDS.tokyu.shinyokohama,
+    LINE_IDS.toukyu.toyoko,
+    LINE_IDS.toukyu.shin_yokohama,
     LINE_IDS.yokohama_subway.green_line,
     LINE_IDS.jr_sotetsu_chokutsu,
   ], "ひよし"),

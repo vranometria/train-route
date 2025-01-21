@@ -580,7 +580,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.yokohama_subway.nakamachidai),
     new StopStationDef(STATION_IDS.yokohama_subway.nippa),
     new StopStationDef(STATION_IDS.yokohama_subway.kita_shin_yokohama),
-    new StopStationDef(STATION_IDS.jr_east.shinyokohama),
+    new StopStationDef(STATION_IDS.jr_east.shin_yokohama),
     new StopStationDef(STATION_IDS.yokohama_subway.kishine_kouen),
     new StopStationDef(STATION_IDS.yokohama_subway.katakurachou),
     new StopStationDef(STATION_IDS.yokohama_subway.mitsuzawa_shimocho),
@@ -727,7 +727,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.nakayama, []),
     new StopStationDef(STATION_IDS.jr_east.kamoi, []),
     new StopStationDef(STATION_IDS.jr_east.kodukue, []),
-    new StopStationDef(STATION_IDS.jr_east.shinyokohama, []),
+    new StopStationDef(STATION_IDS.jr_east.shin_yokohama, []),
     new StopStationDef(STATION_IDS.jr_east.kikuna, []),
     new StopStationDef(STATION_IDS.jr_east.oguchi, []),
     new StopStationDef(STATION_IDS.jr_east.higashi_kanagawa, []),
@@ -1406,7 +1406,7 @@ export const LINES = {
   ], [
     new StopStationDef(STATION_IDS.jr_east.tokyo, ["rapid", "semi-express", "express"]),
     new StopStationDef(STATION_IDS.jr_east.shinagawa, ["rapid", "semi-express", "express"]),
-    new StopStationDef(STATION_IDS.jr_east.shinyokohama, ["rapid", "semi-express", "express"]),
+    new StopStationDef(STATION_IDS.jr_east.shin_yokohama, ["rapid", "semi-express", "express"]),
     new StopStationDef(STATION_IDS.jr_east.odawara, ["rapid", "semi-express"]),
     new StopStationDef(STATION_IDS.jr_east.atami, ["rapid", "semi-express"]),
     new StopStationDef(STATION_IDS.jr_tokai.mishima, ["rapid", "semi-express"]),
@@ -1558,8 +1558,8 @@ export const LINES = {
     new StopStationDef(STATION_IDS.sagami.hiranumabashi, []),
     new StopStationDef(STATION_IDS.jr_east.yokohama, ["rapid", "express", "commuter"]),
   ]),
-  [LINE_IDS.sagami.sotetsushinyokohama]: new Line('相鉄新横浜線', '相模鉄道', [], [
-    new StopStationDef(STATION_IDS.jr_east.shinyokohama),
+  [LINE_IDS.sagami.sotetsushin_yokohama]: new Line('相鉄新横浜線', '相模鉄道', [], [
+    new StopStationDef(STATION_IDS.jr_east.shin_yokohama),
     new StopStationDef(STATION_IDS.sagami.hazawayokohamakokudai),
     new StopStationDef(STATION_IDS.tokyu.hiyoshi),
   ]),
@@ -1689,10 +1689,10 @@ export const LINES = {
   [LINE_IDS.shonam_monorail.shonan_monorail]: new Line('湘南モノレール', '湘南モノレール', [], []),
 
   // 東急
-  [LINE_IDS.tokyu.toyoko]: new Line('東横線', '東急電鉄', [], []),
-  [LINE_IDS.tokyu.meguro]: new Line('目黒線', '東急電鉄', [], []),
-  [LINE_IDS.tokyu.ikegami]: new Line('池上線', '東急電鉄', [], []),
-  [LINE_IDS.tokyu.tamagawa]: new Line('多摩川線', '東急電鉄', LOCAL_ONLY, [
+  [LINE_IDS.toukyu.toyoko]: new Line('東横線', '東急電鉄', [], []),
+  [LINE_IDS.toukyu.meguro]: new Line('目黒線', '東急電鉄', [], []),
+  [LINE_IDS.toukyu.ikegami]: new Line('池上線', '東急電鉄', [], []),
+  [LINE_IDS.toukyu.tamagawa]: new Line('多摩川線', '東急電鉄', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.tokyu.tamagawa),
     new StopStationDef(STATION_IDS.tokyu.numabe),
     new StopStationDef(STATION_IDS.tokyu.unoki),
@@ -1701,7 +1701,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyu.yagutiwatashi),
     new StopStationDef(STATION_IDS.jr_east.kamata),
   ]),
-  [LINE_IDS.tokyu.denentoshi]: new Line('田園都市線', '東急電鉄',
+  [LINE_IDS.toukyu.denentoshi]: new Line('田園都市線', '東急電鉄',
     [
       new KindDef("急行", "express"),
       new KindDef("準急", "semi-express")
@@ -1735,7 +1735,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.tokyu.tsukimino, ["semi-express"]),
       new StopStationDef(STATION_IDS.odakyu.chuorinkan, ["express","semi-express"]),
   ]),
-  [LINE_IDS.tokyu.oimachi]: new Line('大井町線', '東急電鉄', [new KindDef("急行・準急", "express")], [
+  [LINE_IDS.toukyu.oimachi]: new Line('大井町線', '東急電鉄', [new KindDef("急行・準急", "express")], [
     new StopStationDef(STATION_IDS.jr_east.oimachi, ["express"]),
     new StopStationDef(STATION_IDS.tokyu.shimoshinmei),
     new StopStationDef(STATION_IDS.tokyu.togoshikouen),
@@ -1753,7 +1753,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyu.futakotamagawa, ["express"]),
     new StopStationDef(STATION_IDS.jr_east.mizonokuchi),
   ]),
-  [LINE_IDS.tokyu.meguro]: new Line('目黒線', '東急電鉄', [new KindDef("急行・準急", "express")], [
+  [LINE_IDS.toukyu.meguro]: new Line('目黒線', '東急電鉄', [new KindDef("急行・準急", "express")], [
     new StopStationDef(STATION_IDS.jr_east.meguro, ["express"]),
     new StopStationDef(STATION_IDS.tokyu.fudomae),
     new StopStationDef(STATION_IDS.tokyu.musashikoyama, ["express"]),

@@ -59,7 +59,7 @@ import { LINE_IDS } from '@/constants/ids'
         相模鉄道
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.sagami.honsen}}">相鉄本線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.sagami.sotetsushinyokohama}}">相鉄新横浜線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.sagami.sotetsushin_yokohama}}">相鉄新横浜線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_sotetsu_chokutsu}}">相鉄・JR直通線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.sagami.izumino}}">いずみ野線</RouterLink>
         </div>
@@ -101,10 +101,10 @@ import { LINE_IDS } from '@/constants/ids'
 
         東急電鉄
         <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyu.denentoshi}}">田園都市線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyu.tamagawa}}">多摩川線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyu.oimachi}}">大井町線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyu.meguro}}">目黒線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.denentoshi}}">田園都市線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.tamagawa}}">多摩川線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.oimachi}}">大井町線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.meguro}}">目黒線</RouterLink>
         </div>
 
 
