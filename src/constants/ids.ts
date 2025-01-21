@@ -1746,7 +1746,7 @@ export const STATION_IDS = {
     ashigara: "ashigara",
   },
   /** 東急駅 */
-  tokyu: {
+  toukyu: {
     // 田園都市線
     ikejiriohashi: "ikejiriohashi",
     sangenjaya: "sangenjaya",
@@ -1803,6 +1803,7 @@ export const STATION_IDS = {
     shinmaruko: "shinmaruko",
     motosumiyoshi: "motosumiyoshi",
     hiyoshi: "hiyoshi",
+    shin_tsunashima: "toukyu-shin-tsunashima",
   },
   /** 東武 駅 */
   tobu: {
