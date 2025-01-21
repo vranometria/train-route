@@ -313,7 +313,8 @@ export const LINE_IDS = {
   /** 東急電鉄 */
   toukyu: {
     denentoshi: 'tokyu-denentoshi',
-    toyoko: 'tokyu-toyoko',
+    /** 東横線 */
+    touyoko: 'tokyu-toyoko',
     tamagawa: 'tokyu-tamagawa',
     meguro: 'tokyu-meguro',
     ikegami: "tokyu-ikegami",
@@ -326,6 +327,10 @@ export const LINE_IDS = {
   yokohama_subway: {
     blue_line: 'yokohama-subway-blue-line',
     green_line: 'yokohama-subway-green-line',
+  },
+  /** 横浜高速鉄道 */
+  yokohama_kousoku: {
+    minato_mirai: 'yokohama-kousoku-minato-mirai',
   },
   /** 東京臨海高速鉄道*/
   toukyo_rinkai_kousoku: {
@@ -1364,7 +1369,7 @@ export const STATION_IDS = {
     ino: 'ino',
     takasakitonyamachi: 'takasaki-tonyamachi',
     nishioi: "nishioi",
-    musashikosugi: "musashikosugi",
+    musashi_kosugi: "musashi_kosugi",
     shinkawasaki: "shinkawasaki",
     hodogaya: "hodogaya",
     higashitotsuka: "higashitotsuka",
@@ -1802,8 +1807,18 @@ export const STATION_IDS = {
     denenchohu: "denenchohu",
     shinmaruko: "shinmaruko",
     motosumiyoshi: "motosumiyoshi",
-    hiyoshi: "hiyoshi",
     shin_tsunashima: "toukyu-shin-tsunashima",
+    // 東横線
+    daikanyama: "toukyu-daikanyama",
+    yutenji: "toukyu-yutenji",
+    gakugei_daigaku: "toukyu-gakugei-daigaku",
+    toritsu_daigaku: "toukyu-toritsu-daigaku",
+    tsunashima: "toukyu-tsunashima",
+    okurayama: "toukyu-okurayama",
+    myourenji: "toukyu-myourenji",
+    hakuraku: "toukyu-hakuraku",
+    higashi_hakuraku: "toukyu-higashi-hakuraku",
+    tanmachi: "toukyu-tanmachi",
   },
   /** 東武 駅 */
   tobu: {

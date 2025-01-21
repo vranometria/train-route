@@ -101,6 +101,7 @@ import { LINE_IDS } from '@/constants/ids'
 
         東急電鉄
         <div>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.touyoko}}">東横線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.denentoshi}}">田園都市線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.tamagawa}}">多摩川線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.oimachi}}">大井町線</RouterLink>
