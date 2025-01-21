@@ -2893,6 +2893,14 @@ export const STATIONS = {
   [STATION_IDS.toukyu.ikegami]: new StationInfo('池上', NO_TRANSFER, "いけがみ"),
   [STATION_IDS.toukyu.hasunuma]: new StationInfo('蓮沼', NO_TRANSFER, "はすぬま"),
 
+  // 横浜高速鉄道
+  [STATION_IDS.yokohama_kousoku.shin_takashima]: new StationInfo('新高島', NO_TRANSFER, "しんたかしま"),
+  [STATION_IDS.yokohama_kousoku.minato_mirai]: new StationInfo('みなとみらい', NO_TRANSFER, "みなとみらい"),
+  [STATION_IDS.yokohama_kousoku.basyamichi]: new StationInfo('馬車道', NO_TRANSFER, "ばしゃみち"),
+  [STATION_IDS.yokohama_kousoku.nihon_odori]: new StationInfo('日本大通り', NO_TRANSFER, "にほんおおどおり"),
+  [STATION_IDS.yokohama_kousoku.motomachi_chukagai]: new StationInfo('元町・中華街', NO_TRANSFER, "もとまちちゅうかがい"),
+
+  // JR東海
   [STATION_IDS.jr_tokai.mishima]: new StationInfo('三島', [
     LINE_IDS.jr_east.tokaido,
     LINE_IDS.izuhakone.sunzu,

@@ -315,13 +315,19 @@ export const LINE_IDS = {
     denentoshi: 'tokyu-denentoshi',
     /** 東横線 */
     touyoko: 'tokyu-toyoko',
-    tamagawa: 'tokyu-tamagawa',
-    meguro: 'tokyu-meguro',
+    /** 池上線 */
     ikegami: "tokyu-ikegami",
-    kodomonokuni: "keikyu-kodomonokuni",
-    oimachi: "tokyu-oimachi",
-    setagaya: "tokyu-setagaya",
+    /** 新横浜線 */
     shin_yokohama: "tokyu-shin_yokohama",
+    /** 多摩川線 */
+    tamagawa: 'tokyu-tamagawa',
+    /** 目黒線 */
+    meguro: 'tokyu-meguro',
+    /** 大井町線 */
+    oimachi: "tokyu-oimachi",
+    /** こどもの国線 */
+    kodomonokuni: "keikyu-kodomonokuni",
+    setagaya: "tokyu-setagaya",
   },
   /** 横浜市営地下鉄 */
   yokohama_subway: {
@@ -1832,6 +1838,14 @@ export const STATION_IDS = {
     chidoricho: "toukyu-chidoricho",
     ikegami: "toukyu-ikegami",
     hasunuma: "toukyu-hasunuma",
+  },
+  /** 京急駅 */
+  yokohama_kousoku: {
+    shin_takashima: "yokohama-kousoku-shin-takashima",
+    minato_mirai: "yokohama-kousoku-minato-mirai",
+    basyamichi: "yokohama-kousoku-basyamichi",
+    nihon_odori: "yokohama-kousoku-nihon-odori",
+    motomachi_chukagai: "yokohama-kousoku-motomachi-chukagai",
   },
   /** 東武 駅 */
   tobu: {

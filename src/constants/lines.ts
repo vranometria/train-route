@@ -1821,6 +1821,16 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.oimachi),
     new StopStationDef(STATION_IDS.jr_east.osaki),
   ]),
+  // 横浜高速鉄道
+  [LINE_IDS.yokohama_kousoku.minato_mirai]: new Line('みなとみらい線', '東急電鉄', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_east.yokohama),
+    new StopStationDef(STATION_IDS.yokohama_kousoku.shin_takashima),
+    new StopStationDef(STATION_IDS.yokohama_kousoku.minato_mirai),
+    new StopStationDef(STATION_IDS.yokohama_kousoku.basyamichi),
+    new StopStationDef(STATION_IDS.yokohama_kousoku.nihon_odori),
+    new StopStationDef(STATION_IDS.yokohama_kousoku.motomachi_chukagai),
+  ]),
+
 
   // 京成電鉄
   [LINE_IDS.keisei.honsen]: new Line('京成本線', '京成電鉄', [], [

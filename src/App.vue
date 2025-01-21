@@ -64,6 +64,11 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.sagami.izumino}}">いずみ野線</RouterLink>
         </div>
 
+        横浜高速鉄道
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.yokohama_kousoku.minato_mirai}}">みなとみらい線</RouterLink>
+        </div>
+
         JR東日本
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.saikyou}}" >埼京線</RouterLink>
