@@ -73,6 +73,10 @@ export const LINE_IDS = {
     /** 相鉄新横浜線 */
     sotetsushin_yokohama: 'sagami-sotetsushin_yokohama',
   },
+  /** 箱根ロープウェイ */
+  hakone_ropeway: {
+    hakone_tozan_cable_car: "hakone-tozan-cable-car",
+  },
 
   /** JR東日本 */
   jr_east: {
@@ -268,9 +272,9 @@ export const LINE_IDS = {
   odakyu: {
     /** 小田原線 */
     odawara: 'odakyu-odawara',
+    /** 江ノ島線 */
     enoshima: 'odakyu-enoshima',
-    /** 小田急線 */
-    odakyu: 'odakyu-odakyu',
+    /** 多摩線 */
     tama: 'odakyu-tama',
     /** 箱根登山線 */
     hakonetozan: 'odakyu-hakonetozan',
@@ -1851,10 +1855,23 @@ export const STATION_IDS = {
     kayama: "kayama",
     tomizu: "tomizu",
     hotaruda: "hotaruda",
-    /** 足柄(神奈川) */
     ashigara: "ashigara",
+    // 箱根登山線
+    hakone_itabashi: "odakyu-hakone-itabashi",
+    kazamatsuri: "odakyu-kazamatsuri",
+    iryuda: "odakyu-iryuda",
+    hakone_yumoto: "odakyu-hakone-yumoto",
+    tounosawa: "odakyu-tounosawa",
+    ohiradai: "odakyu-ohiradai",
+    miyanoshita: "odakyu-miyanoshita",
+    kowakidani: "odakyu-kowakidani",
+    choukokunomori: "odakyu-choukokunomori",
+    goura: "odakyu-goura",
   },
-  /** 京急 駅 */
+  /** 箱根ロープウェイ */
+  hakone_ropeway: {
+  },
+  /** 横浜高速 駅 */
   yokohama_kousoku: {
     shin_takashima: "yokohama-kousoku-shin-takashima",
     minato_mirai: "yokohama-kousoku-minato-mirai",

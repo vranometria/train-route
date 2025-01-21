@@ -2337,7 +2337,7 @@ export const STATIONS = {
   [STATION_IDS.toukyu.miyanosaka]: new StationInfo('宮の坂', NO_TRANSFER, "みやのさか"),
   [STATION_IDS.toukyu.yamashita]: new StationInfo('山下', [
     LINE_IDS.toukyu.setagaya,
-    LINE_IDS.odakyu.odakyu,
+    LINE_IDS.odakyu.odawara,
   ], "やました"),
   [STATION_IDS.toukyu.matsubara]: new StationInfo('松原', NO_TRANSFER, "まつばら"),
   [STATION_IDS.toukyu.nishitaishidou]: new StationInfo('西太子堂', NO_TRANSFER, "にしたいしどう"),
@@ -2530,6 +2530,20 @@ export const STATIONS = {
   [STATION_IDS.odakyu.honkugenuma]: new StationInfo('本鵠沼', []),
   [STATION_IDS.odakyu.kugenumakaigan]: new StationInfo('鵠沼海岸', []),
   [STATION_IDS.odakyu.kataseenoshima]: new StationInfo('片瀬江ノ島', []),
+  // ＞箱根登山線
+  [STATION_IDS.odakyu.hakone_itabashi]: new StationInfo('箱根板橋', NO_TRANSFER, "はこねいたばし"),
+  [STATION_IDS.odakyu.kazamatsuri]: new StationInfo('風祭', NO_TRANSFER, "かざまつり"),
+  [STATION_IDS.odakyu.iryuda]: new StationInfo('入生田', NO_TRANSFER, "いりゅうだ"),
+  [STATION_IDS.odakyu.hakone_yumoto]: new StationInfo('箱根湯本', NO_TRANSFER, "はこねゆもと"),
+  [STATION_IDS.odakyu.tounosawa]: new StationInfo('桃源台', NO_TRANSFER, "とうのさわ"),
+  [STATION_IDS.odakyu.ohiradai]: new StationInfo('大平台', NO_TRANSFER, "おおひらだい"),
+  [STATION_IDS.odakyu.miyanoshita]: new StationInfo('宮ノ下', NO_TRANSFER, "みやのした"),
+  [STATION_IDS.odakyu.kowakidani]: new StationInfo('小涌谷', NO_TRANSFER, "こわきだに"),
+  [STATION_IDS.odakyu.choukokunomori]: new StationInfo('彫刻の森', NO_TRANSFER, "彫刻の森"),
+  [STATION_IDS.odakyu.goura]: new StationInfo('強羅', [
+    LINE_IDS.odakyu.hakonetozan,
+    LINE_IDS.hakone_ropeway.hakone_tozan_cable_car,
+  ], "ごうら"),
 
   // 西武鉄道
   // ＞池袋線

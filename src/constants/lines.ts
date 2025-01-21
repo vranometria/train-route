@@ -1792,6 +1792,21 @@ export const LINES = {
     new StopStationDef(STATION_IDS.odakyu.ashigara),
     new StopStationDef(STATION_IDS.jr_east.odawara, ["rapid", "express"]),
   ]),
+  [LINE_IDS.odakyu.hakonetozan]: new Line('箱根登山鉄道', '小田急電鉄', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_east.odawara),
+    new StopStationDef(STATION_IDS.odakyu.hakone_itabashi),
+    new StopStationDef(STATION_IDS.odakyu.kazamatsuri),
+    new StopStationDef(STATION_IDS.odakyu.iryuda),
+    new StopStationDef(STATION_IDS.odakyu.hakone_yumoto),
+    new StopStationDef(STATION_IDS.odakyu.tounosawa),
+    new StopStationDef(STATION_IDS.odakyu.ohiradai),
+    new StopStationDef(STATION_IDS.odakyu.miyanoshita),
+    new StopStationDef(STATION_IDS.odakyu.ohiradai),
+    new StopStationDef(STATION_IDS.odakyu.miyanoshita),
+    new StopStationDef(STATION_IDS.odakyu.kowakidani),
+    new StopStationDef(STATION_IDS.odakyu.choukokunomori),
+    new StopStationDef(STATION_IDS.odakyu.goura),
+  ]),
 
   // 首都圏新都市
   [LINE_IDS.shutoken_shintoshi.tsukuba_express]: new Line('つくばエクスプレス', '首都圏新都市', [

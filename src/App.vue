@@ -143,9 +143,10 @@ import { LINE_IDS } from '@/constants/ids'
 
         小田急電鉄
         <div>
-          <RouterLink :to="{name: 'line', params: {id: 'odakyu-odawara'}}">小田原線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: 'odakyu-enoshima'}}">江ノ島線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.odakyu.odawara}}">小田原線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.odakyu.enoshima}}">江ノ島線</RouterLink>
           <!-- <RouterLink :to="{name: 'line', params: {id: 'odakyu-tama'}}">多摩線</RouterLink> -->
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.odakyu.hakonetozan}}">箱根登山線</RouterLink>
         </div>
 
         西武鉄道
