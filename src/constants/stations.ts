@@ -2892,6 +2892,18 @@ export const STATIONS = {
   [STATION_IDS.toukyu.chidoricho]: new StationInfo('千鳥町', NO_TRANSFER, "ちどりちょう"),
   [STATION_IDS.toukyu.ikegami]: new StationInfo('池上', NO_TRANSFER, "いけがみ"),
   [STATION_IDS.toukyu.hasunuma]: new StationInfo('蓮沼', NO_TRANSFER, "はすぬま"),
+  // 世田谷線
+  [STATION_IDS.toukyu.kamimachi]: new StationInfo('上町', NO_TRANSFER, "かみまち"),
+  [STATION_IDS.toukyu.miyanosaka]: new StationInfo('宮の坂', NO_TRANSFER, "みやのさか"),
+  [STATION_IDS.toukyu.yamashita]: new StationInfo('山下', [
+    LINE_IDS.toukyu.setagaya,
+    LINE_IDS.odakyu.odakyu,
+  ], "やました"),
+  [STATION_IDS.toukyu.matsubara]: new StationInfo('松原', NO_TRANSFER, "まつばら"),
+  [STATION_IDS.toukyu.nishitaishidou]: new StationInfo('西太子堂', NO_TRANSFER, "にしたいしどう"),
+  [STATION_IDS.toukyu.wakabayashi]: new StationInfo('若林', NO_TRANSFER, "わかばやし"),
+  [STATION_IDS.toukyu.syouinjinjamae]: new StationInfo('松陰神社前', NO_TRANSFER, "しょういんじんじゃまえ"),
+  [STATION_IDS.toukyu.setagaya]: new StationInfo('世田谷', NO_TRANSFER, "せたがや"),
 
   // 横浜高速鉄道
   [STATION_IDS.yokohama_kousoku.shin_takashima]: new StationInfo('新高島', NO_TRANSFER, "しんたかしま"),

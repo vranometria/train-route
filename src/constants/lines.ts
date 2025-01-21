@@ -1737,11 +1737,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.toukyu.yagutiwatashi),
     new StopStationDef(STATION_IDS.jr_east.kamata),
   ]),
-  [LINE_IDS.toukyu.denentoshi]: new Line('田園都市線', '東急電鉄',
-    [
-      new KindDef("急行", "express"),
-      new KindDef("準急", "semi-express")
-    ],
+  [LINE_IDS.toukyu.denentoshi]: new Line('田園都市線', '東急電鉄', [new Rapid, new SemiExpress],
     [
       new StopStationDef(STATION_IDS.jr_east.shibuya, ["express", "semi-express"]),
       new StopStationDef(STATION_IDS.toukyu.ikejiriohashi, ["semi-express"]),
@@ -1808,6 +1804,19 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.shin_yokohama),
     new StopStationDef(STATION_IDS.toukyu.shin_tsunashima),
     new StopStationDef(STATION_IDS.yokohama_subway.hiyoshi),
+  ]),
+  [LINE_IDS.toukyu.setagaya]: new Line('世田谷線', '東急電鉄', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.toukyu.sangenjaya),
+    new StopStationDef(STATION_IDS.toukyu.komazawadaigaku),
+    new StopStationDef(STATION_IDS.toukyu.nishitaishidou),
+    new StopStationDef(STATION_IDS.toukyu.wakabayashi),
+    new StopStationDef(STATION_IDS.toukyu.syouinjinjamae),
+    new StopStationDef(STATION_IDS.toukyu.setagaya),
+    new StopStationDef(STATION_IDS.toukyu.kamimachi),
+    new StopStationDef(STATION_IDS.toukyu.miyanosaka),
+    new StopStationDef(STATION_IDS.toukyu.yamashita),
+    new StopStationDef(STATION_IDS.toukyu.matsubara),
+    new StopStationDef(STATION_IDS.keio.shimotakaido),
   ]),
 
   // 東京高速鉄道

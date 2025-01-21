@@ -264,11 +264,13 @@ export const LINE_IDS = {
     /** つくばエクスプレス */
     tsukuba_express: 'shutoken-shintoshi-tsukuba-express',
   },
-  /** 小田急 */
+  /** 小田急 路線*/
   odakyu: {
     /** 小田原線 */
     odawara: 'odakyu-odawara',
     enoshima: 'odakyu-enoshima',
+    /** 小田急線 */
+    odakyu: 'odakyu-odakyu',
     tama: 'odakyu-tama',
     /** 箱根登山線 */
     hakonetozan: 'odakyu-hakonetozan',
@@ -327,6 +329,7 @@ export const LINE_IDS = {
     oimachi: "tokyu-oimachi",
     /** こどもの国線 */
     kodomonokuni: "keikyu-kodomonokuni",
+    /** 世田谷線 */
     setagaya: "tokyu-setagaya",
   },
   /** 横浜市営地下鉄 */
@@ -1756,7 +1759,7 @@ export const STATION_IDS = {
     /** 足柄(神奈川) */
     ashigara: "ashigara",
   },
-  /** 東急駅 */
+  /** 東急 駅 */
   toukyu: {
     // 田園都市線
     ikejiriohashi: "ikejiriohashi",
@@ -1838,8 +1841,17 @@ export const STATION_IDS = {
     chidoricho: "toukyu-chidoricho",
     ikegami: "toukyu-ikegami",
     hasunuma: "toukyu-hasunuma",
+    // 世田谷線
+    nishitaishidou: "toukyu-nishitaishidou",
+    wakabayashi: "toukyu-wakabayashi",
+    syouinjinjamae: "toukyu-syouinjinja-mae",
+    kamimachi: "toukyu-kamimachi",
+    miyanosaka: "toukyu-miyanosaka",
+    matsubara: "toukyu-matsubara",
+    setagaya: "toukyu-setagaya",
+    yamashita: "toukyu-yamashita",
   },
-  /** 京急駅 */
+  /** 京急 駅 */
   yokohama_kousoku: {
     shin_takashima: "yokohama-kousoku-shin-takashima",
     minato_mirai: "yokohama-kousoku-minato-mirai",
