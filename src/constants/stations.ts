@@ -2395,7 +2395,6 @@ export const STATIONS = {
   [STATION_IDS.sagami.izumino]: new StationInfo('いずみ野', NO_TRANSFER, "いずみの"),
   [STATION_IDS.sagami.izumichuo]: new StationInfo('いずみ中央', NO_TRANSFER, "いずみちゅうおう"),
   [STATION_IDS.sagami.yumegaoka]: new StationInfo('ゆめが丘', NO_TRANSFER, "ゆめがおか"),
-
   // 横浜市営地下鉄
   // ＞ブルーライン
   [STATION_IDS.yokohama_subway.nakagawa]: new StationInfo('中川', NO_TRANSFER, "なかがわ"),
@@ -2441,8 +2440,6 @@ export const STATIONS = {
   [STATION_IDS.yokohama_subway.kita_yamada]: new StationInfo('北山田', NO_TRANSFER, "きたやまだ"),
   [STATION_IDS.yokohama_subway.tuduki_fureainooka]: new StationInfo('都筑ふれあいの丘', NO_TRANSFER, "つつきふれあいのおか"),
   [STATION_IDS.yokohama_subway.kawawacho]: new StationInfo('川和町', NO_TRANSFER, "かわわちょう"),
-
-
   // 小田急
   [STATION_IDS.sagami.sagamino]: new StationInfo('さがみ野', [], "さがみの"),
   [STATION_IDS.odakyu.minamishinjuku]: new StationInfo('南新宿', [], "みなみしんじゅく"),
@@ -2542,7 +2539,7 @@ export const STATIONS = {
   [STATION_IDS.odakyu.choukokunomori]: new StationInfo('彫刻の森', NO_TRANSFER, "彫刻の森"),
   [STATION_IDS.odakyu.goura]: new StationInfo('強羅', [
     LINE_IDS.odakyu.hakonetozan,
-    LINE_IDS.hakone_ropeway.hakone_tozan_cable_car,
+    LINE_IDS.odakyu_hakone.kousaku,
   ], "ごうら"),
   // >多摩線
   [STATION_IDS.odakyu.karakida]: new StationInfo('唐木田', NO_TRANSFER, "からきだ"),
@@ -2557,6 +2554,18 @@ export const STATIONS = {
   [STATION_IDS.odakyu.kurihira]: new StationInfo('栗平', NO_TRANSFER, "くりひら"),
   [STATION_IDS.odakyu.satsukidai]: new StationInfo('五月台', NO_TRANSFER, "さつきだい"),
 
+  // 小田急箱根
+  [STATION_IDS.odakyu_hakone.souunzan]: new StationInfo('早雲山', [
+    LINE_IDS.odakyu_hakone.kousaku,
+    LINE_IDS.odakyu_hakone.hakone_rope_way
+  ], "そううんざん"),
+  [STATION_IDS.odakyu_hakone.owakudani]: new StationInfo('大涌谷', NO_TRANSFER, "おおわくだに"),
+  [STATION_IDS.odakyu_hakone.ubako]: new StationInfo('姥子', NO_TRANSFER, "うばこ"),
+  [STATION_IDS.odakyu_hakone.tougendai]: new StationInfo('桃源台', NO_TRANSFER, "とうげんだい"),
+  [STATION_IDS.odakyu_hakone.kouenshimo]: new StationInfo('公園下', NO_TRANSFER, "こうえんしも"),
+  [STATION_IDS.odakyu_hakone.kouenkami]: new StationInfo('公園上', NO_TRANSFER, "こうえんかみ"),
+  [STATION_IDS.odakyu_hakone.naka_goura]: new StationInfo('中強羅', NO_TRANSFER, "なかごうら"),
+  [STATION_IDS.odakyu_hakone.kami_goura]: new StationInfo('上強羅', NO_TRANSFER, "かみごうら"),
 
   // 西武鉄道
   // ＞池袋線

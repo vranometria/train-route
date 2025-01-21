@@ -880,7 +880,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.odakyu.odakyu_tama_center),
     new StopStationDef(STATION_IDS.odakyu.karakida),
   ]),
-  [LINE_IDS.odakyu.hakonetozan]: new Line('箱根登山鉄道', '小田急電鉄', LOCAL_ONLY, [
+  [LINE_IDS.odakyu.hakonetozan]: new Line('箱根登山鉄道線', '小田急電鉄', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_east.odawara),
     new StopStationDef(STATION_IDS.odakyu.hakone_itabashi),
     new StopStationDef(STATION_IDS.odakyu.kazamatsuri),
@@ -921,6 +921,15 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_subway.asakusa, ["rapid", "express", "commuter"]),
     new StopStationDef(STATION_IDS.shutoken_shintoshi.shin_okachimachi, ["rapid", "express", "commuter"]),
     new StopStationDef(STATION_IDS.jr_east.akihabara, ["rapid", "express", "commuter"]),
+  ]),
+  // 小田急箱根
+  [LINE_IDS.odakyu_hakone.kousaku]: new Line('鋼索線(箱根登山ケーブルカー)', '小田急箱根', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.odakyu.goura),
+    new StopStationDef(STATION_IDS.odakyu_hakone.kouenshimo),
+    new StopStationDef(STATION_IDS.odakyu_hakone.kouenkami),
+    new StopStationDef(STATION_IDS.odakyu_hakone.naka_goura),
+    new StopStationDef(STATION_IDS.odakyu_hakone.kami_goura),
+    new StopStationDef(STATION_IDS.odakyu_hakone.souunzan),
   ]),
 
   // JR東日本

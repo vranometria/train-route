@@ -82,6 +82,14 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.kodomonokuni}}">こどもの国線</RouterLink>
         </div>
 
+        小田急電鉄
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.odakyu.odawara}}">小田原線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.odakyu.enoshima}}">江ノ島線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.odakyu.tama}}">多摩線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.odakyu.hakonetozan}}">箱根登山線</RouterLink>
+        </div>
+
         JR東日本
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.saikyou}}" >埼京線</RouterLink>
@@ -139,14 +147,6 @@ import { LINE_IDS } from '@/constants/ids'
         北総電鉄
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.hokusou.hokusou}}">北総線</RouterLink>
-        </div>
-
-        小田急電鉄
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.odakyu.odawara}}">小田原線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.odakyu.enoshima}}">江ノ島線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.odakyu.tama}}">多摩線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.odakyu.hakonetozan}}">箱根登山線</RouterLink>
         </div>
 
         西武鉄道

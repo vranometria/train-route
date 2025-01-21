@@ -73,10 +73,18 @@ export const LINE_IDS = {
     /** 相鉄新横浜線 */
     sotetsushin_yokohama: 'sagami-sotetsushin_yokohama',
   },
-  /** 箱根ロープウェイ */
-  hakone_ropeway: {
-    hakone_tozan_cable_car: "hakone-tozan-cable-car",
+   /** 小田急 路線*/
+   odakyu: {
+    /** 小田原線 */
+    odawara: 'odakyu-odawara',
+    /** 江ノ島線 */
+    enoshima: 'odakyu-enoshima',
+    /** 多摩線 */
+    tama: 'odakyu-tama',
+    /** 箱根登山線 */
+    hakonetozan: 'odakyu-hakonetozan',
   },
+
 
   /** JR東日本 */
   jr_east: {
@@ -268,16 +276,11 @@ export const LINE_IDS = {
     /** つくばエクスプレス */
     tsukuba_express: 'shutoken-shintoshi-tsukuba-express',
   },
-  /** 小田急 路線*/
-  odakyu: {
-    /** 小田原線 */
-    odawara: 'odakyu-odawara',
-    /** 江ノ島線 */
-    enoshima: 'odakyu-enoshima',
-    /** 多摩線 */
-    tama: 'odakyu-tama',
-    /** 箱根登山線 */
-    hakonetozan: 'odakyu-hakonetozan',
+
+  /** 小田急箱根 */
+  odakyu_hakone: {
+    kousaku: "hakone-tozan-cable-car",
+    hakone_rope_way: "hakone-rope-way",
   },
   // 江ノ島電鉄
   enoshima: {
@@ -1894,10 +1897,22 @@ export const STATION_IDS = {
     shinagawa_seaside: 'rinkai-shinagawa-seaside',
   },
 
-
-  /** 箱根ロープウェイ */
-  hakone_ropeway: {
+  /** 小田急箱根 駅*/
+  odakyu_hakone: {
+    // 鋼索線
+    kouenshimo: 'odakyu-hakone-kouenshimo',
+    kouenkami: 'odakyu-hakone-kouenkami',
+    naka_goura: 'odakyu-hakone-naka-goura',
+    kami_goura: 'odakyu-hakone-kami_goura',
+    souunzan: 'hakone-ropeway-souunzan',
+    // 箱根ロープウェイ
+    owakudani: 'hakone-ropeway-owakudani',
+    ubako: 'hakone-ropeway-ubako',
+    tougendai: 'hakone-tougendai',
   },
+
+
+
   /** 横浜高速 駅 */
   yokohama_kousoku: {
     shin_takashima: "yokohama-kousoku-shin-takashima",
