@@ -544,12 +544,29 @@ export const LINE_IDS = {
     akita_nairiku: 'akita-nairiku-jukan-akita-nairiku',
   },
   /** 道南いさりび鉄道 */
-  donan_isaribi: {
-    donan_isaribi: 'donan-isaribi-donan-isaribi',
+  dounan_isaribi: {
+    dounan_isaribi: 'dounan-isaribi-dounan-isaribi',
   },
   /** JR北海道 */
   jr_hokkaidou: {
-    hakodate_hosnen: 'jr-hakodate-honsen',
+    /** 函館本線 */
+    hakodate_honsen: 'jr-hokkaidou-hakodate-honsen',
+    /** 富良野線 */
+    furano: 'jr-hokkaidou-furano',
+    /** 石北本線 */
+    sekihoku_honsen: 'jr-hokkaidou-sekihoku-honsen',
+    /** 宗谷本線 */
+    souya_honsen: 'jr-hokkaidou-souya-honsen',
+    /** 根室本線 */
+    nemuro_honsen: 'jr-hokkaidou-nemuro-honsen',
+    /** 室蘭本線 */
+    muroran_honsen: 'jr-hokkaidou-muroran-honsen',
+    /** 千歳線 */
+    chitose: 'jr-hokkaidou-chitose',
+    /** 札沼線 */
+    sassyou: 'jr-hokkaidou-sassyou',
+    /** 学園都市線 */
+    gakuentoshi: 'jr-hokkaidou-gakuentoshi',
   },
 };
 
@@ -1606,8 +1623,6 @@ export const STATION_IDS = {
     joetsu_myoko: "jr-joetsu_myoko",
     // 北海道新幹線
     oku_tsugaru_imabetsu: "jr-okutsugaru_imabetsu",
-    kikonai: "jr-kikonai",
-    shin_hakodate_hokuto: "jr-shin_hakodate_hokuto",
 
     duplicate: {
       fukushima: {
@@ -2168,5 +2183,88 @@ export const STATION_IDS = {
     koganejoato: "ryutetsu-koganejoato",
     koya: "ryutetsu-koya",
     mahashi: "ryutetsu-mahashi",
+  },
+  /** JR北海道 */
+  jr_hokkaidou: {
+    kikonai: "jr-hokkaidou-kikonai",
+    // 函館本線
+    hakodate: "jr-hokkaidou-hakodate",
+    goryoukaku: "jr-hokkaidou-goryoukaku",
+    kikyou: "jr-hokkaidou-kikyou",
+    onakayama: "jr-hokka-idou-onakayama",
+    nanae: "jr-hokkaidou-nanae",
+    shin_hakodate_hokuto: "jr-hokkaidou-shin-hakodate-hokuto",
+    niyama: "jr-hokkaidou-niyama",
+    onuma: "jr-hokkaidou-onuma",
+    onuma_kouen: "jr-hokkaidou-onuma-kouen",
+    akaigawa: "jr-hokkaidou-akaigawa",
+    komagatake: "jr-hokkaidou-komagatake",
+    mori: "jr-hokkaidou-mori",
+    ishikura: "jr-hokkaidou-ishikura",
+    otoshibe: "jr-hokkaidou-otoshibe",
+    nodaoi: "jr-hokkaidou-nodaoi",
+    yamakoshi: "jr-hokkaidou-yamakoshi",
+    yakumo: "jr-hokkaidou-yakumo",
+    yamazaki: "jr-hokkaidou-yamazaki",
+    kuroiwa: "jr-hokkaidou-kuroiwa",
+    kunnui: "jr-hokkaidou-kunnui",
+    osyamanbe: "jr-hokkaidou-osyamanbe",
+    hutamata: "jr-hokkaidou-hutamata",
+    kuromatsunai: "jr-hokkaidou-kuromatsunai",
+    neppu: "jr-hokkaidou-neppu",
+    mena: "jr-hokkaidou-mena",
+    rankoshi: "jr-hokkaidou-rankoshi",
+    konbu: "jr-hokkaidou-konbu",
+    niseko: "jr-hokkaidou-niseko",
+    hirafu: "jr-hokkaidou-hirafu",
+    kucchan: "jr-hokkaidou-kucchan",
+    kozawa: "jr-hokkaidou-kozawa",
+    ginzan: "jr-hokkaidou-ginzan",
+    shikaribetsu: "jr-hokkaidou-shikaribetsu",
+    nigi: "jr-hokkaidou-nigi",
+    yoichi: "jr-hokkaidou-yoichi",
+    ranshima: "jr-hokkaidou-ranshima",
+    shioya: "jr-hokkaidou-shioya",
+    otaru: "jr-hokkaidou-otaru",
+    minami_otaru: "jr-hokkaidou-minami-otaru",
+    otaru_chikkou: "jr-hokkaidou-otaru-chikkou",
+    asari: "jr-hokkaidou-asari",
+    zenibako: "jr-hokkaidou-zenibako",
+    hoshimi: "jr-hokkaidou-hoshimi",
+    hoshioki: "jr-hokkaidou-hoshioki",
+    inaho: "jr-hokkaidou-inaho",
+    teine: "jr-hokkaidou-teine",
+    inadumi_kouen: "jr-hokkaidou-inadumi-kouen",
+    hassamu: "jr-hokkaidou-hassamu",
+    hassamu_chuou: "jr-hokkaidou-hassamu-chuou",
+    kotoni: "jr-hokkaidou-kotoni",
+    souen: "jr-hokkaidou-souen",
+    sapporo: "jr-hokkaidou-sapporo",
+    naeba: "jr-hokkaidou-naeba",
+    shiroishi: "jr-hokkaidou-shiroishi",
+    atsubetsu: "jr-hokkaidou-atsubetsu",
+    shinrin_kouen: "jr-hokkaidou-shinrin-kouen",
+    oasa: "jr-hokkaidou-oasa",
+    nopporo: "jr-hokkaidou-nopporo",
+    takasago: "jr-hokkaidou-takasago",
+    ebetsu: "jr-hokkaidou-ebetsu",
+    toyohoro: "jr-hokkaidou-toyohoro",
+    horomui: "jr-hokkaidou-horomui",
+    kami_horomui: "jr-hokkaidou-kami-horomui",
+    iwamizawa: "jr-hokkaidou-iwamizawa",
+    minenobu: "jr-hokkaidou-minenobu",
+    kousyunai: "jr-hokkaidou-kousyunai",
+    bibai: "jr-hokkaidou-bibai",
+    chashinai: "jr-hokkaidou-chashinai",
+    naie: "jr-hokkaidou-naie",
+    toyonuma: "jr-hokkaidou-toyonuma",
+    sunagawa: "jr-hokkaidou-sunagawa",
+    takikawa: "jr-hokkaidou-takikawa",
+    ebeotsu: "jr-hokkaidou-ebeotsu",
+    moseushi: "jr-hokkaidou-moseushi",
+    fukagawa: "jr-hokkaidou-fukagawa",
+    osamunai: "jr-hokkaidou-osamunai",
+    chikabumi: "jr-hokkaidou-chikabumi",
+    asahikawa: "jr-hokkaidou-asahikawa",
   },
 };

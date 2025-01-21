@@ -163,6 +163,11 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.yokohama_subway.blue_line}}">ブルーライン</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.yokohama_subway.green_line}}">グリーンライン</RouterLink>
         </div>
+
+        JR北海道
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_hokkaidou.hakodate_honsen}}">函館本線</RouterLink>
+        </div>
       </nav>
     </div>
   </header>
