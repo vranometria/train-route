@@ -2544,6 +2544,19 @@ export const STATIONS = {
     LINE_IDS.odakyu.hakonetozan,
     LINE_IDS.hakone_ropeway.hakone_tozan_cable_car,
   ], "ごうら"),
+  // >多摩線
+  [STATION_IDS.odakyu.karakida]: new StationInfo('唐木田', NO_TRANSFER, "からきだ"),
+  [STATION_IDS.odakyu.odakyu_tama_center]: new StationInfo('小田急多摩センター', [
+    LINE_IDS.odakyu.tama,
+    new ExchangeInfo(LINE_IDS.keiou.sagami, STATION_IDS.keio.keiou_tama_center),
+    new ExchangeInfo(LINE_IDS.tama_monorail.tama_monorail, STATION_IDS.tama_monorail.tama_center),
+  ], "おだきゅうたませんたー"),
+  [STATION_IDS.odakyu.odakyu_eizan]: new StationInfo('小田急永山', NO_TRANSFER, "おだきゅうえいざん"),
+  [STATION_IDS.odakyu.haruhino]: new StationInfo('春日町', NO_TRANSFER, "はるひの"),
+  [STATION_IDS.odakyu.kurokawa]: new StationInfo('黒川', NO_TRANSFER, "くろかわ"),
+  [STATION_IDS.odakyu.kurihira]: new StationInfo('栗平', NO_TRANSFER, "くりひら"),
+  [STATION_IDS.odakyu.satsukidai]: new StationInfo('五月台', NO_TRANSFER, "さつきだい"),
+
 
   // 西武鉄道
   // ＞池袋線
