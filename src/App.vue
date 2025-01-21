@@ -107,6 +107,7 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.oimachi}}">大井町線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.meguro}}">目黒線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.shin_yokohama}}">新横浜線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.ikegami}}">池上線</RouterLink>
         </div>
 
 

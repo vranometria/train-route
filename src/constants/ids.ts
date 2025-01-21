@@ -1819,6 +1819,19 @@ export const STATION_IDS = {
     hakuraku: "toukyu-hakuraku",
     higashi_hakuraku: "toukyu-higashi-hakuraku",
     tanmachi: "toukyu-tanmachi",
+    // 池上線
+    osaki_hirokoji: "toukyu-osaki-hirokoji",
+    togoshi_ginza: "toukyu-togoshi-ginza",
+    ebara_nakanobu: "toukyu-ebara-nakanobu",
+    nagahara: "toukyu-nagahara",
+    senzokuike: "toukyu-senzokuike",
+    ishikawadai: "toukyu-ishikawadai",
+    yukigaya_otsuka: "toukyu-yukigaya-otsuka",
+    mitakeyama: "toukyu-mitakeyama",
+    kugahara: "toukyu-kugahara",
+    chidoricho: "toukyu-chidoricho",
+    ikegami: "toukyu-ikegami",
+    hasunuma: "toukyu-hasunuma",
   },
   /** 東武 駅 */
   tobu: {

@@ -2879,6 +2879,19 @@ export const STATIONS = {
   [STATION_IDS.toukyu.hakuraku]: new StationInfo('白楽', NO_TRANSFER, "はくらく"),
   [STATION_IDS.toukyu.higashi_hakuraku]: new StationInfo('東白楽', NO_TRANSFER, "ひがしばくらく"),
   [STATION_IDS.toukyu.tanmachi]: new StationInfo('反町', NO_TRANSFER, "たんまち"),
+  // 池上線
+  [STATION_IDS.toukyu.osaki_hirokoji]: new StationInfo('大崎広小路', NO_TRANSFER, "おおさきひろこうじ"),
+  [STATION_IDS.toukyu.togoshi_ginza]: new StationInfo('戸越銀座', NO_TRANSFER, "とごしぎんざ"),
+  [STATION_IDS.toukyu.ebara_nakanobu]: new StationInfo('荏原中延', NO_TRANSFER, "えばらなかのべ"),
+  [STATION_IDS.toukyu.nagahara]: new StationInfo('長原', NO_TRANSFER, "ながはら"),
+  [STATION_IDS.toukyu.senzokuike]: new StationInfo('洗足池', NO_TRANSFER, "せんぞくいけ"),
+  [STATION_IDS.toukyu.ishikawadai]: new StationInfo('石川台', NO_TRANSFER, "いしかわだい"),
+  [STATION_IDS.toukyu.yukigaya_otsuka]: new StationInfo('雪が谷大塚', NO_TRANSFER, "ゆきがやおおつか"),
+  [STATION_IDS.toukyu.mitakeyama]: new StationInfo('御嶽山', NO_TRANSFER, "みたけやま"),
+  [STATION_IDS.toukyu.kugahara]: new StationInfo('久が原', NO_TRANSFER, "くがはら"),
+  [STATION_IDS.toukyu.chidoricho]: new StationInfo('千鳥町', NO_TRANSFER, "ちどりちょう"),
+  [STATION_IDS.toukyu.ikegami]: new StationInfo('池上', NO_TRANSFER, "いけがみ"),
+  [STATION_IDS.toukyu.hasunuma]: new StationInfo('蓮沼', NO_TRANSFER, "はすぬま"),
 
   [STATION_IDS.jr_tokai.mishima]: new StationInfo('三島', [
     LINE_IDS.jr_east.tokaido,
