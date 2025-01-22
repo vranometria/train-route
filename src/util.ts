@@ -4,6 +4,8 @@ import KeihintohokuBottom from "@/components/top-bottom/KeihintohokuBottom.vue"
 import type { Component } from "vue";
 import YamanoteTop from "./components/top-bottom/YamanoteTop.vue";
 import YamanoteBottom from "./components/top-bottom/YamanoteBottom.vue";
+import { LINES } from "./constants/lines";
+import { LineModel } from "./constants/line-model";
 
 export function getOverlay(lineId: string): Component|null {
   switch(lineId){
@@ -33,4 +35,12 @@ export function scrollTo(stationId: string){
   if(target){
     target.scrollIntoView({behavior: "smooth"});
   }
+}
+
+export function removeDuplicates(arr: string[]): string[] {
+  return Array.from(new Set(arr));
+}
+
+export function getLineModel(): LineModel[] {
+  return Object.keys(LINES).map( key => new LineModel(key, LINES[key]));
 }

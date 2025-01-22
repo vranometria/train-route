@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import { LINE_IDS } from '@/constants/ids'
+import { PREFECTURE } from './constants/prefecture';
+import LineAccordion from './components/LineAccordion.vue';
 </script>
 
 <template>
@@ -40,21 +42,10 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_metro.nanboku}}" >南北線</RouterLink>
         </div>
 
-        東京モノレール
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_monorail.haneda_kuko}}" >羽田空港線</RouterLink>
-        </div>
-
-        千葉都市モノレール
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.chiba_toshi_monorail.ichigou}}">1号線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.chiba_toshi_monorail.nigou}}">2号線</RouterLink>
-        </div>
-
-        首都圏新都市
+        <!-- 首都圏新都市
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.shutoken_shintoshi.tsukuba_express}}" >つくばエクスプレス</RouterLink>
-        </div>
+        </div> -->
 
         相模鉄道
         <div>
@@ -177,12 +168,9 @@ import { LINE_IDS } from '@/constants/ids'
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.yokohama_subway.green_line}}">グリーンライン</RouterLink>
         </div>
 
-        JR北海道
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_hokkaidou.hakodate_honsen}}">函館本線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_hokkaidou.furano}}">富良野線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_hokkaidou.souya_honsen}}">宗谷本線</RouterLink>
-        </div>
+        <LineAccordion :prefecture="PREFECTURE.TOKYO" />
+        <LineAccordion :prefecture="PREFECTURE.CHIBA" />
+        <LineAccordion :prefecture="PREFECTURE.HOKKAIDO" />
       </nav>
     </div>
   </header>

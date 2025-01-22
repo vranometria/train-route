@@ -6,6 +6,7 @@ import { Rapid } from '@/types/rapid';
 import { SemiExpress } from '@/types/semi-express';
 import { Express } from '@/types/express';
 import { ExtraExpress } from '@/types/extra-express';
+import { PREFECTURE as P } from './prefecture';
 
 const LOCAL_ONLY:KindDef[] = [];
 
@@ -507,7 +508,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_monorail.shin_seibijo),
     new StopStationDef(STATION_IDS.tokyo_monorail.haneda_kuko_dai1_terminal),
     new StopStationDef(STATION_IDS.tokyo_monorail.haneda_kuko_dai2_terminal),
-  ]),
+  ], P.TOKYO),
   // ゆりかもめ
   [LINE_IDS.yurikamome.yurikamome]: new Line('ゆりかもめ', '新交通ゆりかもめ', [], [
     new StopStationDef(STATION_IDS.jr_east.shinbashi),
@@ -535,7 +536,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.chiba_toshi_monorail.sakaemachi),
     new StopStationDef(STATION_IDS.chiba_toshi_monorail.yoshikawa_kouen),
     new StopStationDef(STATION_IDS.chiba_toshi_monorail.kenchoumae),
-  ]),
+  ], P.CHIBA),
   [LINE_IDS.chiba_toshi_monorail.nigou]: new Line('2号線', '千葉都市モノレール', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_east.chiba),
     new StopStationDef(STATION_IDS.chiba_toshi_monorail.chiba_kouen),
@@ -550,7 +551,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.chiba_toshi_monorail.oguradai),
     new StopStationDef(STATION_IDS.chiba_toshi_monorail.chishirodai_kita),
     new StopStationDef(STATION_IDS.chiba_toshi_monorail.chishirodai),
-  ]),
+  ], P.CHIBA),
   [LINE_IDS.jr_sotetsu_chokutsu]: new Line('相鉄・JR直通線', 'JR東日本・相模鉄道', [], [
     new StopStationDef(STATION_IDS.jr_east.shinjuku),
     new StopStationDef(STATION_IDS.jr_east.shibuya),
@@ -921,7 +922,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_subway.asakusa, ["rapid", "express", "commuter"]),
     new StopStationDef(STATION_IDS.shutoken_shintoshi.shin_okachimachi, ["rapid", "express", "commuter"]),
     new StopStationDef(STATION_IDS.jr_east.akihabara, ["rapid", "express", "commuter"]),
-  ]),
+  ], [P.TOKYO, P.SAITAMA, P.CHIBA, P.IBARAKI]),
   // 小田急箱根
   [LINE_IDS.odakyu_hakone.kousaku]: new Line('鋼索線(箱根登山ケーブルカー)', '小田急箱根', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.odakyu.goura),
@@ -2275,7 +2276,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_hokkaidou.osamunai),
     new StopStationDef(STATION_IDS.jr_hokkaidou.chikabumi),
     new StopStationDef(STATION_IDS.jr_hokkaidou.asahikawa),
-  ]),
+  ], P.HOKKAIDO),
   [LINE_IDS.jr_hokkaidou.furano]: new Line('富良野線', 'JR北海道', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_hokkaidou.asahikawa),
     new StopStationDef(STATION_IDS.jr_hokkaidou.kaguraoka),
@@ -2295,7 +2296,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_hokkaidou.shikauchi),
     new StopStationDef(STATION_IDS.jr_hokkaidou.gakuden),
     new StopStationDef(STATION_IDS.jr_hokkaidou.furano),
-  ]),
+  ], P.HOKKAIDO),
   [LINE_IDS.jr_hokkaidou.souya_honsen]: new Line('宗谷本線', 'JR北海道', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_hokkaidou.asahikawa),
     new StopStationDef(STATION_IDS.jr_hokkaidou.asahikawa_shijou),
@@ -2335,5 +2336,5 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_hokkaidou.bakkai),
     new StopStationDef(STATION_IDS.jr_hokkaidou.minami_wakkanai),
     new StopStationDef(STATION_IDS.jr_hokkaidou.wakkanai),
-  ]),
+  ], P.HOKKAIDO),
 }
