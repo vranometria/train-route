@@ -180,6 +180,8 @@ import { LINE_IDS } from '@/constants/ids'
         JR北海道
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_hokkaidou.hakodate_honsen}}">函館本線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_hokkaidou.furano}}">富良野線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_hokkaidou.souya_honsen}}">宗谷本線</RouterLink>
         </div>
       </nav>
     </div>
