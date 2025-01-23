@@ -3521,4 +3521,17 @@ export const STATIONS = {
   [STATION_IDS.jr_hokkaidou.otanoshike]: new StationInfo('大楽毛', NO_TRANSFER, "おたのしけ"),
   [STATION_IDS.jr_hokkaidou.shin_otanoshike]: new StationInfo('新大楽毛', NO_TRANSFER, "しんおたのしけ"),
   [STATION_IDS.jr_hokkaidou.shinfuji]: new StationInfo('新富士', NO_TRANSFER, "しんふじ"),
+  // 石勝線
+  [STATION_IDS.jr_hokkaidou.minami_chitose]: new StationInfo('南千歳', [
+    LINE_IDS.jr_hokkaidou.chitose,
+    LINE_IDS.jr_hokkaidou.sekisyou,
+  ], "みなみちとせ"),
+  [STATION_IDS.jr_hokkaidou.oiwake]: new StationInfo('追分', [
+    LINE_IDS.jr_hokkaidou.muroran_honsen,
+    LINE_IDS.jr_hokkaidou.sekisyou
+  ], "おいわけ"),
+  [STATION_IDS.jr_hokkaidou.kawabata]: new StationInfo('川端', NO_TRANSFER, "かわばた"),
+  [STATION_IDS.jr_hokkaidou.shin_yubari]: new StationInfo('新夕張', NO_TRANSFER, "しんゆうばり"),
+  [STATION_IDS.jr_hokkaidou.shimukappu]: new StationInfo('占冠', NO_TRANSFER, "しむかっぷ"),
+  [STATION_IDS.jr_hokkaidou.tomamu]: new StationInfo('トマム', NO_TRANSFER, "とまむ"),
 }

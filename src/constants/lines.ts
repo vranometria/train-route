@@ -2457,4 +2457,13 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_hokkaidou.shinfuji),
     new StopStationDef(STATION_IDS.jr_hokkaidou.kushiro),
   ], P.HOKKAIDO),
+  [LINE_IDS.jr_hokkaidou.sekisyou]: new Line('石勝線', 'JR北海道', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_hokkaidou.minami_chitose),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.oiwake),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.kawabata),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.shin_yubari),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.shimukappu),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.tomamu),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.shintoku),
+  ], P.HOKKAIDO),
 }

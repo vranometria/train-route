@@ -2764,5 +2764,12 @@ export const STATION_IDS = {
     shinfuji: "jr-hokkaidou-shin-fuji",
     higashi_nemuro: "jr-hokkaidou-higashi-nemuro",
     nemuro: "jr-hokkaidou-nemuro",
+    // 石勝線
+    minami_chitose: "jr-hokkaidou-minami-chitose",
+    oiwake: "jr-hokkaidou-oiwake",
+    kawabata: "jr-hokkaidou-kawabata",
+    shin_yubari: "jr-hokkaidou-shin-yubari",
+    shimukappu: "jr-hokkaidou-shimukappu",
+    tomamu: "jr-hokkaidou-tomamu",
   },
 };
