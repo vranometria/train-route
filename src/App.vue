@@ -19,7 +19,7 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.sea_side}}">シーサイドライン</RouterLink>
         </div>
 
-        東京都交通局
+        <!-- 東京都交通局
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.asakusa}}" >浅草線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.mita}}" >三田線</RouterLink>
@@ -27,7 +27,7 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.oedo}}" >大江戸線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.nippori_toneri_liner}}" >日暮里・舎人ライナー</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.sakura_tram}}" >東京さくらトラム</RouterLink>
-        </div>
+        </div> -->
 
         <!-- 東京メトロ
         <div>

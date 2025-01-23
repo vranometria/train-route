@@ -578,8 +578,10 @@ export const LINE_IDS = {
     sekihoku_honsen: 'jr-hokkaidou-sekihoku-honsen',
     /** 宗谷本線 */
     souya_honsen: 'jr-hokkaidou-souya-honsen',
-    /** 根室本線 */
-    nemuro_honsen: 'jr-hokkaidou-nemuro-honsen',
+    /** 根室本線(釧路―根室) */
+    nemuro_honsen1: 'jr-hokkaidou-nemuro-honsen1',
+    /** 根室本線(滝川―富良野) */
+    nemuro_honsen2: 'jr-hokkaidou-nemuro-honsen2',
     /** 室蘭本線 */
     muroran_honsen: 'jr-hokkaidou-muroran-honsen',
     /** 千歳線 */
@@ -590,6 +592,8 @@ export const LINE_IDS = {
     gakuentoshi: 'jr-hokkaidou-gakuentoshi',
     /** 釧網本線 */
     senmou_honsen: 'jr-hokkaidou-senmou-honsen',
+    /** 花咲線 */
+    hanasaki: 'jr-hokkaidou-hanasaki',
   },
 };
 
@@ -2043,7 +2047,6 @@ export const STATION_IDS = {
     karuizawa: "jr-karuizawa",
     sakudaira: "jr-sakudaira",
     nagano: "jr-nagano",
-    iiyama: "jr-iiyama",
     joetsu_myoko: "jr-joetsu_myoko",
     // 北海道新幹線
     oku_tsugaru_imabetsu: "jr-okutsugaru_imabetsu",
@@ -2684,7 +2687,7 @@ export const STATION_IDS = {
     memanbetsu: "jr-hokkaidou-memanbetsu",
     yobito: "jr-hokkaidou-yobito",
     abashiri: "jr-hokkaidou-abashiri",
-    // 線猛本線
+    // 釧網本線
     kushiro: "jr-hokkaidou-kushiro",
     higashi_kushiro: "jr-hokkaidou-higashi-kushiro",
     toya: "jr-hokkaidou-toya",
@@ -2724,7 +2727,7 @@ export const STATION_IDS = {
     ochiishi: "jr-hokkaidou-ochiishi",
     konbumori: "jr-hokkaidou-konbumori",
     nishi_wada: "jr-hokkaidou-nishi-wada",
-    // 根室本線
+    // 根室本線1
     akabira: "jr-hokkaidou-akabira",
     moshiri: "jr-hokkaidou-moshiri",
     hirakishi: "jr-hokkaidou-hirakishi",
@@ -2755,5 +2758,8 @@ export const STATION_IDS = {
     otanoshike: "jr-hokkaidou-otanoshike",
     shin_otanoshike: "jr-hokkaidou-shin-otanoshike",
     shinfuji: "jr-hokkaidou-shin-fuji",
+    higashi_nemuro: "jr-hokkaidou-higashi-nemuro",
+    nemuro: "jr-hokkaidou-nemuro",
+    // 根室本線2
   },
 };

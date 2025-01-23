@@ -176,7 +176,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_subway.akebonobashi),
     new StopStationDef(STATION_IDS.tokyo_metro.shinjuku_sanchome),
     new StopStationDef(STATION_IDS.tokyo_subway.shinsen_shinjuku, ["express"]),
-  ]),
+  ], [P.TOKYO, P.CHIBA]),
   [LINE_IDS.tokyo_subway.oedo]: new Line('大江戸線', '東京都交通局(都営地下鉄)', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.tokyo_subway.tochomae),
     new StopStationDef(STATION_IDS.tokyo_subway.shinjuku_nishiguchi),
@@ -217,7 +217,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_subway.toshimaen),
     new StopStationDef(STATION_IDS.tokyo_subway.nerima_kasugacho),
     new StopStationDef(STATION_IDS.tokyo_subway.hikarigaoka),
-  ]),
+  ], P.TOKYO),
   [LINE_IDS.tokyo_subway.mita]: new Line('三田線', '東京都交通局(都営地下鉄)', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.tokyo_subway.nishi_takashimadaira),
     new StopStationDef(STATION_IDS.tokyo_subway.shin_takashimadaira),
@@ -246,7 +246,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_metro.shirokane_takanawa),
     new StopStationDef(STATION_IDS.tokyo_metro.shirokanedai),
     new StopStationDef(STATION_IDS.jr_east.meguro),
-  ]),
+  ], P.TOKYO),
   [LINE_IDS.tokyo_subway.nippori_toneri_liner]: new Line('日暮里・舎人ライナー', '東京都交通局', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_east.nippori),
     new StopStationDef(STATION_IDS.jr_east.nishinippori),
@@ -261,7 +261,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_subway.toneri_koen),
     new StopStationDef(STATION_IDS.tokyo_subway.toneri),
     new StopStationDef(STATION_IDS.tokyo_subway.minumadaishinsui_koen),
-  ]),
+  ], P.TOKYO),
   [LINE_IDS.tokyo_subway.sakura_tram]: new Line('東京さくらトラム', '東京都交通局', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.tokyo_subway.minowabashi),
     new StopStationDef(STATION_IDS.tokyo_subway.arakawa_icchumae),
@@ -293,7 +293,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_subway.gakusyuinshita),
     new StopStationDef(STATION_IDS.tokyo_subway.omokagebashi),
     new StopStationDef(STATION_IDS.tokyo_subway.waseda),
-  ]),
+  ], P.TOKYO),
   // 東京メトロ
   [LINE_IDS.tokyo_metro.hibiya]: new Line('日比谷線', '東京メトロ', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.tokyo_metro.nakameguro),
@@ -2397,5 +2397,26 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_hokkaidou.kushiro_onsen),
     new StopStationDef(STATION_IDS.jr_hokkaidou.toya),
     new StopStationDef(STATION_IDS.jr_hokkaidou.higashi_kushiro),
+  ], P.HOKKAIDO),
+  [LINE_IDS.jr_hokkaidou.hanasaki]: new Line('花咲線', 'JR北海道', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_hokkaidou.kushiro),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.higashi_kushiro),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.hamanaka),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.musa),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.beppo),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.kami_oboro),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.oboro),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.monshizu),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.akkeshi),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.chanai),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.hamanaka),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.anebetsu),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.attoko),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.bettoga),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.ochiishi),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.konbumori),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.nishi_wada),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.higashi_nemuro),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.nemuro),
   ], P.HOKKAIDO),
 }
