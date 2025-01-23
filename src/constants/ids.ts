@@ -596,6 +596,12 @@ export const LINE_IDS = {
     hanasaki: 'jr-hokkaidou-hanasaki',
     /** 石勝線 */
     sekisyou: 'jr-hokkaidou-sekisyou',
+    /** 日高本線 */
+    hidaka_honsen: 'jr-hokkaidou-hidaka-honsen',
+  },
+  /** 札幌地下鉄 */
+  sapporo_subway: {
+    touzai: 'sapporo-subway-touzai',
   },
 };
 
@@ -2771,5 +2777,43 @@ export const STATION_IDS = {
     shin_yubari: "jr-hokkaidou-shin-yubari",
     shimukappu: "jr-hokkaidou-shimukappu",
     tomamu: "jr-hokkaidou-tomamu",
+    // 千歳線
+    tomakomai: "jr-hokkaidou-tomakomai",
+    numanohata: "jr-hokkaidou-numanohata",
+    uenae: "jr-hokkaidou-uenae",
+    shin_chitose_kuko: "jr-hokkaidou-shin-chitose-kuko",
+    chitose: "jr-hokkaidou-chitose",
+    osatsu: "jr-hokkaidou-osatsu",
+    sapporo_beer_teien: "jr-hokkaidou-sapporo-beer-teien",
+    eniwa: "jr-hokkaidou-eniwa",
+    megumino: "jr-hokkaidou-megumino",
+    shimamatsu: "jr-hokkaidou-shimamatsu",
+    kita_hiroshima: "jr-hokkaidou-kita-hiroshima",
+    kami_nopporo: "jr-hokkaidou-kami-nopporo",
+    heiwa: "jr-hokkaidou-heiwa",
+    shin_sapporo: "jr-hokkaidou-shin-sapporo",
+  },
+  /** 札幌地下鉄　駅 */
+  sapporo_subway: {
+    // 東西線
+    miyanozawa: "supporo-subway-miyanozawa",
+    hassamu_minami: "supporo-subway-hassamu-minami",
+    kotoni: "supporo-subway-kotoni",
+    nijuuyonken: "supporo-subway-nijuuyonken",
+    nishi_nijuuhatchome: "supporo-subway-nishi-nijuuhatchome",
+    maruyama_kouen: "supporo-subway-maruyama-kouen",
+    nishi_juhacchome: "supporo-subway-nishi-juhacchome",
+    nishi_juicchoume: "supporo-subway-nishi-juicchoume",
+    odouri: "supporo-subway-odouri",
+    bass_center_minami: "supporo-subway-bass-center-minami",
+    kikusui: "supporo-subway-kikusui",
+    higashi_sapporo: "supporo-subway-higashi-sapporo",
+    shiraishi: "supporo-subway-shiraishi",
+    nangou_nanachoume: "supporo-subway-nangou-nanachoume",
+    nangou_jusanchoume: "supporo-subway-nangou-jusanchoume",
+    nangou_juhacchoume: "supporo-subway-nangou-juhacchoume",
+    oyachi: "supporo-subway-oyachi",
+    hibarigaoka: "supporo-subway-hibarigaoka",
+    shin_sapporo: "supporo-subway-shin-sapporo",
   },
 };

@@ -2466,4 +2466,22 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_hokkaidou.tomamu),
     new StopStationDef(STATION_IDS.jr_hokkaidou.shintoku),
   ], P.HOKKAIDO),
+  [LINE_IDS.jr_hokkaidou.chitose]: new Line('千歳線', 'JR北海道', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_hokkaidou.tomakomai),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.numanohata),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.uenae),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.shin_chitose_kuko),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.chitose),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.osatsu),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.sapporo_beer_teien),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.eniwa),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.megumino),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.shimamatsu),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.kita_hiroshima),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.kami_nopporo),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.shin_sapporo),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.heiwa),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.sapporo),
+  ], P.HOKKAIDO),
+
 }

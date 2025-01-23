@@ -3534,4 +3534,29 @@ export const STATIONS = {
   [STATION_IDS.jr_hokkaidou.shin_yubari]: new StationInfo('新夕張', NO_TRANSFER, "しんゆうばり"),
   [STATION_IDS.jr_hokkaidou.shimukappu]: new StationInfo('占冠', NO_TRANSFER, "しむかっぷ"),
   [STATION_IDS.jr_hokkaidou.tomamu]: new StationInfo('トマム', NO_TRANSFER, "とまむ"),
+  // 千歳線
+  [STATION_IDS.jr_hokkaidou.tomakomai]: new StationInfo('苫小牧', [
+    LINE_IDS.jr_hokkaidou.muroran_honsen,
+    LINE_IDS.jr_hokkaidou.chitose,
+    LINE_IDS.jr_hokkaidou.hidaka_honsen,
+  ], "とまこまい"),
+  [STATION_IDS.jr_hokkaidou.numanohata]: new StationInfo('沼ノ端', [
+    LINE_IDS.jr_hokkaidou.chitose,
+    LINE_IDS.jr_hokkaidou.muroran_honsen,
+  ], "ぬまのはた"),
+  [STATION_IDS.jr_hokkaidou.uenae]: new StationInfo('上苗穂', NO_TRANSFER, "うえなえ"),
+  [STATION_IDS.jr_hokkaidou.shin_chitose_kuko]: new StationInfo('新千歳空港', NO_TRANSFER, "しんちとせくうこう"),
+  [STATION_IDS.jr_hokkaidou.chitose]: new StationInfo('千歳', NO_TRANSFER, "ちとせ"),
+  [STATION_IDS.jr_hokkaidou.osatsu]: new StationInfo('長都', NO_TRANSFER, "おさつ"),
+  [STATION_IDS.jr_hokkaidou.sapporo_beer_teien]: new StationInfo('サッポロビール庭園', NO_TRANSFER, "さっぽろびーるていえん"),
+  [STATION_IDS.jr_hokkaidou.eniwa]: new StationInfo('恵庭', NO_TRANSFER, "えにわ"),
+  [STATION_IDS.jr_hokkaidou.megumino]: new StationInfo('恵み野', NO_TRANSFER, "めぐみの"),
+  [STATION_IDS.jr_hokkaidou.shimamatsu]: new StationInfo('島松', NO_TRANSFER, "しままつ"),
+  [STATION_IDS.jr_hokkaidou.kita_hiroshima]: new StationInfo('北広島', NO_TRANSFER, "きたひろしま"),
+  [STATION_IDS.jr_hokkaidou.kami_nopporo]: new StationInfo('上野幌', NO_TRANSFER, "かみのっぽろ"),
+  [STATION_IDS.jr_hokkaidou.shin_sapporo]: new StationInfo('新札幌', [
+    LINE_IDS.jr_hokkaidou.chitose,
+    new ExchangeInfo(LINE_IDS.sapporo_subway.touzai, STATION_IDS.sapporo_subway.shin_sapporo),
+  ], "しんさっぽろ"),
+  [STATION_IDS.jr_hokkaidou.heiwa]: new StationInfo('平和', NO_TRANSFER, "へいわ"),
 }
