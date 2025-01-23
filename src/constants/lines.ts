@@ -2419,4 +2419,15 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_hokkaidou.higashi_nemuro),
     new StopStationDef(STATION_IDS.jr_hokkaidou.nemuro),
   ], P.HOKKAIDO),
+  [LINE_IDS.jr_hokkaidou.nemuro_honsen]: new Line('根室本線', 'JR北海道', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_hokkaidou.takikawa),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.higashi_takikawa),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.akabira),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.moshiri),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.hirakishi),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.ashibetsu),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.kami_ashibetsu),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.nokanan),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.furano),
+  ], P.HOKKAIDO),
 }

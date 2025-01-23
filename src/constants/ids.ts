@@ -578,10 +578,8 @@ export const LINE_IDS = {
     sekihoku_honsen: 'jr-hokkaidou-sekihoku-honsen',
     /** 宗谷本線 */
     souya_honsen: 'jr-hokkaidou-souya-honsen',
-    /** 根室本線(釧路―根室) */
-    nemuro_honsen1: 'jr-hokkaidou-nemuro-honsen1',
-    /** 根室本線(滝川―富良野) */
-    nemuro_honsen2: 'jr-hokkaidou-nemuro-honsen2',
+    /** 根室本線 */
+    nemuro_honsen: 'jr-hokkaidou-nemuro-honsen',
     /** 室蘭本線 */
     muroran_honsen: 'jr-hokkaidou-muroran-honsen',
     /** 千歳線 */
@@ -2727,7 +2725,8 @@ export const STATION_IDS = {
     ochiishi: "jr-hokkaidou-ochiishi",
     konbumori: "jr-hokkaidou-konbumori",
     nishi_wada: "jr-hokkaidou-nishi-wada",
-    // 根室本線1
+    // 根室本線
+    higashi_takikawa: "jr-hokkaidou-higashi-takikawa",
     akabira: "jr-hokkaidou-akabira",
     moshiri: "jr-hokkaidou-moshiri",
     hirakishi: "jr-hokkaidou-hirakishi",
@@ -2760,6 +2759,5 @@ export const STATION_IDS = {
     shinfuji: "jr-hokkaidou-shin-fuji",
     higashi_nemuro: "jr-hokkaidou-higashi-nemuro",
     nemuro: "jr-hokkaidou-nemuro",
-    // 根室本線2
   },
 };

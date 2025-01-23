@@ -3357,7 +3357,7 @@ export const STATIONS = {
   [STATION_IDS.jr_hokkaidou.gakuden]: new StationInfo('学田', NO_TRANSFER, "学田"),
   [STATION_IDS.jr_hokkaidou.furano]: new StationInfo('富良野', [
     LINE_IDS.jr_hokkaidou.furano,
-    LINE_IDS.jr_hokkaidou.nemuro_honsen2,
+    LINE_IDS.jr_hokkaidou.nemuro_honsen,
   ], "ふらの"),
   // ＞宗谷本線
   [STATION_IDS.jr_hokkaidou.asahikawa_shijou]: new StationInfo('旭川市場', [
@@ -3466,7 +3466,7 @@ export const STATIONS = {
   ], "ひがしくしろ"),
   // ＞花咲線
   [STATION_IDS.jr_hokkaidou.kushiro]: new StationInfo('釧路', [
-    LINE_IDS.jr_hokkaidou.nemuro_honsen1,
+    LINE_IDS.jr_hokkaidou.nemuro_honsen,
     LINE_IDS.jr_hokkaidou.hanasaki,
   ], "くしろ"),
   [STATION_IDS.jr_hokkaidou.hamanaka]: new StationInfo('浜中', NO_TRANSFER, "はまなか"),
@@ -3485,4 +3485,13 @@ export const STATIONS = {
   [STATION_IDS.jr_hokkaidou.nishi_wada]: new StationInfo('西和田', NO_TRANSFER, "にしわだ"),
   [STATION_IDS.jr_hokkaidou.higashi_nemuro]: new StationInfo('東根室', NO_TRANSFER, "ひがしねむろ"),
   [STATION_IDS.jr_hokkaidou.nemuro]: new StationInfo('根室', NO_TRANSFER, "ねむろ"),
+  // ＞根室本線
+  [STATION_IDS.jr_hokkaidou.higashi_takikawa]: new StationInfo('東滝川', NO_TRANSFER, "ひがしたきかわ"),
+  [STATION_IDS.jr_hokkaidou.akabira]: new StationInfo('赤平', NO_TRANSFER, "あかびら"),
+  [STATION_IDS.jr_hokkaidou.moshiri]: new StationInfo('茂尻', NO_TRANSFER, "もしり"),
+  [STATION_IDS.jr_hokkaidou.hirakishi]: new StationInfo('平岸', NO_TRANSFER, "ひらきし"),
+  [STATION_IDS.jr_hokkaidou.ashibetsu]: new StationInfo('芦別', NO_TRANSFER, "あしべつ"),
+  [STATION_IDS.jr_hokkaidou.kami_ashibetsu]: new StationInfo('上芦別', NO_TRANSFER, "かみあしべつ"),
+  [STATION_IDS.jr_hokkaidou.nokanan]: new StationInfo('野花南', NO_TRANSFER, "のかなん"),
+
 }
