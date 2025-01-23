@@ -1867,14 +1867,14 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.osaki),
   ]),
   // 横浜高速鉄道
-  [LINE_IDS.yokohama_kousoku.minato_mirai]: new Line('みなとみらい線', '東急電鉄', LOCAL_ONLY, [
+  [LINE_IDS.yokohama_kousoku.minato_mirai]: new Line('みなとみらい線', '横浜高速鉄道', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_east.yokohama),
     new StopStationDef(STATION_IDS.yokohama_kousoku.shin_takashima),
     new StopStationDef(STATION_IDS.yokohama_kousoku.minato_mirai),
     new StopStationDef(STATION_IDS.yokohama_kousoku.basyamichi),
     new StopStationDef(STATION_IDS.yokohama_kousoku.nihon_odori),
     new StopStationDef(STATION_IDS.yokohama_kousoku.motomachi_chukagai),
-  ]),
+  ], P.KANAGAWA),
 
 
   // 京成電鉄
@@ -2419,7 +2419,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_hokkaidou.higashi_nemuro),
     new StopStationDef(STATION_IDS.jr_hokkaidou.nemuro),
   ], P.HOKKAIDO),
-  [LINE_IDS.jr_hokkaidou.nemuro_honsen]: new Line('根室本線', 'JR北海道', LOCAL_ONLY, [
+  [LINE_IDS.jr_hokkaidou.nemuro_honsen1]: new Line('根室本線[滝川ー富良野]', 'JR北海道', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_hokkaidou.takikawa),
     new StopStationDef(STATION_IDS.jr_hokkaidou.higashi_takikawa),
     new StopStationDef(STATION_IDS.jr_hokkaidou.akabira),
@@ -2429,5 +2429,32 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_hokkaidou.kami_ashibetsu),
     new StopStationDef(STATION_IDS.jr_hokkaidou.nokanan),
     new StopStationDef(STATION_IDS.jr_hokkaidou.furano),
+  ], P.HOKKAIDO),
+  [LINE_IDS.jr_hokkaidou.nemuro_honsen2]: new Line('根室本線[新得ー釧路]', 'JR北海道', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_hokkaidou.shintoku),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.tokachi_shimizu),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.mikage),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.memuro),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.taisei),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.nishi_obihiro),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.hakurindai),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.obihiro),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.satsunai),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.makubetsu),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.toshibetsu),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.ikeda),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.tofutsu),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.toyokoro),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.shinyoshino),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.urahoro),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.atsunai),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.onbetsu),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.shiranuka),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.nishi_syoro),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.syoro),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.otanoshike),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.shin_otanoshike),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.shinfuji),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.kushiro),
   ], P.HOKKAIDO),
 }

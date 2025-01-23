@@ -3256,7 +3256,7 @@ export const STATIONS = {
   [STATION_IDS.jr_hokkaidou.kunnui]: new StationInfo('国縫', NO_TRANSFER, "くんぬい"),
   [STATION_IDS.jr_hokkaidou.osyamanbe]: new StationInfo('長万部', [
     LINE_IDS.jr_hokkaidou.hakodate_honsen,
-    LINE_IDS.jr_hokkaidou.nemuro_honsen,
+    LINE_IDS.jr_hokkaidou.muroran_honsen,
   ], "おしゃまんべ"),
   [STATION_IDS.jr_hokkaidou.hutamata]: new StationInfo('二股', NO_TRANSFER, "ふたまた"),
   [STATION_IDS.jr_hokkaidou.kuromatsunai]: new StationInfo('黒松内', NO_TRANSFER, "くろまつない"),
@@ -3324,7 +3324,7 @@ export const STATIONS = {
   [STATION_IDS.jr_hokkaidou.toyonuma]: new StationInfo('豊沼', NO_TRANSFER, "とよぬま"),
   [STATION_IDS.jr_hokkaidou.sunagawa]: new StationInfo('砂川', NO_TRANSFER, "すながわ"),
   [STATION_IDS.jr_hokkaidou.takikawa]: new StationInfo('滝川', [
-    LINE_IDS.jr_hokkaidou.nemuro_honsen,
+    LINE_IDS.jr_hokkaidou.nemuro_honsen1,
     LINE_IDS.jr_hokkaidou.hakodate_honsen,
   ], "たきかわ"),
   [STATION_IDS.jr_hokkaidou.ebeotsu]: new StationInfo('江部乙', NO_TRANSFER, "えべおつ"),
@@ -3357,7 +3357,7 @@ export const STATIONS = {
   [STATION_IDS.jr_hokkaidou.gakuden]: new StationInfo('学田', NO_TRANSFER, "学田"),
   [STATION_IDS.jr_hokkaidou.furano]: new StationInfo('富良野', [
     LINE_IDS.jr_hokkaidou.furano,
-    LINE_IDS.jr_hokkaidou.nemuro_honsen,
+    LINE_IDS.jr_hokkaidou.nemuro_honsen1,
   ], "ふらの"),
   // ＞宗谷本線
   [STATION_IDS.jr_hokkaidou.asahikawa_shijou]: new StationInfo('旭川市場', [
@@ -3466,7 +3466,7 @@ export const STATIONS = {
   ], "ひがしくしろ"),
   // ＞花咲線
   [STATION_IDS.jr_hokkaidou.kushiro]: new StationInfo('釧路', [
-    LINE_IDS.jr_hokkaidou.nemuro_honsen,
+    LINE_IDS.jr_hokkaidou.nemuro_honsen2,
     LINE_IDS.jr_hokkaidou.hanasaki,
   ], "くしろ"),
   [STATION_IDS.jr_hokkaidou.hamanaka]: new StationInfo('浜中', NO_TRANSFER, "はまなか"),
@@ -3485,7 +3485,7 @@ export const STATIONS = {
   [STATION_IDS.jr_hokkaidou.nishi_wada]: new StationInfo('西和田', NO_TRANSFER, "にしわだ"),
   [STATION_IDS.jr_hokkaidou.higashi_nemuro]: new StationInfo('東根室', NO_TRANSFER, "ひがしねむろ"),
   [STATION_IDS.jr_hokkaidou.nemuro]: new StationInfo('根室', NO_TRANSFER, "ねむろ"),
-  // ＞根室本線
+  // ＞根室本線[滝川ー富良野]
   [STATION_IDS.jr_hokkaidou.higashi_takikawa]: new StationInfo('東滝川', NO_TRANSFER, "ひがしたきかわ"),
   [STATION_IDS.jr_hokkaidou.akabira]: new StationInfo('赤平', NO_TRANSFER, "あかびら"),
   [STATION_IDS.jr_hokkaidou.moshiri]: new StationInfo('茂尻', NO_TRANSFER, "もしり"),
@@ -3493,5 +3493,32 @@ export const STATIONS = {
   [STATION_IDS.jr_hokkaidou.ashibetsu]: new StationInfo('芦別', NO_TRANSFER, "あしべつ"),
   [STATION_IDS.jr_hokkaidou.kami_ashibetsu]: new StationInfo('上芦別', NO_TRANSFER, "かみあしべつ"),
   [STATION_IDS.jr_hokkaidou.nokanan]: new StationInfo('野花南', NO_TRANSFER, "のかなん"),
-
+  // ＞根室本線[釧路ー根室]
+  [STATION_IDS.jr_hokkaidou.shintoku]: new StationInfo('新得', [
+    LINE_IDS.jr_hokkaidou.nemuro_honsen2,
+    LINE_IDS.jr_hokkaidou.sekisyou,
+  ], "しんとく"),
+  [STATION_IDS.jr_hokkaidou.tokachi_shimizu]: new StationInfo('十勝清水', NO_TRANSFER, "とかちしみず"),
+  [STATION_IDS.jr_hokkaidou.mikage]: new StationInfo('御影', NO_TRANSFER, "みかげ"),
+  [STATION_IDS.jr_hokkaidou.memuro]: new StationInfo('芽室', NO_TRANSFER, "めむろ"),
+  [STATION_IDS.jr_hokkaidou.taisei]: new StationInfo('大成', NO_TRANSFER, "たいせい"),
+  [STATION_IDS.jr_hokkaidou.nishi_obihiro]: new StationInfo('西帯広', NO_TRANSFER, "にしおびひろ"),
+  [STATION_IDS.jr_hokkaidou.hakurindai]: new StationInfo('柏林台', NO_TRANSFER, "はくりんだい"),
+  [STATION_IDS.jr_hokkaidou.obihiro]: new StationInfo('帯広', NO_TRANSFER, "おびひろ"),
+  [STATION_IDS.jr_hokkaidou.satsunai]: new StationInfo('札内', NO_TRANSFER, "さつない"),
+  [STATION_IDS.jr_hokkaidou.makubetsu]: new StationInfo('幕別', NO_TRANSFER, "まくべつ"),
+  [STATION_IDS.jr_hokkaidou.toshibetsu]: new StationInfo('利別', NO_TRANSFER, "としべつ"),
+  [STATION_IDS.jr_hokkaidou.ikeda]: new StationInfo('池田', NO_TRANSFER, "いけだ"),
+  [STATION_IDS.jr_hokkaidou.tofutsu]: new StationInfo('十弗', NO_TRANSFER, "とおふつ"),
+  [STATION_IDS.jr_hokkaidou.toyokoro]: new StationInfo('豊頃', NO_TRANSFER, "とよころ"),
+  [STATION_IDS.jr_hokkaidou.shinyoshino]: new StationInfo('新吉野', NO_TRANSFER, "しんよしの"),
+  [STATION_IDS.jr_hokkaidou.urahoro]: new StationInfo('浦幌', NO_TRANSFER, "うらほろ"),
+  [STATION_IDS.jr_hokkaidou.atsunai]: new StationInfo('厚内', NO_TRANSFER, "あつない"),
+  [STATION_IDS.jr_hokkaidou.onbetsu]: new StationInfo('音別', NO_TRANSFER, "おんべつ"),
+  [STATION_IDS.jr_hokkaidou.shiranuka]: new StationInfo('白糠', NO_TRANSFER, "しらぬか"),
+  [STATION_IDS.jr_hokkaidou.nishi_syoro]: new StationInfo('西庶路', NO_TRANSFER, "にししょろ"),
+  [STATION_IDS.jr_hokkaidou.syoro]: new StationInfo('庶路', NO_TRANSFER, "しょろ"),
+  [STATION_IDS.jr_hokkaidou.otanoshike]: new StationInfo('大楽毛', NO_TRANSFER, "おたのしけ"),
+  [STATION_IDS.jr_hokkaidou.shin_otanoshike]: new StationInfo('新大楽毛', NO_TRANSFER, "しんおたのしけ"),
+  [STATION_IDS.jr_hokkaidou.shinfuji]: new StationInfo('新富士', NO_TRANSFER, "しんふじ"),
 }

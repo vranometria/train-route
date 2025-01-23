@@ -578,8 +578,10 @@ export const LINE_IDS = {
     sekihoku_honsen: 'jr-hokkaidou-sekihoku-honsen',
     /** 宗谷本線 */
     souya_honsen: 'jr-hokkaidou-souya-honsen',
-    /** 根室本線 */
-    nemuro_honsen: 'jr-hokkaidou-nemuro-honsen',
+    /** 根室本線(滝川ー富良野) */
+    nemuro_honsen1: 'jr-hokkaidou-nemuro-honsen1',
+    /** 根室本線(新得―釧路) */
+    nemuro_honsen2: 'jr-hokkaidou-nemuro-honsen2',
     /** 室蘭本線 */
     muroran_honsen: 'jr-hokkaidou-muroran-honsen',
     /** 千歳線 */
@@ -592,6 +594,8 @@ export const LINE_IDS = {
     senmou_honsen: 'jr-hokkaidou-senmou-honsen',
     /** 花咲線 */
     hanasaki: 'jr-hokkaidou-hanasaki',
+    /** 石勝線 */
+    sekisyou: 'jr-hokkaidou-sekisyou',
   },
 };
 
@@ -2725,7 +2729,7 @@ export const STATION_IDS = {
     ochiishi: "jr-hokkaidou-ochiishi",
     konbumori: "jr-hokkaidou-konbumori",
     nishi_wada: "jr-hokkaidou-nishi-wada",
-    // 根室本線
+    // 根室本線1
     higashi_takikawa: "jr-hokkaidou-higashi-takikawa",
     akabira: "jr-hokkaidou-akabira",
     moshiri: "jr-hokkaidou-moshiri",
@@ -2733,6 +2737,7 @@ export const STATION_IDS = {
     ashibetsu: "jr-hokkaidou-ashibetsu",
     kami_ashibetsu: "jr-hokkaidou-kami-ashibetsu",
     nokanan: "jr-hokkaidou-nokanan",
+    // 根室本線2
     shintoku: "jr-hokkaidou-shintoku",
     tokachi_shimizu: "jr-hokkaidou-tokachi-shimizu",
     mikage: "jr-hokkaidou-mikage",
@@ -2746,7 +2751,7 @@ export const STATION_IDS = {
     toshibetsu: "jr-hokkaidou-toshibetsu",
     ikeda: "jr-hokkaidou-ikeda",
     tofutsu: "jr-hokkaidou-tofutsu",
-    yokokoro: "jr-hokkaidou-yokokoro",
+    toyokoro: "jr-hokkaidou-toyokoro",
     shinyoshino: "jr-hokkaidou-yoshino",
     urahoro: "jr-hokkaidou-urahoro",
     atsunai: "jr-hokkaidou-atsunai",

@@ -55,10 +55,10 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.sagami.izumino}}">いずみ野線</RouterLink>
         </div>
 
-        横浜高速鉄道
+        <!-- 横浜高速鉄道
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.yokohama_kousoku.minato_mirai}}">みなとみらい線</RouterLink>
-        </div>
+        </div> -->
 
         東急電鉄
         <div>
@@ -169,6 +169,7 @@ import LineAccordion from './components/LineAccordion.vue';
         </div>
 
         <LineAccordion :prefecture="PREFECTURE.TOKYO" />
+        <LineAccordion :prefecture="PREFECTURE.KANAGAWA" />
         <LineAccordion :prefecture="PREFECTURE.CHIBA" />
         <LineAccordion :prefecture="PREFECTURE.HOKKAIDO" />
       </nav>
