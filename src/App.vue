@@ -29,7 +29,7 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_subway.sakura_tram}}" >東京さくらトラム</RouterLink>
         </div>
 
-        東京メトロ
+        <!-- 東京メトロ
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_metro.hibiya}}" >日比谷線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_metro.marunouchi}}" >丸の内線</RouterLink>
@@ -40,7 +40,7 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_metro.chiyoda}}" >千代田線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_metro.touzai}}" >東西線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tokyo_metro.nanboku}}" >南北線</RouterLink>
-        </div>
+        </div> -->
 
         <!-- 首都圏新都市
         <div>
