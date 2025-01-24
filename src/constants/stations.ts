@@ -3588,4 +3588,8 @@ export const STATIONS = {
   [STATION_IDS.jr_hokkaidou.misaki]: new StationInfo('三崎', NO_TRANSFER, "みさき"),
   [STATION_IDS.jr_hokkaidou.bokoi]: new StationInfo('母恋', NO_TRANSFER, "ぼこい"),
   [STATION_IDS.jr_hokkaidou.muroran]: new StationInfo('室蘭', NO_TRANSFER, "むろらん"),
+  [STATION_IDS.jr_hokkaidou.yufutsu]: new StationInfo('勇払', NO_TRANSFER, "ゆうふつ"),
+  [STATION_IDS.jr_hokkaidou.hamaatsuma]: new StationInfo('浜厚真', NO_TRANSFER, "はまあつま"),
+  [STATION_IDS.jr_hokkaidou.mukawa]: new StationInfo('むかわ', NO_TRANSFER, "むかわ"),
+
 }

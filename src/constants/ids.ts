@@ -2838,6 +2838,10 @@ export const STATION_IDS = {
     misaki: "jr-hokkaidou-misaki",
     bokoi: "jr-hokkaidou-bokoi",
     muroran: "jr-hokkaidou-muroran",
+    // 日高本線
+    yufutsu: "jr-hokkaidou-yufutsu",
+    hamaatsuma: "jr-hokkaidou-hamaatsuma",
+    mukawa: "jr-hokkaidou-mukawa",
   },
   /** 札幌地下鉄　駅 */
   sapporo_subway: {

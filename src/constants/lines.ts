@@ -2535,4 +2535,10 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_hokkaidou.bokoi),
     new StopStationDef(STATION_IDS.jr_hokkaidou.muroran),
   ], P.HOKKAIDO),
+  [LINE_IDS.jr_hokkaidou.hidaka_honsen]: new Line('日高本線', 'JR北海道', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_hokkaidou.tomakomai),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.yufutsu),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.hamaatsuma),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.mukawa),
+  ], P.HOKKAIDO),
 }
