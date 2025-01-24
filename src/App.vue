@@ -9,7 +9,7 @@ import LineAccordion from './components/LineAccordion.vue';
   <header>
     <div class="wrapper">
       <nav>
-        京急電鉄
+        <!-- 京急電鉄
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.honsen}}">本線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.haneda_kuko}}">羽田空港線</RouterLink>
@@ -17,7 +17,7 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.kurihama}}">久里浜線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.daishi}}">大師線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keikyu.sea_side}}">シーサイドライン</RouterLink>
-        </div>
+        </div> -->
 
         <!-- 東京都交通局
         <div>
@@ -155,6 +155,7 @@ import LineAccordion from './components/LineAccordion.vue';
           <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tobu.nikko}}">日光線</RouterLink> -->
           <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tobu.utsunomiya}}">宇都宮線</RouterLink> -->
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toubu.urban_park_line}}">東武アーバンパークライン</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toubu.ogose}}">東武生越線</RouterLink>
         </div>
 
         埼玉新都市交通
@@ -170,6 +171,7 @@ import LineAccordion from './components/LineAccordion.vue';
 
         <LineAccordion :prefecture="PREFECTURE.TOKYO" />
         <LineAccordion :prefecture="PREFECTURE.KANAGAWA" />
+        <LineAccordion :prefecture="PREFECTURE.SAITAMA" />
         <LineAccordion :prefecture="PREFECTURE.CHIBA" />
         <LineAccordion :prefecture="PREFECTURE.HOKKAIDO" />
       </nav>
