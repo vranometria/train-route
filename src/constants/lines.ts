@@ -7,6 +7,8 @@ import { SemiExpress } from '@/types/semi-express';
 import { Express } from '@/types/express';
 import { ExtraExpress } from '@/types/extra-express';
 import { PREFECTURE as P } from './prefecture';
+import { SectionExpress } from '@/types/section-express';
+import { SectionSemiExpress } from '@/types/section--semi-express';
 
 const LOCAL_ONLY:KindDef[] = [];
 
@@ -2157,6 +2159,62 @@ export const LINES = {
     new StopStationDef(STATION_IDS.toubu.kameido_suijin),
     new StopStationDef(STATION_IDS.jr_east.kameido),
   ], P.TOKYO),
+  [LINE_IDS.toubu.isezaki]: new Line('東武伊勢崎線', '東武鉄道', [new Express, new SectionExpress, new SemiExpress, new SectionSemiExpress], [
+    new StopStationDef(STATION_IDS.tokyo_subway.asakusa, [SectionExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.tokyo_skytree, [SectionExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.hikifune, [Rapid.KEY,SectionExpress.KEY,SemiExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.higashi_mukoujima, [SectionExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.kanegafuchi, [SectionExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.horikiri, [SectionExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.ushida, [SectionExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.tokyo_metro.kitasenju, [Rapid.KEY,SectionExpress.KEY,SemiExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.kosuga, []),
+    new StopStationDef(STATION_IDS.toubu.gotanno, []),
+    new StopStationDef(STATION_IDS.toubu.umejima, []),
+    new StopStationDef(STATION_IDS.toubu.nishi_arai, [Rapid.KEY,SectionExpress.KEY,SemiExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.takenotsuka, []),
+    new StopStationDef(STATION_IDS.toubu.tanitsuka, []),
+    new StopStationDef(STATION_IDS.toubu.souka, [Rapid.KEY,SectionExpress.KEY,SemiExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.dokkyoudaigakumae, []),
+    new StopStationDef(STATION_IDS.toubu.shinden, []),
+    new StopStationDef(STATION_IDS.toubu.gamou, []),
+    new StopStationDef(STATION_IDS.toubu.shin_koshigaya, [Rapid.KEY,SectionExpress.KEY,SemiExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.koshigaya, [Rapid.KEY,SectionExpress.KEY,SemiExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.kita_koshigaya, [SectionSemiExpress.KEY,SemiExpress.KEY,]),
+    new StopStationDef(STATION_IDS.toubu.obukuro, [SectionSemiExpress.KEY, SemiExpress.KEY,]),
+    new StopStationDef(STATION_IDS.toubu.sengendai, [Rapid.KEY,SectionExpress.KEY,SemiExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.takesato, [SectionSemiExpress.KEY, SemiExpress.KEY,]),
+    new StopStationDef(STATION_IDS.toubu.ichinowari, [SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.kasukabe, [Rapid.KEY,SectionExpress.KEY,SemiExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.kita_kasukabe, [SectionSemiExpress.KEY,SemiExpress.KEY,]),
+    new StopStationDef(STATION_IDS.toubu.himemiya, [SectionSemiExpress.KEY,SemiExpress.KEY,]),
+    new StopStationDef(STATION_IDS.toubu.toubu_doubutsu_kouen, [Rapid.KEY,SectionExpress.KEY,SemiExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.wado, [Rapid.KEY,SectionExpress.KEY,SectionSemiExpress.KEY,SemiExpress.KEY,]),
+    new StopStationDef(STATION_IDS.jr_east.kuki, [Rapid.KEY,SectionExpress.KEY,SectionSemiExpress.KEY,SemiExpress.KEY,]),
+    new StopStationDef(STATION_IDS.toubu.washinomiya, [SectionExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.hanasaki, [SectionExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.kasu, [SectionExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.minami_hanyu, [SectionExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.chichibu.hanyu, [SectionExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.kawamata, [SectionExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.morinjimae, [SectionExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.tatebayashi, [SectionExpress.KEY,SectionSemiExpress.KEY]),
+    new StopStationDef(STATION_IDS.toubu.tatara, []),
+    new StopStationDef(STATION_IDS.toubu.agata, []),
+    new StopStationDef(STATION_IDS.toubu.fukui, []),
+    new StopStationDef(STATION_IDS.toubu.toubu_izumi, []),
+    new StopStationDef(STATION_IDS.toubu.ashikagashi, []),
+    new StopStationDef(STATION_IDS.toubu.yasyu_yamabe, []),
+    new StopStationDef(STATION_IDS.toubu.niragawa, []),
+    new StopStationDef(STATION_IDS.toubu.ota, []),
+    new StopStationDef(STATION_IDS.toubu.hosoya, []),
+    new StopStationDef(STATION_IDS.toubu.kizaki, []),
+    new StopStationDef(STATION_IDS.toubu.serada, []),
+    new StopStationDef(STATION_IDS.toubu.sakaimachi, []),
+    new StopStationDef(STATION_IDS.toubu.goushi, []),
+    new StopStationDef(STATION_IDS.toubu.shin_isezaki, []),
+    new StopStationDef(STATION_IDS.jr_east.isezaki, []),
+  ],[P.TOKYO, P.SAITAMA, P.TOCHIGI, P.GUNMA]),
 
   // 京王電鉄
   // ＞京王線

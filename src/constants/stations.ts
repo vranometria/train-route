@@ -407,7 +407,7 @@ export const STATIONS = {
     LINE_IDS.tokyo_metro.hanzoumon,
     LINE_IDS.tokyo_subway.asakusa,
     LINE_IDS.toubu.toubu,
-    LINE_IDS.toubu.skytree,
+    LINE_IDS.toubu.isezaki,
   ], "おしあげ"),
   [STATION_IDS.tokyo_metro.kitasenju]: new StationInfo('北千住', [
     LINE_IDS.tokyo_metro.hibiya,
@@ -1812,7 +1812,7 @@ export const STATIONS = {
   ], "ひがしかわぐち"),
   [STATION_IDS.jr_east.minami_koshigaya]: new StationInfo('南越谷', [
     LINE_IDS.jr_east.musashino,
-    LINE_IDS.toubu.skytree
+    LINE_IDS.toubu.isezaki
   ], "みなみこしがや"),
   [STATION_IDS.jr_east.koshigaya_laketown]: new StationInfo('越谷レイクタウン', []),
   [STATION_IDS.jr_east.yoshikawa]: new StationInfo('吉川', [], "よしかわ"),
@@ -2735,7 +2735,7 @@ export const STATIONS = {
   [STATION_IDS.toubu.yagisaki]: new StationInfo('八木崎', [], "やぎさき"),
   [STATION_IDS.toubu.kasukabe]: new StationInfo('春日部', [
     LINE_IDS.toubu.urban_park_line,
-    LINE_IDS.toubu.skytree,
+    LINE_IDS.toubu.isezaki,
   ], "かすかべ"),
   [STATION_IDS.toubu.fujinoushijima]: new StationInfo('藤の牛島', [], "ふじのうしじま"),
   [STATION_IDS.toubu.minami_sakurai]: new StationInfo('南桜井', [], "みなみさくらい"),
@@ -2778,12 +2778,73 @@ export const STATIONS = {
   // 亀戸線
   [STATION_IDS.toubu.hikifune]: new StationInfo('曳舟', [
     LINE_IDS.toubu.kameido,
-    LINE_IDS.toubu.skytree,
+    LINE_IDS.toubu.isezaki,
   ], "ひきふね"),
   [STATION_IDS.toubu.omurai]: new StationInfo('小村井', NO_TRANSFER, "おむらい"),
   [STATION_IDS.toubu.higashi_azuma]: new StationInfo('東あずま', NO_TRANSFER, "ひがしあずま"),
   [STATION_IDS.toubu.kameido_suijin]: new StationInfo('亀戸水神', NO_TRANSFER, "かめいどすいじん"),
-
+  // スカイツリーライン
+  [STATION_IDS.toubu.tokyo_skytree]: new StationInfo('とうきょうスカイツリー', [], "とうきょうすかいつりー"),
+  [STATION_IDS.toubu.higashi_mukoujima]: new StationInfo('東向島', [], "ひがしむこうじま"),
+  [STATION_IDS.toubu.kanegafuchi]: new StationInfo('鐘ヶ淵', [], "かねがふち"),
+  [STATION_IDS.toubu.horikiri]: new StationInfo('堀切', [], "ほりきり"),
+  [STATION_IDS.toubu.ushida]: new StationInfo('牛田', [], "うしだ"),
+  [STATION_IDS.toubu.kosuga]: new StationInfo('小菅', [], "こすが"),
+  [STATION_IDS.toubu.gotanno]: new StationInfo('五反野', [], "ごたんの"),
+  [STATION_IDS.toubu.umejima]: new StationInfo('梅島', [], "うめじま"),
+  [STATION_IDS.toubu.nishi_arai]: new StationInfo('西新井', [
+    LINE_IDS.toubu.isezaki,
+    LINE_IDS.toubu.daishi,
+  ], "にしあらい"),
+  [STATION_IDS.toubu.takenotsuka]: new StationInfo('竹ノ塚', [], "たけのつか"),
+  [STATION_IDS.toubu.tanitsuka]: new StationInfo('谷塚', [], "たにつか"),
+  [STATION_IDS.toubu.souka]: new StationInfo('草加', [], "そうか"),
+  [STATION_IDS.toubu.dokkyoudaigakumae]: new StationInfo('獨協大学前', [], "どっきょうだいがくまえ"),
+  [STATION_IDS.toubu.shinden]: new StationInfo('新田', [], "しんでん"),
+  [STATION_IDS.toubu.gamou]: new StationInfo('蒲生', [], "がもう"),
+  [STATION_IDS.toubu.koshigaya]: new StationInfo('越谷', [], "こしがや"),
+  [STATION_IDS.toubu.shin_koshigaya]: new StationInfo('新越谷', [], "しんこしがや"),
+  [STATION_IDS.toubu.kita_koshigaya]: new StationInfo('北越谷', [], "きたこしがや"),
+  [STATION_IDS.toubu.obukuro]: new StationInfo('大袋', [], "おおぶくろ"),
+  [STATION_IDS.toubu.sengendai]: new StationInfo('せんげん台', [], "せんげんだい"),
+  [STATION_IDS.toubu.takesato]: new StationInfo('武里', [], "たけさと"),
+  [STATION_IDS.toubu.ichinowari]: new StationInfo('一ノ割', [], "いちのわり"),
+  [STATION_IDS.toubu.kita_kasukabe]: new StationInfo('北春日部', [], "きたかすかべ"),
+  [STATION_IDS.toubu.himemiya]: new StationInfo('姫宮', [], "ひめみや"),
+  [STATION_IDS.toubu.toubu_doubutsu_kouen]: new StationInfo('東武動物公園', [
+    LINE_IDS.toubu.isezaki,
+    LINE_IDS.toubu.nikkou,
+  ], "とうぶどうぶつこうえん"),
+  [STATION_IDS.toubu.wado]: new StationInfo('和戸', [], "わど"),
+  [STATION_IDS.toubu.washinomiya]: new StationInfo('鷲宮', [], "わしのみや"),
+  [STATION_IDS.toubu.hanasaki]: new StationInfo('花崎', [], "はなさき"),
+  [STATION_IDS.toubu.kasu]: new StationInfo('加須', [], "かす"),
+  [STATION_IDS.toubu.minami_hanyu]: new StationInfo('南羽生', [], "みなみはにゅう"),
+  [STATION_IDS.toubu.kawamata]: new StationInfo('川俣', [], "かわまた"),
+  [STATION_IDS.toubu.morinjimae]: new StationInfo('茂林寺前', [], "もりんじまえ"),
+  [STATION_IDS.toubu.tatebayashi]: new StationInfo('館林', [
+    LINE_IDS.toubu.isezaki,
+    LINE_IDS.toubu.sano,
+    LINE_IDS.toubu.koizumi,
+  ], "たてばやし"),
+  [STATION_IDS.toubu.tatara]: new StationInfo('多々良', [], "たたら"),
+  [STATION_IDS.toubu.agata]: new StationInfo('県', [], "あがた"),
+  [STATION_IDS.toubu.fukui]: new StationInfo('福居', [], "ふくい"),
+  [STATION_IDS.toubu.toubu_izumi]: new StationInfo('東武泉', [], "とうぶいずみ"),
+  [STATION_IDS.toubu.ashikagashi]: new StationInfo('足利市', [], "あしかがし"),
+  [STATION_IDS.toubu.yasyu_yamabe]: new StationInfo('野州山辺', [], "やしゅうやまべ"),
+  [STATION_IDS.toubu.niragawa]: new StationInfo('韮川', [], "にらがわ"),
+  [STATION_IDS.toubu.ota]: new StationInfo('太田', [
+    LINE_IDS.toubu.isezaki,
+    LINE_IDS.toubu.kiryu,
+    LINE_IDS.toubu.koizumi,
+  ], "おおた"),
+  [STATION_IDS.toubu.hosoya]: new StationInfo('細谷', [], "ほそや"),
+  [STATION_IDS.toubu.kizaki]: new StationInfo('木崎', [], "きざき"),
+  [STATION_IDS.toubu.serada]: new StationInfo('世良田', [], "せらだ"),
+  [STATION_IDS.toubu.sakaimachi]: new StationInfo('境町', [], "さかいまち"),
+  [STATION_IDS.toubu.goushi]: new StationInfo('剛志', [], "ごうし"),
+  [STATION_IDS.toubu.shin_isezaki]: new StationInfo('新伊勢崎', [], "しんいせざき"),
 
   // 埼玉新都市交通
   // ＞ニューシャトル

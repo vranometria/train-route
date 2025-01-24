@@ -246,7 +246,7 @@ export const LINE_IDS = {
       hokkaido: 'jr-hokkaido-shinkansen',
     },
   },
-  /** 東武鉄道 */
+  /** 東武鉄道 路線 */
   toubu: {
     // "東武アーバンパークライン",
     urban_park_line: 'toubu-urban-park-line',
@@ -260,12 +260,22 @@ export const LINE_IDS = {
     nikko: 'toubu-nikko',
     /** 東武線 */
     toubu: 'toubu-toubu',
-    /** スカイツリーライン */
-    skytree: 'toubu-skytree',
+    /** 伊勢崎線 */
+    isezaki: 'toubu-isezaki',
     /** 東武生越線 */
     ogose: 'toubu-ogose',
     /** 東葉高速線 */
     touyou_kousoku: 'toubu-touyou-kousoku',
+    /** 大師線 */
+    daishi: 'toubu-daishi',
+    /** 日光線 */
+    nikkou: 'toubu-nikkou',
+    /** 佐野線 */
+    sano: 'toubu-sano',
+    /** 小泉線 */
+    koizumi: 'toubu-koizumi',
+    /** 桐生線 */
+    kiryu: 'toubu-kiryu',
   },
   saitama_shintoshi_koutsu: {
     // ニューシャトル
@@ -1811,7 +1821,6 @@ export const STATION_IDS = {
     minami_fukushima: 'jr-east-minami-fukushima',
     higashi_fukushima: 'jr-east-higashi-fukushima',
     date: 'jr-east-date',
-    kori: 'jr-east-kori',
     fujita: 'jr-east-fujita',
     kaida: 'jr-east-kaida',
     kosugou: 'jr-east-kosugou',
@@ -2265,8 +2274,54 @@ export const STATION_IDS = {
     omurai: "toubu-omurai",
     higashi_azuma: "toubu-higashi-azuma",
     kameido_suijin: "toubu-kameido-suijin",
-
-
+    // スカイツリーライン
+    tokyo_skytree: "toubu-tokyo-skytree",
+    higashi_mukoujima: "toubu-higashi-mukoujima",
+    kanegafuchi: "toubu-kanegafuchi",
+    horikiri: "toubu-horikiri",
+    ushida: "toubu-ushida",
+    kosuga: "toubu-kosuga",
+    gotanno: "toubu-gotanno",
+    umejima: "toubu-umejima",
+    nishi_arai: "toubu-nishi-arai",
+    takenotsuka: "toubu-takenotsuka",
+    tanitsuka: "toubu-tanitsuka",
+    souka: "toubu-souka",
+    dokkyoudaigakumae: "toubu-dokkyoudaigakumae",
+    shinden: "toubu-shinden",
+    gamou: "toubu-gamou",
+    shin_koshigaya: "toubu-shin-koshigaya",
+    koshigaya: "toubu-koshigaya",
+    kita_koshigaya: "toubu-kita-koshigaya",
+    obukuro: "toubu-obukuro",
+    sengendai: "toubu-sengendai",
+    takesato: "toubu-takesato",
+    ichinowari: "toubu-ichinowari",
+    kita_kasukabe: "toubu-kita-kasukabe",
+    himemiya: "toubu-himemiya",
+    toubu_doubutsu_kouen: "toubu-toubu-doubutsu-kouen",
+    wado: "toubu-wado",
+    washinomiya: "toubu-washinomiya",
+    hanasaki: "toubu-hanasaki",
+    kasu: "toubu-kasu",
+    minami_hanyu: "toubu-minami-hanyu",
+    kawamata: "toubu-kawamata",
+    morinjimae: "toubu-morinjimae",
+    tatebayashi: "toubu-tatebayashi",
+    tatara: "toubu-tatara",
+    agata: "toubu-agata",
+    fukui: "toubu-fukui",
+    toubu_izumi: "toubu-toubu-izumi",
+    ashikagashi: "toubu-ashikagashi",
+    yasyu_yamabe: "toubu-yasyu-yamabe",
+    niragawa: "toubu-niragawa",
+    ota: "toubu-oota",
+    hosoya: "toubu-hosoya",
+    kizaki: "toubu-kizaki",
+    serada: "toubu-serada",
+    sakaimachi: "toubu-sakaimachi",
+    goushi: "toubu-goushi",
+    shin_isezaki: "toubu-shin-isezaki",
   },
   /** 西部駅 */
   seibu: {
