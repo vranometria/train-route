@@ -2099,7 +2099,44 @@ export const STATION_IDS = {
     tougendai: 'hakone-tougendai',
   },
 
-
+  // 秩父鉄道
+  chichibu: {
+    // 秩父線
+    hanyu: 'chichibu-hanyu',
+    nishi_hanyu: 'chichibu-nishi-hanyu',
+    shingou: 'chichibu-shingou',
+    busyu_araki: 'chichibu-busyu-araki',
+    higashi_gyouda: 'chichibu-higashi-gyouda',
+    gyoudashi: 'chichibu-gyoudashi',
+    mochida: 'chichibu-mochida',
+    soshio_ryutsu_center: 'chichibu-soshio-ryutsu-center',
+    kami_kumagaya: 'chichibu-kami-kumagaya',
+    ishihara: 'chichibu-ishihara',
+    hirose_yachonomori: 'chichibu-hirose-yachonomori',
+    oasou: 'chichibu-oasou',
+    aketo: 'chichibu-aketo',
+    takekawa: 'chichibu-takekawa',
+    nagata: 'chichibu-nagata',
+    fukaya_hanazono: 'chichibu-fukaya-hanazono',
+    omaeda: 'chichibu-omaeda',
+    sakurazawa: 'chichibu-sakurazawa',
+    hagure: 'chichibu-hagure',
+    higuchi: 'chichibu-higuchi',
+    nogami: 'chichibu-nogami',
+    nagatoro: 'chichibu-nagatoro',
+    kami_nagatoro: 'chichibu-kami-nagatoro',
+    oyahana: 'chichibu-oyahana',
+    wadoukuroya: 'chichibu-wadoukuroya',
+    onohara: 'chichibu-onohara',
+    chichibu: 'chichibu-chichibu',
+    ohanabatake: 'chichibu-ohanabatake',
+    kagemori: 'chichibu-kagemori',
+    urayamaguchi: 'chichibu-urayamaguchi',
+    busyu_nakagawa: 'chichibu-busyu-nakagawa',
+    busyu_hino: 'chichibu-busyu-hino',
+    shiroku: 'chichibu-shiroku',
+    mitsumineguchi: 'chichibu-mitsumineguchi',
+  },
 
   /** 横浜高速 駅 */
   yokohama_kousoku: {
@@ -2253,6 +2290,16 @@ export const STATION_IDS = {
     shin_sayama: "seibu-shin-sayama",
     minami_otsuka: "seibu-minami-otsuka",
     hon_kawagoe: "seibu-hon-kawagoe",
+    // 西武秩父線
+    koma: "seibu-koma",
+    musashi_yokote: "seibu-musashi-yokote",
+    higashi_agano: "seibu-higashi-agano",
+    agano: "seibu-agano",
+    nishi_agano: "seibu-nishi-agano",
+    syoumaru: "seibu-syoumaru",
+    ashigakubo: "seibu-ashigakubo",
+    yokose: "seibu-yokose",
+    seibu_chichibu: "seibu-seibu-chichibu",
   },
   /** 京成駅 */
   keisei: {

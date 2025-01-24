@@ -2793,8 +2793,6 @@ export const STATIONS = {
     LINE_IDS.tokyo_subway.oedo,
   ], "しんおかちまち"),
 
-
-
   // 京王
   // ＞京王線
   [STATION_IDS.keio.sasatsuka]: new StationInfo('笹塚', [
@@ -3220,6 +3218,48 @@ export const STATIONS = {
     LINE_IDS.jr_east.shinkansen.hokkaido,
     LINE_IDS.jr_hokkaidou.hakodate_honsen1,
   ], "しんはこだてほくと"),
+
+  // 秩父鉄道
+  [STATION_IDS.chichibu.hanyu]: new StationInfo('羽生', [
+    LINE_IDS.chichibu.chichibu,
+    LINE_IDS.toubu.isesaki,
+  ], "はにゅう"),
+  [STATION_IDS.chichibu.nishi_hanyu]: new StationInfo('西羽生', NO_TRANSFER, "にしはにゅう"),
+  [STATION_IDS.chichibu.shingou]: new StationInfo('新郷', NO_TRANSFER, "しんごう"),
+  [STATION_IDS.chichibu.busyu_araki]: new StationInfo('武州荒木', NO_TRANSFER, "ぶしゅうあらき"),
+  [STATION_IDS.chichibu.higashi_gyouda]: new StationInfo('東行田', NO_TRANSFER, "ひがしぎょうだ"),
+  [STATION_IDS.chichibu.gyoudashi]: new StationInfo('行田市', NO_TRANSFER, "ぎょうだし"),
+  [STATION_IDS.chichibu.mochida]: new StationInfo('持田', NO_TRANSFER, "もちだ"),
+  [STATION_IDS.chichibu.soshio_ryutsu_center]: new StationInfo('ソシオ流通センター', NO_TRANSFER, "そしおりゅうつうせんたー"),
+  [STATION_IDS.chichibu.kami_kumagaya]: new StationInfo('上熊谷', NO_TRANSFER, "かみくまがや"),
+  [STATION_IDS.chichibu.ishihara]: new StationInfo('石原', NO_TRANSFER, "いしはら"),
+  [STATION_IDS.chichibu.hirose_yachonomori]: new StationInfo('ひろせ野鳥の森', NO_TRANSFER, "ひろせやちょうのもり"),
+  [STATION_IDS.chichibu.oasou]: new StationInfo('大麻生', NO_TRANSFER, "おおあそう"),
+  [STATION_IDS.chichibu.aketo]: new StationInfo('明戸', NO_TRANSFER, "あけと"),
+  [STATION_IDS.chichibu.takekawa]: new StationInfo('武川', NO_TRANSFER, "たけかわ"),
+  [STATION_IDS.chichibu.nagata]: new StationInfo('永田', NO_TRANSFER, "ながた"),
+  [STATION_IDS.chichibu.fukaya_hanazono]: new StationInfo('ふかや花園', NO_TRANSFER, "ふかやはなぞの"),
+  [STATION_IDS.chichibu.omaeda]: new StationInfo('大前田', NO_TRANSFER, "おおまえだ"),
+  [STATION_IDS.chichibu.sakurazawa]: new StationInfo('桜沢', NO_TRANSFER, "さくらざわ"),
+  [STATION_IDS.chichibu.hagure]: new StationInfo('波久礼', NO_TRANSFER, "はぐれ"),
+  [STATION_IDS.chichibu.higuchi]: new StationInfo('樋口', NO_TRANSFER, "ひぐち"),
+  [STATION_IDS.chichibu.nogami]: new StationInfo('野上', NO_TRANSFER, "のがみ"),
+  [STATION_IDS.chichibu.nagatoro]: new StationInfo('長瀞', NO_TRANSFER, "ながとろ"),
+  [STATION_IDS.chichibu.kami_nagatoro]: new StationInfo('上長瀞', NO_TRANSFER, "かみながとろ"),
+  [STATION_IDS.chichibu.oyahana]: new StationInfo('親鼻', NO_TRANSFER, "おやはな"),
+  [STATION_IDS.chichibu.wadoukuroya]: new StationInfo('和道黒谷', NO_TRANSFER, "わどうくろや"),
+  [STATION_IDS.chichibu.onohara]: new StationInfo('大野原', NO_TRANSFER, "おおのはら"),
+  [STATION_IDS.chichibu.chichibu]: new StationInfo('秩父', NO_TRANSFER, "ちちぶ"),
+  [STATION_IDS.chichibu.ohanabatake]: new StationInfo('御花畑', NO_TRANSFER, "おはなばたけ"),
+  [STATION_IDS.chichibu.kagemori]: new StationInfo('影森', [
+    LINE_IDS.chichibu.chichibu,
+    new ExchangeInfo(LINE_IDS.seibu.seibu_chichibu, STATION_IDS.seibu.seibu_chichibu),
+  ], "かげもり"),
+  [STATION_IDS.chichibu.urayamaguchi]: new StationInfo('浦山口', NO_TRANSFER, "うらやまぐち"),
+  [STATION_IDS.chichibu.busyu_nakagawa]: new StationInfo('武州中川', NO_TRANSFER, "ぶしゅうなかがわ"),
+  [STATION_IDS.chichibu.busyu_hino]: new StationInfo('武州日野', NO_TRANSFER, "ぶしゅうひの"),
+  [STATION_IDS.chichibu.shiroku]: new StationInfo('白久', NO_TRANSFER, "しろく"),
+  [STATION_IDS.chichibu.mitsumineguchi]: new StationInfo('三峰口', NO_TRANSFER, "みつみねぐち"),
 
   // JR北海道
   // ＞函館本線

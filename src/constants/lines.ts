@@ -1876,7 +1876,6 @@ export const LINES = {
     new StopStationDef(STATION_IDS.yokohama_kousoku.motomachi_chukagai),
   ], P.KANAGAWA),
 
-
   // 京成電鉄
   [LINE_IDS.keisei.honsen]: new Line('京成本線', '京成電鉄', [], [
     new StopStationDef(STATION_IDS.keisei.keisei_ueno),
@@ -1953,7 +1952,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.hokusou.yagiri),
     new StopStationDef(STATION_IDS.hokusou.shin_shibamata),
     new StopStationDef(STATION_IDS.keisei.keisei_takasago),
-  ]),
+  ], [P.TOKYO, P.CHIBA]),
   // 西部電鉄
   // ＞西武池袋線
   [LINE_IDS.seibu.ikebukuro]: new Line('西武池袋線', '西武鉄道', [], [
@@ -2205,6 +2204,46 @@ export const LINES = {
     new StopStationDef(STATION_IDS.saitama_shintoshi_koutsu.hanuki),
     new StopStationDef(STATION_IDS.saitama_shintoshi_koutsu.uchijuku),
   ]),
+
+  // 秩父鉄道
+  [LINE_IDS.chichibu.chichibu]: new Line('秩父鉄道線', '秩父鉄道', LOCAL_ONLY, [
+     new StopStationDef(STATION_IDS.chichibu.hanyu),
+    new StopStationDef(STATION_IDS.chichibu.nishi_hanyu),
+    new StopStationDef(STATION_IDS.chichibu.shingou),
+    new StopStationDef(STATION_IDS.chichibu.busyu_araki),
+    new StopStationDef(STATION_IDS.chichibu.higashi_gyouda),
+    new StopStationDef(STATION_IDS.chichibu.gyoudashi),
+    new StopStationDef(STATION_IDS.chichibu.mochida),
+    new StopStationDef(STATION_IDS.chichibu.soshio_ryutsu_center),
+    new StopStationDef(STATION_IDS.jr_east.kumagaya),
+    new StopStationDef(STATION_IDS.chichibu.kami_kumagaya),
+    new StopStationDef(STATION_IDS.chichibu.ishihara),
+    new StopStationDef(STATION_IDS.chichibu.hirose_yachonomori),
+    new StopStationDef(STATION_IDS.chichibu.oasou),
+    new StopStationDef(STATION_IDS.chichibu.aketo),
+    new StopStationDef(STATION_IDS.chichibu.takekawa),
+    new StopStationDef(STATION_IDS.chichibu.nagata),
+    new StopStationDef(STATION_IDS.chichibu.fukaya_hanazono),
+    new StopStationDef(STATION_IDS.chichibu.omaeda),
+    new StopStationDef(STATION_IDS.chichibu.sakurazawa),
+    new StopStationDef(STATION_IDS.jr_east.yorii),
+    new StopStationDef(STATION_IDS.chichibu.hagure),
+    new StopStationDef(STATION_IDS.chichibu.higuchi),
+    new StopStationDef(STATION_IDS.chichibu.nogami),
+    new StopStationDef(STATION_IDS.chichibu.nagatoro),
+    new StopStationDef(STATION_IDS.chichibu.kami_nagatoro),
+    new StopStationDef(STATION_IDS.chichibu.oyahana),
+    new StopStationDef(STATION_IDS.chichibu.wadoukuroya),
+    new StopStationDef(STATION_IDS.chichibu.onohara),
+    new StopStationDef(STATION_IDS.chichibu.chichibu),
+    new StopStationDef(STATION_IDS.chichibu.ohanabatake),
+    new StopStationDef(STATION_IDS.chichibu.kagemori),
+    new StopStationDef(STATION_IDS.chichibu.urayamaguchi),
+    new StopStationDef(STATION_IDS.chichibu.busyu_nakagawa),
+    new StopStationDef(STATION_IDS.chichibu.busyu_hino),
+    new StopStationDef(STATION_IDS.chichibu.shiroku),
+    new StopStationDef(STATION_IDS.chichibu.mitsumineguchi),
+  ], P.SAITAMA),
 
   // JR北海道
   // > 函館本線
