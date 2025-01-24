@@ -3204,28 +3204,34 @@ export const STATIONS = {
   ], "きこない"),
   [STATION_IDS.jr_hokkaidou.shin_hakodate_hokuto]: new StationInfo("新函館北斗", [
     LINE_IDS.jr_east.shinkansen.hokkaido,
-    LINE_IDS.jr_hokkaidou.hakodate_honsen,
+    LINE_IDS.jr_hokkaidou.hakodate_honsen1,
   ], "しんはこだてほくと"),
 
   // JR北海道
   // ＞函館本線
   [STATION_IDS.jr_hokkaidou.hakodate]: new StationInfo('函館', [
-    LINE_IDS.jr_hokkaidou.hakodate_honsen,
+    LINE_IDS.jr_hokkaidou.hakodate_honsen1,
     LINE_IDS.dounan_isaribi.dounan_isaribi,
   ], "はこだて"),
   [STATION_IDS.jr_hokkaidou.goryoukaku]: new StationInfo('五稜郭', [
-    LINE_IDS.jr_hokkaidou.hakodate_honsen,
+    LINE_IDS.jr_hokkaidou.hakodate_honsen1,
     LINE_IDS.dounan_isaribi.dounan_isaribi,
   ], "ごりょうかく"),
   [STATION_IDS.jr_hokkaidou.kikyou]: new StationInfo('桔梗', NO_TRANSFER, "ききょう"),
   [STATION_IDS.jr_hokkaidou.onakayama]: new StationInfo('尾仏山', NO_TRANSFER, "おなかやま"),
   [STATION_IDS.jr_hokkaidou.nanae]: new StationInfo('七飯', NO_TRANSFER, "ななえ"),
   [STATION_IDS.jr_hokkaidou.niyama]: new StationInfo('仁山', NO_TRANSFER, "にやま"),
-  [STATION_IDS.jr_hokkaidou.onuma]: new StationInfo('大沼', NO_TRANSFER, "おおぬま"),
+  [STATION_IDS.jr_hokkaidou.onuma]: new StationInfo('大沼', [
+    LINE_IDS.jr_hokkaidou.hakodate_honsen1,
+    LINE_IDS.jr_hokkaidou.hakodate_honsen2,
+  ], "おおぬま"),
   [STATION_IDS.jr_hokkaidou.onuma_kouen]: new StationInfo('大沼公園', NO_TRANSFER, "おおぬまこうえん"),
   [STATION_IDS.jr_hokkaidou.akaigawa]: new StationInfo('赤井川', NO_TRANSFER, "あかいがわ"),
   [STATION_IDS.jr_hokkaidou.komagatake]: new StationInfo('駒ヶ岳', NO_TRANSFER, "こまがたけ"),
-  [STATION_IDS.jr_hokkaidou.mori]: new StationInfo('森', NO_TRANSFER, "もり"),
+  [STATION_IDS.jr_hokkaidou.mori]: new StationInfo('森', [
+    LINE_IDS.jr_hokkaidou.hakodate_honsen1,
+    LINE_IDS.jr_hokkaidou.hakodate_honsen2,
+  ], "もり"),
   [STATION_IDS.jr_hokkaidou.ishikura]: new StationInfo('石倉', NO_TRANSFER, "いしくら"),
   [STATION_IDS.jr_hokkaidou.otoshibe]: new StationInfo('落部', NO_TRANSFER, "おとしべ"),
   [STATION_IDS.jr_hokkaidou.nodaoi]: new StationInfo('野田生', NO_TRANSFER, "のだおい"),
@@ -3235,7 +3241,7 @@ export const STATIONS = {
   [STATION_IDS.jr_hokkaidou.kuroiwa]: new StationInfo('黒岩', NO_TRANSFER, "くろいわ"),
   [STATION_IDS.jr_hokkaidou.kunnui]: new StationInfo('国縫', NO_TRANSFER, "くんぬい"),
   [STATION_IDS.jr_hokkaidou.osyamanbe]: new StationInfo('長万部', [
-    LINE_IDS.jr_hokkaidou.hakodate_honsen,
+    LINE_IDS.jr_hokkaidou.hakodate_honsen1,
     LINE_IDS.jr_hokkaidou.muroran_honsen1,
   ], "おしゃまんべ"),
   [STATION_IDS.jr_hokkaidou.hutamata]: new StationInfo('二股', NO_TRANSFER, "ふたまた"),
@@ -3268,20 +3274,20 @@ export const STATIONS = {
   [STATION_IDS.jr_hokkaidou.hassamu_chuou]: new StationInfo('発寒中央', NO_TRANSFER, "はっさむちゅうおう"),
   [STATION_IDS.jr_hokkaidou.kotoni]: new StationInfo('琴似', NO_TRANSFER, "ことに"),
   [STATION_IDS.jr_hokkaidou.souen]: new StationInfo('桑園', [
-    LINE_IDS.jr_hokkaidou.hakodate_honsen,
+    LINE_IDS.jr_hokkaidou.hakodate_honsen1,
     LINE_IDS.jr_hokkaidou.sassyou,
   ], "そうえん"),
   [STATION_IDS.jr_hokkaidou.sapporo]: new StationInfo('札幌', [
-    LINE_IDS.jr_hokkaidou.hakodate_honsen,
+    LINE_IDS.jr_hokkaidou.hakodate_honsen1,
     LINE_IDS.jr_hokkaidou.chitose,
     LINE_IDS.jr_hokkaidou.sassyou,
   ], "さっぽろ"),
   [STATION_IDS.jr_hokkaidou.naeba]: new StationInfo('苗穂', [
-    LINE_IDS.jr_hokkaidou.hakodate_honsen,
+    LINE_IDS.jr_hokkaidou.hakodate_honsen1,
     LINE_IDS.jr_hokkaidou.chitose,
   ], "なえほ"),
   [STATION_IDS.jr_hokkaidou.shiroishi]: new StationInfo('白石', [
-    LINE_IDS.jr_hokkaidou.hakodate_honsen,
+    LINE_IDS.jr_hokkaidou.hakodate_honsen1,
     LINE_IDS.jr_hokkaidou.chitose,
   ], "しろいし"),
   [STATION_IDS.jr_hokkaidou.atsubetsu]: new StationInfo('厚別', NO_TRANSFER, "あつべつ"),
@@ -3294,7 +3300,7 @@ export const STATIONS = {
   [STATION_IDS.jr_hokkaidou.horomui]: new StationInfo('幌向', NO_TRANSFER, "ほろむい"),
   [STATION_IDS.jr_hokkaidou.kami_horomui]: new StationInfo('上幌向', NO_TRANSFER, "かみほろむい"),
   [STATION_IDS.jr_hokkaidou.iwamizawa]: new StationInfo('岩見沢', [
-    LINE_IDS.jr_hokkaidou.hakodate_honsen,
+    LINE_IDS.jr_hokkaidou.hakodate_honsen1,
     LINE_IDS.jr_hokkaidou.muroran_honsen1,
   ], "いわみざわ"),
   [STATION_IDS.jr_hokkaidou.minenobu]: new StationInfo('峰延', NO_TRANSFER, "みねのぶ"),
@@ -3306,7 +3312,7 @@ export const STATIONS = {
   [STATION_IDS.jr_hokkaidou.sunagawa]: new StationInfo('砂川', NO_TRANSFER, "すながわ"),
   [STATION_IDS.jr_hokkaidou.takikawa]: new StationInfo('滝川', [
     LINE_IDS.jr_hokkaidou.nemuro_honsen1,
-    LINE_IDS.jr_hokkaidou.hakodate_honsen,
+    LINE_IDS.jr_hokkaidou.hakodate_honsen1,
   ], "たきかわ"),
   [STATION_IDS.jr_hokkaidou.ebeotsu]: new StationInfo('江部乙', NO_TRANSFER, "えべおつ"),
   [STATION_IDS.jr_hokkaidou.moseushi]: new StationInfo('藻額', NO_TRANSFER, "もせうし"),
@@ -3317,8 +3323,16 @@ export const STATIONS = {
     LINE_IDS.jr_hokkaidou.furano,
     LINE_IDS.jr_hokkaidou.sekihoku_honsen,
     LINE_IDS.jr_hokkaidou.souya_honsen,
-    LINE_IDS.jr_hokkaidou.hakodate_honsen,
+    LINE_IDS.jr_hokkaidou.hakodate_honsen1,
   ], "あさひかわ"),
+  [STATION_IDS.jr_hokkaidou.shikabe]: new StationInfo('鹿部', NO_TRANSFER, "しかべ"),
+  [STATION_IDS.jr_hokkaidou.oshima_numajiri]: new StationInfo('渡島沼尻', NO_TRANSFER, "おしまぬまじり"),
+  [STATION_IDS.jr_hokkaidou.oshima_sawara]: new StationInfo('渡島砂原', NO_TRANSFER, "おしまさわら"),
+  [STATION_IDS.jr_hokkaidou.kakarinuma]: new StationInfo('唐松沼', NO_TRANSFER, "からまつぬま"),
+  [STATION_IDS.jr_hokkaidou.oshironai]: new StationInfo('大城内', NO_TRANSFER, "おおしろない"),
+  [STATION_IDS.jr_hokkaidou.higashi_mori]: new StationInfo('東森', NO_TRANSFER, "ひがしもり"),
+
+
   // ＞富良野線
   [STATION_IDS.jr_hokkaidou.kaguraoka]: new StationInfo('神楽岡', NO_TRANSFER, "神楽岡"),
   [STATION_IDS.jr_hokkaidou.midorigaoka]: new StationInfo('緑ヶ丘', NO_TRANSFER, "緑ヶ丘"),
@@ -3602,4 +3616,15 @@ export const STATIONS = {
   [STATION_IDS.jr_hokkaidou.toubetsu]: new StationInfo('当別', NO_TRANSFER, "とうべつ"),
   [STATION_IDS.jr_hokkaidou.hokkaidou_iryou_daigaku]: new StationInfo('北海道医療大', NO_TRANSFER, "ほっかいどういりょうだいがく"),
 
+  // 道南いさりび鉄道
+  [STATION_IDS.dounan_isaribi.satsukari]: new StationInfo('札苅', NO_TRANSFER, "さつかり"),
+  [STATION_IDS.dounan_isaribi.izumisawa]: new StationInfo('泉澤', NO_TRANSFER, "いずみさわ"),
+  [STATION_IDS.dounan_isaribi.kamaya]: new StationInfo('釜谷', NO_TRANSFER, "かまや"),
+  [STATION_IDS.dounan_isaribi.oshima_tobetsu]: new StationInfo('渡島当別', NO_TRANSFER, "おしまとうべつ"),
+  [STATION_IDS.dounan_isaribi.moheji]: new StationInfo('茂辺地', NO_TRANSFER, "もへじ"),
+  [STATION_IDS.dounan_isaribi.kamiiso]: new StationInfo('上磯', NO_TRANSFER, "かみいそ"),
+  [STATION_IDS.dounan_isaribi.kiyokawaguchi]: new StationInfo('清川口', NO_TRANSFER, "きよかわぐち"),
+  [STATION_IDS.dounan_isaribi.kunebetsu]: new StationInfo('久根別', NO_TRANSFER, "くねべつ"),
+  [STATION_IDS.dounan_isaribi.higashi_kunebetsu]: new StationInfo('東久根別', NO_TRANSFER, "ひがしくねべつ"),
+  [STATION_IDS.dounan_isaribi.nanaehama]: new StationInfo('七重浜', NO_TRANSFER, "ななえはま"),
 }

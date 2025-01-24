@@ -571,7 +571,8 @@ export const LINE_IDS = {
   /** JR北海道 路線*/
   jr_hokkaidou: {
     /** 函館本線 */
-    hakodate_honsen: 'jr-hokkaidou-hakodate-honsen',
+    hakodate_honsen1: 'jr-hokkaidou-hakodate-honsen1', // 函館本線(函館ー長万部)
+    hakodate_honsen2: 'jr-hokkaidou-hakodate-honsen2', // 函館本線(大沼ー森)
     /** 富良野線 */
     furano: 'jr-hokkaidou-furano',
     /** 石北本線 */
@@ -2609,6 +2610,13 @@ export const STATION_IDS = {
     osamunai: "jr-hokkaidou-osamunai",
     chikabumi: "jr-hokkaidou-chikabumi",
     asahikawa: "jr-hokkaidou-asahikawa",
+    shikabe: "jr-hokkaidou-shikabe",
+    oshima_numajiri: "jr-hokkaidou-oshimanumajiri",
+    oshima_sawara: "jr-hokkaidou-oshima-sawara",
+    kakarinuma: "jr-hokkaidou-kakarinuma",
+    oshironai: "jr-hokkaidou-oshironai",
+    higashi_mori: "jr-hokkaidou-higashi-mori",
+
     // 富良野線
     kaguraoka: "jr-hokkaidou-kaguraoka",
     midorigaoka: "jr-hokkaidou-midorigaoka",
@@ -2877,5 +2885,17 @@ export const STATION_IDS = {
     oyachi: "supporo-subway-oyachi",
     hibarigaoka: "supporo-subway-hibarigaoka",
     shin_sapporo: "supporo-subway-shin-sapporo",
+  },
+  dounan_isaribi: {
+    satsukari: "dounan-isaribi-satsukari",
+    izumisawa: "dounan-isaribi-izumisawa",
+    kamaya: "dounan-isaribi-kamaya",
+    oshima_tobetsu: "dounan-isaribi-oshima-tobetsu",
+    moheji: "dounan-isaribi-moheji",
+    kamiiso: "dounan-isaribi-kamiiso",
+    kiyokawaguchi: "dounan-isaribi-kiyokawaguchi",
+    kunebetsu: "dounan-isaribi-kunebetsu",
+    higashi_kunebetsu: "dounan-isaribi-higashi-kunebetsu",
+    nanaehama: "dounan-isaribi-nanaehama",
   },
 };

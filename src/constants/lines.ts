@@ -2198,7 +2198,7 @@ export const LINES = {
 
   // JR北海道
   // > 函館本線
-  [LINE_IDS.jr_hokkaidou.hakodate_honsen]: new Line('函館本線', 'JR北海道', LOCAL_ONLY, [
+  [LINE_IDS.jr_hokkaidou.hakodate_honsen1]: new Line('函館本線[函館ー長万部]', 'JR北海道', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_hokkaidou.hakodate),
     new StopStationDef(STATION_IDS.jr_hokkaidou.goryoukaku),
     new StopStationDef(STATION_IDS.jr_hokkaidou.kikyou),
@@ -2276,6 +2276,17 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_hokkaidou.osamunai),
     new StopStationDef(STATION_IDS.jr_hokkaidou.chikabumi),
     new StopStationDef(STATION_IDS.jr_hokkaidou.asahikawa),
+  ], P.HOKKAIDO),
+  [LINE_IDS.jr_hokkaidou.hakodate_honsen2]: new Line('函館本線[大沼ー森]', 'JR北海道', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_hokkaidou.onuma),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.onuma),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.shikabe),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.oshima_numajiri),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.oshima_sawara),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.kakarinuma),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.oshironai),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.higashi_mori),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.mori),
   ], P.HOKKAIDO),
   [LINE_IDS.jr_hokkaidou.furano]: new Line('富良野線', 'JR北海道', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_hokkaidou.asahikawa),
@@ -2555,5 +2566,20 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_hokkaidou.futomi),
     new StopStationDef(STATION_IDS.jr_hokkaidou.toubetsu),
     new StopStationDef(STATION_IDS.jr_hokkaidou.hokkaidou_iryou_daigaku),
+  ], P.HOKKAIDO),
+  // 動産に去りび鉄道
+  [LINE_IDS.dounan_isaribi.dounan_isaribi]: new Line('道南いさりび鉄道線', '道南いさりび鉄道', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_hokkaidou.kikonai),
+    new StopStationDef(STATION_IDS.dounan_isaribi.satsukari),
+    new StopStationDef(STATION_IDS.dounan_isaribi.izumisawa),
+    new StopStationDef(STATION_IDS.dounan_isaribi.kamaya),
+    new StopStationDef(STATION_IDS.dounan_isaribi.oshima_tobetsu),
+    new StopStationDef(STATION_IDS.dounan_isaribi.moheji),
+    new StopStationDef(STATION_IDS.dounan_isaribi.kamiiso),
+    new StopStationDef(STATION_IDS.dounan_isaribi.kiyokawaguchi),
+    new StopStationDef(STATION_IDS.dounan_isaribi.kunebetsu),
+    new StopStationDef(STATION_IDS.dounan_isaribi.higashi_kunebetsu),
+    new StopStationDef(STATION_IDS.dounan_isaribi.nanaehama),
+    new StopStationDef(STATION_IDS.jr_hokkaidou.goryoukaku),
   ], P.HOKKAIDO),
 }
