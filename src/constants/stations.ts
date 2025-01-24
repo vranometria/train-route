@@ -801,7 +801,7 @@ export const STATIONS = {
   [STATION_IDS.jr_east.oyama]: new StationInfo('小山', [
     LINE_IDS.jr_east.shonan_shinjuku,
     LINE_IDS.jr_east.utunomiya,
-    LINE_IDS.jr_east.ryomo,
+    LINE_IDS.jr_east.ryoumou,
     LINE_IDS.jr_east.mito,
     LINE_IDS.jr_east.shinkansen.tohoku,
   ], "おやま"),
@@ -853,11 +853,11 @@ export const STATIONS = {
   ], "とろ"),
   [STATION_IDS.jr_east.maebashi]: new StationInfo('前橋', [
     LINE_IDS.jr_east.shonan_shinjuku,
-    LINE_IDS.jr_east.ryomo,
+    LINE_IDS.jr_east.ryoumou,
   ], "まえばし"),
   [STATION_IDS.jr_east.shinmaebashi]: new StationInfo('新前橋', [
     LINE_IDS.jr_east.shonan_shinjuku,
-    LINE_IDS.jr_east.ryomo,
+    LINE_IDS.jr_east.ryoumou,
     LINE_IDS.jr_east.jouetsu,
     LINE_IDS.jr_east.agatsuma,
   ], "しんまえばし"),
@@ -865,17 +865,17 @@ export const STATIONS = {
     LINE_IDS.jr_east.shonan_shinjuku,
     LINE_IDS.jr_east.jouetsu,
     LINE_IDS.jr_east.agatsuma,
-    LINE_IDS.jr_east.ryomo,
+    LINE_IDS.jr_east.ryoumou,
   ], "いの"),
   [STATION_IDS.jr_east.takasakitonyamachi]: new StationInfo('高崎問屋町', [
     LINE_IDS.jr_east.shonan_shinjuku,
     LINE_IDS.jr_east.jouetsu,
     LINE_IDS.jr_east.agatsuma,
-    LINE_IDS.jr_east.ryomo,
+    LINE_IDS.jr_east.ryoumou,
   ], "たかさきとにやまち"),
   [STATION_IDS.jr_east.takasaki]: new StationInfo('高崎', [
     LINE_IDS.jr_east.shonan_shinjuku,
-    LINE_IDS.jr_east.ryomo,
+    LINE_IDS.jr_east.ryoumou,
     LINE_IDS.jr_east.agatsuma,
     LINE_IDS.jr_east.jouetsu,
     LINE_IDS.jr_east.shinetsu_honsen,
@@ -947,19 +947,19 @@ export const STATIONS = {
     LINE_IDS.jr_east.takasaki,
   ], "みやはら"),
   [STATION_IDS.jr_east.omiya]: new StationInfo('大宮',[
-    LINE_IDS.jr_east.utunomiya,//宇都宮線,
-    LINE_IDS.jr_east.takasaki,//高崎線
-    LINE_IDS.jr_east.shonan_shinjuku,// "湘南新宿ライン",
+    LINE_IDS.jr_east.utunomiya,
+    LINE_IDS.jr_east.takasaki,
+    LINE_IDS.jr_east.shonan_shinjuku,
     LINE_IDS.jr_east.keihin_touhoku,
-    LINE_IDS.jr_east.saikyou,// "埼京線",
+    LINE_IDS.jr_east.saikyou,
     LINE_IDS.jr_east.kawagoe,
-    LINE_IDS.jr_east.shinkansen.tohoku, // 東北新幹線
-    LINE_IDS.jr_east.shinkansen.yamagata,// 山形新幹線
-    LINE_IDS.jr_east.shinkansen.akita,// 秋田新幹線
-    LINE_IDS.jr_east.shinkansen.jouetsu,// 上越新幹線
-    LINE_IDS.jr_east.shinkansen.hokuriku,// 北陸新幹線
-    LINE_IDS.toubu.urban_park_line,// "東武アーバンパークライン",
-    LINE_IDS.saitama_shintoshi_koutsu.new_shuttle,// ニューシャトル
+    LINE_IDS.jr_east.shinkansen.tohoku,
+    LINE_IDS.jr_east.shinkansen.yamagata,
+    LINE_IDS.jr_east.shinkansen.akita,
+    LINE_IDS.jr_east.shinkansen.jouetsu,
+    LINE_IDS.jr_east.shinkansen.hokuriku,
+    LINE_IDS.toubu.urban_park_line,
+    LINE_IDS.saitama_shintoshi_koutsu.new_shuttle,
   ], "おおみや"),
   [STATION_IDS.jr_east.saitama_shintoshin]: new StationInfo('さいたま新都心',[
     LINE_IDS.jr_east.keihin_touhoku,
@@ -1987,12 +1987,40 @@ export const STATIONS = {
     LINE_IDS.jr_east.shonan_shinjuku,
     LINE_IDS.jr_east.shinkansen.jouetsu,
     LINE_IDS.jr_east.jouetsu,
-    LINE_IDS.jr_east.ryomo,
+    LINE_IDS.jr_east.ryoumou,
     LINE_IDS.jr_east.agatsuma,
     LINE_IDS.joushin.joushin,
   ], "たかさき"),
-
-
+  // 両毛線
+  [STATION_IDS.jr_east.maebashi]: new StationInfo('前橋', NO_TRANSFER, "まえばし"),
+  [STATION_IDS.jr_east.maebashi_oshima]: new StationInfo('前橋大島', NO_TRANSFER, "まえばしおおしま"),
+  [STATION_IDS.jr_east.komagata]: new StationInfo('駒形', NO_TRANSFER, "こまがた"),
+  [STATION_IDS.jr_east.isezaki]: new StationInfo('伊勢崎', [
+    LINE_IDS.jr_east.ryoumou,
+    LINE_IDS.toubu.isezaki,
+  ], "いせざき"),
+  [STATION_IDS.jr_east.kunisada]: new StationInfo('国定', NO_TRANSFER, "くにさだ"),
+  [STATION_IDS.jr_east.iwayado]: new StationInfo('岩宿', NO_TRANSFER, "いわやど"),
+  [STATION_IDS.jr_east.kiryu]: new StationInfo('桐生', [
+    LINE_IDS.jr_east.ryoumou,
+    LINE_IDS.watarase_keikoku.watarase_keikoku,
+  ], "きりゅう"),
+  [STATION_IDS.jr_east.omata]: new StationInfo('小俣', NO_TRANSFER, "おまた"),
+  [STATION_IDS.jr_east.yamamae]: new StationInfo('山前', NO_TRANSFER, "やままえ"),
+  [STATION_IDS.jr_east.ashikaga]: new StationInfo('足利', NO_TRANSFER, "あしかが"),
+  [STATION_IDS.jr_east.ashikaga_flower_park]: new StationInfo('あしかがフラワーパーク', NO_TRANSFER, "あしかがふらわーぱーく"),
+  [STATION_IDS.jr_east.tomita]: new StationInfo('富田', NO_TRANSFER, "とみた"),
+  [STATION_IDS.jr_east.sano]: new StationInfo('佐野', [
+    LINE_IDS.jr_east.ryoumou,
+    LINE_IDS.toubu.sano,
+  ], "さの"),
+  [STATION_IDS.jr_east.iwahune]: new StationInfo('岩舟', NO_TRANSFER, "いわふね"),
+  [STATION_IDS.jr_east.ohirashita]: new StationInfo('大平下', NO_TRANSFER, "おおひらした"),
+  [STATION_IDS.jr_east.tochigi]: new StationInfo('栃木', [
+    LINE_IDS.jr_east.ryoumou,
+    LINE_IDS.toubu.nikkou,
+  ], "とちぎ"),
+  [STATION_IDS.jr_east.omoigawa]: new StationInfo('思川', NO_TRANSFER, "おもいがわ"),
 
   // 東北本線
   [STATION_IDS.jr_east.natori]: new StationInfo('名取', [

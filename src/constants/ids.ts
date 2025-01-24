@@ -136,13 +136,15 @@ export const LINE_IDS = {
     sobu_kaisoku: 'jr-sobu-kaisoku',
     /** 総武本線(JO) */
     sobu_honsen: 'jr-sobu-honsen',
+    /** 両毛線 */
+    ryoumou: 'jr-ryoumou',
 
     /** 磐越東線 */
     banetsutou: 'jr-banetsutou',
 
 
     /** 日光線 */
-    nikko: 'jr-nikko',
+    nikkou: 'jr-nikkou',
     /** 烏山線 */
     karasuyama: 'jr-karasuyama',
     /** 水戸線 */
@@ -161,8 +163,6 @@ export const LINE_IDS = {
     sotobou: 'jr-sotobou',
     /** 上越線 */
     jouetsu: 'jr-jouetsu',
-    /** 両毛線 */
-    ryomo: 'jr-ryomo',
     /** 吾妻線 */
     agatsuma: 'jr-agatsuma',
 
@@ -432,6 +432,10 @@ export const LINE_IDS = {
   /** 埼玉高速鉄道 */
   saitama_kosoku: {
     saitama_stadium: "saitama-stadium",
+  },
+  /** わたらせ渓谷鉄道 */
+  watarase_keikoku: {
+    watarase_keikoku: "watarase-keikoku",
   },
   /** JR東海 */
   jr_tokai: {

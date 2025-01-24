@@ -107,6 +107,8 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.hachiko}}" >八高線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.yamanote}}" >山手線</RouterLink>
 
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.ryoumou}}" >両毛線</RouterLink>
+
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.touhoku_honsen}}" >東北本線</RouterLink>
 
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.shinkansen.jouetsu}}" >上越新幹線</RouterLink>
@@ -177,6 +179,8 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.yokohama_subway.green_line}}">グリーンライン</RouterLink>
         </div>
 
+        <LineAccordion :prefecture="PREFECTURE.TOCHIGI" />
+        <LineAccordion :prefecture="PREFECTURE.GUNMA" />
         <LineAccordion :prefecture="PREFECTURE.TOKYO" />
         <LineAccordion :prefecture="PREFECTURE.KANAGAWA" />
         <LineAccordion :prefecture="PREFECTURE.SAITAMA" />
