@@ -3270,13 +3270,11 @@ export const STATIONS = {
   [STATION_IDS.jr_hokkaidou.souen]: new StationInfo('桑園', [
     LINE_IDS.jr_hokkaidou.hakodate_honsen,
     LINE_IDS.jr_hokkaidou.sassyou,
-    LINE_IDS.jr_hokkaidou.gakuentoshi,
   ], "そうえん"),
   [STATION_IDS.jr_hokkaidou.sapporo]: new StationInfo('札幌', [
     LINE_IDS.jr_hokkaidou.hakodate_honsen,
     LINE_IDS.jr_hokkaidou.chitose,
     LINE_IDS.jr_hokkaidou.sassyou,
-    LINE_IDS.jr_hokkaidou.gakuentoshi,
   ], "さっぽろ"),
   [STATION_IDS.jr_hokkaidou.naeba]: new StationInfo('苗穂', [
     LINE_IDS.jr_hokkaidou.hakodate_honsen,
@@ -3591,5 +3589,17 @@ export const STATIONS = {
   [STATION_IDS.jr_hokkaidou.yufutsu]: new StationInfo('勇払', NO_TRANSFER, "ゆうふつ"),
   [STATION_IDS.jr_hokkaidou.hamaatsuma]: new StationInfo('浜厚真', NO_TRANSFER, "はまあつま"),
   [STATION_IDS.jr_hokkaidou.mukawa]: new StationInfo('むかわ', NO_TRANSFER, "むかわ"),
+  [STATION_IDS.jr_hokkaidou.hachiken]: new StationInfo('八軒', NO_TRANSFER, "はちけん"),
+  [STATION_IDS.jr_hokkaidou.shinkawa]: new StationInfo('新川', NO_TRANSFER, "しんかわ"),
+  [STATION_IDS.jr_hokkaidou.shin_kotonish]: new StationInfo('新琴似', NO_TRANSFER, "しんことに"),
+  [STATION_IDS.jr_hokkaidou.taihei]: new StationInfo('太平', NO_TRANSFER, "たいへい"),
+  [STATION_IDS.jr_hokkaidou.yurigahara]: new StationInfo('百合が原', NO_TRANSFER, "ゆりがはら"),
+  [STATION_IDS.jr_hokkaidou.shinoro]: new StationInfo('篠路', NO_TRANSFER, "しのろ"),
+  [STATION_IDS.jr_hokkaidou.takuhoku]: new StationInfo('拓北', NO_TRANSFER, "たくほく"),
+  [STATION_IDS.jr_hokkaidou.ainosato_kyouikudai]: new StationInfo('愛の里教育大', NO_TRANSFER, "あいのさときょういくだい"),
+  [STATION_IDS.jr_hokkaidou.royce_town]: new StationInfo('ロイスタウン', NO_TRANSFER, "ろいすたうん"),
+  [STATION_IDS.jr_hokkaidou.futomi]: new StationInfo('太美', NO_TRANSFER, "ふとみ"),
+  [STATION_IDS.jr_hokkaidou.toubetsu]: new StationInfo('当別', NO_TRANSFER, "とうべつ"),
+  [STATION_IDS.jr_hokkaidou.hokkaidou_iryou_daigaku]: new StationInfo('北海道医療大', NO_TRANSFER, "ほっかいどういりょうだいがく"),
 
 }

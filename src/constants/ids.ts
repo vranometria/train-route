@@ -589,8 +589,6 @@ export const LINE_IDS = {
     chitose: 'jr-hokkaidou-chitose',
     /** 札沼線 */
     sassyou: 'jr-hokkaidou-sassyou',
-    /** 学園都市線 */
-    gakuentoshi: 'jr-hokkaidou-gakuentoshi',
     /** 釧網本線 */
     senmou_honsen: 'jr-hokkaidou-senmou-honsen',
     /** 花咲線 */
@@ -2842,6 +2840,20 @@ export const STATION_IDS = {
     yufutsu: "jr-hokkaidou-yufutsu",
     hamaatsuma: "jr-hokkaidou-hamaatsuma",
     mukawa: "jr-hokkaidou-mukawa",
+    // 札沼線
+    hachiken: "jr-hokkaidou-hachiken",
+    shinkawa: "jr-hokkaidou-shinkawa",
+    shin_kotonish: "jr-hokkaidou-shin-kotonish",
+    taihei: "jr-hokkaidou-taihei",
+    yurigahara: "jr-hokkaidou-yurigahara",
+    shinoro: "jr-hokkaidou-shinoro",
+    takuhoku: "jr-hokkaidou-takuhoku",
+    ainosato_kyouikudai: "jr-hokkaidou-ainosato-kyouikudai",
+    royce_town: "jr-hokkaidou-royce-town",
+    futomi: "jr-hokkaidou-futomi",
+    toubetsu: "jr-hokkaidou-toubetsu",
+    hokkaidou_iryou_daigaku: "jr-hokkaidou-iryou-daigaku",
+
   },
   /** 札幌地下鉄　駅 */
   sapporo_subway: {
