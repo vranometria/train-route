@@ -2260,6 +2260,13 @@ export const STATION_IDS = {
     higashi_moro: "toubu-higashi-moro",
     busyu_karasawa: "toubu-busyu_karasawa",
     ogose: "toubu-ogose",
+    // 亀戸線
+    hikifune: "toubu-hikifune",
+    omurai: "toubu-omurai",
+    higashi_azuma: "toubu-higashi-azuma",
+    kameido_suijin: "toubu-kameido-suijin",
+
+
   },
   /** 西部駅 */
   seibu: {

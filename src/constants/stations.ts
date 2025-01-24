@@ -2775,6 +2775,15 @@ export const STATIONS = {
     LINE_IDS.toubu.ogose,
     LINE_IDS.jr_east.hachiko,
   ], "おごせ"),
+  // 亀戸線
+  [STATION_IDS.toubu.hikifune]: new StationInfo('曳舟', [
+    LINE_IDS.toubu.kameido,
+    LINE_IDS.toubu.skytree,
+  ], "ひきふね"),
+  [STATION_IDS.toubu.omurai]: new StationInfo('小村井', NO_TRANSFER, "おむらい"),
+  [STATION_IDS.toubu.higashi_azuma]: new StationInfo('東あずま', NO_TRANSFER, "ひがしあずま"),
+  [STATION_IDS.toubu.kameido_suijin]: new StationInfo('亀戸水神', NO_TRANSFER, "かめいどすいじん"),
+
 
   // 埼玉新都市交通
   // ＞ニューシャトル

@@ -156,7 +156,8 @@ import LineAccordion from './components/LineAccordion.vue';
           <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tobu.nikko}}">日光線</RouterLink> -->
           <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tobu.utsunomiya}}">宇都宮線</RouterLink> -->
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toubu.urban_park_line}}">東武アーバンパークライン</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toubu.ogose}}">東武生越線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toubu.ogose}}">生越線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toubu.kameido}}">亀戸線</RouterLink>
         </div>
 
         埼玉新都市交通

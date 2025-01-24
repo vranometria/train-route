@@ -2150,6 +2150,13 @@ export const LINES = {
     new StopStationDef(STATION_IDS.toubu.busyu_karasawa),
     new StopStationDef(STATION_IDS.toubu.ogose),
   ], P.SAITAMA),
+  [LINE_IDS.toubu.kameido]: new Line('東武亀戸線', '東武鉄道', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.toubu.hikifune),
+    new StopStationDef(STATION_IDS.toubu.omurai),
+    new StopStationDef(STATION_IDS.toubu.higashi_azuma),
+    new StopStationDef(STATION_IDS.toubu.kameido_suijin),
+    new StopStationDef(STATION_IDS.jr_east.kameido),
+  ], P.TOKYO),
 
   // 京王電鉄
   // ＞京王線
