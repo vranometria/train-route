@@ -88,6 +88,7 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.sobu}}" >総武線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.sobu_kaisoku}}" >総武線快速</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.chuo}}" >中央線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.oume}}" >青梅線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.keiyou}}" >京葉線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.sagami}}" >相模線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.yokohama}}" >横浜線</RouterLink>
@@ -161,6 +162,11 @@ import LineAccordion from './components/LineAccordion.vue';
         埼玉新都市交通
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.saitama_shintoshi_koutsu.new_shuttle}}">ニューシャトル</RouterLink>
+        </div>
+
+        秩父鉄道
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.chichibu.chichibu}}">秩父本線</RouterLink>
         </div>
 
         横浜市営地下鉄
