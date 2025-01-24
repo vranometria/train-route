@@ -583,7 +583,8 @@ export const LINE_IDS = {
     /** 根室本線(新得―釧路) */
     nemuro_honsen2: 'jr-hokkaidou-nemuro-honsen2',
     /** 室蘭本線 */
-    muroran_honsen: 'jr-hokkaidou-muroran-honsen',
+    muroran_honsen1: 'jr-hokkaidou-muroran-honsen1',
+    muroran_honsen2: 'jr-hokkaidou-muroran-honsen2',
     /** 千歳線 */
     chitose: 'jr-hokkaidou-chitose',
     /** 札沼線 */
@@ -602,6 +603,8 @@ export const LINE_IDS = {
   /** 札幌地下鉄 */
   sapporo_subway: {
     touzai: 'sapporo-subway-touzai',
+    nanboku: 'sapporo-subway-nanboku',
+    touhou: 'sapporo-subway-touhou',
   },
 };
 
@@ -2792,6 +2795,49 @@ export const STATION_IDS = {
     kami_nopporo: "jr-hokkaidou-kami-nopporo",
     heiwa: "jr-hokkaidou-heiwa",
     shin_sapporo: "jr-hokkaidou-shin-sapporo",
+    // 室蘭本線
+    shizukari: "jr-hokkaidou-shizukari",
+    kohoro: "jr-hokkaidou-kohoro",
+    rebunn: "jr-hokkaidou-rebunn",
+    okishi: "jr-hokkaidou-okishi",
+    toyoura: "jr-hokkaidou-toyoura",
+    touya: "jr-hokkaidou-touya",
+    usu: "jr-hokkaidou-usu",
+    nagawa: "jr-hokkaidou-nagawa",
+    datemonbetsu: "jr-hokkaidou-datemonbetsu",
+    kitahunaoka: "jr-hokkaidou-kitahunaoka",
+    mareppu: "jr-hokkaidou-mareppu",
+    kogane: "jr-hokkaidou-kogane",
+    sakimori: "jr-hokkaidou-sakimori",
+    motowanishi: "jr-hokkaidou-motowanishi",
+    higashi_muroran: "jr-hokkaidou-higashi-muroran",
+    washibetsu: "jr-hokkaidou-washibetsu",
+    horobetsu: "jr-hokkaidou-horobetsu",
+    tomiura: "jr-hokkaidou-tomiura",
+    noboribetsu: "jr-hokkaidou-noboribetsu",
+    kojouhama: "jr-hokkaidou-kojouhama",
+    takeura: "jr-hokkaidou-takeura",
+    kita_yoshihara: "jr-hokkaidou-kita-yoshihara",
+    hagino: "jr-hokkaidou-hagino",
+    shiraoi: "jr-hokkaidou-shiraoi",
+    syadai: "jr-hokkaidou-syadai",
+    nishikioka: "jr-hokkaidou-nishikioka",
+    aoba: "jr-hokkaidou-aoba",
+    toasa: "jr-hokaidou-toasa",
+    hayakita: "jr-hokkaidou-hayakita",
+    abira: "jr-hokkaidou-abira",
+    mikawa: "jr-hokkaidou-mikawa",
+    furusan: "jr-hokkaidou-furusan",
+    yuni: "jr-hokkaidou-yuni",
+    itoi: "jr-hokkaidou-itoi",
+    kuriyama: "jr-hokkaidou-kuriyama",
+    kurioka: "jr-hokkaidou-kurioka",
+    kurisawa: "jr-hokkaidou-kurisawa",
+    shibun: "jr-hokkaidou-shibun",
+    wanishi: "jr-hokkaidou-wanishi",
+    misaki: "jr-hokkaidou-misaki",
+    bokoi: "jr-hokkaidou-bokoi",
+    muroran: "jr-hokkaidou-muroran",
   },
   /** 札幌地下鉄　駅 */
   sapporo_subway: {
