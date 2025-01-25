@@ -108,6 +108,7 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.yamanote}}" >山手線</RouterLink>
 
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.ryoumou}}" >両毛線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.mito}}" >水戸線</RouterLink>
 
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.touhoku_honsen}}" >東北本線</RouterLink>
 
@@ -179,13 +180,21 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.yokohama_subway.green_line}}">グリーンライン</RouterLink>
         </div>
 
+        関東鉄道
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.kantou.jousou}}">関東鉄道</RouterLink>
+        </div>
+
+        <LineAccordion :prefecture="PREFECTURE.HOKKAIDO" />
+        <LineAccordion :prefecture="PREFECTURE.MIYAGI" />
+        <LineAccordion :prefecture="PREFECTURE.IWATE" />
+        <LineAccordion :prefecture="PREFECTURE.FUKUSHIMA" />
         <LineAccordion :prefecture="PREFECTURE.TOCHIGI" />
         <LineAccordion :prefecture="PREFECTURE.GUNMA" />
         <LineAccordion :prefecture="PREFECTURE.TOKYO" />
         <LineAccordion :prefecture="PREFECTURE.KANAGAWA" />
         <LineAccordion :prefecture="PREFECTURE.SAITAMA" />
         <LineAccordion :prefecture="PREFECTURE.CHIBA" />
-        <LineAccordion :prefecture="PREFECTURE.HOKKAIDO" />
       </nav>
     </div>
   </header>

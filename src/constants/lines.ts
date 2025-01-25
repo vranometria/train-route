@@ -1696,7 +1696,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.kasama),
     new StopStationDef(STATION_IDS.jr_east.shishido),
     new StopStationDef(STATION_IDS.jr_east.tomobe),
-  ]),
+  ], [P.IBARAKI, P.TOCHIGI]),
   [LINE_IDS.jr_east.touhoku_honsen]: new Line('東北本線', 'JR東日本', [], [
     new StopStationDef(STATION_IDS.jr_east.kuroiso),
     new StopStationDef(STATION_IDS.jr_east.takaku),
@@ -1780,7 +1780,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.iwate_iioka),
     new StopStationDef(STATION_IDS.jr_east.senbokumachi),
     new StopStationDef(STATION_IDS.jr_east.morioka),
-  ]),
+  ], [P.TOKYO, P.TOCHIGI, P.FUKUSHIMA, P.MIYAGI, P.IWATE]),
 
   [LINE_IDS.jr_east.shinkansen.tokaido]: new Line('東海道新幹線', 'JR東日本', [
     new KindDef("こだま", "rapid"),
@@ -2375,6 +2375,34 @@ export const LINES = {
     new StopStationDef(STATION_IDS.chichibu.shiroku),
     new StopStationDef(STATION_IDS.chichibu.mitsumineguchi),
   ], P.SAITAMA),
+  // 関東鉄道
+  [LINE_IDS.kantou.jousou]: new Line('関東鉄道線', '関東鉄道', [new Rapid], [
+    new StopStationDef(STATION_IDS.jr_east.toride, [Rapid.KEY]),
+    new StopStationDef(STATION_IDS.kantou.nishi_toride, [Rapid.KEY]),
+    new StopStationDef(STATION_IDS.kantou.terahara, [Rapid.KEY]),
+    new StopStationDef(STATION_IDS.kantou.shin_toride, [Rapid.KEY]),
+    new StopStationDef(STATION_IDS.kantou.yumemino, [Rapid.KEY]),
+    new StopStationDef(STATION_IDS.kantou.inatoi, [Rapid.KEY]),
+    new StopStationDef(STATION_IDS.kantou.togashira, [Rapid.KEY]),
+    new StopStationDef(STATION_IDS.kantou.minami_moriya, [Rapid.KEY]),
+    new StopStationDef(STATION_IDS.shutoken_shintoshi.moriya, [Rapid.KEY]),
+    new StopStationDef(STATION_IDS.kantou.shin_moriya),
+    new StopStationDef(STATION_IDS.kantou.kokinu),
+    new StopStationDef(STATION_IDS.kantou.mitsukaidou, [Rapid.KEY]),
+    new StopStationDef(STATION_IDS.kantou.kita_mitsukaidou),
+    new StopStationDef(STATION_IDS.kantou.nakatsuma),
+    new StopStationDef(STATION_IDS.kantou.mitsuma),
+    new StopStationDef(STATION_IDS.kantou.minami_ishige),
+    new StopStationDef(STATION_IDS.kantou.ishige, [Rapid.KEY]),
+    new StopStationDef(STATION_IDS.kantou.tamamura),
+    new StopStationDef(STATION_IDS.kantou.soudou),
+    new StopStationDef(STATION_IDS.kantou.shimotsuma, [Rapid.KEY]),
+    new StopStationDef(STATION_IDS.kantou.daihou),
+    new StopStationDef(STATION_IDS.kantou.tobanoe),
+    new StopStationDef(STATION_IDS.kantou.kurogo),
+    new StopStationDef(STATION_IDS.kantou.otagou),
+    new StopStationDef(STATION_IDS.jr_east.shimodate, [Rapid.KEY]),
+  ], P.IBARAKI),
 
   // JR北海道
   // > 函館本線

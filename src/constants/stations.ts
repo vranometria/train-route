@@ -1693,7 +1693,7 @@ export const STATIONS = {
   [STATION_IDS.jr_east.tennodai]: new StationInfo('天王台', [], "てんのうだい"),
   [STATION_IDS.jr_east.toride]: new StationInfo('取手', [
     LINE_IDS.jr_east.tokiwa,
-    LINE_IDS.kanto.joso,
+    LINE_IDS.kantou.jousou,
   ], "とりで"),
   [STATION_IDS.jr_east.fujishiro]: new StationInfo('藤代', [], "ふじしろ"),
   [STATION_IDS.jr_east.ryugasakishi]: new StationInfo('竜ヶ崎市', [], "りゅうがさきし"),
@@ -2041,7 +2041,29 @@ export const STATIONS = {
   [STATION_IDS.jr_east.kasama]: new StationInfo('笠間', NO_TRANSFER, "かさま"),
   [STATION_IDS.jr_east.shishido]: new StationInfo('宍戸', NO_TRANSFER, "ししど"),
 
-
+  // 関東鉄道
+  [STATION_IDS.kantou.nishi_toride]: new StationInfo('西取手', NO_TRANSFER, "にしとりで"),
+  [STATION_IDS.kantou.terahara]: new StationInfo('寺原', NO_TRANSFER, "てらはら"),
+  [STATION_IDS.kantou.shin_toride]: new StationInfo('新取手', NO_TRANSFER, "しんとりで"),
+  [STATION_IDS.kantou.yumemino]: new StationInfo('夢見野', NO_TRANSFER, "ゆめみの"),
+  [STATION_IDS.kantou.inatoi]: new StationInfo('稲生', NO_TRANSFER, "いなおい"),
+  [STATION_IDS.kantou.togashira]: new StationInfo('戸頭', NO_TRANSFER, "とがしら"),
+  [STATION_IDS.kantou.minami_moriya]: new StationInfo('南守谷', NO_TRANSFER, "みなみもりや"),
+  [STATION_IDS.kantou.shin_moriya]: new StationInfo('新守谷', NO_TRANSFER, "しんもりや"),
+  [STATION_IDS.kantou.kokinu]: new StationInfo('小絹', NO_TRANSFER, "こきぬ"),
+  [STATION_IDS.kantou.mitsukaidou]: new StationInfo('水海道', NO_TRANSFER, "みつかいどう"),
+  [STATION_IDS.kantou.kita_mitsukaidou]: new StationInfo('北水海道', NO_TRANSFER, "きたみつかいどう"),
+  [STATION_IDS.kantou.nakatsuma]: new StationInfo('中妻', NO_TRANSFER, "なかつま"),
+  [STATION_IDS.kantou.mitsuma]: new StationInfo('三妻', NO_TRANSFER, "みつま"),
+  [STATION_IDS.kantou.minami_ishige]: new StationInfo('南石下', NO_TRANSFER, "みなみいしげ"),
+  [STATION_IDS.kantou.ishige]: new StationInfo('石下', NO_TRANSFER, "いしげ"),
+  [STATION_IDS.kantou.tamamura]: new StationInfo('玉村', NO_TRANSFER, "たまむら"),
+  [STATION_IDS.kantou.soudou]: new StationInfo('宗道', NO_TRANSFER, "そうどう"),
+  [STATION_IDS.kantou.shimotsuma]: new StationInfo('下妻', NO_TRANSFER, "しもつま"),
+  [STATION_IDS.kantou.daihou]: new StationInfo('大宝', NO_TRANSFER, "だいほう"),
+  [STATION_IDS.kantou.tobanoe]: new StationInfo('騰波ノ江', NO_TRANSFER, "とばのえ"),
+  [STATION_IDS.kantou.kurogo]: new StationInfo('黒子', NO_TRANSFER, "くろご"),
+  [STATION_IDS.kantou.otagou]: new StationInfo('太田郷', NO_TRANSFER, "おおたご"),
 
   // 東北本線
   [STATION_IDS.jr_east.natori]: new StationInfo('名取', [
@@ -2919,7 +2941,7 @@ export const STATIONS = {
   [STATION_IDS.shutoken_shintoshi.miraidaira]: new StationInfo('みらい平', [], "みらいだいら"),
   [STATION_IDS.shutoken_shintoshi.moriya]: new StationInfo('守谷', [
     LINE_IDS.shutoken_shintoshi.tsukuba_express,
-    LINE_IDS.kanto.joso,
+    LINE_IDS.kantou.jousou,
   ], "もりや"),
   [STATION_IDS.shutoken_shintoshi.kashiwa_tanaka]: new StationInfo('柏たなか', [], "かしわたなか"),
   [STATION_IDS.shutoken_shintoshi.kashiwanoha_campus]: new StationInfo('柏の葉キャンパス', [], "かしわのはきゃんぱす"),
