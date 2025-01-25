@@ -2021,6 +2021,27 @@ export const STATIONS = {
     LINE_IDS.toubu.nikkou,
   ], "とちぎ"),
   [STATION_IDS.jr_east.omoigawa]: new StationInfo('思川', NO_TRANSFER, "おもいがわ"),
+  // 水戸線
+  [STATION_IDS.jr_east.odabayashi]: new StationInfo('小田林', NO_TRANSFER, "おだばやし"),
+  [STATION_IDS.jr_east.yuki]: new StationInfo('結城', NO_TRANSFER, "ゆうき"),
+  [STATION_IDS.jr_east.higashi_yuki]: new StationInfo('東結城', NO_TRANSFER, "ひがしゆうき"),
+  [STATION_IDS.jr_east.kawashima]: new StationInfo('川島', NO_TRANSFER, "かわしま"),
+  [STATION_IDS.jr_east.tamado]: new StationInfo('玉戸', NO_TRANSFER, "たまど"),
+  [STATION_IDS.jr_east.shimodate]: new StationInfo('下館', [
+    LINE_IDS.jr_east.mito,
+    LINE_IDS.moka.moka,
+    LINE_IDS.kantou.jousou,
+  ], "しもだて"),
+  [STATION_IDS.jr_east.niibari]: new StationInfo('新治', NO_TRANSFER, "にいばり"),
+  [STATION_IDS.jr_east.yamato]: new StationInfo('大和', NO_TRANSFER, "やまと"),
+  [STATION_IDS.jr_east.iwase]: new StationInfo('岩瀬', NO_TRANSFER, "いわせ"),
+  [STATION_IDS.jr_east.haguro]: new StationInfo('羽黒', NO_TRANSFER, "はぐろ"),
+  [STATION_IDS.jr_east.fukuhara]: new StationInfo('福原', NO_TRANSFER, "ふくはら"),
+  [STATION_IDS.jr_east.inada]: new StationInfo('稲田', NO_TRANSFER, "いなだ"),
+  [STATION_IDS.jr_east.kasama]: new StationInfo('笠間', NO_TRANSFER, "かさま"),
+  [STATION_IDS.jr_east.shishido]: new StationInfo('宍戸', NO_TRANSFER, "ししど"),
+
+
 
   // 東北本線
   [STATION_IDS.jr_east.natori]: new StationInfo('名取', [

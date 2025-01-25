@@ -437,6 +437,14 @@ export const LINE_IDS = {
   watarase_keikoku: {
     watarase_keikoku: "watarase-keikoku",
   },
+  /** 関東鉄道 */
+  kantou: {
+    jousou: "kantou-jousou",
+  },
+  /** 真岡鉄道 */
+  moka: {
+    moka: "moka-moka",
+  },
   /** JR東海 */
   jr_tokai: {
     tenryuhamanako: 'jr-tokai-tenryuhamanako',
