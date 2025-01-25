@@ -1572,7 +1572,7 @@ export const LINES = {
 
   [LINE_IDS.jr_east.kashima]: new Line('鹿島線', 'JR東日本', [], []),
 
-  [LINE_IDS.jr_east.tokiwa]: new Line('常磐線', 'JR東日本', [new KindDef("快速", "rapid")], [
+  [LINE_IDS.jr_east.jouban]: new Line('常磐線', 'JR東日本', [new KindDef("快速", "rapid")], [
     new StopStationDef(STATION_IDS.jr_east.shinagawa, ["rapid"]),
     new StopStationDef(STATION_IDS.jr_east.shinbashi, ["rapid"]),
     new StopStationDef(STATION_IDS.jr_east.tokyo, ["rapid"]),
@@ -2106,7 +2106,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.toubu.shimoitabashi),
     new StopStationDef(STATION_IDS.toubu.oyama),
     new StopStationDef(STATION_IDS.toubu.nakaitabashi),
-    new StopStationDef(STATION_IDS.toubu.tokiwadai),
+    new StopStationDef(STATION_IDS.toubu.joubandai),
     new StopStationDef(STATION_IDS.toubu.kamiitabashi, ["semi-express"]),
     new StopStationDef(STATION_IDS.toubu.toubu_nerima),
     new StopStationDef(STATION_IDS.toubu.shimoakatsuka),
@@ -2402,6 +2402,11 @@ export const LINES = {
     new StopStationDef(STATION_IDS.kantou.kurogo),
     new StopStationDef(STATION_IDS.kantou.otagou),
     new StopStationDef(STATION_IDS.jr_east.shimodate, [Rapid.KEY]),
+  ], P.IBARAKI),
+  [LINE_IDS.kantou.ryugasaki]: new Line('関東鉄道竜ヶ崎線', '関東鉄道', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_east.ryugasakishi),
+    new StopStationDef(STATION_IDS.kantou.ireji),
+    new StopStationDef(STATION_IDS.kantou.ryugasaki),
   ], P.IBARAKI),
 
   // JR北海道

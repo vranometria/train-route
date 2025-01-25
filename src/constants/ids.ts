@@ -107,7 +107,7 @@ export const LINE_IDS = {
     /** 鶴見線(JI) */
     tsurumi: 'jr-tsurumi',
     /** 常盤線(JJ) */
-    tokiwa: 'jr-tokiwa',
+    jouban: 'jr-jouban',
     /** 京浜東北線(JK) */
     keihin_touhoku: 'jr-keihintouhoku',
     /** 根岸線(JK) */
@@ -440,6 +440,7 @@ export const LINE_IDS = {
   /** 関東鉄道 */
   kantou: {
     jousou: "kantou-jousou",
+    ryugasaki: "moka-ryugasaki",
   },
   /** 真岡鉄道 */
   moka: {
@@ -2200,7 +2201,7 @@ export const STATION_IDS = {
     shimoitabashi: "toubu-shimoitabashi",
     oyama: "toubu-oyama",
     nakaitabashi: "toubu-nakaitabashi",
-    tokiwadai: "toubu-tokiwadai",
+    joubandai: "toubu-joubandai",
     kamiitabashi: "toubu-kamiitabashi",
     toubu_nerima: "toubu-toubu-nerima",
     shimoakatsuka: "toubu-shimoakatsuka",
@@ -2421,7 +2422,7 @@ export const STATION_IDS = {
     kunugiyama: "keisei-kunugiyama",
     motoyama: "keisei-motoyama",
     goko: "keisei-goko",
-    tokiwadaira: "keisei-tokiwadaira",
+    joubandaira: "keisei-joubandaira",
     yahashira: "keisei-yahashira",
     minoridai: "keisei-minoridai",
     matsuto_shinden: "keisei-matsuto-shinden",
