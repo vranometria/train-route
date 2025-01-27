@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { LINE_IDS } from '@/constants/ids';
+  import { LINE_IDS } from '@/constants/line-ids';
   import { RouterLink } from 'vue-router'
 </script>
 

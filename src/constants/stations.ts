@@ -1,7 +1,7 @@
 import { Station, StationInfo } from '@/types/station-info'
-import { LINE_IDS, STATION_IDS } from './ids'
+import { LINE_IDS } from './line-ids'
+import { STATION_IDS } from './station-ids'
 import { ExchangeInfo } from '@/types/exchange-info'
-import * as i from './ids';
 import { PREFECTURE as P } from './prefecture';
 
 /** 乗り換え路線なし */
@@ -651,20 +651,20 @@ export const STATIONS = {
   [STATION_IDS.tokyo_subway.nishi_takashimadaira]: new StationInfo('西高島平', [], "にしたかしまだいら"),
   [STATION_IDS.tokyo_subway.nishidai]: new StationInfo('西台', [], "にしだい"),
   // ＞日暮里・舎人ライナー
-  [i.STATION_IDS.tokyo_subway.akado_shogakko_mae]: new StationInfo('赤土小学校前', [], 'あかどしょうがっこうまえ'),
-  [i.STATION_IDS.tokyo_subway.kumanomae]: new StationInfo('熊野前', [
+  [STATION_IDS.tokyo_subway.akado_shogakko_mae]: new StationInfo('赤土小学校前', [], 'あかどしょうがっこうまえ'),
+  [STATION_IDS.tokyo_subway.kumanomae]: new StationInfo('熊野前', [
     LINE_IDS.tokyo_subway.nippori_toneri_liner,
     LINE_IDS.tokyo_subway.sakura_tram,
   ], 'くまのまえ'),
-  [i.STATION_IDS.tokyo_subway.adachi_odai]: new StationInfo('足立小台', [], 'あだちおだい'),
-  [i.STATION_IDS.tokyo_subway.ougiohashi]: new StationInfo('扇大橋', [], 'おうぎおおはし'),
-  [i.STATION_IDS.tokyo_subway.takano]: new StationInfo('高野', [], 'たかの'),
-  [i.STATION_IDS.tokyo_subway.kouhoku]: new StationInfo('江北', [], 'こうほく'),
-  [i.STATION_IDS.tokyo_subway.nishiaraidaishi_nishi]: new StationInfo('西新井大師西', [], 'にしあらいだいしにし'),
-  [i.STATION_IDS.tokyo_subway.yazaike]: new StationInfo('谷在家', [], 'やざいけ'),
-  [i.STATION_IDS.tokyo_subway.toneri_koen]: new StationInfo('舎人公園', [], 'とねりこうえん'),
-  [i.STATION_IDS.tokyo_subway.toneri]: new StationInfo('舎人', [], 'とねり'),
-  [i.STATION_IDS.tokyo_subway.minumadaishinsui_koen]: new StationInfo('南千住大橋水辺公園', [], 'みなみすみだいおおはしみずべこうえん'),
+  [STATION_IDS.tokyo_subway.adachi_odai]: new StationInfo('足立小台', [], 'あだちおだい'),
+  [STATION_IDS.tokyo_subway.ougiohashi]: new StationInfo('扇大橋', [], 'おうぎおおはし'),
+  [STATION_IDS.tokyo_subway.takano]: new StationInfo('高野', [], 'たかの'),
+  [STATION_IDS.tokyo_subway.kouhoku]: new StationInfo('江北', [], 'こうほく'),
+  [STATION_IDS.tokyo_subway.nishiaraidaishi_nishi]: new StationInfo('西新井大師西', [], 'にしあらいだいしにし'),
+  [STATION_IDS.tokyo_subway.yazaike]: new StationInfo('谷在家', [], 'やざいけ'),
+  [STATION_IDS.tokyo_subway.toneri_koen]: new StationInfo('舎人公園', [], 'とねりこうえん'),
+  [STATION_IDS.tokyo_subway.toneri]: new StationInfo('舎人', [], 'とねり'),
+  [STATION_IDS.tokyo_subway.minumadaishinsui_koen]: new StationInfo('南千住大橋水辺公園', [], 'みなみすみだいおおはしみずべこうえん'),
   // 東京さくらトラム
   [STATION_IDS.tokyo_subway.minowabashi]: new StationInfo('三ノ輪橋', [
     LINE_IDS.tokyo_subway.sakura_tram,
@@ -983,15 +983,15 @@ export const STATIONS = {
   [STATION_IDS.tokyo_metro.nedu]: new StationInfo('根津', [], "ねづ"),
   [STATION_IDS.tokyo_metro.yushima]: new StationInfo('湯島', [], "ゆしま"),
   [STATION_IDS.tokyo_metro.nijubashimae]: new StationInfo('二重橋前', [], "にじゅうばしまえ"),
-  [i.STATION_IDS.tokyo_metro.akasaka]: new StationInfo('赤坂', [], "あかさか"),
-  [i.STATION_IDS.tokyo_metro.nogizaka]: new StationInfo('乃木坂', [], "のぎざか"),
-  [i.STATION_IDS.tokyo_metro.yoyogi_koen]: new StationInfo('代々木公園', [], "よよぎこうえん"),
-  [i.STATION_IDS.tokyo_metro.machiya]: new StationInfo('町屋', [
+  [STATION_IDS.tokyo_metro.akasaka]: new StationInfo('赤坂', [], "あかさか"),
+  [STATION_IDS.tokyo_metro.nogizaka]: new StationInfo('乃木坂', [], "のぎざか"),
+  [STATION_IDS.tokyo_metro.yoyogi_koen]: new StationInfo('代々木公園', [], "よよぎこうえん"),
+  [STATION_IDS.tokyo_metro.machiya]: new StationInfo('町屋', [
     LINE_IDS.tokyo_metro.chiyoda,
     LINE_IDS.keisei.honsen,
     LINE_IDS.tokyo_subway.sakura_tram,
   ], "まちや"),
-  [i.STATION_IDS.tokyo_metro.shin_ochanomizu]: new StationInfo('新御茶ノ水', [
+  [STATION_IDS.tokyo_metro.shin_ochanomizu]: new StationInfo('新御茶ノ水', [
     new ExchangeInfo(LINE_IDS.tokyo_metro.marunouchi, STATION_IDS.tokyo_metro.awajicho),
     new ExchangeInfo(LINE_IDS.tokyo_subway.shinjuku, STATION_IDS.tokyo_subway.ogawacho),
     new ExchangeInfo(LINE_IDS.jr_east.chuo, STATION_IDS.jr_east.ochanomizu),
@@ -1502,28 +1502,28 @@ export const STATIONS = {
   [STATION_IDS.chiba_toshi_monorail.chishirodai]: new StationInfo('千代台', NO_TRANSFER, "ちしろだい"),
   // #endregion 千葉都市モノレール
   //   #region 北総電鉄
-  [i.STATION_IDS.hokusou.inaba_nihon_idai]: new StationInfo('印旛日本医大', [
+  [STATION_IDS.hokusou.inaba_nihon_idai]: new StationInfo('印旛日本医大', [
     LINE_IDS.hokusou.hokusou,
     LINE_IDS.keisei.keisei_narita_sky_access,
   ], "いんばにほんいだい"),
-  [i.STATION_IDS.hokusou.inzai_makinohara]: new StationInfo('印西牧の原', [], "いんざいまきのはら"),
-  [i.STATION_IDS.hokusou.chiba_newtown_chuo]: new StationInfo('千葉ニュータウン中央', [
+  [STATION_IDS.hokusou.inzai_makinohara]: new StationInfo('印西牧の原', [], "いんざいまきのはら"),
+  [STATION_IDS.hokusou.chiba_newtown_chuo]: new StationInfo('千葉ニュータウン中央', [
     LINE_IDS.hokusou.hokusou,
     LINE_IDS.keisei.keisei_narita_sky_access,
   ], "ちばにゅーたうんちゅうおう"),
-  [i.STATION_IDS.hokusou.komuro]: new StationInfo('小室', [], "こむろ"),
-  [i.STATION_IDS.hokusou.shirai]: new StationInfo('白井', [], "しらい"),
-  [i.STATION_IDS.hokusou.nishi_shirai]: new StationInfo('西白井', [], "にししらい"),
-  [i.STATION_IDS.hokusou.omachi]: new StationInfo('大町', [], "おおまち"),
-  [i.STATION_IDS.hokusou.matsuhidai]: new StationInfo('松飛台', [], "まつひだい"),
-  [i.STATION_IDS.hokusou.akiyama]: new StationInfo('秋山', [], "あきやま"),
-  [i.STATION_IDS.hokusou.kitakokubun]: new StationInfo('北国分', [], "きたこくぶん"),
-  [i.STATION_IDS.hokusou.yagiri]: new StationInfo('矢切', [], "やぎり"),
-  [i.STATION_IDS.hokusou.shin_shibamata]: new StationInfo('新柴又', [], "しんしばまた"),
+  [STATION_IDS.hokusou.komuro]: new StationInfo('小室', [], "こむろ"),
+  [STATION_IDS.hokusou.shirai]: new StationInfo('白井', [], "しらい"),
+  [STATION_IDS.hokusou.nishi_shirai]: new StationInfo('西白井', [], "にししらい"),
+  [STATION_IDS.hokusou.omachi]: new StationInfo('大町', [], "おおまち"),
+  [STATION_IDS.hokusou.matsuhidai]: new StationInfo('松飛台', [], "まつひだい"),
+  [STATION_IDS.hokusou.akiyama]: new StationInfo('秋山', [], "あきやま"),
+  [STATION_IDS.hokusou.kitakokubun]: new StationInfo('北国分', [], "きたこくぶん"),
+  [STATION_IDS.hokusou.yagiri]: new StationInfo('矢切', [], "やぎり"),
+  [STATION_IDS.hokusou.shin_shibamata]: new StationInfo('新柴又', [], "しんしばまた"),
   //   #endregion 北総電鉄
   //   #region 京成電鉄
   // ＞京成成田スカイアクセス
-  [i.STATION_IDS.keisei.keisei_ueno]: new StationInfo('京成上野', [
+  [STATION_IDS.keisei.keisei_ueno]: new StationInfo('京成上野', [
     LINE_IDS.keisei.honsen,
     LINE_IDS.keisei.keisei_narita_sky_access,
     new ExchangeInfo(LINE_IDS.jr_east.yamanote, STATION_IDS.jr_east.ueno),
@@ -1540,7 +1540,7 @@ export const STATIONS = {
     new ExchangeInfo(LINE_IDS.jr_east.shinkansen.jouetsu, STATION_IDS.jr_east.ueno),
     new ExchangeInfo(LINE_IDS.jr_east.shinkansen.hokuriku, STATION_IDS.jr_east.ueno),
   ], "けいせいうえの"),
-  [i.STATION_IDS.keisei.aoto]: new StationInfo('青砥', [
+  [STATION_IDS.keisei.aoto]: new StationInfo('青砥', [
     LINE_IDS.keisei.honsen,
     LINE_IDS.keisei.keisei_narita_sky_access,
     LINE_IDS.keisei.oshiage,
@@ -1557,13 +1557,13 @@ export const STATIONS = {
     LINE_IDS.keisei.honsen,
     LINE_IDS.keisei.kanamachi,
   ], "けいせいたかさご"),
-  [i.STATION_IDS.keisei.narita_yukawa]: new StationInfo('成田湯川', [], "なりたゆかわ"),
-  [i.STATION_IDS.keisei.kuko_daini_bill]: new StationInfo('空港第二ビル', [
+  [STATION_IDS.keisei.narita_yukawa]: new StationInfo('成田湯川', [], "なりたゆかわ"),
+  [STATION_IDS.keisei.kuko_daini_bill]: new StationInfo('空港第二ビル', [
     LINE_IDS.keisei.honsen,
     LINE_IDS.keisei.keisei_narita_sky_access,
     LINE_IDS.keisei.narita,
   ], "くうこうだいにびる"),
-  [i.STATION_IDS.keisei.narita_kuko]: new StationInfo('成田空港', [
+  [STATION_IDS.keisei.narita_kuko]: new StationInfo('成田空港', [
     LINE_IDS.keisei.honsen,
     LINE_IDS.keisei.keisei_narita_sky_access,
     LINE_IDS.keisei.narita,
@@ -2800,7 +2800,7 @@ export const STATIONS = {
   ], "よよぎ"),
   [STATION_IDS.jr_east.harajuku]: new StationInfo('原宿', []),
   // #endregion 宇都宮線
-  // 横須賀線
+  // #region 横須賀線
   [STATION_IDS.jr_east.shinkawasaki]: new StationInfo('新川崎', [], "しんかわさき"),
   [STATION_IDS.jr_east.hodogaya]: new StationInfo('保土ヶ谷', [], "ほどがや"),
   [STATION_IDS.jr_east.higashitotsuka]: new StationInfo('東戸塚', [], "ひがしとつか"),
@@ -2932,7 +2932,8 @@ export const STATIONS = {
   [STATION_IDS.jr_east.manazuru]: new StationInfo('真鶴', [], "まなづる"),
   [STATION_IDS.jr_east.yugawara ]: new StationInfo('湯河原', [], "ゆがわら"),
   [STATION_IDS.jr_east.atami]: new StationInfo('熱海', [], "あたみ"),
-  // 相模線(JG)
+  // #endregion 横須賀線
+  // #region 相模線(JG)
   [STATION_IDS.jr_east.kita_chigasaki]: new StationInfo('北茅ヶ崎', NO_TRANSFER, "きたちがさき"),
   [STATION_IDS.jr_east.kagawa]: new StationInfo('香川', NO_TRANSFER, "かがわ"),
   [STATION_IDS.jr_east.samukawa]: new StationInfo('寒川', NO_TRANSFER, "さむかわ"),
@@ -2948,7 +2949,8 @@ export const STATIONS = {
   [STATION_IDS.jr_east.banda]: new StationInfo('番田', NO_TRANSFER, "ばんだ"),
   [STATION_IDS.jr_east.kamimizo]: new StationInfo('上溝', NO_TRANSFER, "かみみぞ"),
   [STATION_IDS.jr_east.minami_hashimoto]: new StationInfo('南橋本', NO_TRANSFER, "みなみはしもと"),
-  // 鶴見線(JI)
+  // #endregion 相模線
+  // #region 鶴見線(JI)
   [STATION_IDS.jr_east.kokudou]: new StationInfo('国道', NO_TRANSFER, "こくどう"),
   [STATION_IDS.jr_east.tsurumi_ono]: new StationInfo('鶴見大野', NO_TRANSFER, "つるみおおの"),
   [STATION_IDS.jr_east.bentenbashi]: new StationInfo('弁天橋', NO_TRANSFER, "べんてんばし"),
@@ -2961,7 +2963,8 @@ export const STATIONS = {
   [STATION_IDS.jr_east.shin_shibaura]: new StationInfo('新芝浦', NO_TRANSFER, "しんしばうら"),
   [STATION_IDS.jr_east.umi_shibaura]: new StationInfo('海芝浦', NO_TRANSFER, "うみしばうら"),
   [STATION_IDS.jr_east.okawa]: new StationInfo('大川', NO_TRANSFER, "おおかわ"),
-  // 京葉線(JK)
+  // #endregion 鶴見線
+  // #region 京葉線(JK)
   [STATION_IDS.jr_east.hacchobori]: new StationInfo('八丁堀', [
     LINE_IDS.jr_east.keiyou,
     LINE_IDS.tokyo_metro.hibiya,
@@ -3016,7 +3019,8 @@ export const STATIONS = {
     LINE_IDS.jr_east.uchibou,
     LINE_IDS.jr_east.sotobou,
   ], "そが"),
-  // 常磐線(JL)
+  // #endregion 京葉線
+  // #region 常磐線(JL)
   [STATION_IDS.jr_east.mikawashima]: new StationInfo('三河島', NO_TRANSFER, "みかわしま"),
   [STATION_IDS.jr_east.minami_senju]: new StationInfo('南千住', NO_TRANSFER, "みなみせんじゅ"),
   [STATION_IDS.jr_east.kita_senju]: new StationInfo('北千住', [
@@ -3142,7 +3146,8 @@ export const STATIONS = {
     LINE_IDS.jr_east.jouban,
     LINE_IDS.jr_east.touhoku_honsen,
   ], "いわぬま"),
-  // 武蔵野線(JM)
+  // #endregion 常磐線
+  // #region 武蔵野線(JM)
   [STATION_IDS.jr_east.minami_nagareyama]: new StationInfo('南流山', [
     LINE_IDS.jr_east.musashino,
     LINE_IDS.shutoken_shintoshi.tsukuba_express,
@@ -3256,7 +3261,8 @@ export const STATIONS = {
     LINE_IDS.jr_east.musashino,
     LINE_IDS.jr_east.keiyou,
   ], "えっちゅうじま"),
-  // 南武線(JN)
+  // #endregion 武蔵野線
+  // #regino 南武線(JN)
   [STATION_IDS.jr_east.shitte]: new StationInfo('尻手', [
     LINE_IDS.jr_east.nanbu,
     LINE_IDS.jr_east.nanbu_shisen,
@@ -3305,7 +3311,8 @@ export const STATIONS = {
   ], "はまかわさき"),
   [STATION_IDS.jr_east.odasakae]: new StationInfo('小田栄', NO_TRANSFER, "おださかえ"),
   [STATION_IDS.jr_east.kawasaki_shinmachi]: new StationInfo('川崎新町', NO_TRANSFER, "かわさきしんまち"),
-  // 八高線(JW)
+  // #endregion 南武線
+  // #region 八高線(JW)
   [STATION_IDS.jr_east.kita_hachiouji]: new StationInfo('北八王子', NO_TRANSFER, "きたはちおうじ"),
   [STATION_IDS.jr_east.komiya]: new StationInfo('小宮', NO_TRANSFER, "こみや"),
   [STATION_IDS.jr_east.haijima]: new StationInfo('拝島', [
@@ -3344,7 +3351,8 @@ export const STATIONS = {
   [STATION_IDS.jr_east.tanshou]: new StationInfo('丹荘', NO_TRANSFER, "たんしょう"),
   [STATION_IDS.jr_east.gunma_fujioka]: new StationInfo('群馬藤岡', NO_TRANSFER, "ぐんまふじおか"),
   [STATION_IDS.jr_east.kita_fujioka]: new StationInfo('北藤岡', NO_TRANSFER, "きたふじおか"),
-  // 湘南新宿ライン(JS)
+  // #endregion 八高線
+  // #region 湘南新宿ライン(JS)
   [STATION_IDS.jr_east.kumagaya]: new StationInfo('熊谷', [
     LINE_IDS.jr_east.takasaki,
     LINE_IDS.jr_east.shonan_shinjuku,
@@ -3360,7 +3368,8 @@ export const STATIONS = {
     LINE_IDS.jr_east.agatsuma,
     LINE_IDS.joushin.joushin,
   ], "たかさき"),
-  // 両毛線
+  // #endregion 湘南新宿ライン
+  // #region 両毛線
   [STATION_IDS.jr_east.maebashi]: new StationInfo('前橋', NO_TRANSFER, "まえばし"),
   [STATION_IDS.jr_east.maebashi_oshima]: new StationInfo('前橋大島', NO_TRANSFER, "まえばしおおしま"),
   [STATION_IDS.jr_east.komagata]: new StationInfo('駒形', NO_TRANSFER, "こまがた"),
@@ -3390,6 +3399,7 @@ export const STATIONS = {
     LINE_IDS.toubu.nikkou,
   ], "とちぎ"),
   [STATION_IDS.jr_east.omoigawa]: new StationInfo('思川', NO_TRANSFER, "おもいがわ"),
+  // #endregion 両毛線
   // #region 水戸線
   [STATION_IDS.jr_east.odabayashi]: new Station({name: '小田林', pron: "おだばやし", pr: P.IBARAKI}),
   [STATION_IDS.jr_east.yuki]: new Station({name: '結城', pron: "ゆうき", pr: P.IBARAKI}),
@@ -3446,8 +3456,42 @@ export const STATIONS = {
     LINE_IDS.jr_east.uchibou,
   ]}),
   // #endregion 外房線
-
-  // 東北本線
+  // #region 内房線
+  [STATION_IDS.jr_east.hamano]: new Station({name: '浜野', pron: "はまの", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.yawatajuku]: new Station({name: '八幡宿', pron: "やわたじゅく", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.goi]: new Station({name: '五井', pron: "ごい", pr: P.CHIBA, lines: [
+    LINE_IDS.jr_east.uchibou,
+    LINE_IDS.kominato.kominato,
+  ]}),
+  [STATION_IDS.jr_east.anegasaki]: new Station({name: '姉ヶ崎', pron: "あねがさき", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.nagaura]: new Station({name: '長浦', pron: "ながうら", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.sodegaura]: new Station({name: '袖ケ浦', pron: "そでがうら", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.iwane]: new Station({name: '巌根', pron: "いわね", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.kisaradu]: new Station({name: '木更津', pron: "きさらづ", pr: P.CHIBA, lines: [
+    LINE_IDS.jr_east.uchibou,
+    LINE_IDS.jr_east.kururi,
+  ]}),
+  [STATION_IDS.jr_east.kimitsu]: new Station({name: '君津', pron: "きみつ", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.aohori]: new Station({name: '青堀', pron: "あおほり", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.onuki]: new Station({name: '大貫', pron: "おおぬき", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.sanukimachi]: new Station({name: '佐貫町', pron: "さぬきまち", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.kazusa_minato]: new Station({name: '上総湊', pron: "かずさみなと", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.takeoka]: new Station({name: '竹岡', pron: "たけおか", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.hamakanaya]: new Station({name: '浜金谷', pron: "はまかなや", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.hota]: new Station({name: '保田', pron: "ほた", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.awa_katsuyama]: new Station({name: '安房勝山', pron: "あわかつやま", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.iwai]: new Station({name: '岩井', pron: "いわい", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.tomiura]: new Station({name: '富浦', pron: "とみうら", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.nakofunakata]: new Station({name: '那古船形', pron: "なこふなかた", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.kokonoe]: new Station({name: '九重', pron: "ここのえ", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.chikura]: new Station({name: '千倉', pron: "ちくら", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.chitose]: new Station({name: '千歳', pron: "ちとせ", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.minamihara]: new Station({name: '南原', pron: "みなみはら", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.wadaura]: new Station({name: '和田浦', pron: "わだうら", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.emi]: new Station({name: '江見', pron: "えみ", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.futomi]: new Station({name: '太海', pron: "ふとみ", pr: P.CHIBA}),
+  // #endregion 内房線
+  // #region 東北本線
   [STATION_IDS.jr_east.natori]: new StationInfo('名取', [
     LINE_IDS.jr_east.touhoku_honsen,
     LINE_IDS.jr_east.jouban,
@@ -3566,6 +3610,7 @@ export const STATIONS = {
   [STATION_IDS.jr_east.yahaba]: new StationInfo('矢幅', NO_TRANSFER, "やはば"),
   [STATION_IDS.jr_east.iwate_iioka]: new StationInfo('岩手飯岡', NO_TRANSFER, "いわていいおか"),
   [STATION_IDS.jr_east.senbokumachi]: new StationInfo('仙北町', NO_TRANSFER, "せんぼくまち"),
+  //#endregion 東北本線
 
   // 山形新幹線
   [STATION_IDS.jr_east.yonezawa]: new StationInfo('米沢', [
@@ -3873,7 +3918,7 @@ export const STATIONS = {
     LINE_IDS.ir_ishikawa.ir_ishikawa,
     LINE_IDS.jr_west.nanao,
   ], "かなざわ"),
-  [i.STATION_IDS.jr_west.komatsu]: new StationInfo('小松', [
+  [STATION_IDS.jr_west.komatsu]: new StationInfo('小松', [
     LINE_IDS.jr_east.shinkansen.hokuriku,
     LINE_IDS.ir_ishikawa.ir_ishikawa,
   ], "こまつ"),
@@ -3881,25 +3926,25 @@ export const STATIONS = {
     LINE_IDS.jr_east.shinkansen.hokuriku,
     LINE_IDS.ir_ishikawa.ir_ishikawa,
   ], "かがおんせん"),
-  [i.STATION_IDS.jr_west.awara_onsen]: new StationInfo('芦原温泉', [
+  [STATION_IDS.jr_west.awara_onsen]: new StationInfo('芦原温泉', [
     LINE_IDS.jr_east.shinkansen.hokuriku,
-    i.LINE_IDS.hapi_line_fukui.hapi_line_fukui,
+    LINE_IDS.hapi_line_fukui.hapi_line_fukui,
   ], "あわらおんせん"),
-  [i.STATION_IDS.jr_west.fukui]: new StationInfo('福井', [
+  [STATION_IDS.jr_west.fukui]: new StationInfo('福井', [
     LINE_IDS.jr_east.shinkansen.hokuriku,
-    i.LINE_IDS.jr_west.kuzuryu,
-    i.LINE_IDS.hapi_line_fukui.hapi_line_fukui,
-    i.LINE_IDS.echizen.katsuyama_eiheiji,
-    i.LINE_IDS.echizen.mikuni_awara,
-    new ExchangeInfo(i.LINE_IDS.fukui.fukui_tetsudo, i.STATION_IDS.fukui.fukuieki),
+    LINE_IDS.jr_west.kuzuryu,
+    LINE_IDS.hapi_line_fukui.hapi_line_fukui,
+    LINE_IDS.echizen.katsuyama_eiheiji,
+    LINE_IDS.echizen.mikuni_awara,
+    new ExchangeInfo(LINE_IDS.fukui.fukui_tetsudo, STATION_IDS.fukui.fukuieki),
   ], "ふくい"),
-  [i.STATION_IDS.jr_west.echizen_takefu]: new StationInfo('越前たけふ', [], "えちぜんたけふ"),
-  [i.STATION_IDS.jr_west.tsuruga]: new StationInfo('敦賀', [
-    i.LINE_IDS.jr_east.shinkansen.hokuriku,
-    i.LINE_IDS.jr_west.hokuriku_honsen,
-    i.LINE_IDS.jr_west.kosei,
-    i.LINE_IDS.jr_west.kohama,
-    i.LINE_IDS.hapi_line_fukui.hapi_line_fukui,
+  [STATION_IDS.jr_west.echizen_takefu]: new StationInfo('越前たけふ', [], "えちぜんたけふ"),
+  [STATION_IDS.jr_west.tsuruga]: new StationInfo('敦賀', [
+    LINE_IDS.jr_east.shinkansen.hokuriku,
+    LINE_IDS.jr_west.hokuriku_honsen,
+    LINE_IDS.jr_west.kosei,
+    LINE_IDS.jr_west.kohama,
+    LINE_IDS.hapi_line_fukui.hapi_line_fukui,
   ], "つるが"),
   // #endregion JR東海
 

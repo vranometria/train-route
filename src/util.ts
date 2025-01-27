@@ -1,4 +1,4 @@
-import { LINE_IDS } from "@/constants/ids"
+import { LINE_IDS } from "@/constants/line-ids"
 import NegishiTop from "./components/top-bottom/NegishiTop.vue";
 import KeihintohokuBottom from "@/components/top-bottom/KeihintohokuBottom.vue"
 import type { Component } from "vue";
