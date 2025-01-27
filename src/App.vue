@@ -109,6 +109,7 @@ import LineAccordion from './components/LineAccordion.vue';
 
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.ryoumou}}" >両毛線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.mito}}" >水戸線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.sotobou}}" >外房線</RouterLink>
 
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.touhoku_honsen}}" >東北本線</RouterLink>
 
@@ -154,7 +155,6 @@ import LineAccordion from './components/LineAccordion.vue';
 
         東武鉄道
         <div>
-          <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tobu.isesaki}}">伊勢崎線</RouterLink> -->
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toubu.toujou}}">東上線</RouterLink>
           <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tobu.nikko}}">日光線</RouterLink> -->
           <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.tobu.utsunomiya}}">宇都宮線</RouterLink> -->
@@ -174,11 +174,11 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.chichibu.chichibu}}">秩父本線</RouterLink>
         </div>
 
-        横浜市営地下鉄
+        <!-- 横浜市営地下鉄
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.yokohama_subway.blue_line}}">ブルーライン</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.yokohama_subway.green_line}}">グリーンライン</RouterLink>
-        </div>
+        </div> -->
 
         <!-- 関東鉄道
         <div>

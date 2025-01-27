@@ -138,6 +138,8 @@ export const LINE_IDS = {
     sobu_honsen: 'jr-sobu-honsen',
     /** 両毛線 */
     ryoumou: 'jr-ryoumou',
+    /** 東金線 */
+    tougane: 'jr-tougane',
 
     /** 磐越東線 */
     banetsutou: 'jr-banetsutou',
@@ -254,8 +256,6 @@ export const LINE_IDS = {
     kameido: 'toubu-kameido',
     /** 東上線 */
     toujou: 'toubu-toujou',
-    /** 伊勢崎線 */
-    isesaki: 'toubu-isesaki',
     /** 日光線 */
     nikko: 'toubu-nikko',
     /** 東武線 */
@@ -445,6 +445,10 @@ export const LINE_IDS = {
   /** 真岡鉄道 */
   moka: {
     moka: "moka-moka",
+  },
+  /** いずみ鉄道 */
+  izumi: {
+    izumi: "izumi-izumi",
   },
   /** JR東海 */
   jr_tokai: {
@@ -1480,6 +1484,7 @@ export const STATION_IDS = {
     banda: 'jr-east-banda',
     kamimizo: 'jr-east-kamimizo',
     minami_hashimoto: 'jr-east-minami-hashimoto',
+    atsugi: "atsugi",
     // 鶴見線(JI)
     tsurumi: 'jr-east-tsurumi',
     kokudou: 'jr-east-kokudou',
@@ -1508,28 +1513,14 @@ export const STATION_IDS = {
     inage_kaigan: "inage_kaigan",
     chiba_minato: "chiba_minato",
     soga: "soga",
-    // 八高線(JW)
-    kita_hachiouji: 'jr-east-kita-hachiouji',
-    komiya: 'jr-east-komiya',
-    haijima: 'jr-east-haijima',
-    higashi_fussa: 'jr-east-higashi-fussa',
-    hakonegasaki: 'jr-east-hakonegasaki',
-    kaneko: 'jr-east-kaneko',
-    higashi_hanno: 'jr-east-higashi-hanno',
-    moro: 'jr-east-moro',
-    ogose: 'jr-east-ogose',
-    myougaku: 'jr-east-myougaku',
-    ogawamachi: 'jr-east-ogawamachi',
-    takezawa: 'jr-east-takezawa',
-    orihara: 'jr-east-orihara',
-    yorii: 'jr-east-yorii',
-    youdo: 'jr-east-youdo',
-    matsuhisa: 'jr-east-matsuhisa',
-    kodama: 'jr-east-kodama',
-    tanshou: 'jr-east-tanshou',
-    gunma_fujioka: 'jr-east-gunma-fujioka',
-    kita_fujioka: 'jr-east-kita-fujioka',
-    // 宇都宮線
+
+    // 横須賀線(JO)
+    higashizushi: 'higashizushi',
+    taura: 'taura',
+    yokosuka: 'yokosuka',
+    kinugasa: 'kinugasa',
+    kurihama: 'kurihama',
+    // 宇都宮線(JU)
     omiya: 'o-miya',
     saitama_shintoshin: 'saitama-shintoshin',
     yono: 'yono',
@@ -1637,8 +1628,18 @@ export const STATION_IDS = {
     manazuru: "manazuru",
     yugawara: 'yugawara',
     atami: 'atami',
-
-    // 高崎線
+    // 宇都宮線(JU)
+    doro: 'doro',
+    okamoto: 'okamoto',
+    housyakuji: 'housyakuji',
+    ujiie: 'ujiie',
+    kamasusaka: 'kamasusaka',
+    kataoka: 'kataoka',
+    yaita: 'yaita',
+    nozaki: 'nozaki',
+    nishisunano: 'nishisunano',
+    kuroiso: 'kuroiso',
+    // 高崎線(JU)
     oku: 'oku',
     miyahara: 'miyahara',
     ageo: 'ageo',
@@ -1659,7 +1660,7 @@ export const STATION_IDS = {
     shinmachi: 'sinmachi',
     kuragano: 'kuragano',
     takasaki: 'takasaki',
-    // 湘南新宿ライン
+    // 湘南新宿ライン(JS)
     utsunomiya: 'utsunomiya',
     suzumenomiya: 'suzumenomiya',
     ishibashi: 'ishibashi',
@@ -1690,7 +1691,7 @@ export const STATION_IDS = {
     kamakura: "kamakura",
     zushi: "zushi",
     nishinasuno: "nishinasuno",
-    // 武蔵野線
+    // 武蔵野線(JM)
     fuchuhonmachi: 'fuchuhonmachi',
     kitafuchu: 'kitafuchu',
     shinkohira: 'shinkohira',
@@ -1714,29 +1715,6 @@ export const STATION_IDS = {
     nishi_funabashi: "nishi_funabashi",
     minami_funabashi: "minami_funabashi",
     ichikawa_shiohama: "ichikawa_shiohama",
-
-    // 横須賀線
-    higashizushi: 'higashizushi',
-    taura: 'taura',
-    yokosuka: 'yokosuka',
-    kinugasa: 'kinugasa',
-    kurihama: 'kurihama',
-
-    // 相模線
-    atsugi: "atsugi",
-
-    // 宇都宮線
-    doro: 'doro',
-    okamoto: 'okamoto',
-    housyakuji: 'housyakuji',
-    ujiie: 'ujiie',
-    kamasusaka: 'kamasusaka',
-    kataoka: 'kataoka',
-    yaita: 'yaita',
-    nozaki: 'nozaki',
-    nishisunano: 'nishisunano',
-    kuroiso: 'kuroiso',
-    //武蔵野線(JM)
     huchuhonmachi: 'huchuhonmachi',
     kitahuchu: 'kitahuchu',
     minamiurawa: "minamiurawa",
@@ -1785,7 +1763,6 @@ export const STATION_IDS = {
     yakawa: "yakawa",
     nishikunitachi: "nishikunitachi",
     noborito: "noborito",
-    // 南武支線
     kawasaki_shinmachi: "kawasaki_shinmachi",
     // 総武本線(JO)
     nishi_chiba: 'jr-east-nishi_chiba',
@@ -1810,6 +1787,54 @@ export const STATION_IDS = {
     saruda: 'jr-east-saruda',
     matsugishi: 'jr-east-matsugishi',
     choshi: 'jr-east-choshi',
+    // 八高線(JW)
+    kita_hachiouji: 'jr-east-kita-hachiouji',
+    komiya: 'jr-east-komiya',
+    haijima: 'jr-east-haijima',
+    higashi_fussa: 'jr-east-higashi-fussa',
+    hakonegasaki: 'jr-east-hakonegasaki',
+    kaneko: 'jr-east-kaneko',
+    higashi_hanno: 'jr-east-higashi-hanno',
+    moro: 'jr-east-moro',
+    ogose: 'jr-east-ogose',
+    myougaku: 'jr-east-myougaku',
+    ogawamachi: 'jr-east-ogawamachi',
+    takezawa: 'jr-east-takezawa',
+    orihara: 'jr-east-orihara',
+    yorii: 'jr-east-yorii',
+    youdo: 'jr-east-youdo',
+    matsuhisa: 'jr-east-matsuhisa',
+    kodama: 'jr-east-kodama',
+    tanshou: 'jr-east-tanshou',
+    gunma_fujioka: 'jr-east-gunma-fujioka',
+    kita_fujioka: 'jr-east-kita-fujioka',
+    // //千葉
+    // 外房線
+    hon_chiba: 'jr-east-hon-chiba',
+    kamatori: 'jr-east-kamatori',
+    honda: 'jr-east-honda',
+    toke: 'jr-east-toke',
+    oami: 'jr-east-oami',
+    nagata: 'jr-east-nagata',
+    honnou: 'jr-east-honnou',
+    shin_mobara: 'jr-east-shin-mobara',
+    mobara: 'jr-east-mobara',
+    yatsumi: 'jr-east-yatsumi',
+    kazusa_ichinomiya: 'jr-east-kazusaichinomiya',
+    torami: 'jr-east-torami',
+    taitou: 'jr-east-taitou',
+    choujamachi: 'jr-east-choujamachi',
+    mikado: 'jr-east-mikado',
+    ohara: 'jr-east-ohara',
+    namihana: 'jr-east-namihana',
+    onjuku: 'jr-east-onjuku',
+    katsuura: 'jr-east-katsuura',
+    ubara: 'jr-east-ubara',
+    kazusa_okitsu: 'jr-east-kazusa-okitsu',
+    namegawa_island: 'jr-east-namegawa-island',
+    awa_kominato: 'jr-east-awako-minato',
+    awa_amatsu: 'jr-east-awako-amatsu',
+    awa_kamogawa: 'jr-east-awako-kamogawa',
 
     // 東北本線
     takaku: 'jr-east-takaku',

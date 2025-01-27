@@ -131,6 +131,10 @@ th.kind .text {
   background-color: red;
 }
 
+.section-express {
+  background-color: lightcoral;
+}
+
 .special-express {
   background-color: pink;
 }
@@ -141,6 +145,10 @@ th.express .text {
 
 .semi-express {
   background-color: orange;
+}
+
+.section-semi-express {
+  background-color: lightcyan;
 }
 
 .extra1 {
