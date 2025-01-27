@@ -1168,6 +1168,36 @@ export const STATION_IDS = {
     kazusa_matsuoka: "jr-east-kazusa-matsuoka",
     kazusa_kameyama: "jr-east-kazusa-kameyama",
     // #endregion
+    // #region 成田線
+    higashi_abiko: "jr-east-higashi-abiko",
+    kohoku: "jr-east-kohoku",
+    araki: "jr-east-araki",
+    fusa: "jr-east-fusa",
+    kioroshi: "jr-east-kioroshi",
+    kobayashi: "jr-east-kobayashi",
+    ajiki: "jr-east-ajiki",
+    shimousa_manzaki: "jr-east-shimousa-manzaki",
+    narita: "jr-east-narita",
+    shisui: "jr-east-shisui",
+    kuzumi: "jr-east-kuzumi",
+    namegawa: "jr-east-namegawa",
+    shimousa_kouzaki: "jr-east-shimousa-kouzaki",
+    oto: "jr-east-oto",
+    sawara: "jr-east-sawara",
+    suigou: "jr-east-suigou",
+    omigawa: "jr-east-omigawa",
+    sasagawa: "jr-east-sasagawa",
+    shimousa_tachibana: "jr-east-shimousa-tachibana",
+    shishiba: "jr-east-shishiba",
+    // #endregion
+    // #region 鹿島線
+    katori: "jr-east-katori",
+    junikyou: "jr-east-junikyou",
+    itako: "jr-east-itako",
+    nobukata: "jr-east-nobukata",
+    kashima_jingu: "jr-east-kashima-jingu",
+    kashima_soccer_stadium: "jr-east-kashima-soccer-stadium",
+    // #endregion
     // #endregion
 
     // 東北本線

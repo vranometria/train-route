@@ -1656,6 +1656,11 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.kazusa_matsuoka),
     new StopStationDef(STATION_IDS.jr_east.kazusa_kameyama),
   ], P.CHIBA),
+  [LINE_IDS.jr_east.narita3]: new Line('成田線[成田-成田空港]', 'JR東日本', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_east.narita),
+    new StopStationDef(STATION_IDS.keisei.kuko_daini_bill),
+    new StopStationDef(STATION_IDS.keisei.narita_kuko),
+  ], P.CHIBA),
   // #endregion
 
   [LINE_IDS.jr_east.kashima]: new Line('鹿島線', 'JR東日本', [], []),

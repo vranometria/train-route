@@ -161,6 +161,12 @@ export const LINE_IDS = {
     tougane: "jr-tougane",
     /** 久留里線 */
     kururi: "jr-kururi",
+    /** 成田線 */
+    narita1: "jr-narita1",
+    narita2: "jr-narita2",
+    narita3: "jr-narita3",
+    /** 鹿島線 */
+    kashima: "jr-kashima",
     // #endregion
 
     /** 日光線 */
@@ -173,10 +179,6 @@ export const LINE_IDS = {
     oume: "jr-oume",
     /** 八高線 */
     hachiko: "jr-hachiko",
-    /** 鹿島線 */
-    kashima: "jr-kashima",
-    /** 成田線 */
-    narita: "jr-narita",
     /** 上越線 */
     jouetsu: "jr-jouetsu",
     /** 吾妻線 */
