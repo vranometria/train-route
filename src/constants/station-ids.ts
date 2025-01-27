@@ -1151,7 +1151,7 @@ export const STATION_IDS = {
     // #region 東金線
     fukutawara: "jr-east-fukutawara",
     tougane: "jr-east-tougane",
-    gumyouji: "jr-east-gumyouji",
+    gumyou: "jr-east-gumyou",
     // #endregion
     // #region 久留里線
     gion: "jr-east-gion",

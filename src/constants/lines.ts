@@ -1632,6 +1632,14 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.futomi),
     new StopStationDef(STATION_IDS.jr_east.awa_kamogawa),
   ], P.CHIBA),
+  [LINE_IDS.jr_east.tougane]: new Line('東金線', 'JR東日本', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_east.oami),
+    new StopStationDef(STATION_IDS.jr_east.fukutawara),
+    new StopStationDef(STATION_IDS.jr_east.tougane),
+    new StopStationDef(STATION_IDS.jr_east.gumyou),
+    new StopStationDef(STATION_IDS.jr_east.futomi),
+    new StopStationDef(STATION_IDS.jr_east.narutou),
+  ], P.CHIBA),
   // #endregion
 
   [LINE_IDS.jr_east.kashima]: new Line('鹿島線', 'JR東日本', [], []),
