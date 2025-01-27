@@ -2360,6 +2360,7 @@ export const STATION_IDS = {
     sakaimachi: "toubu-sakaimachi",
     goushi: "toubu-goushi",
     shin_isezaki: "toubu-shin-isezaki",
+    tokiwadai: "toubu-tokiwadai",
   },
   /** 西部駅 */
   seibu: {
