@@ -1656,6 +1656,18 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.kazusa_matsuoka),
     new StopStationDef(STATION_IDS.jr_east.kazusa_kameyama),
   ], P.CHIBA),
+  [LINE_IDS.jr_east.narita1]: new Line('成田線[我孫子-成田]', 'JR東日本', LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_east.abiko),
+    new StopStationDef(STATION_IDS.jr_east.higashi_abiko),
+    new StopStationDef(STATION_IDS.jr_east.kohoku),
+    new StopStationDef(STATION_IDS.jr_east.araki),
+    new StopStationDef(STATION_IDS.jr_east.fusa),
+    new StopStationDef(STATION_IDS.jr_east.kioroshi),
+    new StopStationDef(STATION_IDS.jr_east.kobayashi),
+    new StopStationDef(STATION_IDS.jr_east.ajiki),
+    new StopStationDef(STATION_IDS.jr_east.shimousa_manzaki),
+    new StopStationDef(STATION_IDS.jr_east.narita),
+  ], P.CHIBA),
   [LINE_IDS.jr_east.narita3]: new Line('成田線[成田-成田空港]', 'JR東日本', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_east.narita),
     new StopStationDef(STATION_IDS.keisei.kuko_daini_bill),

@@ -3511,6 +3511,17 @@ export const STATIONS = {
   [STATION_IDS.jr_east.kazusa_matsuoka]: new Station({name: '上総松丘', pron: "かずさまつおか", pr: P.CHIBA}),
   [STATION_IDS.jr_east.kazusa_kameyama]: new Station({name: '上総亀山', pron: "かずさかめやま", pr: P.CHIBA}),
   // #endregion 久留里線
+  // #region 成田線
+  [STATION_IDS.jr_east.higashi_abiko]: new Station({name: '東我孫子', pron: "ひがしあびこ", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.kohoku]: new Station({name: '湖北', pron: "こほく", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.araki]: new Station({name: '新木', pron: "あらき", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.fusa]: new Station({name: '布佐', pron: "ふさ", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.kioroshi]: new Station({name: '木下', pron: "きおろし", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.kobayashi]: new Station({name: '小林', pron: "こばやし", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.ajiki]: new Station({name: '安食', pron: "あじき", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.shimousa_manzaki]: new Station({name: '下総松崎', pron: "しもうさまんざき", pr: P.CHIBA}),
+
+  // #endregion 成田線
   // #region 東北本線
   [STATION_IDS.jr_east.natori]: new StationInfo('名取', [
     LINE_IDS.jr_east.touhoku_honsen,
