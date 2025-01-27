@@ -3542,6 +3542,13 @@ export const STATIONS = {
     LINE_IDS.jr_east.kashima,
   ]}),
   // #endregion 成田線
+  // #region 鹿島線
+  [STATION_IDS.jr_east.kashima_jingu]: new Station({name: '鹿島神宮', pron: "かしまじんぐう", pr: P.IBARAKI}),
+  [STATION_IDS.jr_east.kashima_soccer_stadium]: new Station({name: '鹿島サッカースタジアム', pron: "かしまさっかーすたじあむ", pr: P.IBARAKI}),
+  [STATION_IDS.jr_east.junikyou]: new Station({name: '十二橋', pron: "じゅうにきょう", pr: P.IBARAKI}),
+  [STATION_IDS.jr_east.itako]: new Station({name: '潮来', pron: "いたこ", pr: P.IBARAKI}),
+  [STATION_IDS.jr_east.nobukata]: new Station({name: '延方', pron: "のぶかた", pr: P.IBARAKI}),
+  // #endregion 鹿島線
   // #region 東北本線
   [STATION_IDS.jr_east.natori]: new StationInfo('名取', [
     LINE_IDS.jr_east.touhoku_honsen,

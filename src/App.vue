@@ -115,6 +115,7 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.narita1}}" >成田線[我孫子-成田]</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.narita2}}" >成田線[佐倉-銚子]</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.narita3}}" >成田線[成田-成田空港]</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.kashima}}" >鹿島線</RouterLink>
 
 
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.touhoku_honsen}}" >東北本線</RouterLink>
