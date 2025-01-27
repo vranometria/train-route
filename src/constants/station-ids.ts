@@ -658,7 +658,7 @@ export const STATION_IDS = {
     musashi_takahagi: "musashi-takahagi",
     komagawa: "komagawa",
     // #endregion
-    // #region 総武線(JB)
+    // #region 中央・総武緩行線(JB)
     higashinakano: "higashinakano",
     okubo: "okubo",
     sendagaya: "sendagaya",
@@ -688,7 +688,7 @@ export const STATION_IDS = {
     nishichiba: "nishichiba",
     chiba: "chiba",
     bakurocho: "bakurocho",
-    shinnihonbashi: "shinnihonbashi",
+    shin_nihonbashi: "shin_nihonbashi",
     // #endregion
     // #region 中央線(JC)
     ochanomizu: "ochanomizu",
@@ -1923,10 +1923,6 @@ export const STATION_IDS = {
     yagiri: "hokusou-yagiri",
     shin_shibamata: "hokusou-shin-shibamata",
   },
-  /** 小港鉄道 駅 */
-  kominato: {
-    kominato: "kominato-kominato",
-  },
   /** 千葉都市モノレール */
   chiba_toshi_monorail: {
     shiyakusyomae: "chiba-toshi-monorail-shiyakusyomae",
@@ -1944,6 +1940,26 @@ export const STATION_IDS = {
     oguradai: "chiba-toshi-monorail-oguradai",
     chishirodai_kita: "chiba-toshi-monorail-chishirodai-kita",
     chishirodai: "chiba-toshi-monorail-chishirodai",
+  },
+  /** 小港鉄道 駅 */
+  kominato: {
+    kazusa_murakami: "kominato-kazusa-murakami",
+    amaariki: "kominato-amaariki",
+    kazusa_mitsumata: "kominato-kazusa-mitsumata",
+    kazusa_yamada: "kominato-kazusa-yamada",
+    koufudai: "kominato-koufudai",
+    umatate: "kominato-umatate",
+    kazusa_ushiku: "kominato-kazusa-ushiku",
+    kazusa_kawama: "kominato-kazusa-kawama",
+    kazusa_tsurumai: "kominato-kazusa-tsurumai",
+    kazusa_kubo: "kominato-kazusa-kubo",
+    takataki: "kominato-takataki",
+    satomi: "kominato-satomi",
+    itabu: "kominato-itabu",
+    tsukizaki: "kominato-tsukizaki",
+    kazusa_okubo: "kominato-kazusa-okubo",
+    yourou_keikoku: "kominato-yourou-keikoku",
+    kazusa_nakano: "kominato-kazusa-nakano",
   },
   // #endregion
 

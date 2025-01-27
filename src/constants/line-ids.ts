@@ -13,6 +13,10 @@ export const LINE_IDS = {
   kominato: {
     kominato: "kominato-kominato",
   },
+  /** 銚子電気鉄道 */
+  choushi_denki: {
+    choushi_denki: "choushi-denki-choushi-denki",
+  },
   // #endregion
 
   // #region 神奈川
@@ -102,10 +106,10 @@ export const LINE_IDS = {
     saikyou: "jr-saikyou",
     /** 川越線(JA) */
     kawagoe: "jr-kawagoe",
-    /** 総武線(JB) */
-    sobu: "jr-sobu",
-    /** 中央線(JC) */
-    chuo: "jr-chuo",
+    /** 中央・総武緩行線(中央・総武線各停)(JB) */
+    chuo_soubu_kankou: "jr-chuo_soubu_kankou",
+    /** 中央本線(JC) */
+    chuou_honsen: "jr-chuou_honsen",
     /** 五日市線(JC) */
     itsukaichi: "jr-itsukaichi",
     /** 京葉線(JE) */
@@ -130,6 +134,10 @@ export const LINE_IDS = {
     nanbu_shisen: "jr-nanbu-shisen",
     /** 横須賀線(JO) */
     yokosuka: "jr-yokosuka",
+    /** 総武線快速(JO) */
+    sobu_kaisoku: "jr-sobu-kaisoku",
+    /** 総武本線(JO) */
+    soubu_honsen: "jr-sobu-honsen",
     /** 湘南新宿ライン(JS) */
     shonan_shinjuku: "jr-sho-nan_shinjuku",
     /** 東海道本線(JT) */
@@ -142,10 +150,6 @@ export const LINE_IDS = {
     yamanote: "jr-yamanote",
     /** 中央本線 */
     chuo_honsen: "jr-chuo-honsen",
-    /** 総武線快速(JO) */
-    sobu_kaisoku: "jr-sobu-kaisoku",
-    /** 総武本線(JO) */
-    sobu_honsen: "jr-sobu-honsen",
     /** 両毛線 */
     ryoumou: "jr-ryoumou",
 

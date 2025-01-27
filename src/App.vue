@@ -85,9 +85,10 @@ import LineAccordion from './components/LineAccordion.vue';
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.saikyou}}" >埼京線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.kawagoe}}" >川越線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.sobu}}" >総武線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.chuo_soubu_kankou}}" >総武線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.sobu_kaisoku}}" >総武線快速</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.chuo}}" >中央線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.soubu_honsen}}" >総武本線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.chuou_honsen}}" >中央線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.oume}}" >青梅線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.keiyou}}" >京葉線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.sagami}}" >相模線</RouterLink>
@@ -192,6 +193,11 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.kantou.jousou}}">関東鉄道</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.kantou.ryugasaki}}">竜ケ崎線</RouterLink>
         </div> -->
+
+        小湊鉄道
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.kominato.kominato}}">小湊鉄道線</RouterLink>
+        </div>
 
         <LineAccordion :prefecture="PREFECTURE.HOKKAIDO" />
         <LineAccordion :prefecture="PREFECTURE.MIYAGI" />
