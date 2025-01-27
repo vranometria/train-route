@@ -3520,7 +3520,27 @@ export const STATIONS = {
   [STATION_IDS.jr_east.kobayashi]: new Station({name: '小林', pron: "こばやし", pr: P.CHIBA}),
   [STATION_IDS.jr_east.ajiki]: new Station({name: '安食', pron: "あじき", pr: P.CHIBA}),
   [STATION_IDS.jr_east.shimousa_manzaki]: new Station({name: '下総松崎', pron: "しもうさまんざき", pr: P.CHIBA}),
-
+  [STATION_IDS.jr_east.narita]: new Station({name: '成田', pron: "なりた", pr: P.CHIBA, lines: [
+    LINE_IDS.jr_east.narita1,
+    LINE_IDS.jr_east.narita2,
+    LINE_IDS.jr_east.narita3,
+  ]}),
+  [STATION_IDS.jr_east.shisui]: new Station({name: '酒々井', pron: "しずい", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.kuzumi]: new Station({name: '久住', pron: "くずみ", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.namegawa]: new Station({name: '滑河', pron: "なめがわ", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.shimousa_kouzaki]: new Station({name: '下総神崎', pron: "しもうさこうざき", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.oto]: new Station({name: '大戸', pron: "おおと", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.sawara]: new Station({name: '佐原', pron: "さわら", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.suigou]: new Station({name: '水郷', pron: "すいごう", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.omigawa]: new Station({name: '小見川', pron: "おみがわ", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.sasagawa]: new Station({name: '笹川', pron: "ささがわ", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.shimousa_toyohasato]: new Station({name: '下総豊富', pron: "しもうさとよはさと", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.shimousa_tachibana]: new Station({name: '下総橘', pron: "しもうさたちばな", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.shishiba]: new Station({name: '椎柴', pron: "しいしば", pr: P.CHIBA}),
+  [STATION_IDS.jr_east.katori]: new Station({name: '香取', pron: "かとり", pr: P.CHIBA, lines: [
+    LINE_IDS.jr_east.narita2,
+    LINE_IDS.jr_east.kashima,
+  ]}),
   // #endregion 成田線
   // #region 東北本線
   [STATION_IDS.jr_east.natori]: new StationInfo('名取', [

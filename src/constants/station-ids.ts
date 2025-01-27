@@ -1189,6 +1189,7 @@ export const STATION_IDS = {
     sasagawa: "jr-east-sasagawa",
     shimousa_tachibana: "jr-east-shimousa-tachibana",
     shishiba: "jr-east-shishiba",
+    shimousa_toyohasato: "jr-east-shimousa-toyohasato",
     // #endregion
     // #region 鹿島線
     katori: "jr-east-katori",
