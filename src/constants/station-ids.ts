@@ -1078,7 +1078,7 @@ export const STATION_IDS = {
     higashi_hanno: "jr-east-higashi-hanno",
     moro: "jr-east-moro",
     ogose: "jr-east-ogose",
-    myougaku: "jr-east-myougaku",
+    myoukaku: "jr-east-myoukaku",
     ogawamachi: "jr-east-ogawamachi",
     takezawa: "jr-east-takezawa",
     orihara: "jr-east-orihara",
