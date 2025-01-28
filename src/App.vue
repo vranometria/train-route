@@ -142,10 +142,15 @@ import LineAccordion from './components/LineAccordion.vue';
 
         京成電鉄
         <div>
-          <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keisei.main}}">本線</RouterLink> -->
-          <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keisei.hokuso}}">北総線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keisei.ksk}}">京成金町線</RouterLink> -->
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keisei.keisei_narita_sky_access}}">京成成田スカイアクセス</RouterLink>
+          <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keisei.honsen}}">本線</RouterLink> -->
+          <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keisei.ksk}}">京成金町線</RouterLink> -->
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keisei.sky_liner}}">スカイライナー</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keisei.narita_kuko}}">京成成田空港線</RouterLink>
+        </div>
+
+        新京成電鉄
+        <div>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.shin_keisei.shin_keisei}}">新京成線</RouterLink>
         </div>
 
         北総電鉄

@@ -17,6 +17,23 @@ export const LINE_IDS = {
   choushi_denki: {
     choushi_denki: "choushi-denki-choushi-denki",
   },
+  /** 舞浜リゾート */
+  maihama_resort: {
+    disney_resort: "maihama-resort-disney-resort",
+  },
+  /** 京成電鉄 */
+  keisei: {
+    honsen: "keisei-honsen",
+    chiba: "keisei-chiba",
+    narita_kuko: "keisei-narita-kuko",
+    sky_liner: "keisei-sky-liner",
+    kanamachi: "keisei-kanamachi",
+    oshiage: "keisei-oshiage",
+  },
+  /** 新京成電鉄 */
+  shin_keisei: {
+    shin_keisei: "shin-keisei-shin-keisei",
+  },
   // #endregion
 
   // #region 神奈川
@@ -401,24 +418,11 @@ export const LINE_IDS = {
   toyo_kousoku: {
     toyo_kousoku: "toyo-kousoku-toyo-kousoku",
   },
-  /** 舞浜リゾート */
-  maihama_resort: {
-    disney_resort: "maihama-resort-disney-resort",
-  },
   /** 多摩モノレール */
   tama_monorail: {
     tama_monorail: "tama-monorail",
   },
-  /** 京成電鉄　路線 */
-  keisei: {
-    honsen: "keisei-honsen",
-    chiba: "keisei-chiba",
-    shin_keisei: "shin-keisei",
-    keisei_narita_sky_access: "keisei-narita-sky-access",
-    kanamachi: "keisei-kanamachi",
-    oshiage: "keisei-oshiage",
-    narita: "keisei-narita",
-  },
+
   /** 北総電鉄　路線 */
   hokusou: {
     hokusou: "hokusou-hokusou",
