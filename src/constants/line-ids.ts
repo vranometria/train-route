@@ -29,6 +29,7 @@ export const LINE_IDS = {
     sky_liner: "keisei-sky-liner",
     kanamachi: "keisei-kanamachi",
     oshiage: "keisei-oshiage",
+    yukarigaoka: "keisei-yukarigaoka",
   },
   /** 新京成電鉄 */
   shin_keisei: {

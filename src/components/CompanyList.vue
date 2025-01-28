@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { COMPANIES } from '@/constants/companies';
 import { LINES } from '@/constants/lines';
-import { getRomanRegex, orderByJapanese } from '@/util';
+import { orderByJapanese } from '@/util';
 import { ref } from 'vue';
 
   interface LineData {
@@ -15,13 +15,11 @@ import { ref } from 'vue';
     lines: LineData[];
     yomi: string;
     keywords: string[];
-    romanRegex: string;
-    constructor(name: string, lines: LineData[], keywords: string[], yomi: string, romanRegex: string = '') {
+    constructor(name: string, lines: LineData[], keywords: string[], yomi: string) {
       this.name = name;
       this.yomi = yomi;
       this.lines = lines;
       this.keywords = keywords;
-      this.romanRegex = romanRegex;
     }
   }
 
@@ -39,8 +37,7 @@ import { ref } from 'vue';
     keys.map((key) => {
       const c = COMPANIES[key];
       const ls = lines.filter((l) => l.company === c.name);
-      const romanRegex = getRomanRegex(c.name);
-      return new CompanyModel(c.name, ls, c.keywords, c.yomi, romanRegex);
+      return new CompanyModel(c.name, ls, c.keywords, c.yomi);
     }), "yomi"
   );
   const companies = ref<CompanyModel[]>(initModels);

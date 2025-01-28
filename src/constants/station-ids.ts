@@ -1585,15 +1585,6 @@ export const STATION_IDS = {
     magomesawa: "toubu-magomesawa",
     tsukada: "toubu-tsukada",
     shin_funabashi: "toubu-shin-funabashi",
-    // 東葉高速線
-    higashi_kaijin: "toubu-higashi-kaijin",
-    hasama: "toubu-hasama",
-    kita_narashino: "toubu-kita-narashino",
-    funabashi_nichidaimae: "toubu-funabashi-nichidaimae",
-    yachiyo_midorigaoka: "toubu-yachiyo-midorigaoka",
-    yachiyo_chuou: "toubu-yachiyo-chuou",
-    murakami: "toubu-murakami",
-    touyou_katsutadai: "toubu-touyou-katsutadai",
     // 生越線
     sakado: "toubu-sakado",
     ipponmatsu: "toubu-ipponmatsu",
@@ -1851,7 +1842,7 @@ export const STATION_IDS = {
     keisei_takasago: "keisei-keisei-takasago",
     keisei_koiwa: "keisei-keisei-koiwa",
     edogawa: "keisei-edogawa",
-    kounodai: "keisei-kounodai",
+    takanodai: "keisei-takanodai",
     ichikawa_mama: "keisei-ichikawa-mama",
     sugano: "keisei-sugano",
     keisei_hachiman: "keisei-hachiman",
@@ -1867,7 +1858,7 @@ export const STATION_IDS = {
     keisei_okubo: "keisei-keisei-okubo",
     mimomi: "keisei-mimomi",
     yachiyodai: "keisei-yachiyodai",
-    keisei_towada: "keisei-keisei-towada",
+    keisei_owada: "keisei-keisei-owada",
     katsutadai: "keisei-ka-tsutadai",
     shidu: "keisei-shidu",
     yukarigaoka: "keisei-yukarigaoka",
@@ -1921,6 +1912,16 @@ export const STATION_IDS = {
     kitakokubun: "hokusou-kitakokubun",
     yagiri: "hokusou-yagiri",
     shin_shibamata: "hokusou-shin-shibamata",
+  },
+  /** 東葉高速鉄道 */
+  touyou_kousoku: {
+    higashi_kaijin: "touyou-kousoku-higashi-kaijin",
+    hasamachou: "touyou-kousoku-hasamachou",
+    funabashi_nichidaimae: "touyou-kousoku-funabashi-nichidaimae",
+    yachiyo_midorigaoka: "touyou-kousoku-yachiyo-midorigaoka",
+    yachiyo_chuou: "touyou-kousoku-yachiyo-chuou",
+    murakami: "touyou-kousoku-murakami",
+    touyou_katsutadai: "touyou-kousoku-touyou-katsutadai",
   },
   /** 千葉都市モノレール */
   chiba_toshi_monorail: {
