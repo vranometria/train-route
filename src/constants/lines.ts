@@ -136,7 +136,7 @@ export const LINES = {
   ], [P.KANAGAWA]),
   // #endregion
   // 都営地下鉄(東京都交通局)
-  [LINE_IDS.tokyo_subway.asakusa]: new Line('浅草線', '東京都交通局(都営地下鉄)', LOCAL_ONLY, [
+  [LINE_IDS.tokyo_subway.asakusa]: new Line('浅草線', '東京都交通局', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.tokyo_metro.oshiage),
     new StopStationDef(STATION_IDS.tokyo_subway.honjo_azumabashi),
     new StopStationDef(STATION_IDS.tokyo_subway.asakusa),
@@ -158,7 +158,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_subway.magome),
     new StopStationDef(STATION_IDS.tokyo_subway.nishimagome),
   ], P.TOKYO),
-  [LINE_IDS.tokyo_subway.shinjuku]: new Line('新宿線', '東京都交通局(都営地下鉄)', [new KindDef("急行", "express")], [
+  [LINE_IDS.tokyo_subway.shinjuku]: new Line('新宿線', '東京都交通局', [new KindDef("急行", "express")], [
     new StopStationDef(STATION_IDS.jr_east.motoyawata, ["express"]),
     new StopStationDef(STATION_IDS.tokyo_subway.shinohara),
     new StopStationDef(STATION_IDS.tokyo_subway.mizue),
@@ -181,7 +181,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_metro.shinjuku_sanchome),
     new StopStationDef(STATION_IDS.tokyo_subway.shinsen_shinjuku, ["express"]),
   ], [P.TOKYO, P.CHIBA]),
-  [LINE_IDS.tokyo_subway.oedo]: new Line('大江戸線', '東京都交通局(都営地下鉄)', LOCAL_ONLY, [
+  [LINE_IDS.tokyo_subway.oedo]: new Line('大江戸線', '東京都交通局', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.tokyo_subway.tochomae),
     new StopStationDef(STATION_IDS.tokyo_subway.shinjuku_nishiguchi),
     new StopStationDef(STATION_IDS.tokyo_metro.higashi_shinjuku),
@@ -222,7 +222,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.tokyo_subway.nerima_kasugacho),
     new StopStationDef(STATION_IDS.tokyo_subway.hikarigaoka),
   ], P.TOKYO),
-  [LINE_IDS.tokyo_subway.mita]: new Line('三田線', '東京都交通局(都営地下鉄)', LOCAL_ONLY, [
+  [LINE_IDS.tokyo_subway.mita]: new Line('三田線', '東京都交通局', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.tokyo_subway.nishi_takashimadaira),
     new StopStationDef(STATION_IDS.tokyo_subway.shin_takashimadaira),
     new StopStationDef(STATION_IDS.tokyo_subway.takashimadaira),
@@ -577,7 +577,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.sagami.ebina),
   ]),
   // 横浜市営地下鉄
-  [LINE_IDS.yokohama_subway.blue_line]: new Line('ブルーライン', '横浜市営地下鉄', LOCAL_ONLY, [
+  [LINE_IDS.yokohama_subway.blue_line]: new Line('ブルーライン', '横浜市交通局', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.toukyu.azamino),
     new StopStationDef(STATION_IDS.yokohama_subway.nakagawa),
     new StopStationDef(STATION_IDS.yokohama_subway.center_kita),
@@ -610,7 +610,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.yokohama_subway.shimo_iida),
     new StopStationDef(STATION_IDS.odakyu.shonandai),
   ], P.KANAGAWA),
-  [LINE_IDS.yokohama_subway.green_line]: new Line('グリーンライン', '横浜市営地下鉄', LOCAL_ONLY, [
+  [LINE_IDS.yokohama_subway.green_line]: new Line('グリーンライン', '横浜市交通局', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.yokohama_subway.hiyoshi),
     new StopStationDef(STATION_IDS.yokohama_subway.hiyoshi_honchou),
     new StopStationDef(STATION_IDS.yokohama_subway.takada),
@@ -782,7 +782,7 @@ export const LINES = {
   [LINE_IDS.sagami.sotetsushin_yokohama]: new Line('相鉄新横浜線', '相模鉄道', [], [
     new StopStationDef(STATION_IDS.jr_east.shin_yokohama),
     new StopStationDef(STATION_IDS.sagami.hazawayokohamakokudai),
-    new StopStationDef(STATION_IDS.toukyu.hiyoshi),
+    new StopStationDef(STATION_IDS.yokohama_subway.hiyoshi),
   ]),
   [LINE_IDS.sagami.izumino]: new Line('いずみ野線', '相模鉄道', LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.sagami.futamatagawa),
@@ -901,7 +901,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.odakyu.goura),
   ]),
   // 首都圏新都市
-  [LINE_IDS.shutoken_shintoshi.tsukuba_express]: new Line('つくばエクスプレス', '首都圏新都市', [
+  [LINE_IDS.shutoken_shintoshi.tsukuba_express]: new Line('つくばエクスプレス', '首都圏新都市鉄道', [
     new KindDef("快速", "rapid"),
     new KindDef("区間快速", "express"),
     new KindDef("通勤快速", "commuter"),

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import LineView from '../views/LineView.vue';
+import CompanyList from '@/components/CompanyList.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,6 +16,11 @@ const router = createRouter({
       name: 'line',
       component: LineView,
     },
+    {
+      path: '/company',
+      name: 'company',
+      component: CompanyList,
+    }
   ],
 })
 

@@ -44,3 +44,18 @@ export function removeDuplicates(arr: string[]): string[] {
 export function getLineModel(): LineModel[] {
   return Object.keys(LINES).map( key => new LineModel(key, LINES[key]));
 }
+
+/**
+ * オブジェクト配列の指定したキーを日本語の五十音でソートする
+ * @param items
+ * @param key
+ * @param accending true: 昇順, false: 降順
+ * @returns
+ */
+export function orderByJapanese<T, K extends keyof T>(items: T[], key: K, accending = true): T[] {
+  return items.sort((a, b) => {
+    const av = a[key] as string || "";
+    const bv = b[key] as string || "";
+    return accending ? av.localeCompare(bv, "ja") : bv.localeCompare(av, "ja");
+  });
+}
