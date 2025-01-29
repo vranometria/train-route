@@ -6928,6 +6928,31 @@ export const STATIONS = {
     LINE_IDS.seibu.kokubunji,
     LINE_IDS.seibu.haijima,
   ]}),
+  [STATION_IDS.seibu.higashi_yamatoshi]: new Station({
+    name: "東大和市",
+    pron: "ひがしやまとし",
+    pr: P.TOKYO,
+  }),
+  [STATION_IDS.seibu.tamagawa_jousui]: new Station({
+    name: "玉川上水",
+    pron: "たまがわじょうすい",
+    pr: P.TOKYO,
+    lines: [
+      LINE_IDS.seibu.haijima,
+      LINE_IDS.tama_monorail.tama_monorail,
+    ]
+  }),
+  [STATION_IDS.seibu.musashi_sunagawa]: new Station({
+    name: "武蔵砂川",
+    pron: "むさしすながわ",
+    pr: P.TOKYO,
+  }),
+  [STATION_IDS.seibu.seibu_tachikawa]: new Station({
+    name: "西武立川",
+    pron: "せいぶたちかわ",
+    pr: P.TOKYO,
+  }),
+
   //   #endregion 西武鉄道
   //  #endregion 埼玉
   // #endregion 関東

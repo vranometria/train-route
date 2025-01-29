@@ -2068,7 +2068,6 @@ export const STATION_IDS = {
     mitsumineguchi: "chichibu-mitsumineguchi",
   },
   seibu: { /** 西部鉄道*/
-    // 西武池袋線
     shiinamachi: "shiinamachi",
     higashi_nagasaki: "higashi-nagasaki",
     ekoda: "ekoda",
@@ -2094,7 +2093,6 @@ export const STATION_IDS = {
     bushi: "bushi",
     motokaji: "motokaji",
     hanno: "hanno",
-    // 新宿線
     seibu_shinjuku: "seibu-seibu-shinjuku",
     shimo_ochiai: "seibu-shimo-ochiai",
     arai_yakushimae: "seibu-arai-yakushimae",
@@ -2121,7 +2119,6 @@ export const STATION_IDS = {
     shin_sayama: "seibu-shin-sayama",
     minami_otsuka: "seibu-minami-otsuka",
     hon_kawagoe: "seibu-hon-kawagoe",
-    // 西武秩父線
     koma: "seibu-koma",
     musashi_yokote: "seibu-musashi-yokote",
     higashi_agano: "seibu-higashi-agano",
@@ -2133,17 +2130,20 @@ export const STATION_IDS = {
     seibu_chichibu: "seibu-seibu-chichibu",
     shin_sakuradai: "seibu-shin-sakuradai",
     toshimaen: "seibu-toshimaen",
-    // 多摩湖線
     hitotsubashi_gakuen: "seibu-hitotsubashi-gakuen",
     oume_kaidou: "seibu-oume-kaidou",
     yasaka: "seibu-yasaka",
     hagiyama: "seibu-hagiyama",
     musashi_yamato: "seibu-musashi-yamato",
     tamako: "seibu-tamako",
-    // 国分寺線
     koigakubo: "seibu-koigakubo",
     takanodai: "seibu-takanodai",
     ogawa: "seibu-ogawa",
+    // 拝島線
+    higashi_yamatoshi: "seibu-higashi-yamatoshi",
+    tamagawa_jousui: "seibu-tamagawa-josui",
+    musashi_sunagawa: "seibu-musashi-sunagawa",
+    seibu_tachikawa: "seibu-seibu-tachikawa",
   },
   // #endregion
   kantou: {

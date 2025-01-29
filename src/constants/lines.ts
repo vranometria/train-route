@@ -3709,6 +3709,21 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.higashi_murayama),
     ]
   ),
+  [LINE_IDS.seibu.haijima]: new Line(
+    "拝島線",
+    COMPANIES.seibu.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.seibu.kodaira),
+      new StopStationDef(STATION_IDS.seibu.hagiyama),
+      new StopStationDef(STATION_IDS.seibu.ogawa),
+      new StopStationDef(STATION_IDS.seibu.higashi_yamatoshi),
+      new StopStationDef(STATION_IDS.seibu.tamagawa_jousui),
+      new StopStationDef(STATION_IDS.seibu.musashi_sunagawa),
+      new StopStationDef(STATION_IDS.seibu.seibu_tachikawa),
+      new StopStationDef(STATION_IDS.jr_east.haijima),
+    ]
+  ),
   // #endregion 西武鉄道
 
   // 東武鉄道
