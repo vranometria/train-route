@@ -67,12 +67,6 @@ import LineAccordion from './components/LineAccordion.vue';
           <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keio.inokashira}}">井の頭線</RouterLink> -->
         </div>
 
-        京成電鉄
-        <div>
-           <!-- 千葉線 千原線 -->
-
-        </div>
-
         西武鉄道
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.ikebukuro}}">池袋線</RouterLink>

@@ -1827,11 +1827,10 @@ export const STATION_IDS = {
   // #endregion 神奈川
 
   // #region 千葉
-  /** 京成駅 */
+  /** 京成 駅 */
   keisei: {
     keisei_tsudanuma: "keisei-keisei-tsudanuma",
     shin_kamagaya: "keisei-shin-kamagaya",
-    // 本線
     keisei_ueno: "keisei-keisei-ueno",
     shin_mikawashima: "keisei-shin-mikawashima",
     senju_ohashi: "keisei-senju-ohashi",
@@ -1871,22 +1870,18 @@ export const STATION_IDS = {
     keisei_narita: "keisei-keisei-narita",
     kuko_daini_bill: "keisei-kuko-daini-bill",
     narita_kuko: "keisei-narita-kuko",
-    // ユーカリが丘線
     chiku_center: "keisei-chiku-center",
     kouen: "keisei-kouen",
     joshidai: "keisei-joshidai",
     chugakkou: "keisei-chugakkou",
     ino: "keisei-ino",
-    // 金町線
     shibamata: "keisei-shibamata",
     keisei_kanamachi: "keisei-keisei-kanamachi",
-    // 押上線
     oshiage: "tokyo-oshiage",
     keisei_hikifune: "keisei-keisei-hikifune",
     yahiro: "keisei-yahiro",
     yotsugi: "keisei-yotsugi",
     keisei_tateishi: "keisei-keisei-tateishi",
-    // 千葉線
     keisei_makuhari: "keisei-keisei-makuhari",
     keisei_makuhari_hongou: "keisei-keisei-makuhari-hongou",
     kemigawa: "keisei-kemigawa",
@@ -1896,6 +1891,11 @@ export const STATION_IDS = {
     shin_chiba: "keisei-shin-chiba",
     keisei_chiba: "keisei-keisei-chiba",
     chiba_chuou: "keisei-chiba-chuo",
+    chibadera: "keisei-chibadera",
+    omoridai: "keisei-omoridai",
+    gakuenmae: "keisei-gakuenmae",
+    oyumino: "keisei-oyumino",
+    chiharadai: "keisei-chiharadai",
   },
   /** 新京成電鉄 */
   shin_keisei: {

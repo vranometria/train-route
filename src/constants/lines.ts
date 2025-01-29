@@ -3289,7 +3289,7 @@ export const LINES = {
     ]
   ),
   [LINE_IDS.keisei.narita_kuko]: new Line(
-    "京成成田空港線(京成成田スカイアクセス)",
+    "成田空港線(京成成田スカイアクセス)",
     COMPANIES.keisei.id,
     [],
     [
@@ -3315,7 +3315,7 @@ export const LINES = {
     [P.TOKYO, P.CHIBA]
   ),
   [LINE_IDS.keisei.kanamachi]: new Line(
-    "京成金町線",
+    "金町線",
     COMPANIES.keisei.id,
     LOCAL_ONLY,
     [
@@ -3343,6 +3343,19 @@ export const LINES = {
     new StopStationDef(STATION_IDS.keisei.shin_chiba),
     new StopStationDef(STATION_IDS.keisei.chiba_chuou),
   ]),
+  [LINE_IDS.keisei.chihara]: new Line(
+    "千原線",
+    COMPANIES.keisei.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.keisei.chiba_chuou),
+      new StopStationDef(STATION_IDS.keisei.chibadera),
+      new StopStationDef(STATION_IDS.keisei.omoridai),
+      new StopStationDef(STATION_IDS.keisei.gakuenmae),
+      new StopStationDef(STATION_IDS.keisei.oyumino),
+      new StopStationDef(STATION_IDS.keisei.chiharadai),
+    ]
+  ),
   // #endregion
   // #region 新京成電鉄
   [LINE_IDS.shin_keisei.shin_keisei]: new Line(
