@@ -1868,6 +1868,7 @@ export const STATION_IDS = {
     sougosandou: "keisei-sougosandou",
     koudunomori: "keisei-koudunomori",
     keisei_narita: "keisei-keisei-narita",
+    higashi_narita: "chiba-higashi-narita",
     kuko_daini_bill: "keisei-kuko-daini-bill",
     narita_kuko: "keisei-narita-kuko",
     chiku_center: "keisei-chiku-center",
@@ -1986,6 +1987,7 @@ export const STATION_IDS = {
     yourou_keikoku: "kominato-yourou-keikoku",
     kazusa_nakano: "kominato-kazusa-nakano",
   },
+  /** 銚子電気鉄道 */
   choushi_denki: {
     choushi: "chiba-choushi",
     nakanochou: "choushi_denki-nakanochou",
@@ -1997,6 +1999,11 @@ export const STATION_IDS = {
     kimigahama: "choushi_denki-kimigahama",
     inubou: "choushi_denki-inubou",
     tokawa: "choushi_denki-tokawa",
+  },
+  /** 柴山鉄道 */
+  shibayama: {
+    higashi_narita: "chiba-higashi-narita",
+    shibayama_chiyoda: "shibayama-shibayama-chiyoda",
   },
   // #endregion
 

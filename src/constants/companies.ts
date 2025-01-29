@@ -114,6 +114,12 @@ export const COMPANIES: { [key: string]: Company } = {
     yomi: "ちょうしでんきてつどう",
     keywords: ["choushi dentetsu"]
   },
+  shibayama: {
+    id: "shibayama",
+    name: '芝山鉄道',
+    yomi: "しばやまてつどう",
+    keywords: ["shibayama"]
+  },
   hokusou: {
     id: "hokusou",
     name: '北総鉄道',

@@ -4623,6 +4623,24 @@ export const STATIONS = {
     pron: "おにごえ",
     pr: P.CHIBA,
   }),
+  [STATION_IDS.keisei.keisei_narita]: new Station({
+    name: "京成成田",
+    pron: "けいせいなりた",
+    pr: P.CHIBA,
+    lines: [
+      LINE_IDS.keisei.honsen,
+      LINE_IDS.keisei.higashi_narita,
+      new ExchangeInfo(LINE_IDS.jr_east.narita1, STATION_IDS.jr_east.narita),
+      new ExchangeInfo(LINE_IDS.jr_east.narita2, STATION_IDS.jr_east.narita),
+      new ExchangeInfo(LINE_IDS.jr_east.narita3, STATION_IDS.jr_east.narita),
+    ]
+  }),
+  [STATION_IDS.keisei.higashi_narita]: new Station({
+    name: "東成田",
+    pron: "ひがしなりた",
+    pr: P.CHIBA,
+    lines: [LINE_IDS.keisei.higashi_narita, LINE_IDS.shibayama.shibayama],
+  }),
   [STATION_IDS.keisei.keisei_nakayama]: new Station({
     name: "京成中山",
     pron: "けいせいなかやま",
@@ -4998,6 +5016,11 @@ export const STATIONS = {
     pr: P.CHIBA,
   }),
   //   #endregion 新京成電鉄
+  [STATION_IDS.shibayama.shibayama_chiyoda]: new Station({
+    name: "芝山千代田",
+    pron: "しばやまちよだ",
+    pr: P.CHIBA,
+  }),
   //   #region 小湊鉄道
   [STATION_IDS.kominato.kazusa_murakami]: new Station({
     name: "上総村上",

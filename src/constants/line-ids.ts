@@ -31,10 +31,15 @@ export const LINE_IDS = {
     oshiage: "keisei-oshiage",
     yukarigaoka: "keisei-yukarigaoka",
     chihara: "keisei-chihara",
+    higashi_narita: "keisei-higashi-narita",
   },
   /** 新京成電鉄 */
   shin_keisei: {
     shin_keisei: "shin-keisei-shin-keisei",
+  },
+  /** 柴山鉄道 */
+  shibayama: {
+    shibayama: "shibayama-shibayama",
   },
   // #endregion
 
