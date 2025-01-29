@@ -11,6 +11,7 @@ import { PREFECTURE as P } from "./prefecture";
 import { SectionExpress } from "@/types/section-express";
 import { SectionSemiExpress } from "@/types/section--semi-express";
 import { COMPANIES } from "./companies";
+import { SpecialExpress } from "@/types/special-express";
 
 const LOCAL_ONLY: KindDef[] = [];
 
@@ -1805,14 +1806,19 @@ export const LINES = {
       new StopStationDef(STATION_IDS.keisei.keisei_kanamachi),
     ]
   ),
-  [LINE_IDS.keisei.oshiage]: new Line("押上線", COMPANIES.keisei.id, LOCAL_ONLY, [
-    new StopStationDef(STATION_IDS.keisei.oshiage),
-    new StopStationDef(STATION_IDS.keisei.keisei_hikifune),
-    new StopStationDef(STATION_IDS.keisei.yahiro),
-    new StopStationDef(STATION_IDS.keisei.yotsugi),
-    new StopStationDef(STATION_IDS.keisei.keisei_tateishi),
-    new StopStationDef(STATION_IDS.keisei.aoto),
-  ]),
+  [LINE_IDS.keisei.oshiage]: new Line(
+    "押上線",
+    COMPANIES.keisei.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.keisei.oshiage),
+      new StopStationDef(STATION_IDS.keisei.keisei_hikifune),
+      new StopStationDef(STATION_IDS.keisei.yahiro),
+      new StopStationDef(STATION_IDS.keisei.yotsugi),
+      new StopStationDef(STATION_IDS.keisei.keisei_tateishi),
+      new StopStationDef(STATION_IDS.keisei.aoto),
+    ]
+  ),
   [LINE_IDS.keisei.chiba]: new Line("千葉線", COMPANIES.keisei.id, LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.keisei.keisei_tsudanuma),
     new StopStationDef(STATION_IDS.keisei.keisei_makuhari_hongou),
@@ -1837,10 +1843,15 @@ export const LINES = {
       new StopStationDef(STATION_IDS.keisei.chiharadai),
     ]
   ),
-  [LINE_IDS.keisei.higashi_narita]: new Line("東成田線", COMPANIES.keisei.id, LOCAL_ONLY, [
-    new StopStationDef(STATION_IDS.keisei.higashi_narita),
-    new StopStationDef(STATION_IDS.keisei.keisei_narita),
-  ]),
+  [LINE_IDS.keisei.higashi_narita]: new Line(
+    "東成田線",
+    COMPANIES.keisei.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.keisei.higashi_narita),
+      new StopStationDef(STATION_IDS.keisei.keisei_narita),
+    ]
+  ),
   // #endregion
   // #region 新京成電鉄
   [LINE_IDS.shin_keisei.shin_keisei]: new Line(
@@ -1896,23 +1907,33 @@ export const LINES = {
   ),
   // #endregion
   // #region 柴山鉄道
-  [LINE_IDS.shibayama.shibayama]: new Line("柴山鉄道線", COMPANIES.shibayama.id, LOCAL_ONLY, [
-    new StopStationDef(STATION_IDS.shibayama.higashi_narita),
-    new StopStationDef(STATION_IDS.shibayama.shibayama_chiyoda),
-  ]),
+  [LINE_IDS.shibayama.shibayama]: new Line(
+    "柴山鉄道線",
+    COMPANIES.shibayama.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.shibayama.higashi_narita),
+      new StopStationDef(STATION_IDS.shibayama.shibayama_chiyoda),
+    ]
+  ),
   // #endregion 柴山鉄道
   // #region 東葉高速鉄道
-  [LINE_IDS.touyou_kousoku.touyou_kousoku]: new Line("東葉高速鉄道線", COMPANIES.touyou_kousoku.id, LOCAL_ONLY, [
-    new StopStationDef(STATION_IDS.jr_east.nishifunabashi),
-    new StopStationDef(STATION_IDS.touyou_kousoku.higashi_kaijin),
-    new StopStationDef(STATION_IDS.touyou_kousoku.hasama),
-    new StopStationDef(STATION_IDS.shin_keisei.kita_narashino),
-    new StopStationDef(STATION_IDS.touyou_kousoku.funabashi_nichidaimae),
-    new StopStationDef(STATION_IDS.touyou_kousoku.yachiyo_midorigaoka),
-    new StopStationDef(STATION_IDS.touyou_kousoku.yachiyo_chuou),
-    new StopStationDef(STATION_IDS.touyou_kousoku.murakami),
-    new StopStationDef(STATION_IDS.touyou_kousoku.touyou_katsutadai),
-  ]),
+  [LINE_IDS.touyou_kousoku.touyou_kousoku]: new Line(
+    "東葉高速鉄道線",
+    COMPANIES.touyou_kousoku.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.jr_east.nishifunabashi),
+      new StopStationDef(STATION_IDS.touyou_kousoku.higashi_kaijin),
+      new StopStationDef(STATION_IDS.touyou_kousoku.hasama),
+      new StopStationDef(STATION_IDS.shin_keisei.kita_narashino),
+      new StopStationDef(STATION_IDS.touyou_kousoku.funabashi_nichidaimae),
+      new StopStationDef(STATION_IDS.touyou_kousoku.yachiyo_midorigaoka),
+      new StopStationDef(STATION_IDS.touyou_kousoku.yachiyo_chuou),
+      new StopStationDef(STATION_IDS.touyou_kousoku.murakami),
+      new StopStationDef(STATION_IDS.touyou_kousoku.touyou_katsutadai),
+    ]
+  ),
   // #endregion 東葉高速鉄道
   // #endregion
   // #region 埼玉
@@ -2524,79 +2545,94 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.odawara),
     ]
   ),
-  [LINE_IDS.jr_east.takasaki]: new Line("高崎線", COMPANIES.jr_east.id, LOCAL_ONLY, [
-    new StopStationDef(STATION_IDS.jr_east.tokyo),
-    new StopStationDef(STATION_IDS.jr_east.ueno),
-    new StopStationDef(STATION_IDS.jr_east.oku),
-    new StopStationDef(STATION_IDS.jr_east.akahane),
-    new StopStationDef(STATION_IDS.jr_east.urawa),
-    new StopStationDef(STATION_IDS.jr_east.saitama_shintoshin),
-    new StopStationDef(STATION_IDS.jr_east.omiya),
-    new StopStationDef(STATION_IDS.jr_east.miyahara),
-    new StopStationDef(STATION_IDS.jr_east.ageo),
-    new StopStationDef(STATION_IDS.jr_east.kitaageo),
-    new StopStationDef(STATION_IDS.jr_east.okegawa),
-    new StopStationDef(STATION_IDS.jr_east.kitamoto),
-    new StopStationDef(STATION_IDS.jr_east.kounosu),
-    new StopStationDef(STATION_IDS.jr_east.kitakounosu),
-    new StopStationDef(STATION_IDS.jr_east.hukiage),
-    new StopStationDef(STATION_IDS.jr_east.gyouda),
-    new StopStationDef(STATION_IDS.jr_east.kumagaya),
-    new StopStationDef(STATION_IDS.jr_east.kagohara),
-    new StopStationDef(STATION_IDS.jr_east.hukaya),
-    new StopStationDef(STATION_IDS.jr_east.okabe),
-    new StopStationDef(STATION_IDS.jr_east.honnjou),
-    new StopStationDef(STATION_IDS.jr_east.jinbohara),
-    new StopStationDef(STATION_IDS.jr_east.shinmachi),
-    new StopStationDef(STATION_IDS.jr_east.kuragano),
-    new StopStationDef(STATION_IDS.jr_east.takasaki),
-  ]),
-  [LINE_IDS.jr_east.hachiko]: new Line("八高線", COMPANIES.jr_east.id, LOCAL_ONLY, [
-    new StopStationDef(STATION_IDS.jr_east.hachiouji),
-    new StopStationDef(STATION_IDS.jr_east.kita_hachiouji),
-    new StopStationDef(STATION_IDS.jr_east.komiya),
-    new StopStationDef(STATION_IDS.jr_east.haijima),
-    new StopStationDef(STATION_IDS.jr_east.higashi_fussa),
-    new StopStationDef(STATION_IDS.jr_east.hakonegasaki),
-    new StopStationDef(STATION_IDS.jr_east.kaneko),
-    new StopStationDef(STATION_IDS.jr_east.higashi_hanno),
-    new StopStationDef(STATION_IDS.jr_east.komagawa),
-    new StopStationDef(STATION_IDS.jr_east.moro),
-    new StopStationDef(STATION_IDS.jr_east.ogose),
-    new StopStationDef(STATION_IDS.jr_east.myoukaku),
-    new StopStationDef(STATION_IDS.jr_east.ogawamachi),
-    new StopStationDef(STATION_IDS.jr_east.takezawa),
-    new StopStationDef(STATION_IDS.jr_east.orihara),
-    new StopStationDef(STATION_IDS.jr_east.yorii),
-    new StopStationDef(STATION_IDS.jr_east.youdo),
-    new StopStationDef(STATION_IDS.jr_east.matsuhisa),
-    new StopStationDef(STATION_IDS.jr_east.kodama),
-    new StopStationDef(STATION_IDS.jr_east.tanshou),
-    new StopStationDef(STATION_IDS.jr_east.gunma_fujioka),
-    new StopStationDef(STATION_IDS.jr_east.kita_fujioka),
-    new StopStationDef(STATION_IDS.jr_east.kuragano),
-    new StopStationDef(STATION_IDS.jr_east.takasaki),
-  ]),
-  [LINE_IDS.jr_east.sagami]: new Line("相模線", COMPANIES.jr_east.id, LOCAL_ONLY, [
-    new StopStationDef(STATION_IDS.jr_east.chigasaki),
-    new StopStationDef(STATION_IDS.jr_east.kita_chigasaki),
-    new StopStationDef(STATION_IDS.jr_east.kagawa),
-    new StopStationDef(STATION_IDS.jr_east.samukawa),
-    new StopStationDef(STATION_IDS.jr_east.miyayama),
-    new StopStationDef(STATION_IDS.jr_east.kurami),
-    new StopStationDef(STATION_IDS.jr_east.kadosawabashi),
-    new StopStationDef(STATION_IDS.jr_east.syake),
-    new StopStationDef(STATION_IDS.jr_east.atsugi),
-    new StopStationDef(STATION_IDS.jr_east.ebina),
-    new StopStationDef(STATION_IDS.jr_east.iriya),
-    new StopStationDef(STATION_IDS.jr_east.soubudai_shita),
-    new StopStationDef(STATION_IDS.jr_east.shimomizo),
-    new StopStationDef(STATION_IDS.jr_east.harataima),
-    new StopStationDef(STATION_IDS.jr_east.banda),
-    new StopStationDef(STATION_IDS.jr_east.kamimizo),
-    new StopStationDef(STATION_IDS.jr_east.minami_hashimoto),
-    new StopStationDef(STATION_IDS.jr_east.hashimoto),
-  ]),
+  [LINE_IDS.jr_east.takasaki]: new Line(
+    "高崎線",
+    COMPANIES.jr_east.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.jr_east.tokyo),
+      new StopStationDef(STATION_IDS.jr_east.ueno),
+      new StopStationDef(STATION_IDS.jr_east.oku),
+      new StopStationDef(STATION_IDS.jr_east.akahane),
+      new StopStationDef(STATION_IDS.jr_east.urawa),
+      new StopStationDef(STATION_IDS.jr_east.saitama_shintoshin),
+      new StopStationDef(STATION_IDS.jr_east.omiya),
+      new StopStationDef(STATION_IDS.jr_east.miyahara),
+      new StopStationDef(STATION_IDS.jr_east.ageo),
+      new StopStationDef(STATION_IDS.jr_east.kitaageo),
+      new StopStationDef(STATION_IDS.jr_east.okegawa),
+      new StopStationDef(STATION_IDS.jr_east.kitamoto),
+      new StopStationDef(STATION_IDS.jr_east.kounosu),
+      new StopStationDef(STATION_IDS.jr_east.kitakounosu),
+      new StopStationDef(STATION_IDS.jr_east.hukiage),
+      new StopStationDef(STATION_IDS.jr_east.gyouda),
+      new StopStationDef(STATION_IDS.jr_east.kumagaya),
+      new StopStationDef(STATION_IDS.jr_east.kagohara),
+      new StopStationDef(STATION_IDS.jr_east.hukaya),
+      new StopStationDef(STATION_IDS.jr_east.okabe),
+      new StopStationDef(STATION_IDS.jr_east.honnjou),
+      new StopStationDef(STATION_IDS.jr_east.jinbohara),
+      new StopStationDef(STATION_IDS.jr_east.shinmachi),
+      new StopStationDef(STATION_IDS.jr_east.kuragano),
+      new StopStationDef(STATION_IDS.jr_east.takasaki),
+    ]
+  ),
+  [LINE_IDS.jr_east.hachiko]: new Line(
+    "八高線",
+    COMPANIES.jr_east.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.jr_east.hachiouji),
+      new StopStationDef(STATION_IDS.jr_east.kita_hachiouji),
+      new StopStationDef(STATION_IDS.jr_east.komiya),
+      new StopStationDef(STATION_IDS.jr_east.haijima),
+      new StopStationDef(STATION_IDS.jr_east.higashi_fussa),
+      new StopStationDef(STATION_IDS.jr_east.hakonegasaki),
+      new StopStationDef(STATION_IDS.jr_east.kaneko),
+      new StopStationDef(STATION_IDS.jr_east.higashi_hanno),
+      new StopStationDef(STATION_IDS.jr_east.komagawa),
+      new StopStationDef(STATION_IDS.jr_east.moro),
+      new StopStationDef(STATION_IDS.jr_east.ogose),
+      new StopStationDef(STATION_IDS.jr_east.myoukaku),
+      new StopStationDef(STATION_IDS.jr_east.ogawamachi),
+      new StopStationDef(STATION_IDS.jr_east.takezawa),
+      new StopStationDef(STATION_IDS.jr_east.orihara),
+      new StopStationDef(STATION_IDS.jr_east.yorii),
+      new StopStationDef(STATION_IDS.jr_east.youdo),
+      new StopStationDef(STATION_IDS.jr_east.matsuhisa),
+      new StopStationDef(STATION_IDS.jr_east.kodama),
+      new StopStationDef(STATION_IDS.jr_east.tanshou),
+      new StopStationDef(STATION_IDS.jr_east.gunma_fujioka),
+      new StopStationDef(STATION_IDS.jr_east.kita_fujioka),
+      new StopStationDef(STATION_IDS.jr_east.kuragano),
+      new StopStationDef(STATION_IDS.jr_east.takasaki),
+    ]
+  ),
+  [LINE_IDS.jr_east.sagami]: new Line(
+    "相模線",
+    COMPANIES.jr_east.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.jr_east.chigasaki),
+      new StopStationDef(STATION_IDS.jr_east.kita_chigasaki),
+      new StopStationDef(STATION_IDS.jr_east.kagawa),
+      new StopStationDef(STATION_IDS.jr_east.samukawa),
+      new StopStationDef(STATION_IDS.jr_east.miyayama),
+      new StopStationDef(STATION_IDS.jr_east.kurami),
+      new StopStationDef(STATION_IDS.jr_east.kadosawabashi),
+      new StopStationDef(STATION_IDS.jr_east.syake),
+      new StopStationDef(STATION_IDS.jr_east.atsugi),
+      new StopStationDef(STATION_IDS.jr_east.ebina),
+      new StopStationDef(STATION_IDS.jr_east.iriya),
+      new StopStationDef(STATION_IDS.jr_east.soubudai_shita),
+      new StopStationDef(STATION_IDS.jr_east.shimomizo),
+      new StopStationDef(STATION_IDS.jr_east.harataima),
+      new StopStationDef(STATION_IDS.jr_east.banda),
+      new StopStationDef(STATION_IDS.jr_east.kamimizo),
+      new StopStationDef(STATION_IDS.jr_east.minami_hashimoto),
+      new StopStationDef(STATION_IDS.jr_east.hashimoto),
+    ]
+  ),
   [LINE_IDS.jr_east.utunomiya]: new Line(
     "宇都宮線",
     COMPANIES.jr_east.id,
@@ -2682,55 +2718,65 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.tokyo),
     ]
   ),
-  [LINE_IDS.jr_east.keiyou]: new Line("京葉線", COMPANIES.jr_east.id, LOCAL_ONLY, [
-    new StopStationDef(STATION_IDS.jr_east.tokyo),
-    new StopStationDef(STATION_IDS.jr_east.hacchobori),
-    new StopStationDef(STATION_IDS.jr_east.ecchujima),
-    new StopStationDef(STATION_IDS.jr_east.shiomi),
-    new StopStationDef(STATION_IDS.jr_east.shinkiba),
-    new StopStationDef(STATION_IDS.jr_east.kasai_rinkai_koen),
-    new StopStationDef(STATION_IDS.jr_east.maihama),
-    new StopStationDef(STATION_IDS.jr_east.shin_urayasu),
-    new StopStationDef(STATION_IDS.jr_east.ichikawa_shiohama),
-    new StopStationDef(STATION_IDS.jr_east.futamata_shinmachi),
-    new StopStationDef(STATION_IDS.jr_east.minami_funabashi),
-    new StopStationDef(STATION_IDS.jr_east.kaihin_makuhari),
-    new StopStationDef(STATION_IDS.jr_east.shin_narashino),
-    new StopStationDef(STATION_IDS.jr_east.makuhari_toyosuna),
-    new StopStationDef(STATION_IDS.jr_east.kaihin_makuhari),
-    new StopStationDef(STATION_IDS.jr_east.kemigawahama),
-    new StopStationDef(STATION_IDS.jr_east.inage_kaigan),
-    new StopStationDef(STATION_IDS.jr_east.chiba_minato),
-    new StopStationDef(STATION_IDS.jr_east.soga),
-  ]),
-  [LINE_IDS.jr_east.nanbu]: new Line("南武線", COMPANIES.jr_east.id, LOCAL_ONLY, [
-    new StopStationDef(STATION_IDS.jr_east.kawasaki),
-    new StopStationDef(STATION_IDS.jr_east.shitte),
-    new StopStationDef(STATION_IDS.jr_east.yakou),
-    new StopStationDef(STATION_IDS.jr_east.kashimada),
-    new StopStationDef(STATION_IDS.jr_east.hirama),
-    new StopStationDef(STATION_IDS.jr_east.mukougawara),
-    new StopStationDef(STATION_IDS.jr_east.musashi_kosugi),
-    new StopStationDef(STATION_IDS.jr_east.musashinakahara),
-    new StopStationDef(STATION_IDS.jr_east.musashishinjou),
-    new StopStationDef(STATION_IDS.jr_east.musashimizonokuchi),
-    new StopStationDef(STATION_IDS.jr_east.tsudayama),
-    new StopStationDef(STATION_IDS.jr_east.kuji),
-    new StopStationDef(STATION_IDS.jr_east.syukugawara),
-    new StopStationDef(STATION_IDS.jr_east.noborito),
-    new StopStationDef(STATION_IDS.jr_east.nakanojima),
-    new StopStationDef(STATION_IDS.jr_east.inadatsutsumi),
-    new StopStationDef(STATION_IDS.jr_east.yanoguchi),
-    new StopStationDef(STATION_IDS.jr_east.inaginaganuma),
-    new StopStationDef(STATION_IDS.jr_east.minamitama),
-    new StopStationDef(STATION_IDS.jr_east.fuchuhonmachi),
-    new StopStationDef(STATION_IDS.jr_east.bubaigawara),
-    new StopStationDef(STATION_IDS.jr_east.nishifu),
-    new StopStationDef(STATION_IDS.jr_east.yaho),
-    new StopStationDef(STATION_IDS.jr_east.yakawa),
-    new StopStationDef(STATION_IDS.jr_east.nishikunitachi),
-    new StopStationDef(STATION_IDS.jr_east.tachikawa),
-  ]),
+  [LINE_IDS.jr_east.keiyou]: new Line(
+    "京葉線",
+    COMPANIES.jr_east.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.jr_east.tokyo),
+      new StopStationDef(STATION_IDS.jr_east.hacchobori),
+      new StopStationDef(STATION_IDS.jr_east.ecchujima),
+      new StopStationDef(STATION_IDS.jr_east.shiomi),
+      new StopStationDef(STATION_IDS.jr_east.shinkiba),
+      new StopStationDef(STATION_IDS.jr_east.kasai_rinkai_koen),
+      new StopStationDef(STATION_IDS.jr_east.maihama),
+      new StopStationDef(STATION_IDS.jr_east.shin_urayasu),
+      new StopStationDef(STATION_IDS.jr_east.ichikawa_shiohama),
+      new StopStationDef(STATION_IDS.jr_east.futamata_shinmachi),
+      new StopStationDef(STATION_IDS.jr_east.minami_funabashi),
+      new StopStationDef(STATION_IDS.jr_east.kaihin_makuhari),
+      new StopStationDef(STATION_IDS.jr_east.shin_narashino),
+      new StopStationDef(STATION_IDS.jr_east.makuhari_toyosuna),
+      new StopStationDef(STATION_IDS.jr_east.kaihin_makuhari),
+      new StopStationDef(STATION_IDS.jr_east.kemigawahama),
+      new StopStationDef(STATION_IDS.jr_east.inage_kaigan),
+      new StopStationDef(STATION_IDS.jr_east.chiba_minato),
+      new StopStationDef(STATION_IDS.jr_east.soga),
+    ]
+  ),
+  [LINE_IDS.jr_east.nanbu]: new Line(
+    "南武線",
+    COMPANIES.jr_east.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.jr_east.kawasaki),
+      new StopStationDef(STATION_IDS.jr_east.shitte),
+      new StopStationDef(STATION_IDS.jr_east.yakou),
+      new StopStationDef(STATION_IDS.jr_east.kashimada),
+      new StopStationDef(STATION_IDS.jr_east.hirama),
+      new StopStationDef(STATION_IDS.jr_east.mukougawara),
+      new StopStationDef(STATION_IDS.jr_east.musashi_kosugi),
+      new StopStationDef(STATION_IDS.jr_east.musashinakahara),
+      new StopStationDef(STATION_IDS.jr_east.musashishinjou),
+      new StopStationDef(STATION_IDS.jr_east.musashimizonokuchi),
+      new StopStationDef(STATION_IDS.jr_east.tsudayama),
+      new StopStationDef(STATION_IDS.jr_east.kuji),
+      new StopStationDef(STATION_IDS.jr_east.syukugawara),
+      new StopStationDef(STATION_IDS.jr_east.noborito),
+      new StopStationDef(STATION_IDS.jr_east.nakanojima),
+      new StopStationDef(STATION_IDS.jr_east.inadatsutsumi),
+      new StopStationDef(STATION_IDS.jr_east.yanoguchi),
+      new StopStationDef(STATION_IDS.jr_east.inaginaganuma),
+      new StopStationDef(STATION_IDS.jr_east.minamitama),
+      new StopStationDef(STATION_IDS.jr_east.fuchuhonmachi),
+      new StopStationDef(STATION_IDS.jr_east.bubaigawara),
+      new StopStationDef(STATION_IDS.jr_east.nishifu),
+      new StopStationDef(STATION_IDS.jr_east.yaho),
+      new StopStationDef(STATION_IDS.jr_east.yakawa),
+      new StopStationDef(STATION_IDS.jr_east.nishikunitachi),
+      new StopStationDef(STATION_IDS.jr_east.tachikawa),
+    ]
+  ),
   [LINE_IDS.jr_east.nanbu_shisen]: new Line(
     "南武線(支線)",
     COMPANIES.jr_east.id,
@@ -2743,21 +2789,26 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.shitte),
     ]
   ),
-  [LINE_IDS.jr_east.tsurumi]: new Line("鶴見線", COMPANIES.jr_east.id, LOCAL_ONLY, [
-    new StopStationDef(STATION_IDS.jr_east.tsurumi),
-    new StopStationDef(STATION_IDS.jr_east.kokudou),
-    new StopStationDef(STATION_IDS.jr_east.tsurumi_ono),
-    new StopStationDef(STATION_IDS.jr_east.bentenbashi),
-    new StopStationDef(STATION_IDS.jr_east.asano),
-    new StopStationDef(STATION_IDS.jr_east.anzen),
-    new StopStationDef(STATION_IDS.jr_east.musashi_shiraishi),
-    new StopStationDef(STATION_IDS.jr_east.shouwa),
-    new StopStationDef(STATION_IDS.jr_east.hamakawasaki),
-    new StopStationDef(STATION_IDS.jr_east.ougimachi),
-    new StopStationDef(STATION_IDS.jr_east.shin_shibaura),
-    new StopStationDef(STATION_IDS.jr_east.umi_shibaura),
-    new StopStationDef(STATION_IDS.jr_east.okawa),
-  ]),
+  [LINE_IDS.jr_east.tsurumi]: new Line(
+    "鶴見線",
+    COMPANIES.jr_east.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.jr_east.tsurumi),
+      new StopStationDef(STATION_IDS.jr_east.kokudou),
+      new StopStationDef(STATION_IDS.jr_east.tsurumi_ono),
+      new StopStationDef(STATION_IDS.jr_east.bentenbashi),
+      new StopStationDef(STATION_IDS.jr_east.asano),
+      new StopStationDef(STATION_IDS.jr_east.anzen),
+      new StopStationDef(STATION_IDS.jr_east.musashi_shiraishi),
+      new StopStationDef(STATION_IDS.jr_east.shouwa),
+      new StopStationDef(STATION_IDS.jr_east.hamakawasaki),
+      new StopStationDef(STATION_IDS.jr_east.ougimachi),
+      new StopStationDef(STATION_IDS.jr_east.shin_shibaura),
+      new StopStationDef(STATION_IDS.jr_east.umi_shibaura),
+      new StopStationDef(STATION_IDS.jr_east.okawa),
+    ]
+  ),
   // #region 千葉
   [LINE_IDS.jr_east.sotobou]: new Line(
     "外房線",
@@ -2920,14 +2971,19 @@ export const LINES = {
     ],
     P.CHIBA
   ),
-  [LINE_IDS.jr_east.kashima]: new Line("鹿島線", COMPANIES.jr_east.id, LOCAL_ONLY, [
-    new StopStationDef(STATION_IDS.jr_east.katori),
-    new StopStationDef(STATION_IDS.jr_east.junikyou),
-    new StopStationDef(STATION_IDS.jr_east.itako),
-    new StopStationDef(STATION_IDS.jr_east.nobukata),
-    new StopStationDef(STATION_IDS.jr_east.kashima_jingu),
-    new StopStationDef(STATION_IDS.jr_east.kashima_soccer_stadium),
-  ]),
+  [LINE_IDS.jr_east.kashima]: new Line(
+    "鹿島線",
+    COMPANIES.jr_east.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.jr_east.katori),
+      new StopStationDef(STATION_IDS.jr_east.junikyou),
+      new StopStationDef(STATION_IDS.jr_east.itako),
+      new StopStationDef(STATION_IDS.jr_east.nobukata),
+      new StopStationDef(STATION_IDS.jr_east.kashima_jingu),
+      new StopStationDef(STATION_IDS.jr_east.kashima_soccer_stadium),
+    ]
+  ),
   // #endregion
 
   [LINE_IDS.jr_east.jouban]: new Line(
@@ -4062,11 +4118,10 @@ export const LINES = {
     [P.TOKYO, P.SAITAMA, P.TOCHIGI, P.GUNMA]
   ),
 
-  // 京王電鉄
-  // ＞京王線
+  // #region 京王電鉄
   [LINE_IDS.keiou.keiou]: new Line(
     "京王線",
-    "京王電鉄",
+    COMPANIES.keiou.id,
     [],
     [
       new StopStationDef(STATION_IDS.jr_east.shinjuku),
@@ -4103,10 +4158,9 @@ export const LINES = {
       new StopStationDef(STATION_IDS.keio.keio_hachioji),
     ]
   ),
-  // ＞京王新線
   [LINE_IDS.keiou.keioushinsen]: new Line(
     "京王新線",
-    "京王電鉄",
+    COMPANIES.keiou.id,
     [],
     [
       new StopStationDef(STATION_IDS.tokyo_subway.shinsen_shinjuku),
@@ -4115,10 +4169,9 @@ export const LINES = {
       new StopStationDef(STATION_IDS.keio.sasatsuka),
     ]
   ),
-  // > 京王井の頭線
   [LINE_IDS.keiou.inokashira]: new Line(
     "京王井の頭線",
-    "京王電鉄",
+    COMPANIES.keiou.id,
     [],
     [
       new StopStationDef(STATION_IDS.jr_east.shibuya),
@@ -4140,6 +4193,70 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.kichijoji),
     ]
   ),
+  [LINE_IDS.keiou.sagamihara]: new Line(
+    "相模原線",
+    COMPANIES.keiou.id,
+    [new Rapid(), new Express(), new SectionExpress(), new SpecialExpress()],
+    [
+      new StopStationDef(STATION_IDS.keio.chofu, [
+        Rapid.KEY,
+        SectionExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keio.keiou_tamagawa, [
+        Rapid.KEY,
+        SectionExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keio.keiou_inadatutsumi, [
+        Rapid.KEY,
+        SectionExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keio.keiou_yomiuri_land, [
+        Rapid.KEY,
+        SectionExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keio.inagi, [
+        Rapid.KEY,
+        SectionExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keio.wakabadai, [
+        Rapid.KEY,
+        SectionExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keio.keiou_nagayama, [
+        Rapid.KEY,
+        Express.KEY,
+        SectionExpress.KEY,
+        SpecialExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keio.keiou_tama_center, [
+        Rapid.KEY,
+        Express.KEY,
+        SectionExpress.KEY,
+        SpecialExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keio.keiou_horinouchi, [
+        Rapid.KEY,
+        SectionExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keio.minami_osawa, [
+        Rapid.KEY,
+        Express.KEY,
+        SectionExpress.KEY,
+        SpecialExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keio.tamasakai, [
+        Rapid.KEY,
+        SectionExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.jr_east.hashimoto, [
+        Rapid.KEY,
+        Express.KEY,
+        SectionExpress.KEY,
+        SpecialExpress.KEY,
+      ]),
+    ]
+  ),
+  // #endregion 京王電鉄
 
   // JR北海道
   // > 函館本線

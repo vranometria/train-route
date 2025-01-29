@@ -355,8 +355,8 @@ export const LINE_IDS = {
     inokashira: "keiou-inokashira",
     /** 高尾線 */
     takao: "keiou-takao",
-    /** 相模線 */
-    sagami: "keiou-sagami",
+    /** 相模原線 */
+    sagamihara: "keiou-sagamihara",
     /** 京王競馬場 */
     keibajo: "keiou-keibajo",
     /** 京王動物園 */
