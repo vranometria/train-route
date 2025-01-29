@@ -1065,7 +1065,7 @@ export const STATION_IDS = {
     kurahashi: "jr-east-kurahashi",
     saruda: "jr-east-saruda",
     matsugishi: "jr-east-matsugishi",
-    choshi: "jr-east-choshi",
+    choushi: "chiba-choushi",
     // #endregion
     // #region 八高線(JW)
     kita_hachiouji: "jr-east-kita-hachiouji",
@@ -1985,6 +1985,18 @@ export const STATION_IDS = {
     kazusa_okubo: "kominato-kazusa-okubo",
     yourou_keikoku: "kominato-yourou-keikoku",
     kazusa_nakano: "kominato-kazusa-nakano",
+  },
+  choushi_denki: {
+    choushi: "chiba-choushi",
+    nakanochou: "choushi_denki-nakanochou",
+    kannon: "choushi_denki-kannon",
+    hon_choushi: "choushi_denki-hon-choushi",
+    sasagami_kurohae: "choushi_denki-sasagami-kurohae",
+    nishi_ashikajima: "choushi_denki-nishi-ashikajima",
+    ashikajima: "choushi_denki-ashikajima",
+    kimigahama: "choushi_denki-kimigahama",
+    inubou: "choushi_denki-inubou",
+    tokawa: "choushi_denki-tokawa",
   },
   // #endregion
 

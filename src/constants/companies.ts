@@ -108,6 +108,12 @@ export const COMPANIES: { [key: string]: Company } = {
     yomi: "ちばとしみのれーる",
     keywords: ["chiba urban monorail"]
   },
+  choushi_dentetsu: {
+    id: "choushi_dentetsu",
+    name: '銚子電気鉄道',
+    yomi: "ちょうしでんきてつどう",
+    keywords: ["choushi dentetsu"]
+  },
   hokusou: {
     id: "hokusou",
     name: '北総鉄道',

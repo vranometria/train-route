@@ -2150,7 +2150,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.kurahashi),
       new StopStationDef(STATION_IDS.jr_east.saruda),
       new StopStationDef(STATION_IDS.jr_east.matsugishi),
-      new StopStationDef(STATION_IDS.jr_east.choshi),
+      new StopStationDef(STATION_IDS.jr_east.choushi),
     ]
   ),
   [LINE_IDS.jr_east.yokosuka]: new Line(
@@ -2683,7 +2683,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.shimousa_toyohasato),
       new StopStationDef(STATION_IDS.jr_east.shishiba),
       new StopStationDef(STATION_IDS.jr_east.matsugishi),
-      new StopStationDef(STATION_IDS.jr_east.choshi),
+      new StopStationDef(STATION_IDS.jr_east.choushi),
     ]
   ),
   [LINE_IDS.jr_east.narita3]: new Line(
@@ -3389,6 +3389,25 @@ export const LINES = {
       new StopStationDef(STATION_IDS.keisei.keisei_tsudanuma),
     ],
     [P.CHIBA]
+  ),
+  // #endregion
+  // #region 銚子電気鉄道
+  [LINE_IDS.choushi_denki.choushi_denki]: new Line(
+    "銚子電気鉄道線",
+    COMPANIES.choushi_dentetsu.id,
+    [],
+    [
+      new StopStationDef(STATION_IDS.choushi_denki.choushi),
+      new StopStationDef(STATION_IDS.choushi_denki.nakanochou),
+      new StopStationDef(STATION_IDS.choushi_denki.kannon),
+      new StopStationDef(STATION_IDS.choushi_denki.hon_choushi),
+      new StopStationDef(STATION_IDS.choushi_denki.sasagami_kurohae),
+      new StopStationDef(STATION_IDS.choushi_denki.nishi_ashikajima),
+      new StopStationDef(STATION_IDS.choushi_denki.ashikajima),
+      new StopStationDef(STATION_IDS.choushi_denki.kimigahama),
+      new StopStationDef(STATION_IDS.choushi_denki.inubou),
+      new StopStationDef(STATION_IDS.choushi_denki.tokawa),
+    ]
   ),
   // #endregion
 
