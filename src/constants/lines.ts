@@ -4277,6 +4277,14 @@ export const LINES = {
       new StopStationDef(STATION_IDS.keio.higashi_fuchu),
       new StopStationDef(STATION_IDS.keio.fuchu_keiba_seimon_mae),
     ]),
+  [LINE_IDS.keiou.dobutsuen]: new Line(
+    "京王動物園線",
+    COMPANIES.keiou.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.keio.takahatafudo),
+      new StopStationDef(STATION_IDS.keio.tama_doubutsu_kouen),
+    ]),
   // #endregion 京王電鉄
 
   // JR北海道
