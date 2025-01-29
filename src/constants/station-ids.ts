@@ -1513,10 +1513,8 @@ export const STATION_IDS = {
       },
     },
   },
-
   // #region 東京
-  /** 東武 駅 */
-  toubu: {
+  toubu: { /** 東武電鉄*/
     // 東武東上線
     kita_ikebukuro: "toubu-kita-ikebukuro",
     shimoitabashi: "toubu-shimoitabashi",
@@ -1649,15 +1647,13 @@ export const STATION_IDS = {
     shin_isezaki: "toubu-shin-isezaki",
     tokiwadai: "toubu-tokiwadai",
   },
-  /** 臨海高速鉄道 */
-  toukyo_rinkai_kousoku: {
+  toukyo_rinkai_kousoku: { /** 臨海高速鉄道 */
     shinonome: "rinkai-shinonome",
     kokusaitenjijyo: "rinkai-kokusaitenjijyo",
     tokyo_teleport: "rinkai-tokyo-teleport",
     shinagawa_seaside: "rinkai-shinagawa-seaside",
   },
-  /** 京王 駅 */
-  keio: {
+  keiou: { /** 京王電鉄 */
     // 京王線
     sasatsuka: "keio-sasatsuka",
     daitabashi: "keio-daitabashi",
@@ -1725,12 +1721,11 @@ export const STATION_IDS = {
     fuchu_keiba_seimon_mae: "keio-fuchu-keiba-seimon-mae",
     tama_doubutsu_kouen: "keio-tama-doubutsu-kouen",
   },
-  takao_tozan: {
+  takao_tozan: { /** 高尾登山鉄道 */
     kiyotaki: "takao-tozan-kiyotaki",
     takaosan: "takao-tozan-takaosan",
   },
   // #endregion
-
   // #region 神奈川
   /** 小田急箱根 駅*/
   odakyu_hakone: {
@@ -2072,8 +2067,7 @@ export const STATION_IDS = {
     shiroku: "chichibu-shiroku",
     mitsumineguchi: "chichibu-mitsumineguchi",
   },
-  /** 西部鉄道 駅 */
-  seibu: {
+  seibu: { /** 西部鉄道*/
     // 西武池袋線
     shiinamachi: "shiinamachi",
     higashi_nagasaki: "higashi-nagasaki",

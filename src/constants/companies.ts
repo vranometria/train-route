@@ -24,6 +24,12 @@ export const COMPANIES: { [key: string]: Company } = {
     yomi: "とうきゅうでんてつ",
     keywords: ["tokyu"]
   },
+  seibu: {
+    id: "seibu",
+    name: '西武鉄道',
+    yomi: "せいぶてつどう",
+    keywords: ["seibu"]
+  },
   keiou: {
     id: "keiou",
     name: '京王電鉄',

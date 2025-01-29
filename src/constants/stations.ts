@@ -3,6 +3,7 @@ import { LINE_IDS } from "./line-ids";
 import { STATION_IDS } from "./station-ids";
 import { ExchangeInfo } from "@/types/exchange-info";
 import { PREFECTURE as P } from "./prefecture";
+import { Direct } from "@/types/Direct";
 
 /** 乗り換え路線なし */
 const NO_TRANSFER: string | ExchangeInfo[] = [];
@@ -3194,176 +3195,176 @@ export const STATIONS = {
   // #endregion りんかい
   //   #region 京王電鉄
   // ＞京王線
-  [STATION_IDS.keio.sasatsuka]: new StationInfo(
+  [STATION_IDS.keiou.sasatsuka]: new StationInfo(
     "笹塚",
     [LINE_IDS.keiou.keiou, LINE_IDS.keiou.keioushinsen],
     "ささつか"
   ),
-  [STATION_IDS.keio.daitabashi]: new StationInfo("代田橋", [], "だいたばし"),
-  [STATION_IDS.keio.meidaimae]: new StationInfo(
+  [STATION_IDS.keiou.daitabashi]: new StationInfo("代田橋", [], "だいたばし"),
+  [STATION_IDS.keiou.meidaimae]: new StationInfo(
     "明大前",
     [LINE_IDS.keiou.keiou, LINE_IDS.keiou.inokashira],
     "めいだいまえ"
   ),
-  [STATION_IDS.keio.shimotakaido]: new StationInfo(
+  [STATION_IDS.keiou.shimotakaido]: new StationInfo(
     "下高井戸",
     [LINE_IDS.keiou.keiou, LINE_IDS.toukyu.setagaya],
     "しもたかいど"
   ),
-  [STATION_IDS.keio.sakurajosui]: new StationInfo(
+  [STATION_IDS.keiou.sakurajosui]: new StationInfo(
     "桜上水",
     [],
     "さくらじょうすい"
   ),
-  [STATION_IDS.keio.kami_kitazawa]: new StationInfo(
+  [STATION_IDS.keiou.kami_kitazawa]: new StationInfo(
     "上北沢",
     [],
     "かみきたざわ"
   ),
-  [STATION_IDS.keio.yawatayama]: new StationInfo("八幡山", [], "やわたやま"),
-  [STATION_IDS.keio.roka_koen]: new StationInfo("芦花公園", [], "ろかこうえん"),
-  [STATION_IDS.keio.chitose_karasuyama]: new StationInfo(
+  [STATION_IDS.keiou.yawatayama]: new StationInfo("八幡山", [], "やわたやま"),
+  [STATION_IDS.keiou.roka_koen]: new StationInfo("芦花公園", [], "ろかこうえん"),
+  [STATION_IDS.keiou.chitose_karasuyama]: new StationInfo(
     "千歳烏山",
     [],
     "ちとせからすやま"
   ),
-  [STATION_IDS.keio.senkawa]: new Station({
+  [STATION_IDS.keiou.senkawa]: new Station({
     name: "千川",
     pron: "せんかわ",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.tsutsujigaoka]: new Station({
+  [STATION_IDS.keiou.tsutsujigaoka]: new Station({
     name: "つつじヶ丘",
     pron: "つつじがおか",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.sibasaki]: new Station({
+  [STATION_IDS.keiou.sibasaki]: new Station({
     name: "柴咲",
     pron: "しばさき",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.kokuryo]: new Station({
+  [STATION_IDS.keiou.kokuryo]: new Station({
     name: "国領",
     pron: "こくりょう",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.fuda]: new Station({
+  [STATION_IDS.keiou.fuda]: new Station({
     name: "布田",
     pron: "ふだ",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.chofu]: new Station({
+  [STATION_IDS.keiou.chofu]: new Station({
     name: "調布",
     pron: "ちょうふ",
     pr: P.TOKYO,
     lines: [LINE_IDS.keiou.sagamihara, LINE_IDS.keiou.keiou],
   }),
-  [STATION_IDS.keio.keiou_tamagawa]: new Station({
+  [STATION_IDS.keiou.keiou_tamagawa]: new Station({
     name: "京王多摩川",
     pron: "けいおうたまがわ",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.keiou_inadatutsumi]: new Station({
+  [STATION_IDS.keiou.keiou_inadatutsumi]: new Station({
     name: "京王稲田堤",
     pron: "けいおういなだつつみ",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.keiou_yomiuri_land]: new Station({
+  [STATION_IDS.keiou.keiou_yomiuri_land]: new Station({
     name: "京王よみうりランド",
     pron: "けいおうよみうりらんど",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.inagi]: new Station({
+  [STATION_IDS.keiou.inagi]: new Station({
     name: "稲城",
     pron: "いなぎ",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.wakabadai]: new Station({
+  [STATION_IDS.keiou.wakabadai]: new Station({
     name: "若葉台",
     pron: "わかばだい",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.keiou_nagayama]: new Station({
+  [STATION_IDS.keiou.keiou_nagayama]: new Station({
     name: "京王長沢",
     pron: "けいおうながやま",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.keiou_tama_center]: new Station({
+  [STATION_IDS.keiou.keiou_tama_center]: new Station({
     name: "京王多摩センター",
     pron: "けいおうたませんたー",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.keiou_horinouchi]: new Station({
+  [STATION_IDS.keiou.keiou_horinouchi]: new Station({
     name: "京王堀之内",
     pron: "けいおうほりのうち",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.minami_osawa]: new Station({
+  [STATION_IDS.keiou.minami_osawa]: new Station({
     name: "南大沢",
     pron: "みなみおおさわ",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.tamasakai]: new Station({
+  [STATION_IDS.keiou.tamasakai]: new Station({
     name: "多摩境",
     pron: "たまさかい",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.nishi_chofu]: new Station({
+  [STATION_IDS.keiou.nishi_chofu]: new Station({
     name: "西調布",
     pron: "にしちょうふ",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.tobitakyu]: new Station({
+  [STATION_IDS.keiou.tobitakyu]: new Station({
     name: "飛田給",
     pron: "とびたきゅう",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.musashinodai]: new StationInfo(
+  [STATION_IDS.keiou.musashinodai]: new StationInfo(
     "武蔵野台",
     [LINE_IDS.keiou.keiou, LINE_IDS.seibu.tamagawa],
     "むさしのだい"
   ),
-  [STATION_IDS.keio.tamareien]: new Station({
+  [STATION_IDS.keiou.tamareien]: new Station({
     name: "多磨霊園",
     pron: "たまれいえん",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.higashi_fuchu]: new StationInfo(
+  [STATION_IDS.keiou.higashi_fuchu]: new StationInfo(
     "東府中",
     [LINE_IDS.keiou.keiou, LINE_IDS.keiou.keibajo],
     "ひがしふちゅう"
   ),
-  [STATION_IDS.keio.fuchu_keiba_seimon_mae]: new Station({
+  [STATION_IDS.keiou.fuchu_keiba_seimon_mae]: new Station({
     name: "府中競馬正門前",
     pron: "ふちゅうけいばせいもんまえ",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.tama_doubutsu_kouen]: new Station({
+  [STATION_IDS.keiou.tama_doubutsu_kouen]: new Station({
     name: "多摩動物公園",
     pron: "たまどうぶつこうえん",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.fuchu]: new Station({
+  [STATION_IDS.keiou.fuchu]: new Station({
     name: "府中",
     pron: "ふちゅう",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.nakakawahara]: new Station({
+  [STATION_IDS.keiou.nakakawahara]: new Station({
     name: "中河原",
     pron: "なかかわはら",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.seiseki_sakuragaoka]: new Station({
+  [STATION_IDS.keiou.seiseki_sakuragaoka]: new Station({
     name: "聖蹟桜ヶ丘",
     pron: "せいせきさくらがおか",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.mogusaen]: new Station({
+  [STATION_IDS.keiou.mogusaen]: new Station({
     name: "百草園",
     pron: "もぐさえん",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.takahatafudo]: new Station({
+  [STATION_IDS.keiou.takahatafudo]: new Station({
     name: "高幡不動",
     pron: "たかはたふどう",
     pr: P.TOKYO,
@@ -3373,53 +3374,53 @@ export const STATIONS = {
       LINE_IDS.tama_monorail.tama_monorail,
     ],
   }),
-  [STATION_IDS.keio.minamidaira]: new Station({
+  [STATION_IDS.keiou.minamidaira]: new Station({
     name: "南平",
     pron: "みなみだいら",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.hirayamajoshikoen]: new Station({
+  [STATION_IDS.keiou.hirayamajoshikoen]: new Station({
     name: "平山城址公園",
     pron: "ひらやまじょうしこうえん",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.naganuma]: new Station({
+  [STATION_IDS.keiou.naganuma]: new Station({
     name: "長沼",
     pron: "ながぬま",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.kitano]: new Station({
+  [STATION_IDS.keiou.kitano]: new Station({
     name: "北野",
     pron: "きたの",
     pr: P.TOKYO,
     lines: [LINE_IDS.keiou.keiou, LINE_IDS.keiou.takao],
   }),
-  [STATION_IDS.keio.keio_hachioji]: new Station({
+  [STATION_IDS.keiou.keio_hachioji]: new Station({
     name: "京王八王子",
     pron: "けいおうはちおうじ",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.keiou_katakura]: new Station({
+  [STATION_IDS.keiou.keiou_katakura]: new Station({
     name: "京王片倉",
     pron: "けいおうかたくら",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.yamada]: new Station({
+  [STATION_IDS.keiou.yamada]: new Station({
     name: "山田",
     pron: "やまだ",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.mejirodai]: new Station({
+  [STATION_IDS.keiou.mejirodai]: new Station({
     name: "めじろ台",
     pron: "めじろだい",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.hazama]: new Station({
+  [STATION_IDS.keiou.hazama]: new Station({
     name: "狭間",
     pron: "はざま",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.keio.takao_yamaguchi]: new Station({
+  [STATION_IDS.keiou.takao_yamaguchi]: new Station({
     name: "高尾山口",
     pron: "たかおやまぐち",
     pr: P.TOKYO,
@@ -3432,38 +3433,38 @@ export const STATIONS = {
     ],
   }),
   // > 京王新線
-  [STATION_IDS.keio.hatsudai]: new StationInfo("初台", [], "はつだい"),
-  [STATION_IDS.keio.hatagaya]: new StationInfo("幡ヶ谷", [], "はたがや"),
+  [STATION_IDS.keiou.hatsudai]: new StationInfo("初台", [], "はつだい"),
+  [STATION_IDS.keiou.hatagaya]: new StationInfo("幡ヶ谷", [], "はたがや"),
   // > 京王井の頭線
-  [STATION_IDS.keio.shinsen]: new StationInfo("神泉", [], "しんせん"),
-  [STATION_IDS.keio.komaba_todaimae]: new StationInfo(
+  [STATION_IDS.keiou.shinsen]: new StationInfo("神泉", [], "しんせん"),
+  [STATION_IDS.keiou.komaba_todaimae]: new StationInfo(
     "駒場東大前",
     [],
     "こまばとうだいまえ"
   ),
-  [STATION_IDS.keio.ikenoue]: new StationInfo("池ノ上", [], "いけのうえ"),
-  [STATION_IDS.keio.shindaita]: new StationInfo("新代田", [], "しんだいた"),
-  [STATION_IDS.keio.higashi_matsubara]: new StationInfo(
+  [STATION_IDS.keiou.ikenoue]: new StationInfo("池ノ上", [], "いけのうえ"),
+  [STATION_IDS.keiou.shindaita]: new StationInfo("新代田", [], "しんだいた"),
+  [STATION_IDS.keiou.higashi_matsubara]: new StationInfo(
     "東松原",
     [],
     "ひがしまつばら"
   ),
-  [STATION_IDS.keio.eifukucho]: new StationInfo("永福町", [], "えいふくちょう"),
-  [STATION_IDS.keio.nishi_eifuku]: new StationInfo(
+  [STATION_IDS.keiou.eifukucho]: new StationInfo("永福町", [], "えいふくちょう"),
+  [STATION_IDS.keiou.nishi_eifuku]: new StationInfo(
     "西永福",
     [],
     "にしえいふく"
   ),
-  [STATION_IDS.keio.hamadayama]: new StationInfo("浜田山", [], "はまだやま"),
-  [STATION_IDS.keio.takaido]: new StationInfo("高井戸", [], "たかいど"),
-  [STATION_IDS.keio.fujimigaoka]: new StationInfo(
+  [STATION_IDS.keiou.hamadayama]: new StationInfo("浜田山", [], "はまだやま"),
+  [STATION_IDS.keiou.takaido]: new StationInfo("高井戸", [], "たかいど"),
+  [STATION_IDS.keiou.fujimigaoka]: new StationInfo(
     "富士見ヶ丘",
     [],
     "ふじみがおか"
   ),
-  [STATION_IDS.keio.kugayama]: new StationInfo("久我山", [], "くがやま"),
-  [STATION_IDS.keio.mitakadai]: new StationInfo("三鷹台", [], "みたかだい"),
-  [STATION_IDS.keio.inokashirakoen]: new StationInfo(
+  [STATION_IDS.keiou.kugayama]: new StationInfo("久我山", [], "くがやま"),
+  [STATION_IDS.keiou.mitakadai]: new StationInfo("三鷹台", [], "みたかだい"),
+  [STATION_IDS.keiou.inokashirakoen]: new StationInfo(
     "井の頭公園",
     [],
     "いのかしどうこうえん"
@@ -5859,7 +5860,7 @@ export const STATIONS = {
       LINE_IDS.odakyu.tama,
       new ExchangeInfo(
         LINE_IDS.keiou.sagamihara,
-        STATION_IDS.keio.keiou_tama_center
+        STATION_IDS.keiou.keiou_tama_center
       ),
       new ExchangeInfo(
         LINE_IDS.tama_monorail.tama_monorail,
@@ -6761,46 +6762,42 @@ export const STATIONS = {
     [LINE_IDS.seibu.shinjuku, LINE_IDS.seibu.haijima],
     "こだいら"
   ),
-  [STATION_IDS.seibu.higashi_murayama]: new StationInfo(
-    "東村山",
-    [LINE_IDS.seibu.seibuen, LINE_IDS.seibu.kokubunji, LINE_IDS.seibu.shinjuku],
-    "ひがしむらやま"
-  ),
-  [STATION_IDS.seibu.seibu_yazawa]: new StationInfo(
-    "西武柳沢",
-    [],
-    "せいぶやざわ"
-  ),
-  [STATION_IDS.seibu.tanashi]: new StationInfo("田無", [], "たなし"),
-  [STATION_IDS.seibu.hana_koganei]: new StationInfo(
-    "花小金井",
-    [],
-    "はなこがねい"
-  ),
-  [STATION_IDS.seibu.kumegawa]: new StationInfo("久米川", [], "くめがわ"),
-  [STATION_IDS.seibu.kuko_koen]: new StationInfo(
-    "空港公園",
-    [],
-    "くうこうこうえん"
-  ),
-  [STATION_IDS.seibu.shin_tokorozawa]: new StationInfo(
-    "新所沢",
-    [],
-    "しんところざわ"
-  ),
-  [STATION_IDS.seibu.iriso]: new StationInfo("入曽", [], "いりそ"),
-  [STATION_IDS.seibu.sayamashi]: new StationInfo("狭山市", [], "さやまし"),
-  [STATION_IDS.seibu.shin_sayama]: new StationInfo("新狭山", [], "しんさやま"),
-  [STATION_IDS.seibu.minami_otsuka]: new StationInfo(
-    "南大塚",
-    [],
-    "みなみおおつか"
-  ),
-  [STATION_IDS.seibu.hon_kawagoe]: new StationInfo(
-    "本川越",
-    [],
-    "ほんかわごえ"
-  ),
+  [STATION_IDS.seibu.higashi_murayama]: new Station({
+    name: "東村山",
+    pron: "ひがしむらやま",
+    pr: P.TOKYO,
+    lines: [LINE_IDS.seibu.seibuen, LINE_IDS.seibu.kokubunji, LINE_IDS.seibu.shinjuku],
+  }),
+  [STATION_IDS.seibu.seibu_yazawa]: new Station({
+    name: "西武柳沢",
+    pron: "せいぶやざわ",
+    pr: P.TOKYO,
+  }),
+  [STATION_IDS.seibu.tanashi]: new Station({name: "田無", pron: "たなし", pr: P.TOKYO}),
+  [STATION_IDS.seibu.hana_koganei]: new Station({name: "花小金井", pron: "はなこがねい", pr: P.TOKYO}),
+  [STATION_IDS.seibu.kumegawa]: new Station({name: "久米川", pron: "くめがわ", pr: P.TOKYO}),
+  [STATION_IDS.seibu.kuko_koen]: new Station({name: "空港公園", pron: "くうこうこうえん", pr: P.TOKYO}),
+  [STATION_IDS.seibu.shin_tokorozawa]: new Station({name: "新所沢", pron: "しんところざわ", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.iriso]: new Station({name: "入曾", pron: "いりそ", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.sayamashi]: new Station({name: "狭山市", pron: "さやまし", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.shin_sayama]: new Station({name: "新狭山", pron: "しんさやま", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.minami_otsuka]: new Station({name: "南大塚", pron: "みなみおおつか", pr: P.TOKYO}),
+  [STATION_IDS.seibu.hon_kawagoe]: new Station({name: "本川越", pron: "ほんかわごえ", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.koma]: new Station({name: "高麗", pron: "こま", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.musashi_yokote]: new Station({name: "武蔵横手", pron: "むさしよこて", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.higashi_agano]: new Station({name: "東吾野", pron: "ひがしあがの", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.agano]: new Station({name: "吾野", pron: "あがの", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.nishi_agano]: new Station({name: "西吾野", pron: "にしあがの", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.syoumaru]: new Station({name: "正丸", pron: "しょうまる", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.ashigakubo]: new Station({name: "芦ヶ久保", pron: "あしがくぼ", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.yokose]: new Station({name: "横瀬", pron: "よこせ", pr: P.SAITAMA, lines: [
+    LINE_IDS.seibu.seibu_chichibu,
+    new Direct(LINE_IDS.chichibu.chichibu, STATION_IDS.chichibu.ohanabatake),
+  ]}),
+  [STATION_IDS.seibu.seibu_chichibu]: new Station({name: "西武秩父", pron: "せいぶちちぶ", pr: P.SAITAMA, lines: [
+    LINE_IDS.seibu.seibu_chichibu,
+    new Direct(LINE_IDS.chichibu.chichibu, STATION_IDS.chichibu.kagemori),
+  ]}),
   //   #endregion 西武鉄道
   //  #endregion 埼玉
   // #endregion 関東

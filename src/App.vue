@@ -64,6 +64,7 @@ import LineAccordion from './components/LineAccordion.vue';
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.ikebukuro}}">池袋線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.shinjuku}}">新宿線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.seibu_chichibu}}">秩父線</RouterLink>
           <!-- <RouterLink :to="{name: 'line', params: {id: 'seibu-toshima'}}">豊島線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: 'seibu-yurakucho'}}">有楽町線</RouterLink> -->
         </div>
