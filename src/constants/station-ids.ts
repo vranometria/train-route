@@ -2132,6 +2132,7 @@ export const STATION_IDS = {
     yokose: "seibu-yokose",
     seibu_chichibu: "seibu-seibu-chichibu",
     shin_sakuradai: "seibu-shin-sakuradai",
+    toshimaen: "seibu-toshimaen",
   },
   // #endregion
   kantou: {

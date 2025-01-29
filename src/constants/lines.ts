@@ -381,7 +381,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.tokyo_subway.ochiaiminaminagasaki),
       new StopStationDef(STATION_IDS.tokyo_subway.shin_egota),
       new StopStationDef(STATION_IDS.seibu.nerima),
-      new StopStationDef(STATION_IDS.tokyo_subway.toshimaen),
+      new StopStationDef(STATION_IDS.seibu.toshimaen),
       new StopStationDef(STATION_IDS.tokyo_subway.nerima_kasugacho),
       new StopStationDef(STATION_IDS.tokyo_subway.hikarigaoka),
     ],
@@ -3672,6 +3672,15 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.nerima),
       new StopStationDef(STATION_IDS.seibu.shin_sakuradai),
       new StopStationDef(STATION_IDS.tokyo_metro.kotake_mukaihara),
+    ]
+  ),
+  [LINE_IDS.seibu.toshima]: new Line(
+    "豊島線",
+    COMPANIES.seibu.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.seibu.nerima),
+      new StopStationDef(STATION_IDS.seibu.toshimaen),
     ]
   ),
   // #endregion 西武鉄道

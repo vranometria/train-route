@@ -2072,11 +2072,6 @@ export const STATIONS = {
     [],
     "しんえごた"
   ),
-  [STATION_IDS.tokyo_subway.toshimaen]: new StationInfo(
-    "豊島園",
-    [LINE_IDS.tokyo_subway.oedo, LINE_IDS.seibu.seibu_toshimaen],
-    "としまえん"
-  ),
   [STATION_IDS.tokyo_subway.nerima_kasugacho]: new StationInfo(
     "練馬春日町",
     [],
@@ -3222,7 +3217,11 @@ export const STATIONS = {
     "かみきたざわ"
   ),
   [STATION_IDS.keiou.yawatayama]: new StationInfo("八幡山", [], "やわたやま"),
-  [STATION_IDS.keiou.roka_koen]: new StationInfo("芦花公園", [], "ろかこうえん"),
+  [STATION_IDS.keiou.roka_koen]: new StationInfo(
+    "芦花公園",
+    [],
+    "ろかこうえん"
+  ),
   [STATION_IDS.keiou.chitose_karasuyama]: new StationInfo(
     "千歳烏山",
     [],
@@ -3449,7 +3448,11 @@ export const STATIONS = {
     [],
     "ひがしまつばら"
   ),
-  [STATION_IDS.keiou.eifukucho]: new StationInfo("永福町", [], "えいふくちょう"),
+  [STATION_IDS.keiou.eifukucho]: new StationInfo(
+    "永福町",
+    [],
+    "えいふくちょう"
+  ),
   [STATION_IDS.keiou.nishi_eifuku]: new StationInfo(
     "西永福",
     [],
@@ -6589,12 +6592,16 @@ export const STATIONS = {
   // #endregion 秩父鉄道
   //   #region 西武鉄道
   // ＞池袋線
-  [STATION_IDS.seibu.shiinamachi]: new StationInfo("椎名町", [], "しいなまち"),
-  [STATION_IDS.seibu.higashi_nagasaki]: new StationInfo(
-    "東長崎",
-    [],
-    "ひがしながさき"
-  ),
+  [STATION_IDS.seibu.shiinamachi]: new Station({
+    name: "椎名町",
+    pron: "しいなまち",
+    pr: P.TOKYO,
+  }),
+  [STATION_IDS.seibu.higashi_nagasaki]: new Station({
+    name: "東長崎",
+    pron: "ひがしながさき",
+    pr: P.TOKYO,
+  }),
   [STATION_IDS.seibu.ekoda]: new StationInfo("江古田", [], "えこだ"),
   [STATION_IDS.seibu.nerima]: new StationInfo(
     "練馬",
@@ -6602,7 +6609,7 @@ export const STATIONS = {
       LINE_IDS.seibu.ikebukuro,
       LINE_IDS.tokyo_subway.oedo,
       LINE_IDS.seibu.seibu_yurakucho,
-      LINE_IDS.seibu.toyoshima,
+      LINE_IDS.seibu.toshima,
     ],
     "ねりま"
   ),
@@ -6744,11 +6751,27 @@ export const STATIONS = {
   ),
   [STATION_IDS.seibu.washinomiya]: new StationInfo("鷲ノ宮", [], "わしのみや"),
   [STATION_IDS.seibu.shimo_igusa]: new StationInfo("下井草", [], "しもいぐさ"),
-  [STATION_IDS.seibu.iogi]: new StationInfo("井荻", [], "いおぎ"),
+  [STATION_IDS.seibu.iogi]: new Station({
+    name: "井荻",
+    pron: "いおぎ",
+    pr: P.TOKYO,
+  }),
   [STATION_IDS.seibu.kami_igusa]: new StationInfo("上井草", [], "かみいぐさ"),
-  [STATION_IDS.seibu.kami_syakujii]: new Station({name: "上石神井", pron: "かみしゃくじい", pr: P.TOKYO}),
-  [STATION_IDS.seibu.musashiseki]: new Station({name: "武蔵関", pron: "むさしせき", pr: P.TOKYO}),
-  [STATION_IDS.seibu.higashi_fushimi]: new Station({name: "東伏見", pron: "ひがしふしみ", pr: P.TOKYO}),
+  [STATION_IDS.seibu.kami_syakujii]: new Station({
+    name: "上石神井",
+    pron: "かみしゃくじい",
+    pr: P.TOKYO,
+  }),
+  [STATION_IDS.seibu.musashiseki]: new Station({
+    name: "武蔵関",
+    pron: "むさしせき",
+    pr: P.TOKYO,
+  }),
+  [STATION_IDS.seibu.higashi_fushimi]: new Station({
+    name: "東伏見",
+    pron: "ひがしふしみ",
+    pr: P.TOKYO,
+  }),
   [STATION_IDS.seibu.kodaira]: new Station({
     name: "小平",
     pron: "こだいら",
@@ -6759,39 +6782,134 @@ export const STATIONS = {
     name: "東村山",
     pron: "ひがしむらやま",
     pr: P.TOKYO,
-    lines: [LINE_IDS.seibu.seibuen, LINE_IDS.seibu.kokubunji, LINE_IDS.seibu.shinjuku],
+    lines: [
+      LINE_IDS.seibu.seibuen,
+      LINE_IDS.seibu.kokubunji,
+      LINE_IDS.seibu.shinjuku,
+    ],
   }),
   [STATION_IDS.seibu.seibu_yazawa]: new Station({
     name: "西武柳沢",
     pron: "せいぶやざわ",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.seibu.tanashi]: new Station({name: "田無", pron: "たなし", pr: P.TOKYO}),
-  [STATION_IDS.seibu.hana_koganei]: new Station({name: "花小金井", pron: "はなこがねい", pr: P.TOKYO}),
-  [STATION_IDS.seibu.kumegawa]: new Station({name: "久米川", pron: "くめがわ", pr: P.TOKYO}),
-  [STATION_IDS.seibu.kuko_koen]: new Station({name: "空港公園", pron: "くうこうこうえん", pr: P.TOKYO}),
-  [STATION_IDS.seibu.shin_tokorozawa]: new Station({name: "新所沢", pron: "しんところざわ", pr: P.SAITAMA}),
-  [STATION_IDS.seibu.iriso]: new Station({name: "入曾", pron: "いりそ", pr: P.SAITAMA}),
-  [STATION_IDS.seibu.sayamashi]: new Station({name: "狭山市", pron: "さやまし", pr: P.SAITAMA}),
-  [STATION_IDS.seibu.shin_sayama]: new Station({name: "新狭山", pron: "しんさやま", pr: P.SAITAMA}),
-  [STATION_IDS.seibu.minami_otsuka]: new Station({name: "南大塚", pron: "みなみおおつか", pr: P.TOKYO}),
-  [STATION_IDS.seibu.hon_kawagoe]: new Station({name: "本川越", pron: "ほんかわごえ", pr: P.SAITAMA}),
-  [STATION_IDS.seibu.koma]: new Station({name: "高麗", pron: "こま", pr: P.SAITAMA}),
-  [STATION_IDS.seibu.musashi_yokote]: new Station({name: "武蔵横手", pron: "むさしよこて", pr: P.SAITAMA}),
-  [STATION_IDS.seibu.higashi_agano]: new Station({name: "東吾野", pron: "ひがしあがの", pr: P.SAITAMA}),
-  [STATION_IDS.seibu.agano]: new Station({name: "吾野", pron: "あがの", pr: P.SAITAMA}),
-  [STATION_IDS.seibu.nishi_agano]: new Station({name: "西吾野", pron: "にしあがの", pr: P.SAITAMA}),
-  [STATION_IDS.seibu.syoumaru]: new Station({name: "正丸", pron: "しょうまる", pr: P.SAITAMA}),
-  [STATION_IDS.seibu.ashigakubo]: new Station({name: "芦ヶ久保", pron: "あしがくぼ", pr: P.SAITAMA}),
-  [STATION_IDS.seibu.yokose]: new Station({name: "横瀬", pron: "よこせ", pr: P.SAITAMA, lines: [
-    LINE_IDS.seibu.seibu_chichibu,
-    new Direct(LINE_IDS.chichibu.chichibu, STATION_IDS.chichibu.ohanabatake),
-  ]}),
-  [STATION_IDS.seibu.seibu_chichibu]: new Station({name: "西武秩父", pron: "せいぶちちぶ", pr: P.SAITAMA, lines: [
-    LINE_IDS.seibu.seibu_chichibu,
-    new Direct(LINE_IDS.chichibu.chichibu, STATION_IDS.chichibu.kagemori),
-  ]}),
-  [STATION_IDS.seibu.shin_sakuradai]: new Station({name: "新桜台", pron: "しんさくらだい", pr: P.TOKYO}),
+  [STATION_IDS.seibu.tanashi]: new Station({
+    name: "田無",
+    pron: "たなし",
+    pr: P.TOKYO,
+  }),
+  [STATION_IDS.seibu.hana_koganei]: new Station({
+    name: "花小金井",
+    pron: "はなこがねい",
+    pr: P.TOKYO,
+  }),
+  [STATION_IDS.seibu.kumegawa]: new Station({
+    name: "久米川",
+    pron: "くめがわ",
+    pr: P.TOKYO,
+  }),
+  [STATION_IDS.seibu.kuko_koen]: new Station({
+    name: "空港公園",
+    pron: "くうこうこうえん",
+    pr: P.TOKYO,
+  }),
+  [STATION_IDS.seibu.shin_tokorozawa]: new Station({
+    name: "新所沢",
+    pron: "しんところざわ",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.seibu.iriso]: new Station({
+    name: "入曾",
+    pron: "いりそ",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.seibu.sayamashi]: new Station({
+    name: "狭山市",
+    pron: "さやまし",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.seibu.shin_sayama]: new Station({
+    name: "新狭山",
+    pron: "しんさやま",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.seibu.minami_otsuka]: new Station({
+    name: "南大塚",
+    pron: "みなみおおつか",
+    pr: P.TOKYO,
+  }),
+  [STATION_IDS.seibu.hon_kawagoe]: new Station({
+    name: "本川越",
+    pron: "ほんかわごえ",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.seibu.koma]: new Station({
+    name: "高麗",
+    pron: "こま",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.seibu.musashi_yokote]: new Station({
+    name: "武蔵横手",
+    pron: "むさしよこて",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.seibu.higashi_agano]: new Station({
+    name: "東吾野",
+    pron: "ひがしあがの",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.seibu.agano]: new Station({
+    name: "吾野",
+    pron: "あがの",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.seibu.nishi_agano]: new Station({
+    name: "西吾野",
+    pron: "にしあがの",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.seibu.syoumaru]: new Station({
+    name: "正丸",
+    pron: "しょうまる",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.seibu.ashigakubo]: new Station({
+    name: "芦ヶ久保",
+    pron: "あしがくぼ",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.seibu.yokose]: new Station({
+    name: "横瀬",
+    pron: "よこせ",
+    pr: P.SAITAMA,
+    lines: [
+      LINE_IDS.seibu.seibu_chichibu,
+      new Direct(LINE_IDS.chichibu.chichibu, STATION_IDS.chichibu.ohanabatake),
+    ],
+  }),
+  [STATION_IDS.seibu.seibu_chichibu]: new Station({
+    name: "西武秩父",
+    pron: "せいぶちちぶ",
+    pr: P.SAITAMA,
+    lines: [
+      LINE_IDS.seibu.seibu_chichibu,
+      new Direct(LINE_IDS.chichibu.chichibu, STATION_IDS.chichibu.kagemori),
+    ],
+  }),
+  [STATION_IDS.seibu.shin_sakuradai]: new Station({
+    name: "新桜台",
+    pron: "しんさくらだい",
+    pr: P.TOKYO,
+  }),
+  [STATION_IDS.seibu.toshimaen]: new Station({
+    name: "豊島園",
+    pron: "としまえん",
+    pr: P.TOKYO,
+    lines: [
+      LINE_IDS.seibu.toshima,
+      LINE_IDS.tokyo_subway.oedo,
+    ]
+  }),
   //   #endregion 西武鉄道
   //  #endregion 埼玉
   // #endregion 関東
