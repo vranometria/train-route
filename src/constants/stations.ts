@@ -3260,6 +3260,11 @@ export const STATIONS = {
     [LINE_IDS.keiou.keiou, LINE_IDS.keiou.keibajo],
     "ひがしふちゅう"
   ),
+  [STATION_IDS.keio.fuchu_keiba_seimon_mae]: new Station({
+    name: "府中競馬正門前",
+    pron: "ふちゅうけいばせいもんまえ",
+    pr: P.TOKYO,
+  }),
   [STATION_IDS.keio.fuchu]: new StationInfo("府中", [], "ふちゅう"),
   [STATION_IDS.keio.nakakawahara]: new StationInfo(
     "中河原",

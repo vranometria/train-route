@@ -1722,6 +1722,7 @@ export const STATION_IDS = {
     hazama: "keio-hazama",
     takao_yamaguchi: "keio-takao-yamaguchi",
     yamada: "keio-yamada",
+    fuchu_keiba_seimon_mae: "keio-fuchu-keiba-seimon-mae",
   },
   takao_tozan: {
     kiyotaki: "takao-tozan-kiyotaki",
