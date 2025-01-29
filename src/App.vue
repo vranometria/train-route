@@ -11,34 +11,6 @@ import LineAccordion from './components/LineAccordion.vue';
       <nav>
         <RouterLink to="/company">鉄道会社別</RouterLink>
 
-        相模鉄道
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.sagami.honsen}}">相鉄本線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.sagami.sotetsushin_yokohama}}">相鉄新横浜線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_sotetsu_chokutsu}}">相鉄・JR直通線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.sagami.izumino}}">いずみ野線</RouterLink>
-        </div>
-
-        東急電鉄
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.touyoko}}">東横線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.denentoshi}}">田園都市線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.tamagawa}}">多摩川線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.oimachi}}">大井町線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.meguro}}">目黒線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.shin_yokohama}}">新横浜線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.ikegami}}">池上線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.setagaya}}">世田谷線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toukyu.kodomonokuni}}">こどもの国線</RouterLink>
-        </div>
-
-        小田急電鉄
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.odakyu.odawara}}">小田原線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.odakyu.enoshima}}">江ノ島線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.odakyu.tama}}">多摩線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.odakyu.hakonetozan}}">箱根登山線</RouterLink>
-        </div>
 <!--
         JR東日本
         <div>
@@ -97,19 +69,10 @@ import LineAccordion from './components/LineAccordion.vue';
 
         京成電鉄
         <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keisei.honsen}}">京成本線</RouterLink>
           <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keisei.ksk}}">京成金町線</RouterLink> -->
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keisei.sky_liner}}">スカイライナー</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keisei.narita_kuko}}">京成成田空港線</RouterLink>
-          <!-- ユーカリが丘線 -->
            <!-- 千葉線 -->
             <!-- 押上線 -->
         </div>
-<!--
-        北総電鉄
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.hokusou.hokusou}}">北総線</RouterLink>
-        </div> -->
 
         西武鉄道
         <div>
@@ -128,33 +91,6 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toubu.ogose}}">生越線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toubu.kameido}}">亀戸線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toubu.isezaki}}">伊勢崎線</RouterLink>
-        </div>
-<!--
-        埼玉新都市交通
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.saitama_shintoshi_koutsu.new_shuttle}}">ニューシャトル</RouterLink>
-        </div>
-
-        秩父鉄道
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.chichibu.chichibu}}">秩父本線</RouterLink>
-        </div> -->
-
-        <!-- 横浜市営地下鉄
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.yokohama_subway.blue_line}}">ブルーライン</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.yokohama_subway.green_line}}">グリーンライン</RouterLink>
-        </div> -->
-
-        <!-- 関東鉄道
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.kantou.jousou}}">関東鉄道</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.kantou.ryugasaki}}">竜ケ崎線</RouterLink>
-        </div> -->
-
-        小湊鉄道
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.kominato.kominato}}">小湊鉄道線</RouterLink>
         </div>
 
         <LineAccordion :prefecture="PREFECTURE.HOKKAIDO" />

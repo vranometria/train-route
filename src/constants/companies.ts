@@ -102,4 +102,34 @@ export const COMPANIES: { [key: string]: Company } = {
     yomi: "ちばとしみのれーる",
     keywords: ["chiba urban monorail"]
   },
+  hokusou: {
+    id: "hokusou",
+    name: '北総鉄道',
+    yomi: "ほくそうてつどう",
+    keywords: ["hokusou"]
+  },
+  kominato: {
+    id: "kominato",
+    name: '小湊鐡道',
+    yomi: "ようろうてつどう",
+    keywords: ["kominato"]
+  },
+  saitama_shintoshi_koutsu: {
+    id: "saitama_shintoshi_koutsu",
+    name: '埼玉新都市交通',
+    yomi: "さいたましんとしこうつう",
+    keywords: ["さいたま新都市交通"]
+  },
+  chichibu: {
+    id: "chichibu",
+    name: '秩父鉄道',
+    yomi: "ちちぶてつどう",
+    keywords: ["chichibu"]
+  },
+  kantou: {
+    id: "kantou",
+    name: '関東鉄道',
+    yomi: "かんとうてつどう",
+    keywords: ["kantou"]
+  },
 }
