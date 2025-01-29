@@ -27,7 +27,11 @@ export class LineViewModel {
     const line = LINES[lineId];
     this.lineName = line.name;
     const company = COMPANIES[line.companyId];
+    if(!company){
+      throw new Error(`Company not found for lineId: ${lineId} ${line.companyId}`);
+    }
     this.companyName = company.name ? company.name : line.companyId;
+
     this.kinds = line.kinds;
     this.stations = line.stations.map(x=> new StationModel(x));
     this.overlay = getOverlay(lineId);

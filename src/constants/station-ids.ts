@@ -1877,6 +1877,9 @@ export const STATION_IDS = {
     joshidai: "keisei-joshidai",
     chugakkou: "keisei-chugakkou",
     ino: "keisei-ino",
+    // 金町線
+    shibamata: "keisei-shibamata",
+    keisei_kanamachi: "keisei-keisei-kanamachi",
   },
   /** 新京成電鉄 */
   shin_keisei: {

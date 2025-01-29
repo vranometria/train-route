@@ -6,6 +6,12 @@ export interface Company {
 };
 
 export const COMPANIES: { [key: string]: Company } = {
+  jr_east: {
+    id: "jr_east",
+    name: 'JR東日本',
+    yomi: "じぇいあーるひがしにほん",
+    keywords: ["jr", "jr east", "jreast", "japan railway east"]
+  },
   keikyu: {
     id: "keikyu",
     name: '京浜急行電鉄',

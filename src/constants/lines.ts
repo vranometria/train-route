@@ -1814,7 +1814,7 @@ export const LINES = {
   // #region JR東日本
   [LINE_IDS.jr_east.tokaido]: new Line(
     "東海道本線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [],
     [
       new StopStationDef(STATION_IDS.jr_east.tokyo, ["acty"]),
@@ -1842,7 +1842,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.keihin_touhoku]: new Line(
     "京浜東北線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [new KindDef("快速", "rapid")],
     [
       new StopStationDef(STATION_IDS.jr_east.omiya, ["rapid"]),
@@ -1884,7 +1884,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.yamanote]: new Line(
     "山手線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [],
     [
       new StopStationDef(STATION_IDS.jr_east.shinagawa, []),
@@ -1921,7 +1921,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.yokohama]: new Line(
     "横浜線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [],
     [
       new StopStationDef(STATION_IDS.jr_east.hachiouji, []),
@@ -1959,7 +1959,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.negishi]: new Line(
     "根岸線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [],
     [
       new StopStationDef(STATION_IDS.jr_east.yokohama, []),
@@ -1978,7 +1978,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.chuou_honsen]: new Line(
     "中央本線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [new KindDef("快速", "rapid")],
     [
       new StopStationDef(STATION_IDS.jr_east.tokyo, ["rapid"]),
@@ -2009,7 +2009,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.oume]: new Line(
     "青梅線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [new KindDef("青梅快特", "rapid")],
     [
       new StopStationDef(STATION_IDS.jr_east.tachikawa, ["rapid"]),
@@ -2042,7 +2042,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.chuo_soubu_kankou]: new Line(
     "中央・総武緩行線(中央・総武線各停)",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     LOCAL_ONLY,
     [
       new StopStationDef(STATION_IDS.jr_east.mitaka, []),
@@ -2089,7 +2089,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.sobu_kaisoku]: new Line(
     "総武快速線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     LOCAL_ONLY,
     [
       new StopStationDef(STATION_IDS.jr_east.chiba),
@@ -2106,7 +2106,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.soubu_honsen]: new Line(
     "総武本線(総武線快速)",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [new KindDef("総武線快速", "rapid")],
     [
       new StopStationDef(STATION_IDS.jr_east.tokyo, ["rapid"]),
@@ -2155,7 +2155,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.yokosuka]: new Line(
     "横須賀線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [],
     [
       new StopStationDef(STATION_IDS.jr_east.tokyo),
@@ -2181,7 +2181,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.kawagoe]: new Line(
     "川越線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [],
     [
       new StopStationDef(STATION_IDS.jr_east.omiya),
@@ -2199,7 +2199,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.saikyou]: new Line(
     "埼京線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [new KindDef("快速", "rapid"), new KindDef("通勤快速", "commuter")],
     [
       new StopStationDef(STATION_IDS.jr_east.osaki, ["rapid", "commuter"]),
@@ -2228,7 +2228,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.shonan_shinjuku]: new Line(
     "湘南新宿ライン",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [],
     [
       new StopStationDef(STATION_IDS.jr_east.utsunomiya),
@@ -2301,7 +2301,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.odawara),
     ]
   ),
-  [LINE_IDS.jr_east.takasaki]: new Line("高崎線", "JR東日本", LOCAL_ONLY, [
+  [LINE_IDS.jr_east.takasaki]: new Line("高崎線", COMPANIES.jr_east.id, LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_east.tokyo),
     new StopStationDef(STATION_IDS.jr_east.ueno),
     new StopStationDef(STATION_IDS.jr_east.oku),
@@ -2328,7 +2328,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.kuragano),
     new StopStationDef(STATION_IDS.jr_east.takasaki),
   ]),
-  [LINE_IDS.jr_east.hachiko]: new Line("八高線", "JR東日本", LOCAL_ONLY, [
+  [LINE_IDS.jr_east.hachiko]: new Line("八高線", COMPANIES.jr_east.id, LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_east.hachiouji),
     new StopStationDef(STATION_IDS.jr_east.kita_hachiouji),
     new StopStationDef(STATION_IDS.jr_east.komiya),
@@ -2354,7 +2354,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.kuragano),
     new StopStationDef(STATION_IDS.jr_east.takasaki),
   ]),
-  [LINE_IDS.jr_east.sagami]: new Line("相模線", "JR東日本", LOCAL_ONLY, [
+  [LINE_IDS.jr_east.sagami]: new Line("相模線", COMPANIES.jr_east.id, LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_east.chigasaki),
     new StopStationDef(STATION_IDS.jr_east.kita_chigasaki),
     new StopStationDef(STATION_IDS.jr_east.kagawa),
@@ -2376,7 +2376,7 @@ export const LINES = {
   ]),
   [LINE_IDS.jr_east.utunomiya]: new Line(
     "宇都宮線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [],
     [
       new StopStationDef(STATION_IDS.jr_east.tokyo),
@@ -2417,7 +2417,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.musashino]: new Line(
     "武蔵野線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [],
     [
       new StopStationDef(STATION_IDS.jr_east.fuchuhonmachi),
@@ -2459,7 +2459,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.tokyo),
     ]
   ),
-  [LINE_IDS.jr_east.keiyou]: new Line("京葉線", "JR東日本", LOCAL_ONLY, [
+  [LINE_IDS.jr_east.keiyou]: new Line("京葉線", COMPANIES.jr_east.id, LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_east.tokyo),
     new StopStationDef(STATION_IDS.jr_east.hacchobori),
     new StopStationDef(STATION_IDS.jr_east.ecchujima),
@@ -2480,7 +2480,7 @@ export const LINES = {
     new StopStationDef(STATION_IDS.jr_east.chiba_minato),
     new StopStationDef(STATION_IDS.jr_east.soga),
   ]),
-  [LINE_IDS.jr_east.nanbu]: new Line("南武線", "JR東日本", LOCAL_ONLY, [
+  [LINE_IDS.jr_east.nanbu]: new Line("南武線", COMPANIES.jr_east.id, LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_east.kawasaki),
     new StopStationDef(STATION_IDS.jr_east.shitte),
     new StopStationDef(STATION_IDS.jr_east.yakou),
@@ -2510,7 +2510,7 @@ export const LINES = {
   ]),
   [LINE_IDS.jr_east.nanbu_shisen]: new Line(
     "南武線(支線)",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     LOCAL_ONLY,
     [
       new StopStationDef(STATION_IDS.jr_east.hamakawasaki),
@@ -2520,7 +2520,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.shitte),
     ]
   ),
-  [LINE_IDS.jr_east.tsurumi]: new Line("鶴見線", "JR東日本", LOCAL_ONLY, [
+  [LINE_IDS.jr_east.tsurumi]: new Line("鶴見線", COMPANIES.jr_east.id, LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_east.tsurumi),
     new StopStationDef(STATION_IDS.jr_east.kokudou),
     new StopStationDef(STATION_IDS.jr_east.tsurumi_ono),
@@ -2538,7 +2538,7 @@ export const LINES = {
   // #region 千葉
   [LINE_IDS.jr_east.sotobou]: new Line(
     "外房線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     LOCAL_ONLY,
     [
       new StopStationDef(STATION_IDS.jr_east.chiba),
@@ -2573,7 +2573,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.uchibou]: new Line(
     "内房線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     LOCAL_ONLY,
     [
       new StopStationDef(STATION_IDS.jr_east.soga),
@@ -2610,7 +2610,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.tougane]: new Line(
     "東金線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     LOCAL_ONLY,
     [
       new StopStationDef(STATION_IDS.jr_east.oami),
@@ -2624,7 +2624,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.kururi]: new Line(
     "久留里線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     LOCAL_ONLY,
     [
       new StopStationDef(STATION_IDS.jr_east.kisaradu),
@@ -2646,7 +2646,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.narita1]: new Line(
     "成田線[我孫子-成田]",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     LOCAL_ONLY,
     [
       new StopStationDef(STATION_IDS.jr_east.abiko),
@@ -2664,7 +2664,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.narita2]: new Line(
     "成田線[佐倉-銚子]",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     LOCAL_ONLY,
     [
       new StopStationDef(STATION_IDS.jr_east.sakura),
@@ -2688,7 +2688,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.narita3]: new Line(
     "成田線[成田-成田空港]",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     LOCAL_ONLY,
     [
       new StopStationDef(STATION_IDS.jr_east.narita),
@@ -2697,7 +2697,7 @@ export const LINES = {
     ],
     P.CHIBA
   ),
-  [LINE_IDS.jr_east.kashima]: new Line("鹿島線", "JR東日本", LOCAL_ONLY, [
+  [LINE_IDS.jr_east.kashima]: new Line("鹿島線", COMPANIES.jr_east.id, LOCAL_ONLY, [
     new StopStationDef(STATION_IDS.jr_east.katori),
     new StopStationDef(STATION_IDS.jr_east.junikyou),
     new StopStationDef(STATION_IDS.jr_east.itako),
@@ -2709,7 +2709,7 @@ export const LINES = {
 
   [LINE_IDS.jr_east.jouban]: new Line(
     "常磐線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [new KindDef("快速", "rapid")],
     [
       new StopStationDef(STATION_IDS.jr_east.shinagawa, ["rapid"]),
@@ -2801,7 +2801,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.ryoumou]: new Line(
     "両毛線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [],
     [
       new StopStationDef(STATION_IDS.jr_east.shinmaebashi),
@@ -2828,7 +2828,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.mito]: new Line(
     "水戸線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     LOCAL_ONLY,
     [
       new StopStationDef(STATION_IDS.jr_east.oyama),
@@ -2852,7 +2852,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.touhoku_honsen]: new Line(
     "東北本線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [],
     [
       new StopStationDef(STATION_IDS.jr_east.kuroiso),
@@ -2943,7 +2943,7 @@ export const LINES = {
 
   [LINE_IDS.jr_east.shinkansen.tokaido]: new Line(
     "東海道新幹線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [
       new KindDef("こだま", "rapid"),
       new KindDef("ひかり", "semi-express"),
@@ -3016,7 +3016,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.shinkansen.jouetsu]: new Line(
     "上越新幹線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [],
     [
       new StopStationDef(STATION_IDS.jr_east.tokyo),
@@ -3037,7 +3037,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.shinkansen.tohoku]: new Line(
     "東北新幹線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [new KindDef("はやぶさ", "rapid")],
     [
       new StopStationDef(STATION_IDS.jr_east.tokyo, ["rapid"]),
@@ -3067,7 +3067,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.shinkansen.yamagata]: new Line(
     "山形新幹線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [],
     [
       new StopStationDef(STATION_IDS.jr_east.tokyo),
@@ -3090,7 +3090,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.shinkansen.akita]: new Line(
     "秋田新幹線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [new KindDef("はやぶさ", "raipd")],
     [
       new StopStationDef(STATION_IDS.jr_east.tokyo, ["rapid"]),
@@ -3113,7 +3113,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.shinkansen.hokuriku]: new Line(
     "北陸新幹線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     [
       new KindDef("かがやき", "rapid"),
       new KindDef("はくたか", "semi-express"),
@@ -3191,7 +3191,7 @@ export const LINES = {
   ),
   [LINE_IDS.jr_east.shinkansen.hokkaido]: new Line(
     "北海道新幹線",
-    "JR東日本",
+    COMPANIES.jr_east.id,
     LOCAL_ONLY,
     [
       new StopStationDef(STATION_IDS.jr_east.shin_aomori),
@@ -3275,7 +3275,7 @@ export const LINES = {
   ),
   [LINE_IDS.keisei.sky_liner]: new Line(
     "スカイライナー",
-    "京成電鉄",
+    COMPANIES.keisei.id,
     [],
     [
       new StopStationDef(STATION_IDS.keisei.keisei_ueno),
@@ -3313,6 +3313,16 @@ export const LINES = {
       new StopStationDef(STATION_IDS.keisei.keisei_takasago),
     ],
     [P.TOKYO, P.CHIBA]
+  ),
+  [LINE_IDS.keisei.kanamachi]: new Line(
+    "京成金町線",
+    COMPANIES.keisei.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.keisei.keisei_takasago),
+      new StopStationDef(STATION_IDS.keisei.shibamata),
+      new StopStationDef(STATION_IDS.keisei.keisei_kanamachi),
+    ]
   ),
   // #endregion
   // #region 新京成電鉄
