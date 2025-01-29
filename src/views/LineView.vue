@@ -38,8 +38,10 @@ import { useLangStore } from '@/stores/lang';
   <div class="container">
     <div class="pane">
       <h1>
-        <div>{{model.companyName}}</div>
-        <div>{{ model.lineName }}</div>
+        <div class="company">{{model.companyName}}</div>
+        <div class="kanban">
+          <div class="line">{{ model.lineName }}</div>
+        </div>
       </h1>
       <component :is="model.overlay" />
       <table>
@@ -229,5 +231,20 @@ th.express .text {
 }
   .extra-charge:hover + .fukidashi {
     display: block;
+  }
+
+  .line {
+    text-align: center;
+  }
+
+  .company {
+    text-align: center;
+    font-size: 0.5em;
+  }
+
+  .kanban {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    margin-bottom: 30px;
   }
 </style>

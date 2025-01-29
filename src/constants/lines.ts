@@ -2809,6 +2809,21 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.okawa),
     ]
   ),
+  [LINE_IDS.jr_east.itsukaichi]: new Line(
+    "五日市線",
+    COMPANIES.jr_east.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.jr_east.haijima),
+      new StopStationDef(STATION_IDS.jr_east.kumagawa),
+      new StopStationDef(STATION_IDS.jr_east.higashi_akiru),
+      new StopStationDef(STATION_IDS.jr_east.akigawa),
+      new StopStationDef(STATION_IDS.jr_east.musashi_hikida),
+      new StopStationDef(STATION_IDS.jr_east.musashi_masuko),
+      new StopStationDef(STATION_IDS.jr_east.musashi_itsukaichi),
+    ]
+  ),
+
   // #region 千葉
   [LINE_IDS.jr_east.sotobou]: new Line(
     "外房線",

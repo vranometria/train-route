@@ -1199,6 +1199,14 @@ export const STATION_IDS = {
     kashima_soccer_stadium: "jr-east-kashima-soccer-stadium",
     // #endregion
     // #endregion
+    // #region 五日市線
+    kumagawa: "jr-east-kumagawa",
+    higashi_akiru: "jr-east-higashi-akiru",
+    akigawa: "jr-east-akigawa",
+    musashi_hikida: "jr-east-musashi-hikida",
+    musashi_masuko: "jr-east-musashi-masuko",
+    musashi_itsukaichi: "jr-east-musashi-itsukaichi",
+    // #endregion
 
     // 東北本線
     takaku: "jr-east-takaku",

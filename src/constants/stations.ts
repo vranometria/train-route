@@ -9281,6 +9281,36 @@ export const STATIONS = {
       LINE_IDS.seibu.haijima,
     ],
   }),
+  [STATION_IDS.jr_east.kumagawa]: new Station({
+    name: "熊川",
+    pron: "くまがわ",
+    pr: P.TOKYO,
+  }),
+  [STATION_IDS.jr_east.higashi_akiru]: new Station({
+    name: "東秋留",
+    pron: "ひがしあきる",
+    pr: P.TOKYO,
+  }),
+  [STATION_IDS.jr_east.akigawa]: new Station({
+    name: "秋川",
+    pron: "あきがわ",
+    pr: P.TOKYO,
+  }),
+  [STATION_IDS.jr_east.musashi_hikida]: new Station({
+    name: "武蔵引田",
+    pron: "むさしひきだ",
+    pr: P.TOKYO,
+  }),
+  [STATION_IDS.jr_east.musashi_masuko]: new Station({
+    name: "武蔵増戸",
+    pron: "むさしますこ",
+    pr: P.TOKYO,
+  }),
+  [STATION_IDS.jr_east.musashi_itsukaichi]: new Station({
+    name: "武蔵五日市",
+    pron: "むさしいつかいち",
+    pr: P.TOKYO,
+  }),
   [STATION_IDS.jr_east.higashi_fussa]: new Station({
     name: "東福生",
     pron: "ひがしふっさ",
