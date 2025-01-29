@@ -3664,6 +3664,16 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.seibu_chichibu),
     ]
   ),
+  [LINE_IDS.seibu.seibu_yurakucho]: new Line(
+    "有楽町線",
+    COMPANIES.seibu.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.seibu.nerima),
+      new StopStationDef(STATION_IDS.seibu.shin_sakuradai),
+      new StopStationDef(STATION_IDS.tokyo_metro.kotake_mukaihara),
+    ]
+  ),
   // #endregion 西武鉄道
 
   // 東武鉄道
