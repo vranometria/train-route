@@ -30,6 +30,7 @@ export const LINE_IDS = {
     kanamachi: "keisei-kanamachi",
     oshiage: "keisei-oshiage",
     yukarigaoka: "keisei-yukarigaoka",
+    chihara: "keisei-chihara",
   },
   /** 新京成電鉄 */
   shin_keisei: {

@@ -69,8 +69,8 @@ import LineAccordion from './components/LineAccordion.vue';
 
         京成電鉄
         <div>
-           <!-- 千葉線 -->
-            <!-- 押上線 -->
+           <!-- 千葉線 千原線 -->
+
         </div>
 
         西武鉄道

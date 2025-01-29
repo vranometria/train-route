@@ -3332,6 +3332,17 @@ export const LINES = {
     new StopStationDef(STATION_IDS.keisei.keisei_tateishi),
     new StopStationDef(STATION_IDS.keisei.aoto),
   ]),
+  [LINE_IDS.keisei.chiba]: new Line("千葉線", COMPANIES.keisei.id, LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.keisei.keisei_tsudanuma),
+    new StopStationDef(STATION_IDS.keisei.keisei_makuhari_hongou),
+    new StopStationDef(STATION_IDS.keisei.keisei_makuhari),
+    new StopStationDef(STATION_IDS.keisei.kemigawa),
+    new StopStationDef(STATION_IDS.keisei.keisei_inage),
+    new StopStationDef(STATION_IDS.keisei.midoridai),
+    new StopStationDef(STATION_IDS.keisei.nishi_noborito),
+    new StopStationDef(STATION_IDS.keisei.shin_chiba),
+    new StopStationDef(STATION_IDS.keisei.chiba_chuou),
+  ]),
   // #endregion
   // #region 新京成電鉄
   [LINE_IDS.shin_keisei.shin_keisei]: new Line(

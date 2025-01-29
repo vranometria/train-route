@@ -1886,6 +1886,16 @@ export const STATION_IDS = {
     yahiro: "keisei-yahiro",
     yotsugi: "keisei-yotsugi",
     keisei_tateishi: "keisei-keisei-tateishi",
+    // 千葉線
+    keisei_makuhari: "keisei-keisei-makuhari",
+    keisei_makuhari_hongou: "keisei-keisei-makuhari-hongou",
+    kemigawa: "keisei-kemigawa",
+    keisei_inage: "keisei-keisei-inage",
+    midoridai: "keisei-midoridai",
+    nishi_noborito: "keisei-nishi-noborito",
+    shin_chiba: "keisei-shin-chiba",
+    keisei_chiba: "keisei-keisei-chiba",
+    chiba_chuou: "keisei-chiba-chuo",
   },
   /** 新京成電鉄 */
   shin_keisei: {

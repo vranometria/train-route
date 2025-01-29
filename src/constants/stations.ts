@@ -1668,11 +1668,19 @@ export const STATIONS = {
     new ExchangeInfo(LINE_IDS.jr_east.jouban, STATION_IDS.jr_east.kanamachi),
   ]}),
   //    #endregion 金町線
-  // 押上線
   [STATION_IDS.keisei.keisei_hikifune]: new Station({name: '京成曳舟', pron: "けいせいひきふね", pr: P.TOKYO}),
   [STATION_IDS.keisei.yahiro]: new Station({name: '八広', pron: "やひろ", pr: P.TOKYO}),
   [STATION_IDS.keisei.yotsugi]: new Station({name: '四ツ木', pron: "よつぎ", pr: P.TOKYO}),
   [STATION_IDS.keisei.keisei_tateishi]: new Station({name: '京成立石', pron: "けいせいたていし", pr: P.TOKYO}),
+  [STATION_IDS.keisei.keisei_makuhari_hongou]: new Station({name: '京成幕張本郷', pron: "けいせいまくはりほんごう", pr: P.CHIBA}),
+  [STATION_IDS.keisei.keisei_makuhari]: new Station({name: '京成幕張', pron: "けいせいまくはり", pr: P.CHIBA}),
+  [STATION_IDS.keisei.kemigawa]: new Station({name: 'けみがわ', pron: "けみがわ", pr: P.CHIBA}),
+  [STATION_IDS.keisei.keisei_inage]: new Station({name: '京成稲毛', pron: "けいせいいなげ", pr: P.CHIBA}),
+  [STATION_IDS.keisei.midoridai]: new Station({name: 'みどり台', pron: "みどりだい", pr: P.CHIBA}),
+  [STATION_IDS.keisei.nishi_noborito]: new Station({name: '西登戸', pron: "にしのぼりと", pr: P.KANAGAWA}),
+  [STATION_IDS.keisei.shin_chiba]: new Station({name: '新千葉', pron: "しんちば", pr: P.CHIBA}),
+  [STATION_IDS.keisei.keisei_chiba]: new Station({name: '京成千葉', pron: "けいせいちば", pr: P.CHIBA}),
+  [STATION_IDS.keisei.chiba_chuou]: new Station({name: '千葉中央', pron: "ちばちゅうおう", pr: P.CHIBA}),
   //   #endregion 京成電鉄
   //   #region 新京成電鉄
   [STATION_IDS.shin_keisei.kami_hongou]: new Station({name: '上本郷', pron: "かみほんごう", pr: P.CHIBA}),
