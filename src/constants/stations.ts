@@ -6910,6 +6910,18 @@ export const STATIONS = {
       LINE_IDS.tokyo_subway.oedo,
     ]
   }),
+  [STATION_IDS.seibu.hitotsubashi_gakuen]: new Station({name: "一橋学園", pron: "ひとつばしがくえん", pr: P.TOKYO}),
+  [STATION_IDS.seibu.oume_kaidou]: new Station({name: "青梅街道", pron: "おうめかいどう", pr: P.TOKYO}),
+  [STATION_IDS.seibu.yasaka]: new Station({name: "八坂", pron: "やさか", pr: P.TOKYO}),
+  [STATION_IDS.seibu.hagiyama]: new Station({name: "萩山", pron: "はぎやま", pr: P.TOKYO, lines: [
+    LINE_IDS.seibu.tamako,
+    LINE_IDS.seibu.haijima,
+  ]}),
+  [STATION_IDS.seibu.musashi_yamato]: new Station({name: "武蔵大和", pron: "むさしやまと", pr: P.TOKYO}),
+  [STATION_IDS.seibu.tamako]: new Station({name: "多摩湖", pron: "たまこ", pr: P.TOKYO, lines: [
+    LINE_IDS.seibu.tamako,
+    LINE_IDS.seibu.yamaguchi,
+  ]}),
   //   #endregion 西武鉄道
   //  #endregion 埼玉
   // #endregion 関東

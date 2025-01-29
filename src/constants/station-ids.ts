@@ -2133,6 +2133,13 @@ export const STATION_IDS = {
     seibu_chichibu: "seibu-seibu-chichibu",
     shin_sakuradai: "seibu-shin-sakuradai",
     toshimaen: "seibu-toshimaen",
+    // 多摩湖線
+    hitotsubashi_gakuen: "seibu-hitotsubashi-gakuen",
+    oume_kaidou: "seibu-oume-kaidou",
+    yasaka: "seibu-yasaka",
+    hagiyama: "seibu-hagiyama",
+    musashi_yamato: "seibu-musashi-yamato",
+    tamako: "seibu-tamako",
   },
   // #endregion
   kantou: {

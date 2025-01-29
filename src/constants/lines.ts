@@ -3683,6 +3683,20 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.toshimaen),
     ]
   ),
+  [LINE_IDS.seibu.tamako]: new Line(
+    "多摩湖線",
+    COMPANIES.seibu.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.jr_east.kokubunji),
+      new StopStationDef(STATION_IDS.seibu.hitotsubashi_gakuen),
+      new StopStationDef(STATION_IDS.seibu.oume_kaidou),
+      new StopStationDef(STATION_IDS.seibu.hagiyama),
+      new StopStationDef(STATION_IDS.seibu.yasaka),
+      new StopStationDef(STATION_IDS.seibu.musashi_yamato),
+      new StopStationDef(STATION_IDS.seibu.tamako),
+    ]
+  ),
   // #endregion 西武鉄道
 
   // 東武鉄道

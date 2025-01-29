@@ -425,6 +425,7 @@ export const LINE_IDS = {
     shinjuku: "seibu-shinjuku",
     seibuen: "seibu-seibuen",
     haijima: "seibu-haijima",
+    yamaguchi: "seibu-yamaguchi",
   },
   /** 多摩モノレール */
   tama_monorail: {
