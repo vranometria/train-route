@@ -3324,6 +3324,14 @@ export const LINES = {
       new StopStationDef(STATION_IDS.keisei.keisei_kanamachi),
     ]
   ),
+  [LINE_IDS.keisei.oshiage]: new Line("押上線", COMPANIES.keisei.id, LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.keisei.oshiage),
+    new StopStationDef(STATION_IDS.keisei.keisei_hikifune),
+    new StopStationDef(STATION_IDS.keisei.yahiro),
+    new StopStationDef(STATION_IDS.keisei.yotsugi),
+    new StopStationDef(STATION_IDS.keisei.keisei_tateishi),
+    new StopStationDef(STATION_IDS.keisei.aoto),
+  ]),
   // #endregion
   // #region 新京成電鉄
   [LINE_IDS.shin_keisei.shin_keisei]: new Line(

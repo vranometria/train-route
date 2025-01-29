@@ -295,7 +295,7 @@ export const STATION_IDS = {
     // 半蔵門線
     hanzomon: "tokyo-metro-hanzomon",
     suitengumae: "tokyo-metro-suitengumae",
-    oshiage: "oshiage",
+    oshiage: "tokyo-oshiage",
     kiyosumi_shirakawa: "kiyosumi_shirakawa",
     // 南北線
     shirokanedai: "shirokanedai",
@@ -1880,6 +1880,12 @@ export const STATION_IDS = {
     // 金町線
     shibamata: "keisei-shibamata",
     keisei_kanamachi: "keisei-keisei-kanamachi",
+    // 押上線
+    oshiage: "tokyo-oshiage",
+    keisei_hikifune: "keisei-keisei-hikifune",
+    yahiro: "keisei-yahiro",
+    yotsugi: "keisei-yotsugi",
+    keisei_tateishi: "keisei-keisei-tateishi",
   },
   /** 新京成電鉄 */
   shin_keisei: {
