@@ -1901,6 +1901,19 @@ export const LINES = {
     new StopStationDef(STATION_IDS.shibayama.shibayama_chiyoda),
   ]),
   // #endregion 柴山鉄道
+  // #region 東葉高速鉄道
+  [LINE_IDS.touyou_kousoku.touyou_kousoku]: new Line("東葉高速鉄道線", COMPANIES.touyou_kousoku.id, LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.jr_east.nishifunabashi),
+    new StopStationDef(STATION_IDS.touyou_kousoku.higashi_kaijin),
+    new StopStationDef(STATION_IDS.touyou_kousoku.hasama),
+    new StopStationDef(STATION_IDS.shin_keisei.kita_narashino),
+    new StopStationDef(STATION_IDS.touyou_kousoku.funabashi_nichidaimae),
+    new StopStationDef(STATION_IDS.touyou_kousoku.yachiyo_midorigaoka),
+    new StopStationDef(STATION_IDS.touyou_kousoku.yachiyo_chuou),
+    new StopStationDef(STATION_IDS.touyou_kousoku.murakami),
+    new StopStationDef(STATION_IDS.touyou_kousoku.touyou_katsutadai),
+  ]),
+  // #endregion 東葉高速鉄道
   // #endregion
   // #region 埼玉
   // #region 秩父鉄道

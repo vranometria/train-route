@@ -1942,7 +1942,7 @@ export const STATION_IDS = {
   /** 東葉高速鉄道 */
   touyou_kousoku: {
     higashi_kaijin: "touyou-kousoku-higashi-kaijin",
-    hasamachou: "touyou-kousoku-hasamachou",
+    hasama: "touyou-kousoku-hasamachou",
     funabashi_nichidaimae: "touyou-kousoku-funabashi-nichidaimae",
     yachiyo_midorigaoka: "touyou-kousoku-yachiyo-midorigaoka",
     yachiyo_chuou: "touyou-kousoku-yachiyo-chuou",

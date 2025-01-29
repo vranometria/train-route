@@ -4633,7 +4633,7 @@ export const STATIONS = {
       new ExchangeInfo(LINE_IDS.jr_east.narita1, STATION_IDS.jr_east.narita),
       new ExchangeInfo(LINE_IDS.jr_east.narita2, STATION_IDS.jr_east.narita),
       new ExchangeInfo(LINE_IDS.jr_east.narita3, STATION_IDS.jr_east.narita),
-    ]
+    ],
   }),
   [STATION_IDS.keisei.higashi_narita]: new Station({
     name: "東成田",
@@ -4722,7 +4722,7 @@ export const STATIONS = {
     lines: [
       LINE_IDS.keisei.honsen,
       new ExchangeInfo(
-        LINE_IDS.toyo_kousoku.toyo_kousoku,
+        LINE_IDS.touyou_kousoku.touyou_kousoku,
         STATION_IDS.touyou_kousoku.touyou_katsutadai
       ),
     ],
@@ -4992,7 +4992,7 @@ export const STATIONS = {
     pr: P.CHIBA,
     lines: [
       LINE_IDS.shin_keisei.shin_keisei,
-      LINE_IDS.toyo_kousoku.toyo_kousoku,
+      LINE_IDS.touyou_kousoku.touyou_kousoku,
     ],
   }),
   [STATION_IDS.shin_keisei.narashino]: new Station({
@@ -5108,7 +5108,7 @@ export const STATIONS = {
     pr: P.CHIBA,
   }),
   //   #endregion 小湊鉄道
-  //  #region 銚子電気鉄道
+  //   #region 銚子電気鉄道
   [STATION_IDS.choushi_denki.nakanochou]: new Station({
     name: "中野町",
     pron: "なかのちょう",
@@ -5155,6 +5155,47 @@ export const STATIONS = {
     pr: P.CHIBA,
   }),
   //  #endregion 銚子電気鉄道
+  //   #region 東葉高速鉄道
+  [STATION_IDS.touyou_kousoku.higashi_kaijin]: new Station({
+    name: "東海神",
+    pron: "ひがしかいじん",
+    pr: P.CHIBA,
+  }),
+  [STATION_IDS.touyou_kousoku.hasama]: new Station({
+    name: "飯山満",
+    pron: "はさまちょう",
+    pr: P.CHIBA,
+  }),
+  [STATION_IDS.touyou_kousoku.funabashi_nichidaimae]: new Station({
+    name: "船橋日大前",
+    pron: "ふなばしにちだいまえ",
+    pr: P.CHIBA,
+  }),
+  [STATION_IDS.touyou_kousoku.yachiyo_midorigaoka]: new Station({
+    name: "八千代緑が丘",
+    pron: "やちよみどりがおか",
+    pr: P.CHIBA,
+  }),
+  [STATION_IDS.touyou_kousoku.yachiyo_chuou]: new Station({
+    name: "八千代中央",
+    pron: "やちよちゅうおう",
+    pr: P.CHIBA,
+  }),
+  [STATION_IDS.touyou_kousoku.murakami]: new Station({
+    name: "村上",
+    pron: "むらかみ",
+    pr: P.CHIBA,
+  }),
+  [STATION_IDS.touyou_kousoku.touyou_katsutadai]: new Station({
+    name: "東洋勝田台",
+    pron: "とうようかつただい",
+    pr: P.CHIBA,
+    lines: [
+      LINE_IDS.touyou_kousoku.touyou_kousoku,
+      new ExchangeInfo(LINE_IDS.keisei.honsen, STATION_IDS.keisei.katsutadai),
+    ]
+  }),
+  //   #endregion 東葉高速鉄道
   //  #endregion 千葉
   //  #region 神奈川
   //   #region 相模鉄道
@@ -7193,7 +7234,7 @@ export const STATIONS = {
       LINE_IDS.jr_east.chuo_soubu_kankou,
       LINE_IDS.jr_east.musashino,
       LINE_IDS.tokyo_metro.touzai,
-      LINE_IDS.toyo_kousoku.toyo_kousoku,
+      LINE_IDS.touyou_kousoku.touyou_kousoku,
     ],
     "にしふなばし"
   ),
@@ -8518,7 +8559,7 @@ export const STATIONS = {
       LINE_IDS.jr_east.musashino,
       LINE_IDS.jr_east.chuou_honsen,
       LINE_IDS.tokyo_metro.touzai,
-      LINE_IDS.toyo_kousoku.toyo_kousoku,
+      LINE_IDS.touyou_kousoku.touyou_kousoku,
     ],
     "にしふなばし"
   ),

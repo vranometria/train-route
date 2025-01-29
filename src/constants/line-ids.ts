@@ -41,6 +41,10 @@ export const LINE_IDS = {
   shibayama: {
     shibayama: "shibayama-shibayama",
   },
+  /** 東葉高速鉄道線 */
+  touyou_kousoku: {
+    touyou_kousoku: "touyou-kousoku-touyou-kousoku",
+  },
   // #endregion
 
   // #region 神奈川
@@ -307,8 +311,6 @@ export const LINE_IDS = {
     isezaki: "toubu-isezaki",
     /** 東武生越線 */
     ogose: "toubu-ogose",
-    /** 東葉高速線 */
-    touyou_kousoku: "toubu-touyou-kousoku",
     /** 大師線 */
     daishi: "toubu-daishi",
     /** 日光線 */
@@ -420,10 +422,6 @@ export const LINE_IDS = {
     shinjuku: "seibu-shinjuku",
     seibuen: "seibu-seibuen",
     haijima: "seibu-haijima",
-  },
-  /** 東葉高速鉄道 */
-  toyo_kousoku: {
-    toyo_kousoku: "toyo-kousoku-toyo-kousoku",
   },
   /** 多摩モノレール */
   tama_monorail: {

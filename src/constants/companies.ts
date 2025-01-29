@@ -132,6 +132,12 @@ export const COMPANIES: { [key: string]: Company } = {
     yomi: "ようろうてつどう",
     keywords: ["kominato"]
   },
+  touyou_kousoku: {
+    id: "touyou_kousoku",
+    name: '東葉高速鉄道',
+    yomi: "とうようこうそくてつどう",
+    keywords: ["touyoukousokutetsudou"]
+  },
   saitama_shintoshi_koutsu: {
     id: "saitama_shintoshi_koutsu",
     name: '埼玉新都市交通',
