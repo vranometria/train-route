@@ -362,6 +362,10 @@ export const LINE_IDS = {
     /** 京王動物園 */
     dobutsuen: "keiou-dobutsuen",
   },
+  /** 高尾登山電鉄 */
+  takao_tozan: {
+    takao_tozan_cable: "takao-tozan-takao-tozan-cable",
+  },
   /**流鉄 */
   ryutetsu: {
     ryutetsu_ryuzan: "ryutetsu-ryutetsu",

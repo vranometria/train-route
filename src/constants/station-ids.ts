@@ -1717,6 +1717,15 @@ export const STATION_IDS = {
     keiou_horinouchi: "keio-keiou-horinouchi",
     minami_osawa: "keio-minami-osawa",
     tamasakai: "keio-tamasakai",
+    keiou_katakura: "keio-keiou-katakura",
+    mejirodai: "keio-mejirodai",
+    hazama: "keio-hazama",
+    takao_yamaguchi: "keio-takao-yamaguchi",
+    yamada: "keio-yamada",
+  },
+  takao_tozan: {
+    kiyotaki: "takao-tozan-kiyotaki",
+    takaosan: "takao-tozan-takaosan",
   },
   // #endregion
 

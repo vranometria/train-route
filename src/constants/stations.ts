@@ -3287,17 +3287,22 @@ export const STATIONS = {
     [],
     "ひらやまじょしこうえん"
   ),
-  [STATION_IDS.keio.naganuma]: new StationInfo("長沼", [], "ながぬま"),
-  [STATION_IDS.keio.kitano]: new StationInfo(
-    "北野",
-    [LINE_IDS.keiou.keiou, LINE_IDS.keiou.takao],
-    "きたの"
-  ),
-  [STATION_IDS.keio.keio_hachioji]: new StationInfo(
-    "京王八王子",
-    [],
-    "けいおうはちおうじ"
-  ),
+  [STATION_IDS.keio.naganuma]: new Station({name: "長沼", pron: "ながぬま", pr: P.TOKYO}),
+  [STATION_IDS.keio.kitano]: new Station({
+    name: "北野",
+    pron: "きたの",
+    pr: P.TOKYO,
+    lines: [LINE_IDS.keiou.keiou, LINE_IDS.keiou.takao],
+  }),
+  [STATION_IDS.keio.keio_hachioji]: new Station({name: "京王八王子", pron: "けいおうはちおうじ", pr: P.TOKYO}),
+  [STATION_IDS.keio.keiou_katakura]: new Station({name: "京王片倉", pron: "けいおうかたくら", pr: P.TOKYO}),
+  [STATION_IDS.keio.yamada]: new Station({name: "山田", pron: "やまだ", pr: P.TOKYO}),
+  [STATION_IDS.keio.mejirodai]: new Station({name: "めじろ台", pron: "めじろだい", pr: P.TOKYO}),
+  [STATION_IDS.keio.hazama]: new Station({name: "狭間", pron: "はざま", pr: P.TOKYO}),
+  [STATION_IDS.keio.takao_yamaguchi]: new Station({name: "高尾山口", pron: "たかおやまぐち", pr: P.TOKYO, lines: [
+    LINE_IDS.keiou.takao,
+    new ExchangeInfo(LINE_IDS.takao_tozan.takao_tozan_cable, STATION_IDS.takao_tozan.kiyotaki),
+  ]}),
   // > 京王新線
   [STATION_IDS.keio.hatsudai]: new StationInfo("初台", [], "はつだい"),
   [STATION_IDS.keio.hatagaya]: new StationInfo("幡ヶ谷", [], "はたがや"),

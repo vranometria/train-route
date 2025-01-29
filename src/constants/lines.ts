@@ -4256,6 +4256,19 @@ export const LINES = {
       ]),
     ]
   ),
+  [LINE_IDS.keiou.takao]: new Line(
+    "高尾線",
+    COMPANIES.keiou.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.keio.kitano),
+      new StopStationDef(STATION_IDS.keio.keiou_katakura),
+      new StopStationDef(STATION_IDS.keio.yamada),
+      new StopStationDef(STATION_IDS.keio.mejirodai),
+      new StopStationDef(STATION_IDS.keio.hazama),
+      new StopStationDef(STATION_IDS.jr_east.takao),
+      new StopStationDef(STATION_IDS.keio.takao_yamaguchi),
+    ]),
   // #endregion 京王電鉄
 
   // JR北海道
