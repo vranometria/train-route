@@ -1552,7 +1552,7 @@ export const STATIONS = {
   ]}),
   //   #endregion 北総電鉄
   //   #region 京成電鉄
-  // ＞京成成田スカイアクセス
+  //    # region 京成成田スカイアクセス
   [STATION_IDS.keisei.keisei_tsudanuma]: new Station({name: '京成津田沼', pron: "けいせいつだぬま", pr: P.CHIBA, lines: [
     LINE_IDS.keisei.honsen,
     LINE_IDS.keisei.chiba,
@@ -1653,8 +1653,14 @@ export const STATIONS = {
   [STATION_IDS.keisei.keisei_shisui]: new Station({name: '京成酒々井', pron: "けいせいしずい", pr: P.CHIBA}),
   [STATION_IDS.keisei.sougosandou]: new Station({name: '宗吾参道', pron: "そうごさんどう", pr: P.CHIBA}),
   [STATION_IDS.keisei.koudunomori]: new Station({name: '公津の杜', pron: "こうづのもり", pr: P.CHIBA}),
-
-
+  //     #endregion 京成成田スカイアクセス
+  //     #region ユーカリが丘線
+  [STATION_IDS.keisei.chiku_center]: new Station({name: '地区センター', pron: "ちくせんたー", pr: P.CHIBA}),
+  [STATION_IDS.keisei.kouen]: new Station({name: '公園', pron: "こうえん", pr: P.CHIBA}),
+  [STATION_IDS.keisei.joshidai]: new Station({name: '女子大', pron: "じょしだい", pr: P.CHIBA}),
+  [STATION_IDS.keisei.chugakkou]: new Station({name: '中学校', pron: "ちゅうがっこう", pr: P.CHIBA}),
+  [STATION_IDS.keisei.ino]: new Station({name: '井野', pron: "いの", pr: P.CHIBA}),
+  //     #endregion ユーカリが丘線
   //   #endregion 京成電鉄
   //   #region 新京成電鉄
   [STATION_IDS.shin_keisei.kami_hongou]: new Station({name: '上本郷', pron: "かみほんごう", pr: P.CHIBA}),

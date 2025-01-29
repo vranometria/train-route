@@ -12,6 +12,12 @@ export const COMPANIES: { [key: string]: Company } = {
     yomi: "けいひんきゅうこうでんてつ",
     keywords: ["京急", "けいきゅう", "keikyu"]
   },
+  tokyu: {
+    id: "tokyu",
+    name: '東急電鉄',
+    yomi: "とうきゅうでんてつ",
+    keywords: ["tokyu"]
+  },
   tokyo_koutsukyoku: {
     id: "tokyo_koutsukyoku",
     name: '東京都交通局',
@@ -23,6 +29,24 @@ export const COMPANIES: { [key: string]: Company } = {
     name: '東京メトロ',
     yomi: "とうきょうめとろ",
     keywords: ["tokyo metro", "toukyou"]
+  },
+  tokyo_monorail: {
+    id: "tokyo_monorail",
+    name: '東京モノレール',
+    yomi: "とうきょうものれーる",
+    keywords: ["tokyo monorail"]
+  },
+  toukyo_rinkai_kousoku: {
+    id: "toukyo_rinkai_kousoku",
+    name: '東京臨海高速鉄道',
+    yomi: "とうきょうりんかいこうそくてつどう",
+    keywords: ["toukyourinkaikousokutetsudou"]
+  },
+  yurikamome: {
+    id: "yurikamome",
+    name: '新交通ゆりかもめ',
+    yomi: "しんこうつうゆりかもめ",
+    keywords: ["yurikamome"]
   },
   shutoken_shintoshi: {
     id: "shutoken_shintoshi",
@@ -42,10 +66,40 @@ export const COMPANIES: { [key: string]: Company } = {
     yomi: "よこはましこうつうきょく",
     keywords: ["横浜市営地下鉄", "よこはましえいちかてつ"]
   },
+  sotetsu: {
+    id: "sotetsu",
+    name: '相模鉄道',
+    yomi: "さがみてつどう",
+    keywords: ["sotetsu", "sagamitetsudou"]
+  },
+  odakyu: {
+    id: "odakyu",
+    name: '小田急電鉄',
+    yomi: "おだきゅうでんてつ",
+    keywords: ["odakyu"]
+  },
+  odakyu_hakone: {
+    id: "odakyu_hakone",
+    name: '小田急箱根',
+    yomi: "おだきゅうはこね",
+    keywords: ["odakyu hakone", "odakyu hakone romancecar"]
+  },
+  keisei: {
+    id: "keisei",
+    name: '京成電鉄',
+    yomi: "けいせいでんてつ",
+    keywords: ["keiseidentetsu"]
+  },
   shin_keisei: {
     id: "shin_keisei",
     name: '新京成電鉄',
     yomi: "しんけいせいでんてつ",
     keywords: ["shinkeisei"]
+  },
+  chiba_urban_monorail: {
+    id: "chiba_urban_monorail",
+    name: '千葉都市モノレール',
+    yomi: "ちばとしみのれーる",
+    keywords: ["chiba urban monorail"]
   },
 }

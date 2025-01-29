@@ -8,10 +8,10 @@ const props = defineProps({
 
 const targetPrefecture = props.prefecture ? props.prefecture : '';
 const lines = getLineModel().filter(t => t.runsThrough(targetPrefecture));
-const companies = removeDuplicates(lines.map( t => t.line.company));
+const companies = removeDuplicates(lines.map( t => t.line.companyId));
 
 const models = companies.map((companyName: string) => {
-  const ls = lines.filter(t => t.line.company === companyName);
+  const ls = lines.filter(t => t.line.companyId === companyName);
   return { companyName, lines: ls};
 });
 

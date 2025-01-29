@@ -3,6 +3,7 @@ import type { KindDef } from "./kind-def";
 import { StationModel } from "./station-model";
 import type { Component } from "vue";
 import { getOverlay, getUnderlay } from "@/util";
+import { COMPANIES } from "@/constants/companies";
 
 class Distination {
   name: string;
@@ -25,7 +26,8 @@ export class LineViewModel {
   constructor(lineId: string){
     const line = LINES[lineId];
     this.lineName = line.name;
-    this.companyName = line.company;
+    const company = COMPANIES[line.companyId];
+    this.companyName = company.name ? company.name : line.companyId;
     this.kinds = line.kinds;
     this.stations = line.stations.map(x=> new StationModel(x));
     this.overlay = getOverlay(lineId);

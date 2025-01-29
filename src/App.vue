@@ -103,6 +103,7 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keisei.narita_kuko}}">京成成田空港線</RouterLink>
           <!-- ユーカリが丘線 -->
            <!-- 千葉線 -->
+            <!-- 押上線 -->
         </div>
 <!--
         北総電鉄

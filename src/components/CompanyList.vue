@@ -29,14 +29,14 @@ import { ref } from 'vue';
     return {
       id: key,
       name: l.name ? l.name : key,
-      company: l.company ? l.company : '',
+      company: l.companyId ? l.companyId : '',
     };
   });
 
   const initModels = orderByJapanese(
     keys.map((key) => {
       const c = COMPANIES[key];
-      const ls = lines.filter((l) => l.company === c.name);
+      const ls = lines.filter((l) => l.company === c.id);
       return new CompanyModel(c.name, ls, c.keywords, c.yomi);
     }), "yomi"
   );

@@ -6,15 +6,15 @@ import { StopStationDef } from "./stop-station-def";
  */
 export class Line {
   name: string
-  company: string
+  companyId: string
   kinds: KindDef[]
   stations: StopStationDef[]
   /** 路線が通る権 */
   prefectures: string[]
 
-  constructor(name: string, company: string, kinds: KindDef[], stations: StopStationDef[], prefectures?: string|string[]) {
+  constructor(name: string, companyId: string, kinds: KindDef[], stations: StopStationDef[], prefectures?: string|string[]) {
     this.name = name;
-    this.company = company;
+    this.companyId = companyId;
     this.kinds = kinds;
     this.stations = stations;
     this.prefectures = (()=>{

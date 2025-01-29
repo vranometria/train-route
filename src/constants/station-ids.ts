@@ -1871,6 +1871,12 @@ export const STATION_IDS = {
     keisei_narita: "keisei-keisei-narita",
     kuko_daini_bill: "keisei-kuko-daini-bill",
     narita_kuko: "keisei-narita-kuko",
+    // ユーカリが丘線
+    chiku_center: "keisei-chiku-center",
+    kouen: "keisei-kouen",
+    joshidai: "keisei-joshidai",
+    chugakkou: "keisei-chugakkou",
+    ino: "keisei-ino",
   },
   /** 新京成電鉄 */
   shin_keisei: {
