@@ -3697,6 +3697,18 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.tamako),
     ]
   ),
+  [LINE_IDS.seibu.kokubunji]: new Line(
+    "国分寺線",
+    COMPANIES.seibu.id,
+    LOCAL_ONLY,
+    [
+      new StopStationDef(STATION_IDS.jr_east.kokubunji),
+      new StopStationDef(STATION_IDS.seibu.koigakubo),
+      new StopStationDef(STATION_IDS.seibu.takanodai),
+      new StopStationDef(STATION_IDS.seibu.ogawa),
+      new StopStationDef(STATION_IDS.seibu.higashi_murayama),
+    ]
+  ),
   // #endregion 西武鉄道
 
   // 東武鉄道

@@ -6922,6 +6922,12 @@ export const STATIONS = {
     LINE_IDS.seibu.tamako,
     LINE_IDS.seibu.yamaguchi,
   ]}),
+  [STATION_IDS.seibu.koigakubo]: new Station({name: "恋ヶ窪", pron: "こいがくぼ", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.takanodai]: new Station({name: "鷹の台", pron: "たかのだい", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.ogawa]: new Station({name: "小川", pron: "おがわ", pr: P.SAITAMA, lines: [
+    LINE_IDS.seibu.kokubunji,
+    LINE_IDS.seibu.haijima,
+  ]}),
   //   #endregion 西武鉄道
   //  #endregion 埼玉
   // #endregion 関東

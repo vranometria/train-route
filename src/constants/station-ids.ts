@@ -2140,6 +2140,10 @@ export const STATION_IDS = {
     hagiyama: "seibu-hagiyama",
     musashi_yamato: "seibu-musashi-yamato",
     tamako: "seibu-tamako",
+    // 国分寺線
+    koigakubo: "seibu-koigakubo",
+    takanodai: "seibu-takanodai",
+    ogawa: "seibu-ogawa",
   },
   // #endregion
   kantou: {
