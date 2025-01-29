@@ -60,17 +60,6 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.shinkansen.hokkaido}}" >北海道新幹線</RouterLink>
         </div> -->
 
-        京王電鉄
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keiou.keiou}}">京王線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keiou.keioushinsen}}">京王新線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keiou.sagamihara}}">相模原線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keiou.takao}}">高尾線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keiou.keibajo}}">競馬場線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keiou.dobutsuen}}">動物園線</RouterLink>
-          <!-- <RouterLink :to="{name: 'line', params: {id: LINE_IDS.keio.inokashira}}">井の頭線</RouterLink> -->
-        </div>
-
         西武鉄道
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.ikebukuro}}">池袋線</RouterLink>
