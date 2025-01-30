@@ -72,6 +72,7 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.haijima}}">拝島線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.sayama}}">狭山線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.yamaguchi}}">山口線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.seibuen}}">西武園線</RouterLink>
         </div>
 
         東武鉄道

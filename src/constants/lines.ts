@@ -3760,6 +3760,15 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.seibukyujoumae),
     ]
   }),
+  [LINE_IDS.seibu.seibuen]: new TrainLine({
+    name: "西武園線",
+    yomi: "せいぶえんせん",
+    companyId: COMPANIES.seibu.id,
+    stations: [
+      new StopStationDef(STATION_IDS.seibu.higashi_murayama),
+      new StopStationDef(STATION_IDS.seibu.seibuen),
+    ]
+  }),
   // #endregion 西武鉄道
 
   // 東武鉄道

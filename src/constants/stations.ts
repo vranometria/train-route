@@ -6674,16 +6674,13 @@ export const STATIONS = {
     [],
     "さやまがおか"
   ),
-  [STATION_IDS.seibu.musashi_fujisawa]: new StationInfo(
-    "武蔵藤沢",
-    [],
-    "むさしふじさわ"
+  [STATION_IDS.seibu.musashi_fujisawa]: new Station({
+    name: "武蔵藤沢",
+    pron: "むさしふじさわ",
+    pr: P.SAITAMA,
+  }
   ),
-  [STATION_IDS.seibu.inariyamakoen]: new StationInfo(
-    "稲荷山公園",
-    [],
-    "いなりやまこうえん"
-  ),
+  [STATION_IDS.seibu.inariyamakoen]: new Station({name: "稲荷山公園", pron: "いなりやまこうえん", pr: P.SAITAMA}),
   [STATION_IDS.seibu.irumashi]: new Station({
     name: "入間市",
     pron: "いるまし",
@@ -6703,6 +6700,8 @@ export const STATIONS = {
     LINE_IDS.seibu.yamaguchi,
   ]}),
   [STATION_IDS.seibu.seibuen_yuenchi]: new Station({name: "西武園ゆうえんち", pron: "せいぶえんゆうえんち", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.seibuen]: new Station({name: "西武園", pron: "せいぶえん", pr: P.SAITAMA}),
+
   // 新宿線
   [STATION_IDS.seibu.seibu_shinjuku]: new StationInfo(
     "西武新宿",

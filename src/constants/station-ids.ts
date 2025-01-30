@@ -2155,6 +2155,7 @@ export const STATION_IDS = {
     shimo_yamaguchi: "seibu-shimo-yamaguchi",
     seibukyujoumae: "seibu-seibu-kyujoumae",
     seibuen_yuenchi: "seibu-seibuen-yuenchi",
+    seibuen: "seibu-seibuen",
   },
   // #endregion
   kantou: {
