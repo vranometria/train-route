@@ -4426,6 +4426,56 @@ export const STATIONS = {
     pron: "とうぶにっこう",
     pr: P.SAITAMA,
   }),
+  [STATION_IDS.toubu.yasyu_hirakawa]: new Station({
+    name: "野州平川",
+    pron: "やしゅうひらかわ",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.yasyu_otsuka]: new Station({
+    name: "野州大塚",
+    pron: "やしゅうおおつか",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.mibu]: new Station({
+    name: "壬生",
+    pron: "みぶ",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.kuniya]: new Station({
+    name: "国谷",
+    pron: "くにや",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.omochanomachi]: new Station({
+    name: "おもちゃのまち",
+    pron: "おもちゃのまち",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.yasuduka]: new Station({
+    name: "安塚",
+    pron: "やすづか",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.nishi_kawada]: new Station({
+    name: "西川田",
+    pron: "にしかわだ",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.esojima]: new Station({
+    name: "江曽島",
+    pron: "えそじま",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.minami_utsunomiya]: new Station({
+    name: "南宇都宮",
+    pron: "みなみうつのみや",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.toubu_utsunomiya]: new Station({
+    name: "東武宇都宮",
+    pron: "とうぶうつのみや",
+    pr: P.TOCHIGI,
+  }),
 
   //   #endregion 東武鉄道
   //  #endregion 東京

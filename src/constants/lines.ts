@@ -4084,11 +4084,11 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.funabashi, [Express.KEY]),
     ]
   }),
-  [LINE_IDS.toubu.ogose]: new Line(
-    "東武越生線",
-    "東武鉄道",
-    LOCAL_ONLY,
-    [
+  [LINE_IDS.toubu.ogose]: new TrainLine({
+    name: "越生線",
+    yomi: "おごせせん",
+    companyId: COMPANIES.toubu.id,
+    stations: [
       new StopStationDef(STATION_IDS.toubu.sakado),
       new StopStationDef(STATION_IDS.toubu.ipponmatsu),
       new StopStationDef(STATION_IDS.toubu.nishi_oya),
@@ -4098,31 +4098,30 @@ export const LINES = {
       new StopStationDef(STATION_IDS.toubu.busyu_karasawa),
       new StopStationDef(STATION_IDS.toubu.ogose),
     ],
-    P.SAITAMA
-  ),
-  [LINE_IDS.toubu.kameido]: new Line(
-    "東武亀戸線",
-    "東武鉄道",
-    LOCAL_ONLY,
-    [
+  }),
+  [LINE_IDS.toubu.kameido]: new TrainLine({
+    name: "亀戸線",
+    yomi: "かめいどせん",
+    companyId: COMPANIES.toubu.id,
+    stations: [
       new StopStationDef(STATION_IDS.toubu.hikifune),
       new StopStationDef(STATION_IDS.toubu.omurai),
       new StopStationDef(STATION_IDS.toubu.higashi_azuma),
       new StopStationDef(STATION_IDS.toubu.kameido_suijin),
       new StopStationDef(STATION_IDS.jr_east.kameido),
     ],
-    P.TOKYO
-  ),
-  [LINE_IDS.toubu.isezaki]: new Line(
-    "伊勢崎線",
-    "東武鉄道",
-    [
+  }),
+  [LINE_IDS.toubu.isezaki]: new TrainLine({
+    name: "伊勢崎線",
+    yomi: "いせざきせん",
+    companyId: COMPANIES.toubu.id,
+    kinds: [
       new Express(),
       new SectionExpress(),
       new SemiExpress(),
       new SectionSemiExpress(),
     ],
-    [
+    stations: [
       new StopStationDef(STATION_IDS.tokyo_subway.asakusa, [
         SectionExpress.KEY,
         SectionSemiExpress.KEY,
@@ -4292,8 +4291,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.toubu.shin_isezaki, []),
       new StopStationDef(STATION_IDS.jr_east.isezaki, []),
     ],
-    [P.TOKYO, P.SAITAMA, P.TOCHIGI, P.GUNMA]
-  ),
+  }),
   [LINE_IDS.toubu.kinugawa]: new TrainLine({
     name: "鬼怒川線",
     yomi: "きぬがわせん",
@@ -4343,6 +4341,24 @@ export const LINES = {
       new StopStationDef(STATION_IDS.toubu.shimo_imachi, []),
       new StopStationDef(STATION_IDS.toubu.kami_imaichi, [Express.KEY,]),
       new StopStationDef(STATION_IDS.toubu.toubu_nikko, [Express.KEY,]),
+    ]
+  }),
+  [LINE_IDS.toubu.utsunomiya]: new TrainLine({
+    name: "宇都宮線",
+    yomi: "うつのみやせん",
+    companyId: COMPANIES.toubu.id,
+    stations: [
+      new StopStationDef(STATION_IDS.toubu.shin_tochigi),
+      new StopStationDef(STATION_IDS.toubu.yasyu_hirakawa),
+      new StopStationDef(STATION_IDS.toubu.yasyu_otsuka),
+      new StopStationDef(STATION_IDS.toubu.mibu),
+      new StopStationDef(STATION_IDS.toubu.kuniya),
+      new StopStationDef(STATION_IDS.toubu.omochanomachi),
+      new StopStationDef(STATION_IDS.toubu.yasuduka),
+      new StopStationDef(STATION_IDS.toubu.nishi_kawada),
+      new StopStationDef(STATION_IDS.toubu.esojima),
+      new StopStationDef(STATION_IDS.toubu.minami_utsunomiya),
+      new StopStationDef(STATION_IDS.toubu.toubu_utsunomiya),
     ]
   }),
 
