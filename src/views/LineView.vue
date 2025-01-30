@@ -26,7 +26,7 @@ import { useRoute } from 'vue-router';
       const id = route.hash.replace("#", "");
       const element = document.querySelector(route.hash) as HTMLElement;
       if(element){
-        element.scrollIntoView({behavior: "smooth"});
+        element.scrollIntoView({behavior: "smooth", block: "center"});
         element.getElementsByClassName("station-name")[0].classList.add("from");
         from.value = id;
       }

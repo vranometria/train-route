@@ -510,6 +510,17 @@ export const LINES = {
       new StopStationDef(STATION_IDS.syounan_monorail.syounan_enoshima),
     ],
   }),
+  [LINE_IDS.maihama_resort.desney_resort_line]: new TrainLine({
+    name: "ディズニーリゾートライン",
+    yomi: "でぃずにーりぞーとらいん",
+    companyId: COMPANIES.maihama_resort.id,
+    stations: [
+      new StopStationDef(STATION_IDS.maihama_resort.resort_gateway),
+      new StopStationDef(STATION_IDS.maihama_resort.tokyo_disneyland),
+      new StopStationDef(STATION_IDS.maihama_resort.bayside),
+      new StopStationDef(STATION_IDS.maihama_resort.tokyo_disneysea),
+    ],
+  }),
   // #region 京浜急行電鉄
   [LINE_IDS.keikyu.honsen]: new TrainLine({
     name: "京急本線",
@@ -1109,7 +1120,7 @@ export const LINES = {
     COMPANIES.tokyo_metro.id,
     LOCAL_ONLY,
     [
-      new StopStationDef(STATION_IDS.odakyu.yoyogiuehara),
+      new StopStationDef(STATION_IDS.odakyu.yoyogi_uehara),
       new StopStationDef(STATION_IDS.tokyo_metro.yoyogi_koen),
       new StopStationDef(STATION_IDS.tokyo_metro.meiji_jingumae),
       new StopStationDef(STATION_IDS.tokyo_metro.omotesando),
@@ -1565,7 +1576,7 @@ export const LINES = {
         "semi-express",
       ]),
       new StopStationDef(STATION_IDS.toukyu.tsukimino, ["semi-express"]),
-      new StopStationDef(STATION_IDS.odakyu.chuorinkan, [
+      new StopStationDef(STATION_IDS.odakyu.chuou_rinkan, [
         "express",
         "semi-express",
       ]),
@@ -1742,14 +1753,14 @@ export const LINES = {
         LINE_IDS.odakyu.odawara,
         LINE_IDS.odakyu.enoshima,
       ]),
-      new StopStationDef(STATION_IDS.odakyu.higashirinkan),
-      new StopStationDef(STATION_IDS.odakyu.chuorinkan),
-      new StopStationDef(STATION_IDS.odakyu.minamirinkan),
+      new StopStationDef(STATION_IDS.odakyu.higashi_rinkan),
+      new StopStationDef(STATION_IDS.odakyu.chuou_rinkan),
+      new StopStationDef(STATION_IDS.odakyu.minami_rinkan),
       new StopStationDef(STATION_IDS.odakyu.tsuruma),
       new StopStationDef(STATION_IDS.odakyu.yamato),
       new StopStationDef(STATION_IDS.odakyu.sakuragaoka),
       new StopStationDef(STATION_IDS.odakyu.kouzashibuya),
-      new StopStationDef(STATION_IDS.odakyu.chogo),
+      new StopStationDef(STATION_IDS.odakyu.chougo),
       new StopStationDef(STATION_IDS.odakyu.shonandai),
       new StopStationDef(STATION_IDS.odakyu.mutsuainichidaimae),
       new StopStationDef(STATION_IDS.odakyu.zengyo),
@@ -1777,17 +1788,17 @@ export const LINES = {
         "express",
         "commuter",
       ]),
-      new StopStationDef(STATION_IDS.odakyu.minamishinjuku),
+      new StopStationDef(STATION_IDS.odakyu.minami_shinjuku),
       new StopStationDef(STATION_IDS.odakyu.sangubashi),
-      new StopStationDef(STATION_IDS.odakyu.yoyogihachiman),
-      new StopStationDef(STATION_IDS.odakyu.yoyogiuehara, [
+      new StopStationDef(STATION_IDS.odakyu.yoyogi_hachiman),
+      new StopStationDef(STATION_IDS.odakyu.yoyogi_uehara, [
         "rapid",
         "express",
         "semi-express",
         "commuter",
         "semi-commuter",
       ]),
-      new StopStationDef(STATION_IDS.odakyu.higashikitazawa),
+      new StopStationDef(STATION_IDS.odakyu.higashi_kitazawa),
       new StopStationDef(STATION_IDS.odakyu.shimokitazawa, [
         "rapid",
         "express",
@@ -1795,16 +1806,16 @@ export const LINES = {
         "commuter",
         "semi-commuter",
       ]),
-      new StopStationDef(STATION_IDS.odakyu.setagayadaita),
+      new StopStationDef(STATION_IDS.odakyu.setagaya_daita),
       new StopStationDef(STATION_IDS.odakyu.umegaoka),
       new StopStationDef(STATION_IDS.odakyu.gotokuji),
       new StopStationDef(STATION_IDS.odakyu.sagamiono),
-      new StopStationDef(STATION_IDS.odakyu.kyodo, [
+      new StopStationDef(STATION_IDS.odakyu.kyoudou, [
         "semi-express",
         "semi-commuter",
       ]),
-      new StopStationDef(STATION_IDS.odakyu.chitosefunabashi, ["semi-express"]),
-      new StopStationDef(STATION_IDS.odakyu.soshigayaokura, ["semi-express"]),
+      new StopStationDef(STATION_IDS.odakyu.chitose_funabashi, ["semi-express"]),
+      new StopStationDef(STATION_IDS.odakyu.soshigaya_okura, ["semi-express"]),
       new StopStationDef(STATION_IDS.odakyu.seijogakuenmae, [
         "semi-express",
         "commuter",
@@ -1812,7 +1823,7 @@ export const LINES = {
       ]),
       new StopStationDef(STATION_IDS.odakyu.kitami),
       new StopStationDef(STATION_IDS.odakyu.komae, ["semi-express"]),
-      new StopStationDef(STATION_IDS.odakyu.izumitamagawa),
+      new StopStationDef(STATION_IDS.odakyu.izumi_tamagawa),
       new StopStationDef(STATION_IDS.jr_east.noborito, [
         "rapid",
         "express",
@@ -1836,7 +1847,7 @@ export const LINES = {
         "semi-express",
         "semi-commuter",
       ]),
-      new StopStationDef(STATION_IDS.odakyu.shinyurigaoka, [
+      new StopStationDef(STATION_IDS.odakyu.shin_yurigaoka, [
         "rapid",
         "express",
         "semi-express",
@@ -1867,11 +1878,11 @@ export const LINES = {
         "semi-express",
         "semi-commuter",
       ]),
-      new StopStationDef(STATION_IDS.odakyu.odakyusagamihara, [
+      new StopStationDef(STATION_IDS.odakyu.odakyu_sagamihara, [
         "semi-express",
         "semi-commuter",
       ]),
-      new StopStationDef(STATION_IDS.odakyu.musashidaimae, [
+      new StopStationDef(STATION_IDS.odakyu.soubudaimae, [
         "semi-express",
         "semi-commuter",
       ]),
@@ -1908,7 +1919,7 @@ export const LINES = {
         "semi-express",
         "semi-commuter",
       ]),
-      new StopStationDef(STATION_IDS.odakyu.tsurumakionsen, [
+      new StopStationDef(STATION_IDS.odakyu.tsurumaki_onsen, [
         "rapid",
         "express",
       ]),
@@ -1918,7 +1929,7 @@ export const LINES = {
       ]),
       new StopStationDef(STATION_IDS.odakyu.hadano, ["rapid", "express"]),
       new StopStationDef(STATION_IDS.odakyu.shibusawa, ["rapid", "express"]),
-      new StopStationDef(STATION_IDS.odakyu.shinmatsuda, ["rapid", "express"]),
+      new StopStationDef(STATION_IDS.odakyu.shin_matsuda, ["rapid", "express"]),
       new StopStationDef(STATION_IDS.odakyu.kaisei, ["express"]),
       new StopStationDef(STATION_IDS.odakyu.kayama),
       new StopStationDef(STATION_IDS.odakyu.tomizu),
@@ -1928,7 +1939,7 @@ export const LINES = {
     ]
   ),
   [LINE_IDS.odakyu.tama]: new Line("多摩線", COMPANIES.odakyu.id, LOCAL_ONLY, [
-    new StopStationDef(STATION_IDS.odakyu.shinyurigaoka),
+    new StopStationDef(STATION_IDS.odakyu.shin_yurigaoka),
     new StopStationDef(STATION_IDS.odakyu.satsukidai),
     new StopStationDef(STATION_IDS.odakyu.kurihira),
     new StopStationDef(STATION_IDS.odakyu.kurokawa),
@@ -4250,7 +4261,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.toubu.mutsumi),
       new StopStationDef(STATION_IDS.keisei.shin_kamagaya, [Express.KEY]),
       new StopStationDef(STATION_IDS.toubu.kamagaya),
-      new StopStationDef(STATION_IDS.toubu.magomesawa),
+      new StopStationDef(STATION_IDS.toubu.magomezawa),
       new StopStationDef(STATION_IDS.toubu.tsukada),
       new StopStationDef(STATION_IDS.toubu.shin_funabashi),
       new StopStationDef(STATION_IDS.jr_east.funabashi, [Express.KEY]),
@@ -4283,7 +4294,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.kameido),
     ],
   }),
-  [LINE_IDS.toubu.isezaki]: new TrainLine({
+  [LINE_IDS.toubu.isesaki]: new TrainLine({
     name: "伊勢崎線",
     yomi: "いせざきせん",
     companyId: COMPANIES.toubu.id,

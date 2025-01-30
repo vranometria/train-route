@@ -29,19 +29,19 @@ interface StationInfoConstructor {
   /** 乗り換え路線IDまたは乗り換え情報 */
   lines?: (string|ExchangeInfo)[]
 
-  /** 駅名読み(pronunciation) */
-  pron: string,
+  /** 駅名読み */
+  reading: string,
 
-  /** 所在県(prefecture) */
-  pr: string
+  /** 所在県 */
+  prefecture: string
 }
 
 export class Station extends StationInfo {
-  constructor({name, lines, pron, pr}: StationInfoConstructor){
+  constructor({name, lines, reading, prefecture}: StationInfoConstructor){
     // this.name = name;
     // this.lines = lines ? lines : [];
     // this.pronunciation = pronunciation ? pronunciation : name;
-    super(name, lines, pron);
-    this.prefecture = pr ? pr : '';
+    super(name, lines, reading);
+    this.prefecture = prefecture ? prefecture : '';
   }
 }

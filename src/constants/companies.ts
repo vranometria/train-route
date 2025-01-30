@@ -156,6 +156,12 @@ export const COMPANIES: { [key: string]: Company } = {
     yomi: "ほくそうてつどう",
     keywords: ["hokusou"]
   },
+  maihama_resort: {
+    id: "maihama_resort",
+    name: '舞浜リゾート',
+    yomi: "まいはまりぞーと",
+    keywords: ["maihama resort"]
+  },
   kominato: {
     id: "kominato",
     name: '小湊鐡道',

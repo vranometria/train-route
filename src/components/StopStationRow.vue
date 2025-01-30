@@ -15,8 +15,8 @@ const pronunce = (yomi: string) => {
 </script>
 
 <template>
-  <tr :no="no">
-    <td class="station-name" :id="staModel.id">{{ staModel.name }}</td>
+  <tr :no="no" :id="staModel.id" :key="staModel.id">
+    <td class="station-name">{{ staModel.name }}</td>
     <td class="pronunciation">
       <button :onclick="() => { pronunce(staModel.pronunciation); }">
         <img src="@/assets/speaker.png" />

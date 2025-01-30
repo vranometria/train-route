@@ -19,7 +19,7 @@ export const LINE_IDS = {
   },
   /** 舞浜リゾート */
   maihama_resort: {
-    disney_resort: "maihama-resort-disney-resort",
+    desney_resort_line: "maihama-resort-disney-resort",
   },
   /** 京成電鉄 */
   keisei: {
@@ -308,7 +308,7 @@ export const LINE_IDS = {
     /** 東武線 */
     toubu: "toubu-toubu",
     /** 伊勢崎線 */
-    isezaki: "toubu-isezaki",
+    isesaki: "toubu-isezaki",
     /** 東武生越線 */
     ogose: "toubu-ogose",
     /** 大師線 */
@@ -339,7 +339,6 @@ export const LINE_IDS = {
     /** つくばエクスプレス */
     tsukuba_express: "shutoken-shintoshi-tsukuba-express",
   },
-
   /** 小田急箱根 */
   odakyu_hakone: {
     kousaku: "hakone-tozan-cable-car",
