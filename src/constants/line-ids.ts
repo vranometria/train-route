@@ -327,6 +327,9 @@ export const LINE_IDS = {
   yagan: {
     aidu_kinugawa: "yagan-aidu-kinugawa",
   },
+  joumou_denki: {
+    joumou_denki: "joumou-denki-joumou-denki",
+  },
   saitama_shintoshi_koutsu: {
     // ニューシャトル
     new_shuttle: "saitama_shintoshi_new_shuttle",

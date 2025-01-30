@@ -299,7 +299,178 @@ export const LINES = {
     ],
   }),
   // #endregion 西武鉄道
-
+  // #region 京王電鉄
+  [LINE_IDS.keiou.keiou]: new TrainLine({
+    name: "京王線",
+    yomi: "けいおうせん",
+    companyId: COMPANIES.keiou.id,
+    stations: [
+      new StopStationDef(STATION_IDS.jr_east.shinjuku),
+      new StopStationDef(STATION_IDS.keiou.sasatsuka),
+      new StopStationDef(STATION_IDS.keiou.daitabashi),
+      new StopStationDef(STATION_IDS.keiou.meidaimae),
+      new StopStationDef(STATION_IDS.keiou.shimotakaido),
+      new StopStationDef(STATION_IDS.keiou.sakurajosui),
+      new StopStationDef(STATION_IDS.keiou.kami_kitazawa),
+      new StopStationDef(STATION_IDS.keiou.yawatayama),
+      new StopStationDef(STATION_IDS.keiou.roka_koen),
+      new StopStationDef(STATION_IDS.keiou.chitose_karasuyama),
+      new StopStationDef(STATION_IDS.keiou.senkawa),
+      new StopStationDef(STATION_IDS.keiou.tsutsujigaoka),
+      new StopStationDef(STATION_IDS.keiou.sibasaki),
+      new StopStationDef(STATION_IDS.keiou.kokuryo),
+      new StopStationDef(STATION_IDS.keiou.fuda),
+      new StopStationDef(STATION_IDS.keiou.chofu),
+      new StopStationDef(STATION_IDS.keiou.nishi_chofu),
+      new StopStationDef(STATION_IDS.keiou.tobitakyu),
+      new StopStationDef(STATION_IDS.keiou.musashinodai),
+      new StopStationDef(STATION_IDS.keiou.tamareien),
+      new StopStationDef(STATION_IDS.keiou.higashi_fuchu),
+      new StopStationDef(STATION_IDS.keiou.fuchu),
+      new StopStationDef(STATION_IDS.jr_east.bubaigawara),
+      new StopStationDef(STATION_IDS.keiou.nakakawahara),
+      new StopStationDef(STATION_IDS.keiou.seiseki_sakuragaoka),
+      new StopStationDef(STATION_IDS.keiou.mogusaen),
+      new StopStationDef(STATION_IDS.keiou.takahatafudo),
+      new StopStationDef(STATION_IDS.keiou.minamidaira),
+      new StopStationDef(STATION_IDS.keiou.hirayamajoshikoen),
+      new StopStationDef(STATION_IDS.keiou.naganuma),
+      new StopStationDef(STATION_IDS.keiou.kitano),
+      new StopStationDef(STATION_IDS.keiou.keio_hachioji),
+    ]
+  }),
+  [LINE_IDS.keiou.keioushinsen]: new TrainLine({
+    name: "京王新線",
+    yomi: "けいおうしんせん",
+    companyId: COMPANIES.keiou.id,
+    stations: [
+      new StopStationDef(STATION_IDS.tokyo_subway.shinsen_shinjuku),
+      new StopStationDef(STATION_IDS.keiou.hatsudai),
+      new StopStationDef(STATION_IDS.keiou.hatagaya),
+      new StopStationDef(STATION_IDS.keiou.sasatsuka),
+    ]
+  }),
+  [LINE_IDS.keiou.inokashira]: new TrainLine({
+    name: "京王井の頭線",
+    yomi: "けいおういのかしらせん",
+    companyId: COMPANIES.keiou.id,
+    stations: [
+      new StopStationDef(STATION_IDS.jr_east.shibuya),
+      new StopStationDef(STATION_IDS.keiou.shinsen),
+      new StopStationDef(STATION_IDS.keiou.komaba_todaimae),
+      new StopStationDef(STATION_IDS.keiou.ikenoue),
+      new StopStationDef(STATION_IDS.odakyu.shimokitazawa),
+      new StopStationDef(STATION_IDS.keiou.shindaita),
+      new StopStationDef(STATION_IDS.keiou.higashi_matsubara),
+      new StopStationDef(STATION_IDS.keiou.meidaimae),
+      new StopStationDef(STATION_IDS.keiou.eifukucho),
+      new StopStationDef(STATION_IDS.keiou.nishi_eifuku),
+      new StopStationDef(STATION_IDS.keiou.hamadayama),
+      new StopStationDef(STATION_IDS.keiou.takaido),
+      new StopStationDef(STATION_IDS.keiou.fujimigaoka),
+      new StopStationDef(STATION_IDS.keiou.kugayama),
+      new StopStationDef(STATION_IDS.keiou.mitakadai),
+      new StopStationDef(STATION_IDS.keiou.inokashirakoen),
+      new StopStationDef(STATION_IDS.jr_east.kichijoji),
+    ]
+  }),
+  [LINE_IDS.keiou.sagamihara]: new TrainLine({
+    name: "相模原線",
+    yomi: "さがみはらせん",
+    companyId: COMPANIES.keiou.id,
+    kinds: [new Rapid(), new Express(), new SectionExpress(), new SpecialExpress()],
+    stations: [
+      new StopStationDef(STATION_IDS.keiou.chofu, [
+        Rapid.KEY,
+        SectionExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keiou.keiou_tamagawa, [
+        Rapid.KEY,
+        SectionExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keiou.keiou_inadatutsumi, [
+        Rapid.KEY,
+        SectionExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keiou.keiou_yomiuri_land, [
+        Rapid.KEY,
+        SectionExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keiou.inagi, [
+        Rapid.KEY,
+        SectionExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keiou.wakabadai, [
+        Rapid.KEY,
+        SectionExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keiou.keiou_nagayama, [
+        Rapid.KEY,
+        Express.KEY,
+        SectionExpress.KEY,
+        SpecialExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keiou.keiou_tama_center, [
+        Rapid.KEY,
+        Express.KEY,
+        SectionExpress.KEY,
+        SpecialExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keiou.keiou_horinouchi, [
+        Rapid.KEY,
+        SectionExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keiou.minami_osawa, [
+        Rapid.KEY,
+        Express.KEY,
+        SectionExpress.KEY,
+        SpecialExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.keiou.tamasakai, [
+        Rapid.KEY,
+        SectionExpress.KEY,
+      ]),
+      new StopStationDef(STATION_IDS.jr_east.hashimoto, [
+        Rapid.KEY,
+        Express.KEY,
+        SectionExpress.KEY,
+        SpecialExpress.KEY,
+      ]),
+    ]
+  }),
+  [LINE_IDS.keiou.takao]: new TrainLine({
+    name: "高尾線",
+    yomi: "たかおせん",
+    companyId: COMPANIES.keiou.id,
+    stations: [
+    new StopStationDef(STATION_IDS.keiou.kitano),
+    new StopStationDef(STATION_IDS.keiou.keiou_katakura),
+    new StopStationDef(STATION_IDS.keiou.yamada),
+    new StopStationDef(STATION_IDS.keiou.mejirodai),
+    new StopStationDef(STATION_IDS.keiou.hazama),
+    new StopStationDef(STATION_IDS.jr_east.takao),
+    new StopStationDef(STATION_IDS.keiou.takao_yamaguchi),
+    ]
+  }),
+  [LINE_IDS.keiou.keibajo]: new TrainLine({
+    name: "京王競馬場線",
+    yomi: "けいおうけいばじょうせん",
+    companyId: COMPANIES.keiou.id,
+    stations: [
+      new StopStationDef(STATION_IDS.keiou.higashi_fuchu),
+      new StopStationDef(STATION_IDS.keiou.fuchu_keiba_seimon_mae),
+    ]
+  }),
+  [LINE_IDS.keiou.dobutsuen]: new TrainLine({
+    name: "京王動物園線",
+    yomi: "けいおうどうぶつえんせん",
+    companyId: COMPANIES.keiou.id,
+    stations: [
+      new StopStationDef(STATION_IDS.keiou.takahatafudo),
+      new StopStationDef(STATION_IDS.keiou.tama_doubutsu_kouen),
+    ]
+  }),
+  // #endregion 京王電鉄
   // #region 神奈川
   [LINE_IDS.enoshima.enoshima]: new TrainLine({
     name: "江ノ島電鉄線",
@@ -4387,173 +4558,21 @@ export const LINES = {
       new StopStationDef(STATION_IDS.toubu.kuzuu),
     ]
   }),
-
-  // #region 京王電鉄
-  [LINE_IDS.keiou.keiou]: new TrainLine({
-    name: "京王線",
-    yomi: "けいおうせん",
-    companyId: COMPANIES.keiou.id,
+  [LINE_IDS.toubu.kiryu]: new TrainLine({
+    name: "桐生線",
+    yomi: "きりゅうせん",
+    companyId: COMPANIES.toubu.id,
     stations: [
-      new StopStationDef(STATION_IDS.jr_east.shinjuku),
-      new StopStationDef(STATION_IDS.keiou.sasatsuka),
-      new StopStationDef(STATION_IDS.keiou.daitabashi),
-      new StopStationDef(STATION_IDS.keiou.meidaimae),
-      new StopStationDef(STATION_IDS.keiou.shimotakaido),
-      new StopStationDef(STATION_IDS.keiou.sakurajosui),
-      new StopStationDef(STATION_IDS.keiou.kami_kitazawa),
-      new StopStationDef(STATION_IDS.keiou.yawatayama),
-      new StopStationDef(STATION_IDS.keiou.roka_koen),
-      new StopStationDef(STATION_IDS.keiou.chitose_karasuyama),
-      new StopStationDef(STATION_IDS.keiou.senkawa),
-      new StopStationDef(STATION_IDS.keiou.tsutsujigaoka),
-      new StopStationDef(STATION_IDS.keiou.sibasaki),
-      new StopStationDef(STATION_IDS.keiou.kokuryo),
-      new StopStationDef(STATION_IDS.keiou.fuda),
-      new StopStationDef(STATION_IDS.keiou.chofu),
-      new StopStationDef(STATION_IDS.keiou.nishi_chofu),
-      new StopStationDef(STATION_IDS.keiou.tobitakyu),
-      new StopStationDef(STATION_IDS.keiou.musashinodai),
-      new StopStationDef(STATION_IDS.keiou.tamareien),
-      new StopStationDef(STATION_IDS.keiou.higashi_fuchu),
-      new StopStationDef(STATION_IDS.keiou.fuchu),
-      new StopStationDef(STATION_IDS.jr_east.bubaigawara),
-      new StopStationDef(STATION_IDS.keiou.nakakawahara),
-      new StopStationDef(STATION_IDS.keiou.seiseki_sakuragaoka),
-      new StopStationDef(STATION_IDS.keiou.mogusaen),
-      new StopStationDef(STATION_IDS.keiou.takahatafudo),
-      new StopStationDef(STATION_IDS.keiou.minamidaira),
-      new StopStationDef(STATION_IDS.keiou.hirayamajoshikoen),
-      new StopStationDef(STATION_IDS.keiou.naganuma),
-      new StopStationDef(STATION_IDS.keiou.kitano),
-      new StopStationDef(STATION_IDS.keiou.keio_hachioji),
+      new StopStationDef(STATION_IDS.toubu.ota),
+      new StopStationDef(STATION_IDS.toubu.sanmaibashi),
+      new StopStationDef(STATION_IDS.toubu.jiroenbashi),
+      new StopStationDef(STATION_IDS.toubu.yabuduka),
+      new StopStationDef(STATION_IDS.toubu.azami),
+      new StopStationDef(STATION_IDS.toubu.shin_kiryu),
+      new StopStationDef(STATION_IDS.toubu.aioi),
+      new StopStationDef(STATION_IDS.toubu.akagi),
     ]
   }),
-  [LINE_IDS.keiou.keioushinsen]: new TrainLine({
-    name: "京王新線",
-    yomi: "けいおうしんせん",
-    companyId: COMPANIES.keiou.id,
-    stations: [
-      new StopStationDef(STATION_IDS.tokyo_subway.shinsen_shinjuku),
-      new StopStationDef(STATION_IDS.keiou.hatsudai),
-      new StopStationDef(STATION_IDS.keiou.hatagaya),
-      new StopStationDef(STATION_IDS.keiou.sasatsuka),
-    ]
-  }),
-  [LINE_IDS.keiou.inokashira]: new Line(
-    "京王井の頭線",
-    COMPANIES.keiou.id,
-    [],
-    [
-      new StopStationDef(STATION_IDS.jr_east.shibuya),
-      new StopStationDef(STATION_IDS.keiou.shinsen),
-      new StopStationDef(STATION_IDS.keiou.komaba_todaimae),
-      new StopStationDef(STATION_IDS.keiou.ikenoue),
-      new StopStationDef(STATION_IDS.odakyu.shimokitazawa),
-      new StopStationDef(STATION_IDS.keiou.shindaita),
-      new StopStationDef(STATION_IDS.keiou.higashi_matsubara),
-      new StopStationDef(STATION_IDS.keiou.meidaimae),
-      new StopStationDef(STATION_IDS.keiou.eifukucho),
-      new StopStationDef(STATION_IDS.keiou.nishi_eifuku),
-      new StopStationDef(STATION_IDS.keiou.hamadayama),
-      new StopStationDef(STATION_IDS.keiou.takaido),
-      new StopStationDef(STATION_IDS.keiou.fujimigaoka),
-      new StopStationDef(STATION_IDS.keiou.kugayama),
-      new StopStationDef(STATION_IDS.keiou.mitakadai),
-      new StopStationDef(STATION_IDS.keiou.inokashirakoen),
-      new StopStationDef(STATION_IDS.jr_east.kichijoji),
-    ]
-  ),
-  [LINE_IDS.keiou.sagamihara]: new Line(
-    "相模原線",
-    COMPANIES.keiou.id,
-    [new Rapid(), new Express(), new SectionExpress(), new SpecialExpress()],
-    [
-      new StopStationDef(STATION_IDS.keiou.chofu, [
-        Rapid.KEY,
-        SectionExpress.KEY,
-      ]),
-      new StopStationDef(STATION_IDS.keiou.keiou_tamagawa, [
-        Rapid.KEY,
-        SectionExpress.KEY,
-      ]),
-      new StopStationDef(STATION_IDS.keiou.keiou_inadatutsumi, [
-        Rapid.KEY,
-        SectionExpress.KEY,
-      ]),
-      new StopStationDef(STATION_IDS.keiou.keiou_yomiuri_land, [
-        Rapid.KEY,
-        SectionExpress.KEY,
-      ]),
-      new StopStationDef(STATION_IDS.keiou.inagi, [
-        Rapid.KEY,
-        SectionExpress.KEY,
-      ]),
-      new StopStationDef(STATION_IDS.keiou.wakabadai, [
-        Rapid.KEY,
-        SectionExpress.KEY,
-      ]),
-      new StopStationDef(STATION_IDS.keiou.keiou_nagayama, [
-        Rapid.KEY,
-        Express.KEY,
-        SectionExpress.KEY,
-        SpecialExpress.KEY,
-      ]),
-      new StopStationDef(STATION_IDS.keiou.keiou_tama_center, [
-        Rapid.KEY,
-        Express.KEY,
-        SectionExpress.KEY,
-        SpecialExpress.KEY,
-      ]),
-      new StopStationDef(STATION_IDS.keiou.keiou_horinouchi, [
-        Rapid.KEY,
-        SectionExpress.KEY,
-      ]),
-      new StopStationDef(STATION_IDS.keiou.minami_osawa, [
-        Rapid.KEY,
-        Express.KEY,
-        SectionExpress.KEY,
-        SpecialExpress.KEY,
-      ]),
-      new StopStationDef(STATION_IDS.keiou.tamasakai, [
-        Rapid.KEY,
-        SectionExpress.KEY,
-      ]),
-      new StopStationDef(STATION_IDS.jr_east.hashimoto, [
-        Rapid.KEY,
-        Express.KEY,
-        SectionExpress.KEY,
-        SpecialExpress.KEY,
-      ]),
-    ]
-  ),
-  [LINE_IDS.keiou.takao]: new Line("高尾線", COMPANIES.keiou.id, LOCAL_ONLY, [
-    new StopStationDef(STATION_IDS.keiou.kitano),
-    new StopStationDef(STATION_IDS.keiou.keiou_katakura),
-    new StopStationDef(STATION_IDS.keiou.yamada),
-    new StopStationDef(STATION_IDS.keiou.mejirodai),
-    new StopStationDef(STATION_IDS.keiou.hazama),
-    new StopStationDef(STATION_IDS.jr_east.takao),
-    new StopStationDef(STATION_IDS.keiou.takao_yamaguchi),
-  ]),
-  [LINE_IDS.keiou.keibajo]: new Line(
-    "京王競馬場線",
-    COMPANIES.keiou.id,
-    LOCAL_ONLY,
-    [
-      new StopStationDef(STATION_IDS.keiou.higashi_fuchu),
-      new StopStationDef(STATION_IDS.keiou.fuchu_keiba_seimon_mae),
-    ]
-  ),
-  [LINE_IDS.keiou.dobutsuen]: new Line(
-    "京王動物園線",
-    COMPANIES.keiou.id,
-    LOCAL_ONLY,
-    [
-      new StopStationDef(STATION_IDS.keiou.takahatafudo),
-      new StopStationDef(STATION_IDS.keiou.tama_doubutsu_kouen),
-    ]
-  ),
-  // #endregion 京王電鉄
 
   // JR北海道
   // > 函館本線

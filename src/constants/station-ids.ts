@@ -1699,7 +1699,6 @@ export const STATION_IDS = {
     minami_utsunomiya: "toubu-minami-utsunomiya",
     toubu_utsunomiya: "toubu-toubu-utsunomiya",
     daishimae: "toubu-daishimae",
-    // sano線
     watase: "toubu-watase",
     tajima: "toubu-tajima",
     sanoshi: "toubu-sanoshi",
