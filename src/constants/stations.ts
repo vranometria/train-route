@@ -6374,6 +6374,15 @@ export const STATIONS = {
 [STATION_IDS.enoshima.yuigahama]: new Station({name: "由比ヶ浜", pron: "ゆいがはま", pr: P.KANAGAWA}),
 [STATION_IDS.enoshima.wadaduka]: new Station({name: "和田塚", pron: "わだづか", pr: P.KANAGAWA}),
   //   #endregion 江ノ島電鉄
+  //   #region 湘南モノレール
+  [STATION_IDS.syounan_monorail.fujimichou]: new Station({name: "富士見町", pron: "ふじみちょう", pr: P.KANAGAWA}),
+  [STATION_IDS.syounan_monorail.syounan_machiya]: new Station({name: "湘南町屋", pron: "しょうなんまちや", pr: P.KANAGAWA}),
+  [STATION_IDS.syounan_monorail.syounan_fukasawa]: new Station({name: "湘南深沢", pron: "しょうなんふかさわ", pr: P.KANAGAWA}),
+  [STATION_IDS.syounan_monorail.nishi_kamakura]: new Station({name: "西鎌倉", pron: "にしかまくら", pr: P.KANAGAWA}),
+  [STATION_IDS.syounan_monorail.kataseyama]: new Station({name: "片瀬山", pron: "かたせやま", pr: P.KANAGAWA}),
+  [STATION_IDS.syounan_monorail.mejiro_yamashita]: new Station({name: "目白山下", pron: "めじろやました", pr: P.KANAGAWA}),
+  [STATION_IDS.syounan_monorail.syounan_enoshima]: new Station({name: "湘南江の島", pron: "しょうなんえのしま", pr: P.KANAGAWA}),
+  // #endregion 湘南モノレール
   //  #endregion 神奈川
   //  #region 埼玉
   //   #region 埼玉新都市交通

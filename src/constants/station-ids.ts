@@ -1853,6 +1853,15 @@ export const STATION_IDS = {
     yuigahama: "enoshima-yuigahama",
     wadaduka: "enoshima-wadaduka",
   },
+  syounan_monorail: { /** 湘南モノレール */
+    fujimichou: "syounan-monorail-fujimichou",
+    syounan_machiya: "syounan-monorail-syounan-machiya",
+    syounan_fukasawa: "syounan-monorail-syounan-fukasawa",
+    nishi_kamakura: "syounan-monorail-nishi-kamakura",
+    kataseyama: "syounan-monorail-kataseyama",
+    mejiro_yamashita: "syounan-monorail-mejiro-yamashita",
+    syounan_enoshima: "syounan-monorail-syounan-enoshima",
+  },
   // #endregion 神奈川
 
   // #region 千葉

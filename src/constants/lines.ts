@@ -17,7 +17,6 @@ const LOCAL_ONLY: KindDef[] = [];
 
 /** 路線定義 */
 export const LINES = {
-
   // #region 関東
 
   // #region 西部電鉄
@@ -53,7 +52,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.bushi),
       new StopStationDef(STATION_IDS.seibu.motokaji),
       new StopStationDef(STATION_IDS.seibu.hanno),
-    ]
+    ],
   }),
   [LINE_IDS.seibu.shinjuku]: new TrainLine({
     name: "新宿線",
@@ -176,7 +175,7 @@ export const LINES = {
         Rapid.KEY,
         "extra2",
       ]),
-    ]
+    ],
   }),
   [LINE_IDS.seibu.chichibu]: new TrainLine({
     name: "秩父線",
@@ -195,7 +194,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.ashigakubo),
       new StopStationDef(STATION_IDS.seibu.yokose),
       new StopStationDef(STATION_IDS.seibu.seibu_chichibu),
-    ]
+    ],
   }),
   [LINE_IDS.seibu.yurakucho]: new TrainLine({
     name: "有楽町線",
@@ -205,7 +204,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.nerima),
       new StopStationDef(STATION_IDS.seibu.shin_sakuradai),
       new StopStationDef(STATION_IDS.tokyo_metro.kotake_mukaihara),
-    ]
+    ],
   }),
   [LINE_IDS.seibu.toshima]: new TrainLine({
     name: "豊島線",
@@ -214,7 +213,7 @@ export const LINES = {
     stations: [
       new StopStationDef(STATION_IDS.seibu.nerima),
       new StopStationDef(STATION_IDS.seibu.toshimaen),
-    ]
+    ],
   }),
   [LINE_IDS.seibu.tamako]: new TrainLine({
     name: "多摩湖線",
@@ -228,7 +227,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.yasaka),
       new StopStationDef(STATION_IDS.seibu.musashi_yamato),
       new StopStationDef(STATION_IDS.seibu.tamako),
-    ]
+    ],
   }),
   [LINE_IDS.seibu.kokubunji]: new TrainLine({
     name: "国分寺線",
@@ -240,7 +239,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.takanodai),
       new StopStationDef(STATION_IDS.seibu.ogawa),
       new StopStationDef(STATION_IDS.seibu.higashi_murayama),
-    ]
+    ],
   }),
   [LINE_IDS.seibu.haijima]: new TrainLine({
     name: "拝島線",
@@ -255,7 +254,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.musashi_sunagawa),
       new StopStationDef(STATION_IDS.seibu.seibu_tachikawa),
       new StopStationDef(STATION_IDS.jr_east.haijima),
-    ]
+    ],
   }),
   [LINE_IDS.seibu.sayama]: new TrainLine({
     name: "狭山線",
@@ -265,7 +264,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.nishi_tokorozawa),
       new StopStationDef(STATION_IDS.seibu.shimo_yamaguchi),
       new StopStationDef(STATION_IDS.seibu.seibukyujoumae),
-    ]
+    ],
   }),
   [LINE_IDS.seibu.yamaguchi]: new TrainLine({
     name: "山口線",
@@ -275,7 +274,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.tamako),
       new StopStationDef(STATION_IDS.seibu.seibuen_yuenchi),
       new StopStationDef(STATION_IDS.seibu.seibukyujoumae),
-    ]
+    ],
   }),
   [LINE_IDS.seibu.seibuen]: new TrainLine({
     name: "西武園線",
@@ -284,7 +283,7 @@ export const LINES = {
     stations: [
       new StopStationDef(STATION_IDS.seibu.higashi_murayama),
       new StopStationDef(STATION_IDS.seibu.seibuen),
-    ]
+    ],
   }),
   [LINE_IDS.seibu.tamagawa]: new TrainLine({
     name: "多摩川線",
@@ -297,7 +296,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.shiraitodai),
       new StopStationDef(STATION_IDS.seibu.kyouteijoumae),
       new StopStationDef(STATION_IDS.seibu.koremasa),
-    ]
+    ],
   }),
   // #endregion 西武鉄道
 
@@ -322,6 +321,21 @@ export const LINES = {
       new StopStationDef(STATION_IDS.enoshima.yuigahama),
       new StopStationDef(STATION_IDS.enoshima.wadaduka),
       new StopStationDef(STATION_IDS.jr_east.kamakura),
+    ],
+  }),
+  [LINE_IDS.shonam_monorail.shonan_monorail]: new TrainLine({
+    name: "湘南モノレール",
+    yomi: "しょうなんものれーる",
+    companyId: COMPANIES.syounan_monorail.id,
+    stations: [
+      new StopStationDef(STATION_IDS.jr_east.ofuna),
+      new StopStationDef(STATION_IDS.syounan_monorail.fujimichou),
+      new StopStationDef(STATION_IDS.syounan_monorail.syounan_machiya),
+      new StopStationDef(STATION_IDS.syounan_monorail.syounan_fukasawa),
+      new StopStationDef(STATION_IDS.syounan_monorail.nishi_kamakura),
+      new StopStationDef(STATION_IDS.syounan_monorail.kataseyama),
+      new StopStationDef(STATION_IDS.syounan_monorail.mejiro_yamashita),
+      new StopStationDef(STATION_IDS.syounan_monorail.syounan_enoshima),
     ],
   }),
   // #region 京浜急行電鉄
@@ -438,7 +452,10 @@ export const LINES = {
     name: "久里浜線",
     yomi: "くりはません",
     companyId: COMPANIES.keikyu.id,
-    kinds: [new KindDef("快特", "rapid"), new KindDef("特急", "special-express")],
+    kinds: [
+      new KindDef("快特", "rapid"),
+      new KindDef("特急", "special-express"),
+    ],
     stations: [
       new StopStationDef(STATION_IDS.keikyu.horinouchi, [
         "rapid",
@@ -482,7 +499,10 @@ export const LINES = {
     name: "逗子線",
     yomi: "ずしせん",
     companyId: COMPANIES.keikyu.id,
-    kinds: [new KindDef("急行", "express"), new KindDef("特急", "special-express")],
+    kinds: [
+      new KindDef("急行", "express"),
+      new KindDef("特急", "special-express"),
+    ],
     stations: [
       new StopStationDef(STATION_IDS.keikyu.kanazawahakkei, [
         "express",
@@ -514,7 +534,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.keikyu.higashimonzen),
       new StopStationDef(STATION_IDS.keikyu.daishibashi),
       new StopStationDef(STATION_IDS.keikyu.kojimashinden),
-    ]
+    ],
   }),
   [LINE_IDS.keikyu.haneda_kuko]: new TrainLine({
     name: "羽田空港線",
@@ -561,7 +581,7 @@ export const LINES = {
         "special-express",
         "semi-express",
       ]),
-    ]
+    ],
   }),
   [LINE_IDS.keikyu.sea_side]: new TrainLine({
     name: "シーサイドライン",
@@ -582,14 +602,69 @@ export const LINES = {
       new StopStationDef(STATION_IDS.keikyu.uminokouen_minamiguchi),
       new StopStationDef(STATION_IDS.keikyu.nojima_kouen),
       new StopStationDef(STATION_IDS.keikyu.kanazawahakkei),
-    ]
+    ],
   }),
   // #endregion 京浜急行電鉄
+  // #region 横浜市営地下鉄
+  [LINE_IDS.yokohama_subway.blue_line]: new TrainLine({
+    name: "ブルーライン",
+    yomi: "ぶるーらいん",
+    companyId: COMPANIES.yokohama_subway.id,
+    stations: [
+      new StopStationDef(STATION_IDS.toukyu.azamino),
+      new StopStationDef(STATION_IDS.yokohama_subway.nakagawa),
+      new StopStationDef(STATION_IDS.yokohama_subway.center_kita),
+      new StopStationDef(STATION_IDS.yokohama_subway.center_minami),
+      new StopStationDef(STATION_IDS.yokohama_subway.nakamachidai),
+      new StopStationDef(STATION_IDS.yokohama_subway.nippa),
+      new StopStationDef(STATION_IDS.yokohama_subway.kita_shin_yokohama),
+      new StopStationDef(STATION_IDS.jr_east.shin_yokohama),
+      new StopStationDef(STATION_IDS.yokohama_subway.kishine_kouen),
+      new StopStationDef(STATION_IDS.yokohama_subway.katakurachou),
+      new StopStationDef(STATION_IDS.yokohama_subway.mitsuzawa_shimocho),
+      new StopStationDef(STATION_IDS.yokohama_subway.mitsuzawa_kamicho),
+      new StopStationDef(STATION_IDS.yokohama_subway.takashimachou),
+      new StopStationDef(STATION_IDS.jr_east.sakuragicho),
+      new StopStationDef(STATION_IDS.jr_east.kannai),
+      new StopStationDef(STATION_IDS.yokohama_subway.isezakichoujamachi),
+      new StopStationDef(STATION_IDS.yokohama_subway.bantoubashi),
+      new StopStationDef(STATION_IDS.yokohama_subway.yoshinochou),
+      new StopStationDef(STATION_IDS.yokohama_subway.maita),
+      new StopStationDef(STATION_IDS.yokohama_subway.gumyouji),
+      new StopStationDef(STATION_IDS.keikyu.kamiooka),
+      new StopStationDef(STATION_IDS.yokohama_subway.kounan_chuou),
+      new StopStationDef(STATION_IDS.yokohama_subway.kaminagaya),
+      new StopStationDef(STATION_IDS.yokohama_subway.shimonagaya),
+      new StopStationDef(STATION_IDS.yokohama_subway.maioka),
+      new StopStationDef(STATION_IDS.jr_east.totsuka),
+      new StopStationDef(STATION_IDS.yokohama_subway.odoriba),
+      new StopStationDef(STATION_IDS.yokohama_subway.nakada),
+      new StopStationDef(STATION_IDS.yokohama_subway.tateba),
+      new StopStationDef(STATION_IDS.yokohama_subway.shimo_iida),
+      new StopStationDef(STATION_IDS.odakyu.shonandai),
+    ],
+  }),
+  [LINE_IDS.yokohama_subway.green_line]: new TrainLine({
+    name: "グリーンライン",
+    yomi: "ぐりーんらいん",
+    companyId: COMPANIES.yokohama_subway.id,
+    stations: [
+      new StopStationDef(STATION_IDS.yokohama_subway.hiyoshi),
+      new StopStationDef(STATION_IDS.yokohama_subway.hiyoshi_honchou),
+      new StopStationDef(STATION_IDS.yokohama_subway.takada),
+      new StopStationDef(STATION_IDS.yokohama_subway.higashi_yamada),
+      new StopStationDef(STATION_IDS.yokohama_subway.kita_yamada),
+      new StopStationDef(STATION_IDS.yokohama_subway.center_kita),
+      new StopStationDef(STATION_IDS.yokohama_subway.center_minami),
+      new StopStationDef(STATION_IDS.yokohama_subway.tuduki_fureainooka),
+      new StopStationDef(STATION_IDS.yokohama_subway.kawawacho),
+      new StopStationDef(STATION_IDS.jr_east.nakayama),
+    ],
+  }),
+  // #endregion
   // #endregion 神奈川
 
   // #endregion 関東
-
-
 
   // #region 都営地下鉄(東京都交通局)
   [LINE_IDS.tokyo_subway.asakusa]: new Line(
@@ -1175,65 +1250,6 @@ export const LINES = {
       new StopStationDef(STATION_IDS.yurikamome.shin_toyosu),
       new StopStationDef(STATION_IDS.tokyo_metro.toyosu),
     ]
-  ),
-  // #endregion
-  // #region 横浜市営地下鉄
-  [LINE_IDS.yokohama_subway.blue_line]: new Line(
-    "ブルーライン",
-    COMPANIES.yokohama_subway.id,
-    LOCAL_ONLY,
-    [
-      new StopStationDef(STATION_IDS.toukyu.azamino),
-      new StopStationDef(STATION_IDS.yokohama_subway.nakagawa),
-      new StopStationDef(STATION_IDS.yokohama_subway.center_kita),
-      new StopStationDef(STATION_IDS.yokohama_subway.center_minami),
-      new StopStationDef(STATION_IDS.yokohama_subway.nakamachidai),
-      new StopStationDef(STATION_IDS.yokohama_subway.nippa),
-      new StopStationDef(STATION_IDS.yokohama_subway.kita_shin_yokohama),
-      new StopStationDef(STATION_IDS.jr_east.shin_yokohama),
-      new StopStationDef(STATION_IDS.yokohama_subway.kishine_kouen),
-      new StopStationDef(STATION_IDS.yokohama_subway.katakurachou),
-      new StopStationDef(STATION_IDS.yokohama_subway.mitsuzawa_shimocho),
-      new StopStationDef(STATION_IDS.yokohama_subway.mitsuzawa_kamicho),
-      new StopStationDef(STATION_IDS.yokohama_subway.takashimachou),
-      new StopStationDef(STATION_IDS.jr_east.sakuragicho),
-      new StopStationDef(STATION_IDS.jr_east.kannai),
-      new StopStationDef(STATION_IDS.yokohama_subway.isezakichoujamachi),
-      new StopStationDef(STATION_IDS.yokohama_subway.bantoubashi),
-      new StopStationDef(STATION_IDS.yokohama_subway.yoshinochou),
-      new StopStationDef(STATION_IDS.yokohama_subway.maita),
-      new StopStationDef(STATION_IDS.yokohama_subway.gumyouji),
-      new StopStationDef(STATION_IDS.keikyu.kamiooka),
-      new StopStationDef(STATION_IDS.yokohama_subway.kounan_chuou),
-      new StopStationDef(STATION_IDS.yokohama_subway.kaminagaya),
-      new StopStationDef(STATION_IDS.yokohama_subway.shimonagaya),
-      new StopStationDef(STATION_IDS.yokohama_subway.maioka),
-      new StopStationDef(STATION_IDS.jr_east.totsuka),
-      new StopStationDef(STATION_IDS.yokohama_subway.odoriba),
-      new StopStationDef(STATION_IDS.yokohama_subway.nakada),
-      new StopStationDef(STATION_IDS.yokohama_subway.tateba),
-      new StopStationDef(STATION_IDS.yokohama_subway.shimo_iida),
-      new StopStationDef(STATION_IDS.odakyu.shonandai),
-    ],
-    P.KANAGAWA
-  ),
-  [LINE_IDS.yokohama_subway.green_line]: new Line(
-    "グリーンライン",
-    COMPANIES.yokohama_subway.id,
-    LOCAL_ONLY,
-    [
-      new StopStationDef(STATION_IDS.yokohama_subway.hiyoshi),
-      new StopStationDef(STATION_IDS.yokohama_subway.hiyoshi_honchou),
-      new StopStationDef(STATION_IDS.yokohama_subway.takada),
-      new StopStationDef(STATION_IDS.yokohama_subway.higashi_yamada),
-      new StopStationDef(STATION_IDS.yokohama_subway.kita_yamada),
-      new StopStationDef(STATION_IDS.yokohama_subway.center_kita),
-      new StopStationDef(STATION_IDS.yokohama_subway.center_minami),
-      new StopStationDef(STATION_IDS.yokohama_subway.tuduki_fureainooka),
-      new StopStationDef(STATION_IDS.yokohama_subway.kawawacho),
-      new StopStationDef(STATION_IDS.jr_east.nakayama),
-    ],
-    P.KANAGAWA
   ),
   // #endregion
   // #region 横浜高速鉄道
@@ -3087,7 +3103,8 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.yakawa),
       new StopStationDef(STATION_IDS.jr_east.nishikunitachi),
       new StopStationDef(STATION_IDS.jr_east.tachikawa),
-  ]}),
+    ],
+  }),
   [LINE_IDS.jr_east.nanbu_shisen]: new TrainLine({
     name: "南武線(支線)",
     yomi: "なんぶせん(しせん)",
@@ -3098,7 +3115,8 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.kawasaki_shinmachi),
       new StopStationDef(STATION_IDS.keikyu.hacchonawate),
       new StopStationDef(STATION_IDS.jr_east.shitte),
-  ]}),
+    ],
+  }),
   [LINE_IDS.jr_east.tsurumi]: new TrainLine({
     name: "鶴見線",
     yomi: "つるみせん",
@@ -3117,7 +3135,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.shin_shibaura),
       new StopStationDef(STATION_IDS.jr_east.umi_shibaura),
       new StopStationDef(STATION_IDS.jr_east.okawa),
-    ]
+    ],
   }),
   [LINE_IDS.jr_east.itsukaichi]: new TrainLine({
     name: "五日市線",
@@ -3131,7 +3149,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.musashi_hikida),
       new StopStationDef(STATION_IDS.jr_east.musashi_masuko),
       new StopStationDef(STATION_IDS.jr_east.musashi_itsukaichi),
-    ]
+    ],
   }),
 
   // #region 千葉
@@ -3806,13 +3824,6 @@ export const LINES = {
   ),
   // #endregion
 
-  [LINE_IDS.shonam_monorail.shonan_monorail]: new Line(
-    "湘南モノレール",
-    "湘南モノレール",
-    [],
-    []
-  ),
-
   // 東武鉄道
   // ＞東武東上線
   [LINE_IDS.toubu.toujou]: new Line(
@@ -4420,19 +4431,15 @@ export const LINES = {
       ]),
     ]
   ),
-  [LINE_IDS.keiou.takao]: new Line(
-    "高尾線",
-    COMPANIES.keiou.id,
-    LOCAL_ONLY,
-    [
-      new StopStationDef(STATION_IDS.keiou.kitano),
-      new StopStationDef(STATION_IDS.keiou.keiou_katakura),
-      new StopStationDef(STATION_IDS.keiou.yamada),
-      new StopStationDef(STATION_IDS.keiou.mejirodai),
-      new StopStationDef(STATION_IDS.keiou.hazama),
-      new StopStationDef(STATION_IDS.jr_east.takao),
-      new StopStationDef(STATION_IDS.keiou.takao_yamaguchi),
-    ]),
+  [LINE_IDS.keiou.takao]: new Line("高尾線", COMPANIES.keiou.id, LOCAL_ONLY, [
+    new StopStationDef(STATION_IDS.keiou.kitano),
+    new StopStationDef(STATION_IDS.keiou.keiou_katakura),
+    new StopStationDef(STATION_IDS.keiou.yamada),
+    new StopStationDef(STATION_IDS.keiou.mejirodai),
+    new StopStationDef(STATION_IDS.keiou.hazama),
+    new StopStationDef(STATION_IDS.jr_east.takao),
+    new StopStationDef(STATION_IDS.keiou.takao_yamaguchi),
+  ]),
   [LINE_IDS.keiou.keibajo]: new Line(
     "京王競馬場線",
     COMPANIES.keiou.id,
@@ -4440,7 +4447,8 @@ export const LINES = {
     [
       new StopStationDef(STATION_IDS.keiou.higashi_fuchu),
       new StopStationDef(STATION_IDS.keiou.fuchu_keiba_seimon_mae),
-    ]),
+    ]
+  ),
   [LINE_IDS.keiou.dobutsuen]: new Line(
     "京王動物園線",
     COMPANIES.keiou.id,
@@ -4448,7 +4456,8 @@ export const LINES = {
     [
       new StopStationDef(STATION_IDS.keiou.takahatafudo),
       new StopStationDef(STATION_IDS.keiou.tama_doubutsu_kouen),
-    ]),
+    ]
+  ),
   // #endregion 京王電鉄
 
   // JR北海道

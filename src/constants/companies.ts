@@ -90,6 +90,12 @@ export const COMPANIES: { [key: string]: Company } = {
     yomi: "えのしまでんてつ",
     keywords: ["enoshima", "enoden"]
   },
+  syounan_monorail: {
+    id: "syounan_monorail",
+    name: '湘南モノレール',
+    yomi: "しょうなんものれーる",
+    keywords: ["syounan monorail", "湘南モノレール"]
+  },
   sotetsu: {
     id: "sotetsu",
     name: '相模鉄道',
