@@ -1,3 +1,4 @@
+import type { Branch } from "./branch";
 import type { KindDef } from "./kind-def";
 import { StopStationDef } from "./stop-station-def";
 
@@ -8,11 +9,11 @@ export class Line {
   name: string
   companyId: string
   kinds: KindDef[]
-  stations: StopStationDef[]
+  stations: (StopStationDef|Branch)[]
   /** 路線が通る権 */
   prefectures: string[]
 
-  constructor(name: string, companyId: string, kinds: KindDef[], stations: StopStationDef[], prefectures?: string|string[]) {
+  constructor(name: string, companyId: string, kinds: KindDef[], stations: (StopStationDef|Branch)[], prefectures?: string|string[]) {
     this.name = name;
     this.companyId = companyId;
     this.kinds = kinds;
@@ -38,7 +39,7 @@ interface TrainLineConstructor {
   name: string
   companyId: string
   kinds?: KindDef[]
-  stations: StopStationDef[]
+  stations: (StopStationDef|Branch)[]
   yomi: string
 }
 

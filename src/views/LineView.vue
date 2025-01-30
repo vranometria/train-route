@@ -1,14 +1,20 @@
 <script setup lang="ts">
-import Exchange from '@/components/Exchange.vue';
+import BranchRow from '@/components/BranchRow.vue';
 import RightPane from '@/components/RightPane.vue';
-import { useLangStore } from '@/stores/lang';
-  import { LineViewModel } from '@/types/line-view-model';
-  import { watch, ref, onUpdated } from 'vue';
-  import { useRoute } from 'vue-router';
+import StopStationRow from '@/components/StopStationRow.vue';
+import type { BranchModel } from '@/types/branch-model';
+import { LineViewModel } from '@/types/line-view-model';
+import { StationIndex } from '@/types/station-index';
+import { StationModel } from '@/types/station-model';
+import { watch, ref, onUpdated } from 'vue';
+import { useRoute } from 'vue-router';
   const route = useRoute();
   const lineId = ref(route.params.id as string);
   const model = ref(new LineViewModel(lineId.value as string));
   const from = ref(null as string|null);
+  const firstStation = ref(model.value.getFirstStation().name);
+  const lastStation = ref(model.value.getLastStation().name);
+  const colspan = model.value.kinds.length + 3;
 
   watch( ()=>route.params.id as string, (newId:string) => {
     lineId.value = newId;
@@ -26,12 +32,17 @@ import { useLangStore } from '@/stores/lang';
       }
     }
   });
-  const pronunce = (yomi: string) => {
-    const lang = useLangStore().lang;
-    const uttr = new SpeechSynthesisUtterance(yomi);
-    uttr.lang = lang;
-    window.speechSynthesis.speak(uttr);
-  };
+
+  const isTrue = (stamodel: StationModel|BranchModel):boolean => {
+    return (stamodel instanceof StationModel);
+  }
+
+  const branchSelected = (args:StationIndex[]) => {
+    const t = model.value.stations.filter(x => isTrue(x)).map( (x,i) => new StationIndex((x as StationModel).name, i))
+    const s =  [...t, ...args].sort( (a, b) => a.index - b.index);
+    firstStation.value = s[0].name;
+    lastStation.value = s[s.length - 1].name;
+  }
 </script>
 
 <template>
@@ -57,25 +68,17 @@ import { useLangStore } from '@/stores/lang';
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(staModel, index) in model.stations" :key="lineId + staModel.name" :id="staModel.id" :no="index">
-            <td class="station-name">{{ staModel.name }}</td>
-            <td class="pronunciation">
-              <button :onclick="() => {pronunce(staModel.pronunciation);}">
-                <img src="@/assets/speaker.png" />
-              </button>
-            </td>
-            <td>
-              <Exchange :source-station-id="staModel.id" :exchange-lines="staModel.getExchangeLines(lineId)" ></Exchange>
-            </td>
-            <td v-for="kind in model.kinds" :key="kind.prop" :class="staModel.kinds[kind.prop]" class="kind">
-            </td>
-          </tr>
+          <tr ></tr>
+          <template v-for="(staModel, index) in model.stations" :key="index">
+            <StopStationRow :no="index" :staModel="staModel" :lineId="lineId" :kinds="model.kinds" v-if="isTrue(staModel)"/>
+            <BranchRow :branch="(staModel as BranchModel)" :lineId="lineId" :startNo="index" :colspan="colspan" @branch-selected="branchSelected" v-else/>
+          </template>
         </tbody>
       </table>
       <component :is="model.underlay" />
     </div>
     <div class="right-pane">
-      <RightPane :model="model" :from="from"/>
+      <RightPane :model="model" :from="from" :first-station="firstStation" :last-station="lastStation"/>
     </div>
   </div>
 </template>
@@ -95,84 +98,6 @@ h1 {
   z-index: 1;
 }
 
-thead {
-  top: 96px;
-  background-color: #181818;
-  z-index: 1;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-td, th {
-  border-bottom: 1px solid white;
-  padding-top: 15px;
-}
-
-.kind{
-  border: none;
-}
-
-th.kind .text {
-  writing-mode: vertical-rl;
-  font-weight: bold;
-  color: black;
-}
-
-.exchange-line {
-  display: block;
-}
-
-.rapid, .acty {
-  background-color: aquamarine;
-}
-
-.express {
-  background-color: red;
-}
-
-.section-express {
-  background-color: lightcoral;
-}
-
-.special-express {
-  background-color: pink;
-}
-
-th.express .text {
-  color: white;
-}
-
-.semi-express {
-  background-color: orange;
-}
-
-.section-semi-express {
-  background-color: lightcyan;
-}
-
-.extra1 {
-  background-color: #E95295;
-}
-
-.extra2 {
-  background-color: #A22041;
-}
-
-.commuter {
-  background-color: yellow;
-}
-
-.distination {
-  color: red;
-}
-
-.from {
-  color: yellow;
-}
-
 .right-pane {
   margin-left: 1rem;
   padding: 1rem;
@@ -188,16 +113,6 @@ th.express .text {
 
 .tjd {
   background-color: lightcoral;
-}
-
-.pronunciation button {
-  background-color: transparent;
-  border: none;
-}
-
-.pronunciation img {
-  width: 8px;
-  height: 10px;
 }
 
 .on-the-way {
@@ -251,4 +166,86 @@ th.express .text {
   .line-table {
     min-width: 300px;
   }
+</style>
+
+<style>
+.express {
+  background-color: red;
+}
+
+.section-express {
+  background-color: lightcoral;
+}
+
+.special-express {
+  background-color: pink;
+}
+
+th.express .text {
+  color: white;
+}
+
+.semi-express {
+  background-color: orange;
+}
+
+
+thead {
+  top: 96px;
+  background-color: #181818;
+  z-index: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border-bottom: 1px solid white;
+  padding-top: 15px;
+}
+
+.kind{
+  border: none;
+}
+
+th.kind .text {
+  writing-mode: vertical-rl;
+  font-weight: bold;
+  color: black;
+}
+
+.exchange-line {
+  display: block;
+}
+
+.rapid, .acty {
+  background-color: aquamarine;
+}
+
+.section-semi-express {
+  background-color: lightcyan;
+}
+
+.extra1 {
+  background-color: #E95295;
+}
+
+.extra2 {
+  background-color: #A22041;
+}
+
+.commuter {
+  background-color: yellow;
+}
+
+.distination {
+  color: red;
+}
+
+.from {
+  color: yellow;
+}
+
 </style>

@@ -6,6 +6,8 @@ import { onUpdated, ref } from 'vue';
 const props = defineProps<{
   model: LineViewModel,
   from: string|null,
+  firstStation: string,
+  lastStation: string,
 }>();
 
 const distination = ref(null as HTMLElement|null);
@@ -40,7 +42,6 @@ const changeDistination = (event: Event) => {
       fromIndex = distIndex;
       distIndex = tmp;
     }
-    console.log([fromIndex, distIndex]);
 
     const stations = document.getElementsByClassName("station-name");
     for(let i = fromIndex + 1; i < distIndex; i++){
@@ -65,7 +66,7 @@ onUpdated(() => {
 <template>
 
 <div class="top">
-  {{ model.getFirstStation().name }} 方面
+  {{ firstStation }} 方面
 </div>
 
 <div class="dist">
@@ -83,7 +84,7 @@ onUpdated(() => {
 </div>
 
 <div class="last">
-  {{ model.getLastStation().name }} 方面
+  {{ lastStation }} 方面
 </div>
 
 </template>

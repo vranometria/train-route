@@ -1723,7 +1723,7 @@ export const STATION_IDS = {
     higashi_koizumi: "toubu-higashi-koizumi",
     koizumimachi: "toubu-koizumimachi",
     nishi_koizumi: "toubu-nishi-koizumi",
-    ryumain: "toubu-ryumain",
+    ryumai: "toubu-ryumai",
   },
   toukyo_rinkai_kousoku: { /** 臨海高速鉄道 */
     shinonome: "rinkai-shinonome",

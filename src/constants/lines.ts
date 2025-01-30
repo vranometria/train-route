@@ -12,6 +12,7 @@ import { SectionExpress } from "@/types/section-express";
 import { SectionSemiExpress } from "@/types/section--semi-express";
 import { COMPANIES } from "./companies";
 import { SpecialExpress } from "@/types/special-express";
+import { Branch } from "@/types/branch";
 
 const LOCAL_ONLY: KindDef[] = [];
 
@@ -4571,6 +4572,27 @@ export const LINES = {
       new StopStationDef(STATION_IDS.toubu.shin_kiryu),
       new StopStationDef(STATION_IDS.toubu.aioi),
       new StopStationDef(STATION_IDS.toubu.akagi),
+    ]
+  }),
+  [LINE_IDS.toubu.koizumi]: new TrainLine({
+    name: "小泉線",
+    yomi: "こいずみせん",
+    companyId: COMPANIES.toubu.id,
+    stations: [
+      new StopStationDef(STATION_IDS.toubu.tatebayashi),
+      new StopStationDef(STATION_IDS.toubu.narushima),
+      new StopStationDef(STATION_IDS.toubu.hon_nakano),
+      new StopStationDef(STATION_IDS.toubu.shinoduka),
+      new StopStationDef(STATION_IDS.toubu.higashi_koizumi),
+      new Branch([
+        [
+          new StopStationDef(STATION_IDS.toubu.koizumimachi),
+          new StopStationDef(STATION_IDS.toubu.nishi_koizumi),
+        ],[
+          new StopStationDef(STATION_IDS.toubu.ryumai),
+          new StopStationDef(STATION_IDS.toubu.ota),
+        ]
+      ])
     ]
   }),
 
