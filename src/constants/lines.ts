@@ -1,4 +1,4 @@
-import { Line } from "@/types/line";
+import { Line, TrainLine } from "@/types/line";
 import { LINE_IDS } from "./line-ids";
 import { STATION_IDS } from "./station-ids";
 import { KindDef } from "@/types/kind-def";
@@ -2744,11 +2744,12 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.soga),
     ]
   ),
-  [LINE_IDS.jr_east.nanbu]: new Line(
-    "南武線",
-    COMPANIES.jr_east.id,
-    LOCAL_ONLY,
-    [
+  [LINE_IDS.jr_east.nanbu]: new TrainLine({
+    name: "南武線",
+    yomi: "なんぶせん",
+    companyId: COMPANIES.jr_east.id,
+    kinds: LOCAL_ONLY,
+    stations: [
       new StopStationDef(STATION_IDS.jr_east.kawasaki),
       new StopStationDef(STATION_IDS.jr_east.shitte),
       new StopStationDef(STATION_IDS.jr_east.yakou),
@@ -2775,25 +2776,23 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.yakawa),
       new StopStationDef(STATION_IDS.jr_east.nishikunitachi),
       new StopStationDef(STATION_IDS.jr_east.tachikawa),
-    ]
-  ),
-  [LINE_IDS.jr_east.nanbu_shisen]: new Line(
-    "南武線(支線)",
-    COMPANIES.jr_east.id,
-    LOCAL_ONLY,
-    [
+  ]}),
+  [LINE_IDS.jr_east.nanbu_shisen]: new TrainLine({
+    name: "南武線(支線)",
+    yomi: "なんぶせん(しせん)",
+    companyId: COMPANIES.jr_east.id,
+    stations: [
       new StopStationDef(STATION_IDS.jr_east.hamakawasaki),
       new StopStationDef(STATION_IDS.jr_east.odasakae),
       new StopStationDef(STATION_IDS.jr_east.kawasaki_shinmachi),
       new StopStationDef(STATION_IDS.keikyu.hacchonawate),
       new StopStationDef(STATION_IDS.jr_east.shitte),
-    ]
-  ),
-  [LINE_IDS.jr_east.tsurumi]: new Line(
-    "鶴見線",
-    COMPANIES.jr_east.id,
-    LOCAL_ONLY,
-    [
+  ]}),
+  [LINE_IDS.jr_east.tsurumi]: new TrainLine({
+    name: "鶴見線",
+    yomi: "つるみせん",
+    companyId: COMPANIES.jr_east.id,
+    stations: [
       new StopStationDef(STATION_IDS.jr_east.tsurumi),
       new StopStationDef(STATION_IDS.jr_east.kokudou),
       new StopStationDef(STATION_IDS.jr_east.tsurumi_ono),
@@ -2808,12 +2807,12 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.umi_shibaura),
       new StopStationDef(STATION_IDS.jr_east.okawa),
     ]
-  ),
-  [LINE_IDS.jr_east.itsukaichi]: new Line(
-    "五日市線",
-    COMPANIES.jr_east.id,
-    LOCAL_ONLY,
-    [
+  }),
+  [LINE_IDS.jr_east.itsukaichi]: new TrainLine({
+    name: "五日市線",
+    yomi: "いつかいちせん",
+    companyId: COMPANIES.jr_east.id,
+    stations: [
       new StopStationDef(STATION_IDS.jr_east.haijima),
       new StopStationDef(STATION_IDS.jr_east.kumagawa),
       new StopStationDef(STATION_IDS.jr_east.higashi_akiru),
@@ -2822,7 +2821,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.musashi_masuko),
       new StopStationDef(STATION_IDS.jr_east.musashi_itsukaichi),
     ]
-  ),
+  }),
 
   // #region 千葉
   [LINE_IDS.jr_east.sotobou]: new Line(
@@ -3505,11 +3504,11 @@ export const LINES = {
   ),
 
   // #region 西部電鉄
-  [LINE_IDS.seibu.ikebukuro]: new Line(
-    "西武池袋線",
-    COMPANIES.seibu.id,
-    [],
-    [
+  [LINE_IDS.seibu.ikebukuro]: new TrainLine({
+    name: "池袋線",
+    yomi: "いけぶくろせん",
+    companyId: COMPANIES.seibu.id,
+    stations: [
       new StopStationDef(STATION_IDS.jr_east.ikebukuro),
       new StopStationDef(STATION_IDS.seibu.shiinamachi),
       new StopStationDef(STATION_IDS.seibu.higashi_nagasaki),
@@ -3538,18 +3537,20 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.motokaji),
       new StopStationDef(STATION_IDS.seibu.hanno),
     ]
-  ),
-  [LINE_IDS.seibu.shinjuku]: new Line(
-    "西武新宿線",
-    COMPANIES.seibu.id,
-    [
+  }),
+  [LINE_IDS.seibu.shinjuku]: new TrainLine({
+    name: "新宿線",
+    yomi: "しんじゅくせん",
+    companyId: COMPANIES.seibu.id,
+    kinds: [
       new SemiExpress(),
       new Express(),
       new KindDef("通勤急行", "commuter"),
       new Rapid(),
       new ExtraExpress("拝島ライナー", "extra1"),
       new ExtraExpress("小江戸号", "extra2"),
-    ],[
+    ],
+    stations: [
       new StopStationDef(STATION_IDS.seibu.seibu_shinjuku, [
         SemiExpress.KEY,
         Express.KEY,
@@ -3659,12 +3660,12 @@ export const LINES = {
         "extra2",
       ]),
     ]
-  ),
-  [LINE_IDS.seibu.seibu_chichibu]: new Line(
-    "西武秩父線",
-    COMPANIES.seibu.id,
-    LOCAL_ONLY,
-    [
+  }),
+  [LINE_IDS.seibu.seibu_chichibu]: new TrainLine({
+    name: "秩父線",
+    yomi: "ちちぶせん",
+    companyId: COMPANIES.seibu.id,
+    stations: [
       new StopStationDef(STATION_IDS.seibu.hanno),
       new StopStationDef(STATION_IDS.jr_east.higashi_hanno),
       new StopStationDef(STATION_IDS.seibu.seibu_chichibu),
@@ -3678,31 +3679,31 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.yokose),
       new StopStationDef(STATION_IDS.seibu.seibu_chichibu),
     ]
-  ),
-  [LINE_IDS.seibu.seibu_yurakucho]: new Line(
-    "有楽町線",
-    COMPANIES.seibu.id,
-    LOCAL_ONLY,
-    [
+  }),
+  [LINE_IDS.seibu.seibu_yurakucho]: new TrainLine({
+    name: "有楽町線",
+    yomi: "ゆうらくちょうせん",
+    companyId: COMPANIES.seibu.id,
+    stations: [
       new StopStationDef(STATION_IDS.seibu.nerima),
       new StopStationDef(STATION_IDS.seibu.shin_sakuradai),
       new StopStationDef(STATION_IDS.tokyo_metro.kotake_mukaihara),
     ]
-  ),
-  [LINE_IDS.seibu.toshima]: new Line(
-    "豊島線",
-    COMPANIES.seibu.id,
-    LOCAL_ONLY,
-    [
+  }),
+  [LINE_IDS.seibu.toshima]: new TrainLine({
+    name: "豊島線",
+    yomi: "としません",
+    companyId: COMPANIES.seibu.id,
+    stations: [
       new StopStationDef(STATION_IDS.seibu.nerima),
       new StopStationDef(STATION_IDS.seibu.toshimaen),
     ]
-  ),
-  [LINE_IDS.seibu.tamako]: new Line(
-    "多摩湖線",
-    COMPANIES.seibu.id,
-    LOCAL_ONLY,
-    [
+  }),
+  [LINE_IDS.seibu.tamako]: new TrainLine({
+    name: "多摩湖線",
+    yomi: "たまこせん",
+    companyId: COMPANIES.seibu.id,
+    stations: [
       new StopStationDef(STATION_IDS.jr_east.kokubunji),
       new StopStationDef(STATION_IDS.seibu.hitotsubashi_gakuen),
       new StopStationDef(STATION_IDS.seibu.oume_kaidou),
@@ -3711,24 +3712,24 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.musashi_yamato),
       new StopStationDef(STATION_IDS.seibu.tamako),
     ]
-  ),
-  [LINE_IDS.seibu.kokubunji]: new Line(
-    "国分寺線",
-    COMPANIES.seibu.id,
-    LOCAL_ONLY,
-    [
+  }),
+  [LINE_IDS.seibu.kokubunji]: new TrainLine({
+    name: "国分寺線",
+    yomi: "こくぶんじせん",
+    companyId: COMPANIES.seibu.id,
+    stations: [
       new StopStationDef(STATION_IDS.jr_east.kokubunji),
       new StopStationDef(STATION_IDS.seibu.koigakubo),
       new StopStationDef(STATION_IDS.seibu.takanodai),
       new StopStationDef(STATION_IDS.seibu.ogawa),
       new StopStationDef(STATION_IDS.seibu.higashi_murayama),
     ]
-  ),
-  [LINE_IDS.seibu.haijima]: new Line(
-    "拝島線",
-    COMPANIES.seibu.id,
-    LOCAL_ONLY,
-    [
+  }),
+  [LINE_IDS.seibu.haijima]: new TrainLine({
+    name: "拝島線",
+    yomi: "はいじません",
+    companyId: COMPANIES.seibu.id,
+    stations: [
       new StopStationDef(STATION_IDS.seibu.kodaira),
       new StopStationDef(STATION_IDS.seibu.hagiyama),
       new StopStationDef(STATION_IDS.seibu.ogawa),
@@ -3738,7 +3739,17 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.seibu_tachikawa),
       new StopStationDef(STATION_IDS.jr_east.haijima),
     ]
-  ),
+  }),
+  [LINE_IDS.seibu.sayama]: new TrainLine({
+    name: "狭山線",
+    yomi: "さやません",
+    companyId: COMPANIES.seibu.id,
+    stations: [
+      new StopStationDef(STATION_IDS.seibu.nishi_tokorozawa),
+      new StopStationDef(STATION_IDS.seibu.shimo_yamaguchi),
+      new StopStationDef(STATION_IDS.seibu.seibukyujoumae),
+    ]
+  }),
   // #endregion 西武鉄道
 
   // 東武鉄道

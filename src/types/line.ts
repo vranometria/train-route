@@ -33,3 +33,21 @@ export class Line {
     return this.prefectures.includes(prefecture);
   }
 }
+
+interface TrainLineConstructor {
+  name: string
+  companyId: string
+  kinds?: KindDef[]
+  stations: StopStationDef[]
+  yomi: string
+}
+
+export class TrainLine extends Line {
+  yomi: string
+
+  constructor({name, companyId, yomi, stations}: TrainLineConstructor);
+  constructor({name, companyId, yomi, stations, kinds = []}: TrainLineConstructor){
+    super(name, companyId, kinds, stations);
+    this.yomi = yomi;
+  }
+}

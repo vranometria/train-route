@@ -419,7 +419,7 @@ export const LINE_IDS = {
     kokubunji: "seibu-kokubunji",
     ikebukuro: "seibu-ikebukuro",
     seibu_yurakucho: "seibu-seibu-yurakucho",
-    seibu_sayama: "seibu-seibu-sayama",
+    sayama: "seibu-seibu-sayama",
     seibu_chichibu: "seibu-seibu-chichibu",
     toshima: "seibu-seibu-toshimaen",
     shinjuku: "seibu-shinjuku",

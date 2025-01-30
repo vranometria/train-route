@@ -1206,7 +1206,7 @@ export const STATION_IDS = {
     musashi_hikida: "jr-east-musashi-hikida",
     musashi_masuko: "jr-east-musashi-masuko",
     musashi_itsukaichi: "jr-east-musashi-itsukaichi",
-    // #endregion
+    // #endregion 五日市線
 
     // 東北本線
     takaku: "jr-east-takaku",
@@ -2152,6 +2152,8 @@ export const STATION_IDS = {
     tamagawa_jousui: "seibu-tamagawa-josui",
     musashi_sunagawa: "seibu-musashi-sunagawa",
     seibu_tachikawa: "seibu-seibu-tachikawa",
+    shimo_yamaguchi: "seibu-shimo-yamaguchi",
+    seibukyujoumae: "seibu-seibu-kyujoumae",
   },
   // #endregion
   kantou: {

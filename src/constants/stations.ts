@@ -6591,7 +6591,6 @@ export const STATIONS = {
   ),
   // #endregion 秩父鉄道
   //   #region 西武鉄道
-  // ＞池袋線
   [STATION_IDS.seibu.shiinamachi]: new Station({
     name: "椎名町",
     pron: "しいなまち",
@@ -6602,23 +6601,24 @@ export const STATIONS = {
     pron: "ひがしながさき",
     pr: P.TOKYO,
   }),
-  [STATION_IDS.seibu.ekoda]: new StationInfo("江古田", [], "えこだ"),
-  [STATION_IDS.seibu.nerima]: new StationInfo(
-    "練馬",
-    [
+  [STATION_IDS.seibu.ekoda]: new Station({name: "江古田", pron: "えこだ", pr: P.TOKYO}),
+  [STATION_IDS.seibu.nerima]: new Station({
+    name: "練馬",
+    pron: "ねりま",
+    pr: P.TOKYO,
+    lines: [
       LINE_IDS.seibu.ikebukuro,
       LINE_IDS.tokyo_subway.oedo,
       LINE_IDS.seibu.seibu_yurakucho,
       LINE_IDS.seibu.toshima,
     ],
-    "ねりま"
-  ),
-  [STATION_IDS.seibu.syakujiikoen]: new StationInfo(
-    "石神井公園",
-    [],
-    "しゃくじいこうえん"
-  ),
-  [STATION_IDS.seibu.sakuradai]: new StationInfo("桜台", [], "さくらだい"),
+  }),
+  [STATION_IDS.seibu.syakujiikoen]: new Station({
+    name: "石神井公園",
+    pron: "しゃくじいこうえん",
+    pr: P.TOKYO,
+  }),
+  [STATION_IDS.seibu.sakuradai]: new Station({name: "桜台", pron: "さくらだい", pr: P.TOKYO}),
   [STATION_IDS.seibu.nakamurabashi]: new StationInfo(
     "中村橋",
     [],
@@ -6665,7 +6665,7 @@ export const STATIONS = {
   ),
   [STATION_IDS.seibu.nishi_tokorozawa]: new StationInfo(
     "西所沢",
-    [LINE_IDS.seibu.ikebukuro, LINE_IDS.seibu.seibu_sayama],
+    [LINE_IDS.seibu.ikebukuro, LINE_IDS.seibu.sayama],
     "にしところざわ"
   ),
   [STATION_IDS.seibu.kotesashi]: new StationInfo("小手指", [], "こてさし"),
@@ -6692,6 +6692,11 @@ export const STATIONS = {
     [LINE_IDS.seibu.ikebukuro, LINE_IDS.seibu.seibu_chichibu],
     "はんのう"
   ),
+  [STATION_IDS.seibu.shimo_yamaguchi]: new Station({name: "下山口", pron: "しもやまぐち", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.seibukyujoumae]: new Station({name: "西武球場前", pron: "せいぶきゅうじょうまえ", pr: P.SAITAMA, lines: [
+    LINE_IDS.seibu.sayama,
+    LINE_IDS.seibu.yamaguchi,
+  ]}),
   // 新宿線
   [STATION_IDS.seibu.seibu_shinjuku]: new StationInfo(
     "西武新宿",
