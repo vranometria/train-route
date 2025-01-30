@@ -3826,10 +3826,11 @@ export const LINES = {
 
   // 東武鉄道
   // ＞東武東上線
-  [LINE_IDS.toubu.toujou]: new Line(
-    "東上線",
-    "東武鉄道",
-    [
+  [LINE_IDS.toubu.toujou]: new TrainLine({
+    name: "東上線",
+    yomi: "とうじょうせん",
+    companyId: COMPANIES.toubu.id,
+    kinds: [
       new KindDef("Fライナー", "f"),
       new KindDef("TJライナー(上り)", "tj"),
       new KindDef("TJライナー(下り)", "tjd"),
@@ -3838,7 +3839,7 @@ export const LINES = {
       new KindDef("急行", "express"),
       new KindDef("準急", "semi-express"),
     ],
-    [
+    stations: [
       new StopStationDef(STATION_IDS.jr_east.ikebukuro, [
         "tj",
         "tjd",
@@ -4000,7 +4001,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.toubu.tamayodo),
       new StopStationDef(STATION_IDS.toubu.yorii),
     ]
-  ),
+  }),
   [LINE_IDS.toubu.urban_park_line]: new Line(
     "東武アーバンパークライン",
     "東武鉄道",
@@ -4292,6 +4293,23 @@ export const LINES = {
     ],
     [P.TOKYO, P.SAITAMA, P.TOCHIGI, P.GUNMA]
   ),
+  [LINE_IDS.toubu.kinugawa]: new TrainLine({
+    name: "鬼怒川線",
+    yomi: "きぬがわせん",
+    companyId: COMPANIES.toubu.id,
+    kinds: [new SectionExpress],
+    stations: [
+      new StopStationDef(STATION_IDS.toubu.shimo_imachi, [SectionExpress.KEY]),
+      new StopStationDef(STATION_IDS.toubu.daiyamukou, [SectionExpress.KEY]),
+      new StopStationDef(STATION_IDS.toubu.okuwa, [SectionExpress.KEY]),
+      new StopStationDef(STATION_IDS.toubu.shin_takatoku, [SectionExpress.KEY]),
+      new StopStationDef(STATION_IDS.toubu.kosagoe, [SectionExpress.KEY]),
+      new StopStationDef(STATION_IDS.toubu.toubu_world_square, [SectionExpress.KEY]),
+      new StopStationDef(STATION_IDS.toubu.kinugawa_onsen, [SectionExpress.KEY]),
+      new StopStationDef(STATION_IDS.toubu.kinugawa_kouen, [SectionExpress.KEY]),
+      new StopStationDef(STATION_IDS.toubu.shin_fujiwara, [SectionExpress.KEY]),
+    ]
+  }),
 
   // #region 京王電鉄
   [LINE_IDS.keiou.keiou]: new Line(

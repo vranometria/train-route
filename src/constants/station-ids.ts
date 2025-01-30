@@ -1654,6 +1654,16 @@ export const STATION_IDS = {
     goushi: "toubu-goushi",
     shin_isezaki: "toubu-shin-isezaki",
     tokiwadai: "toubu-tokiwadai",
+    // 鬼怒川線
+    shimo_imachi: "toubu-shimo-imachi",
+    daiyamukou: "toubu-daiyamukou",
+    okuwa: "toubu-okuwa",
+    shin_takatoku: "toubu-shin-takatoku",
+    kosagoe: "toubu-kosagoe",
+    toubu_world_square: "toubu-toubu-world-square",
+    kinugawa_onsen: "toubu-kinugawa-onsen",
+    kinugawa_kouen: "toubu-kinugawa-kouen",
+    shin_fujiwara: "toubu-shin-fujiwara",
   },
   toukyo_rinkai_kousoku: { /** 臨海高速鉄道 */
     shinonome: "rinkai-shinonome",

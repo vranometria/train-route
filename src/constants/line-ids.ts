@@ -321,6 +321,11 @@ export const LINE_IDS = {
     koizumi: "toubu-koizumi",
     /** 桐生線 */
     kiryu: "toubu-kiryu",
+    /** 鬼怒川 */
+    kinugawa: "toubu-kinugawa",
+  },
+  yagan: {
+    aidu_kinugawa: "yagan-aidu-kinugawa",
   },
   saitama_shintoshi_koutsu: {
     // ニューシャトル

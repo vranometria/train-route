@@ -4257,16 +4257,63 @@ export const STATIONS = {
     [LINE_IDS.toubu.isezaki, LINE_IDS.toubu.kiryu, LINE_IDS.toubu.koizumi],
     "おおた"
   ),
-  [STATION_IDS.toubu.hosoya]: new StationInfo("細谷", [], "ほそや"),
-  [STATION_IDS.toubu.kizaki]: new StationInfo("木崎", [], "きざき"),
-  [STATION_IDS.toubu.serada]: new StationInfo("世良田", [], "せらだ"),
-  [STATION_IDS.toubu.sakaimachi]: new StationInfo("境町", [], "さかいまち"),
-  [STATION_IDS.toubu.goushi]: new StationInfo("剛志", [], "ごうし"),
-  [STATION_IDS.toubu.shin_isezaki]: new StationInfo(
-    "新伊勢崎",
-    [],
-    "しんいせざき"
-  ),
+  [STATION_IDS.toubu.hosoya]: new Station({name: "細谷", pron: "ほそや", pr: P.TOCHIGI}),
+  [STATION_IDS.toubu.kizaki]: new Station({name: "木崎", pron: "きざき", pr: P.TOCHIGI}),
+  [STATION_IDS.toubu.serada]: new Station({name: "世良田", pron: "せらだ", pr: P.TOCHIGI}),
+  [STATION_IDS.toubu.sakaimachi]: new Station({name: "境町", pron: "さかいまち", pr: P.TOCHIGI}),
+  [STATION_IDS.toubu.goushi]: new Station({name: "剛志", pron: "ごうし", pr: P.TOCHIGI}),
+  [STATION_IDS.toubu.shin_isezaki]: new Station({name: "新伊勢崎", pron: "しんいせざき", pr: P.TOCHIGI}),
+  // 鬼怒川線
+  [STATION_IDS.toubu.shimo_imachi]: new Station({
+    name: "下今市",
+    pron: "しもいまいち",
+    pr: P.TOCHIGI,
+    lines: [ LINE_IDS.toubu.kinugawa, LINE_IDS.toubu.nikkou ],
+  }),
+  [STATION_IDS.toubu.daiyamukou]: new Station({
+    name: "大谷向",
+    pron: "だいやむこう",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.okuwa]: new Station({
+    name: "大桑",
+    pron: "おおくわ",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.shin_takatoku]: new Station({
+    name: "新高徳",
+    pron: "しんたかとく",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.kosagoe]: new Station({
+    name: "小佐越",
+    pron: "こさごえ",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.toubu_world_square]: new Station({
+    name: "東武ワールドスクウェア",
+    pron: "とうぶわーるどすくうえあ",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.kinugawa_onsen]: new Station({
+    name: "鬼怒川温泉",
+    pron: "きぬがわおんせん",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.kinugawa_kouen]: new Station({
+    name: "鬼怒川公園",
+    pron: "きぬがわこうえん",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.shin_fujiwara]: new Station({
+    name: "新藤原",
+    pron: "しんふじわら",
+    pr: P.TOCHIGI,
+    lines: [
+      LINE_IDS.toubu.kinugawa,
+      LINE_IDS.yagan.aidu_kinugawa,
+    ]
+  }),
   //   #endregion 東武鉄道
   //  #endregion 東京
   //  #region 茨城

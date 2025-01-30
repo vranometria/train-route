@@ -69,6 +69,11 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toubu.ogose}}">生越線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toubu.kameido}}">亀戸線</RouterLink>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toubu.isezaki}}">伊勢崎線</RouterLink>
+          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toubu.kinugawa}}">鬼怒川線</RouterLink>
+          <!-- 大師線 -->
+           <!-- 佐野線 -->
+            <!-- 桐生線 -->
+             <!-- 小泉線 -->
         </div>
 
         <LineAccordion :prefecture="PREFECTURE.HOKKAIDO" />
