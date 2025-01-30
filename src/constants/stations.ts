@@ -4211,13 +4211,14 @@ export const STATIONS = {
     [],
     "きたかすかべ"
   ),
-  [STATION_IDS.toubu.himemiya]: new StationInfo("姫宮", [], "ひめみや"),
-  [STATION_IDS.toubu.toubu_doubutsu_kouen]: new StationInfo(
-    "東武動物公園",
-    [LINE_IDS.toubu.isezaki, LINE_IDS.toubu.nikkou],
-    "とうぶどうぶつこうえん"
-  ),
-  [STATION_IDS.toubu.wado]: new StationInfo("和戸", [], "わど"),
+  [STATION_IDS.toubu.himemiya]: new Station({name: "姫宮", pron: "ひめみや", pr: P.SAITAMA}),
+  [STATION_IDS.toubu.toubu_doubutsu_kouen]: new Station({
+    name: "東武動物公園",
+    pron: "とうぶどうぶつこうえん",
+    pr: P.SAITAMA,
+    lines: [LINE_IDS.toubu.isezaki, LINE_IDS.toubu.nikkou],
+  }),
+  [STATION_IDS.toubu.wado]: new Station({name: "和戸", pron: "わど", pr: P.SAITAMA}),
   [STATION_IDS.toubu.washinomiya]: new StationInfo("鷲宮", [], "わしのみや"),
   [STATION_IDS.toubu.hanasaki]: new StationInfo("花崎", [], "はなさき"),
   [STATION_IDS.toubu.kasu]: new StationInfo("加須", [], "かす"),
@@ -4314,6 +4315,118 @@ export const STATIONS = {
       LINE_IDS.yagan.aidu_kinugawa,
     ]
   }),
+  [STATION_IDS.toubu.sugitotakanodai]: new Station({
+    name: "杉戸高野台",
+    pron: "すぎとたかのだい",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.satte]: new Station({
+    name: "幸手",
+    pron: "さって",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.minami_kurihashi]: new Station({
+    name: "南栗橋",
+    pron: "みなみくりはし",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.shin_koga]: new Station({
+    name: "新古河",
+    pron: "しんこが",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.yagyu]: new Station({
+    name: "柳生",
+    pron: "やぎゅう",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.itakuratouyoudaimae]: new Station({
+    name: "板倉東洋大前",
+    pron: "いたくらとうようだいまえ",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.fujioka]: new Station({
+    name: "藤岡",
+    pron: "ふじおか",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.shizuwa]: new Station({
+    name: "静和",
+    pron: "しずわ",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.shin_ohirashita]: new Station({
+    name: "新大平下",
+    pron: "しんおおひらした",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.shin_tochigi]: new Station({
+    name: "新栃木",
+    pron: "しんとちぎ",
+    pr: P.SAITAMA,
+    lines: [ LINE_IDS.toubu.nikkou, LINE_IDS.toubu.utsunomiya ],
+  }),
+  [STATION_IDS.toubu.kassenba]: new Station({
+    name: "合戦場",
+    pron: "かっせんば",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.ienaka]: new Station({
+    name: "家中",
+    pron: "いえなか",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.toubu_kanasaki]: new Station({
+    name: "東武金崎",
+    pron: "とうぶかなさき",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.niregi]: new Station({
+    name: "楡木",
+    pron: "にれぎ",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.momiyama]: new Station({
+    name: "籾山",
+    pron: "もみやま",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.shin_kanuma]: new Station({
+    name: "新鹿沼",
+    pron: "しんかぬま",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.kita_kanuma]: new Station({
+    name: "北鹿沼",
+    pron: "きたかぬま",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.itaga]: new Station({
+    name: "板荷",
+    pron: "いたが",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.shimokoshiro]: new Station({
+    name: "下小代",
+    pron: "しもごしろ",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.myoujin]: new Station({
+    name: "明神",
+    pron: "みょうじん",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.kami_imaichi]: new Station({
+    name: "上今市",
+    pron: "かみいまいち",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.toubu.toubu_nikko]: new Station({
+    name: "東武日光",
+    pron: "とうぶにっこう",
+    pr: P.SAITAMA,
+  }),
+
   //   #endregion 東武鉄道
   //  #endregion 東京
   //  #region 茨城
@@ -7257,7 +7370,7 @@ export const STATIONS = {
     [
       LINE_IDS.jr_east.shonan_shinjuku,
       LINE_IDS.jr_east.utunomiya,
-      LINE_IDS.toubu.nikko,
+      LINE_IDS.toubu.nikkou,
     ],
     "くりはし"
   ),

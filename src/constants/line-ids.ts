@@ -304,7 +304,7 @@ export const LINE_IDS = {
     /** 東上線 */
     toujou: "toubu-toujou",
     /** 日光線 */
-    nikko: "toubu-nikko",
+    nikkou: "toubu-nikko",
     /** 東武線 */
     toubu: "toubu-toubu",
     /** 伊勢崎線 */
@@ -313,8 +313,6 @@ export const LINE_IDS = {
     ogose: "toubu-ogose",
     /** 大師線 */
     daishi: "toubu-daishi",
-    /** 日光線 */
-    nikkou: "toubu-nikkou",
     /** 佐野線 */
     sano: "toubu-sano",
     /** 小泉線 */
@@ -323,6 +321,8 @@ export const LINE_IDS = {
     kiryu: "toubu-kiryu",
     /** 鬼怒川 */
     kinugawa: "toubu-kinugawa",
+    /** 宇都宮線 */
+    utsunomiya: "toubu-utsunomiya",
   },
   yagan: {
     aidu_kinugawa: "yagan-aidu-kinugawa",

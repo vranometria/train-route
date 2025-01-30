@@ -4002,11 +4002,12 @@ export const LINES = {
       new StopStationDef(STATION_IDS.toubu.yorii),
     ]
   }),
-  [LINE_IDS.toubu.urban_park_line]: new Line(
-    "東武アーバンパークライン",
-    "東武鉄道",
-    [new Express(), new KindDef("区間急行", "semi-express")],
-    [
+  [LINE_IDS.toubu.urban_park_line]: new TrainLine({
+    name: "東武アーバンパークライン",
+    yomi: "とうぶあーばんぱーくらいん",
+    companyId: COMPANIES.toubu.id,
+    kinds: [new Express(), new KindDef("区間急行", "semi-express")],
+    stations: [
       new StopStationDef(STATION_IDS.jr_east.omiya, [
         Express.KEY,
         "semi-express",
@@ -4082,7 +4083,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.toubu.shin_funabashi),
       new StopStationDef(STATION_IDS.jr_east.funabashi, [Express.KEY]),
     ]
-  ),
+  }),
   [LINE_IDS.toubu.ogose]: new Line(
     "東武越生線",
     "東武鉄道",
@@ -4308,6 +4309,40 @@ export const LINES = {
       new StopStationDef(STATION_IDS.toubu.kinugawa_onsen, [SectionExpress.KEY]),
       new StopStationDef(STATION_IDS.toubu.kinugawa_kouen, [SectionExpress.KEY]),
       new StopStationDef(STATION_IDS.toubu.shin_fujiwara, [SectionExpress.KEY]),
+    ]
+  }),
+  [LINE_IDS.toubu.nikkou]: new TrainLine({
+    name: "日光線",
+    yomi: "にっこうせん",
+    companyId: COMPANIES.toubu.id,
+    kinds: [new Express, new SemiExpress, new SectionExpress],
+    stations: [
+      new StopStationDef(STATION_IDS.toubu.toubu_doubutsu_kouen, [Express.KEY,SemiExpress.KEY,SectionExpress.KEY,]),
+      new StopStationDef(STATION_IDS.toubu.sugitotakanodai, [Express.KEY,SemiExpress.KEY,SectionExpress.KEY,]),
+      new StopStationDef(STATION_IDS.toubu.satte, [Express.KEY,SemiExpress.KEY,SectionExpress.KEY,]),
+      new StopStationDef(STATION_IDS.toubu.minami_kurihashi, [Express.KEY,SemiExpress.KEY,SectionExpress.KEY,]),
+      new StopStationDef(STATION_IDS.jr_east.kurihashi, [Express.KEY,]),
+      new StopStationDef(STATION_IDS.toubu.shin_koga, []),
+      new StopStationDef(STATION_IDS.toubu.yagyu, []),
+      new StopStationDef(STATION_IDS.toubu.itakuratouyoudaimae, [Express.KEY,]),
+      new StopStationDef(STATION_IDS.toubu.fujioka, []),
+      new StopStationDef(STATION_IDS.toubu.shizuwa, []),
+      new StopStationDef(STATION_IDS.toubu.shin_ohirashita, [Express.KEY,]),
+      new StopStationDef(STATION_IDS.jr_east.tochigi, [Express.KEY,]),
+      new StopStationDef(STATION_IDS.toubu.shin_tochigi, [Express.KEY,]),
+      new StopStationDef(STATION_IDS.toubu.kassenba, []),
+      new StopStationDef(STATION_IDS.toubu.ienaka, []),
+      new StopStationDef(STATION_IDS.toubu.toubu_kanasaki, []),
+      new StopStationDef(STATION_IDS.toubu.niregi, []),
+      new StopStationDef(STATION_IDS.toubu.momiyama, []),
+      new StopStationDef(STATION_IDS.toubu.shin_kanuma, [Express.KEY,]),
+      new StopStationDef(STATION_IDS.toubu.kita_kanuma, []),
+      new StopStationDef(STATION_IDS.toubu.itaga, []),
+      new StopStationDef(STATION_IDS.toubu.shimokoshiro, []),
+      new StopStationDef(STATION_IDS.toubu.myoujin, []),
+      new StopStationDef(STATION_IDS.toubu.shimo_imachi, []),
+      new StopStationDef(STATION_IDS.toubu.kami_imaichi, [Express.KEY,]),
+      new StopStationDef(STATION_IDS.toubu.toubu_nikko, [Express.KEY,]),
     ]
   }),
 
