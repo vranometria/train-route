@@ -3750,6 +3750,16 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.seibukyujoumae),
     ]
   }),
+  [LINE_IDS.seibu.yamaguchi]: new TrainLine({
+    name: "山口線",
+    yomi: "やまぐちせん",
+    companyId: COMPANIES.seibu.id,
+    stations: [
+      new StopStationDef(STATION_IDS.seibu.tamako),
+      new StopStationDef(STATION_IDS.seibu.seibuen_yuenchi),
+      new StopStationDef(STATION_IDS.seibu.seibukyujoumae),
+    ]
+  }),
   // #endregion 西武鉄道
 
   // 東武鉄道

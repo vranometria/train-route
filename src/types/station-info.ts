@@ -23,9 +23,16 @@ export class StationInfo {
 
 
 interface StationInfoConstructor {
+  /** 駅名 */
   name: string
+
+  /** 乗り換え路線IDまたは乗り換え情報 */
   lines?: (string|ExchangeInfo)[]
+
+  /** 駅名読み(pronunciation) */
   pron: string,
+
+  /** 所在県(prefecture) */
   pr: string
 }
 

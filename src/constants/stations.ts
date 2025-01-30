@@ -6684,19 +6684,25 @@ export const STATIONS = {
     [],
     "いなりやまこうえん"
   ),
-  [STATION_IDS.seibu.irumashi]: new StationInfo("入間市", [], "いるまし"),
-  [STATION_IDS.seibu.bushi]: new StationInfo("仏子", [], "ぶし"),
-  [STATION_IDS.seibu.motokaji]: new StationInfo("元加治", [], "もとかじ"),
-  [STATION_IDS.seibu.hanno]: new StationInfo(
-    "飯能",
-    [LINE_IDS.seibu.ikebukuro, LINE_IDS.seibu.seibu_chichibu],
-    "はんのう"
-  ),
+  [STATION_IDS.seibu.irumashi]: new Station({
+    name: "入間市",
+    pron: "いるまし",
+    pr: P.SAITAMA,
+  }),
+  [STATION_IDS.seibu.bushi]: new Station({name: "仏子", pron: "ぶし", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.motokaji]: new Station({name: "元加治", pron: "もとかじ", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.hanno]: new Station({
+    name: "飯能",
+    pron: "はんのう",
+    pr: P.SAITAMA,
+    lines: [LINE_IDS.seibu.ikebukuro, LINE_IDS.seibu.seibu_chichibu],
+  }),
   [STATION_IDS.seibu.shimo_yamaguchi]: new Station({name: "下山口", pron: "しもやまぐち", pr: P.SAITAMA}),
   [STATION_IDS.seibu.seibukyujoumae]: new Station({name: "西武球場前", pron: "せいぶきゅうじょうまえ", pr: P.SAITAMA, lines: [
     LINE_IDS.seibu.sayama,
     LINE_IDS.seibu.yamaguchi,
   ]}),
+  [STATION_IDS.seibu.seibuen_yuenchi]: new Station({name: "西武園ゆうえんち", pron: "せいぶえんゆうえんち", pr: P.SAITAMA}),
   // 新宿線
   [STATION_IDS.seibu.seibu_shinjuku]: new StationInfo(
     "西武新宿",
