@@ -4370,13 +4370,30 @@ export const LINES = {
       new StopStationDef(STATION_IDS.toubu.nishi_arai),
     ]
   }),
+  [LINE_IDS.toubu.sano]: new TrainLine({
+    name: "佐野線",
+    yomi: "さのせん",
+    companyId: COMPANIES.toubu.id,
+    stations: [
+      new StopStationDef(STATION_IDS.toubu.tatebayashi),
+      new StopStationDef(STATION_IDS.toubu.watase),
+      new StopStationDef(STATION_IDS.toubu.tajima),
+      new StopStationDef(STATION_IDS.toubu.sanoshi),
+      new StopStationDef(STATION_IDS.jr_east.sano),
+      new StopStationDef(STATION_IDS.toubu.horigome),
+      new StopStationDef(STATION_IDS.toubu.yoshimizu),
+      new StopStationDef(STATION_IDS.toubu.tanuma),
+      new StopStationDef(STATION_IDS.toubu.tada),
+      new StopStationDef(STATION_IDS.toubu.kuzuu),
+    ]
+  }),
 
   // #region 京王電鉄
-  [LINE_IDS.keiou.keiou]: new Line(
-    "京王線",
-    COMPANIES.keiou.id,
-    [],
-    [
+  [LINE_IDS.keiou.keiou]: new TrainLine({
+    name: "京王線",
+    yomi: "けいおうせん",
+    companyId: COMPANIES.keiou.id,
+    stations: [
       new StopStationDef(STATION_IDS.jr_east.shinjuku),
       new StopStationDef(STATION_IDS.keiou.sasatsuka),
       new StopStationDef(STATION_IDS.keiou.daitabashi),
@@ -4410,18 +4427,18 @@ export const LINES = {
       new StopStationDef(STATION_IDS.keiou.kitano),
       new StopStationDef(STATION_IDS.keiou.keio_hachioji),
     ]
-  ),
-  [LINE_IDS.keiou.keioushinsen]: new Line(
-    "京王新線",
-    COMPANIES.keiou.id,
-    [],
-    [
+  }),
+  [LINE_IDS.keiou.keioushinsen]: new TrainLine({
+    name: "京王新線",
+    yomi: "けいおうしんせん",
+    companyId: COMPANIES.keiou.id,
+    stations: [
       new StopStationDef(STATION_IDS.tokyo_subway.shinsen_shinjuku),
       new StopStationDef(STATION_IDS.keiou.hatsudai),
       new StopStationDef(STATION_IDS.keiou.hatagaya),
       new StopStationDef(STATION_IDS.keiou.sasatsuka),
     ]
-  ),
+  }),
   [LINE_IDS.keiou.inokashira]: new Line(
     "京王井の頭線",
     COMPANIES.keiou.id,

@@ -4481,6 +4481,46 @@ export const STATIONS = {
     pron: "だいしまえ",
     pr: P.TOCHIGI,
   }),
+  [STATION_IDS.toubu.watase]: new Station({
+    name: "渡瀬",
+    pron: "わたせ",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.tajima]: new Station({
+    name: "田島",
+    pron: "たじま",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.sanoshi]: new Station({
+    name: "佐野市",
+    pron: "さのし",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.horigome]: new Station({
+    name: "堀米",
+    pron: "ほりごめ",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.yoshimizu]: new Station({
+    name: "吉水",
+    pron: "よしみず",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.tanuma]: new Station({
+    name: "田沼",
+    pron: "たぬま",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.tada]: new Station({
+    name: "多田",
+    pron: "ただ",
+    pr: P.TOCHIGI,
+  }),
+  [STATION_IDS.toubu.kuzuu]: new Station({
+    name: "葛生",
+    pron: "くずう",
+    pr: P.TOCHIGI,
+  }),
 
   //   #endregion 東武鉄道
   //  #endregion 東京
