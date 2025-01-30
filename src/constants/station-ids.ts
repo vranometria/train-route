@@ -701,8 +701,8 @@ export const STATION_IDS = {
     kichijoji: "kichijoji",
     mitaka: "mitaka",
     musashisakai: "musashisakai",
-    higashikoganei: "higashikoganei",
-    musashikoganei: "musashikoganei",
+    higashi_koganei: "higashikoganei",
+    musashi_koganei: "musashikoganei",
     kokubunji: "kokubunji",
     nishikokubunji: "nishikokubunji",
     kunitachi: "kunitachi",
@@ -2156,6 +2156,11 @@ export const STATION_IDS = {
     seibukyujoumae: "seibu-seibu-kyujoumae",
     seibuen_yuenchi: "seibu-seibuen-yuenchi",
     seibuen: "seibu-seibuen",
+    shin_koganei: "seibu-shin-koganei",
+    tama: "seibu-tama",
+    shiraitodai: "seibu-shiraitodai",
+    kyouteijoumae: "seibu-kyouteijoumae",
+    koremasa: "seibu-koremasa",
   },
   // #endregion
   kantou: {

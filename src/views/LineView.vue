@@ -44,7 +44,7 @@ import { useLangStore } from '@/stores/lang';
         </div>
       </h1>
       <component :is="model.overlay" />
-      <table>
+      <table class="line-table">
         <thead>
           <tr>
             <th>駅</th>
@@ -246,5 +246,9 @@ th.express .text {
     border-top: 3px solid white;
     border-bottom: 3px solid white;
     margin-bottom: 30px;
+  }
+
+  .line-table {
+    min-width: 300px;
   }
 </style>

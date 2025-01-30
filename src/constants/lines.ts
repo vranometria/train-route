@@ -2238,8 +2238,8 @@ export const LINES = {
       new StopStationDef(STATION_IDS.jr_east.kichijoji, ["rapid"]),
       new StopStationDef(STATION_IDS.jr_east.mitaka, ["rapid"]),
       new StopStationDef(STATION_IDS.jr_east.musashisakai, ["rapid"]),
-      new StopStationDef(STATION_IDS.jr_east.higashikoganei, ["rapid"]),
-      new StopStationDef(STATION_IDS.jr_east.musashikoganei, ["rapid"]),
+      new StopStationDef(STATION_IDS.jr_east.higashi_koganei, ["rapid"]),
+      new StopStationDef(STATION_IDS.jr_east.musashi_koganei, ["rapid"]),
       new StopStationDef(STATION_IDS.jr_east.kokubunji, ["rapid"]),
       new StopStationDef(STATION_IDS.jr_east.nishikokubunji, ["rapid"]),
       new StopStationDef(STATION_IDS.jr_east.kunitachi, ["rapid"]),
@@ -3661,7 +3661,7 @@ export const LINES = {
       ]),
     ]
   }),
-  [LINE_IDS.seibu.seibu_chichibu]: new TrainLine({
+  [LINE_IDS.seibu.chichibu]: new TrainLine({
     name: "秩父線",
     yomi: "ちちぶせん",
     companyId: COMPANIES.seibu.id,
@@ -3680,7 +3680,7 @@ export const LINES = {
       new StopStationDef(STATION_IDS.seibu.seibu_chichibu),
     ]
   }),
-  [LINE_IDS.seibu.seibu_yurakucho]: new TrainLine({
+  [LINE_IDS.seibu.yurakucho]: new TrainLine({
     name: "有楽町線",
     yomi: "ゆうらくちょうせん",
     companyId: COMPANIES.seibu.id,
@@ -3767,6 +3767,19 @@ export const LINES = {
     stations: [
       new StopStationDef(STATION_IDS.seibu.higashi_murayama),
       new StopStationDef(STATION_IDS.seibu.seibuen),
+    ]
+  }),
+  [LINE_IDS.seibu.tamagawa]: new TrainLine({
+    name: "多摩川線",
+    yomi: "たまがわせん",
+    companyId: COMPANIES.seibu.id,
+    stations: [
+      new StopStationDef(STATION_IDS.jr_east.musashisakai),
+      new StopStationDef(STATION_IDS.seibu.shin_koganei),
+      new StopStationDef(STATION_IDS.seibu.tama),
+      new StopStationDef(STATION_IDS.seibu.shiraitodai),
+      new StopStationDef(STATION_IDS.seibu.kyouteijoumae),
+      new StopStationDef(STATION_IDS.seibu.koremasa),
     ]
   }),
   // #endregion 西武鉄道

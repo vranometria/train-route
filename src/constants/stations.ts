@@ -2619,7 +2619,7 @@ export const STATIONS = {
     [
       LINE_IDS.tokyo_metro.yurakucho,
       LINE_IDS.tokyo_metro.fukutoshin,
-      LINE_IDS.seibu.seibu_yurakucho,
+      LINE_IDS.seibu.yurakucho,
     ],
     "こたけむかいはら"
   ),
@@ -6558,7 +6558,7 @@ export const STATIONS = {
     [
       LINE_IDS.chichibu.chichibu,
       new ExchangeInfo(
-        LINE_IDS.seibu.seibu_chichibu,
+        LINE_IDS.seibu.chichibu,
         STATION_IDS.seibu.seibu_chichibu
       ),
     ],
@@ -6609,7 +6609,7 @@ export const STATIONS = {
     lines: [
       LINE_IDS.seibu.ikebukuro,
       LINE_IDS.tokyo_subway.oedo,
-      LINE_IDS.seibu.seibu_yurakucho,
+      LINE_IDS.seibu.yurakucho,
       LINE_IDS.seibu.toshima,
     ],
   }),
@@ -6692,7 +6692,7 @@ export const STATIONS = {
     name: "飯能",
     pron: "はんのう",
     pr: P.SAITAMA,
-    lines: [LINE_IDS.seibu.ikebukuro, LINE_IDS.seibu.seibu_chichibu],
+    lines: [LINE_IDS.seibu.ikebukuro, LINE_IDS.seibu.chichibu],
   }),
   [STATION_IDS.seibu.shimo_yamaguchi]: new Station({name: "下山口", pron: "しもやまぐち", pr: P.SAITAMA}),
   [STATION_IDS.seibu.seibukyujoumae]: new Station({name: "西武球場前", pron: "せいぶきゅうじょうまえ", pr: P.SAITAMA, lines: [
@@ -6701,6 +6701,11 @@ export const STATIONS = {
   ]}),
   [STATION_IDS.seibu.seibuen_yuenchi]: new Station({name: "西武園ゆうえんち", pron: "せいぶえんゆうえんち", pr: P.SAITAMA}),
   [STATION_IDS.seibu.seibuen]: new Station({name: "西武園", pron: "せいぶえん", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.shin_koganei]: new Station({name: "新小金井", pron: "しんこがねい", pr: P.SAITAMA}),
+  [STATION_IDS.seibu.tama]: new Station({name: "多摩", pron: "たま", pr: P.TOKYO}),
+  [STATION_IDS.seibu.shiraitodai]: new Station({name: "白糸台", pron: "しらいとだい", pr: P.TOKYO}),
+  [STATION_IDS.seibu.kyouteijoumae]: new Station({name: "競艇場前", pron: "きょうていじょうまえ", pr: P.TOKYO}),
+  [STATION_IDS.seibu.koremasa]: new Station({name: "是政", pron: "これまさ", pr: P.TOKYO}),
 
   // 新宿線
   [STATION_IDS.seibu.seibu_shinjuku]: new StationInfo(
@@ -6893,7 +6898,7 @@ export const STATIONS = {
     pron: "よこせ",
     pr: P.SAITAMA,
     lines: [
-      LINE_IDS.seibu.seibu_chichibu,
+      LINE_IDS.seibu.chichibu,
       new Direct(LINE_IDS.chichibu.chichibu, STATION_IDS.chichibu.ohanabatake),
     ],
   }),
@@ -6902,7 +6907,7 @@ export const STATIONS = {
     pron: "せいぶちちぶ",
     pr: P.SAITAMA,
     lines: [
-      LINE_IDS.seibu.seibu_chichibu,
+      LINE_IDS.seibu.chichibu,
       new Direct(LINE_IDS.chichibu.chichibu, STATION_IDS.chichibu.kagemori),
     ],
   }),
@@ -7809,21 +7814,17 @@ export const STATIONS = {
     [LINE_IDS.jr_east.chuou_honsen, LINE_IDS.jr_east.chuo_soubu_kankou],
     "みたか"
   ),
-  [STATION_IDS.jr_east.musashisakai]: new StationInfo(
-    "武蔵境",
-    [LINE_IDS.seibu.tamagawa],
-    "むさしさかい"
-  ),
-  [STATION_IDS.jr_east.higashikoganei]: new StationInfo(
-    "東小金井",
-    [],
-    "ひがしこがねい"
-  ),
-  [STATION_IDS.jr_east.musashikoganei]: new StationInfo(
-    "武蔵小金井",
-    [],
-    "むさしこがねい"
-  ),
+  [STATION_IDS.jr_east.musashisakai]: new Station({
+    name: "武蔵境",
+    pron: "むさしさかい",
+    pr: P.TOKYO,
+    lines: [
+      LINE_IDS.jr_east.chuou_honsen,
+      LINE_IDS.seibu.tamagawa
+    ],
+  }),
+  [STATION_IDS.jr_east.higashi_koganei]: new Station({name: "東小金井", pron: "ひがしこがねい", pr: P.TOKYO}),
+  [STATION_IDS.jr_east.musashi_koganei]: new Station({name: "武蔵小金井", pron: "むさしかがねい", pr: P.TOKYO}),
   [STATION_IDS.jr_east.kokubunji]: new StationInfo(
     "国分寺",
     [
@@ -9340,7 +9341,7 @@ export const STATIONS = {
     name: "東飯能",
     pron: "ひがしはんのう",
     pr: P.TOKYO,
-    lines: [LINE_IDS.jr_east.hachiko, LINE_IDS.seibu.seibu_chichibu],
+    lines: [LINE_IDS.jr_east.hachiko, LINE_IDS.seibu.chichibu],
   }),
   [STATION_IDS.jr_east.moro]: new Station({
     name: "諸",
