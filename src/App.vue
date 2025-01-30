@@ -60,22 +60,6 @@ import LineAccordion from './components/LineAccordion.vue';
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.jr_east.shinkansen.hokkaido}}" >北海道新幹線</RouterLink>
         </div> -->
 
-        西武鉄道
-        <div>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.ikebukuro}}">池袋線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.shinjuku}}">新宿線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.chichibu}}">秩父線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.yurakucho}}">有楽町線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.toshima}}">豊島線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.tamako}}">多摩湖線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.kokubunji}}">国分寺線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.haijima}}">拝島線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.sayama}}">狭山線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.yamaguchi}}">山口線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.seibuen}}">西武園線</RouterLink>
-          <RouterLink :to="{name: 'line', params: {id: LINE_IDS.seibu.tamagawa}}">多摩川線</RouterLink>
-        </div>
-
         東武鉄道
         <div>
           <RouterLink :to="{name: 'line', params: {id: LINE_IDS.toubu.toujou}}">東上線</RouterLink>

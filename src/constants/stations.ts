@@ -6359,6 +6359,21 @@ export const STATIONS = {
     "のじまこうえん"
   ),
   //  #endregion 京急
+  //   #region 江ノ島電鉄
+[STATION_IDS.enoshima.ishigami]: new Station({name: "石上", pron: "いしがみ", pr: P.KANAGAWA}),
+[STATION_IDS.enoshima.yanagikouji]: new Station({name: "柳小路", pron: "やなぎこうじ", pr: P.KANAGAWA}),
+[STATION_IDS.enoshima.kugenuma]: new Station({name: "鵠沼", pron: "くげぬま", pr: P.KANAGAWA}),
+[STATION_IDS.enoshima.syounan_kaigan_kouen]: new Station({name: "湘南海岸公園", pron: "しょうなんかいがんこうえん", pr: P.KANAGAWA}),
+[STATION_IDS.enoshima.enoshima]: new Station({name: "江ノ島", pron: "えのしま", pr: P.KANAGAWA}),
+[STATION_IDS.enoshima.koshigoe]: new Station({name: "腰越", pron: "こしごえ", pr: P.KANAGAWA}),
+[STATION_IDS.enoshima.kamakura_koukou_mae]: new Station({name: "鎌倉高校前", pron: "かまくらこうこうまえ", pr: P.KANAGAWA}),
+[STATION_IDS.enoshima.shichirigahama]: new Station({name: "七里ヶ浜", pron: "しちりがはま", pr: P.KANAGAWA}),
+[STATION_IDS.enoshima.inamuragasaki]: new Station({name: "稲村ヶ崎", pron: "いなむらがさき", pr: P.KANAGAWA}),
+[STATION_IDS.enoshima.gokurakuji]: new Station({name: "極楽寺", pron: "ごくらくじ", pr: P.KANAGAWA}),
+[STATION_IDS.enoshima.hase]: new Station({name: "長谷", pron: "はせ", pr: P.KANAGAWA}),
+[STATION_IDS.enoshima.yuigahama]: new Station({name: "由比ヶ浜", pron: "ゆいがはま", pr: P.KANAGAWA}),
+[STATION_IDS.enoshima.wadaduka]: new Station({name: "和田塚", pron: "わだづか", pr: P.KANAGAWA}),
+  //   #endregion 江ノ島電鉄
   //  #endregion 神奈川
   //  #region 埼玉
   //   #region 埼玉新都市交通

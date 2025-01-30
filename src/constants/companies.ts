@@ -84,6 +84,12 @@ export const COMPANIES: { [key: string]: Company } = {
     yomi: "よこはましこうつうきょく",
     keywords: ["横浜市営地下鉄", "よこはましえいちかてつ"]
   },
+  enoden: {
+    id: "enoden",
+    name: '江ノ島電鉄',
+    yomi: "えのしまでんてつ",
+    keywords: ["enoshima", "enoden"]
+  },
   sotetsu: {
     id: "sotetsu",
     name: '相模鉄道',

@@ -1838,6 +1838,21 @@ export const STATION_IDS = {
     odakyu_tama_center: "odakyu-odakyu-tama-center",
     karakida: "odakyu-karakida",
   },
+  enoshima: { /** 江ノ島電鉄 */
+    ishigami: "enoshima-ishigami",
+    yanagikouji: "enoshima-yanagikouji",
+    kugenuma: "enoshima-kugenuma",
+    syounan_kaigan_kouen: "enoshima-syounan-kaigan-kouen",
+    enoshima: "enoshima-enoshima",
+    koshigoe: "enoshima-koshigoe",
+    kamakura_koukou_mae: "enoshima-kamakura-koukou-mae",
+    shichirigahama: "enoshima-shichirigahama",
+    inamuragasaki: "enoshima-inamuragasaki",
+    gokurakuji: "enoshima-gokurakuji",
+    hase: "enoshima-hase",
+    yuigahama: "enoshima-yuigahama",
+    wadaduka: "enoshima-wadaduka",
+  },
   // #endregion 神奈川
 
   // #region 千葉
