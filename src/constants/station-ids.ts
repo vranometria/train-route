@@ -1698,6 +1698,7 @@ export const STATION_IDS = {
     esojima: "toubu-esojima",
     minami_utsunomiya: "toubu-minami-utsunomiya",
     toubu_utsunomiya: "toubu-toubu-utsunomiya",
+    daishimae: "toubu-daishimae",
   },
   toukyo_rinkai_kousoku: { /** 臨海高速鉄道 */
     shinonome: "rinkai-shinonome",

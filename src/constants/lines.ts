@@ -4361,6 +4361,15 @@ export const LINES = {
       new StopStationDef(STATION_IDS.toubu.toubu_utsunomiya),
     ]
   }),
+  [LINE_IDS.toubu.daishi]: new TrainLine({
+    name: "大師線",
+    yomi: "だいしせん",
+    companyId: COMPANIES.toubu.id,
+    stations: [
+      new StopStationDef(STATION_IDS.toubu.daishimae),
+      new StopStationDef(STATION_IDS.toubu.nishi_arai),
+    ]
+  }),
 
   // #region 京王電鉄
   [LINE_IDS.keiou.keiou]: new Line(

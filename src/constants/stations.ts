@@ -4476,32 +4476,21 @@ export const STATIONS = {
     pron: "とうぶうつのみや",
     pr: P.TOCHIGI,
   }),
+  [STATION_IDS.toubu.daishimae]: new Station({
+    name: "大師前",
+    pron: "だいしまえ",
+    pr: P.TOCHIGI,
+  }),
 
   //   #endregion 東武鉄道
   //  #endregion 東京
   //  #region 茨城
   //   #region 関東鉄道
-  [STATION_IDS.kantou.nishi_toride]: new StationInfo(
-    "西取手",
-    NO_TRANSFER,
-    "にしとりで"
-  ),
-  [STATION_IDS.kantou.terahara]: new StationInfo(
-    "寺原",
-    NO_TRANSFER,
-    "てらはら"
-  ),
-  [STATION_IDS.kantou.shin_toride]: new StationInfo(
-    "新取手",
-    NO_TRANSFER,
-    "しんとりで"
-  ),
-  [STATION_IDS.kantou.yumemino]: new StationInfo(
-    "夢見野",
-    NO_TRANSFER,
-    "ゆめみの"
-  ),
-  [STATION_IDS.kantou.inatoi]: new StationInfo("稲生", NO_TRANSFER, "いなおい"),
+  [STATION_IDS.kantou.nishi_toride]: new Station({name: "西取手", pron: "にしとりで", pr: P.IBARAKI}),
+  [STATION_IDS.kantou.terahara]: new Station({name: "寺原", pron: "てらはら", pr: P.IBARAKI}),
+  [STATION_IDS.kantou.shin_toride]: new Station({name: "新取手", pron: "しんとりで", pr: P.IBARAKI}),
+  [STATION_IDS.kantou.yumemino]: new Station({name: "夢見野", pron: "ゆめみの", pr: P.IBARAKI}),
+  [STATION_IDS.kantou.inatoi]: new Station({name: "稲戸井", pron: "いなとい", pr: P.IBARAKI}),
   [STATION_IDS.kantou.togashira]: new StationInfo(
     "戸頭",
     NO_TRANSFER,
