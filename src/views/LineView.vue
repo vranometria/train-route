@@ -210,6 +210,14 @@ th.kind .text {
   background-color: lightcyan;
 }
 
+.rapid-express {
+  background-color: rgb(8, 84, 146);
+}
+
+th.rapid-express .text{
+  color: white;
+}
+
 .extra1 {
   background-color: #E95295;
 }

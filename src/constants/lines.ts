@@ -3474,6 +3474,23 @@ export const LINES = {
       ]),
     ],
   }),
+  [LINE_IDS.jr_east.nikkou]: new TrainLine({
+    name: "日光線",
+    reading: "にっこうせん",
+    companyId: COMPANIES.jr_east.id,
+    sections: [
+      new Section([
+        new StopStation(STATION_IDS.jr_east.utsunomiya),
+        new StopStation(STATION_IDS.jr_east.tsuruta),
+        new StopStation(STATION_IDS.jr_east.tsuruta),
+        new StopStation(STATION_IDS.jr_east.kanuma),
+        new StopStation(STATION_IDS.jr_east.fubasami),
+        new StopStation(STATION_IDS.jr_east.shimotsuke_oosawa),
+        new StopStation(STATION_IDS.jr_east.imaichi),
+        new StopStation(STATION_IDS.jr_east.nikkou),
+      ]),
+    ],
+  }),
 
   // #region 千葉
   [LINE_IDS.jr_east.sotobou]: new TrainLine({
@@ -3661,7 +3678,6 @@ export const LINES = {
     ],
   }),
   // #endregion
-
   [LINE_IDS.jr_east.jouban]: new TrainLine({
     name: "常磐線",
     reading: "じょうばんせん",

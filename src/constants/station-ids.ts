@@ -1208,7 +1208,14 @@ export const STATION_IDS = {
     musashi_masuko: "jr-east-musashi-masuko",
     musashi_itsukaichi: "jr-east-musashi-itsukaichi",
     // #endregion 五日市線
-
+    // #region 日光線
+    tsuruta: "jr-east-tsuruta",
+    kanuma: "jr-east-kanuma",
+    fubasami: "jr-east-fubasami",
+    shimotsuke_oosawa: "jr-east-shimotsuke-oosawa",
+    imaichi: "jr-east-imaichi",
+    nikkou: "jr-east-nikkou",
+    // #endregion 日光線
     // 東北本線
     takaku: "jr-east-takaku",
     kurotawara: "jr-east-kurotawara",

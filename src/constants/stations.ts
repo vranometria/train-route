@@ -11178,7 +11178,38 @@ export const STATIONS = {
     "せんぼくまち"
   ),
   //#endregion 東北本線
-
+  // #region 日光線
+  [STATION_IDS.jr_east.tsuruta]: new Station({
+    name: "鶴田",
+    reading: "つるた",
+    prefecture: P.TOCHIGI,
+  }),
+  [STATION_IDS.jr_east.kanuma]: new Station({
+    name: "鹿沼",
+    reading: "かぬま",
+    prefecture: P.TOCHIGI,
+  }),
+  [STATION_IDS.jr_east.fubasami]: new Station({
+    name: "文挟",
+    reading: "ふばさみ",
+    prefecture: P.TOCHIGI,
+  }),
+  [STATION_IDS.jr_east.shimotsuke_oosawa]: new Station({
+    name: "下野大沢",
+    reading: "しもつけおおさわ",
+    prefecture: P.TOCHIGI,
+  }),
+  [STATION_IDS.jr_east.imaichi]: new Station({
+    name: "今市",
+    reading: "いまいち",
+    prefecture: P.TOCHIGI,
+  }),
+  [STATION_IDS.jr_east.nikkou]: new Station({
+    name: "日光",
+    reading: "にっこう",
+    prefecture: P.TOCHIGI,
+  }),
+  // #endregion 日光線
   // 山形新幹線
   [STATION_IDS.jr_east.yonezawa]: new StationInfo(
     "米沢",
