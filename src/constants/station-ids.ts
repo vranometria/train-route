@@ -413,6 +413,7 @@ export const STATION_IDS = {
   },
   /** 東急 駅 */
   toukyu: {
+    hiyoshi: "kanagawa-hiyoshi",
     // 田園都市線
     ikejiriohashi: "ikejiriohashi",
     sangenjaya: "sangenjaya",
@@ -534,7 +535,7 @@ export const STATION_IDS = {
     tateba: "yokohama-subway-tateba",
     shimo_iida: "yokohama-subway-shimo-iida",
     // green line
-    hiyoshi: "yokohama-subway-hiyoshi",
+    hiyoshi: "kanagawa-hiyoshi",
     hiyoshi_honchou: "yokohama-subway-hiyoshi-honchou",
     takada: "yokohama-subway-takada",
     higashi_yamada: "yokohama-subway-higashi-yamada",
@@ -1528,7 +1529,6 @@ export const STATION_IDS = {
     shimoitabashi: "toubu-shimoitabashi",
     oyama: "toubu-oyama",
     nakaitabashi: "toubu-nakaitabashi",
-    joubandai: "toubu-joubandai",
     kamiitabashi: "toubu-kamiitabashi",
     toubu_nerima: "toubu-toubu-nerima",
     shimoakatsuka: "toubu-shimoakatsuka",
@@ -1872,7 +1872,7 @@ export const STATION_IDS = {
     tsurukawa: "tsurukawa",
     tamagawagakuenmae: "tamagawagakuenmae",
     odakyu_sagamihara: "odakyusagamihara",
-    soubudaimae: "musashidaimae",
+    musashidaimae: "musashidaimae",
     zama: "zama",
     ebina: "ebina",
     honatsugi: "honatsugi",

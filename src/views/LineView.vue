@@ -1,20 +1,15 @@
 <script setup lang="ts">
-import BranchRow from '@/components/BranchRow.vue';
-import RightPane from '@/components/RightPane.vue';
-import StopStationRow from '@/components/StopStationRow.vue';
-import type { BranchModel } from '@/types/branch-model';
 import { LineViewModel } from '@/types/line-view-model';
-import { StationIndex } from '@/types/station-index';
-import { StationModel } from '@/types/station-model';
 import { watch, ref, onUpdated } from 'vue';
 import { useRoute } from 'vue-router';
+import SimpleSection from '@/components/SimpleSection.vue';
+import type { Branch, RoutePart, Section } from '@/types/Section';
+import BranchSection from '@/components/BranchSection.vue';
+import RightPane from '@/components/RightPane.vue';
   const route = useRoute();
   const lineId = ref(route.params.id as string);
   const model = ref(new LineViewModel(lineId.value as string));
   const from = ref(null as string|null);
-  const firstStation = ref(model.value.getFirstStation().name);
-  const lastStation = ref(model.value.getLastStation().name);
-  const colspan = model.value.kinds.length + 3;
 
   watch( ()=>route.params.id as string, (newId:string) => {
     lineId.value = newId;
@@ -33,15 +28,15 @@ import { useRoute } from 'vue-router';
     }
   });
 
-  const isTrue = (stamodel: StationModel|BranchModel):boolean => {
-    return (stamodel instanceof StationModel);
+  const branchSelected = (sectionIndex:number, branchIndex: number) => {
+    const t = new LineViewModel(lineId.value as string);
+    (t.line.sections[sectionIndex] as Branch).selectRoute(branchIndex);
+    t.updateProperties();
+    model.value = t;
   }
 
-  const branchSelected = (args:StationIndex[]) => {
-    const t = model.value.stations.filter(x => isTrue(x)).map( (x,i) => new StationIndex((x as StationModel).name, i))
-    const s =  [...t, ...args].sort( (a, b) => a.index - b.index);
-    firstStation.value = s[0].name;
-    lastStation.value = s[s.length - 1].name;
+  const isSection = (arg: RoutePart): boolean => {
+    return arg.getType() === 'Section';
   }
 </script>
 
@@ -49,9 +44,9 @@ import { useRoute } from 'vue-router';
   <div class="container">
     <div class="pane">
       <h1>
-        <div class="company">{{model.companyName}}</div>
+        <div class="company">{{model.getCompanyName()}}</div>
         <div class="kanban">
-          <div class="line">{{ model.lineName }}</div>
+          <div class="line">{{ model.getLineName() }}</div>
         </div>
       </h1>
       <component :is="model.overlay" />
@@ -61,24 +56,23 @@ import { useRoute } from 'vue-router';
             <th>駅</th>
             <th></th>
             <th>乗り換え</th>
-            <th v-for="kind in model.kinds" :key="kind.prop" class="kind" :class="kind.prop">
+            <th v-for="kind in model.getServiceTypes()" :key="kind.prop" class="kind" :class="kind.prop">
               <span class="text" :class="kind.extraCharge">{{ kind.name }}</span>
               <p class="fukidashi">特急料が別途必須</p>
             </th>
           </tr>
         </thead>
         <tbody>
-          <tr ></tr>
-          <template v-for="(staModel, index) in model.stations" :key="index">
-            <StopStationRow :no="index" :staModel="staModel" :lineId="lineId" :kinds="model.kinds" v-if="isTrue(staModel)"/>
-            <BranchRow :branch="(staModel as BranchModel)" :lineId="lineId" :startNo="index" :colspan="colspan" @branch-selected="branchSelected" v-else/>
+          <template v-for="(section, sectionIndex) in model.line.sections" :key="sectionIndex">
+            <SimpleSection :section="(section as Section)" :line-id="lineId" :index-by-station-id="model.indexByStationId" :service-types="model.getServiceTypes()" v-if="isSection(section)" />
+            <BranchSection :branch="(section as Branch)" :line-id="lineId" :index-by-station-id="model.indexByStationId" :colspan="model.getColspan()" :service-types="model.getServiceTypes()" :section-index="sectionIndex" @branch-selected="branchSelected" v-else/>
           </template>
         </tbody>
       </table>
       <component :is="model.underlay" />
     </div>
     <div class="right-pane">
-      <RightPane :model="model" :from="from" :first-station="firstStation" :last-station="lastStation"/>
+      <RightPane :model="model" :from="from" :first-station="model.getFirstStationName()" :last-station="model.getLastStationName()"/>
     </div>
   </div>
 </template>
@@ -101,18 +95,6 @@ h1 {
 .right-pane {
   margin-left: 1rem;
   padding: 1rem;
-}
-
-.f {
-  background-color: lightgreen;
-}
-
-.tj {
-  background-color: lightblue;
-}
-
-.tjd {
-  background-color: lightcoral;
 }
 
 .on-the-way {
@@ -236,8 +218,20 @@ th.kind .text {
   background-color: #A22041;
 }
 
+.extra3 {
+  background-color: #F7C242;
+}
+
+.extra4 {
+  background-color: #8a650e;
+}
+
+.extra5 {
+  background-color: #cbe28a;
+}
+
 .commuter {
-  background-color: yellow;
+  background-color: rgb(102, 189, 52);
 }
 
 .distination {
@@ -247,5 +241,22 @@ th.kind .text {
 .from {
   color: yellow;
 }
+
+.rapid-commuter {
+  background-color: red;
+}
+
+.f {
+  background-color: lightgreen;
+}
+
+.tj {
+  background-color: lightblue;
+}
+
+.tjd {
+  background-color: lightcoral;
+}
+
 
 </style>

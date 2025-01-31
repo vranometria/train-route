@@ -73,7 +73,7 @@ onUpdated(() => {
   <h2>行き先</h2>
   <select v-on:change="changeDistination($event)">
     <option value=""> - </option>
-    <option v-for="dist in model.distinationList" :key="dist.id" :value="dist.id">{{ dist.name }}</option>
+    <option v-for="dist in model.distinations" :key="dist.stationId" :value="dist.stationId">{{ dist.name }}</option>
   </select>
 
   <h2>音声言語</h2>

@@ -2,8 +2,12 @@
 import { defineProps } from 'vue';
 import { useLangStore } from '@/stores/lang';
 import Exchange from './Exchange.vue';
+import { StationModel } from '@/types/station-model';
 
-defineProps(['no', 'staModel', "lineId", "kinds"]);
+const prop = defineProps(['no', 'stopStation', "lineId", 'serviceTypes']);
+
+const stationId = prop.stopStation.stationId;
+const model = new StationModel(prop.stopStation);
 
 const pronunce = (yomi: string) => {
   const lang = useLangStore().lang;
@@ -15,18 +19,17 @@ const pronunce = (yomi: string) => {
 </script>
 
 <template>
-  <tr :no="no" :id="staModel.id" :key="staModel.id">
-    <td class="station-name">{{ staModel.name }}</td>
+  <tr :no="no" :id="stationId" :key="no">
+    <td class="station-name">{{ model.name }}</td>
     <td class="pronunciation">
-      <button :onclick="() => { pronunce(staModel.pronunciation); }">
+      <button :onclick="() => { pronunce(model.pronunciation); }">
         <img src="@/assets/speaker.png" />
       </button>
     </td>
     <td>
-      <Exchange :source-station-id="staModel.id" :exchange-lines="staModel.getExchangeLines(lineId)"></Exchange>
+      <Exchange :source-station-id="stationId" :exchange-lines="model.getExchangeLines(lineId)"></Exchange>
     </td>
-    <td v-for="kind in kinds" :key="kind.prop" :class="staModel.kinds[kind.prop]" class="kind">
-    </td>
+    <td v-for="t in serviceTypes" :key="t.prop" :class="model.serviceTypes[t.prop]" class="kind"></td>
   </tr>
 </template>
 

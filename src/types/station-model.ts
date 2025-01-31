@@ -1,7 +1,7 @@
 import { STATIONS } from "@/constants/stations";
 import { ExchangeLineModel } from "./exchange-line-model";
-import { StopStationDef } from "./stop-station-def";
 import { ExchangeInfo } from "./exchange-info";
+import type { StopStation } from "./stop-station";
 
 /**
  * 駅の描画用モデル
@@ -9,13 +9,13 @@ import { ExchangeInfo } from "./exchange-info";
 export class StationModel {
   id: string;
   name: string;
-  kinds: { [key: string]: string } = {};
+  serviceTypes: { [key: string]: string } = {};
   lines: ExchangeLineModel[];
   pronunciation: string = "";
 
-  constructor(stopStationDef: StopStationDef) {
-    this.id = stopStationDef.id;
-    stopStationDef.kinds.forEach((kind) => (this.kinds[kind] = kind));
+  constructor(stopStationDef: StopStation) {
+    this.id = stopStationDef.stationId;
+    stopStationDef.serviceKeys.forEach((k) => (this.serviceTypes[k] = k));
     const sta = STATIONS[this.id];
     if (sta) {
       this.name = sta.name;

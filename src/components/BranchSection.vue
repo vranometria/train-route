@@ -1,32 +1,35 @@
 <script setup lang="ts">
-import type { BranchModel } from '@/types/branch-model';
+import type { Branch } from '@/types/Section';
 import { defineProps, ref } from 'vue';
 import StopStationRow from './StopStationRow.vue';
-import { StationIndex } from '@/types/station-index';
+import type { ServiceType } from '@/types/service-type';
+import { STATIONS } from '@/constants/stations';
+
 const props = defineProps<{
-  branch: BranchModel;
+  branch: Branch;
   lineId: string;
-  startNo: number;
+  indexByStationId: Map<string, number>;
   colspan: number;
+  serviceTypes: ServiceType[];
+  sectionIndex: number;
 }>();
 const emit = defineEmits(['branchSelected']);
 
 const branchIndex = ref(0);
-const stations = ref(props.branch.stations[branchIndex.value]);
-
-const names = props.branch.stations.map( b => b[branchIndex.value].name )
+const routeTops = props.branch.routes.map( x => STATIONS[x[0].stationId] );
+const stopStations = ref(props.branch.routes[branchIndex.value]);
 
 const branchSelected = (event:Event) => {
   const element = event.target as HTMLElement;
   branchIndex.value = Number(element.getAttribute('index'));
-  stations.value = props.branch.stations[branchIndex.value];
+  stopStations.value = props.branch.routes[branchIndex.value];
   Array.from(document.getElementsByClassName("branch")).forEach( (e:Element) => {
     e.classList.remove("selected");
     e.classList.add("unselected");
   });
   element.classList.remove("unselected");
   element.classList.add("selected");
-  emit('branchSelected', stations.value.map((s,i) => {return new StationIndex(s.name, i)}));
+  emit('branchSelected',props.sectionIndex, branchIndex.value);
 }
 </script>
 
@@ -34,12 +37,12 @@ const branchSelected = (event:Event) => {
   <tr class="branch-switch">
     <td :colspan="colspan" >
       <div class="wrapper">
-        <span v-for="(n, index) in names" :key="n" :onclick="branchSelected" :index="index" class="branch" :class="{'selected': index===0}">{{ n }}方面</span>
+        <span v-for="(r, index) in routeTops" :key="index" :onclick="branchSelected" :index="index" class="branch" :class="{'selected': index===0}">{{ r.name }}方面</span>
       </div>
     </td>
   </tr>
-  <template v-for="(staModel, index) in stations" :key="index + startNo">
-    <StopStationRow :no="index + startNo" :staModel="staModel" :lineId="lineId" :kinds="staModel.kinds" />
+  <template v-for="station in stopStations" :key="station.stationId">
+    <StopStationRow :no="indexByStationId.get(station.stationId)" :stop-station="station" :line-id="lineId" :service-types="serviceTypes" />
   </template>
 </template>
 

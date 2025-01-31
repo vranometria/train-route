@@ -1,84 +1,80 @@
 import { LINES } from "@/constants/lines";
-import type { KindDef } from "./kind-def";
-import { StationModel } from "./station-model";
 import type { Component } from "vue";
-import { getOverlay, getUnderlay } from "@/util";
+import { getOverlay, getUnderlay, List } from "@/util";
 import { COMPANIES } from "@/constants/companies";
-import { Branch } from "./branch";
-import { StopStationDef } from "./stop-station-def";
-import { BranchModel } from "./branch-model";
-
-class Distination {
-  name: string;
-  id: string;
-  constructor(name: string, id: string){
-    this.name = name;
-    this.id = id;
-  }
-}
+import type { ServiceType } from "./service-type";
+import type { TrainLine } from "./line";
+import type { Branch, RoutePart } from "./Section";
+import { Distination } from "./distination";
+import { STATIONS } from "@/constants/stations";
+import type { StationInfo } from "./station-info";
 
 export class LineViewModel {
-  lineName: string;
-  companyName: string;
-  kinds: KindDef[];
-  stations: (StationModel|BranchModel)[] = [];
+  line: TrainLine;
+  indexByStationId: Map<string, number> = new Map<string, number>();
   overlay: Component|null = null;
   underlay: Component|null = null;
-  distinationList: Distination[] = [];
+  firstStationId: string|null = null;
+  lastStationId: string|null = null;
+  distinations: Distination[] = [];
 
   constructor(lineId: string){
-    const line = LINES[lineId];
-    this.lineName = line.name;
-    const company = COMPANIES[line.companyId];
-    if(!company){
-      throw new Error(`Company not found for lineId: ${lineId} ${line.companyId}`);
-    }
-    this.companyName = company.name ? company.name : line.companyId;
-
-    this.kinds = line.kinds;
-    this.stations = line.stations.map(x=> this.toModel(x));
+    this.line = LINES[lineId];
     this.overlay = getOverlay(lineId);
     this.underlay = getUnderlay(lineId);
-    this.distinationList = this.sortAlphabetically(this.stations).map(x => new Distination(x.name, x.id));
+    this.updateProperties();
   }
 
-  sortAlphabetically(array: (StationModel|BranchModel)[]){
-    const stationModelList: StationModel[] = [];
-    array.forEach(x => {
-      switch(typeof x){
-        case typeof StationModel:
-          stationModelList.push(x as StationModel);
-          break;
-        case typeof BranchModel:
-          (x as BranchModel).stations.forEach(y => stationModelList.push(...y));
-          break;
-      }
+  updateProperties(){
+    const stationIds = this.getStopStationIds();
+    this.firstStationId = stationIds.first();
+    this.lastStationId = stationIds.last();
+    this.indexByStationId = this.getStationIdByIndex(stationIds);
+    this.distinations = this.getDistinations(stationIds);
+  }
+
+  getLineName():string { return this.line.name; }
+
+  getCompanyName():string {
+    const company = COMPANIES[this.line.companyId];
+    return company && company.name ? company.name : "未定義";
+  }
+
+  getServiceTypes():ServiceType[] { return this.line.serviceTypes; }
+
+  getFirstStationName():string{
+    const t = STATIONS[this.firstStationId as string];
+    return t ? t.name : "";
+  }
+
+  getLastStationName():string{
+    const t = STATIONS[this.lastStationId as string];
+    return t ? t.name : "";
+  }
+
+  getColspan():number { return this.line.serviceTypes.length + ["駅名", "発音", "乗り換え"].length; }
+
+  getStopStationIds(): List<string> {
+    const stopStationIds = new List<string>();
+    this.line.sections.forEach((section:RoutePart) => {
+      section.getStations().forEach(x => { stopStationIds.push(x.stationId); });
     });
-    return stationModelList.slice().sort((a, b) => a.pronunciation.localeCompare(b.pronunciation, "ja"));
+    return stopStationIds;;
   }
 
-  getFirstStation():StationModel{
-    return this.stations.filter(x => x instanceof StationModel)[0];
+  getStationIdByIndex(stationIds: string[]): Map<string, number> {
+    const indexByStationId = new Map<string, number>();
+    stationIds.forEach((stationId, index) => { indexByStationId.set(stationId, index); });
+    return indexByStationId;
   }
 
-  getLastStation():StationModel{
-    const s1 = this.stations.filter(x => x instanceof StationModel);
-    const s2 = this.stations.filter(x => x instanceof BranchModel);
-    s2.forEach(x => {
-      x.stations[0].forEach(y => s1.push(y));
-    });
-    return s1[s1.length - 1];
+  getDistinations(stationIds: string[]): Distination[] {
+    const list = new List<Distination>(...stationIds.map(stationid => new Distination(stationid)));
+    return list.sortAlphabetically("name");
   }
 
-  toModel(x: StopStationDef|Branch): StationModel|BranchModel {
-    if(x instanceof StopStationDef){
-      return new StationModel(x as StopStationDef);
-    }
-
-    if(x instanceof Branch){
-      return new BranchModel(x as Branch);
-    }
-
-    throw new Error(`Invalid type: ${typeof x}`);
+  switchBranch(sectionIndex: number, branchIndex: number){
+    (this.line.sections[sectionIndex] as Branch).selectRoute(branchIndex);
+    this.updateProperties();
   }
 }

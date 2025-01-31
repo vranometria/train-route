@@ -1,28 +1,61 @@
-import type { Branch } from "./branch";
-import type { KindDef } from "./kind-def";
-import { StopStationDef } from "./stop-station-def";
+import { STATIONS } from "@/constants/stations";
+import type { ServiceType } from "./service-type";
+import type { RoutePart } from "./Section";
+import { deduplicate } from "@/util";
+
+
+interface TrainLineConstructor {
+  /** 路線名 */
+  name: string;
+  /** 運行会社ID */
+  companyId: string;
+  serviceTypes?: ServiceType[];
+  sections: RoutePart[];
+  reading: string;
+}
 
 /**
  * 路線定義クラス
  */
-export class Line {
-  name: string
-  companyId: string
-  kinds: KindDef[]
-  stations: (StopStationDef|Branch)[]
-  /** 路線が通る権 */
-  prefectures: string[]
+export class TrainLine {
+  /** 路線名 */
+  name: string;
+  /** 運行会社ID */
+  companyId: string;
+  /** 路線の読み仮名 */
+  reading: string;
+  /** 路線が通る都道府県 */
+  prefectures: string[];
+  /** 路線の運行種別 */
+  serviceTypes: ServiceType[];
+  /** 路線の区間 */
+  sections: RoutePart[];
 
-  constructor(name: string, companyId: string, kinds: KindDef[], stations: (StopStationDef|Branch)[], prefectures?: string|string[]) {
+  constructor({ name, companyId, reading, sections }: TrainLineConstructor);
+  constructor({
+    name,
+    companyId,
+    reading,
+    sections,
+    serviceTypes,
+  }: TrainLineConstructor) {
     this.name = name;
     this.companyId = companyId;
-    this.kinds = kinds;
-    this.stations = stations;
-    this.prefectures = (()=>{
-      if(!prefectures) return [];
-      if(typeof prefectures === "string") return [prefectures];
-      return prefectures;
-    })();
+    this.reading = reading;
+    this.prefectures = this.getPrefectures(sections);
+    this.serviceTypes = serviceTypes || [];
+    this.sections = sections;
+  }
+
+  getPrefectures(sections: RoutePart[]): string[] {
+    const prefectures = [];
+    for (const section of sections) {
+      const t = section
+        .getStations()
+        .map((s) => STATIONS[s.stationId]?.prefecture);
+      prefectures.push(...t);
+    }
+    return deduplicate(prefectures);
   }
 
   /**
@@ -32,23 +65,5 @@ export class Line {
    */
   runsThrough(prefecture: string): boolean {
     return this.prefectures.includes(prefecture);
-  }
-}
-
-interface TrainLineConstructor {
-  name: string
-  companyId: string
-  kinds?: KindDef[]
-  stations: (StopStationDef|Branch)[]
-  yomi: string
-}
-
-export class TrainLine extends Line {
-  yomi: string
-
-  constructor({name, companyId, yomi, stations}: TrainLineConstructor);
-  constructor({name, companyId, yomi, stations, kinds = []}: TrainLineConstructor){
-    super(name, companyId, kinds, stations);
-    this.yomi = yomi;
   }
 }
