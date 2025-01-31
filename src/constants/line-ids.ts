@@ -183,6 +183,8 @@ export const LINE_IDS = {
 
     /** 磐越東線 */
     banetsutou: "jr-banetsutou",
+    /** 只見線 */
+    tadami: "jr-tadami",
 
     // #region 千葉
     /** 内房線 */
@@ -282,7 +284,7 @@ export const LINE_IDS = {
       // 東海道新幹線
       tokaido: "jr-tokaido-shinkansen",
       // 東北新幹線
-      tohoku: "jr-tohoku-shinkansen",
+      touhoku: "jr-tohoku-shinkansen",
       // 山形新幹線
       yamagata: "jr-yamagata-shinkansen",
       // 秋田新幹線
@@ -560,6 +562,10 @@ export const LINE_IDS = {
   echigo_tokimeki: {
     myoko_haneuma: "echigo-tokimeki-myoko-haneuma",
     nihonkai_hisui: "echigo-tokimeki-nihonkai-hisui",
+  },
+  /** 北越急行 */
+  hokuhoku: {
+    hokuhoku: "hokuetsu-kyukou-hokuhoku",
   },
   /** あいの風とやま鉄道 */
   ainokaze_toyama: {
