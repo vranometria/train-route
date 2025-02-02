@@ -192,4 +192,10 @@ export const COMPANIES: { [key: string]: Company } = {
     yomi: "かんとうてつどう",
     keywords: ["kantou"]
   },
+  izu_hakone: {
+    id: "izu_hakone",
+    name: '伊豆箱根鉄道',
+    yomi: "いずはこねてつどう",
+    keywords: ["izu hakone"]
+  },
 }

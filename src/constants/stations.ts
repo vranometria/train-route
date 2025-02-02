@@ -7072,6 +7072,74 @@ export const STATIONS = {
     prefecture: P.KANAGAWA,
   }),
   // #endregion 湘南モノレール
+  // #region ▶伊豆箱根鉄道
+  [STATION_IDS.izu_hakone.midorichou]: new Station({
+    name: "緑町",
+    reading: "みどりちょう",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.izu_hakone.daiyuzan],
+  }),
+  [STATION_IDS.izu_hakone.isaida]: new Station({
+    name: "井細田",
+    reading: "いさいだ",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.izu_hakone.daiyuzan],
+  }),
+  [STATION_IDS.izu_hakone.gohyakurakan]: new Station({
+    name: "五百羅漢",
+    reading: "ごひゃくらかん",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.izu_hakone.daiyuzan],
+  }),
+  [STATION_IDS.izu_hakone.anabe]: new Station({
+    name: "穴部",
+    reading: "あなべ",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.izu_hakone.daiyuzan],
+  }),
+  [STATION_IDS.izu_hakone.iidaoka]: new Station({
+    name: "飯田岡",
+    reading: "いいだおか",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.izu_hakone.daiyuzan],
+  }),
+  [STATION_IDS.izu_hakone.sagami_numata]: new Station({
+    name: "相模沼田",
+    reading: "さがみぬまた",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.izu_hakone.daiyuzan],
+  }),
+  [STATION_IDS.izu_hakone.iwahara]: new Station({
+    name: "岩原",
+    reading: "いわはら",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.izu_hakone.daiyuzan],
+  }),
+  [STATION_IDS.izu_hakone.tsukahara]: new Station({
+    name: "塚原",
+    reading: "つかはら",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.izu_hakone.daiyuzan],
+  }),
+  [STATION_IDS.izu_hakone.wadagahara]: new Station({
+    name: "和田河原",
+    reading: "わだがはら",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.izu_hakone.daiyuzan],
+  }),
+  [STATION_IDS.izu_hakone.fuji_film_mae]: new Station({
+    name: "富士フイルム前",
+    reading: "ふじふぃるむまえ",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.izu_hakone.daiyuzan],
+  }),
+  [STATION_IDS.izu_hakone.daiyuzan]: new Station({
+    name: "大雄山",
+    reading: "だいゆうざん",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.izu_hakone.daiyuzan],
+  }),
+  // #endregion 伊豆箱根鉄道
   // #endregion ---神奈川---
   //  #region 埼玉
   //   #region 埼玉新都市交通
@@ -9153,7 +9221,7 @@ export const STATIONS = {
       LINE_IDS.jr_east.shinkansen.tokaido,
       LINE_IDS.odakyu.odawara,
       LINE_IDS.odakyu.hakonetozan,
-      LINE_IDS.izuhakone.daiyuzan,
+      LINE_IDS.izu_hakone.daiyuzan,
     ],
     "おだわら"
   ),
@@ -11655,7 +11723,7 @@ export const STATIONS = {
     name: "三島",
     reading: "みしま",
     prefecture: P.SHIZUOKA,
-    lines: [LINE_IDS.jr_east.tokaido, LINE_IDS.izuhakone.sunzu],
+    lines: [LINE_IDS.jr_east.tokaido, LINE_IDS.izu_hakone.sunzu],
   }),
   [STATION_IDS.jr_tokai.shinfuji]: new Station({
     name: "新富士",

@@ -462,7 +462,7 @@ export const LINE_IDS = {
     joushin: "joushin-joushin",
   },
   /** 伊豆箱根鉄道 */
-  izuhakone: {
+  izu_hakone: {
     daiyuzan: "izuhakone-daiyuzan",
     sunzu: "izuhakone-sunzu",
   },
