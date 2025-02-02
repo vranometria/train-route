@@ -32,14 +32,19 @@ export class StationModel {
   createExchangeLineModel = (
     line: string | ExchangeInfo
   ): ExchangeLineModel => {
-    let lineId: string;
-    let stationId: string;
-    if (typeof line === "string") {
-      lineId = line;
-      stationId = this.id;
-    } else {
-      lineId = line.lineId;
-      stationId = line.stationId;
+    let lineId: string = "";
+    let stationId: string = "";
+    try {
+      if (typeof line === "string") {
+        lineId = line;
+        stationId = this.id;
+      } else {
+        lineId = line.lineId;
+        stationId = line.stationId;
+      }
+    }
+    catch {
+      throw new Error(`line: ${lineId}, station: ${stationId}`);
     }
 
     return new ExchangeLineModel(lineId, stationId);

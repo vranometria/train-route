@@ -209,5 +209,11 @@ export const COMPANIES: { [key: string]: Company } = {
     name: '高尾登山電鉄',
     yomi: "たかおとざんでんてつ",
     keywords: ["takao tozan"]
-  }
+  },
+  jr_tokai: {
+    id: "jr_tokai",
+    name: 'JR東海',
+    yomi: "じぇいあーるとうかい",
+    keywords: ["jr", "jr tokai", "jrtokai", "japan railway tokai"]
+  },
 }

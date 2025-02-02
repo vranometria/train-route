@@ -169,7 +169,7 @@ export const LINE_IDS = {
     /** 湘南新宿ライン(JS) */
     shonan_shinjuku: "jr-sho-nan_shinjuku",
     /** 東海道本線(JT) */
-    tokaido: "jr-tokaido",
+    toukaidou: "jr-tokaido-east",
     /** 宇都宮線(JU) */
     utunomiya: "jr-utunomiya",
     /** 高崎線(JU) */
@@ -492,15 +492,45 @@ export const LINE_IDS = {
     izumi: "izumi-izumi",
   },
   /** JR東海 */
-  jr_tokai: {
+  jr_toukai: {
+    toukaidou: "jr-tokai-toukaidou-toukai",
     tenryuhamanako: "jr-tokai-tenryuhamanako",
     ida: "jr-tokai-ida",
     chuohonsen: "jr-tokai-chuohonsen",
     aonami: "jr-tokai-aonami",
     hokurikuhonsen: "jr-tokai-hokurikuhonsen",
+    gotenba: "jr-tokai-gotenba",
+    minobu: "jr-tokai-minobu",
+    itou: "jr-tokai-itou",
+    taketoyo: "jr-tokai-taketoyo",
+    chuou_honsen: "jr-tokai-chuou-honsen",
+    takayama_honsen: "jr-tokai-takayama-honsen",
+  },
+  gakunan: {
+    gakunan: "gakunan-gakunan",
+  },
+  ooigawa: {
+    honsen: "ooigawa-hosen",
+  },
+  tenryu_hamanako: {
+    tenryu_hamanako: "tenryu-hamanako-tenryu-hamanako",
+  },
+  meitetsu: {
+    gamagoori: "meitetsu-gamagoori",
+    mikawa: "meitetsu-mikawa",
+  },
+  aichi_kanjou: {
+    aichi_kanjou: "aichi-kanjou-aichi-kanjou",
+  },
+  yourou: {
+    yourou: "yourou-yourou",
+  },
+  tarumi: {
+    tarumi: "tarumi-tarumi",
   },
   /** JR西日本線 */
   jr_west: {
+    toukaidou: "jr-west-toukaidou",
     kansai_honsen: "jr-west-kansai-honsen",
     saninhonsen: "jr-west-saninhonsen",
     nara: "jr-west-nara",
@@ -527,6 +557,8 @@ export const LINE_IDS = {
   nagoya_shiei_subway: {
     sakuradori: "nagoya-shiei-subway-sakuradori",
     higashiyama: "nagoya-shiei-subway-higashiyama",
+    meijou: "nagoya-shiei-subway-meijou",
+    meikou: "nagoya-shiei-subway-meikou",
   },
   /** 近江鉄道 */
   oumi: {
