@@ -900,7 +900,7 @@ export const STATION_IDS = {
     hiratsuka: "hiratsuka",
     oiso: "oiso",
     ninomiya: "ninomiya",
-    kozu: "kozu",
+    koudu: "kozu",
     kamonomiya: "kamonomiya",
     odawara: "odawara",
     hayakawa: "hayakawa",
@@ -1247,6 +1247,15 @@ export const STATION_IDS = {
     echigo_takiya: "jr-east-echigo-takiya",
     miyauchi: "jr-east-miyauchi",
     // #endregion 上越線
+    // #region 御殿場線
+    shimosoga: "kanagawa-shimosoga",
+    kami_ooi: "kanagawa-kami-ooi",
+    sagami_kaneko: "kanagawa-sagami-kaneko",
+    matsuda: "kanagawa-matsuda",
+    higashi_yamakita: "kanagawa-higashi-yamakita",
+    yamakita: "kanagawa-yamakita",
+    yaga: "kanagawa-yaga",
+    // #endregion 御殿場線
     // 東北本線
     takaku: "jr-east-takaku",
     kurotawara: "jr-east-kurotawara",
@@ -2404,6 +2413,19 @@ export const STATION_IDS = {
     usami: "shizuoka-usami",
     itou: "shizuoka-itou",
     // #endregion 伊東線
+
+    // #region 御殿場線
+    suruga_oyama: "shizuoka-suruga-oyama",
+    ashigara: "shizuoka-ashigara",
+    gotenba: "shizuoka-gotenba",
+    minami_gotenba: "shizuoka-minami-gotenba",
+    fujioka: "shizuoka-fujioka",
+    iwanami: "shizuoka-iwanami",
+    susono: "shizuoka-susono",
+    nagaizumi_nameri: "shizuoka-nagaizumi-nameri",
+    shimotogari: "shizuoka-shimotogari",
+    ooka: "shizuoka-ooka",
+    // #endregion 御殿場線
   },
   // JR西日本 駅
   jr_west: {

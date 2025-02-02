@@ -9160,138 +9160,156 @@ export const STATIONS = {
     ],
     "ながつた"
   ),
-  [STATION_IDS.jr_east.tokaichiba]: new StationInfo(
-    "十日市場",
-    [],
-    "とおかいちば"
-  ),
-  [STATION_IDS.jr_east.nakayama]: new StationInfo(
-    "中山",
-    [LINE_IDS.jr_east.yokohama, LINE_IDS.yokohama_subway.green_line],
-    "なかやま"
-  ),
-  [STATION_IDS.jr_east.kamoi]: new StationInfo("鴨居", [], "かもい"),
-  [STATION_IDS.jr_east.kodukue]: new StationInfo("小机", [], "こづくえ"),
-  [STATION_IDS.jr_east.shin_yokohama]: new StationInfo(
-    "新横浜",
-    [
+  [STATION_IDS.jr_east.tokaichiba]: new Station({
+    name: "十日市場",
+    reading: "とかいちば",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.jr_east.yokohama],
+  }),
+  [STATION_IDS.jr_east.nakayama]: new Station({
+    name: "中山",
+    reading: "なかやま",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.jr_east.yokohama, LINE_IDS.yokohama_subway.green_line],
+  }),
+  [STATION_IDS.jr_east.kamoi]: new Station({name: "鴨居", reading: "かもい", prefecture: P.KANAGAWA, lines: [LINE_IDS.jr_east.yokohama]}),
+  [STATION_IDS.jr_east.kodukue]: new Station({name: "小机", reading: "こづくえ", prefecture: P.KANAGAWA, lines: [LINE_IDS.jr_east.yokohama]}),
+  [STATION_IDS.jr_east.shin_yokohama]: new Station({
+    name: "新横浜",
+    reading: "しんよこはま",
+    prefecture: P.KANAGAWA,
+    lines: [
       LINE_IDS.jr_east.yokohama,
       LINE_IDS.jr_east.shinkansen.tokaido,
       LINE_IDS.yokohama_subway.blue_line,
       LINE_IDS.sagami.sotetsushin_yokohama,
       LINE_IDS.toukyu.shin_yokohama,
     ],
-    "しんよこはま"
-  ),
-  [STATION_IDS.jr_east.kikuna]: new StationInfo(
-    "菊名",
-    [LINE_IDS.jr_east.yokohama, LINE_IDS.toukyu.touyoko],
-    "きくな"
-  ),
-  [STATION_IDS.jr_east.oguchi]: new StationInfo("大口", [], "おおぐち"),
-  [STATION_IDS.jr_east.higashi_kanagawa]: new StationInfo(
-    "東神奈川",
-    [],
-    "ひがしかながわ"
-  ),
-  [STATION_IDS.jr_east.sakuragicho]: new StationInfo(
-    "桜木町",
-    [LINE_IDS.jr_east.negishi, LINE_IDS.jr_east.yokohama],
-    "さくらぎちょう"
-  ),
-  [STATION_IDS.jr_east.kannai]: new StationInfo(
-    "関内",
-    [LINE_IDS.jr_east.negishi, LINE_IDS.jr_east.yokohama],
-    "かんない"
-  ),
-  [STATION_IDS.jr_east.ishikawacho]: new StationInfo(
-    "石川町",
-    [LINE_IDS.jr_east.negishi, LINE_IDS.jr_east.yokohama],
-    "いしかわちょう"
-  ),
-  [STATION_IDS.jr_east.yamate]: new StationInfo(
-    "山手",
-    [LINE_IDS.jr_east.negishi, LINE_IDS.jr_east.yokohama],
-    "やまて"
-  ),
-  [STATION_IDS.jr_east.negishi]: new StationInfo(
-    "根岸",
-    [LINE_IDS.jr_east.negishi, LINE_IDS.jr_east.yokohama],
-    "ねぎし"
-  ),
-  [STATION_IDS.jr_east.isogo]: new StationInfo(
-    "磯子",
-    [LINE_IDS.jr_east.negishi, LINE_IDS.jr_east.yokohama],
-    "いそご"
-  ),
-  [STATION_IDS.jr_east.shin_sugita]: new StationInfo(
-    "新杉田",
-    [
+  }),
+  [STATION_IDS.jr_east.kikuna]: new Station({
+    name: "菊名",
+    reading: "きくな",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.jr_east.yokohama, LINE_IDS.toukyu.touyoko],
+  }),
+  [STATION_IDS.jr_east.oguchi]: new Station({name: "大口", reading: "おおぐち", prefecture: P.KANAGAWA, lines: [LINE_IDS.jr_east.yokohama]}),
+  [STATION_IDS.jr_east.sakuragicho]: new Station({
+    name: "桜木町",
+    reading: "さくらぎちょう",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.jr_east.negishi, LINE_IDS.jr_east.yokohama],
+  }),
+  [STATION_IDS.jr_east.kannai]: new Station({
+    name: "関内",
+    reading: "かんない",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.jr_east.negishi, LINE_IDS.jr_east.yokohama],
+  }),
+  [STATION_IDS.jr_east.ishikawacho]: new Station({
+    name: "石川町",
+    reading: "いしかわちょう",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.jr_east.negishi, LINE_IDS.jr_east.yokohama],
+  }),
+  [STATION_IDS.jr_east.yamate]: new Station({
+    name: "山手",
+    reading: "やまて",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.jr_east.negishi, LINE_IDS.jr_east.yokohama],
+  }),
+  [STATION_IDS.jr_east.negishi]: new Station({
+    name: "根岸",
+    reading: "ねぎし",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.jr_east.negishi, LINE_IDS.jr_east.yokohama],
+  }),
+  [STATION_IDS.jr_east.isogo]: new Station({
+    name: "磯子",
+    reading: "いそご",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.jr_east.negishi, LINE_IDS.jr_east.yokohama],
+  }),
+  [STATION_IDS.jr_east.shin_sugita]: new Station({
+    name: "新杉田",
+    reading: "しんすぎた",
+    prefecture: P.KANAGAWA,
+    lines: [
       LINE_IDS.jr_east.negishi,
       new ExchangeInfo(LINE_IDS.keikyu.honsen, STATION_IDS.keikyu.sugita),
     ],
-    "しんすぎた"
-  ),
-  [STATION_IDS.jr_east.youkoudai]: new StationInfo(
-    "洋光台",
-    [LINE_IDS.jr_east.negishi, LINE_IDS.jr_east.yokohama],
-    "ようこうだい"
-  ),
-  [STATION_IDS.jr_east.kounandai]: new StationInfo(
-    "港南台",
-    [LINE_IDS.jr_east.negishi, LINE_IDS.jr_east.yokohama],
-    "こうなんだい"
-  ),
-  [STATION_IDS.jr_east.hongoudai]: new StationInfo(
-    "本郷台",
-    [LINE_IDS.jr_east.negishi, LINE_IDS.jr_east.yokohama],
-    "ほんごうだい"
-  ),
-  [STATION_IDS.jr_east.ofuna]: new StationInfo(
-    "大船",
-    [
+  }),
+  [STATION_IDS.jr_east.youkoudai]: new Station({
+    name: "洋光台",
+    reading: "ようこうだい",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.jr_east.negishi, LINE_IDS.jr_east.yokohama],
+  }),
+  [STATION_IDS.jr_east.kounandai]: new Station({
+    name: "港南台",
+    reading: "こうなんだい",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.jr_east.negishi, LINE_IDS.jr_east.yokohama],
+  }),
+  [STATION_IDS.jr_east.hongoudai]: new Station({
+    name: "本郷台",
+    reading: "ほんごうだい",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.jr_east.negishi, LINE_IDS.jr_east.yokohama],
+  }),
+  [STATION_IDS.jr_east.ofuna]: new Station({
+    name: "大船",
+    reading: "おおふな",
+    prefecture: P.KANAGAWA,
+    lines: [
       LINE_IDS.jr_east.toukaidou,
       LINE_IDS.jr_east.negishi,
       LINE_IDS.jr_east.yokohama,
     ],
-    "おおふな"
-  ),
-  [STATION_IDS.jr_east.totsuka]: new StationInfo("戸塚", [], "とつか"),
-  [STATION_IDS.jr_east.hujisawa]: new StationInfo(
-    "藤沢",
-    [
+  }),
+  [STATION_IDS.jr_east.totsuka]: new Station({name: "戸塚", reading: "とつか", prefecture: P.KANAGAWA, lines: [LINE_IDS.jr_east.toukaidou]}),
+  [STATION_IDS.jr_east.hujisawa]: new Station({
+    name: "藤沢",
+    reading: "ふじさわ",
+    prefecture: P.KANAGAWA,
+    lines: [
       LINE_IDS.jr_east.toukaidou,
       LINE_IDS.jr_east.shonan_shinjuku,
       LINE_IDS.odakyu.enoshima,
     ],
-    "ふじさわ"
-  ),
-  [STATION_IDS.jr_east.tsujido]: new StationInfo("辻堂", [], "つじどう"),
-  [STATION_IDS.jr_east.chigasaki]: new StationInfo(
-    "茅ヶ崎",
-    [LINE_IDS.jr_east.toukaidou, LINE_IDS.jr_east.sagami],
-    "ちがさき"
-  ),
-  [STATION_IDS.jr_east.hiratsuka]: new StationInfo("平塚", [], "ひらつか"),
-  [STATION_IDS.jr_east.oiso]: new StationInfo("大磯", [], "おおいそ"),
-  [STATION_IDS.jr_east.ninomiya]: new StationInfo("二宮", [], "にのみや"),
-  [STATION_IDS.jr_east.kozu]: new StationInfo("国府津", [], "こうづ"),
-  [STATION_IDS.jr_east.kamonomiya]: new StationInfo("鴨宮", [], "かものみや"),
-  [STATION_IDS.jr_east.odawara]: new StationInfo(
-    "小田原",
-    [
+  }),
+  [STATION_IDS.jr_east.tsujido]: new Station({name: "辻堂", reading: "つじどう", prefecture: P.KANAGAWA, lines: [LINE_IDS.jr_east.toukaidou]}),
+  [STATION_IDS.jr_east.chigasaki]: new Station({
+    name: "茅ヶ崎",
+    reading: "ちがさき",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.jr_east.toukaidou, LINE_IDS.jr_east.sagami],
+  }),
+  [STATION_IDS.jr_east.hiratsuka]: new Station({name: "平塚", reading: "ひらつか", prefecture: P.KANAGAWA, lines: [LINE_IDS.jr_east.toukaidou]}),
+  [STATION_IDS.jr_east.oiso]: new Station({name: "大磯", reading: "おおいそ", prefecture: P.KANAGAWA, lines: [LINE_IDS.jr_east.toukaidou]}),
+  [STATION_IDS.jr_east.ninomiya]: new Station({name: "二宮", reading: "にのみや", prefecture: P.KANAGAWA, lines: [LINE_IDS.jr_east.toukaidou]}),
+  [STATION_IDS.jr_east.koudu]: new Station({
+    name: "国府津",
+    reading: "こうづ",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.jr_east.toukaidou, LINE_IDS.jr_toukai.gotenba],
+  }),
+  [STATION_IDS.jr_east.kamonomiya]: new Station({name: "鴨宮", reading: "かものみや", prefecture: P.KANAGAWA, lines: [LINE_IDS.jr_east.toukaidou]}),
+  [STATION_IDS.jr_east.odawara]: new Station({
+    name: "小田原",
+    reading: "おだわら",
+    prefecture: P.KANAGAWA,
+    lines: [
       LINE_IDS.jr_east.toukaidou,
       LINE_IDS.jr_east.shinkansen.tokaido,
       LINE_IDS.odakyu.odawara,
       LINE_IDS.odakyu.hakonetozan,
       LINE_IDS.izu_hakone.daiyuzan,
     ],
-    "おだわら"
-  ),
-  [STATION_IDS.jr_east.hayakawa]: new StationInfo("早川", [], "はやかわ"),
-  [STATION_IDS.jr_east.nebukawa]: new StationInfo("根府川", [], "ねぶかわ"),
-  [STATION_IDS.jr_east.manazuru]: new StationInfo("真鶴", [], "まなづる"),
-  [STATION_IDS.jr_east.yugawara]: new StationInfo("湯河原", [], "ゆがわら"),
+  }),
+  [STATION_IDS.jr_east.hayakawa]: new Station({name: "早川", reading: "はやかわ", prefecture: P.KANAGAWA, lines: [LINE_IDS.jr_east.toukaidou]}),
+  [STATION_IDS.jr_east.nebukawa]: new Station({name: "根府川", reading: "ねぶかわ", prefecture: P.KANAGAWA, lines: [LINE_IDS.jr_east.toukaidou]}),
+  [STATION_IDS.jr_east.manazuru]: new Station({name: "真鶴", reading: "まなづる", prefecture: P.KANAGAWA, lines: [LINE_IDS.jr_east.toukaidou]}),
+  [STATION_IDS.jr_east.yugawara]: new Station({name: "湯河原", reading: "ゆがわら", prefecture: P.KANAGAWA, lines: [LINE_IDS.jr_east.toukaidou]}),
   [STATION_IDS.jr_east.atami]: new Station({
     name: "熱海",
     reading: "あたみ",
@@ -11659,6 +11677,51 @@ export const STATIONS = {
     prefecture: P.TOCHIGI,
   }),
   // #endregion 日光線
+  // #region 御殿場線
+  [STATION_IDS.jr_east.shimosoga]: new Station({
+    name: "下曾我",
+    reading: "しもそが",
+    prefecture: P.SHIZUOKA,
+    lines: [LINE_IDS.jr_toukai.gotenba],
+  }),
+  [STATION_IDS.jr_east.kami_ooi]: new Station({
+    name: "神原",
+    reading: "かんばら",
+    prefecture: P.SHIZUOKA,
+    lines: [LINE_IDS.jr_toukai.gotenba],
+  }),
+  [STATION_IDS.jr_east.sagami_kaneko]: new Station({
+    name: "相模金子",
+    reading: "さがみかねこ",
+    prefecture: P.SHIZUOKA,
+    lines: [LINE_IDS.jr_toukai.gotenba],
+  }),
+  [STATION_IDS.jr_east.matsuda]: new Station({
+    name: "松田",
+    reading: "まつだ",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.jr_toukai.gotenba, LINE_IDS.odakyu.odawara],
+  }),
+  [STATION_IDS.jr_east.yamakita]: new Station({
+    name: "山北",
+    reading: "やまきた",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.jr_toukai.gotenba],
+  }),
+  [STATION_IDS.jr_east.higashi_yamakita]: new Station({
+    name: "東山北",
+    reading: "ひがしやまきた",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.jr_toukai.gotenba],
+  }),
+  [STATION_IDS.jr_east.yaga]: new Station({
+    name: "谷峨",
+    reading: "やが",
+    prefecture: P.KANAGAWA,
+    lines: [LINE_IDS.jr_toukai.gotenba],
+  }),
+
+  // #endregion 御殿場線
   // #region 山形新幹線
   [STATION_IDS.jr_east.yonezawa]: new Station({
     name: "米沢",
@@ -12237,6 +12300,66 @@ export const STATIONS = {
     reading: "さめがい",
     prefecture: P.SHIGA,
     lines: [LINE_IDS.jr_toukai.toukaidou],
+  }),
+  [STATION_IDS.jr_toukai.suruga_oyama]: new Station({
+    name: "駿河小山",
+    reading: "するがおやま",
+    prefecture: P.SHIZUOKA,
+    lines: [LINE_IDS.jr_toukai.gotenba],
+  }),
+  [STATION_IDS.jr_toukai.ashigara]: new Station({
+    name: "足柄",
+    reading: "あしがら",
+    prefecture: P.SHIZUOKA,
+    lines: [LINE_IDS.jr_toukai.gotenba],
+  }),
+  [STATION_IDS.jr_toukai.gotenba]: new Station({
+    name: "御殿場",
+    reading: "ごてんば",
+    prefecture: P.SHIZUOKA,
+    lines: [LINE_IDS.jr_toukai.gotenba],
+  }),
+  [STATION_IDS.jr_toukai.minami_gotenba]: new Station({
+    name: "南御殿場",
+    reading: "みなみごてんば",
+    prefecture: P.SHIZUOKA,
+    lines: [LINE_IDS.jr_toukai.gotenba],
+  }),
+  [STATION_IDS.jr_toukai.fujioka]: new Station({
+    name: "富士岡",
+    reading: "ふじおか",
+    prefecture: P.SHIZUOKA,
+    lines: [LINE_IDS.jr_toukai.gotenba],
+  }),
+  [STATION_IDS.jr_toukai.iwanami]: new Station({
+    name: "岩波",
+    reading: "いわなみ",
+    prefecture: P.SHIZUOKA,
+    lines: [LINE_IDS.jr_toukai.gotenba],
+  }),
+  [STATION_IDS.jr_toukai.susono]: new Station({
+    name: "裾野",
+    reading: "すその",
+    prefecture: P.SHIZUOKA,
+    lines: [LINE_IDS.jr_toukai.gotenba],
+  }),
+  [STATION_IDS.jr_toukai.nagaizumi_nameri]: new Station({
+    name: "長泉なめり",
+    reading: "ながいずみなめり",
+    prefecture: P.SHIZUOKA,
+    lines: [LINE_IDS.jr_toukai.gotenba],
+  }),
+  [STATION_IDS.jr_toukai.shimotogari]: new Station({
+    name: "下土狩",
+    reading: "しもとがり",
+    prefecture: P.SHIZUOKA,
+    lines: [LINE_IDS.jr_toukai.gotenba],
+  }),
+  [STATION_IDS.jr_toukai.ooka]: new Station({
+    name: "大岡",
+    reading: "おおおか",
+    prefecture: P.SHIZUOKA,
+    lines: [LINE_IDS.jr_toukai.gotenba],
   }),
   // #endregion 東海道本線
   // #endregion JR東海
