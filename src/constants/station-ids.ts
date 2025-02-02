@@ -548,10 +548,9 @@ export const STATION_IDS = {
   tama_monorail: {
     tama_center: "tama-monorail-tama-center",
     matsugatani: "tama-monorail-matsugatani",
-    otsuka_teikyou_daigaku: "tama-monorail-otsuka-teikyou-daigaku",
+    ootsuka_teikyou_daigaku: "tama-monorail-otsuka-teikyou-daigaku",
     chuou_daigaku_myoujou_daigaku:
       "tama-monorail-chuou-daigaku-myoujou-daigaku",
-    tama_doubutsu_kouen: "tama-monorail-tama-doubutsu-kouen",
     hodokubo: "tama-monorail-hodokubo",
     manganji: "tama-monorail-manganji",
     kousyukaidou: "tama-monorail-kousyukaidou",
@@ -560,9 +559,13 @@ export const STATION_IDS = {
     tachihi: "tama-monorail-tachihi",
     izumi_taiikukan: "tama-monorail-izumi-taiikukan",
     sunagawananaban: "tama-monorail-sunagawa-nanaban",
-    tamagawajousui: "tama-monorail-tamagawa-jousui",
+    tamagawa_jousui: "tokyo-tamagawa-jousui",
     sakurakaidou: "tama-monorail-sakurakaidou",
     kamikitadai: "tama-monorail-kamikitadai",
+    takahatafudou: "tokyo-takahatafudo",
+    tachikawa_minami: "tama-monorail-tachikawa-minami",
+    tachikawa_kita: "tama-monorail-tachikawa-kita",
+    tama_doubutsu_kouen: "tokyo-tama-doubutsu-kouen",
   },
 
   /** JR東日本駅 */
@@ -1769,7 +1772,7 @@ export const STATION_IDS = {
     nakakawahara: "keio-nakakawahara",
     seiseki_sakuragaoka: "keio-seiseki-sakuragaoka",
     mogusaen: "keio-mogusaen",
-    takahatafudo: "keio-takahatafudo",
+    takahatafudou: "keio-takahatafudo",
     minamidaira: "keio-minamidaira",
     hirayamajoshikoen: "keio-hira-yamajoshikoen",
     naganuma: "keio-naganuma",
@@ -1809,7 +1812,7 @@ export const STATION_IDS = {
     takao_yamaguchi: "keio-takao-yamaguchi",
     yamada: "keio-yamada",
     fuchu_keiba_seimon_mae: "keio-fuchu-keiba-seimon-mae",
-    tama_doubutsu_kouen: "keio-tama-doubutsu-kouen",
+    tama_doubutsu_kouen: "tokyo-tama-doubutsu-kouen",
   },
   takao_tozan: { /** 高尾登山鉄道 */
     kiyotaki: "takao-tozan-kiyotaki",
@@ -2261,7 +2264,7 @@ export const STATION_IDS = {
     ogawa: "seibu-ogawa",
     // 拝島線
     higashi_yamatoshi: "seibu-higashi-yamatoshi",
-    tamagawa_jousui: "seibu-tamagawa-josui",
+    tamagawa_jousui: "tokyo-tamagawa-jousui",
     musashi_sunagawa: "seibu-musashi-sunagawa",
     seibu_tachikawa: "seibu-seibu-tachikawa",
     shimo_yamaguchi: "seibu-shimo-yamaguchi",

@@ -198,4 +198,10 @@ export const COMPANIES: { [key: string]: Company } = {
     yomi: "いずはこねてつどう",
     keywords: ["izu hakone"]
   },
+  tama_monorail: {
+    id: "tama_monorail",
+    name: '多摩モノレール',
+    yomi: "たまものれーる",
+    keywords: ["tama monorail"]
+  },
 }

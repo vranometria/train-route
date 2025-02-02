@@ -1697,7 +1697,7 @@ export const STATIONS = {
   // #endregion 東北
 
   // #region 関東
-  //  #region 東京
+  //  #region ---東京---
   //   #region 都営地下鉄
   // #region 浅草線
   [STATION_IDS.tokyo_subway.honjo_azumabashi]: new StationInfo(
@@ -3342,6 +3342,7 @@ export const STATIONS = {
   [STATION_IDS.keiou.tama_doubutsu_kouen]: new Station({
     name: "多摩動物公園",
     reading: "たまどうぶつこうえん",
+    lines: [LINE_IDS.tama_monorail.tama_monorail, LINE_IDS.keiou.dobutsuen],
     prefecture: P.TOKYO,
   }),
   [STATION_IDS.keiou.fuchu]: new Station({
@@ -3364,7 +3365,7 @@ export const STATIONS = {
     reading: "もぐさえん",
     prefecture: P.TOKYO,
   }),
-  [STATION_IDS.keiou.takahatafudo]: new Station({
+  [STATION_IDS.keiou.takahatafudou]: new Station({
     name: "高幡不動",
     reading: "たかはたふどう",
     prefecture: P.TOKYO,
@@ -4711,7 +4712,107 @@ export const STATIONS = {
   }),
 
   //   #endregion 東武鉄道
-  //  #endregion 東京
+  // #region ▶多摩モノレール
+  [STATION_IDS.tama_monorail.tama_center]: new Station({
+    name: "多摩センター",
+    reading: "たませんたー",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tama_monorail.tama_monorail],
+  }),
+  [STATION_IDS.tama_monorail.matsugatani]: new Station({
+    name: "松が谷",
+    reading: "まつがたに",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tama_monorail.tama_monorail],
+  }),
+  [STATION_IDS.tama_monorail.ootsuka_teikyou_daigaku]: new Station({
+    name: "大塚・帝京大学",
+    reading: "おおつか・ていきょうだいがく",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tama_monorail.tama_monorail],
+  }),
+  [STATION_IDS.tama_monorail.chuou_daigaku_myoujou_daigaku]: new Station({
+    name: "中央大学・明星大学",
+    reading: "ちゅうおうだいがく・みょうじょうだいがく",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tama_monorail.tama_monorail],
+  }),
+  [STATION_IDS.tama_monorail.hodokubo]: new Station({
+    name: "程久保",
+    reading: "ほどくぼ",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tama_monorail.tama_monorail],
+  }),
+  [STATION_IDS.tama_monorail.manganji]: new Station({
+    name: "万願寺",
+    reading: "まんがんじ",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tama_monorail.tama_monorail],
+  }),
+  [STATION_IDS.tama_monorail.kousyukaidou]: new Station({
+    name: "甲州街道",
+    reading: "こうしゅうかいどう",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tama_monorail.tama_monorail],
+  }),
+  [STATION_IDS.tama_monorail.shibasaki_taiikukan]: new Station({
+    name: "柴崎体育館",
+    reading: "しばさきたいいくかん",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tama_monorail.tama_monorail],
+  }),
+  [STATION_IDS.tama_monorail.tachikawa_minami]: new Station({
+    name: "立川南",
+    reading: "たちかわみなみ",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tama_monorail.tama_monorail],
+  }),
+  [STATION_IDS.tama_monorail.tachikawa_kita]: new Station({
+    name: "立川北",
+    reading: "たちかわきた",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tama_monorail.tama_monorail],
+  }),
+  [STATION_IDS.tama_monorail.takamatsu]: new Station({
+    name: "高松",
+    reading: "たかまつ",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tama_monorail.tama_monorail],
+  }),
+  [STATION_IDS.tama_monorail.tachihi]: new Station({
+    name: "立飛",
+    reading: "たちひ",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tama_monorail.tama_monorail],
+  }),
+  [STATION_IDS.tama_monorail.izumi_taiikukan]: new Station({
+    name: "泉体育館",
+    reading: "いずみたいいくかん",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tama_monorail.tama_monorail],
+  }),
+  [STATION_IDS.tama_monorail.sunagawananaban]: new Station({
+    name: "砂川七番",
+    reading: "すながわななばん",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tama_monorail.tama_monorail],
+  }),
+  [STATION_IDS.tama_monorail.sakurakaidou]: new Station({
+    name: "桜街道",
+    reading: "さくらかいどう",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tama_monorail.tama_monorail],
+  }),
+  [STATION_IDS.tama_monorail.kamikitadai]: new Station({
+    name: "上北台",
+    reading: "かみきただい",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tama_monorail.tama_monorail],
+  }),
+
+
+  // #endregion 多摩モノレール
+  //  #endregion ---東京---
   //  #region 茨城
   //   #region 関東鉄道
   [STATION_IDS.kantou.nishi_toride]: new Station({
