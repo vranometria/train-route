@@ -3190,44 +3190,60 @@ export const STATIONS = {
   ),
   // #endregion りんかい
   //   #region 京王電鉄
-  // ＞京王線
-  [STATION_IDS.keiou.sasatsuka]: new StationInfo(
-    "笹塚",
-    [LINE_IDS.keiou.keiou, LINE_IDS.keiou.keioushinsen],
-    "ささつか"
-  ),
-  [STATION_IDS.keiou.daitabashi]: new StationInfo("代田橋", [], "だいたばし"),
-  [STATION_IDS.keiou.meidaimae]: new StationInfo(
-    "明大前",
-    [LINE_IDS.keiou.keiou, LINE_IDS.keiou.inokashira],
-    "めいだいまえ"
-  ),
-  [STATION_IDS.keiou.shimotakaido]: new StationInfo(
-    "下高井戸",
-    [LINE_IDS.keiou.keiou, LINE_IDS.toukyu.setagaya],
-    "しもたかいど"
-  ),
-  [STATION_IDS.keiou.sakurajosui]: new StationInfo(
-    "桜上水",
-    [],
-    "さくらじょうすい"
-  ),
-  [STATION_IDS.keiou.kami_kitazawa]: new StationInfo(
-    "上北沢",
-    [],
-    "かみきたざわ"
-  ),
-  [STATION_IDS.keiou.yawatayama]: new StationInfo("八幡山", [], "やわたやま"),
-  [STATION_IDS.keiou.roka_koen]: new StationInfo(
-    "芦花公園",
-    [],
-    "ろかこうえん"
-  ),
-  [STATION_IDS.keiou.chitose_karasuyama]: new StationInfo(
-    "千歳烏山",
-    [],
-    "ちとせからすやま"
-  ),
+  [STATION_IDS.keiou.sasatsuka]: new Station({
+    name: "笹塚",
+    reading: "ささつか",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.keiou, LINE_IDS.keiou.keioushinsen],
+  }),
+  [STATION_IDS.keiou.daitabashi]: new Station({
+    name: "代田橋",
+    reading: "だいたばし",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.keiou],
+  }),
+  [STATION_IDS.keiou.meidaimae]: new Station({
+    name: "明大前",
+    reading: "めいだいまえ",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.keiou, LINE_IDS.keiou.inokashira],
+  }),
+  [STATION_IDS.keiou.shimotakaido]: new Station({
+    name: "下高井戸",
+    reading: "しもたかいど",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.keiou, LINE_IDS.toukyu.setagaya],
+  }),
+  [STATION_IDS.keiou.sakurajosui]: new Station({
+    name: "桜上水",
+    reading: "さくらじょうすい",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.keiou],
+  }),
+  [STATION_IDS.keiou.kami_kitazawa]: new Station({
+    name: "上北沢",
+    reading: "かみきたざわ",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.keiou],
+  }),
+  [STATION_IDS.keiou.yawatayama]: new Station({
+    name: "八幡山",
+    reading: "やわたやま",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.keiou],
+  }),
+  [STATION_IDS.keiou.roka_koen]: new Station({
+    name: "芦花公園",
+    reading: "ろかこうえん",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.keiou],
+  }),
+  [STATION_IDS.keiou.chitose_karasuyama]: new Station({
+    name: "千歳烏山",
+    reading: "ちとせからすやま",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.keiou],
+  }),
   [STATION_IDS.keiou.senkawa]: new Station({
     name: "千川",
     reading: "せんかわ",
@@ -3319,21 +3335,23 @@ export const STATIONS = {
     reading: "とびたきゅう",
     prefecture: P.TOKYO,
   }),
-  [STATION_IDS.keiou.musashinodai]: new StationInfo(
-    "武蔵野台",
-    [LINE_IDS.keiou.keiou, LINE_IDS.seibu.tamagawa],
-    "むさしのだい"
-  ),
+  [STATION_IDS.keiou.musashinodai]: new Station({
+    name: "武蔵野台",
+    reading: "むさしのだい",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.keiou, LINE_IDS.seibu.tamagawa],
+  }),
   [STATION_IDS.keiou.tamareien]: new Station({
     name: "多磨霊園",
     reading: "たまれいえん",
     prefecture: P.TOKYO,
   }),
-  [STATION_IDS.keiou.higashi_fuchu]: new StationInfo(
-    "東府中",
-    [LINE_IDS.keiou.keiou, LINE_IDS.keiou.keibajo],
-    "ひがしふちゅう"
-  ),
+  [STATION_IDS.keiou.higashi_fuchu]: new Station({
+    name: "東府中",
+    reading: "ひがしふちゅう",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.keiou, LINE_IDS.keiou.keibajo],
+  }),
   [STATION_IDS.keiou.fuchu_keiba_seimon_mae]: new Station({
     name: "府中競馬正門前",
     reading: "ふちゅうけいばせいもんまえ",
@@ -3433,47 +3451,96 @@ export const STATIONS = {
       ),
     ],
   }),
-  // > 京王新線
-  [STATION_IDS.keiou.hatsudai]: new StationInfo("初台", [], "はつだい"),
-  [STATION_IDS.keiou.hatagaya]: new StationInfo("幡ヶ谷", [], "はたがや"),
-  // > 京王井の頭線
-  [STATION_IDS.keiou.shinsen]: new StationInfo("神泉", [], "しんせん"),
-  [STATION_IDS.keiou.komaba_todaimae]: new StationInfo(
-    "駒場東大前",
-    [],
-    "こまばとうだいまえ"
-  ),
-  [STATION_IDS.keiou.ikenoue]: new StationInfo("池ノ上", [], "いけのうえ"),
-  [STATION_IDS.keiou.shindaita]: new StationInfo("新代田", [], "しんだいた"),
-  [STATION_IDS.keiou.higashi_matsubara]: new StationInfo(
-    "東松原",
-    [],
-    "ひがしまつばら"
-  ),
-  [STATION_IDS.keiou.eifukucho]: new StationInfo(
-    "永福町",
-    [],
-    "えいふくちょう"
-  ),
-  [STATION_IDS.keiou.nishi_eifuku]: new StationInfo(
-    "西永福",
-    [],
-    "にしえいふく"
-  ),
-  [STATION_IDS.keiou.hamadayama]: new StationInfo("浜田山", [], "はまだやま"),
-  [STATION_IDS.keiou.takaido]: new StationInfo("高井戸", [], "たかいど"),
-  [STATION_IDS.keiou.fujimigaoka]: new StationInfo(
-    "富士見ヶ丘",
-    [],
-    "ふじみがおか"
-  ),
-  [STATION_IDS.keiou.kugayama]: new StationInfo("久我山", [], "くがやま"),
-  [STATION_IDS.keiou.mitakadai]: new StationInfo("三鷹台", [], "みたかだい"),
-  [STATION_IDS.keiou.inokashirakoen]: new StationInfo(
-    "井の頭公園",
-    [],
-    "いのかしどうこうえん"
-  ),
+  [STATION_IDS.keiou.hatsudai]: new Station({
+    name: "初台",
+    reading: "はつだい",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.keioushinsen],
+  }),
+  [STATION_IDS.keiou.hatagaya]: new Station({
+    name: "幡ヶ谷",
+    reading: "はたがや",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.keioushinsen],
+  }),
+  [STATION_IDS.keiou.shinsen]: new Station({
+    name: "神泉",
+    reading: "しんせん",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.inokashira],
+  }),
+  [STATION_IDS.keiou.komaba_todaimae]: new Station({
+    name: "駒場東大前",
+    reading: "こまばとうだいまえ",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.inokashira],
+  }),
+  [STATION_IDS.keiou.ikenoue]: new Station({
+    name: "池ノ上",
+    reading: "いけのうえ",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.inokashira],
+  }),
+  [STATION_IDS.keiou.shindaita]: new Station({
+    name: "新代田",
+    reading: "しんだいた",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.inokashira],
+  }),
+  [STATION_IDS.keiou.higashi_matsubara]: new Station({
+    name: "東松原",
+    reading: "ひがしまつばら",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.inokashira],
+  }),
+  [STATION_IDS.keiou.eifukucho]: new Station({
+    name: "永福町",
+    reading: "えいふくちょう",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.inokashira],
+  }),
+  [STATION_IDS.keiou.nishi_eifuku]: new Station({
+    name: "西永福",
+    reading: "にしえいふく",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.inokashira],
+  }),
+  [STATION_IDS.keiou.hamadayama]: new Station({
+    name: "浜田山",
+    reading: "はまだやま",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.inokashira],
+  }),
+  [STATION_IDS.keiou.takaido]: new Station({
+    name: "高井戸",
+    reading: "たかいど",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.inokashira],
+  }),
+  [STATION_IDS.keiou.fujimigaoka]: new Station({
+    name: "富士見ヶ丘",
+    reading: "ふじみがおか",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.inokashira],
+  }),
+  [STATION_IDS.keiou.kugayama]: new Station({
+    name: "久我山",
+    reading: "くがやま",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.inokashira],
+  }),
+  [STATION_IDS.keiou.mitakadai]: new Station({
+    name: "三鷹台",
+    reading: "みたかだい",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.inokashira],
+  }),
+  [STATION_IDS.keiou.inokashirakoen]: new Station({
+    name: "井の頭公園",
+    reading: "いのかしらこうえん",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.keiou.inokashira],
+  }),
   //  #endregion 京王電鉄
   //   #region 東急
   // ＞田園都市線
@@ -4809,7 +4876,6 @@ export const STATIONS = {
     prefecture: P.TOKYO,
     lines: [LINE_IDS.tama_monorail.tama_monorail],
   }),
-
 
   // #endregion 多摩モノレール
   //  #endregion ---東京---
@@ -7241,6 +7307,18 @@ export const STATIONS = {
     lines: [LINE_IDS.izu_hakone.daiyuzan],
   }),
   // #endregion 伊豆箱根鉄道
+  [STATION_IDS.takao_tozan.kiyotaki]: new Station({
+    name: "清滝",
+    reading: "きよたき",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.takao_tozan.takao_tozan_cable, new ExchangeInfo(LINE_IDS.keiou.takao, STATION_IDS.keiou.takao_yamaguchi)],
+  }),
+  [STATION_IDS.takao_tozan.takaosan]: new Station({
+    name: "高尾山",
+    reading: "たかおさん",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.takao_tozan.takao_tozan_cable],
+  }),
   // #endregion ---神奈川---
   //  #region 埼玉
   //   #region 埼玉新都市交通
