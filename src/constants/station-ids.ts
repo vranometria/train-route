@@ -2396,6 +2396,14 @@ export const STATION_IDS = {
     oumi_nagaoka: "shiga-oumi-nagaoka",
     samegai: "shiga-samegai",
     // #endregion 東海道本線
+
+    // #region 伊東線
+    kinomiya: "shizuoka-kinomiya",
+    izu_taga: "shizuoka-izu-taga",
+    ajiro: "shizuoka-ajiro",
+    usami: "shizuoka-usami",
+    itou: "shizuoka-itou",
+    // #endregion 伊東線
   },
   // JR西日本 駅
   jr_west: {

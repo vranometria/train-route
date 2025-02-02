@@ -528,6 +528,9 @@ export const LINE_IDS = {
   tarumi: {
     tarumi: "tarumi-tarumi",
   },
+  izu_kyukou: {
+    izu_kyukou: "izu-kyukou-izu-kyukou",
+  },
   /** JR西日本線 */
   jr_west: {
     toukaidou: "jr-west-toukaidou",

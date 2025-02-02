@@ -3878,6 +3878,21 @@ export const LINES = {
       ]),
     ],
   }),
+  [LINE_IDS.jr_toukai.itou]: new TrainLine({
+    name: "伊東線",
+    reading: "いとうせん",
+    companyId: COMPANIES.jr_tokai.id,
+    sections: [
+      new Section([
+        new StopStation(STATION_IDS.jr_toukai.atami),
+        new StopStation(STATION_IDS.jr_toukai.kinomiya),
+        new StopStation(STATION_IDS.jr_toukai.izu_taga),
+        new StopStation(STATION_IDS.jr_toukai.ajiro),
+        new StopStation(STATION_IDS.jr_toukai.usami),
+        new StopStation(STATION_IDS.jr_toukai.itou),
+      ]),
+    ],
+  }),
   // #endregion 中部
 
   // #region JR東日本
