@@ -883,7 +883,7 @@ export const jr_toukai_stations = {
     name: "甲府",
     reading: "こうふ",
     prefecture: P.YAMANASHI,
-    lines: [LINE_IDS.jr_toukai.minobu, LINE_IDS.jr_east.chuo_honsen],
+    lines: [LINE_IDS.jr_toukai.minobu, LINE_IDS.jr_east.chuou_honsen],
   }),
   // #endregion 身延線
 };

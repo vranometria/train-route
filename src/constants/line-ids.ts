@@ -138,6 +138,8 @@ export const LINE_IDS = {
     chuo_soubu_kankou: "jr-chuo_soubu_kankou",
     /** 中央本線(JC) */
     chuou_honsen: "jr-chuou_honsen",
+    /** 中央本線(岡谷-塩尻) */
+    chuou_honsen_okaya_shiojiri: "jr-chuou-honsen-okaya-shiojiri",
     /** 五日市線(JC) */
     itsukaichi: "jr-itsukaichi",
     /** 京葉線(JE) */
@@ -176,8 +178,6 @@ export const LINE_IDS = {
     takasaki: "jr-takasaki",
     /** 山手線(JY) */
     yamanote: "jr-yamanote",
-    /** 中央本線 */
-    chuo_honsen: "jr-chuo-honsen",
     /** 両毛線 */
     ryoumou: "jr-ryoumou",
 
@@ -203,6 +203,8 @@ export const LINE_IDS = {
     kashima: "jr-kashima",
     // #endregion
 
+    /** 篠ノ井線 */
+    shinonoi: "jr-shinonoi",
     /** 日光線 */
     nikkou: "jr-nikkou",
     /** 烏山線 */
@@ -530,6 +532,9 @@ export const LINE_IDS = {
   },
   izu_kyukou: {
     izu_kyukou: "izu-kyukou-izu-kyukou",
+  },
+  fuji_kyukou: {
+    fuji_kyukou: "fuji-kyukou-fuji-kyukou",
   },
   /** JR西日本線 */
   jr_west: {
