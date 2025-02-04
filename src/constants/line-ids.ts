@@ -545,8 +545,11 @@ export const LINE_IDS = {
     kansai_honsen: "jr-west-kansai-honsen",
     saninhonsen: "jr-west-saninhonsen",
     nara: "jr-west-nara",
+    /** おおさか東線 */
     osaka_higashi: "jr-west-osaka-higashi",
-    oito: "jr-west-oito",
+    /** 大糸線 */
+    ohito: "jr-west-ohito",
+    /** 高山本線 */
     takayama_honsen: "jr-west-takayama-honsen",
     johana: "jr-west-johana",
     nanao: "jr-west-nanao",
@@ -603,7 +606,9 @@ export const LINE_IDS = {
   },
   /** えちごトキめき鉄道 */
   echigo_tokimeki: {
+    /** 妙高はねうまライン */
     myoko_haneuma: "echigo-tokimeki-myoko-haneuma",
+    /** 日本海ひすいライン */
     nihonkai_hisui: "echigo-tokimeki-nihonkai-hisui",
   },
   /** 北越急行 */

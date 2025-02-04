@@ -1314,6 +1314,41 @@ export const STATION_IDS = {
     shinonoi: "nagano-shinonoi",
     // #endregion 篠ノ井線
 
+    // #region 大糸線
+    kita_matsumoto: "nagano-kita-matsumoto",
+    shimauchi: "nagano-shimauchi",
+    shima_takamatsu: "nagano-shima-takamatsu",
+    azusabashi: "nagano-azusabashi",
+    hitoichiba: "nagano-hitoichiba",
+    nakagaya: "nagano-nakagaya",
+    minami_toyoshina: "nagano-minami-toyoshina",
+    toyoshina: "nagano-toyoshina",
+    hakuyachou: "nagano-hakuyachou",
+    hotaka: "nagano-hotaka",
+    ariake: "nagano-ariake",
+    azumi_oiwake: "nagano-azumi-oiwake",
+    hosono: "nagano-hosono",
+    kita_hosono: "nagano-kita-hosono",
+    shinano_matsukawa: "nagano-shinano-matsukawa",
+    azumi_kutsukake: "nagano-azumi-kutsukake",
+    shinano_tokiwa: "nagano-shinano-tokiwa",
+    minami_ohmachi: "nagano-minami-ohmachi",
+    shinano_ohmachi: "nagano-shinano-ohmachi",
+    kita_ohmachi: "nagano-kita-ohmachi",
+    shinano_kizaki: "nagano-shinano-kizaki",
+    inao: "nagano-inao",
+    uminokuchi: "nagano-uminokuchi",
+    yanaba: "nagano-yanaba",
+    minami_kamishiro: "nagano-minami-kamishiro",
+    kamishiro: "nagano-kamishiro",
+    iimori: "nagano-iimori",
+    hakuba: "nagano-hakuba",
+    shinano_moriue: "nagano-shinano-moriue",
+    hakuba_ohike: "nagano-hakuba-ohike",
+    chikuni: "nagano-chikuni",
+    minami_otari: "nagano-minami-otari",
+    // #endregion 大糸線
+
     // 東北本線
     takaku: "jr-east-takaku",
     kurotawara: "jr-east-kurotawara",
@@ -2551,8 +2586,8 @@ export const STATION_IDS = {
   },
   // JR西日本 駅
   jr_west: {
-    // 北陸新幹線
-    itoigawa: "jr-itoigawa",
+    // #region 北陸新幹線
+    itoigawa: "niigata-itoigawa",
     kurobe_unaduki_onsen: "jr-kurobe_unaduki_onsen",
     toyama: "jr-toyama",
     shin_takaoka: "jr-shin_takaoka",
@@ -2563,6 +2598,18 @@ export const STATION_IDS = {
     fukui: "jr-fukui",
     echizen_takefu: "jr-echizen_takefu",
     tsuruga: "jr-tsuruga",
+    // #endregion 北陸新幹線
+
+    // #region 大糸線
+    minami_otari: "nagano-minami-otari",
+    nakatsuchi: "nagano-nakatsuchi",
+    kita_otari: "nagano-kita-otari",
+    hiraiwa: "niigata-hiraiwa",
+    kotaki: "niigata-kotaki",
+    nechi: "niigata-nechi",
+    kubiki_ohno: "niigata-kubiki-ohno",
+    himekawa: "niigata-himekawa",
+    // #endregion 大糸線
   },
   // 富山地鉄駅
   toyama_chiho: {
