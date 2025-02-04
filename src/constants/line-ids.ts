@@ -205,6 +205,8 @@ export const LINE_IDS = {
 
     /** 篠ノ井線 */
     shinonoi: "jr-shinonoi",
+    /** 大糸線 */
+    ohito: "jr-ohito",
     /** 日光線 */
     nikkou: "jr-nikkou",
     /** 烏山線 */
@@ -232,8 +234,6 @@ export const LINE_IDS = {
     hakushin: "jr-hakushin",
     /** 越後線 */
     echigo: "jr-echigo",
-    /** 篠ノ井線 */
-    shinonoi: "jr-shinonoi",
     /** 飯山線 */
     iiyama: "jr-iiyama",
 
@@ -442,7 +442,6 @@ export const LINE_IDS = {
   tama_monorail: {
     tama_monorail: "tama-monorail",
   },
-
   /** 北総電鉄　路線 */
   hokusou: {
     hokusou: "hokusou-hokusou",
@@ -493,6 +492,10 @@ export const LINE_IDS = {
   izumi: {
     izumi: "izumi-izumi",
   },
+  /** 松本電気鉄道 */
+  matsumoto: {
+    kamikouchi: "matsumoto-kamikouchi",
+  },
   /** JR東海 */
   jr_toukai: {
     toukaidou: "jr-tokai-toukaidou-toukai",
@@ -533,7 +536,7 @@ export const LINE_IDS = {
   izu_kyukou: {
     izu_kyukou: "izu-kyukou-izu-kyukou",
   },
-  fuji_kyukou: {
+  fuji_sanroku: {
     fuji_kyukou: "fuji-kyukou-fuji-kyukou",
   },
   /** JR西日本線 */

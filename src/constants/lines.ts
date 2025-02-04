@@ -3970,6 +3970,35 @@ export const LINES = {
     ],
   }),
   // #endregion 中部
+  // #region 甲信越
+  [LINE_IDS.fuji_sanroku.fuji_kyukou]: new TrainLine({
+    name: "富士急行線",
+    reading: "ふじきゅうこうせん",
+    companyId: COMPANIES.fuji_sanroku.id,
+    sections: [
+      new Section([
+        new StopStation(STATION_IDS.fuji_sanroku.ohtsuki),
+        new StopStation(STATION_IDS.fuji_sanroku.kami_ohtsuki),
+        new StopStation(STATION_IDS.fuji_sanroku.tanokura),
+        new StopStation(STATION_IDS.fuji_sanroku.kasei),
+        new StopStation(STATION_IDS.fuji_sanroku.akasaka),
+        new StopStation(STATION_IDS.fuji_sanroku.tsurushi),
+        new StopStation(STATION_IDS.fuji_sanroku.yamuramachi),
+        new StopStation(STATION_IDS.fuji_sanroku.tsurubunkadaigakumae),
+        new StopStation(STATION_IDS.fuji_sanroku.tohkaichiba),
+        new StopStation(STATION_IDS.fuji_sanroku.higashi_katsura),
+        new StopStation(STATION_IDS.fuji_sanroku.mitsutouge),
+        new StopStation(STATION_IDS.fuji_sanroku.kotobuki),
+        new StopStation(STATION_IDS.fuji_sanroku.yoshiike_onsenmae),
+        new StopStation(STATION_IDS.fuji_sanroku.shimoyoshida),
+        new StopStation(STATION_IDS.fuji_sanroku.gekkouji),
+        new StopStation(STATION_IDS.fuji_sanroku.fujisan),
+        new StopStation(STATION_IDS.fuji_sanroku.fujikyu_highland),
+        new StopStation(STATION_IDS.fuji_sanroku.kawaguchiko),
+      ])
+    ]
+  }),
+  // #endregion 甲信越
   // #region JR東日本
   [LINE_IDS.jr_east.toukaidou]: new TrainLine({
     name: "東海道本線(JR東日本)",
@@ -4719,7 +4748,7 @@ export const LINES = {
         new StopStation(STATION_IDS.jr_east.ichikawa_shiohama),
         new StopStation(STATION_IDS.jr_east.shin_urayasu),
         new StopStation(STATION_IDS.jr_east.maihama),
-        new StopStation(STATION_IDS.jr_east.kasai_rinkai_koen),
+        new StopStation(STATION_IDS.jr_east.kasai_rinkai_kouen),
         new StopStation(STATION_IDS.jr_east.shiomi),
         new StopStation(STATION_IDS.jr_east.ecchujima),
         new StopStation(STATION_IDS.jr_east.hacchobori),
@@ -4737,8 +4766,8 @@ export const LINES = {
         new StopStation(STATION_IDS.jr_east.hacchobori),
         new StopStation(STATION_IDS.jr_east.ecchujima),
         new StopStation(STATION_IDS.jr_east.shiomi),
-        new StopStation(STATION_IDS.jr_east.shinkiba),
-        new StopStation(STATION_IDS.jr_east.kasai_rinkai_koen),
+        new StopStation(STATION_IDS.jr_east.shin_kiba),
+        new StopStation(STATION_IDS.jr_east.kasai_rinkai_kouen),
         new StopStation(STATION_IDS.jr_east.maihama),
         new StopStation(STATION_IDS.jr_east.shin_urayasu),
         new StopStation(STATION_IDS.jr_east.ichikawa_shiohama),
@@ -5572,4 +5601,28 @@ export const LINES = {
     ],
   }),
   // #endregion 千葉
+  [LINE_IDS.jr_east.shinonoi]: new TrainLine({
+    name: "篠ノ井線",
+    reading: "しののいせん",
+    companyId: COMPANIES.jr_east.id,
+    sections: [
+      new Section([
+        new StopStation(STATION_IDS.jr_east.shiojiri),
+        new StopStation(STATION_IDS.jr_east.hirooka),
+        new StopStation(STATION_IDS.jr_east.murai),
+        new StopStation(STATION_IDS.jr_east.hirata),
+        new StopStation(STATION_IDS.jr_east.minami_matsumoto),
+        new StopStation(STATION_IDS.jr_east.matsumoto),
+        new StopStation(STATION_IDS.jr_east.tazawa),
+        new StopStation(STATION_IDS.jr_east.akashina),
+        new StopStation(STATION_IDS.jr_east.nishijou),
+        new StopStation(STATION_IDS.jr_east.sakakita),
+        new StopStation(STATION_IDS.jr_east.hijirikougen),
+        new StopStation(STATION_IDS.jr_east.kamuriki),
+        new StopStation(STATION_IDS.jr_east.obasute),
+        new StopStation(STATION_IDS.jr_east.inariyama),
+        new StopStation(STATION_IDS.jr_east.shinonoi),
+      ]),
+    ],
+  }),
 };

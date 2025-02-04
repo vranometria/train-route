@@ -216,4 +216,10 @@ export const COMPANIES: { [key: string]: Company } = {
     yomi: "じぇいあーるとうかい",
     keywords: ["jr", "jr tokai", "jrtokai", "japan railway tokai"]
   },
+  fuji_sanroku: {
+    id: "fuji_sanroku",
+    name: '富士急行電鉄',
+    yomi: "ふじきゅうこうでんてつ",
+    keywords: ["fuji kyuukou"]
+  },
 }

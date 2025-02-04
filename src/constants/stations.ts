@@ -7789,6 +7789,116 @@ export const STATIONS = {
   //   #endregion 西武鉄道
   //  #endregion 埼玉
   // #endregion 関東
+  // #region 甲信越
+  [STATION_IDS.fuji_sanroku.kawaguchiko]: new Station({
+    name: "河口湖",
+    reading: "かわぐちこ",
+    prefecture: P.YAMANASHI,
+    lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
+  }),
+  [STATION_IDS.fuji_sanroku.fujisan]: new Station({
+    name: "富士山",
+    reading: "ふじさん",
+    prefecture: P.YAMANASHI,
+    lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
+  }),
+  [STATION_IDS.fuji_sanroku.gekkouji]: new Station({
+    name: "月江寺",
+    reading: "げっこうじ",
+    prefecture: P.YAMANASHI,
+    lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
+  }),
+  [STATION_IDS.fuji_sanroku.shimoyoshida]: new Station({
+    name: "下吉田",
+    reading: "しもよしだ",
+    prefecture: P.YAMANASHI,
+    lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
+  }),
+  [STATION_IDS.fuji_sanroku.yoshiike_onsenmae]: new Station({
+    name: "葭池温泉前",
+    reading: "よしいけおんせんまえ",
+    prefecture: P.YAMANASHI,
+    lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
+  }),
+  [STATION_IDS.fuji_sanroku.kotobuki]: new Station({
+    name: "富士急ハイランド",
+    reading: "ふじきゅうはいらんど",
+    prefecture: P.YAMANASHI,
+    lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
+  }),
+  [STATION_IDS.fuji_sanroku.mitsutouge]: new Station({
+    name: "三ツ峠",
+    reading: "みつとうげ",
+    prefecture: P.YAMANASHI,
+    lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
+  }),
+  [STATION_IDS.fuji_sanroku.higashi_katsura]: new Station({
+    name: "東桂",
+    reading: "ひがしくら",
+    prefecture: P.YAMANASHI,
+    lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
+  }),
+  [STATION_IDS.fuji_sanroku.kotobuki]: new Station({
+    name: "寿",
+    reading: "ことぶき",
+    prefecture: P.YAMANASHI,
+    lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
+  }),
+  [STATION_IDS.fuji_sanroku.tohkaichiba]: new Station({
+    name: "十日市場",
+    reading: "とうかいちば",
+    prefecture: P.YAMANASHI,
+    lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
+  }),
+  [STATION_IDS.fuji_sanroku.tsurubunkadaigakumae]: new Station({
+    name: "鶴文科大学前",
+    reading: "つるぶんかだいがくまえ",
+    prefecture: P.YAMANASHI,
+    lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
+  }),
+  [STATION_IDS.fuji_sanroku.yamuramachi]: new Station({
+    name: "谷村町",
+    reading: "やむらまち",
+    prefecture: P.YAMANASHI,
+    lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
+  }),
+  [STATION_IDS.fuji_sanroku.tsurushi]: new Station({
+    name: "都留市",
+    reading: "つるし",
+    prefecture: P.YAMANASHI,
+    lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
+  }),
+  [STATION_IDS.fuji_sanroku.akasaka]: new Station({
+    name: "赤坂",
+    reading: "あかさか",
+    prefecture: P.YAMANASHI,
+    lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
+  }),
+  [STATION_IDS.fuji_sanroku.kasei]: new Station({
+    name: "禾生",
+    reading: "かせい",
+    prefecture: P.YAMANASHI,
+    lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
+  }),
+  [STATION_IDS.fuji_sanroku.kami_ohtsuki]: new Station({
+    name: "上大月",
+    reading: "かみおおつき",
+    prefecture: P.YAMANASHI,
+    lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
+  }),
+  [STATION_IDS.fuji_sanroku.tanokura]: new Station({
+    name: "田野倉",
+    reading: "たのくら",
+    prefecture: P.YAMANASHI,
+    lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
+  }),
+  [STATION_IDS.fuji_sanroku.fujikyu_highland]: new Station({
+    name: "富士急ハイランド",
+    reading: "ふじきゅうはいらんど",
+    prefecture: P.YAMANASHI,
+    lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
+  }),
+  // #endregion 甲信越
   // #region 中部
   // #endregion 中部
 

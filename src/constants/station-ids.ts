@@ -722,7 +722,7 @@ export const STATION_IDS = {
     yanagawa: "yamanashi-yanagawa",
     torisawa: "yamanashi-torisawa",
     saruhashi: "yamanashi-saruhashi",
-    ohtsuki: "yamanashi-ohsuki",
+    ohtsuki: "yamanashi-ohtsuki",
     hatsukari: "yamanashi-hatsukari",
     sasago: "yamanashi-sasago",
     kai_yamato: "yamanashi-kai-yamato",
@@ -821,7 +821,7 @@ export const STATION_IDS = {
     futamata_shinmachi: "jr-east-futamata-shinmachi",
     shin_urayasu: "shin_urayasu",
     maihama: "maihama",
-    kasai_rinkai_koen: "kasai_rinkai_koen",
+    kasai_rinkai_kouen: "kasai_rinkai_koen",
     shiomi: "shiomi",
     ecchujima: "ecchujima",
     hacchobori: "hacchobori",
@@ -1023,7 +1023,6 @@ export const STATION_IDS = {
     shinza: "shinza",
     kita_asaka: "kita_asaka",
     nishi_urawa: "nishi_urawa",
-    musashi_urawa: "musashi_urawa",
     higashi_urawa: "higashi_urawa",
     higashi_kawaguchi: "higashi_kawaguchi",
     minami_koshigaya: "minami_koshigaya",
@@ -1055,7 +1054,7 @@ export const STATION_IDS = {
     ichikawashiohama: "ichikawashiohama",
     shinurayasu: "shinurayasu",
     kasairinkaikouen: "kasairinkaikouen",
-    shinkiba: "shinkiba",
+    shin_kiba: "shinkiba",
     hacchoubori: "hacchoubori",
     // #endregion
     // #region 南武線(JN)
@@ -1297,6 +1296,24 @@ export const STATION_IDS = {
     yamakita: "kanagawa-yamakita",
     yaga: "kanagawa-yaga",
     // #endregion 御殿場線
+
+    // #region 篠ノ井線
+    hirooka: "nagano-hirooka",
+    murai: "nagano-murai",
+    hirata: "nagano-hirata",
+    minami_matsumoto: "nagano-minami-matsumoto",
+    matsumoto: "nagano-matsumoto",
+    tazawa: "nagano-tazawa",
+    akashina: "nagano-akashina",
+    nishijou: "nagano-nishijou",
+    sakakita: "nagano-sakakita",
+    hijirikougen: "nagano-hijirikougen",
+    kamuriki: "nagano-kamurigi",
+    obasute: "nagano-obasute",
+    inariyama: "nagano-inariyama",
+    shinonoi: "nagano-shinonoi",
+    // #endregion 篠ノ井線
+
     // 東北本線
     takaku: "jr-east-takaku",
     kurotawara: "jr-east-kurotawara",
@@ -1589,7 +1606,8 @@ export const STATION_IDS = {
     },
   },
   // #region 東京
-  toubu: { /** 東武電鉄*/
+  toubu: {
+    /** 東武電鉄*/
     // 東武東上線
     kita_ikebukuro: "toubu-kita-ikebukuro",
     shimoitabashi: "toubu-shimoitabashi",
@@ -1791,13 +1809,14 @@ export const STATION_IDS = {
     nishi_koizumi: "toubu-nishi-koizumi",
     ryumai: "toubu-ryumai",
   },
-  toukyo_rinkai_kousoku: { /** 臨海高速鉄道 */
-    shinonome: "rinkai-shinonome",
+  toukyo_rinkai_kousoku: {
+    /** 臨海高速鉄道 */ shinonome: "rinkai-shinonome",
     kokusaitenjijyo: "rinkai-kokusaitenjijyo",
     tokyo_teleport: "rinkai-tokyo-teleport",
     shinagawa_seaside: "rinkai-shinagawa-seaside",
   },
-  keiou: { /** 京王電鉄 */
+  keiou: {
+    /** 京王電鉄 */
     // 京王線
     sasatsuka: "keio-sasatsuka",
     daitabashi: "keio-daitabashi",
@@ -1865,8 +1884,8 @@ export const STATION_IDS = {
     fuchu_keiba_seimon_mae: "keio-fuchu-keiba-seimon-mae",
     tama_doubutsu_kouen: "tokyo-tama-doubutsu-kouen",
   },
-  takao_tozan: { /** 高尾登山鉄道 */
-    kiyotaki: "takao-tozan-kiyotaki",
+  takao_tozan: {
+    /** 高尾登山鉄道 */ kiyotaki: "takao-tozan-kiyotaki",
     takaosan: "takao-tozan-takaosan",
   },
   // #endregion
@@ -1974,8 +1993,8 @@ export const STATION_IDS = {
     odakyu_tama_center: "odakyu-odakyu-tama-center",
     karakida: "odakyu-karakida",
   },
-  enoshima: { /** 江ノ島電鉄 */
-    ishigami: "enoshima-ishigami",
+  enoshima: {
+    /** 江ノ島電鉄 */ ishigami: "enoshima-ishigami",
     yanagikouji: "enoshima-yanagikouji",
     kugenuma: "enoshima-kugenuma",
     syounan_kaigan_kouen: "enoshima-syounan-kaigan-kouen",
@@ -1989,8 +2008,8 @@ export const STATION_IDS = {
     yuigahama: "enoshima-yuigahama",
     wadaduka: "enoshima-wadaduka",
   },
-  syounan_monorail: { /** 湘南モノレール */
-    fujimichou: "syounan-monorail-fujimichou",
+  syounan_monorail: {
+    /** 湘南モノレール */ fujimichou: "syounan-monorail-fujimichou",
     syounan_machiya: "syounan-monorail-syounan-machiya",
     syounan_fukasawa: "syounan-monorail-syounan-fukasawa",
     nishi_kamakura: "syounan-monorail-nishi-kamakura",
@@ -2241,8 +2260,8 @@ export const STATION_IDS = {
     shiroku: "chichibu-shiroku",
     mitsumineguchi: "chichibu-mitsumineguchi",
   },
-  seibu: { /** 西部鉄道*/
-    shiinamachi: "shiinamachi",
+  seibu: {
+    /** 西部鉄道*/ shiinamachi: "shiinamachi",
     higashi_nagasaki: "higashi-nagasaki",
     ekoda: "ekoda",
     sakuradai: "sakuradai",
@@ -2509,6 +2528,26 @@ export const STATION_IDS = {
     kanente: "shizuoka-kanente",
     koufu: "yamanashi-koufu",
     // #endregion 身延線
+  },
+  fuji_sanroku: {
+    ohtsuki: "yamanashi-ohtsuki",
+    kami_ohtsuki: "yamanashi-kami-ohtsuki",
+    tanokura: "yamanashi-tanokura",
+    kasei: "yamanashi-kasei",
+    akasaka: "yamanashi-akasaka",
+    tsurushi: "yamanashi-tsurushi",
+    yamuramachi: "yamanashi-yamuramachi",
+    tsurubunkadaigakumae: "yamanashi-tsurubunkadaigakumae",
+    tohkaichiba: "yamanashi-tohkaichiba",
+    higashi_katsura: "yamanashi-higashi-katsura",
+    mitsutouge: "yamanashi-mitsutouge",
+    kotobuki: "yamanashi-kotobuki",
+    yoshiike_onsenmae: "yamanashi-yoshiike_onsenmae",
+    shimoyoshida: "yamanashi-shimoyoshida",
+    gekkouji: "yamanashi-gekkouji",
+    fujisan: "yamanashi-fujisan",
+    fujikyu_highland: "yamanashi-fujikyu-highland",
+    kawaguchiko: "yamanashi-kawaguchiko",
   },
   // JR西日本 駅
   jr_west: {
