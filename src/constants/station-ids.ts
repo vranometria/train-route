@@ -1349,6 +1349,26 @@ export const STATION_IDS = {
     minami_otari: "nagano-minami-otari",
     // #endregion 大糸線
 
+    // #region 信越本線
+    kita_nagaoka: "niigata-kita-nagaoka",
+    oshikiri: "niigata-oshikiri",
+    mitsuke: "niigata-mitsuke",
+    obiori: "niigata-obiori",
+    toukouji: "niigata-toukouji",
+    sanjou: "niigata-sanjou",
+    honai: "niigata-honai",
+    hanyuda: "niigata-hanyuda",
+    kamo: "niigata-kamo",
+    tagami: "niigata-tagami",
+    yashiroda: "niigata-yashiroda",
+    furutsu: "niigata-furutsu",
+    niitsu: "niigata-niitsu",
+    satsukino: "niigata-satsukino",
+    ogikawa: "niigata-ogikawa",
+    kameda: "niigata-kameda",
+    echigo_ishiyama: "niigata-echigo-ishiyama",
+    // #endregion 信越本線
+
     // 東北本線
     takaku: "jr-east-takaku",
     kurotawara: "jr-east-kurotawara",

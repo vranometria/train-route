@@ -219,6 +219,8 @@ export const LINE_IDS = {
     hachiko: "jr-hachiko",
     /** 上越線 */
     jouetsu: "jr-jouetsu",
+    /** 弥彦線 */
+    yahiko: "jr-yahiko",
     /** 吾妻線 */
     agatsuma: "jr-agatsuma",
 
@@ -226,8 +228,6 @@ export const LINE_IDS = {
     shinetsu_honsen: "jr-shinetsu-honsen",
     /** 小海線 */
     koumi: "jr-koumi",
-    /** 弥彦線 */
-    yahiko: "jr-yahiko",
     /** 磐越西線 */
     banetsusai: "jr-banetsusai",
     /** 白新線 */
@@ -236,6 +236,8 @@ export const LINE_IDS = {
     echigo: "jr-echigo",
     /** 飯山線 */
     iiyama: "jr-iiyama",
+    /** 羽越本線 */
+    uetsu_honsen: "jr-uetsu-honsen",
 
     /** 東北本線 */
     touhoku_honsen: "jr-touhoku-honsen",
@@ -277,8 +279,6 @@ export const LINE_IDS = {
     hachinohe: "jr-hachinohe",
     /** 米坂線 */
     yonesaka: "jr-yonesaka",
-    /** 羽越本線 */
-    uetsu_honsen: "jr-uetsu-honsen",
     /** 男鹿線 */
     oga: "jr-oga",
 

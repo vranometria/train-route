@@ -1663,4 +1663,32 @@ export const jr_east_lines = {
       ]),
     ],
   }),
+  [LINE_IDS.jr_east.shinetsu_honsen]: new TrainLine({
+    name: "信越本線",
+    reading: "しんえつほんせん",
+    companyId: COMPANIES.jr_east.id,
+    sections: [
+      new Section([
+        new StopStation(STATION_IDS.jr_east.nagaoka),
+        new StopStation(STATION_IDS.jr_east.kita_nagaoka),
+        new StopStation(STATION_IDS.jr_east.oshikiri),
+        new StopStation(STATION_IDS.jr_east.mitsuke),
+        new StopStation(STATION_IDS.jr_east.obiori),
+        new StopStation(STATION_IDS.jr_east.toukouji),
+        new StopStation(STATION_IDS.jr_east.sanjou),
+        new StopStation(STATION_IDS.jr_east.honai),
+        new StopStation(STATION_IDS.jr_east.kamo),
+        new StopStation(STATION_IDS.jr_east.hanyuda),
+        new StopStation(STATION_IDS.jr_east.tagami),
+        new StopStation(STATION_IDS.jr_east.yashiroda),
+        new StopStation(STATION_IDS.jr_east.furutsu),
+        new StopStation(STATION_IDS.jr_east.niitsu),
+        new StopStation(STATION_IDS.jr_east.satsukino),
+        new StopStation(STATION_IDS.jr_east.ogikawa),
+        new StopStation(STATION_IDS.jr_east.kameda),
+        new StopStation(STATION_IDS.jr_east.echigo_ishiyama),
+        new StopStation(STATION_IDS.jr_east.niigata),
+      ])
+    ]
+  })
 };
