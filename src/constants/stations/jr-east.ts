@@ -20,7 +20,7 @@ export const jr_east_stations = {
     lines: [LINE_IDS.jr_east.kawagoe],
   }),
   [STATION_IDS.jr_east.sashiougi]: new Station({
-    name: "さしおうぎ",
+    name: "指扇",
     reading: "さしおうぎ",
     prefecture: P.SAITAMA,
     lines: [LINE_IDS.jr_east.kawagoe],

@@ -8,7 +8,10 @@ import LineAccordion from './components/LineAccordion.vue';
   <header>
     <div class="wrapper">
       <nav>
-        <RouterLink to="/company">鉄道会社別</RouterLink>
+        <div>
+          <RouterLink to="/company">鉄道会社別</RouterLink>
+          <RouterLink to="/station">駅別</RouterLink>
+        </div>
 
         <LineAccordion :prefecture="PREFECTURE.HOKKAIDO" />
         <LineAccordion :prefecture="PREFECTURE.MIYAGI" />
