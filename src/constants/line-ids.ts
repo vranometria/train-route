@@ -498,18 +498,35 @@ export const LINE_IDS = {
   },
   /** JR東海 */
   jr_toukai: {
+    /** 東海道本線 */
     toukaidou: "jr-tokai-toukaidou-toukai",
-    tenryuhamanako: "jr-tokai-tenryuhamanako",
-    ida: "jr-tokai-ida",
-    chuohonsen: "jr-tokai-chuohonsen",
-    aonami: "jr-tokai-aonami",
-    hokurikuhonsen: "jr-tokai-hokurikuhonsen",
-    gotenba: "jr-tokai-gotenba",
-    minobu: "jr-tokai-minobu",
-    itou: "jr-tokai-itou",
-    taketoyo: "jr-tokai-taketoyo",
+    /** 中央本線 */
     chuou_honsen: "jr-tokai-chuou-honsen",
+    /** 天竜浜名湖鉄道 */
+    tenryuhamanako: "jr-tokai-tenryuhamanako",
+    /** 関西本線 */
+    iida: "jr-tokai-ida",
+    /** あおなみ線 */
+    aonami: "jr-tokai-aonami",
+    /** 北陸本線 */
+    hokuriku_honsen: "jr-tokai-hokurikuhonsen",
+    /** 御殿場線 */
+    gotenba: "jr-tokai-gotenba",
+    /** 身延線 */
+    minobu: "jr-tokai-minobu",
+    /** 伊東線 */
+    itou: "jr-tokai-itou",
+    /** 武豊線 */
+    taketoyo: "jr-tokai-taketoyo",
+    /** 高山本線 */
     takayama_honsen: "jr-tokai-takayama-honsen",
+    /** 太多線 */
+    taita: "jr-tokai-taita",
+  },
+  /** 東海交通事業 */
+  toukai_koutsu_jigyou: {
+    /** 城北線 */
+    jouhoku: "toukai-koutsu-jigyou-jouhoku",
   },
   gakunan: {
     gakunan: "gakunan-gakunan",
@@ -520,9 +537,14 @@ export const LINE_IDS = {
   tenryu_hamanako: {
     tenryu_hamanako: "tenryu-hamanako-tenryu-hamanako",
   },
+  /** 名鉄 */
   meitetsu: {
+    /** 蒲郡線 */
     gamagoori: "meitetsu-gamagoori",
+    /** 三河線 */
     mikawa: "meitetsu-mikawa",
+    /** 瀬戸線 */
+    seto: "meitetsu-seto",
   },
   aichi_kanjou: {
     aichi_kanjou: "aichi-kanjou-aichi-kanjou",
@@ -573,6 +595,12 @@ export const LINE_IDS = {
     higashiyama: "nagoya-shiei-subway-higashiyama",
     meijou: "nagoya-shiei-subway-meijou",
     meikou: "nagoya-shiei-subway-meikou",
+    turumai: "nagoya-shiei-subway-turumai",
+  },
+  /** 明知鉄道 */
+  akechi: {
+    /** 明知鉄道線 */
+    akechi: "akechi-akechi",
   },
   /** 近江鉄道 */
   oumi: {

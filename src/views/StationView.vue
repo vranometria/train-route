@@ -13,7 +13,7 @@ const model = new StationDetail(stationId);
     <h1>{{ model.name }}</h1>
     <p>{{ model.reading }}</p>
     <p>{{ model.prefecture }}</p>
-    <a :href="`https://www.google.com/maps/search/${model.name}駅 駅`" target="_google">Google Map</a>
+    <a :href="`https://www.google.com/maps/search/${model.name}駅`" target="_google">Google Map</a>
 
     <h1>路線</h1>
     <div v-for="line in model.lines" :key="line.id">

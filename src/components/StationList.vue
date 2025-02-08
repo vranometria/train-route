@@ -36,7 +36,7 @@ const textInput = (e: InputEvent) => {
   <div>
     <section class="search-area">
         <input type="text" :oninput="textInput" placeholder="Search" class="search" />
-        <span>{{ count }}件</span>
+        <span class="count">{{ count }}件</span>
     </section>
     <div v-for="(ja, index) in Object.keys(group)" :key="index">
       <h2>{{ ja }}</h2>
@@ -53,17 +53,19 @@ const textInput = (e: InputEvent) => {
 .search-area {
   justify-content: space-between;
   margin-bottom: 10px;
-  display: fixed;
-  position: absolute;
+  position: sticky;
+  top: 0px;
 }
 .search {
   width: 200px;
-  top: 0px;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
   height: 40px;
+}
+.count {
+  margin-left: 10px;
 }
 </style>
