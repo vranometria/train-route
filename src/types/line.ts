@@ -18,6 +18,8 @@ interface TrainLineConstructor {
  * 路線定義クラス
  */
 export class TrainLine {
+  /** ID */
+  id?: string;
   /** 路線名 */
   name: string;
   /** 運行会社ID */

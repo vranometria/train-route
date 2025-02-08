@@ -15,7 +15,7 @@ const createGroup = (args: (Station|StationInfo)[]): {[key: string]: (Station|St
   return group;
 };
 
-const all_stations = Object.values(STATIONS);
+const all_stations = Object.entries(STATIONS).map( ([k, v]) => { v.id=k; return v; } );
 let count = all_stations.length;
 const group = ref(createGroup(all_stations));
 

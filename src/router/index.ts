@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import LineView from '../views/LineView.vue';
 import CompanyList from '@/components/CompanyList.vue';
 import StationList from '@/components/StationList.vue';
+import StationView from '@/views/StationView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,9 +24,14 @@ const router = createRouter({
       component: CompanyList,
     },
     {
-      path: '/station',
-      name: 'station',
+      path: '/stations',
+      name: 'stations',
       component: StationList,
+    },
+    {
+      path: '/station/:id',
+      name: 'station',
+      component: StationView,
     }
   ],
 })

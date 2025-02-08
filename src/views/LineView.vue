@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { LineViewModel } from '@/types/line-view-model';
-import { watch, ref, onUpdated } from 'vue';
+import { watch, ref, onUpdated, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import SimpleSection from '@/components/SimpleSection.vue';
 import type { Branch, RoutePart, Section } from '@/types/Section';
@@ -10,23 +10,32 @@ import RightPane from '@/components/RightPane.vue';
   const lineId = ref(route.params.id as string);
   const model = ref(new LineViewModel(lineId.value as string));
   const from = ref(null as string|null);
+  const stationId = ref(route.hash as string|null);
 
   watch( ()=>route.params.id as string, (newId:string) => {
     lineId.value = newId;
     model.value = new LineViewModel(newId);
   });
 
-  onUpdated(() => {
-    if(route.hash){
+  watch( ()=>route.hash as string, (newHash:string) => {
+    stationId.value = newHash;
+  });
+
+  const markStation = () => {
+    if(stationId.value){
       const id = route.hash.replace("#", "");
       const element = document.querySelector(route.hash) as HTMLElement;
       if(element){
+        Array.from(document.getElementsByClassName("from")).forEach((e:Element) => e.classList.remove("from"));
         element.scrollIntoView({behavior: "smooth", block: "center"});
         element.getElementsByClassName("station-name")[0].classList.add("from");
         from.value = id;
       }
     }
-  });
+  }
+
+  onMounted(markStation);
+  onUpdated(markStation);
 
   const branchSelected = (sectionIndex:number, branchIndex: number) => {
     const t = new LineViewModel(lineId.value as string);

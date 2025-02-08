@@ -21,11 +21,14 @@ export const STATIONS = {
 
   // #region 東北
   // #region 道南いさりび鉄道
-  [STATION_IDS.dounan_isaribi.satsukari]: new StationInfo(
-    "札苅",
-    NO_TRANSFER,
-    "さつかり"
-  ),
+  [STATION_IDS.dounan_isaribi.satsukari]: new Station({
+    name: "札苅",
+    reading: "さつかり",
+    en: "satsukari",
+    prefecture: P.HOKKAIDO,
+    lines: [LINE_IDS.dounan_isaribi.dounan_isaribi],
+    coordinates: { lat: 41.699222, lng: 140.468139 },
+  }),
   [STATION_IDS.dounan_isaribi.izumisawa]: new StationInfo(
     "泉澤",
     NO_TRANSFER,

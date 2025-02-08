@@ -993,6 +993,23 @@ export const jr_east_lines = {
       ]),
     ],
   }),
+  [LINE_IDS.jr_east.yahiko]: new TrainLine({
+    name: "弥彦線",
+    reading: "やひこせん",
+    companyId: COMPANIES.jr_east.id,
+    sections: [
+      new Section([
+        new StopStation(STATION_IDS.jr_east.yahiko),
+        new StopStation(STATION_IDS.jr_east.yahagi),
+        new StopStation(STATION_IDS.jr_east.yoshida),
+        new StopStation(STATION_IDS.jr_east.nishi_tsubame),
+        new StopStation(STATION_IDS.jr_east.tsubame),
+        new StopStation(STATION_IDS.jr_east.tubame_sanjou),
+        new StopStation(STATION_IDS.jr_east.kita_sanjou),
+        new StopStation(STATION_IDS.jr_east.higashi_sanjou),
+      ]),
+    ],
+  }),
 
   // #region 千葉
   [LINE_IDS.jr_east.sotobou]: new TrainLine({

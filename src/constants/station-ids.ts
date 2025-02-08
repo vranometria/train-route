@@ -1369,6 +1369,17 @@ export const STATION_IDS = {
     echigo_ishiyama: "niigata-echigo-ishiyama",
     // #endregion 信越本線
 
+    // #region 弥彦線
+    yahiko: "niigata-yahiko",
+    yahagi: "niigata-yahagi",
+    yoshida: "niigata-yoshida",
+    nishi_tsubame: "niigata-nishi-tsubame",
+    tsubame: "niigata-tsubame",
+    tubame_sanjou: "niigata-tsubame-sanjou",
+    kita_sanjou: "niigata-kita-sanjou",
+    higashi_sanjou: "niigata-higashi-sanjou",
+    // #endregion 弥彦線
+
     // 東北本線
     takaku: "jr-east-takaku",
     kurotawara: "jr-east-kurotawara",
