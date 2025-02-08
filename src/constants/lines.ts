@@ -4002,5 +4002,27 @@ export const LINES = {
       ])
     ]
   }),
+  [LINE_IDS.matsumoto.kamikouchi]: new TrainLine({
+    name: "上高地線",
+    reading: "かみこうちせん",
+    companyId: COMPANIES.matsumoto.id,
+    sections: [
+      new Section([
+        new StopStation(STATION_IDS.jr_east.matsumoto),
+        new StopStation(STATION_IDS.matsumoto.nishi_matsumoto),
+        new StopStation(STATION_IDS.matsumoto.nagisa),
+        new StopStation(STATION_IDS.matsumoto.ohniwa),
+        new StopStation(STATION_IDS.matsumoto.shimonii),
+        new StopStation(STATION_IDS.matsumoto.kitanii_matsumotodaigakumae),
+        new StopStation(STATION_IDS.matsumoto.niimura),
+        new StopStation(STATION_IDS.matsumoto.samizo),
+        new StopStation(STATION_IDS.matsumoto.moriguchi),
+        new StopStation(STATION_IDS.matsumoto.shimojima),
+        new StopStation(STATION_IDS.matsumoto.hata),
+        new StopStation(STATION_IDS.matsumoto.endou),
+        new StopStation(STATION_IDS.matsumoto.shinshimashima),
+      ])
+    ]
+  }),
   // #endregion 甲信越
 };

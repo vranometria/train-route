@@ -1955,6 +1955,7 @@ export const STATION_IDS = {
     takaosan: "takao-tozan-takaosan",
   },
   // #endregion
+
   // #region 神奈川
   /** 小田急箱根 駅*/
   odakyu_hakone: {
@@ -2414,6 +2415,25 @@ export const STATION_IDS = {
     koremasa: "seibu-koremasa",
   },
   // #endregion
+
+  // #region 長野
+  matsumoto: {
+    nishi_matsumoto: "matsumoto-nishi-matsumoto",
+    nagisa: "nagano-nagisa",
+    shinano_arai: "nagano-shinano-arai",
+    ohniwa: "nagano-ohniwa",
+    shimonii: "nagano-shimonii",
+    kitanii_matsumotodaigakumae: "nagano-kitanii-matsumotodaigakumae",
+    niimura: "nagano-niimura",
+    samizo: "nagano-samizo",
+    moriguchi: "nagano-moriguchi",
+    shimojima: "nagano-shimojima",
+    hata: "nagano-hata",
+    endou: "nagano-endou",
+    shinshimashima: "nagano-shinshimashima",
+  },
+  // #endregion 長野
+
   kantou: {
     nishi_toride: "kanto-nishi-toride",
     terahara: "kanto-terahara",

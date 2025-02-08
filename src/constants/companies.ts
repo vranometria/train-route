@@ -228,4 +228,10 @@ export const COMPANIES: { [key: string]: Company } = {
     yomi: "じぇいあーるにしにほん",
     keywords: ["jr", "jr west", "jrwest", "japan railway west"]
   },
+  matsumoto: {
+    id: "matsumoto",
+    name: '松本電鉄',
+    yomi: "まつもとでんてつ",
+    keywords: ["matsumoto"]
+  },
 }

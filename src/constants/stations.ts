@@ -29,51 +29,69 @@ export const STATIONS = {
     lines: [LINE_IDS.dounan_isaribi.dounan_isaribi],
     coordinates: { lat: 41.699222, lng: 140.468139 },
   }),
-  [STATION_IDS.dounan_isaribi.izumisawa]: new StationInfo(
-    "泉澤",
-    NO_TRANSFER,
-    "いずみさわ"
-  ),
-  [STATION_IDS.dounan_isaribi.kamaya]: new StationInfo(
-    "釜谷",
-    NO_TRANSFER,
-    "かまや"
-  ),
-  [STATION_IDS.dounan_isaribi.oshima_tobetsu]: new StationInfo(
-    "渡島当別",
-    NO_TRANSFER,
-    "おしまとうべつ"
-  ),
-  [STATION_IDS.dounan_isaribi.moheji]: new StationInfo(
-    "茂辺地",
-    NO_TRANSFER,
-    "もへじ"
-  ),
-  [STATION_IDS.dounan_isaribi.kamiiso]: new StationInfo(
-    "上磯",
-    NO_TRANSFER,
-    "かみいそ"
-  ),
-  [STATION_IDS.dounan_isaribi.kiyokawaguchi]: new StationInfo(
-    "清川口",
-    NO_TRANSFER,
-    "きよかわぐち"
-  ),
-  [STATION_IDS.dounan_isaribi.kunebetsu]: new StationInfo(
-    "久根別",
-    NO_TRANSFER,
-    "くねべつ"
-  ),
-  [STATION_IDS.dounan_isaribi.higashi_kunebetsu]: new StationInfo(
-    "東久根別",
-    NO_TRANSFER,
-    "ひがしくねべつ"
-  ),
-  [STATION_IDS.dounan_isaribi.nanaehama]: new StationInfo(
-    "七重浜",
-    NO_TRANSFER,
-    "ななえはま"
-  ),
+  [STATION_IDS.dounan_isaribi.izumisawa]: new Station({
+    name: "泉澤",
+    prefecture: P.HOKKAIDO,
+    lines: [LINE_IDS.dounan_isaribi.dounan_isaribi],
+    en: "izumisawa",
+    reading: "いずみさわ"
+  }),
+  [STATION_IDS.dounan_isaribi.kamaya]: new Station({
+    name: "釜谷",
+    prefecture: P.HOKKAIDO,
+    lines: [LINE_IDS.dounan_isaribi.dounan_isaribi],
+    en: "kamaya",
+    reading: "かまや"
+  }),
+  [STATION_IDS.dounan_isaribi.oshima_tobetsu]: new Station({
+    name: "渡島当別",
+    prefecture: P.HOKKAIDO,
+    lines: [LINE_IDS.dounan_isaribi.dounan_isaribi],
+    en: "oshima_tobetsu",
+    reading: "おしまとうべつ"
+  }),
+  [STATION_IDS.dounan_isaribi.moheji]: new Station({
+    name: "茂辺地",
+    en: "moheji",
+    prefecture: P.HOKKAIDO,
+    lines: [LINE_IDS.dounan_isaribi.dounan_isaribi],
+    reading: "もへじ"
+  }),
+  [STATION_IDS.dounan_isaribi.kamiiso]: new Station({
+    name: "上磯",
+    en: "kamiiso",
+    prefecture: P.HOKKAIDO,
+    lines: [LINE_IDS.dounan_isaribi.dounan_isaribi],
+    reading: "かみいそ"
+  }),
+  [STATION_IDS.dounan_isaribi.kiyokawaguchi]: new Station({
+    name: "清川口",
+    en: "kiyokawaguchi",
+    prefecture: P.HOKKAIDO,
+    lines: [LINE_IDS.dounan_isaribi.dounan_isaribi],
+    reading: "きよかわぐち"
+  }),
+  [STATION_IDS.dounan_isaribi.kunebetsu]: new Station({
+    name: "久根別",
+    en: "kunebetsu",
+    prefecture: P.HOKKAIDO,
+    lines: [LINE_IDS.dounan_isaribi.dounan_isaribi],
+    reading: "くねべつ"
+  }),
+  [STATION_IDS.dounan_isaribi.higashi_kunebetsu]: new Station({
+    name: "東久根別",
+    en: "higashi_kunebetsu",
+    prefecture: P.HOKKAIDO,
+    lines: [LINE_IDS.dounan_isaribi.dounan_isaribi],
+    reading: "ひがしくねべつ"
+  }),
+  [STATION_IDS.dounan_isaribi.nanaehama]: new Station({
+    name: "七重浜",
+    en: "nanaehama",
+    prefecture: P.HOKKAIDO,
+    lines: [LINE_IDS.dounan_isaribi.dounan_isaribi],
+    reading: "ななえはま"
+  }),
   // #endregion 道南いさりび鉄道
   // #endregion 東北
 
@@ -6168,6 +6186,7 @@ export const STATIONS = {
   //   #endregion 西武鉄道
   //  #endregion 埼玉
   // #endregion 関東
+
   // #region 甲信越
   [STATION_IDS.fuji_sanroku.kawaguchiko]: new Station({
     name: "河口湖",
@@ -6277,7 +6296,99 @@ export const STATIONS = {
     prefecture: P.YAMANASHI,
     lines: [LINE_IDS.fuji_sanroku.fuji_kyukou],
   }),
+  [STATION_IDS.matsumoto.nishi_matsumoto]: new Station({
+    name: "西松本",
+    reading: "にしまつもと",
+    en: "nishi_matsumoto",
+    prefecture: P.NAGANO,
+    lines: [LINE_IDS.matsumoto.kamikouchi],
+  }),
+  [STATION_IDS.matsumoto.nagisa]: new Station({
+    name: "渚",
+    reading: "なぎさ",
+    en: "nagisa",
+    prefecture: P.NAGANO,
+    lines: [LINE_IDS.matsumoto.kamikouchi],
+  }),
+  [STATION_IDS.matsumoto.shinano_arai]: new Station({
+    name: "信濃新井",
+    reading: "しなのあらい",
+    en: "shinano_arai",
+    prefecture: P.NAGANO,
+    lines: [LINE_IDS.matsumoto.kamikouchi],
+  }),
+  [STATION_IDS.matsumoto.ohniwa]: new Station({
+    name: "大庭",
+    reading: "おおにわ",
+    en: "ohniwa",
+    prefecture: P.NAGANO,
+    lines: [LINE_IDS.matsumoto.kamikouchi],
+  }),
+  [STATION_IDS.matsumoto.shimonii]: new Station({
+    name: "下新井",
+    reading: "しもにい",
+    en: "shimonii",
+    prefecture: P.NAGANO,
+    lines: [LINE_IDS.matsumoto.kamikouchi],
+  }),
+  [STATION_IDS.matsumoto.kitanii_matsumotodaigakumae]: new Station({
+    name: "北新・井松本大学前",
+    reading: "きたにいまつもとだいがくまえ",
+    en: "kitanii_matsumotodaigakumae",
+    prefecture: P.NAGANO,
+    lines: [LINE_IDS.matsumoto.kamikouchi],
+  }),
+  [STATION_IDS.matsumoto.niimura]: new Station({
+    name: "新村",
+    reading: "にいむら",
+    en: "niimura",
+    prefecture: P.NAGANO,
+    lines: [LINE_IDS.matsumoto.kamikouchi],
+  }),
+  [STATION_IDS.matsumoto.samizo]: new Station({
+    name: "三ノ蔵",
+    reading: "さみぞ",
+    en: "samizo",
+    prefecture: P.NAGANO,
+    lines: [LINE_IDS.matsumoto.kamikouchi],
+  }),
+  [STATION_IDS.matsumoto.moriguchi]: new Station({
+    name: "森口",
+    reading: "もりぐち",
+    en: "moriguchi",
+    prefecture: P.NAGANO,
+    lines: [LINE_IDS.matsumoto.kamikouchi],
+  }),
+  [STATION_IDS.matsumoto.shimojima]: new Station({
+    name: "下島",
+    reading: "しもじま",
+    en: "shimojima",
+    prefecture: P.NAGANO,
+    lines: [LINE_IDS.matsumoto.kamikouchi],
+  }),
+  [STATION_IDS.matsumoto.hata]: new Station({
+    name: "波田",
+    reading: "はた",
+    en: "hata",
+    prefecture: P.NAGANO,
+    lines: [LINE_IDS.matsumoto.kamikouchi],
+  }),
+  [STATION_IDS.matsumoto.endou]: new Station({
+    name: "遠藤",
+    reading: "えんどう",
+    en: "endou",
+    prefecture: P.NAGANO,
+    lines: [LINE_IDS.matsumoto.kamikouchi],
+  }),
+  [STATION_IDS.matsumoto.shinshimashima]: new Station({
+    name: "新島島",
+    reading: "しんしましま",
+    en: "shinshimashima",
+    prefecture: P.NAGANO,
+    lines: [LINE_IDS.matsumoto.kamikouchi],
+  }),
   // #endregion 甲信越
+
   // #region 中部
   // #endregion 中部
 };
