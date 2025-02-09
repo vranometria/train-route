@@ -2614,7 +2614,7 @@ export const STATION_IDS = {
     kanente: "shizuoka-kanente",
     koufu: "yamanashi-koufu",
     // #endregion 身延線
-  
+
     // #region 中央本線
     tsurumai: "aichi-tsurumai",
     chikusa: "aichi-chikusa",
@@ -2653,6 +2653,16 @@ export const STATION_IDS = {
     hideshio: "nagano-hideshio",
     seba: "nagano-seba",
     // #endregion 中央本線
+
+    // #region 太多線
+    koizumi: "koizumi",
+    nemoto: "nemoto",
+    hime: "hime",
+    shimogiri: "shimogiri",
+    kani: "kani",
+    mino_kawai: "mino-kawai",
+    mino_oota: "mino-oota",
+    // #endregion 太多線
   },
   fuji_sanroku: {
     ohtsuki: "yamanashi-ohtsuki",

@@ -4021,6 +4021,23 @@ export const LINES = {
       ]),
     ],
   }),
+  [LINE_IDS.jr_toukai.taita]: new TrainLine({
+    name: "太田線",
+    reading: "たいたせん",
+    companyId: COMPANIES.jr_tokai.id,
+    sections: [
+      new Section([
+        new StopStation(STATION_IDS.jr_toukai.tajimi),
+        new StopStation(STATION_IDS.jr_toukai.koizumi),
+        new StopStation(STATION_IDS.jr_toukai.nemoto),
+        new StopStation(STATION_IDS.jr_toukai.hime),
+        new StopStation(STATION_IDS.jr_toukai.shimogiri),
+        new StopStation(STATION_IDS.jr_toukai.kani),
+        new StopStation(STATION_IDS.jr_toukai.mino_kawai),
+        new StopStation(STATION_IDS.jr_toukai.mino_oota),
+      ]),
+    ],
+  }),
   // #endregion 中部
   // #region 甲信越
   [LINE_IDS.fuji_sanroku.fuji_kyukou]: new TrainLine({

@@ -1213,124 +1213,167 @@ export const STATIONS = {
     prefecture: P.TOKYO,
     lines: [LINE_IDS.tokyo_metro.marunouchi, LINE_IDS.tokyo_subway.oedo],
   }),
-  [STATION_IDS.tokyo_metro.shinnakano]: new StationInfo(
-    "新中野",
-    [],
-    "しんなかの"
-  ),
-  [STATION_IDS.tokyo_metro.higashi_koenji]: new StationInfo(
-    "東高円寺",
-    [],
-    "ひがしこうえんじ"
-  ),
-  [STATION_IDS.tokyo_metro.shinkoenji]: new StationInfo(
-    "新高円寺",
-    [],
-    "しんこうえんじ"
-  ),
-  [STATION_IDS.tokyo_metro.minamiasagaya]: new StationInfo(
-    "南阿佐ヶ谷",
-    [],
-    "みなみあさがや"
-  ),
+  [STATION_IDS.tokyo_metro.shinnakano]: new Station({
+    name: "新中野",
+    reading: "しんなかの",
+    en: "shinnakano",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.marunouchi],
+  }),
+  [STATION_IDS.tokyo_metro.higashi_koenji]: new Station({
+    name: "東高円寺",
+    reading: "ひがしこうえんじ",
+    en: "higashi_koenji",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.marunouchi],
+  }),
+  [STATION_IDS.tokyo_metro.shinkoenji]: new Station({
+    name: "新高円寺",
+    reading: "しんこうえんじ",
+    en: "shinkoenji",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.marunouchi],
+  }),
+  [STATION_IDS.tokyo_metro.minamiasagaya]: new Station({
+    name: "南阿佐ヶ谷",
+    reading: "みなみあさがや",
+    en: "minamiasagaya",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.marunouchi],
+  }),
   // >有楽町線
-  [STATION_IDS.tokyo_metro.wakoshi]: new StationInfo(
-    "和光市",
-    [
+  [STATION_IDS.tokyo_metro.wakoshi]: new Station({
+    name: "和光市",
+    reading: "わこうし",
+    en: "wakoshi",
+    prefecture: P.SAITAMA,
+    lines: [
       LINE_IDS.tokyo_metro.yurakucho,
       LINE_IDS.tokyo_metro.fukutoshin,
       LINE_IDS.toubu.toujou,
     ],
-    "わこうし"
-  ),
-  [STATION_IDS.tokyo_metro.chikatetsu_narimasu]: new StationInfo(
-    "地下鉄成増",
-    [
+  }),
+  [STATION_IDS.tokyo_metro.chikatetsu_narimasu]: new Station({
+    name: "地下鉄成増",
+    reading: "ちかてつなります",
+    en: "chikatetsu_narimasu",
+    prefecture: P.TOKYO,
+    lines: [
       LINE_IDS.tokyo_metro.yurakucho,
       LINE_IDS.tokyo_metro.fukutoshin,
       new ExchangeInfo(LINE_IDS.toubu.toujou, STATION_IDS.toubu.narimasu),
     ],
-    "ちかてつなります"
-  ),
-  [STATION_IDS.tokyo_metro.chikatetsu_akatsuka]: new StationInfo(
-    "地下鉄赤塚",
-    [
+  }),
+  [STATION_IDS.tokyo_metro.chikatetsu_akatsuka]: new Station({
+    name: "地下鉄赤塚",
+    reading: "ちかてつあかつか",
+    en: "chikatetsu_akatsuka",
+    prefecture: P.TOKYO,
+    lines: [
       LINE_IDS.tokyo_metro.yurakucho,
       LINE_IDS.tokyo_metro.fukutoshin,
       new ExchangeInfo(LINE_IDS.toubu.toujou, STATION_IDS.toubu.shimoakatsuka),
     ],
-    "ちかてつあかつか"
-  ),
-  [STATION_IDS.tokyo_metro.heiwadai]: new StationInfo(
-    "平和台",
-    [LINE_IDS.tokyo_metro.yurakucho, LINE_IDS.tokyo_metro.fukutoshin],
-    "へいわだい"
-  ),
-  [STATION_IDS.tokyo_metro.hikawadai]: new StationInfo(
-    "氷川台",
-    [LINE_IDS.tokyo_metro.yurakucho, LINE_IDS.tokyo_metro.fukutoshin],
-    "ひかわだい"
-  ),
-  [STATION_IDS.tokyo_metro.kotake_mukaihara]: new StationInfo(
-    "小竹向原",
-    [
+  }),
+  [STATION_IDS.tokyo_metro.heiwadai]: new Station({
+    name: "平和台",
+    reading: "へいわだい",
+    en: "heiwadai",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.yurakucho, LINE_IDS.tokyo_metro.fukutoshin],
+  }),
+  [STATION_IDS.tokyo_metro.hikawadai]: new Station({
+    name: "氷川台",
+    reading: "ひかわだい",
+    en: "hikawadai",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.yurakucho, LINE_IDS.tokyo_metro.fukutoshin],
+  }),
+  [STATION_IDS.tokyo_metro.kotake_mukaihara]: new Station({
+    name: "小竹向原",
+    reading: "こたけむかいはら",
+    en: "kotake_mukaihara",
+    prefecture: P.TOKYO,
+    lines: [
       LINE_IDS.tokyo_metro.yurakucho,
       LINE_IDS.tokyo_metro.fukutoshin,
       LINE_IDS.seibu.yurakucho,
     ],
-    "こたけむかいはら"
-  ),
-  [STATION_IDS.tokyo_metro.senkawa]: new StationInfo(
-    "千川",
-    [LINE_IDS.tokyo_metro.yurakucho, LINE_IDS.tokyo_metro.fukutoshin],
-    "せんかわ"
-  ),
-  [STATION_IDS.tokyo_metro.kanamecho]: new StationInfo(
-    "要町",
-    [LINE_IDS.tokyo_metro.yurakucho, LINE_IDS.tokyo_metro.fukutoshin],
-    "かなめちょう"
-  ),
-  [STATION_IDS.jr_east.iidabashi]: new StationInfo(
-    "飯田橋",
-    [
+  }),
+  [STATION_IDS.tokyo_metro.senkawa]: new Station({
+    name: "千川",
+    reading: "せんかわ",
+    en: "senkawa",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.yurakucho, LINE_IDS.tokyo_metro.fukutoshin],
+  }),
+  [STATION_IDS.tokyo_metro.kanamecho]: new Station({
+    name: "要町",
+    reading: "かなめちょう",
+    en: "kanamecho",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.yurakucho, LINE_IDS.tokyo_metro.fukutoshin],
+  }),
+  [STATION_IDS.jr_east.iidabashi]: new Station({
+    name: "飯田橋",
+    reading: "いいだばし",
+    en: "iidabashi",
+    prefecture: P.TOKYO,
+    lines: [
       LINE_IDS.jr_east.chuou_honsen,
       LINE_IDS.tokyo_metro.yurakucho,
       LINE_IDS.tokyo_metro.nanboku,
       LINE_IDS.tokyo_metro.touzai,
       LINE_IDS.tokyo_subway.oedo,
     ],
-    "いいだばし"
-  ),
-  [STATION_IDS.tokyo_metro.higashi_ikebukuro]: new StationInfo(
-    "東池袋",
-    [LINE_IDS.tokyo_metro.yurakucho, LINE_IDS.tokyo_subway.sakura_tram],
-    "ひがしいけぶくろ"
-  ),
-  [STATION_IDS.tokyo_metro.gokokuji]: new StationInfo("護国寺", [], "ごこくじ"),
-  [STATION_IDS.tokyo_metro.edogawabashi]: new StationInfo(
-    "江戸川橋",
-    [],
-    "えどがわばし"
-  ),
-  [STATION_IDS.tokyo_metro.idabashi]: new StationInfo(
-    "飯田橋",
-    [
+  }),
+  [STATION_IDS.tokyo_metro.higashi_ikebukuro]: new Station({
+    name: "東池袋",
+    reading: "ひがしいけぶくろ",
+    en: "higashi_ikebukuro",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.yurakucho, LINE_IDS.tokyo_subway.sakura_tram],
+  }),
+  [STATION_IDS.tokyo_metro.gokokuji]: new Station({
+    name: "護国寺",
+    reading: "ごこくじ",
+    en: "gokokuji",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.yurakucho],
+  }),
+  [STATION_IDS.tokyo_metro.edogawabashi]: new Station({
+    name: "江戸川橋",
+    reading: "えどがわばし",
+    en: "edogawabashi",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.yurakucho],
+  }),
+  [STATION_IDS.tokyo_metro.idabashi]: new Station({
+    name: "飯田橋",
+    reading: "いいだばし",
+    en: "iidabashi",
+    prefecture: P.TOKYO,
+    lines: [
       LINE_IDS.jr_east.chuou_honsen,
       LINE_IDS.tokyo_metro.yurakucho,
       LINE_IDS.tokyo_metro.touzai,
       LINE_IDS.tokyo_metro.nanboku,
       LINE_IDS.tokyo_subway.oedo,
     ],
-    "いいだばし"
-  ),
-  [STATION_IDS.tokyo_metro.koujimachi]: new StationInfo(
-    "麹町",
-    [],
-    "こうじまち"
-  ),
-  [STATION_IDS.tokyo_metro.nagatacho]: new StationInfo(
-    "永田町",
-    [
+  }),
+  [STATION_IDS.tokyo_metro.koujimachi]: new Station({
+    name: "麹町",
+    reading: "こうじまち",
+    en: "koujimachi",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.yurakucho],
+  }),
+  [STATION_IDS.tokyo_metro.nagatacho]: new Station({
+    name: "永田町",
+    reading: "ながたちょう",
+    en: "nagatacho",
+    prefecture: P.TOKYO,
+    lines: [
       LINE_IDS.tokyo_metro.yurakucho,
       LINE_IDS.tokyo_metro.hanzoumon,
       LINE_IDS.tokyo_metro.nanboku,
@@ -1343,16 +1386,20 @@ export const STATIONS = {
         STATION_IDS.tokyo_metro.akasakamitsuke
       ),
     ],
-    "ながたちょう"
-  ),
-  [STATION_IDS.tokyo_metro.sakuradamon]: new StationInfo(
-    "桜田門",
-    [],
-    "さくらだもん"
-  ),
-  [STATION_IDS.tokyo_metro.ginza_icchome]: new StationInfo(
-    "銀座一丁目",
-    [
+  }),
+  [STATION_IDS.tokyo_metro.sakuradamon]: new Station({
+    name: "桜田門",
+    reading: "さくらだもん",
+    en: "sakuradamon",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.yurakucho],
+  }),
+  [STATION_IDS.tokyo_metro.ginza_icchome]: new Station({
+    name: "銀座一丁目",
+    reading: "ぎんざいっちょうめ",
+    en: "ginza_icchome",
+    prefecture: P.TOKYO,
+    lines: [
       LINE_IDS.tokyo_metro.yurakucho,
       new ExchangeInfo(
         LINE_IDS.tokyo_metro.marunouchi,
@@ -1367,70 +1414,93 @@ export const STATIONS = {
         STATION_IDS.tokyo_metro.ginza
       ),
     ],
-    "ぎんざいっちょうめ"
-  ),
-  [STATION_IDS.tokyo_metro.shintomicho]: new StationInfo(
-    "新富町",
-    [
+  }),
+  [STATION_IDS.tokyo_metro.shintomicho]: new Station({
+    name: "新富町",
+    reading: "しんとみちょう",
+    en: "shintomicho",
+    prefecture: P.TOKYO,
+    lines: [
       LINE_IDS.tokyo_metro.yurakucho,
       new ExchangeInfo(
         LINE_IDS.tokyo_metro.hibiya,
         STATION_IDS.tokyo_metro.tsukiji
       ),
     ],
-    "しんとみちょう"
-  ),
-  [STATION_IDS.tokyo_metro.tsukishima]: new StationInfo(
-    "月島",
-    [LINE_IDS.tokyo_metro.yurakucho, LINE_IDS.tokyo_subway.oedo],
-    "つきしま"
-  ),
-  [STATION_IDS.tokyo_metro.toyosu]: new StationInfo(
-    "豊洲",
-    [LINE_IDS.tokyo_metro.yurakucho, LINE_IDS.yurikamome.yurikamome],
-    "とよす"
-  ),
-  [STATION_IDS.tokyo_metro.tatsumi]: new StationInfo("辰巳", [], "たつみ"),
-  [STATION_IDS.tokyo_metro.shinkiba]: new StationInfo(
-    "新木場",
-    [
+  }),
+  [STATION_IDS.tokyo_metro.tsukishima]: new Station({
+    name: "月島",
+    reading: "つきしま",
+    en: "tsukishima",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.yurakucho, LINE_IDS.tokyo_subway.oedo],
+  }),
+  [STATION_IDS.tokyo_metro.toyosu]: new Station({
+    name:  "豊洲",
+    reading: "とよす",
+    en: "toyosu",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.yurakucho, LINE_IDS.yurikamome.yurikamome],
+  }),
+  [STATION_IDS.tokyo_metro.tatsumi]: new Station({
+    name: "辰巳",
+    reading: "たつみ",
+    en: "tatsumi",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.yurakucho],
+  }),
+  [STATION_IDS.tokyo_metro.shinkiba]: new Station({
+    name: "新木場",
+    reading: "しんきば",
+    en: "shinkiba",
+    prefecture: P.TOKYO,
+    lines: [
       LINE_IDS.jr_east.musashino,
       LINE_IDS.jr_east.keiyou,
       LINE_IDS.tokyo_metro.yurakucho,
       LINE_IDS.toukyo_rinkai_kousoku.rinkai,
     ],
-    "しんきば"
-  ),
+  }),
   // > 副都心線
-  [STATION_IDS.tokyo_metro.zoshigaya]: new StationInfo(
-    "雑司ヶ谷",
-    [LINE_IDS.tokyo_metro.fukutoshin, LINE_IDS.tokyo_subway.sakura_tram],
-    "ぞうしがや"
-  ),
-  [STATION_IDS.tokyo_metro.nishi_waseda]: new StationInfo(
-    "西早稲田",
-    [],
-    "にしわせだ"
-  ),
-  [STATION_IDS.tokyo_metro.kitasandou]: new StationInfo(
-    "北参道",
-    [],
-    "きたさんどう"
-  ),
-  [STATION_IDS.tokyo_metro.meiji_jingumae]: new StationInfo(
-    "明治神宮前",
-    [
+  [STATION_IDS.tokyo_metro.zoshigaya]: new Station({
+    name: "雑司ヶ谷",
+    reading: "ぞうしがや",
+    en: "zoshigaya",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.fukutoshin, LINE_IDS.tokyo_subway.sakura_tram],
+  }),
+  [STATION_IDS.tokyo_metro.nishi_waseda]: new Station({
+    name: "西早稲田",
+    reading: "にしわせだ",
+    en: "nishi_waseda",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.yurakucho],
+  }),
+  [STATION_IDS.tokyo_metro.kitasandou]: new Station({
+    name: "北参道",
+    reading: "きたさんどう",
+    en: "kitasandou",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.yurakucho],
+  }),
+  [STATION_IDS.tokyo_metro.meiji_jingumae]: new Station({
+    name: "明治神宮前",
+    reading: "めいじじんぐうまえ",
+    en: "meiji_jingumae",
+    prefecture: P.TOKYO,
+    lines: [
       new ExchangeInfo(LINE_IDS.jr_east.yamanote, STATION_IDS.jr_east.harajuku),
       LINE_IDS.tokyo_metro.chiyoda,
       LINE_IDS.tokyo_metro.fukutoshin,
     ],
-    "めいじじんぐうまえ"
-  ),
-  [STATION_IDS.tokyo_metro.higashi_shinjuku]: new StationInfo(
-    "東新宿",
-    [LINE_IDS.tokyo_metro.fukutoshin, LINE_IDS.tokyo_subway.oedo],
-    "ひがししんじゅく"
-  ),
+  }),
+  [STATION_IDS.tokyo_metro.higashi_shinjuku]: new Station({
+    name: "東新宿",
+    reading: "ひがししんじゅく",
+    en: "higashi_shinjuku",
+    prefecture: P.TOKYO,
+    lines: [LINE_IDS.tokyo_metro.fukutoshin, LINE_IDS.tokyo_subway.oedo],
+  }),
   // ＞銀座線
   [STATION_IDS.tokyo_metro.omotesando]: new StationInfo(
     "表参道",

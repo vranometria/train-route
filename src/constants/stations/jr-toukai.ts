@@ -1140,4 +1140,56 @@ export const jr_toukai_stations = {
     lines: [LINE_IDS.jr_toukai.chuou_honsen],
   }),
   // #endregion 中央本線
+
+  // #region 太多線
+  [STATION_IDS.jr_toukai.koizumi]: new Station({
+    name: "小泉",
+    reading: "こいずみ",
+    en: "koizumi",
+    prefecture: P.GIFU,
+    lines: [LINE_IDS.jr_toukai.taita],
+  }),
+  [STATION_IDS.jr_toukai.nemoto]: new Station({
+    name: "根本",
+    reading: "ねもと",
+    en: "nemoto",
+    prefecture: P.GIFU,
+    lines: [LINE_IDS.jr_toukai.taita],
+  }),
+  [STATION_IDS.jr_toukai.hime]: new Station({
+    name: "姫",
+    reading: "ひめ",
+    en: "hime",
+    prefecture: P.GIFU,
+    lines: [LINE_IDS.jr_toukai.taita],
+  }),
+  [STATION_IDS.jr_toukai.shimogiri]: new Station({
+    name: "下切",
+    reading: "しもぎり",
+    en: "shimogiri",
+    prefecture: P.GIFU,
+    lines: [LINE_IDS.jr_toukai.taita],
+  }),
+  [STATION_IDS.jr_toukai.kani]: new Station({
+    name: "可児",
+    reading: "かに",
+    en: "kani",
+    prefecture: P.GIFU,
+    lines: [LINE_IDS.jr_toukai.taita],
+  }),
+  [STATION_IDS.jr_toukai.mino_kawai]: new Station({
+    name: "美濃川井",
+    reading: "みのかわい",
+    en: "mino-kawai",
+    prefecture: P.GIFU,
+    lines: [LINE_IDS.jr_toukai.taita],
+  }),
+  [STATION_IDS.jr_toukai.mino_oota]: new Station({
+    name: "美濃大田",
+    reading: "みのおおた",
+    en: "mino-oota",
+    prefecture: P.GIFU,
+    lines: [LINE_IDS.jr_toukai.taita, LINE_IDS.jr_toukai.takayama_honsen, LINE_IDS.nagaragawa.nagaragawa],
+  }),
+  // #region 東海道本線
 };

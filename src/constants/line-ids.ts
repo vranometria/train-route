@@ -546,6 +546,11 @@ export const LINE_IDS = {
     /** 瀬戸線 */
     seto: "meitetsu-seto",
   },
+  /** 長良川鉄道 */
+  nagaragawa: {
+    /** 長良川鉄道線 */
+    nagaragawa: "nagaragawa-nagaragawa",
+  },
   aichi_kanjou: {
     aichi_kanjou: "aichi-kanjou-aichi-kanjou",
   },
